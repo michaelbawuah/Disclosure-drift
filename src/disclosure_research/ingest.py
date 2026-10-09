@@ -25,6 +25,9 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
         except Exception as exc:
             failures.append({"cik": company["cik"], "stage": "submissions", "error": str(exc)})
             continue
+        if not filings:
+            failures.append({"cik": company["cik"], "stage": "submissions",
+                             "error": "No original filings found in the requested period"})
         for filing in filings:
             accession = filing["accessionNumber"]
             try:
@@ -43,10 +46,18 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
                         raise ValueError("No independently interpretable acceptance timestamp") from exc
                     header_status = "api_encoded_offset_unverified_against_header"
                 window = event_window(accepted)
+                api_difference = None
+                try:
+                    api_timestamp = datetime.fromisoformat(filing["acceptanceDateTime"].replace("Z", "+00:00"))
+                    if api_timestamp.tzinfo is not None and header_status == "sgml_header":
+                        api_difference = (api_timestamp - accepted).total_seconds()
+                except (KeyError, ValueError):
+                    pass
                 records.append({**filing, "name": company["name"],
                                 "download_sha256": provenance["sha256"],
                                 "fetched_at": provenance["fetched_at"], "header_sha256": header_hash,
                                 "acceptance_source": header_status,
+                                "api_header_difference_seconds": api_difference,
                                 "acceptance_timestamp": accepted.isoformat(),
                                 "availability_status": "two_session_proxy; dissemination_not_verified",
                                 "extraction_status": extracted.status, "risk_text": extracted.text,
@@ -75,7 +86,14 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
             pair_frame.to_parquet(output / "filing_pairs.parquet", index=False)
             con.register("pair_frame", pair_frame)
             con.execute("CREATE OR REPLACE TABLE filing_pairs AS SELECT * FROM pair_frame")
+        else:
+            (output / "filing_pairs.parquet").unlink(missing_ok=True)
+            con.execute("DROP TABLE IF EXISTS filing_pairs")
         con.close()
+    else:
+        # Never leave a prior successful dataset beside a new empty-run summary.
+        for name in ["filings.parquet", "filing_pairs.parquet", "audit_queue.csv", "research.duckdb"]:
+            (output / name).unlink(missing_ok=True)
     summary = {"sample_type": config["purpose"], "companies_requested": len(config["companies"]),
                "filings_downloaded": len(records), "automated_extraction_ok": sum(r["extraction_status"] == "ok" for r in records),
                "pairs_ready_for_manual_review": len(pairs), "excluded_pairs": exclusions,

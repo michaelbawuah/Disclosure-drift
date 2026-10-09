@@ -36,3 +36,13 @@
 
 Implementation was co-developed with Codex. Human audit and independent explanation
 of the study remain pending. No financial predictive finding is claimed.
+
+## 2026-10-09 - Live-source and edge-case review
+
+- The live sample contains disagreements between API timestamps and SGML headers.
+  Preserve both, use the explicit header interpretation for timing, and record the
+  difference for manual review. All 20 smoke filings supplied header evidence.
+- A zero TF-IDF vector has undefined cosine, not a distance of one. Keep this value
+  missing and use only the model's training-fitted imputation; expose its count.
+- Remove stale generated tables after an empty ingestion result. A prior successful
+  output must not appear to belong to a new failed run.

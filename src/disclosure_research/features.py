@@ -38,8 +38,8 @@ class TextChangeFeatures:
         current = self.vectorizer.transform(pairs["current_text"])
         similarities = np.asarray(prev.multiply(current).sum(axis=1)).ravel()
         zero_vector = (np.asarray(prev.sum(axis=1)).ravel() == 0) | (np.asarray(current.sum(axis=1)).ravel() == 0)
-        # Unknown vocabulary can occur out of sample: use distance 1 and expose its count.
-        similarities[zero_vector] = 0.0
+        # Cosine is undefined for zero vectors. The model imputes from training only.
+        similarities[zero_vector] = np.nan
         lengths, jaccards = [], []
         for old, new in zip(pairs["previous_text"], pairs["current_text"], strict=True):
             old_tokens, new_tokens = TOKEN.findall(old.lower()), TOKEN.findall(new.lower())
