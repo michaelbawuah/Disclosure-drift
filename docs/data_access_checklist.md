@@ -14,6 +14,36 @@ dataset. The next user action is to open the Cornell entry point and check wheth
 CRSP and the required historical tables are available. No private entitlement has
 been verified by this project.
 
+## Quick entitlement check
+
+1. Open the Cornell page above and select **Connect to Wharton Research Data
+   Services (WRDS)**. Follow the Cornell authentication and day-pass instructions.
+   Cornell marks this resource **on-campus only**; start on campus. Do not assume
+   that owning a Cornell email address grants an individual WRDS account.
+2. Once in WRDS, find the CRSP stock-data product and open its daily stock query.
+   Look for the current Version 2/CIZ product, and record the exact product,
+   release, table and visible field names. Menu wording can vary by subscription.
+3. For a minimal access test, use **AAPL, 2021-01-04 through 2021-01-08**. Select
+   the permanent security identifier, observation date and daily total return
+   including distributions, using that table's dictionary. Download a CSV.
+   AAPL is only a convenient access test, not the study's identity-mapping rule.
+4. A successful live query/export verifies access to **that table only**. A CRSP
+   logo, documentation page or public demo does not. Record any subscription or
+   permissions error exactly; do not repeatedly retry an access denial.
+5. Report the result or share the dataset/error screen with account details hidden.
+   Keep licensed extracts local under `data/`; do not commit them to public git.
+
+If the route is unavailable to your student category, ask Cornell Management
+Library's reference desk at **mgtref@cornell.edu** whether Engineering
+undergraduates can use the CRSP US Stock and Indexes data through a day pass,
+and how to obtain the required historical returns and identifiers. This project
+has not contacted the library or requested an account on your behalf.
+
+Passing this quick check does not yet establish access to the benchmark, historical
+links or other tables below. Record those separately before the full export.
+
+## Research data coverage
+
 For each item, record dataset/table, release/version, export time, date coverage,
 available identifiers, permission constraints and any missing fields:
 
@@ -39,11 +69,19 @@ The [normalized import and event-label staging tools](market_import.md) are read
 for that verified sample. The manifest template intentionally leaves source-specific
 fields blank. Current verification uses invented market returns only.
 
+The [pilot export request](pilot_market_request.md) supplies exact dates for all
+135 current development events and a pending 20-event label/control trace sample.
+It loads no market outcomes and provides no entitlement or human-review sign-off.
+
 If access remains unavailable, continue the public filing pipeline and extraction
 audit. Record that market-return research is blocked. A current ticker list or
 surviving-stock sample is not an equivalent replacement for the historical universe.
 
 Primary documentation:
 - SEC API: https://www.sec.gov/search-filings/edgar-application-programming-interfaces
-- CRSP format cross-reference: https://www.crsp.org/crsp_pdf/crsp-us-stock-indexes-databases-siz-to-ciz-cross-reference-guide/
+- WRDS current CRSP format guides: https://wrds-www.wharton.upenn.edu/pages/data-announcements/changes-to-crsp-data/
+- CRSP research-data product entry: https://indexes.morningstar.com/
 - CRSP format/delisting conventions: https://www.crsp.org/wp-content/uploads/appendix/FlagType_MU.html
+
+Links checked 2026-10-09. The former CRSP cross-reference URL returned 404;
+use the WRDS transition page's Cross Reference Guide and User Guide links.

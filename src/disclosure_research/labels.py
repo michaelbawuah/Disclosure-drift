@@ -56,11 +56,8 @@ def export_label_events(filings: str | Path, pairs: str | Path, audit: str | Pat
             "research_status": "event queue only; human and market-data audits remain required"}
 
 
-def prepare_labels(events_path: str | Path, bundle: str | Path,
-                   output: str | Path, config: dict) -> dict:
-    output = Path(output)
-    if output.exists():
-        raise ValueError("Output already exists; choose a new label staging directory")
+def load_development_events(events_path: str | Path, config: dict):
+    """Validate event identities and dates before any market outcomes are read."""
     raw = Path(events_path).read_bytes()
     events = pd.read_parquet(io.BytesIO(raw))
     required = {"event_id", "cik", "acceptance_timestamp", "data_kind"}
@@ -78,6 +75,15 @@ def prepare_labels(events_path: str | Path, bundle: str | Path,
         if not config["initial_train_start"] <= int(window.acceptance_date[:4]) <= config["development_end"]:
             raise ValueError("Event outside training/development years; holdout events are blocked")
         windows.append(window)
+    return raw, events, windows
+
+
+def prepare_labels(events_path: str | Path, bundle: str | Path,
+                   output: str | Path, config: dict) -> dict:
+    output = Path(output)
+    if output.exists():
+        raise ValueError("Output already exists; choose a new label staging directory")
+    raw, events, windows = load_development_events(events_path, config)
     # Validate event dates before loading any market returns.
     tables, receipt = load_market(bundle, config)
     expected_kind = SYNTHETIC if receipt["data_kind"] == SYNTHETIC else "REAL_FILING_EVENTS"

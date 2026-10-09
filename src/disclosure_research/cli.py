@@ -12,6 +12,7 @@ import pandas as pd
 
 from .edgar import SecClient
 from .audit import build_audit
+from .export_plan import build_export_plan
 from .ingest import ingest_smoke
 from .labels import export_label_events, prepare_labels
 from .market_data import import_market
@@ -77,6 +78,9 @@ def main(argv=None) -> int:
     event_export.add_argument("--pairs", required=True)
     event_export.add_argument("--audit", required=True, help="Directory containing the matching offline audit")
     event_export.add_argument("--output", required=True, help="New Parquet event-queue path")
+    export_plan = commands.add_parser("plan-market-export", help="Request pilot data without loading outcomes")
+    export_plan.add_argument("--events", required=True, help="Audit-bound development event queue")
+    export_plan.add_argument("--output", required=True, help="New export-plan directory")
     labels = commands.add_parser("prepare-labels", help="Stage development labels for data QA, not model selection")
     labels.add_argument("--events", required=True)
     labels.add_argument("--market", required=True, help="Validated import directory")
@@ -103,6 +107,9 @@ def main(argv=None) -> int:
         summary = prepare_labels(args.events, args.market, args.output, config)
         print(json.dumps(summary, indent=2))
         return 1 if summary["events_excluded"] else 0
+    if args.command == "plan-market-export":
+        print(json.dumps(build_export_plan(args.events, args.output, config), indent=2))
+        return 0
     if args.command == "market-demo":
         print(json.dumps(market_demo(args.output, config), indent=2))
         return 0
@@ -134,6 +141,7 @@ def main(argv=None) -> int:
         return 0
     gates = {"protocol": "locked", "market_data_access": "requires Cornell WRDS verification and normalized exports",
              "market_import_and_label_staging": "implemented; verified only with invented market data",
+             "pre_event_controls": "standalone calculator tested; vendor snapshot adapter pending",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "pending before final test access",
              "final_2022_2025_evaluation": "blocked; no empirical result exists"}

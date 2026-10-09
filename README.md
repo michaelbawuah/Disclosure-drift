@@ -10,10 +10,15 @@ protocol is frozen in [protocol.md](protocol.md) and
 [configs/protocol.json](configs/protocol.json). Initial training is 2010-2015,
 development is 2016-2021, and the final evaluation period is 2022-2025.
 
-**Current milestone:** SEC ingestion, Item 1A extraction and pairing, exchange-session
-timing, train-only text features, validated market imports and event-label staging, ridge
-development comparisons, and paired month-block confidence intervals. Real return
-data and the final empirical evaluation remain pending. The demo is entirely synthetic.
+**Current milestone: 05 in progress.** The 155-filing parser pilot is complete at
+the automated-evidence level. A dated market-data request now covers its 135 events,
+with 20 pending trace reviews and a tested standalone pre-event control calculator.
+CRSP entitlement, real exports, source normalization and human reviews remain pending.
+The frozen final evaluation has not been opened; all model demos are synthetic.
+
+See the [Milestone 05 progress report](reports/MILESTONE_05_PROGRESS.md),
+[Cornell access check](docs/data_access_checklist.md), and
+[pilot export instructions](docs/pilot_market_request.md).
 
 | Milestone 04 evidence | Status |
 |---|---|
@@ -24,7 +29,7 @@ data and the final empirical evaluation remain pending. The demo is entirely syn
 | Research-integrity tests | 103 passed locally, on macOS and in GitHub Actions |
 | Filing review and empirical results | Human review and historical market data pending |
 
-See the [current milestone report](reports/MILESTONE_04.md),
+See the [completed Milestone 04 report](reports/MILESTONE_04.md),
 [verification record](reports/milestone_04.json), and
 [complete HTML review packet](reports/expanded_audit.html).
 The [targeted reference comparison](reports/MILESTONE_03.md),
@@ -162,6 +167,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 | `audit.py` | Offline source checks, DuckDB coverage and fingerprinted review packets |
 | `timing.py`, `market.py` | Session arithmetic, historical links and return labels |
 | `market_data.py`, `labels.py` | Validated Parquet/DuckDB imports and audit-bound event-label staging |
+| `controls.py`, `export_plan.py` | Prior-session controls and outcome-free pilot export requests |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |
 | `protocol.py`, `configs/` | Frozen choices and integrity guards |

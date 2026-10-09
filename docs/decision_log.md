@@ -144,3 +144,20 @@ of the study remain pending. No financial predictive finding is claimed.
   reproduction runs in the cloud; the Mac's earlier SEC HTTP 403 is not retried.
 - No actual market export or vendor mapping has been verified. Next obtain an
   authorized sample and its dictionary, then audit historical selection and controls.
+
+## 2026-10-09 - Milestone 05 preparation, access still pending
+
+- Verify Cornell's published day-pass route and document a minimal AAPL daily-return
+  query in January 2021. A successful export verifies that table's entitlement only;
+  no authenticated export or private account entitlement has been observed yet.
+- Generate exact market-data request windows from the 135 audit-bound filing events.
+  Select 20 trace reviews using a seeded hash without outcomes; leave all pending.
+  Preserve the separate 30-pair filing and registered-reference audit requirements.
+- Implement the existing 20/60-session control definitions with complete, unfilled
+  historical windows, sample daily volatility and exact-date industry/size snapshots.
+  Normalize capitalization to USD before its natural log. No primary predictor,
+  evaluation period or model-selection choice changes, and the protocol lock is intact.
+- Test the calculator on invented values, including independently known arithmetic
+  and future-outcome perturbations. A real snapshot adapter and its source-availability
+  audit remain pending; label staging is still separate from model-ready data.
+- Replace a broken CRSP documentation link with WRDS's current format-guidance page.

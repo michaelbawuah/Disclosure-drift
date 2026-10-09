@@ -7,7 +7,9 @@ been obtained or mapped.
 
 The executable [import and label-staging workflow](market_import.md) implements the
 first three tables below. `configs/market_manifest.template.json` records the
-required provenance. The historical universe and prepared controls remain pending.
+required provenance. A standalone pre-event control calculator and
+[dated pilot export request](pilot_market_request.md) are available. The historical
+universe, vendor snapshot adapter and full prepared dataset remain pending.
 
 ## Returns and benchmark
 
@@ -58,7 +60,7 @@ The `disclosure develop` command accepts one Parquet table with these columns:
 | `target` | Unranked 20-session stock return minus benchmark return |
 | `momentum_20`, `momentum_60` | Compounded prior total returns ending at controls_asof |
 | `volatility_20` | Sample standard deviation of prior 20 daily total returns |
-| `log_market_cap` | Natural log of positive historical market cap in consistent units |
+| `log_market_cap` | Natural log of positive historical market cap in USD |
 | `industry` | Historical industry category known at prediction time |
 
 All rows must have fully audited linkage, timing and labels; carry source identifiers
@@ -67,6 +69,8 @@ current runner rejects missing required values and rejects any filing year beyon
 2021. It fits text vocabulary and all learned preprocessing only in training folds.
 
 Fetch source history before 2010 as needed for initial liquidity windows and prior
-annual filings. Fetch returns through each label end, including early 2026. The
+annual filings. At the current development-only stage, request returns only through
+development-event label ends (which can include an early-2022 tail). After the final
+gate is explicitly unlocked, 2025 events may require an early-2026 tail. The
 runner's ordering checks support the audit; they cannot prove that a vendor's
 historical values are point-in-time without source-level evidence.

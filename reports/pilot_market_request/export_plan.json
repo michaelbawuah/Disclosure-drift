@@ -1,0 +1,18 @@
+{
+  "events": 135,
+  "issuers": 20,
+  "trace_reviews_requested": 20,
+  "request_start": "2014-11-04",
+  "request_end": "2021-12-28",
+  "events_sha256": "fb684e79c47928c1d4023fa3fd4e2ac5cc43b61a93ed925f81a32b658005dc0d",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "market_returns_loaded": false,
+  "human_reviews_completed_by_this_command": 0,
+  "final_period_opened": false,
+  "status": "export request only; entitlement, normalization and human review pending",
+  "files": {
+    "event_windows.csv": "4f62c3588345a12389ae937166e72f0e5643d5aebe8f5e3ae5c4cf325bb8abb5",
+    "issuer_requests.csv": "0beee79a5be00dd5246bd479a63eace1ead8f91aeac8fc6af396e2bec9d7fcab",
+    "trace_reviews.template.csv": "efaa45d67c43a798dc4d90d41f82fb8702d228cdb0057b21282767b3b9941b3c"
+  }
+}
