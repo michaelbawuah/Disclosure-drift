@@ -4,11 +4,14 @@ import hashlib
 import json
 import re
 import time
-import urllib.error
 import urllib.parse
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+import httpx
+
+
+MAX_DOCUMENT_BYTES = 40 * 1024 * 1024
 
 
 class SecClient:
@@ -22,7 +25,7 @@ class SecClient:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.user_agent, self.interval = user_agent, 1 / rate
         self.timeout, self.retries = timeout, retries
-        self.transport = transport or urllib.request.urlopen
+        self.transport = transport
         self.sleep, self.last_request, self.network_requests = sleep, 0.0, 0
 
     def fetch(self, url: str) -> tuple[bytes, dict]:
@@ -40,18 +43,28 @@ class SecClient:
             self.sleep(max(0, self.interval - (time.monotonic() - self.last_request)))
             self.last_request = time.monotonic()
             self.network_requests += 1
-            request = urllib.request.Request(url, headers={
+            headers = {
                 "User-Agent": self.user_agent, "Accept-Encoding": "identity",
                 "Accept": "application/json,text/html,text/plain,*/*",
-            })
+            }
             try:
-                with self.transport(request, timeout=self.timeout) as response:
-                    body = response.read(40 * 1024 * 1024 + 1)
-                    if len(body) > 40 * 1024 * 1024:
-                        raise ValueError("Response exceeds the 40 MiB per-document limit")
+                # Streaming enforces the size limit before the entire document is read.
+                # Redirects are not followed: a new destination needs explicit review.
+                with httpx.Client(transport=self.transport, timeout=self.timeout,
+                                  follow_redirects=False) as client, client.stream(
+                                      "GET", url, headers=headers) as response:
+                    response.raise_for_status()
+                    chunks, size = [], 0
+                    for chunk in response.iter_bytes(chunk_size=64 * 1024):
+                        size += len(chunk)
+                        if size > MAX_DOCUMENT_BYTES:
+                            raise ValueError("Response exceeds the 40 MiB per-document limit")
+                        chunks.append(chunk)
+                    body = b"".join(chunks)
                     meta = {"url": url, "sha256": hashlib.sha256(body).hexdigest(),
                             "fetched_at": datetime.now(timezone.utc).isoformat(),
-                            "bytes": len(body), "status": response.status}
+                            "bytes": len(body), "status": response.status_code,
+                            "body_representation": "http-decoded", "transport": "httpx"}
                 # Atomic per-file writes; orphaned partial entries are safe to refetch.
                 temp = body_path.with_suffix(".tmp")
                 temp.write_bytes(body)
@@ -60,13 +73,13 @@ class SecClient:
                 temp_meta.write_text(json.dumps(meta, indent=2) + "\n")
                 temp_meta.replace(meta_path)
                 return body, {**meta, "cache_hit": False}
-            except urllib.error.HTTPError as exc:
-                if exc.code not in {429, 500, 502, 503, 504} or attempt == self.retries:
+            except httpx.HTTPStatusError as exc:
+                if exc.response.status_code not in {429, 500, 502, 503, 504} or attempt == self.retries:
                     raise
-                retry_after = exc.headers.get("Retry-After", "") if exc.headers else ""
+                retry_after = exc.response.headers.get("Retry-After", "")
                 wait = min(30, float(retry_after)) if retry_after.isdigit() else min(16, 2 ** attempt)
                 self.sleep(wait)
-            except (urllib.error.URLError, TimeoutError):
+            except httpx.TransportError:
                 if attempt == self.retries:
                     raise
                 self.sleep(min(16, 2 ** attempt))

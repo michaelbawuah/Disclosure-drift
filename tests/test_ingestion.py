@@ -1,7 +1,4 @@
-import io
-import json
-import urllib.error
-
+import httpx
 import pytest
 import pandas as pd
 
@@ -10,16 +7,14 @@ from disclosure_research.extraction import clean_html, extract_risk_factors, pai
 from disclosure_research.ingest import ingest_smoke
 
 
-class Response(io.BytesIO):
-    status = 200
-
-
 def test_cache_avoids_second_network_request_and_detects_corruption(tmp_path):
     calls = []
-    def transport(request, timeout):
-        calls.append(request.full_url)
-        return Response(b'{"ok":true}')
-    client = SecClient(tmp_path, "Research contact test@example.org", transport=transport, sleep=lambda _: None)
+    def transport(request):
+        calls.append(str(request.url))
+        assert request.headers["User-Agent"] == "Research contact test@example.org"
+        assert request.headers["Accept-Encoding"] == "identity"
+        return httpx.Response(200, content=b'{"ok":true}')
+    client = SecClient(tmp_path, "Research contact test@example.org", transport=httpx.MockTransport(transport), sleep=lambda _: None)
     url = "https://data.sec.gov/submissions/CIK0000000001.json"
     body, first = client.fetch(url)
     assert first["cache_hit"] is False
@@ -32,25 +27,68 @@ def test_cache_avoids_second_network_request_and_detects_corruption(tmp_path):
 
 def test_429_retries_with_bounded_backoff(tmp_path):
     calls, sleeps = [], []
-    def transport(request, timeout):
+    def transport(request):
         calls.append(1)
         if len(calls) == 1:
-            raise urllib.error.HTTPError(request.full_url, 429, "rate", {"Retry-After": "2"}, None)
-        return Response(b"ok")
-    client = SecClient(tmp_path, "Research test@example.org", transport=transport, sleep=sleeps.append)
+            return httpx.Response(429, headers={"Retry-After": "2"})
+        return httpx.Response(200, content=b"ok")
+    client = SecClient(tmp_path, "Research test@example.org", transport=httpx.MockTransport(transport), sleep=sleeps.append)
     assert client.fetch("https://www.sec.gov/test")[0] == b"ok"
     assert len(calls) == 2 and 2 in sleeps
 
 
 def test_forbidden_response_is_not_retried(tmp_path):
     calls = []
-    def transport(request, timeout):
+    def transport(request):
         calls.append(1)
-        raise urllib.error.HTTPError(request.full_url, 403, "forbidden", {}, None)
-    client = SecClient(tmp_path, "Research test@example.org", transport=transport, sleep=lambda _: None)
-    with pytest.raises(urllib.error.HTTPError):
+        return httpx.Response(403)
+    client = SecClient(tmp_path, "Research test@example.org", transport=httpx.MockTransport(transport), sleep=lambda _: None)
+    with pytest.raises(httpx.HTTPStatusError):
         client.fetch("https://www.sec.gov/test")
     assert len(calls) == 1
+
+
+@pytest.mark.parametrize("recover", [True, False])
+def test_transport_timeout_has_a_finite_retry_budget(tmp_path, recover):
+    calls = []
+    def transport(request):
+        calls.append(str(request.url))
+        if not recover or len(calls) == 1:
+            raise httpx.ReadTimeout("synthetic timeout", request=request)
+        return httpx.Response(200, content=b"complete")
+    client = SecClient(tmp_path, "Research test@example.org", retries=1,
+                       transport=httpx.MockTransport(transport), sleep=lambda _: None)
+    if recover:
+        assert client.fetch("https://www.sec.gov/test")[0] == b"complete"
+    else:
+        with pytest.raises(httpx.ReadTimeout):
+            client.fetch("https://www.sec.gov/test")
+        assert not list(tmp_path.glob("*.bin"))
+    assert len(calls) == 2
+
+
+def test_oversized_response_never_enters_the_cache(tmp_path, monkeypatch):
+    monkeypatch.setattr("disclosure_research.edgar.MAX_DOCUMENT_BYTES", 8)
+    transport = httpx.MockTransport(lambda _: httpx.Response(200, content=b"123456789"))
+    client = SecClient(tmp_path, "Research test@example.org", transport=transport,
+                       sleep=lambda _: None)
+    with pytest.raises(ValueError, match="per-document limit"):
+        client.fetch("https://www.sec.gov/test")
+    assert not list(tmp_path.glob("*.bin"))
+    assert not list(tmp_path.glob("*.json"))
+
+
+def test_redirect_is_not_followed_or_cached(tmp_path):
+    calls = []
+    def transport(request):
+        calls.append(str(request.url))
+        return httpx.Response(302, headers={"Location": "https://example.org/document"})
+    client = SecClient(tmp_path, "Research test@example.org", transport=httpx.MockTransport(transport),
+                       sleep=lambda _: None)
+    with pytest.raises(httpx.HTTPStatusError):
+        client.fetch("https://www.sec.gov/test")
+    assert calls == ["https://www.sec.gov/test"]
+    assert not list(tmp_path.glob("*.bin"))
 
 
 def test_client_rejects_unrelated_hosts_and_missing_contact(tmp_path):
@@ -72,9 +110,9 @@ def test_historical_submission_pages_and_amendment_filter(tmp_path):
             "filingDate": ["2019-03-01", "2019-03-10"], "form": ["10-K", "10-K/A"],
             "primaryDocument": ["annual.htm", "amend.htm"]},
     }
-    def transport(request, timeout):
-        return Response(json.dumps(pages[request.full_url]).encode())
-    client = SecClient(tmp_path, "Research test@example.org", transport=transport, sleep=lambda _: None)
+    def transport(request):
+        return httpx.Response(200, json=pages[str(request.url)])
+    client = SecClient(tmp_path, "Research test@example.org", transport=httpx.MockTransport(transport), sleep=lambda _: None)
     rows = list_original_filings(client, "123", 2019, 2019)
     assert len(rows) == 1 and rows[0]["form"] == "10-K"
     assert rows[0]["source_url"].endswith("/123/000000012319000001/annual.htm")

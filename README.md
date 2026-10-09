@@ -25,6 +25,10 @@ data and the final empirical evaluation remain pending. The demo is entirely syn
 See the [milestone report](reports/MILESTONE_01.md) and
 [verification record](reports/milestone_01.json) for evidence and limitations.
 
+**Stack:** Python 3.12, pandas, Parquet, DuckDB, httpx, lxml, scikit-learn and NumPy.
+See [technology choices](docs/technology_stack.md) for the implemented tools and
+the planned report and semantic-model stages.
+
 ## Run locally
 
 Install [uv](https://docs.astral.sh/uv/), then clone and run the project:
@@ -32,11 +36,16 @@ Install [uv](https://docs.astral.sh/uv/), then clone and run the project:
 ```bash
 git clone https://github.com/michaelbawuah/Disclosure-drift.git
 cd Disclosure-drift
-uv sync --locked
-uv run pytest
-uv run disclosure status
-uv run disclosure demo
+make reproduce
 ```
+
+This command synchronizes the locked environment, runs lint and tests, verifies the
+protocol, and rebuilds the synthetic demo. It reproduces the current engineering
+milestone; real market-data preparation and the empirical report remain pending.
+
+Without Make, run `uv sync --locked`, `uv run --locked ruff check .`,
+`uv run --locked pytest`, `uv run --locked disclosure status`, and
+`uv run --locked disclosure demo` in that order.
 
 The default environment uses Python 3.12. The declared package range also permits
 Python 3.11; this milestone was verified on Python 3.12. The committed `uv.lock`

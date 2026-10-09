@@ -22,3 +22,17 @@ There are no experiments using actual market returns yet.
 For real development experiments, append dataset hashes, protocol/code versions,
 folds, configuration, exclusion counts, predictions, scores, interpretation and
 whether an idea was specified before outcomes were examined.
+
+## Python-stack and HTTPX verification, 2026-10-09
+
+- `make reproduce` passed lint, all 40 research-integrity tests, protocol fingerprint
+  verification and the 144-row synthetic demonstration.
+- A live request through HTTPX retrieved Apple's official SEC submissions JSON:
+  HTTP 200, 163,882 bytes, one network request. A second identical request used the
+  verified cache without another network request.
+- The live environment required HTTPX's SOCKS extra; it is now in the dependency
+  declaration and lockfile. No proxy settings or credentials are stored in Git.
+- The downloader tests cover identifying headers, cache corruption, HTTP 429,
+  non-retried HTTP 403, bounded timeout retries, document size and redirects.
+- This is transport and software verification. It does not open market-return
+  outcomes or complete the filing boundary/timestamp audit.

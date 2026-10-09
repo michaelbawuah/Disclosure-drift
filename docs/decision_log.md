@@ -46,3 +46,18 @@ of the study remain pending. No financial predictive finding is claimed.
   missing and use only the model's training-fitted imputation; expose its count.
 - Remove stale generated tables after an empty ingestion result. A prior successful
   output must not appear to belong to a new failed run.
+
+## 2026-10-09 - Python stack and reproduction command
+
+- Use Python across the study and SQL through DuckDB. Choose pandas as the single
+  DataFrame library and keep Python 3.12 as the verified runtime for this checkpoint.
+- Standardize SEC transport on httpx, preserving identifying headers, cached-body
+  hashes, conservative request spacing and bounded retries. Stream downloads under
+  the document-size limit; surface redirects and forbidden responses for review.
+- Add `make reproduce` and use it in CI. Its scope is environment synchronization,
+  lint, tests, protocol verification and the explicitly synthetic demo.
+- Keep the locked reference-month bootstrap and expanding, matured-label folds.
+  The proposed filing-week wording does not replace the frozen primary inference.
+- Plan Matplotlib/Quarto for reporting and an audited Hugging Face checkpoint for
+  semantic features. Add optional statistical/tree libraries when their specified
+  stage is implemented; no empirical or semantic result is claimed now.
