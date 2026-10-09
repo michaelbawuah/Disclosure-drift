@@ -1,0 +1,49 @@
+{
+  "milestone": "01-foundation",
+  "date": "2026-10-09",
+  "first_ingestion": {
+    "sample_type": "Extraction smoke sample only; not a historical research universe",
+    "companies_requested": 5,
+    "filings_downloaded": 20,
+    "automated_extraction_ok": 20,
+    "pairs_ready_for_manual_review": 15,
+    "excluded_pairs": [],
+    "network_requests_this_run": 66,
+    "failures": [],
+    "manual_audit": "pending",
+    "market_returns": "not_loaded",
+    "empirical_predictive_results": "none"
+  },
+  "cache_verification": {
+    "network_requests": 0,
+    "identical_table_content": true,
+    "table_sha256": {
+      "filings.parquet": "fc159fd2a556f233f2644163576cc863e624c4f0e9a721300de61f72f2125c41",
+      "filing_pairs.parquet": "1b771cbd54fa0a3ce0b956d4af073752153547aada3bd532e0c7f9cc22485201"
+    }
+  },
+  "acceptance_sources": {
+    "sgml_header": 20
+  },
+  "real_market_returns_loaded": false,
+  "human_audit_completed": false,
+  "final_test_opened": false,
+  "verification": {
+    "pytest": {
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ruff": "passed",
+    "python": "3.12.14",
+    "upstream_deprecation_warnings": 4
+  },
+  "timestamp_disagreements": 12,
+  "live_text_features": {
+    "training_pairs": 10,
+    "transformed_2021_pairs": 5,
+    "zero_vocabulary_pairs": 0,
+    "return_labels_used": false
+  }
+}
