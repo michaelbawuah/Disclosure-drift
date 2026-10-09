@@ -11,6 +11,7 @@ import numpy as np
 import pandas as pd
 
 from .edgar import SecClient
+from .audit import build_audit
 from .ingest import ingest_smoke
 from .modeling import development_comparison
 from .protocol import load_protocol, verify_lock, write_lock
@@ -47,6 +48,12 @@ def main(argv=None) -> int:
     ingest.add_argument("--companies", default="configs/smoke_companies.json")
     ingest.add_argument("--output", default="data/processed/smoke")
     ingest.add_argument("--cache", default="data/raw/sec_cache")
+    audit = commands.add_parser("audit", help="Build offline source evidence and a review packet")
+    audit.add_argument("--filings", default="data/processed/smoke/filings.parquet")
+    audit.add_argument("--cache", default="data/raw/sec_cache")
+    audit.add_argument("--output", default="outputs/audit-smoke")
+    audit.add_argument("--reviews", help="Completed review JSONL; generated templates are never sign-off")
+    audit.add_argument("--pairs", help="Optional paired table; defaults to the filings table's sibling")
     demo = commands.add_parser("demo", help="Run the development pipeline on invented fixtures")
     demo.add_argument("--output", default="outputs/demo")
     develop = commands.add_parser("develop", help="Run annual development folds on a prepared Parquet dataset")
@@ -61,6 +68,11 @@ def main(argv=None) -> int:
         print(json.dumps(write_lock(config, lock), indent=2))
         return 0
     verify_lock(config, lock)
+    if args.command == "audit":
+        summary = build_audit(args.filings, args.cache, args.output,
+                              config["development_end"], args.reviews, args.pairs)
+        print(json.dumps(summary, indent=2))
+        return 1 if summary["filings_with_blocking_issues"] else 0
     if args.command == "ingest":
         companies = json.loads(Path(args.companies).read_text())
         if companies["filing_year_end"] > config["development_end"]:

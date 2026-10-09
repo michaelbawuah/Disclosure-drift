@@ -61,3 +61,19 @@ of the study remain pending. No financial predictive finding is claimed.
 - Plan Matplotlib/Quarto for reporting and an audited Hugging Face checkpoint for
   semantic features. Add optional statistical/tree libraries when their specified
   stage is implemented; no empirical or semantic result is claimed now.
+
+## 2026-10-09 - Filing evidence and expanded parser pilot
+
+- Add an offline audit command that checks both cached provenance and the stored
+  extraction/timing, plus separate assistant and human review counts. Reviews are
+  bound to evidence fingerprints and cannot silently survive changed text or dates.
+- Use a deterministic, issuer-spread sample of up to 30 eligible pairs for initial
+  review, and inspect every flagged filing separately. This is not a population
+  extraction-accuracy estimate and does not unlock the final test.
+- Expand document-format coverage to 20 selected issuers, using 2014-2021 filings.
+  Current ticker metadata supplies discovery only. Preserve the verified historical
+  XOM filing CIK; retain Disney's current CIK separately without predecessor splicing.
+- Record J&J's 2014-2016 Exhibit 99 references as incomplete standalone Item 1A text.
+  Keep affected pairs out until an explicit exhibit-resolution policy is audited.
+- Desktop Commander reconnected and ran the existing f09d687 checkpoint on the
+  owner's Mac: Python 3.12.14, macOS arm64, 40 tests passed and synthetic demo completed.

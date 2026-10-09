@@ -81,6 +81,27 @@ A second identical run should require zero network requests. Cached SEC submissi
 snapshots are deliberate provenance snapshots. Use a new cache directory when
 collecting a newer snapshot; do not silently mutate an old one.
 
+## Audit the filing evidence
+
+After downloading the sample, run `make audit`. The HTML packet in
+`outputs/audit-smoke/audit.html` links the original filings and headers, shows
+boundary excerpts, and preserves timestamp disagreements. DuckDB coverage tables
+and fingerprinted review templates accompany it. Automated consistency is separate
+from human review.
+
+The expanded parser pilot uses 20 selected issuers and development-year filings:
+
+```bash
+make pilot-ingest
+make pilot-audit
+```
+
+These commands require the same identifying User-Agent for ingestion. The pilot
+is a document-format sample, not the historical investment universe. It selects
+up to 30 annual pairs for review while keeping extraction failures visible.
+See the [filing audit workflow](docs/filing_audit.md), including how to record
+reviews and handle disclosures that point to a separate exhibit.
+
 ## Research safeguards
 
 The tests verify holiday and after-hours timing, the exact 20-session return window,
@@ -117,6 +138,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 |---|---|
 | `src/disclosure_research/edgar.py` | SEC API/archive access, hashes, caching, retries |
 | `extraction.py`, `ingest.py` | Item 1A extraction, annual pairing and audit outputs |
+| `audit.py` | Offline source checks, DuckDB coverage and fingerprinted review packets |
 | `timing.py`, `market.py` | Session arithmetic, historical links and return labels |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |
