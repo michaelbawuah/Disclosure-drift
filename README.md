@@ -15,17 +15,19 @@ timing, train-only text features, normalized-return label calculations, ridge
 development comparisons, and paired month-block confidence intervals. Real return
 data and the final empirical evaluation remain pending. The demo is entirely synthetic.
 
-| Milestone 02 evidence | Status |
+| Milestone 03 evidence | Status |
 |---|---|
-| Expanded SEC parser pilot | 155 filings across 20 issuers; 121 annual pairs |
-| Research-integrity checks | 49 tests passed locally, on macOS and in GitHub Actions |
-| Source/extraction flags | 14 filings require review; affected pairs excluded |
-| Filing boundary and timestamp audit | Human review pending; 30 review pairs selected |
-| Empirical return results | Pending historical market data |
+| Targeted source comparison | 24 original filings; 21 annual pairs across 3 issuers |
+| Previously flagged references | 14 resolved with explicit source-hash-bound rules |
+| Regression checks | 10 control texts and every event date unchanged |
+| Research-integrity tests | 70 passed locally, on macOS and in GitHub Actions |
+| Filing review and empirical results | Human review and historical market data pending |
 
-See the [current milestone report](reports/MILESTONE_02.md) and
-[verification record](reports/milestone_02.json) for evidence and limitations.
-The [foundation checkpoint](reports/MILESTONE_01.md) is retained as a historical record.
+See the [current milestone report](reports/MILESTONE_03.md),
+[verification record](reports/milestone_03.json), and
+[HTML review packet](reports/reference_audit.html).
+The [broader 155-filing pilot](reports/MILESTONE_02.md) and
+[foundation checkpoint](reports/MILESTONE_01.md) are retained as earlier evidence.
 
 **Stack:** Python 3.12, pandas, Parquet, DuckDB, httpx, lxml, scikit-learn and NumPy.
 See [technology choices](docs/technology_stack.md) for the implemented tools and
@@ -104,6 +106,12 @@ up to 30 annual pairs for review while keeping extraction failures visible.
 See the [filing audit workflow](docs/filing_audit.md), including how to record
 reviews and handle disclosures that point to a separate exhibit.
 
+The subsequent reference-resolution checkpoint handles 14 known GE, Intel and J&J
+cases with explicit registered ranges and original-accession exhibit verification.
+It reproduces a targeted 24-filing comparison with `make reference-reproduce`.
+The broader 155-filing pilot has not been rerun with this revision. See the
+[boundary policy and limitations](docs/reference_resolution.md).
+
 ## Research safeguards
 
 The tests verify holiday and after-hours timing, the exact 20-session return window,
@@ -161,7 +169,7 @@ each research gate. The report will describe measured outcomes, including nulls.
 
 ## Next milestone
 
-Review the selected annual pairs and all flagged documents in the expanded pilot,
-resolve exhibit handling, and verify historical market-data access. Build and audit
+Review the 21 resolved-sample annual pairs and source-method transitions,
+rerun the broader parser pilot, and verify historical market-data access. Build and audit
 the historical universe and market joins before running real development experiments.
 Select and audit a semantic checkpoint before unlocking the primary final evaluation.

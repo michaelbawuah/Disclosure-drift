@@ -6,6 +6,14 @@ https://johnson.library.cornell.edu/database/wharton-research-data-services-wrds
 Check actual entitlements rather than assuming the platform contains every needed
 subscription. This build has not signed in to a Cornell or WRDS account.
 
+Cornell's entry page was checked on 9 October 2026. It lists day-pass access for
+current Cornell students, faculty and staff, and describes individual accounts for
+JCB faculty and students. For an Engineering undergraduate, begin with the listed
+day-pass route; do not assume eligibility for an individual account or a particular
+dataset. The next user action is to open the Cornell entry point and check whether
+CRSP and the required historical tables are available. No private entitlement has
+been verified by this project.
+
 For each item, record dataset/table, release/version, export time, date coverage,
 available identifiers, permission constraints and any missing fields:
 

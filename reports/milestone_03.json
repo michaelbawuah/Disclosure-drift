@@ -1,0 +1,95 @@
+{
+  "sample": "Targeted 24-filing reference-resolution pilot; not a historical investment universe",
+  "filings": 24,
+  "issuers": 3,
+  "baseline_extraction_ok": 10,
+  "resolved_extraction_ok": 24,
+  "baseline_annual_pairs": 7,
+  "resolved_annual_pairs": 21,
+  "registered_resolutions": 14,
+  "unchanged_control_filings": 10,
+  "primary_and_header_hashes_match_milestone_02": true,
+  "baseline_text_hashes_match_milestone_02": true,
+  "all_event_dates_unchanged": true,
+  "resolution_kind_counts": {
+    "same_document_range": 11,
+    "numbered_item1a": 10,
+    "same_accession_exhibit_range": 3
+  },
+  "method_transition_pairs": [
+    {
+      "cik": "0000200406",
+      "accession": "0000200406-17-000006",
+      "previous_accession": "0000200406-16-000071",
+      "resolution_method": "numbered_item1a",
+      "previous_resolution_method": "same_accession_exhibit_range"
+    },
+    {
+      "cik": "0000050863",
+      "accession": "0000050863-18-000007",
+      "previous_accession": "0000050863-17-000012",
+      "resolution_method": "same_document_range",
+      "previous_resolution_method": "numbered_item1a"
+    },
+    {
+      "cik": "0000040545",
+      "accession": "0000040545-15-000030",
+      "previous_accession": "0000040554-14-000023",
+      "resolution_method": "same_document_range",
+      "previous_resolution_method": "numbered_item1a"
+    }
+  ],
+  "audit": {
+    "filings": 24,
+    "issuers": 3,
+    "annual_pairs": 21,
+    "pairs_selected_for_review": 21,
+    "automated_evidence_ok": 24,
+    "filings_with_blocking_issues": 0,
+    "timestamp_disagreements": 0,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "reference_resolutions": 14,
+    "source_table_sha256": "ba9c188f8ea967bbfd614bba7c8a60145408f293c14021b0afb46d88f0014ef6",
+    "manual_audit": "pending",
+    "dissemination_verification": "pending; second-session proxy remains explicit",
+    "market_returns_used": false
+  },
+  "baseline_network_requests": 0,
+  "resolved_network_requests": 0,
+  "resolution_config_sha256": "1e37d4db53c22e3c61bf916851d7e8dcf36114da6be41e11543471d1a77b8b6c",
+  "source_table_sha256": "ba9c188f8ea967bbfd614bba7c8a60145408f293c14021b0afb46d88f0014ef6",
+  "pair_table_sha256": "569d1746c4c04932b1483c016f40a335bb6bfd7ecbe081e3e3c52f7968dfdaf7",
+  "market_returns_used": false,
+  "final_period_opened": false,
+  "full_155_filing_pilot_rebuilt": false,
+  "milestone": "03-reference-resolution",
+  "date": "2026-10-09",
+  "tested_code_commit": "2abbc37042cb86f74f2cfd8d4d1b3764a9291e44",
+  "execution": {
+    "cloud": {
+      "tests_passed": 70,
+      "python": "3.12.14",
+      "source_reproduction": "passed"
+    },
+    "macos_arm64": {
+      "tests_passed": 70,
+      "make_reproduce_exit": 0,
+      "source_reproduction": "not run; earlier SEC HTTP 403"
+    },
+    "github_actions": {
+      "tests_passed": 70,
+      "python": "3.12.3",
+      "run": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/37999382935"
+    },
+    "ruff": "passed",
+    "upstream_warnings_per_run": 4,
+    "synthetic_demo": "passed; not an empirical result"
+  },
+  "published_artifact_hashes": {
+    "reference_audit.html": "020f19074102ced95f0a7202c9b17ddcf786649e83e28905cea0d478fd8ac763",
+    "reference_review_pairs.csv": "aab0597c91745b7de52a7a239ff79c25a6dbf1593c38f2c9b87bef9c019edbbe",
+    "reference_filing_manifest.csv": "f9e7e4662eaed683300a5c135693f0b5399687fd314d8b29730136b8525d00f7",
+    "reference_reviews.template.jsonl": "24bfb83b67b3324562d2f37849bce031f40d1f6591dfa3890da2f9c2549dd85b"
+  }
+}
