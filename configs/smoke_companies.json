@@ -1,0 +1,14 @@
+{
+  "purpose": "Extraction smoke sample only; not a historical research universe",
+  "filing_year_start": 2018,
+  "filing_year_end": 2021,
+  "pair_year_start": 2019,
+  "pair_year_end": 2021,
+  "companies": [
+    {"cik": "0000320193", "name": "Apple"},
+    {"cik": "0000019617", "name": "JPMorgan Chase"},
+    {"cik": "0000034088", "name": "Exxon Mobil"},
+    {"cik": "0000200406", "name": "Johnson & Johnson"},
+    {"cik": "0000104169", "name": "Walmart"}
+  ]
+}
