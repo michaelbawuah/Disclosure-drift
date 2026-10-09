@@ -1,4 +1,6 @@
-# Disclosure changes and return forecasting
+# Disclosure Drift: Risk Disclosures and Return Forecasting
+
+[![Research integrity checks](https://github.com/michaelbawuah/Disclosure-drift/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/michaelbawuah/Disclosure-drift/actions/workflows/checks.yml)
 
 Do year-over-year changes in annual risk disclosures improve 20-session return
 forecasts for historically selected large, liquid U.S. stocks?
@@ -13,11 +15,23 @@ timing, train-only text features, normalized-return label calculations, ridge
 development comparisons, and paired month-block confidence intervals. Real return
 data and the final empirical evaluation remain pending. The demo is entirely synthetic.
 
+| Milestone 01 evidence | Status |
+|---|---|
+| Real SEC extraction sample | 20 original filings; 15 annual pairs |
+| Local research-integrity tests | 36 passed |
+| Filing boundary and timestamp audit | Human review pending |
+| Empirical return results | Pending historical market data |
+
+See the [milestone report](reports/MILESTONE_01.md) and
+[verification record](reports/milestone_01.json) for evidence and limitations.
+
 ## Run locally
 
-Install [uv](https://docs.astral.sh/uv/), then run from this directory:
+Install [uv](https://docs.astral.sh/uv/), then clone and run the project:
 
 ```bash
+git clone https://github.com/michaelbawuah/Disclosure-drift.git
+cd Disclosure-drift
 uv sync --locked
 uv run pytest
 uv run disclosure status
