@@ -1,0 +1,116 @@
+{
+  "filings": 155,
+  "issuers": 20,
+  "annual_pairs": 135,
+  "registered_resolutions": 14,
+  "unchanged_control_filings": 141,
+  "source_hashes_and_event_dates_match_milestone_02": true,
+  "method_transition_pairs": [
+    {
+      "accession": "0000200406-17-000006",
+      "previous_accession": "0000200406-16-000071",
+      "cik": "0000200406"
+    },
+    {
+      "accession": "0000050863-18-000007",
+      "previous_accession": "0000050863-17-000012",
+      "cik": "0000050863"
+    },
+    {
+      "accession": "0000040545-15-000030",
+      "previous_accession": "0000040554-14-000023",
+      "cik": "0000040545"
+    }
+  ],
+  "ingestion": {
+    "sample_type": "Purposive document-format pilot only; current ticker discovery is not a historical investment universe. No market returns used.",
+    "companies_requested": 20,
+    "filings_downloaded": 155,
+    "automated_extraction_ok": 155,
+    "pairs_ready_for_manual_review": 135,
+    "excluded_pairs": [
+      {
+        "cik": "0001744489",
+        "accession": "0001744489-19-000225",
+        "reason": "missing_previous_original_filing"
+      }
+    ],
+    "network_requests_this_run": 326,
+    "failures": [],
+    "reference_resolutions": 14,
+    "manual_audit": "pending",
+    "market_returns": "not_loaded",
+    "empirical_predictive_results": "none"
+  },
+  "audit": {
+    "filings": 155,
+    "issuers": 20,
+    "annual_pairs": 135,
+    "pairs_selected_for_review": 30,
+    "automated_evidence_ok": 155,
+    "filings_with_blocking_issues": 0,
+    "timestamp_disagreements": 72,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "reference_resolutions": 14,
+    "source_table_sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+    "manual_audit": "pending",
+    "dissemination_verification": "pending; second-session proxy remains explicit",
+    "market_returns_used": false,
+    "evidence_table_sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626",
+    "pair_table_sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0"
+  },
+  "market_returns_used": false,
+  "final_period_opened": false,
+  "sample_role": "purposive document-format pilot; not a historical investment universe",
+  "milestone": "04-expanded-pilot-and-market-staging",
+  "date": "2026-10-09",
+  "tested_code_commit": "7653be88c3c7d907e6441bcb273992bd8ea9776e",
+  "event_export": {
+    "events": 135,
+    "human_pairs_reviewed": 0,
+    "events_sha256": "fb684e79c47928c1d4023fa3fd4e2ac5cc43b61a93ed925f81a32b658005dc0d",
+    "market_returns_used": false,
+    "research_status": "event queue only; human and market-data audits remain required"
+  },
+  "market_engineering_demo": {
+    "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+    "events": 3,
+    "labels_prepared": 2,
+    "events_excluded": 1,
+    "exclusion_reasons": {
+      "Missing stock session 2021-07-12 before terminal event": 1
+    },
+    "independent_arithmetic_check": "passed",
+    "model_ready": false,
+    "interpretation": "Invented engineering cases only; no empirical performance result"
+  },
+  "execution": {
+    "cloud": {
+      "python": "3.12.14",
+      "tests_passed": 103,
+      "source_reproduction": "passed"
+    },
+    "macos_arm64": {
+      "tests_passed": 103,
+      "make_reproduce_exit": 0,
+      "source_reproduction": "not rerun; prior SEC HTTP 403"
+    },
+    "github_actions": {
+      "python": "3.12.3",
+      "tests_passed": 103,
+      "run": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38000988340"
+    },
+    "ruff": "passed",
+    "upstream_warnings_per_run": 4
+  },
+  "actual_market_export_received": false,
+  "human_review_complete": false,
+  "published_artifact_sha256": {
+    "expanded_filing_manifest.csv": "0eb899a98935368e47d430bc99c80d4effa2696ba5284dc294e12769635c57c5",
+    "expanded_audit.html": "2f1ed6c56548fc8a0219d645a1e1ab1d29283d8400e0bc8705ba60d27d0bb4fe",
+    "expanded_coverage.csv": "8924512e06059bc110dc227cb3e96c8c8b705b72672a8b1b7b35819ef181ce56",
+    "expanded_review_pairs.csv": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278",
+    "expanded_reviews.template.jsonl": "65106966a19615ac19824fd46aca1427fd3b572fd47d00b293478d9166545a21"
+  }
+}

@@ -35,6 +35,10 @@ particular, legacy separate delisting returns must not be blindly added to a mod
 return field that already incorporates that payoff. CRSP's format/version and
 delisting flags must be checked against the source documentation before normalization.
 
+The [normalized import and event-label staging tools](market_import.md) are ready
+for that verified sample. The manifest template intentionally leaves source-specific
+fields blank. Current verification uses invented market returns only.
+
 If access remains unavailable, continue the public filing pipeline and extraction
 audit. Record that market-return research is blocked. A current ticker list or
 surviving-stock sample is not an equivalent replacement for the historical universe.

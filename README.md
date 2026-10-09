@@ -11,22 +11,24 @@ protocol is frozen in [protocol.md](protocol.md) and
 development is 2016-2021, and the final evaluation period is 2022-2025.
 
 **Current milestone:** SEC ingestion, Item 1A extraction and pairing, exchange-session
-timing, train-only text features, normalized-return label calculations, ridge
+timing, train-only text features, validated market imports and event-label staging, ridge
 development comparisons, and paired month-block confidence intervals. Real return
 data and the final empirical evaluation remain pending. The demo is entirely synthetic.
 
-| Milestone 03 evidence | Status |
+| Milestone 04 evidence | Status |
 |---|---|
-| Targeted source comparison | 24 original filings; 21 annual pairs across 3 issuers |
-| Previously flagged references | 14 resolved with explicit source-hash-bound rules |
-| Regression checks | 10 control texts and every event date unchanged |
-| Research-integrity tests | 70 passed locally, on macOS and in GitHub Actions |
+| Complete parser pilot | 155 original filings; 135 annual pairs across 20 issuers |
+| Source and extraction comparison | Original source hashes, 141 control texts and all event dates unchanged |
+| Previously flagged references | All 14 source-bound resolutions reproduced in the full pilot |
+| Market-data handoff | Hashed Parquet imports, DuckDB tables and audit-bound event export |
+| Research-integrity tests | 103 passed locally, on macOS and in GitHub Actions |
 | Filing review and empirical results | Human review and historical market data pending |
 
-See the [current milestone report](reports/MILESTONE_03.md),
-[verification record](reports/milestone_03.json), and
-[HTML review packet](reports/reference_audit.html).
-The [broader 155-filing pilot](reports/MILESTONE_02.md) and
+See the [current milestone report](reports/MILESTONE_04.md),
+[verification record](reports/milestone_04.json), and
+[complete HTML review packet](reports/expanded_audit.html).
+The [targeted reference comparison](reports/MILESTONE_03.md),
+[initial 155-filing pilot](reports/MILESTONE_02.md), and
 [foundation checkpoint](reports/MILESTONE_01.md) are retained as earlier evidence.
 
 **Stack:** Python 3.12, pandas, Parquet, DuckDB, httpx, lxml, scikit-learn and NumPy.
@@ -106,11 +108,13 @@ up to 30 annual pairs for review while keeping extraction failures visible.
 See the [filing audit workflow](docs/filing_audit.md), including how to record
 reviews and handle disclosures that point to a separate exhibit.
 
-The subsequent reference-resolution checkpoint handles 14 known GE, Intel and J&J
+The reference-resolution checkpoint handles 14 known GE, Intel and J&J
 cases with explicit registered ranges and original-accession exhibit verification.
 It reproduces a targeted 24-filing comparison with `make reference-reproduce`.
-The broader 155-filing pilot has not been rerun with this revision. See the
-[boundary policy and limitations](docs/reference_resolution.md).
+The complete 155-filing regression comparison is rebuilt with
+`make pilot-resolved-reproduce`. It yields 135 annual pairs and preserves every
+unregistered extraction and original event date. See the
+[boundary policy and limitations](docs/reference_resolution.md). Human review remains pending.
 
 ## Research safeguards
 
@@ -132,6 +136,13 @@ Start with [docs/market_data_contract.md](docs/market_data_contract.md) and
 WRDS entitlements and export small examples before downloading a full history.
 The repository does not contain WRDS credentials or assume that any account has access.
 
+The [import and label-staging workflow](docs/market_import.md) is runnable now.
+`make market-demo` checks three invented events, including a delisting and an
+explicit missing-session exclusion. `import-market` accepts documented normalized
+Parquet files; it does not infer vendor mappings. `export-label-events` binds
+the filing event queue to a matching source audit. `prepare-labels` produces
+engineering QA tables, with pending research gates kept explicit.
+
 After the historical universe, links, labels and controls have been independently
 verified, prepare the documented development Parquet table and run:
 
@@ -150,6 +161,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 | `extraction.py`, `ingest.py` | Item 1A extraction, annual pairing and audit outputs |
 | `audit.py` | Offline source checks, DuckDB coverage and fingerprinted review packets |
 | `timing.py`, `market.py` | Session arithmetic, historical links and return labels |
+| `market_data.py`, `labels.py` | Validated Parquet/DuckDB imports and audit-bound event-label staging |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |
 | `protocol.py`, `configs/` | Frozen choices and integrity guards |
@@ -169,7 +181,8 @@ each research gate. The report will describe measured outcomes, including nulls.
 
 ## Next milestone
 
-Review the 21 resolved-sample annual pairs and source-method transitions,
-rerun the broader parser pilot, and verify historical market-data access. Build and audit
-the historical universe and market joins before running real development experiments.
+Review the initial 30-pair sample and all registered reference boundaries, including
+the source-method transitions. Obtain a small authorized market export and its exact
+data dictionary, then build and audit the historical universe, joins and pre-event
+controls before running real development experiments.
 Select and audit a semantic checkpoint before unlocking the primary final evaluation.

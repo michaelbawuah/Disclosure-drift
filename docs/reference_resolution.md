@@ -80,8 +80,9 @@ Outputs include `outputs/reference_verification.json`,
 annual-pair review sample. Source data remain under ignored `data/` directories.
 Unknown SEC/network failures remain visible; forbidden responses are not retried.
 
-This is a targeted 24-filing regression sample. The complete 155-filing pilot has
-not been rerun with this revision. Review all 21 annual pairs, especially the
+This command retains the targeted 24-filing regression sample. The subsequent
+[milestone 04](../reports/MILESTONE_04.md) also verifies the complete 155-filing pilot
+with `make pilot-resolved-reproduce`. Review all 21 targeted annual pairs, especially the
 method transitions, before using the resolved texts in a prepared research table.
 Human review, historical market data, development selection and the final test's
 other prerequisites remain pending.

@@ -126,3 +126,21 @@ of the study remain pending. No financial predictive finding is claimed.
 - Restrict market imports to the development label horizon, including the small
   early-2022 tail needed by late-2021 filings. Reject final-period filing events
   before loading return values. The primary protocol and final gate are unchanged.
+
+## 2026-10-09 - Complete source comparison and checkpoint 04
+
+- Rebuild all 155 original filings from the 20-issuer pilot with zero ingestion
+  failures. A fresh offline audit accepts all 155 automated evidence records and
+  produces 135 annual pairs. Human review is still pending for every filing.
+- Match every original filing/header hash to milestone 02. Preserve all 141
+  unregistered text hashes and every original event date; reproduce all 14
+  registered risk sections. Retain 72 API/header timestamp cautions and the
+  three source-method transitions. Disney's missing first predecessor stays excluded.
+- Export 135 events bound to the audit's filing, pair and evidence hashes, without
+  attaching any market returns. Publish the full source review packet and a
+  deterministic initial sample of 30 pairs.
+- Code commit 7653be88 passes 103 tests, lint, the protocol lock and both synthetic
+  examples in the cloud, on the owner's Mac and in GitHub Actions. Source-data
+  reproduction runs in the cloud; the Mac's earlier SEC HTTP 403 is not retried.
+- No actual market export or vendor mapping has been verified. Next obtain an
+  authorized sample and its dictionary, then audit historical selection and controls.
