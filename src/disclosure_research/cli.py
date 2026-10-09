@@ -15,6 +15,7 @@ from .audit import build_audit
 from .ingest import ingest_smoke
 from .modeling import development_comparison
 from .protocol import load_protocol, verify_lock, write_lock
+from .references import load_reference_rules
 from .timing import event_window
 
 
@@ -48,12 +49,18 @@ def main(argv=None) -> int:
     ingest.add_argument("--companies", default="configs/smoke_companies.json")
     ingest.add_argument("--output", default="data/processed/smoke")
     ingest.add_argument("--cache", default="data/raw/sec_cache")
+    ingest_rules = ingest.add_mutually_exclusive_group()
+    ingest_rules.add_argument("--resolutions", default="configs/section_resolutions.json")
+    ingest_rules.add_argument("--no-resolutions", action="store_true", help="Reproduce the numbered-section baseline")
     audit = commands.add_parser("audit", help="Build offline source evidence and a review packet")
     audit.add_argument("--filings", default="data/processed/smoke/filings.parquet")
     audit.add_argument("--cache", default="data/raw/sec_cache")
     audit.add_argument("--output", default="outputs/audit-smoke")
     audit.add_argument("--reviews", help="Completed review JSONL; generated templates are never sign-off")
     audit.add_argument("--pairs", help="Optional paired table; defaults to the filings table's sibling")
+    audit_rules = audit.add_mutually_exclusive_group()
+    audit_rules.add_argument("--resolutions", default="configs/section_resolutions.json")
+    audit_rules.add_argument("--no-resolutions", action="store_true", help="Audit the numbered-section baseline")
     demo = commands.add_parser("demo", help="Run the development pipeline on invented fixtures")
     demo.add_argument("--output", default="outputs/demo")
     develop = commands.add_parser("develop", help="Run annual development folds on a prepared Parquet dataset")
@@ -69,8 +76,9 @@ def main(argv=None) -> int:
         return 0
     verify_lock(config, lock)
     if args.command == "audit":
+        resolutions = None if args.no_resolutions else args.resolutions
         summary = build_audit(args.filings, args.cache, args.output,
-                              config["development_end"], args.reviews, args.pairs)
+                              config["development_end"], args.reviews, args.pairs, resolutions)
         print(json.dumps(summary, indent=2))
         return 1 if summary["filings_with_blocking_issues"] else 0
     if args.command == "ingest":
@@ -78,7 +86,8 @@ def main(argv=None) -> int:
         if companies["filing_year_end"] > config["development_end"]:
             parser.error("This milestone's ingestion command is restricted to development years")
         client = SecClient(args.cache, os.environ.get("SEC_USER_AGENT", ""))
-        summary = ingest_smoke(companies, client, args.output)
+        resolutions = None if args.no_resolutions else args.resolutions
+        summary = ingest_smoke(companies, client, args.output, load_reference_rules(resolutions))
         print(json.dumps(summary, indent=2))
         return 1 if summary["failures"] else 0
     if args.command in {"demo", "develop"}:

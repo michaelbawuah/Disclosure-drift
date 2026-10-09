@@ -114,5 +114,11 @@ def pair_filings(records: list[dict], start_year: int, end_year: int) -> tuple[l
                           "reference_session": current["reference_session"],
                           "label_end": current["label_end"],
                           "source_url": current["source_url"],
-                          "previous_source_url": previous["source_url"]})
+                          "previous_source_url": previous["source_url"],
+                          "risk_source_url": current.get("risk_source_url", current["source_url"]),
+                          "previous_risk_source_url": previous.get("risk_source_url", previous["source_url"]),
+                          "resolution_method": current.get("resolution_method", "numbered_item1a"),
+                          "previous_resolution_method": previous.get("resolution_method", "numbered_item1a"),
+                          "resolution_method_changed": current.get("resolution_method", "numbered_item1a") !=
+                          previous.get("resolution_method", "numbered_item1a")})
     return pairs, excluded

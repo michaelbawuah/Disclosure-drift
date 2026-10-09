@@ -1,0 +1,27 @@
+{
+  "purpose": "Reference-resolution development pilot: JNJ, Intel and GE filing years 2014-2021. This is a targeted parser sample, not an investment universe.",
+  "discovery_source": "https://www.sec.gov/files/company_tickers.json",
+  "filing_year_start": 2014,
+  "filing_year_end": 2021,
+  "pair_year_start": 2015,
+  "pair_year_end": 2021,
+  "companies": [
+    {
+      "name": "JOHNSON & JOHNSON",
+      "ticker": "JNJ",
+      "cik": "0000200406"
+    },
+    {
+      "name": "INTEL CORP",
+      "ticker": "INTC",
+      "cik": "0000050863"
+    },
+    {
+      "name": "GENERAL ELECTRIC CO",
+      "ticker": "GE",
+      "cik": "0000040545"
+    }
+  ],
+  "discovery_sha256": "bb1521ff938ce1217343362f335aae521d9978b105229eabef69124ac24bbb1c",
+  "discovery_fetched_at": "2026-10-09T20:53:44.334395+00:00"
+}

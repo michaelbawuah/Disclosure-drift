@@ -1,7 +1,7 @@
 UV ?= uv
 .DEFAULT_GOAL := help
 
-.PHONY: help sync check status demo reproduce ingest audit pilot-ingest pilot-audit
+.PHONY: help sync check status demo reproduce ingest audit pilot-ingest pilot-audit reference-reproduce
 
 help:
 	@printf '%s\n' \
@@ -12,7 +12,8 @@ help:
 	  'make ingest     Download/cache the SEC sample; requires SEC_USER_AGENT' \
 	  'make audit      Build the offline audit packet for the five-issuer sample' \
 	  'make pilot-ingest  Download/cache the 20-issuer development pilot' \
-	  'make pilot-audit   Build the expanded pilot audit packet'
+	  'make pilot-audit   Build the expanded pilot audit packet' \
+	  'make reference-reproduce  Rebuild and compare the 24-filing reference-resolution pilot'
 
 sync:
 	$(UV) sync --locked
@@ -42,3 +43,9 @@ pilot-ingest: sync
 
 pilot-audit: sync
 	$(UV) run --locked --no-sync disclosure audit --filings data/processed/pilot/filings.parquet --output outputs/audit-pilot
+
+reference-reproduce: sync
+	$(UV) run --locked --no-sync disclosure ingest --companies configs/reference_companies.json --no-resolutions --output data/processed/references-baseline
+	$(UV) run --locked --no-sync disclosure ingest --companies configs/reference_companies.json --output data/processed/references
+	$(UV) run --locked --no-sync disclosure audit --filings data/processed/references/filings.parquet --output outputs/audit-references
+	$(UV) run --locked --no-sync python scripts/verify_reference_pilot.py

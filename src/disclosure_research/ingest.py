@@ -9,11 +9,12 @@ import duckdb
 import pandas as pd
 
 from .edgar import SecClient, list_original_filings
-from .extraction import extract_risk_factors, pair_filings
+from .extraction import pair_filings
+from .references import resolve_section
 from .timing import acceptance_from_header, event_window
 
 
-def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
+def ingest_smoke(config: dict, client: SecClient, output: str | Path, rules: dict | None = None) -> dict:
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     records, failures = [], []
@@ -32,7 +33,8 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
             accession = filing["accessionNumber"]
             try:
                 raw, provenance = client.fetch(filing["source_url"])
-                extracted = extract_risk_factors(raw)
+                resolved = resolve_section(raw, filing["source_url"], accession, rules or {}, client.fetch)
+                extracted = resolved.extraction
                 header_status = "sgml_header"
                 header_hash = None
                 try:
@@ -64,6 +66,7 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
                                 "risk_token_count": extracted.token_count, "extraction_reason": extracted.reason,
                                 "candidate_count": extracted.candidate_count,
                                 "extraction_version": extracted.version,
+                                **resolved.provenance(),
                                 **{k: v for k, v in asdict(window).items() if k != "return_sessions"}})
                 print(f"  {accession}: {extracted.status}, {extracted.token_count} tokens", flush=True)
             except Exception as exc:
@@ -98,6 +101,7 @@ def ingest_smoke(config: dict, client: SecClient, output: str | Path) -> dict:
                "filings_downloaded": len(records), "automated_extraction_ok": sum(r["extraction_status"] == "ok" for r in records),
                "pairs_ready_for_manual_review": len(pairs), "excluded_pairs": exclusions,
                "network_requests_this_run": client.network_requests, "failures": failures,
+               "reference_resolutions": sum(r.get("resolution_method") != "numbered_item1a" for r in records),
                "manual_audit": "pending", "market_returns": "not_loaded",
                "empirical_predictive_results": "none"}
     (output / "ingestion_summary.json").write_text(json.dumps(summary, indent=2) + "\n")

@@ -11,7 +11,8 @@ import duckdb
 import pandas as pd
 from lxml.etree import ParserError
 
-from .extraction import VERSION, clean_html, extract_risk_factors
+from .extraction import clean_html, pair_filings
+from .references import load_reference_rules, resolve_section
 from .timing import acceptance_from_header, event_window
 
 
@@ -62,7 +63,7 @@ def load_reviews(path: str | Path | None) -> dict:
     return reviews
 
 
-def filing_evidence(row: dict, cache: Path, review: dict | None = None) -> dict:
+def filing_evidence(row: dict, cache: Path, review: dict | None = None, rules: dict | None = None) -> dict:
     issues, cautions = [], ["public_dissemination_unverified"]
     item = {"accession": row["accessionNumber"], "cik": row["cik"], "name": row["name"],
             "filing_date": row["filingDate"], "report_date": row["reportDate"],
@@ -74,18 +75,37 @@ def filing_evidence(row: dict, cache: Path, review: dict | None = None) -> dict:
             "acceptance_timestamp": row["acceptance_timestamp"],
             "api_timestamp": str(row.get("acceptanceDateTime", "")),
             "reference_session": row["reference_session"], "label_end": row["label_end"],
+            "controls_through": row["controls_through"],
             "extraction_status": row["extraction_status"],
             "api_header_difference_seconds": None,
             "verified_source": False, "verified_header": False,
             "start_context": "", "section_start": "", "section_end": "", "end_context": ""}
     header_hash = row.get("header_sha256")
     item["header_sha256"] = header_hash if isinstance(header_hash, str) else ""
+    item.update(risk_source_url=row.get("risk_source_url", row["source_url"]),
+                risk_source_sha256=row.get("risk_source_sha256", row["download_sha256"]),
+                resolution_method=row.get("resolution_method", "numbered_item1a"),
+                resolution_rule_id=row.get("resolution_rule_id", ""),
+                resolution_index_url=row.get("resolution_index_url", ""),
+                resolution_index_sha256=row.get("resolution_index_sha256", ""),
+                extraction_start=None, extraction_end=None, normalizer_version="",
+                verified_risk_source=False)
+
+    def fetch_cached(url):
+        metadata = json.loads((cache / f"{digest(url)}.json").read_text())
+        return cached_body(cache, url, metadata["sha256"]), metadata
+
     try:
         raw = cached_body(cache, row["source_url"], row["download_sha256"])
         item["verified_source"] = True
-        extracted = extract_risk_factors(raw)
-        normalized = clean_html(raw)
-        if row["extraction_version"] != VERSION:
+        resolved = resolve_section(raw, row["source_url"], row["accessionNumber"], rules or {}, fetch_cached)
+        extracted = resolved.extraction
+        normalized = resolved.normalized_source if resolved.normalized_source is not None else clean_html(raw)
+        expected = resolved.provenance()
+        if any(key in row and row[key] != value for key, value in expected.items()):
+            issues.append("stored_resolution_differs_from_sources")
+        item.update(expected, verified_risk_source=True)
+        if row["extraction_version"] != extracted.version:
             issues.append("parser_version_changed")
         if extracted.text != row["risk_text"] or extracted.token_count != row["risk_token_count"]:
             issues.append("stored_extraction_differs_from_source")
@@ -124,7 +144,10 @@ def filing_evidence(row: dict, cache: Path, review: dict | None = None) -> dict:
         item["header_error"] = str(exc)
     fingerprint_fields = ["accession", "source_url", "header_url", "download_sha256", "header_sha256",
                           "extraction_version", "risk_text_sha256", "acceptance_timestamp",
-                          "api_timestamp", "reference_session", "label_end"]
+                          "api_timestamp", "reference_session", "label_end", "controls_through",
+                          "risk_source_url", "risk_source_sha256", "resolution_method", "resolution_rule_id",
+                          "resolution_index_url", "resolution_index_sha256", "extraction_start", "extraction_end",
+                          "normalizer_version"]
     item["evidence_id"] = digest(json.dumps({k: item[k] for k in fingerprint_fields}, sort_keys=True))
     item.update(review_status="pending", boundary_verdict="pending", timing_verdict="pending",
                 reviewer_type="", human_review_complete=False, assistant_review_complete=False)
@@ -148,6 +171,12 @@ def filing_evidence(row: dict, cache: Path, review: dict | None = None) -> dict:
 
 
 def render_html(records: list[dict], summary: dict) -> str:
+    def link(url, label):
+        parsed = urlparse(url)
+        if parsed.scheme != "https" or parsed.netloc not in {"www.sec.gov", "data.sec.gov"}:
+            return escape(label) + " (unverified URL)"
+        return f'<a href="{escape(url, quote=True)}">{escape(label)}</a>'
+
     cards = []
     for row in records:
         checks = ", ".join(row["blocking_issues"] + row["cautions"])
@@ -156,9 +185,12 @@ def render_html(records: list[dict], summary: dict) -> str:
             ("section_end", "Section ending"), ("end_context", "After the extracted section")])
         cards.append(f'''<details><summary>{escape(row['name'])} · {escape(row['filing_date'])}
             · {row['risk_token_count']:,} tokens · review {escape(row['review_status'])}</summary>
-            <p><a href="{escape(row['source_url'], quote=True)}">Full SEC filing</a> ·
-            <a href="{escape(row['header_url'], quote=True)}">SGML header</a></p>
+            <p>{link(row['source_url'], 'Full SEC filing')} ·
+            {link(row['header_url'], 'SGML header')} ·
+            {link(row['risk_source_url'], 'Risk disclosure source')}
+            {' · ' + link(row['resolution_index_url'], 'Original filing index') if row['resolution_index_url'] else ''}</p>
             <dl><dt>Accession</dt><dd>{escape(row['accession'])}</dd>
+            <dt>Extraction method</dt><dd>{escape(row['resolution_method'])}</dd>
             <dt>Header interpretation</dt><dd>{escape(row['acceptance_timestamp'])}</dd>
             <dt>Raw API timestamp</dt><dd>{escape(row['api_timestamp'])}</dd>
             <dt>Reference / label-end sessions</dt><dd>{escape(row['reference_session'])} / {escape(row['label_end'])}</dd>
@@ -183,6 +215,8 @@ def select_review_pairs(pairs: pd.DataFrame, count: int = 30, seed: int = 202610
     """Cover issuers first, then fill by a stable hash; no returns enter selection."""
     columns = ["cik", "accession", "previous_accession", "acceptance_date",
                "source_url", "previous_source_url"]
+    columns += [key for key in ["risk_source_url", "previous_risk_source_url", "resolution_method",
+                               "previous_resolution_method", "resolution_method_changed"] if key in pairs]
     if count < 1 or pairs["accession"].duplicated().any():
         raise ValueError("Review selection needs a positive count and unique pair accessions")
     ranked = pairs[columns].copy()
@@ -196,29 +230,47 @@ def select_review_pairs(pairs: pd.DataFrame, count: int = 30, seed: int = 202610
 
 def build_audit(filings: str | Path, cache: str | Path, output: str | Path,
                 development_end: int, reviews: str | Path | None = None,
-                pairs: str | Path | None = None) -> dict:
+                pairs: str | Path | None = None, resolutions: str | Path | None = None) -> dict:
     frame = pd.read_parquet(filings)
     if frame.empty or frame["accessionNumber"].duplicated().any():
         raise ValueError("Audit requires nonempty filings with unique accessions")
     if frame["acceptance_date"].map(lambda x: int(x[:4])).max() > development_end:
         raise ValueError("This audit command accepts development-year filings only")
     review_map = load_reviews(reviews)
+    rules = load_reference_rules(resolutions)
     if set(review_map) - set(frame["accessionNumber"]):
         raise ValueError("Review file includes accessions outside the supplied filing table")
-    rows = [filing_evidence(row, Path(cache), review_map.get(row["accessionNumber"]))
+    rows = [filing_evidence(row, Path(cache), review_map.get(row["accessionNumber"]), rules)
             for row in frame.sort_values(["cik", "acceptance_date"]).to_dict("records")]
     pairs_path = Path(pairs) if pairs is not None else Path(filings).with_name("filing_pairs.parquet")
     pair_count, selected = 0, None
     if pairs_path.exists():
         pair_frame = pd.read_parquet(pairs_path)
         known = frame.set_index("accessionNumber")
+        canonical, _ = pair_filings(frame.to_dict("records"),
+                                    frame["acceptance_date"].str[:4].astype(int).min(), development_end)
+        canonical = {pair["accession"]: pair for pair in canonical}
         for pair in pair_frame.to_dict("records"):
             if pair["accession"] not in known.index or pair["previous_accession"] not in known.index:
                 raise ValueError("Pair references a filing outside the audited source table")
             current, previous = known.loc[pair["accession"]], known.loc[pair["previous_accession"]]
+            expected_pair = canonical.get(pair["accession"])
+            if expected_pair is None or expected_pair["previous_accession"] != pair["previous_accession"]:
+                raise ValueError("Pair must use consecutive eligible original annual filings")
             if (current["cik"] != pair["cik"] or previous["cik"] != pair["cik"] or
                     current["acceptance_date"] != pair["acceptance_date"]):
                 raise ValueError("Pair identity or timing differs from the audited filing table")
+            for paired_key, filing_key, source_row in [
+                    ("current_text", "risk_text", current), ("previous_text", "risk_text", previous),
+                    ("reference_session", "reference_session", current), ("label_end", "label_end", current),
+                    ("source_url", "source_url", current), ("previous_source_url", "source_url", previous),
+                    ("previous_acceptance_date", "acceptance_date", previous)]:
+                if pair[paired_key] != source_row[filing_key]:
+                    raise ValueError("Pair text, source or dates differ from the audited filing table")
+            for key in ["risk_source_url", "previous_risk_source_url", "resolution_method",
+                        "previous_resolution_method", "resolution_method_changed"]:
+                if key in pair and pair[key] != expected_pair[key]:
+                    raise ValueError("Pair resolution provenance differs from the audited filing table")
         pair_count = len(pair_frame)
         selected = select_review_pairs(pair_frame)
     elif pairs is not None:
@@ -240,6 +292,7 @@ def build_audit(filings: str | Path, cache: str | Path, output: str | Path,
                "timestamp_disagreements": sum("api_header_timestamp_disagreement" in r["cautions"] for r in rows),
                "human_reviews_complete": sum(r["human_review_complete"] for r in rows),
                "assistant_reviews_complete": sum(r["assistant_review_complete"] for r in rows),
+               "reference_resolutions": sum(r["resolution_method"] != "numbered_item1a" for r in rows),
                "source_table_sha256": digest(Path(filings).read_bytes()),
                "manual_audit": "complete" if all(r["human_review_complete"] for r in rows) else "pending",
                "dissemination_verification": "pending; second-session proxy remains explicit",

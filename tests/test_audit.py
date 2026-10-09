@@ -7,7 +7,7 @@ import pytest
 
 from disclosure_research.audit import build_audit, load_reviews, select_review_pairs
 from disclosure_research.edgar import SecClient
-from disclosure_research.extraction import extract_risk_factors
+from disclosure_research.extraction import extract_risk_factors, pair_filings
 from disclosure_research.timing import acceptance_from_header, event_window
 
 
@@ -132,4 +132,39 @@ def test_pair_table_cannot_reference_unrelated_filings(audit_input):
     paired = audit_input["filings"].with_name("filing_pairs.parquet")
     pd.DataFrame([{"accession": "unknown", "previous_accession": "also-unknown"}]).to_parquet(paired)
     with pytest.raises(ValueError, match="outside the audited"):
+        build_audit(**audit_input)
+
+
+@pytest.mark.parametrize("corruption", ["text", "skip_previous", "source"])
+def test_pair_audit_rejects_corruption_even_when_sources_are_valid(audit_input, corruption):
+    original = pd.read_parquet(audit_input["filings"]).iloc[0].to_dict()
+    records = []
+    for year in [2017, 2018, 2019]:
+        header = f"<ACCEPTANCE-DATETIME>{year}0301100000".encode()
+        header_url = f"https://www.sec.gov/Archives/example/header{year}.sgml"
+        client = SecClient(audit_input["cache"], "Test test@example.org", sleep=lambda _: None,
+                           transport=httpx.MockTransport(lambda r: httpx.Response(200, content=header)))
+        _, metadata = client.fetch(header_url)
+        accepted = acceptance_from_header(header.decode())
+        window = event_window(accepted)
+        records.append({**original, "accessionNumber": f"0000000123-{str(year)[2:]}-000001",
+                        "filingDate": f"{year}-03-01", "reportDate": f"{year - 1}-12-31",
+                        "header_url": header_url, "header_sha256": metadata["sha256"],
+                        "acceptance_timestamp": accepted.isoformat(),
+                        "acceptanceDateTime": f"{year}-03-01T15:00:00Z",
+                        **{k: v for k, v in asdict(window).items() if k != "return_sessions"}})
+    pd.DataFrame(records).to_parquet(audit_input["filings"], index=False)
+    pairs, _ = pair_filings(records, 2018, 2019)
+    path = audit_input["filings"].with_name("filing_pairs.parquet")
+    pd.DataFrame(pairs).to_parquet(path, index=False)
+    assert build_audit(**audit_input)["automated_evidence_ok"] == 3
+    if corruption == "text":
+        pairs[-1]["current_text"] = "Text that never appeared in the filing"
+    elif corruption == "skip_previous":
+        pairs[-1]["previous_accession"] = records[0]["accessionNumber"]
+        pairs[-1]["previous_acceptance_date"] = records[0]["acceptance_date"]
+    else:
+        pairs[-1]["risk_source_url"] = "https://www.sec.gov/unrelated-source.htm"
+    pd.DataFrame(pairs).to_parquet(path, index=False)
+    with pytest.raises(ValueError, match="Pair"):
         build_audit(**audit_input)

@@ -92,3 +92,21 @@ of the study remain pending. No financial predictive finding is claimed.
   explicit. Add and audit a section-reference resolver in a later parser revision.
 - Publishing this engineering evidence does not complete human review, establish
   a historical investment universe, or open the final evaluation period.
+
+## 2026-10-09 - Source-bound reference resolution
+
+- Recover 24 source filings and headers for J&J, Intel and GE after workspace
+  maintenance cleared the ignored cache. Require their hashes and baseline text
+  hashes to match the previously published milestone 02 manifest.
+- Register explicit normalized text ranges for 11 same-document page references
+  and three incorporated J&J Exhibit 99 documents. Pin source bytes and text hashes;
+  verify each exhibit's unique typed entry in its original accession index.
+- Keep original acceptance timing and all ten unaffected texts unchanged. Retain
+  the source-method transition on each annual pair for review. No new statistical
+  predictor or outcome-dependent selection rule is introduced.
+- Bind reviews to the resolution rules as well as source hashes. Verify paired
+  texts, source metadata and immediate annual predecessors against audited filings.
+- Treat the 24-filing comparison as a targeted regression sample. It does not
+  replace a rerun of the full 155-filing pilot or a human boundary/timing audit.
+- The local full reproduction passes 70 tests. Market-return data and 2022-2025
+  forecast outcomes have not been loaded. The primary protocol remains unchanged.
