@@ -13,6 +13,9 @@ import pandas as pd
 from .edgar import SecClient
 from .audit import build_audit
 from .ingest import ingest_smoke
+from .labels import export_label_events, prepare_labels
+from .market_data import import_market
+from .market_demo import run_demo as market_demo
 from .modeling import development_comparison
 from .protocol import load_protocol, verify_lock, write_lock
 from .references import load_reference_rules
@@ -66,6 +69,20 @@ def main(argv=None) -> int:
     develop = commands.add_parser("develop", help="Run annual development folds on a prepared Parquet dataset")
     develop.add_argument("--dataset", required=True)
     develop.add_argument("--output", default="outputs/development")
+    market_import = commands.add_parser("import-market", help="Validate a normalized development market bundle")
+    market_import.add_argument("--manifest", required=True)
+    market_import.add_argument("--output", required=True, help="New output directory; existing imports are preserved")
+    event_export = commands.add_parser("export-label-events", help="Export an event queue from a fresh source audit")
+    event_export.add_argument("--filings", required=True)
+    event_export.add_argument("--pairs", required=True)
+    event_export.add_argument("--audit", required=True, help="Directory containing the matching offline audit")
+    event_export.add_argument("--output", required=True, help="New Parquet event-queue path")
+    labels = commands.add_parser("prepare-labels", help="Stage development labels for data QA, not model selection")
+    labels.add_argument("--events", required=True)
+    labels.add_argument("--market", required=True, help="Validated import directory")
+    labels.add_argument("--output", required=True, help="New output directory")
+    market_demo_command = commands.add_parser("market-demo", help="Verify invented imports and delisting labels")
+    market_demo_command.add_argument("--output", default="outputs/market-demo")
     commands.add_parser("status", help="Show research gates; contains no private account probes")
     commands.add_parser("evaluate-final", help="Show the requirements for final test access")
     args = parser.parse_args(argv)
@@ -75,6 +92,20 @@ def main(argv=None) -> int:
         print(json.dumps(write_lock(config, lock), indent=2))
         return 0
     verify_lock(config, lock)
+    if args.command == "import-market":
+        print(json.dumps(import_market(args.manifest, args.output, config), indent=2))
+        return 0
+    if args.command == "export-label-events":
+        summary = export_label_events(args.filings, args.pairs, args.audit, args.output, config)
+        print(json.dumps(summary, indent=2))
+        return 0
+    if args.command == "prepare-labels":
+        summary = prepare_labels(args.events, args.market, args.output, config)
+        print(json.dumps(summary, indent=2))
+        return 1 if summary["events_excluded"] else 0
+    if args.command == "market-demo":
+        print(json.dumps(market_demo(args.output, config), indent=2))
+        return 0
     if args.command == "audit":
         resolutions = None if args.no_resolutions else args.resolutions
         summary = build_audit(args.filings, args.cache, args.output,
@@ -102,6 +133,7 @@ def main(argv=None) -> int:
         print(json.dumps(selection, indent=2))
         return 0
     gates = {"protocol": "locked", "market_data_access": "requires Cornell WRDS verification and normalized exports",
+             "market_import_and_label_staging": "implemented; verified only with invented market data",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "pending before final test access",
              "final_2022_2025_evaluation": "blocked; no empirical result exists"}

@@ -110,3 +110,19 @@ of the study remain pending. No financial predictive finding is claimed.
   replace a rerun of the full 155-filing pilot or a human boundary/timing audit.
 - The local full reproduction passes 70 tests. Market-return data and 2022-2025
   forecast outcomes have not been loaded. The primary protocol remains unchanged.
+
+## 2026-10-09 - Market-data import and label staging
+
+- Add an explicit normalized Parquet import with source/field declarations, hashes,
+  strict return and identity checks, and queryable DuckDB tables. No CRSP adapter
+  or account entitlement is presumed. Verify an actual export dictionary first.
+- Record return and benchmark conventions as declarations, not proven facts. Keep
+  raw missing codes upstream; reject missing values rather than convert them to zero.
+- Bind event exports to the complete source-audit inputs, including pair and
+  evidence hashes. Preserve pending human review. Reject duplicate annual pairs.
+- Keep labels in a separate engineering staging table without text predictors or
+  controls. Record every failed identity or return window as an exclusion. Synthetic
+  market data cannot be attached to real filing events.
+- Restrict market imports to the development label horizon, including the small
+  early-2022 tail needed by late-2021 filings. Reject final-period filing events
+  before loading return values. The primary protocol and final gate are unchanged.

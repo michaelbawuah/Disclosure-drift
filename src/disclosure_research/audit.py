@@ -246,6 +246,8 @@ def build_audit(filings: str | Path, cache: str | Path, output: str | Path,
     pair_count, selected = 0, None
     if pairs_path.exists():
         pair_frame = pd.read_parquet(pairs_path)
+        if pair_frame["accession"].duplicated().any():
+            raise ValueError("Pair table has duplicate current accessions")
         known = frame.set_index("accessionNumber")
         canonical, _ = pair_filings(frame.to_dict("records"),
                                     frame["acceptance_date"].str[:4].astype(int).min(), development_end)
@@ -300,6 +302,8 @@ def build_audit(filings: str | Path, cache: str | Path, output: str | Path,
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     evidence.to_parquet(output / "filing_evidence.parquet", index=False)
+    summary["evidence_table_sha256"] = digest((output / "filing_evidence.parquet").read_bytes())
+    summary["pair_table_sha256"] = digest(pairs_path.read_bytes()) if pairs_path.exists() else None
     coverage.to_parquet(output / "coverage.parquet", index=False)
     coverage.to_csv(output / "coverage.csv", index=False)
     if selected is not None:

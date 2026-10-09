@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "data_kind": "NORMALIZED_MARKET_DATA",
+  "provider": "",
+  "dataset": "",
+  "release": "",
+  "exported_at": "",
+  "source_documentation": "",
+  "normalization_notes": "",
+  "normalization_code_sha256": "",
+  "stock_return_convention": "",
+  "benchmark_convention": "",
+  "benchmark_description": "",
+  "raw_exports": [{"source_table": "", "sha256": ""}],
+  "tables": {
+    "daily_returns": {
+      "path": "daily_returns.parquet",
+      "sha256": "",
+      "field_mapping": {"security_id": "", "session": "", "total_return": "", "terminal_event": ""}
+    },
+    "market_returns": {
+      "path": "market_returns.parquet",
+      "sha256": "",
+      "field_mapping": {"session": "", "total_return": ""}
+    },
+    "security_links": {
+      "path": "security_links.parquet",
+      "sha256": "",
+      "field_mapping": {
+        "cik": "", "security_id": "", "valid_from": "", "valid_to": "",
+        "mapping_source": "", "class_selection_rule": ""
+      }
+    }
+  }
+}

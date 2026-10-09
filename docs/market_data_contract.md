@@ -5,6 +5,10 @@ export manifest with dataset/version, source field names, timestamps and hashes.
 This document is a target schema; it is not a claim that the WRDS export has already
 been obtained or mapped.
 
+The executable [import and label-staging workflow](market_import.md) implements the
+first three tables below. `configs/market_manifest.template.json` records the
+required provenance. The historical universe and prepared controls remain pending.
+
 ## Returns and benchmark
 
 `daily_returns.parquet` has `security_id`, `session` (ISO exchange date),

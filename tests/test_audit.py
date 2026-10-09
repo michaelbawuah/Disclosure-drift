@@ -8,6 +8,8 @@ import pytest
 from disclosure_research.audit import build_audit, load_reviews, select_review_pairs
 from disclosure_research.edgar import SecClient
 from disclosure_research.extraction import extract_risk_factors, pair_filings
+from disclosure_research.labels import export_label_events
+from disclosure_research.protocol import load_protocol
 from disclosure_research.timing import acceptance_from_header, event_window
 
 
@@ -135,7 +137,7 @@ def test_pair_table_cannot_reference_unrelated_filings(audit_input):
         build_audit(**audit_input)
 
 
-@pytest.mark.parametrize("corruption", ["text", "skip_previous", "source"])
+@pytest.mark.parametrize("corruption", ["text", "skip_previous", "source", "duplicate"])
 def test_pair_audit_rejects_corruption_even_when_sources_are_valid(audit_input, corruption):
     original = pd.read_parquet(audit_input["filings"]).iloc[0].to_dict()
     records = []
@@ -159,12 +161,21 @@ def test_pair_audit_rejects_corruption_even_when_sources_are_valid(audit_input, 
     pd.DataFrame(pairs).to_parquet(path, index=False)
     assert build_audit(**audit_input)["automated_evidence_ok"] == 3
     if corruption == "text":
+        exported = export_label_events(audit_input["filings"], path, audit_input["output"],
+                                       path.parent / "events.parquet", load_protocol())
+        assert exported["events"] == 2 and exported["human_pairs_reviewed"] == 0
+    if corruption == "text":
         pairs[-1]["current_text"] = "Text that never appeared in the filing"
     elif corruption == "skip_previous":
         pairs[-1]["previous_accession"] = records[0]["accessionNumber"]
         pairs[-1]["previous_acceptance_date"] = records[0]["acceptance_date"]
-    else:
+    elif corruption == "source":
         pairs[-1]["risk_source_url"] = "https://www.sec.gov/unrelated-source.htm"
+    else:
+        pairs.append(pairs[-1].copy())
     pd.DataFrame(pairs).to_parquet(path, index=False)
+    with pytest.raises(ValueError, match="fresh matching filing audit"):
+        export_label_events(audit_input["filings"], path, audit_input["output"],
+                            path.parent / "changed_events.parquet", load_protocol())
     with pytest.raises(ValueError, match="Pair"):
         build_audit(**audit_input)

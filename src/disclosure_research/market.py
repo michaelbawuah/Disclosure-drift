@@ -56,8 +56,11 @@ def make_label(stock: pd.DataFrame, benchmark: pd.DataFrame, window: EventWindow
             raise ValueError(f"Missing stock session {session} before terminal event")
         else:
             stock_values.append(float(stock.loc[session, "total_return"]))
-    stock_return = float(np.prod(1 + np.array(stock_values)) - 1)
-    market_return = float(np.prod(1 + np.array(market_values)) - 1)
+    with np.errstate(over="ignore", invalid="ignore"):
+        stock_return = float(np.prod(1 + np.array(stock_values)) - 1)
+        market_return = float(np.prod(1 + np.array(market_values)) - 1)
+    if not np.isfinite([stock_return, market_return, stock_return - market_return]).all():
+        raise ValueError("Compounded returns overflowed; verify source units and return values")
     return {"reference_session": window.reference_session, "label_end": window.label_end,
             "stock_return": stock_return, "market_return": market_return,
             "target": stock_return - market_return, "horizon_sessions": len(stock_values)}

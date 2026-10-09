@@ -1,7 +1,7 @@
 UV ?= uv
 .DEFAULT_GOAL := help
 
-.PHONY: help sync check status demo reproduce ingest audit pilot-ingest pilot-audit reference-reproduce
+.PHONY: help sync check status demo market-demo reproduce ingest audit pilot-ingest pilot-audit reference-reproduce pilot-resolved-reproduce
 
 help:
 	@printf '%s\n' \
@@ -9,11 +9,13 @@ help:
 	  'make check      Sync the lockfile, then run lint and tests' \
 	  'make status     Show the current research gates' \
 	  'make demo       Rebuild the synthetic engineering demonstration' \
+	  'make market-demo  Verify invented market imports, delisting labels and missing-data exclusions' \
 	  'make ingest     Download/cache the SEC sample; requires SEC_USER_AGENT' \
 	  'make audit      Build the offline audit packet for the five-issuer sample' \
 	  'make pilot-ingest  Download/cache the 20-issuer development pilot' \
 	  'make pilot-audit   Build the expanded pilot audit packet' \
-	  'make reference-reproduce  Rebuild and compare the 24-filing reference-resolution pilot'
+	  'make reference-reproduce  Rebuild and compare the 24-filing reference-resolution pilot' \
+	  'make pilot-resolved-reproduce  Rebuild and verify the complete 155-filing pilot with reference rules'
 
 sync:
 	$(UV) sync --locked
@@ -28,9 +30,13 @@ status: sync
 demo: sync
 	$(UV) run --locked --no-sync disclosure demo
 
+market-demo: sync
+	$(UV) run --locked --no-sync disclosure market-demo
+
 reproduce: check
 	$(UV) run --locked --no-sync disclosure status
 	$(UV) run --locked --no-sync disclosure demo
+	$(UV) run --locked --no-sync disclosure market-demo
 
 ingest: sync
 	$(UV) run --locked --no-sync disclosure ingest
@@ -49,3 +55,8 @@ reference-reproduce: sync
 	$(UV) run --locked --no-sync disclosure ingest --companies configs/reference_companies.json --output data/processed/references
 	$(UV) run --locked --no-sync disclosure audit --filings data/processed/references/filings.parquet --output outputs/audit-references
 	$(UV) run --locked --no-sync python scripts/verify_reference_pilot.py
+
+pilot-resolved-reproduce: sync
+	$(UV) run --locked --no-sync disclosure ingest --companies configs/pilot_companies.json --output data/processed/pilot-resolved
+	$(UV) run --locked --no-sync disclosure audit --filings data/processed/pilot-resolved/filings.parquet --output outputs/audit-pilot-resolved
+	$(UV) run --locked --no-sync python scripts/verify_expanded_pilot.py
