@@ -59,7 +59,7 @@ the evidence report. Cautions such as API timestamp disagreement are retained ev
 when source consistency passes. Dataset-wide review counts do not automatically
 unlock final-period evaluation or prove a statistical effect.
 
-## Known pilot issue: risks in exhibits
+## Known pilot issues: indirect risk disclosures
 
 Johnson & Johnson's 2014-2016 main-document Item 1A text directs readers to Exhibit
 99. The short extracted sections are flagged for review. Do not treat these as
@@ -67,3 +67,14 @@ missing risks, silent zero-length signals or a sudden economic change. An
 exhibit-resolution policy and additional provenance are required before including
 such texts in a comparable annual feature dataset. The current pipeline excludes
 annual pairs that depend on a flagged section.
+
+Intel's 2018-2021 filings and GE's 2015-2021 filings have numbered Item 1A entries
+that contain page references rather than the substantive risk discussion. The
+current parser flags those short index entries. Inspection of representative
+source documents located earlier risk discussions, but this checkpoint does not
+implement or approve their alternate boundaries. A source-aware index/section
+resolver and boundary review are required before admitting those annual pairs.
+
+These failures describe this parser's coverage. They are not evidence that the
+issuers omitted risk disclosures, and excluded examples must remain visible when
+reporting later selection and coverage effects.

@@ -77,3 +77,18 @@ of the study remain pending. No financial predictive finding is claimed.
   Keep affected pairs out until an explicit exhibit-resolution policy is audited.
 - Desktop Commander reconnected and ran the existing f09d687 checkpoint on the
   owner's Mac: Python 3.12.14, macOS arm64, 40 tests passed and synthetic demo completed.
+
+## 2026-10-09 - Expanded pilot findings and remote execution
+
+- The audit code at 10cbc067 passed 49 tests in the cloud, on the owner's Mac,
+  and in GitHub Actions. Local/Mac Python was 3.12.14; CI used 3.12.3.
+- The Mac's SEC smoke download received five HTTP 403 responses and retrieved no
+  filings. No forbidden response was retried. Public-source pilot evidence comes
+  from the successful cloud ingestion; Mac execution verifies the code and demo.
+- Preserve the first pilot summary, which used the original in-memory XOM discovery
+  CIK, then rerun the corrected configuration against the existing cache.
+- Intel 2018-2021 and GE 2015-2021 have short Item 1A index entries pointing to
+  substantive sections elsewhere. Keep those failed extractions and affected pairs
+  explicit. Add and audit a section-reference resolver in a later parser revision.
+- Publishing this engineering evidence does not complete human review, establish
+  a historical investment universe, or open the final evaluation period.

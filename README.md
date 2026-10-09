@@ -15,15 +15,17 @@ timing, train-only text features, normalized-return label calculations, ridge
 development comparisons, and paired month-block confidence intervals. Real return
 data and the final empirical evaluation remain pending. The demo is entirely synthetic.
 
-| Milestone 01 evidence | Status |
+| Milestone 02 evidence | Status |
 |---|---|
-| Real SEC extraction sample | 20 original filings; 15 annual pairs |
-| Local research-integrity tests | 36 passed |
-| Filing boundary and timestamp audit | Human review pending |
+| Expanded SEC parser pilot | 155 filings across 20 issuers; 121 annual pairs |
+| Research-integrity checks | 49 tests passed locally, on macOS and in GitHub Actions |
+| Source/extraction flags | 14 filings require review; affected pairs excluded |
+| Filing boundary and timestamp audit | Human review pending; 30 review pairs selected |
 | Empirical return results | Pending historical market data |
 
-See the [milestone report](reports/MILESTONE_01.md) and
-[verification record](reports/milestone_01.json) for evidence and limitations.
+See the [current milestone report](reports/MILESTONE_02.md) and
+[verification record](reports/milestone_02.json) for evidence and limitations.
+The [foundation checkpoint](reports/MILESTONE_01.md) is retained as a historical record.
 
 **Stack:** Python 3.12, pandas, Parquet, DuckDB, httpx, lxml, scikit-learn and NumPy.
 See [technology choices](docs/technology_stack.md) for the implemented tools and
@@ -159,6 +161,7 @@ each research gate. The report will describe measured outcomes, including nulls.
 
 ## Next milestone
 
-Complete the five-company manual boundary/timing audit, verify market-data access,
-then expand the parser pilot to 100-150 development-year filing pairs. Select and
-audit a semantic checkpoint before unlocking the primary final evaluation.
+Review the selected annual pairs and all flagged documents in the expanded pilot,
+resolve exhibit handling, and verify historical market-data access. Build and audit
+the historical universe and market joins before running real development experiments.
+Select and audit a semantic checkpoint before unlocking the primary final evaluation.

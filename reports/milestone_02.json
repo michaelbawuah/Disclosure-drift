@@ -1,0 +1,409 @@
+{
+  "milestone": "02-filing-audit",
+  "date": "2026-10-09",
+  "tested_code_commit": "10cbc067748e2a931aac1ff311785dc03618405c",
+  "sample_role": "Purposive document-format pilot only; current ticker discovery is not a historical investment universe. No market returns used.",
+  "config_sha256": "e339f3e9c67496eef65bda1e8301605fe11e46a4241dd0e56fa7aa88c23fbb43",
+  "ingestion": {
+    "sample_type": "Purposive document-format pilot only; current ticker discovery is not a historical investment universe. No market returns used.",
+    "companies_requested": 20,
+    "filings_downloaded": 155,
+    "automated_extraction_ok": 141,
+    "pairs_ready_for_manual_review": 121,
+    "excluded_pairs": [
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-15-000004",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-16-000071",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-17-000006",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-18-000007",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-19-000007",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-20-000011",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-21-000010",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0001744489",
+        "accession": "0001744489-19-000225",
+        "reason": "missing_previous_original_filing"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-15-000030",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-16-000145",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-17-000010",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-18-000014",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-19-000014",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-20-000009",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-21-000011",
+        "reason": "current_or_previous_extraction_requires_review"
+      }
+    ],
+    "network_requests_this_run": 8,
+    "failures": [],
+    "manual_audit": "pending",
+    "market_returns": "not_loaded",
+    "empirical_predictive_results": "none"
+  },
+  "audit": {
+    "filings": 155,
+    "issuers": 20,
+    "annual_pairs": 121,
+    "pairs_selected_for_review": 30,
+    "automated_evidence_ok": 141,
+    "filings_with_blocking_issues": 14,
+    "timestamp_disagreements": 72,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "source_table_sha256": "65ebbcdef18f7975a1f304fa17489008cb5b9e2fd16a55eb15d844eacdb54d4d",
+    "manual_audit": "pending",
+    "dissemination_verification": "pending; second-session proxy remains explicit",
+    "market_returns_used": false
+  },
+  "flagged_filings": [
+    {
+      "accession": "0000040545-15-000030",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2015-02-27",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000030/ge10k2014.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-16-000145",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2016-02-26",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054516000145/ge10k2015.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-17-000010",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2017-02-24",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054517000010/ge10k2016.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-18-000014",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2018-02-23",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054518000014/ge10-k2017.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-19-000014",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2019-02-26",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054519000014/ge10-k2018.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-20-000009",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2020-02-24",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054520000009/ge10-k2019.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000040545-21-000011",
+      "cik": "0000040545",
+      "name": "GENERAL ELECTRIC CO",
+      "filing_date": "2021-02-12",
+      "risk_token_count": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054521000011/ge-20201231.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000050863-18-000007",
+      "cik": "0000050863",
+      "name": "INTEL CORP",
+      "filing_date": "2018-02-16",
+      "risk_token_count": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086318000007/a12302017q4-10kdocument.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000050863-19-000007",
+      "cik": "0000050863",
+      "name": "INTEL CORP",
+      "filing_date": "2019-02-01",
+      "risk_token_count": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086319000007/a12292018q4-10kdocument.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000050863-20-000011",
+      "cik": "0000050863",
+      "name": "INTEL CORP",
+      "filing_date": "2020-01-24",
+      "risk_token_count": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000011/a12282019q4-10kdocument.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000050863-21-000010",
+      "cik": "0000050863",
+      "name": "INTEL CORP",
+      "filing_date": "2021-01-22",
+      "risk_token_count": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000010/intc-20201226.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000200406-14-000033",
+      "cik": "0000200406",
+      "name": "JOHNSON & JOHNSON",
+      "filing_date": "2014-02-21",
+      "risk_token_count": 34,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040614000033/a2013122910-k.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000200406-15-000004",
+      "cik": "0000200406",
+      "name": "JOHNSON & JOHNSON",
+      "filing_date": "2015-02-24",
+      "risk_token_count": 80,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040615000004/a2014122810-k.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    },
+    {
+      "accession": "0000200406-16-000071",
+      "cik": "0000200406",
+      "name": "JOHNSON & JOHNSON",
+      "filing_date": "2016-02-24",
+      "risk_token_count": 78,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040616000071/form10-k20160103.htm",
+      "issues": [
+        "extraction_requires_review"
+      ]
+    }
+  ],
+  "issuers_with_eligible_pairs": 19,
+  "issuers_in_review_sample": 19,
+  "missing_filing_years": [
+    {
+      "cik": "0001744489",
+      "name": "Walt Disney Co",
+      "missing_filing_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    }
+  ],
+  "initial_run": {
+    "sample_type": "Purposive document-format pilot only; current ticker discovery is not a historical investment universe. No market returns used.",
+    "companies_requested": 20,
+    "filings_downloaded": 147,
+    "automated_extraction_ok": 133,
+    "pairs_ready_for_manual_review": 114,
+    "excluded_pairs": [
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-15-000004",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-16-000071",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000200406",
+        "accession": "0000200406-17-000006",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-18-000007",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-19-000007",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-20-000011",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000050863",
+        "accession": "0000050863-21-000010",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0001744489",
+        "accession": "0001744489-19-000225",
+        "reason": "missing_previous_original_filing"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-15-000030",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-16-000145",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-17-000010",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-18-000014",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-19-000014",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-20-000009",
+        "reason": "current_or_previous_extraction_requires_review"
+      },
+      {
+        "cik": "0000040545",
+        "accession": "0000040545-21-000011",
+        "reason": "current_or_previous_extraction_requires_review"
+      }
+    ],
+    "network_requests_this_run": 307,
+    "failures": [
+      {
+        "cik": "0002115436",
+        "stage": "submissions",
+        "error": "No original filings found in the requested period"
+      }
+    ],
+    "manual_audit": "pending",
+    "market_returns": "not_loaded",
+    "empirical_predictive_results": "none"
+  },
+  "verification": {
+    "python": {
+      "cloud": "3.12.14",
+      "macos_arm64": "3.12.14",
+      "github_actions": "3.12.3"
+    },
+    "ruff": "passed",
+    "cloud_tests_passed": 49,
+    "macos_arm64_tests_passed": 49,
+    "github_tests_passed": 49,
+    "upstream_warnings_per_run": 4,
+    "github_actions_run": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/37991704378",
+    "mac_live_sec_download": {
+      "status": "blocked_by_http_403",
+      "filings_downloaded": 0,
+      "requests": 5,
+      "forbidden_responses_retried": false
+    },
+    "synthetic_demo": "passed; not an empirical result"
+  },
+  "source_tables_sha256": {
+    "filings.parquet": "65ebbcdef18f7975a1f304fa17489008cb5b9e2fd16a55eb15d844eacdb54d4d",
+    "filing_pairs.parquet": "b67dd7aabac086ceaeefb2639773269da12797ef5405c012234f014ace6beb33"
+  },
+  "published_artifacts_sha256": {
+    "pilot_coverage.csv": "24698e650b04eee4312ae5192c0e54779084eb78236ed3460715bde29487b4d0",
+    "pilot_review_pairs.csv": "f81f61227f4cd1be7d548a510b24f49b8bed7636dc161f5fb5e2c82fb206b30d",
+    "pilot_filing_manifest.csv": "8d9d86f2f3f60acb967f615767824ec5f7eb2487edfb2042daf6768b25245dd0"
+  },
+  "human_audit_completed": false,
+  "real_market_returns_loaded": false,
+  "final_test_opened": false
+}
