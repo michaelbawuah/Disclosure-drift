@@ -30,6 +30,8 @@ DAILY_FIELDS = (
 )
 FLAG_FIELDS = ("dlyprcflg", "dlyretmissflg", "dlydelflg")
 _BATCH = 5000
+_MAX_HEADERS = 256
+_HEADER = re.compile(r"[A-Za-z_][A-Za-z_0-9]{0,127}")
 
 
 def _iso(value: str, label: str) -> str:
@@ -78,7 +80,7 @@ def _copy_source(source: Path, destination: Path) -> tuple[str, int]:
 
 
 @contextmanager
-def _rows(path: Path):
+def _rows(path: Path, *, allow_extra_columns: bool = False):
     with path.open("rb") as raw:
         compressed = raw.read(2) == b"\x1f\x8b"
         raw.seek(0)
@@ -89,11 +91,15 @@ def _rows(path: Path):
                 header = next(reader)
             except StopIteration as exc:
                 raise ValueError("Source is empty; a daily header is required") from exc
+            if not 1 <= len(header) <= _MAX_HEADERS or not all(_HEADER.fullmatch(field) for field in header):
+                raise ValueError("Daily headers must be at most 256 plain field names of at most 128 characters")
             canonical = [column.lower() for column in header]
             if len(set(canonical)) != len(canonical):
                 raise ValueError("Daily source has ambiguous duplicate headers")
-            if len(canonical) != len(DAILY_FIELDS) or set(canonical) != set(DAILY_FIELDS):
-                raise ValueError("Daily inventory requires exactly the 13 declared daily fields")
+            if set(DAILY_FIELDS) - set(canonical):
+                raise ValueError("Daily inventory requires all 13 declared daily fields")
+            if not allow_extra_columns and len(canonical) != len(DAILY_FIELDS):
+                raise ValueError("Daily inventory requires exactly 13 fields unless --allow-extra-columns is explicit")
             indices = [canonical.index(column) for column in DAILY_FIELDS]
 
             def checked():
@@ -130,9 +136,9 @@ def _insert_dates(db, counts):
                    "DO UPDATE SET n=n+excluded.n", counts.items())
 
 
-def _date_pass(snapshot: Path, db, last_permitted: str) -> tuple[list[str], int]:
+def _date_pass(snapshot: Path, db, last_permitted: str, *, allow_extra_columns: bool = False) -> tuple[list[str], int]:
     counts, rows = Counter(), 0
-    with _rows(snapshot) as (header, records):
+    with _rows(snapshot, allow_extra_columns=allow_extra_columns) as (header, records):
         for row in records:
             day = _iso(row[DAILY_FIELDS.index("dlycaldt")], "Source DlyCalDt")
             if day > last_permitted:
@@ -149,7 +155,7 @@ def _date_pass(snapshot: Path, db, last_permitted: str) -> tuple[list[str], int]
     return header, rows
 
 
-def _value_pass(snapshot: Path, db, expected_rows: int):
+def _value_pass(snapshot: Path, db, expected_rows: int, *, allow_extra_columns: bool = False):
     columns = {column: {kind: 0 for kind in
                        ("blank", "finite_numeric", "nonfinite_numeric", "non_numeric")}
                for column in DAILY_FIELDS}
@@ -165,7 +171,7 @@ def _value_pass(snapshot: Path, db, expected_rows: int):
         batch.clear()
         flags.clear()
 
-    with _rows(snapshot) as (_, records):
+    with _rows(snapshot, allow_extra_columns=allow_extra_columns) as (_, records):
         for row in records:
             for field, value in zip(DAILY_FIELDS, row, strict=True):
                 columns[field][_numeric_kind(value)] += 1
@@ -225,13 +231,17 @@ def _flag_counts(db) -> dict:
 
 
 def inventory_daily(source, *, request_start: str, request_end: str, output,
-                    config: dict, repo_root=".") -> dict:
+                    config: dict, repo_root=".", allow_extra_columns: bool = False) -> dict:
     """Preserve and inventory a manual development-only CSV or gzip download.
 
     Output is a new directory containing ``source.csv[.gz]`` and ``receipt.json``.
     Failed input leaves no success receipt. Extra early rows are retained and
-    counted separately; no row is dropped, filled, or made model-ready.
+    counted separately; no row is dropped, filled, or made model-ready. Extra
+    columns require explicit opt-in; all source bytes remain preserved, while
+    duplicate comparisons and numeric inventory use the 13 required fields.
     """
+    if type(allow_extra_columns) is not bool:
+        raise ValueError("allow_extra_columns must be an explicit boolean")
     start = _iso(request_start, "Request start")
     end = _iso(request_end, "Request end")
     last_permitted = development_return_end(config)
@@ -265,9 +275,10 @@ def inventory_daily(source, *, request_start: str, request_end: str, output,
             db.execute("CREATE TABLE flags(field TEXT, code TEXT, n INTEGER NOT NULL, "
                        "PRIMARY KEY(field, code)) WITHOUT ROWID")
             guard_snapshot()
-            header, rows = _date_pass(snapshot, db, last_permitted)
+            header, rows = _date_pass(snapshot, db, last_permitted,
+                                      allow_extra_columns=allow_extra_columns)
             guard_snapshot()
-            columns = _value_pass(snapshot, db, rows)
+            columns = _value_pass(snapshot, db, rows, allow_extra_columns=allow_extra_columns)
             guard_snapshot()
             all_counts = _duplicate_counts(db)
             slice_counts = _duplicate_counts(db, start, end)
@@ -295,6 +306,7 @@ def inventory_daily(source, *, request_start: str, request_end: str, output,
         "protocol_sha256": canonical_hash(config),
         "source": {"preserved_file": snapshot.name, "sha256": digest, "bytes": byte_count,
                    "compression": "gzip" if compressed else "none", "observed_header": header,
+                   "delivered_column_count": len(header),
                    "source_release": None, "release_evidence": None,
                    "vendor_query_sql": None, "vendor_query_submitted_at": None,
                    "vendor_query_completed_at": None, "vendor_downloaded_at": None,
@@ -315,7 +327,14 @@ def inventory_daily(source, *, request_start: str, request_end: str, output,
                                "coverage_does_not_establish_security_universe_completeness": True},
         "all_rows": all_counts, "requested_slice": slice_counts,
         "columns": columns, "flags": flags,
-        "row_equality": "exact parsed text across all 13 fields in canonical column order",
+        "projection": {"fields": list(DAILY_FIELDS), "column_count": len(DAILY_FIELDS),
+                       "allow_extra_columns": allow_extra_columns,
+                       "extra_columns": [field for field in header if field.lower() not in DAILY_FIELDS],
+                       "all_delivered_columns_preserved": True,
+                       "extra_column_values_interpreted": False,
+                       "duplicate_counts_scope": "required_13_fields_in_canonical_order"},
+        "full_delivered_row_duplicates_checked": len(header) == len(DAILY_FIELDS),
+        "row_equality": "exact parsed text across the 13 required projected fields; extra delivered fields excluded",
         "security_key_equality": "exact PERMNO text and validated ISO DlyCalDt; no identifier coercion",
         "numeric_classification": "blank, finite float, nonfinite float, or nonnumeric; values unchanged",
         "complete_date_pass_before_numeric_interpretation": True,

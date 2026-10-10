@@ -126,8 +126,8 @@ def test_snapshot_mutation_after_date_pass_is_caught_before_numbers(tmp_path, mo
     path = source(tmp_path, [row()])
     original_pass = intake._date_pass
 
-    def mutate(snapshot, db, last):
-        result = original_pass(snapshot, db, last)
+    def mutate(snapshot, db, last, **kwargs):
+        result = original_pass(snapshot, db, last, **kwargs)
         snapshot.chmod(0o600)
         snapshot.write_bytes(snapshot.read_bytes().replace(b"0.01", b"0.02"))
         return result
@@ -192,3 +192,80 @@ def test_cli_help_is_offline_and_contains_required_interface(capsys):
     assert status.value.code == 0
     output = capsys.readouterr().out
     assert "--request-start" in output and "--request-end" in output and "--source" in output
+    assert "--allow-extra-columns" in output
+
+
+@pytest.mark.parametrize("compressed", [False, True])
+def test_explicit_extra_columns_preserves_all_96_fields_but_only_compares_required_projection(tmp_path, compressed):
+    extras = {f"extra_{index}": f"private value {index}" for index in range(83)}
+    first = row(**extras)
+    second = {**first, "extra_0": "distinct private source text"}
+    header = ["EXTRA_0", *[field.upper() for field in reversed(intake.DAILY_FIELDS)],
+              *[field.upper() for field in extras if field != "extra_0"]]
+    path = source(tmp_path, [first, second], compressed=compressed, header=header)
+    result = run(tmp_path, path, allow_extra_columns=True)
+    saved = tmp_path / "data" / "inventory" / result["source"]["preserved_file"]
+    assert saved.read_bytes() == path.read_bytes()
+    assert result["source"]["sha256"] == hashlib.sha256(path.read_bytes()).hexdigest()
+    assert result["source"]["observed_header"] == header
+    assert result["source"]["delivered_column_count"] == 96
+    assert result["projection"]["fields"] == list(intake.DAILY_FIELDS)
+    assert result["projection"]["column_count"] == 13
+    assert len(result["projection"]["extra_columns"]) == 83
+    assert result["projection"]["extra_columns"][0] == "EXTRA_0"
+    assert result["projection"]["all_delivered_columns_preserved"] is True
+    assert result["projection"]["extra_column_values_interpreted"] is False
+    assert result["full_delivered_row_duplicates_checked"] is False
+    assert result["all_rows"]["rows"] == 2
+    assert result["all_rows"]["exact_full_projected_duplicate_row_excess"] == 1
+    assert result["all_rows"]["conflicting_security_date_keys"] == 0
+    assert result["rows_dropped"] == result["values_normalized"] == 0
+    assert "distinct private source text" not in json.dumps(result)
+
+
+def test_extra_columns_do_not_hide_required_field_conflicts(tmp_path):
+    path = source(tmp_path, [row(extra="one"), row(dlyret="0.02", extra="two")],
+                  header=[*intake.DAILY_FIELDS, "extra"])
+    result = run(tmp_path, path, allow_extra_columns=True)
+    assert result["all_rows"]["conflicting_security_date_keys"] == 1
+    assert result["all_rows"]["exact_full_projected_duplicate_row_excess"] == 0
+
+
+def test_extra_columns_require_opt_in_and_cannot_replace_required_fields(tmp_path):
+    path = source(tmp_path, [row(extra="private")], header=[*intake.DAILY_FIELDS, "extra"])
+    with pytest.raises(ValueError, match="allow-extra-columns"):
+        run(tmp_path, path)
+    other = tmp_path / "other"
+    other.mkdir()
+    path = source(other, [row(extra="private")], header=[*intake.DAILY_FIELDS[:-1], "extra"])
+    with pytest.raises(ValueError, match="all 13"):
+        run(other, path, allow_extra_columns=True)
+
+
+@pytest.mark.parametrize("extra_headers", [["PERMNO"], ["unsafe header"], ["https://example.invalid/token"],
+                                           ["x" * 129], [f"extra_{i}" for i in range(244)]])
+def test_opt_in_still_rejects_duplicate_unsafe_and_excessive_headers(tmp_path, extra_headers):
+    path = tmp_path / "bad.csv"
+    path.write_text(",".join([*intake.DAILY_FIELDS, *extra_headers]) + "\n")
+    with pytest.raises(ValueError, match="headers|field names"):
+        run(tmp_path, path, allow_extra_columns=True)
+
+
+def test_extra_columns_still_require_complete_date_pass_before_numeric_interpretation(tmp_path, monkeypatch):
+    path = source(tmp_path, [row(extra="private"), row("2022-02-03", extra="private")],
+                  header=[*intake.DAILY_FIELDS, "extra"])
+    monkeypatch.setattr(intake, "_numeric_kind", lambda _: pytest.fail("Cannot interpret values before date guard"))
+    with pytest.raises(ValueError, match="holdout blocked"):
+        run(tmp_path, path, allow_extra_columns=True)
+
+
+def test_strict_13_fields_report_full_delivered_row_comparison(tmp_path):
+    result = run(tmp_path, source(tmp_path, [row()]))
+    assert result["full_delivered_row_duplicates_checked"] is True
+    assert result["projection"]["extra_columns"] == []
+    assert result["projection"]["allow_extra_columns"] is False
+
+
+def test_extra_column_option_requires_a_boolean_before_source_open(tmp_path):
+    with pytest.raises(ValueError, match="explicit boolean"):
+        run(tmp_path, tmp_path / "missing.csv", allow_extra_columns="yes")

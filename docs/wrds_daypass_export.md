@@ -246,14 +246,31 @@ uv run --locked --python 3.12 python scripts/wrds_manual_inventory.py \
   --output data/private/wrds-intake/2009-v1
 ```
 
-The command requires exactly the 13 daily fields above, with case-insensitive
-header matching. It makes a read-only, byte-preserving copy as `source.csv` or
-`source.csv.gz` and writes an aggregate `receipt.json` beside it. It records the
+By default, the command requires exactly the 13 daily fields above, with
+case-insensitive header matching. It makes a read-only, byte-preserving copy as
+`source.csv` or `source.csv.gz` and writes an aggregate `receipt.json` beside it. It records the
 source SHA-256, headers, row and security counts, actual and requested date
 coverage, missing XNYS sessions, exact repeated rows, conflicting security/date
 records, blank/numeric classifications, and uninterpreted flag counts. It uses
 disk-backed processing for large files and checks every date against the
 development boundary before interpreting numeric values.
+
+If the download includes additional vendor fields, append
+**`--allow-extra-columns`** to the command above. All 13 required fields must
+still be present, and duplicate column names are rejected. The original file is
+preserved in full: a 96-column download keeps all 96 columns and its original
+bytes. Do not remove extra columns or resave the CSV before inventory.
+
+With this option, numeric statistics and duplicate/security-date conflict checks
+compare only the canonical 13-field projection. Extra values are not interpreted
+or compared, so matching projected rows may differ in other delivered columns.
+The receipt lists the extra headers and records the scope of these checks;
+`full_delivered_row_duplicates_checked` is false when extras are present. This
+option does not relax the development-date guard or establish date coverage.
+
+Run the inventory on the Mac against the downloaded file; its absolute Downloads
+path can be supplied directly to `--source`. Large licensed CSVs do not need to
+be uploaded to chat. Share the filename and aggregate inventory results instead.
 
 No rows are removed, filled, or normalized, including extra early rows. A new
 output directory is required, so existing evidence is not overwritten. Source
