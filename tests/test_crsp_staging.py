@@ -104,6 +104,26 @@ def test_absent_terminal_row_reports_tail_gap_without_inventing_payoff(source):
     assert not summary["terminal_handling_verified"]
 
 
+def test_blank_ticker_and_zero_da_price_preserve_cash_return(source):
+    daily, _, _, config, rows, _ = source
+    for row in rows:
+        row.update(DlyPrc="25", DlyPrevPrc="25", DlyPrcFlg="TR")
+    # Invented cash consideration is 26 on a prior value of 25. DA is not a zero payoff.
+    rows[-1].update(Ticker="", DlyPrc="0", DlyPrcFlg="DA", DlyRet="0.04", DlyCap="")
+    write_csv(daily, rows)
+    tables, summary, _ = inspect_daily(daily, config, "2021-01-04", "2021-01-08")
+    assert summary["terminal_rows"] == 1 and summary["missing_security_sessions"] == 0
+    assert tables["daily_returns"].total_return.iloc[-1] == pytest.approx(26 / 25 - 1)
+    assert pd.isna(tables["capitalizations"].market_cap_usd.iloc[-1])
+    assert not tables["capitalizations"].valid_market_cap.iloc[-1]
+    window = EventWindow("2020-12-30", "2021-01-04", "2021-01-04T14:30:00+00:00",
+                         "2020-12-31", "2021-01-08",
+                         ("2021-01-05", "2021-01-06", "2021-01-07", "2021-01-08"))
+    benchmark = pd.DataFrame({"session": list(window.return_sessions), "total_return": [0.0] * 4})
+    label = make_label(tables["daily_returns"], benchmark, window)
+    assert label["stock_return"] == pytest.approx(1.02 * (26 / 25) - 1)
+
+
 @pytest.mark.parametrize("field,value,pattern", [
     ("DlyRetMissFlg", "MP", "Unresolved"), ("DlyRetMissFlg", "", "Unresolved"),
     ("DlyDelFlg", "X", "Unsupported"), ("DlyRet", "", "finite"),

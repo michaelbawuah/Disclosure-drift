@@ -285,6 +285,31 @@
         "DlyRetMissFlg",
         "vwretd"
       ]
+    },
+    {
+      "filename": "crsp_delisting_check_permno.csv",
+      "bytes": 1141,
+      "sha256": "d1a6f564a75fecf20d5d041d95057dcac92f5b582d47e09580947287e015535a",
+      "matches_owner_mac_download": true,
+      "private_archive_relative_path": "data/raw/wrds/2026-10-10/crsp_delisting_check_permno.csv",
+      "owner_mac_archive_sha256_verified": true,
+      "rows": 11,
+      "column_count": 13,
+      "columns": [
+        "PERMNO",
+        "HdrCUSIP",
+        "Ticker",
+        "PERMCO",
+        "DlyCalDt",
+        "DlyDelFlg",
+        "DlyPrc",
+        "DlyPrcFlg",
+        "DlyCap",
+        "DlyPrevPrc",
+        "DlyRet",
+        "DlyRetMissFlg",
+        "vwretd"
+      ]
     }
   ],
   "ccm": {
@@ -313,7 +338,6 @@
     ]
   },
   "remaining": [
-    "Diagnose missing WFM terminal row from query SQL or submitted parameters",
     "Historical CIK/security identity review",
     "Exact source release/query metadata and point-in-time availability audit",
     "Independent filing and label/control trace reviews"
@@ -414,7 +438,7 @@
     "securities": 1,
     "request_start": "2017-08-14",
     "request_end": "2017-09-08",
-    "request_dates_provenance": "caller-declared; vendor query parameters not certified",
+    "request_dates_provenance": "Observed original WRDS query 11769187 Submitted Parameters screenshots",
     "expected_exchange_sessions": 19,
     "coverage": [
       {
@@ -459,9 +483,52 @@
     "public_event_source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2017-10",
     "status": "incomplete_terminal_row_absent",
     "terminal_payoff_arithmetic_verified": false,
-    "omission_cause": "unknown_without_submitted_query_parameters_or_sql",
-    "query_id": null,
-    "query_sql_status": "not_supplied_and_no_matching_mac_download_located"
+    "omission_cause": "Added terminal observation has a blank ticker, consistent with exclusion by the observed original WFM ticker request; exact SQL predicate unavailable",
+    "query_id": "11769187",
+    "query_sql_status": "not_supplied_and_no_matching_mac_download_located",
+    "original_query_evidence": {
+      "product": "crsp_a_stock",
+      "status": "Success",
+      "rows_displayed": 10,
+      "submitted_time_displayed": "2026-10-10 00:57",
+      "work_began_time_displayed": "2026-10-10 00:58",
+      "finished_time_displayed": "2026-10-10 00:59",
+      "displayed_time_timezone": null,
+      "parameters_observed": {
+        "file": "wrds_dsfv2_query",
+        "qvar": "ticker",
+        "query": "WFM",
+        "start": "2017-08-14",
+        "end": "2017-09-08",
+        "datevar": "dlycaldt",
+        "library": "crspa",
+        "format": "csv",
+        "datef": "YYMMDD10.",
+        "wrdsVersion": 3,
+        "keyvar": "permno permco ticker hdrcusip",
+        "method": 1,
+        "query_form_page_id": 6686,
+        "source_saved_query": 7856615,
+        "data_dictionary_table": "wrds_dsfv2_query",
+        "data_dictionary_product": "crsp_a_stock",
+        "query_form_page_revision": 86808
+      },
+      "selected_variable_count_observed": 13,
+      "selected_variable_names_in_screenshot": "collapsed; names checked separately from CSV",
+      "exact_source_release": null,
+      "sql_available": false,
+      "screenshots": [
+        {
+          "filename": "Screenshot 2026-10-10 at 10.56.38\u202fAM.png",
+          "sha256": "bb56617ba65c2a477cadb1bf4eef5a57c224d1b5047900467f3fe0a97d3b9f2a"
+        },
+        {
+          "filename": "Screenshot 2026-10-10 at 10.57.04\u202fAM.png",
+          "sha256": "69bcf79135830b37e46e5b2ce4a4cf62df7fc7712a5189ef5df414387b8cfbad"
+        }
+      ]
+    },
+    "followup_receipt": "reports/wfm_terminal_check.json"
   },
   "pilot_source_staging": {
     "command": "stage-crsp",
@@ -482,5 +549,53 @@
     "historical_cik_mapping_approved": false,
     "terminal_handling_verified": false,
     "point_in_time_availability_verified": false
+  },
+  "terminal_case_followup": {
+    "status": "automated_terminal_case_passed",
+    "source_file": "crsp_delisting_check_permno.csv",
+    "source_sha256": "d1a6f564a75fecf20d5d041d95057dcac92f5b582d47e09580947287e015535a",
+    "public_receipt": "reports/wfm_terminal_check.json",
+    "public_receipt_sha256": "22c2f0338e1bcdca4859a73268e3df1bfd6a97341903b2fa7aef4267b18010fa",
+    "original_rows_unchanged": 10,
+    "added_terminal_rows": 1,
+    "qa_windows_verified": 2,
+    "horizon_sessions": 20,
+    "original_incomplete_export_retained": true,
+    "query_id": null,
+    "query_sql_status": "not_supplied",
+    "submitted_parameters_status": "not_supplied_for_PERMNO_followup",
+    "exact_source_release": null,
+    "primary_source_cache_receipts": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/865436/000114420417045261/v474128_8k.htm",
+        "sha256": "b860eb5bc62c1c87725dc8abc9a507de9684ae6adc95ad64ea492b381e024b9c",
+        "fetched_at": "2026-10-10T15:14:42.986979+00:00",
+        "bytes": 54631,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      {
+        "url": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_PC.html",
+        "sha256": "dd879682d05cac9c6a9ac92f0657aad2f7ad8292f9d481ccd0a0cd2b0b083054",
+        "fetched_at": "2026-10-10T15:14:46.390830+00:00",
+        "bytes": 38764,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      {
+        "url": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_MU.html",
+        "sha256": "56f96ffde727c0251bc05b3161d4dab27a93306d7f63e85a0f14e93c77cdf481",
+        "fetched_at": "2026-10-10T15:14:49.368690+00:00",
+        "bytes": 74112,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      }
+    ],
+    "human_reviews_completed": 0,
+    "actual_filing_labels_generated": false,
+    "original_staging_receipt_preserved": true
   }
 }

@@ -276,3 +276,26 @@ of the study remain pending. No financial predictive finding is claimed.
   interpretation. Leave extract-specific bounds, release metadata and approvals
   pending. The WFM terminal observation is still absent; diagnose its original
   query before requesting a new export. No labels, fits or holdout results are added.
+
+## 2026-10-10 - WFM terminal observation recovered and checked
+
+- Read the original query screenshots: query 11769187 used the requested
+  14 August-8 September 2017 dates and a WFM ticker filter. Preserve displayed
+  times without inventing a timezone, and keep absent SQL/release metadata explicit.
+- Archive the PERMNO follow-up, matching the Mac download byte for byte. All ten
+  original records are unchanged; one 28 August terminal record is added with a
+  blank ticker, DA price flag, zero price and missing capitalization. The blank
+  ticker is consistent with the retrieval difference; exact SQL internals remain unknown.
+- Reconcile delivered DlyRet against the SEC-documented cash consideration within
+  CSV rounding. Read CRSP's DA and delisting-date definitions. Use the external
+  cash amount only as an independent comparator; never replace the vendor return.
+- Verify unchanged normalized returns and missing terminal size. Use existing pilot
+  benchmark observations to check two artificial 20-session label windows against
+  independent Decimal products, with ten and 19 post-terminal cash sessions. The
+  original incomplete file fails both cases for the missing terminal observation.
+- Add an invented-data regression for blank ticker/zero DA price/missing size;
+  28 CIZ tests pass. Publish aggregate checks and hashes, keeping detailed arithmetic
+  private. Preserve the original staging receipt and record follow-up evidence
+  separately. Automated terminal-case QA passes; human reviews and historical
+  identity/source availability gates remain pending. No real filing labels,
+  model results or final-period outcomes are added.

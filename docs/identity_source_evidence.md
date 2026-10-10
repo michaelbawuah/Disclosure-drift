@@ -74,6 +74,7 @@ extract date, release vintage or a certified normalization bound.
 
 Preserve the literal CSV `E` values and pending approvals. Do not substitute today's
 date, infer a source vintage from the 2026 corporate event, or silently inherit
-the macro's other link/class filters. The next missing source evidence is the
-WFM query's SQL or Submitted Parameters, together with the pilot's release/query
-metadata; see the [terminal-check handoff](wrds_delisting_check.md).
+the macro's other link/class filters. The original WFM submitted parameters are
+now documented, and the PERMNO follow-up passes the
+[automated terminal check](wrds_delisting_check.md). The pilot's exact release/query
+metadata, point-in-time availability and historical identity approvals remain pending.

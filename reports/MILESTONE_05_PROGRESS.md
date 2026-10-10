@@ -1,16 +1,17 @@
 # Milestone 05 progress: export request and pre-event controls
 
 Status on 2026-10-10: **in progress, not completed**. Authenticated CRSP sample
-and full pilot exports have been inspected and staged in Parquet/DuckDB. Delisting QA,
-historical identity approval and independent human reviews remain pending.
+and full pilot exports have been inspected and staged in Parquet/DuckDB. Automated
+WFM terminal-return and GE identifier-change cases pass. Historical identity
+approval, source-release/availability and independent human reviews remain pending.
 
 ## Sample-access update
 
 The [sample evidence note](../docs/wrds_sample_exports.md) and
 [file receipt](market_access_samples.json) record actual daily-stock, benchmark,
-capitalization, historical Names and CCM exports. All ten files have verified
+capitalization, historical Names and CCM exports. All eleven CSV/SQL files have verified
 private archive copies on the owner's Mac. The pilot Names CSV was archived from
-the supplied attachment; the other nine match original Mac downloads. The two
+the supplied attachment; the other ten match original Mac downloads. The two
 CCM files contain 62 rows with 47 columns each; 19 requested
 CIKs match directly, while the XOM supplement carries a different header CIK.
 SEC corporate sources now document both identities and their July 2026
@@ -30,9 +31,12 @@ security/session rows, invalid returns or nonpositive capitalization values. The
 benchmark is consistent across all securities, and every daily row joins one
 dated Names record. All 135 candidate event windows have complete source coverage
 (8,100 control-session, 135 entry-reference and 2,700 label-session checks).
-All pilot delisting flags are `N`. The [received WFM check](../docs/wrds_delisting_check.md)
-also has only N flags: ten ordinary rows ending 25 August 2017, with no terminal
-payment. Its SQL or submitted parameters are needed to diagnose the omission.
+All pilot delisting flags are `N`. The [WFM check](../docs/wrds_delisting_check.md)
+now passes with a separate PERMNO export: the same ten ordinary rows plus the
+28 August 2017 terminal observation. Original query 11769187 confirms the requested
+dates and ticker filter; the added row has a blank ticker. Independent cash-return
+arithmetic agrees within delivered rounding, and two 20-session QA windows verify
+cash continuation. The incomplete original export remains a negative control.
 The daily export's SQL, query ID and exact release date remain
 unknown. Coverage checks do not approve historical CIK mappings or calculate labels.
 
@@ -85,7 +89,13 @@ a human review.
 
 ## Verification
 
-The latest cloud `make reproduce` run passes **178 tests**, Ruff, the protocol
+The WFM source script verifies all 11 observations, unchanged delivered returns,
+missing terminal capitalization and two independently compounded QA windows. The
+28 CIZ tests pass, including a new invented-data regression for a blank ticker and
+zero DA price. The original staging receipt is unchanged; terminal follow-up
+evidence is recorded separately in [wfm_terminal_check.json](wfm_terminal_check.json).
+
+The preceding cloud `make reproduce` run passed **178 tests**, Ruff, the protocol
 lock and both synthetic demos. The 24 new identity-review cases cover original
 CIKs and annual-pair binding, changed evidence, non-ticker candidate discovery,
 interior gaps and ambiguous histories, unresolved end markers, cache/header
@@ -96,7 +106,8 @@ lock and both synthetic demos. The 27 additional cases cover CIZ flags, the
 missing-terminal tail, unchanged terminal returns, cash after termination,
 capitalization units, historical industry boundaries, rejected ambiguous data,
 holdout refusal and preservation of prior staging. The actual pilot was staged
-successfully with zero coverage gaps; actual-source terminal QA remains incomplete.
+successfully with zero coverage gaps; actual-source terminal QA was incomplete at
+that checkpoint and is now documented in the WFM follow-up above.
 
 The prior cloud `make reproduce` run completed successfully: **127 tests passed**, Ruff
 passed, the protocol lock matched and both synthetic engineering demos completed.
@@ -114,11 +125,11 @@ continues to produce engineering labels, not a model-ready dataset.
 
 ## Remaining Milestone 05 work
 
-1. Finish source dictionaries and release/query metadata, including a development-period
-   delisting case. Pilot coverage and GE's automated identifier-change check are verified;
+1. Finish exact source dictionaries and release/query metadata. Pilot coverage,
+   WFM terminal cash handling and GE's identifier-change case pass automated checks;
    independent review remains pending.
-2. Implement/review source normalization and historical snapshot availability,
-   including return conventions, currency/units, identifier dates and industry.
+2. Review the implemented daily/Names normalization and historical snapshot
+   availability; finish approved historical CIK/CCM links and explicit end-marker bounds.
 3. Import the pilot data, join audited identities, calculate labels and controls,
    and complete independent human filing and 20-event arithmetic traces.
 4. Resolve exclusions and document their counts before the end-to-end pilot study.

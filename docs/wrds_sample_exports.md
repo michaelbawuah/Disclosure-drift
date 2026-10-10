@@ -3,7 +3,7 @@
 The owner downloaded these files through Cornell's authenticated WRDS session.
 The [receipt](../reports/market_access_samples.json) records exact byte hashes,
 row counts and actual column names. Matching downloads were checked where available;
-all ten supplied files are archived with verified hashes in the owner's ignored
+all eleven supplied CSV/SQL files are archived with verified hashes in the owner's ignored
 local data directory. The pilot Names CSV was archived from the supplied attachment.
 Licensed rows remain outside public git.
 
@@ -19,6 +19,7 @@ Licensed rows remain outside public git.
 | `crsp_names_pilot.sql` | Vendor SQL supplied | Confirms the 20 requested PERMNOs and all 24 selected columns |
 | `crsp_daily_pilot.csv` | 36,000 rows, 10 columns | 1,800 sessions per security for all 20 candidates, 4 November 2014 to 28 December 2021 |
 | `crsp_delisting_check.csv` | 10 rows, 13 columns | WFM ordinary rows, 14-25 August 2017; terminal payment absent |
+| `crsp_delisting_check_permno.csv` | 11 rows, 13 columns | Same ten WFM rows plus the 28 August terminal observation; automated cash-merger QA passes |
 
 ## What was checked
 
@@ -79,7 +80,9 @@ The original pilot contains Exxon Mobil filing CIK `0000034088`. The XOM supplem
 instead carries header CIK `0002115436`, company name EXXONMOBIL HOLDINGS CORP and
 candidate PERMNO `11850`. This is evidence of a header-identity mismatch, not enough
 to authorize assigning that header CIK throughout the historical link interval.
-The reason for the changed header has not been established from primary filings.
+The [SEC corporate-source follow-up](identity_source_evidence.md) documents the
+July 2026 holding-company reorganization and both CIKs. This explains the observed
+pattern without approving the historical link or certifying vendor provenance.
 
 The pilot Names export now shows the original Exxon Mobil name and historical
 CUSIP throughout our development windows under the candidate PERMNO. This supports
@@ -95,16 +98,18 @@ GVKEY/security link; the WRDS form says the accompanying identifiers are header 
 No predecessor filing splicing, historical CIK substitution or outcome-based
 security selection has been approved.
 
-## Next data request
+## Completed terminal check and next review
 
 The pilot daily and Names exports are received and have been converted to
 [private source-staging tables](crsp_staging.md). The supplied
-[Whole Foods delisting QA case](wrds_delisting_check.md) contains ten ordinary
-trading rows and no terminal-payment row. Its source file is preserved, but the
-check is incomplete. Inspect this query's SQL or submitted parameters before
-asking for a corrected export. The cause of the missing terminal row is unknown.
+[Whole Foods delisting QA case](wrds_delisting_check.md) now passes using the
+PERMNO follow-up. Original query 11769187 confirms the requested dates and ticker
+filter; the additional terminal row has a blank ticker. The original incomplete
+file is retained as a negative control. Cash-return arithmetic and two 20-session
+continuation checks pass; no further WFM CSV is needed for this automated check.
 Reconcile the dated Names records against original SEC filings before label staging,
-and finish the source-release, identifier-change and independent human reviews.
+and finish source-release/availability and independent human reviews. GE's separate
+automated identifier-change case also passes; historical approvals remain pending.
 
 The [135 event windows](../reports/pilot_market_request/event_windows.csv) define
 the precise control and label sessions. No actual filing-event labels or prediction

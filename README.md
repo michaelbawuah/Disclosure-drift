@@ -15,8 +15,10 @@ the automated-evidence level. A dated market-data request now covers its 135 eve
 with 20 pending trace reviews and a tested standalone pre-event control calculator.
 The received CRSP pilot has 36,000 rows covering 20 securities and 1,800 sessions.
 CSV-to-Parquet/DuckDB staging now preserves source flags, USD capitalization and
-dated SIC. The WFM QA export lacks a terminal row; delisting verification,
-historical identity approval, source-availability review and human audits remain pending.
+dated SIC. The [WFM cash-merger case](docs/wrds_delisting_check.md) now passes
+automated terminal-return and cash-continuation checks using a PERMNO export.
+Historical identity approval, source-release/availability review and human audits
+remain pending.
 A private identity-review packet now checks all 155 SEC headers and assembles
 dated security evidence for 135 events, with seven Exxon header-CIK differences
 kept explicit. A [source follow-up](docs/identity_source_evidence.md) documents

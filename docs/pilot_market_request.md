@@ -48,10 +48,12 @@ WRDS table names or source-field aliases are assumed:
 - Source release, query specification, extraction time, table dictionary and
   normalization decisions, including whether delisting is already in returns.
 
-Also obtain one documented **development-period delisting** and one historical
-identifier-change example for vendor-adapter QA. Do not assume the 20-issuer pilot
-contains those cases. Broader year-start liquidity-universe exports are a later
-request and also require historical price, volume, security-type and listing data.
+The documented **development-period delisting** and historical identifier-change
+examples now pass automated vendor-adapter QA: [WFM's cash merger](wrds_delisting_check.md)
+and [GE's CUSIP transition](identity_source_evidence.md). They do not replace
+independent review or approve the pilot's historical links. Broader year-start
+liquidity-universe exports are a later request and also require historical price,
+volume, security-type and listing data.
 
 ## Controls calculation now available
 
@@ -71,10 +73,11 @@ mixed security IDs and already terminated securities. It does not inspect future
 return values to calculate controls. Tests compare against independent arithmetic
 and deliberately alter future returns, terminal events and classifications.
 
-This is a standalone normalized-input calculator. Snapshot ingestion, vendor unit
-conversion, historical classification mapping and point-in-time availability still
-need implementation against a real export. The three-table market importer has
-not silently gained a fourth table, and `prepare-labels` still stages labels only.
+This is a standalone normalized-input calculator. The separate [CIZ adapter](crsp_staging.md)
+now stages actual capitalization and dated-industry snapshots, with unit conversion.
+Source-release/availability and historical identity approval remain pending. The
+three-table market importer has not gained a fourth table, and `prepare-labels`
+still stages labels only.
 
 ## Human trace audit
 
