@@ -9,7 +9,10 @@ The executable [import and label-staging workflow](market_import.md) implements 
 first three tables below. `configs/market_manifest.template.json` records the
 required provenance. A standalone pre-event control calculator and
 [dated pilot export request](pilot_market_request.md) are available. The historical
-universe, vendor snapshot adapter and full prepared dataset remain pending.
+universe and full prepared dataset remain pending. The
+[CIZ CSV staging adapter](crsp_staging.md) now converts the observed daily/Names
+schemas to returns, benchmark and dated snapshots, with source and human audits
+still unresolved. Staging is not an approved import bundle.
 
 ## Returns and benchmark
 

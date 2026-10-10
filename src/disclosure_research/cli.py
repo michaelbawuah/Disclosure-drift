@@ -12,6 +12,7 @@ import pandas as pd
 
 from .edgar import SecClient
 from .audit import build_audit
+from .crsp_staging import stage_crsp
 from .export_plan import build_export_plan
 from .ingest import ingest_smoke
 from .labels import export_label_events, prepare_labels
@@ -73,6 +74,12 @@ def main(argv=None) -> int:
     market_import = commands.add_parser("import-market", help="Validate a normalized development market bundle")
     market_import.add_argument("--manifest", required=True)
     market_import.add_argument("--output", required=True, help="New output directory; existing imports are preserved")
+    crsp = commands.add_parser("stage-crsp", help="Stage CIZ CSV/Names exports with unresolved audit gates")
+    crsp.add_argument("--daily", required=True)
+    crsp.add_argument("--names", required=True)
+    crsp.add_argument("--request-start", required=True)
+    crsp.add_argument("--request-end", required=True)
+    crsp.add_argument("--output", required=True, help="New private staging directory")
     event_export = commands.add_parser("export-label-events", help="Export an event queue from a fresh source audit")
     event_export.add_argument("--filings", required=True)
     event_export.add_argument("--pairs", required=True)
@@ -96,6 +103,10 @@ def main(argv=None) -> int:
         print(json.dumps(write_lock(config, lock), indent=2))
         return 0
     verify_lock(config, lock)
+    if args.command == "stage-crsp":
+        print(json.dumps(stage_crsp(args.daily, args.names, args.output, config,
+                                    args.request_start, args.request_end), indent=2))
+        return 0
     if args.command == "import-market":
         print(json.dumps(import_market(args.manifest, args.output, config), indent=2))
         return 0
@@ -139,9 +150,10 @@ def main(argv=None) -> int:
         (out / "selection.json").write_text(json.dumps(selection, indent=2) + "\n")
         print(json.dumps(selection, indent=2))
         return 0
-    gates = {"protocol": "locked", "market_data_access": "requires Cornell WRDS verification and normalized exports",
-             "market_import_and_label_staging": "implemented; verified only with invented market data",
-             "pre_event_controls": "standalone calculator tested; vendor snapshot adapter pending",
+    gates = {"protocol": "locked", "market_data_access": "export evidence in reports/market_access_samples.json",
+             "market_import_and_label_staging": "implemented; real import still needs source and identity audits",
+             "crsp_source_staging": "stage-crsp implemented; staging does not certify research readiness",
+             "pre_event_controls": "calculator and CRSP snapshot staging implemented; source availability audit required",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "pending before final test access",
              "final_2022_2025_evaluation": "blocked; no empirical result exists"}

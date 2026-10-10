@@ -13,7 +13,10 @@ development is 2016-2021, and the final evaluation period is 2022-2025.
 **Current milestone: 05 in progress.** The 155-filing parser pilot is complete at
 the automated-evidence level. A dated market-data request now covers its 135 events,
 with 20 pending trace reviews and a tested standalone pre-event control calculator.
-CRSP entitlement, real exports, source normalization and human reviews remain pending.
+The received CRSP pilot has 36,000 rows covering 20 securities and 1,800 sessions.
+CSV-to-Parquet/DuckDB staging now preserves source flags, USD capitalization and
+dated SIC. The WFM QA export lacks a terminal row; delisting verification,
+historical identity approval, source-availability review and human audits remain pending.
 The frozen final evaluation has not been opened; all model demos are synthetic.
 
 See the [Milestone 05 progress report](reports/MILESTONE_05_PROGRESS.md),
@@ -148,6 +151,13 @@ Parquet files; it does not infer vendor mappings. `export-label-events` binds
 the filing event queue to a matching source audit. `prepare-labels` produces
 engineering QA tables, with pending research gates kept explicit.
 
+For the received CIZ daily and historical Names CSVs, use the
+[CRSP staging command](docs/crsp_staging.md). It creates private Parquet and DuckDB
+tables with explicit incomplete-audit status. It does not create approved CIK links
+or an import-ready manifest. The [source receipt](reports/market_access_samples.json)
+records what was received, the completed coverage checks and the missing WFM
+terminal evidence.
+
 After the historical universe, links, labels and controls have been independently
 verified, prepare the documented development Parquet table and run:
 
@@ -167,6 +177,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 | `audit.py` | Offline source checks, DuckDB coverage and fingerprinted review packets |
 | `timing.py`, `market.py` | Session arithmetic, historical links and return labels |
 | `market_data.py`, `labels.py` | Validated Parquet/DuckDB imports and audit-bound event-label staging |
+| `crsp_staging.py` | CIZ CSV staging, original flags, units, dated SIC and explicit coverage gaps |
 | `controls.py`, `export_plan.py` | Prior-session controls and outcome-free pilot export requests |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |
@@ -188,7 +199,7 @@ each research gate. The report will describe measured outcomes, including nulls.
 ## Next milestone
 
 Review the initial 30-pair sample and all registered reference boundaries, including
-the source-method transitions. Obtain a small authorized market export and its exact
-data dictionary, then build and audit the historical universe, joins and pre-event
+the source-method transitions. Resolve the missing terminal row in the WFM export
+and complete source metadata, then build and audit the historical universe, joins and pre-event
 controls before running real development experiments.
 Select and audit a semantic checkpoint before unlocking the primary final evaluation.

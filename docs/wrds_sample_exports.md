@@ -3,7 +3,7 @@
 The owner downloaded these files through Cornell's authenticated WRDS session.
 The [receipt](../reports/market_access_samples.json) records exact byte hashes,
 row counts and actual column names. Matching downloads were checked where available;
-all nine supplied files are archived with verified hashes in the owner's ignored
+all ten supplied files are archived with verified hashes in the owner's ignored
 local data directory. The pilot Names CSV was archived from the supplied attachment.
 Licensed rows remain outside public git.
 
@@ -18,6 +18,7 @@ Licensed rows remain outside public git.
 | `crsp_names_pilot.csv` | 237 rows, 24 columns | Dated security descriptions for all 20 candidate PERMNOs |
 | `crsp_names_pilot.sql` | Vendor SQL supplied | Confirms the 20 requested PERMNOs and all 24 selected columns |
 | `crsp_daily_pilot.csv` | 36,000 rows, 10 columns | 1,800 sessions per security for all 20 candidates, 4 November 2014 to 28 December 2021 |
+| `crsp_delisting_check.csv` | 10 rows, 13 columns | WFM ordinary rows, 14-25 August 2017; terminal payment absent |
 
 ## What was checked
 
@@ -96,9 +97,12 @@ security selection has been approved.
 
 ## Next data request
 
-The pilot daily and Names exports are received. The remaining small export is a
-[Whole Foods delisting QA case](wrds_delisting_check.md) in August 2017. The pilot
-contains no delisting rows and cannot validate terminal-payoff handling by itself.
+The pilot daily and Names exports are received and have been converted to
+[private source-staging tables](crsp_staging.md). The supplied
+[Whole Foods delisting QA case](wrds_delisting_check.md) contains ten ordinary
+trading rows and no terminal-payment row. Its source file is preserved, but the
+check is incomplete. Inspect this query's SQL or submitted parameters before
+asking for a corrected export. The cause of the missing terminal row is unknown.
 Reconcile the dated Names records against original SEC filings before label staging,
 and finish the source-release, identifier-change and independent human reviews.
 

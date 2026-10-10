@@ -42,4 +42,29 @@ zero. If the expected terminal evidence is absent, report the gap rather than
 marking the check complete. Source normalization and independent human review
 remain separate requirements.
 
-Public sources were checked on 10 October 2026. No WFM export has been received yet.
+## Received file and unresolved gap
+
+On 10 October 2026 the owner supplied `crsp_delisting_check.csv`: **10 rows and
+13 columns**, PERMNO **77281**, matching WFM and historical CUSIP 96683710. The
+attachment and original Mac download have identical bytes; the private archive
+preserves them. Dates run from **14 through 25 August 2017**. Every DlyDelFlg is
+**N**, every price flag is TR, and every return-quality flag is the literal NA.
+
+Ordinary price-change arithmetic agrees to within 0.0000005, and all ten benchmark
+observations agree with the full pilot. There is **no terminal return/payment row**.
+The received data therefore do not pass the intended delisting check. No missing
+payoff was inferred from the public USD 42 amount, and no post-termination cash
+path was certified. The cause of the omission is unknown: the CSV does not record
+the actual query dates or filters. No matching WFM SQL file was located in the
+owner's Downloads folder.
+
+### Next diagnostic step
+
+Retrieve **SQL** from this query's WRDS result page if offered, or a screenshot of
+the expanded **Submitted Parameters**. Inspect the actual end date, source view,
+identifier filter and any conditions on delisting rows before requesting another
+CSV. The returned permanent ID is now known; a corrected retrieval can use PERMNO
+77281 when the query evidence establishes the needed change. Do not assume a
+particular checkbox exists or that a ticker filter caused the omission.
+
+Public sources and the file were checked on 10 October 2026. Terminal QA remains open.

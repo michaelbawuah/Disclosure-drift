@@ -1,16 +1,16 @@
 # Milestone 05 progress: export request and pre-event controls
 
 Status on 2026-10-10: **in progress, not completed**. Authenticated CRSP sample
-and full pilot exports have been inspected. Vendor normalization, delisting QA,
+and full pilot exports have been inspected and staged in Parquet/DuckDB. Delisting QA,
 historical identity approval and independent human reviews remain pending.
 
 ## Sample-access update
 
 The [sample evidence note](../docs/wrds_sample_exports.md) and
 [file receipt](market_access_samples.json) record actual daily-stock, benchmark,
-capitalization, historical Names and CCM exports. All nine files have verified
+capitalization, historical Names and CCM exports. All ten files have verified
 private archive copies on the owner's Mac. The pilot Names CSV was archived from
-the supplied attachment; the other eight match original Mac downloads. The two
+the supplied attachment; the other nine match original Mac downloads. The two
 CCM files contain 62 rows with 47 columns each; 19 requested
 CIKs match directly, while the XOM supplement carries a different header CIK.
 That mismatch is unresolved and has not been rewritten into an approved mapping.
@@ -29,12 +29,18 @@ security/session rows, invalid returns or nonpositive capitalization values. The
 benchmark is consistent across all securities, and every daily row joins one
 dated Names record. All 135 candidate event windows have complete source coverage
 (8,100 control-session, 135 entry-reference and 2,700 label-session checks).
-All delisting flags are `N`, so the [small terminal-event export](../docs/wrds_delisting_check.md)
-is still required. The daily export's SQL, query ID and exact release date remain
+All pilot delisting flags are `N`. The [received WFM check](../docs/wrds_delisting_check.md)
+also has only N flags: ten ordinary rows ending 25 August 2017, with no terminal
+payment. Its SQL or submitted parameters are needed to diagnose the omission.
+The daily export's SQL, query ID and exact release date remain
 unknown. Coverage checks do not approve historical CIK mappings or calculate labels.
 
-This update changes documentation and provenance receipts only. No vendor adapter,
-actual event labels, fitted models or completed human reviews are added.
+The new [CIZ source-staging command](../docs/crsp_staging.md) converts the pilot to
+36,000 return rows, 1,800 benchmark rows and 36,000 dated snapshots. It preserves
+literal source flags, converts thousands to USD and joins historical SIC, while
+explicitly retaining incomplete source/identity/terminal audit status. It creates
+no approved CIK links or import-ready manifest. No actual event labels, fitted
+models or completed human reviews are added.
 
 ## Delivered
 
@@ -60,7 +66,14 @@ a human review.
 
 ## Verification
 
-The cloud `make reproduce` run completed successfully: **127 tests passed**, Ruff
+The latest cloud `make reproduce` run passes **154 tests**, Ruff, the protocol
+lock and both synthetic demos. The 27 additional cases cover CIZ flags, the
+missing-terminal tail, unchanged terminal returns, cash after termination,
+capitalization units, historical industry boundaries, rejected ambiguous data,
+holdout refusal and preservation of prior staging. The actual pilot was staged
+successfully with zero coverage gaps; actual-source terminal QA remains incomplete.
+
+The prior cloud `make reproduce` run completed successfully: **127 tests passed**, Ruff
 passed, the protocol lock matched and both synthetic engineering demos completed.
 The 24 added cases cover independent control arithmetic, holiday boundaries,
 missing/duplicate history, exact-date snapshots, permanent-ID separation, invalid
@@ -70,7 +83,8 @@ Four existing dependency deprecation warnings remain.
 The primary protocol hash remains
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
 There is no empirical prediction result. The existing market importer still accepts
-three tables; a real snapshot adapter is not yet implemented. `prepare-labels`
+three approved-input tables; the separate CIZ adapter produces source staging with
+unresolved audit gates. `prepare-labels`
 continues to produce engineering labels, not a model-ready dataset.
 
 ## Remaining Milestone 05 work

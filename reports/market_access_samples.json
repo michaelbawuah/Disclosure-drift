@@ -2,7 +2,7 @@
   "schema_version": 1,
   "inspection_date_local": "2026-10-10",
   "inspection_timezone": "America/New_York",
-  "scope": "sample_and_pilot_export_inspection_only",
+  "scope": "sample_and_pilot_export_inspection_with_unapproved_source_staging",
   "files": [
     {
       "filename": "crsp_access_check.csv",
@@ -260,6 +260,31 @@
         "DlyRetMissFlg",
         "vwretd"
       ]
+    },
+    {
+      "filename": "crsp_delisting_check.csv",
+      "bytes": 1062,
+      "sha256": "5e8f8d3c721e6212410c545de90e37a16423b698ab10e746c2a3851da0c4b760",
+      "matches_owner_mac_download": true,
+      "private_archive_relative_path": "data/raw/wrds/2026-10-10/crsp_delisting_check.csv",
+      "owner_mac_archive_sha256_verified": true,
+      "rows": 10,
+      "column_count": 13,
+      "columns": [
+        "PERMNO",
+        "HdrCUSIP",
+        "Ticker",
+        "PERMCO",
+        "DlyCalDt",
+        "DlyDelFlg",
+        "DlyPrc",
+        "DlyPrcFlg",
+        "DlyCap",
+        "DlyPrevPrc",
+        "DlyRet",
+        "DlyRetMissFlg",
+        "vwretd"
+      ]
     }
   ],
   "ccm": {
@@ -288,9 +313,9 @@
     ]
   },
   "remaining": [
+    "Diagnose missing WFM terminal row from query SQL or submitted parameters",
     "Historical CIK/security identity review",
-    "Vendor normalization, exact source release/query metadata and snapshot availability audit",
-    "Development-period delisting QA",
+    "Exact source release/query metadata and point-in-time availability audit",
     "Independent filing and label/control trace reviews"
   ],
   "actual_event_labels_generated": false,
@@ -383,5 +408,79 @@
     "query_sql_status": "not_supplied",
     "source_release_date": null,
     "coverage_join_status": "provisional_retrieval_associations_only"
+  },
+  "delisting_check": {
+    "rows": 10,
+    "securities": 1,
+    "request_start": "2017-08-14",
+    "request_end": "2017-09-08",
+    "request_dates_provenance": "caller-declared; vendor query parameters not certified",
+    "expected_exchange_sessions": 19,
+    "coverage": [
+      {
+        "security_id": "77281",
+        "rows": 10,
+        "first_session": "2017-08-14",
+        "last_session": "2017-08-25",
+        "terminal_session": null,
+        "missing_requested_sessions_through_terminal": 9,
+        "first_missing_session": "2017-08-28"
+      }
+    ],
+    "missing_security_sessions": 9,
+    "benchmark_sessions": 10,
+    "missing_benchmark_sessions": 9,
+    "terminal_rows": 0,
+    "invalid_or_missing_capitalizations": 0,
+    "source_return_missing_flag_counts": {
+      "NA": 10
+    },
+    "terminal_handling_verified": false,
+    "source_sha256": "5e8f8d3c721e6212410c545de90e37a16423b698ab10e746c2a3851da0c4b760",
+    "schema_columns": [
+      "PERMNO",
+      "HdrCUSIP",
+      "Ticker",
+      "PERMCO",
+      "DlyCalDt",
+      "DlyDelFlg",
+      "DlyPrc",
+      "DlyPrcFlg",
+      "DlyCap",
+      "DlyPrevPrc",
+      "DlyRet",
+      "DlyRetMissFlg",
+      "vwretd"
+    ],
+    "ordinary_price_arithmetic_max_abs_error": 3.032629558541267e-07,
+    "benchmark_rows_matching_pilot": 10,
+    "source_cusip": "96683710",
+    "public_cash_consideration_usd": 42.0,
+    "public_event_source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2017-10",
+    "status": "incomplete_terminal_row_absent",
+    "terminal_payoff_arithmetic_verified": false,
+    "omission_cause": "unknown_without_submitted_query_parameters_or_sql",
+    "query_id": null,
+    "query_sql_status": "not_supplied_and_no_matching_mac_download_located"
+  },
+  "pilot_source_staging": {
+    "command": "stage-crsp",
+    "private_output": "data/staging/crsp-pilot-v1",
+    "normalization_code_sha256": "c3ebb572e72d14c5566d42c726de379817e7a30368159d77fa061ebe1ed22422",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "table_sha256": {
+      "daily_returns": "e7e14a1f7e649cacc4cdd8977c737c73ed2bfc884157729d0bdf7e79cb20baf5",
+      "market_returns": "f719160a01d0d4f647235f2a8b66f9254096ae7421f9544df5bf77c5ca45ec7c",
+      "security_snapshots": "7314cbb8aea714c94e7d18767985d29910dc007b77fb6fc8ee300454f7428103"
+    },
+    "daily_rows": 36000,
+    "benchmark_rows": 1800,
+    "snapshot_rows": 36000,
+    "missing_security_sessions": 0,
+    "import_ready": false,
+    "model_ready": false,
+    "historical_cik_mapping_approved": false,
+    "terminal_handling_verified": false,
+    "point_in_time_availability_verified": false
   }
 }
