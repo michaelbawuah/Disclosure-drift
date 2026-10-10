@@ -207,6 +207,10 @@ The observed form offers these two fields directly:
 | `dlycaldt` | Daily Calendar Date |
 | `vwretd` | Value-weighted return including dividends |
 
+Check that the selected return is **`vwretd` — including dividends**.
+**`vwretx` excludes dividends** and cannot serve as the study's benchmark, even
+when its date coverage is correct.
+
 Set dates to **2009-10-07 through 2022-02-02**, select those two fields, and leave
 conditional filters inactive. Choose **CSV**, **gzip**, and ISO **`YYYY-MM-DD`**
 dates, then submit and preserve the download and query evidence. No index-ID
@@ -296,6 +300,36 @@ parameters separately as query evidence; do not create substitute vendor SQL.
 Missing SQL, source release and vendor timestamps remain unknown. Both metadata
 receipts retain `model_ready: false` and zero source approvals.
 
+### Inventory the independent market download locally
+
+The market command accepts exactly `dlycaldt` and `vwretd`, with case-insensitive
+header matching, in CSV or gzip form. Replace the source path and choose a new
+private output directory:
+
+```bash
+uv run --locked --python 3.12 python scripts/wrds_manual_market.py \
+  inventory \
+  --source PATH_TO_MARKET.csv.gz \
+  --request-start 2009-10-07 --request-end 2022-02-02 \
+  --output data/private/wrds-intake/market-v1
+```
+
+The command preserves a read-only copy of the original bytes and records its
+byte count, SHA-256 and headers in `receipt.json`. A complete date pass blocks
+source observations after **2022-02-02** before any return is interpreted as a
+number. The inventory reports actual/requested coverage, expected and missing
+XNYS sessions, non-session dates, exact duplicates, and dates with different
+return text. Numeric counts distinguish blank, malformed, nonfinite and finite
+values, with a separate count below minus one. Text differences remain distinct
+and unresolved; the inventory does not choose between conflicting records.
+
+Append `--sql PATH_TO_QUERY.sql` only when a SQL file was supplied. Unlike the
+metadata command's restricted SQL check, this command only preserves and hashes
+that attachment; it neither interprets nor executes it. All source rows,
+including extra early dates, remain unchanged. Independent-export provenance,
+vendor execution, release/vintage, completeness and return conventions remain
+unverified; the receipt records `model_ready: false` and zero source approvals.
+
 ### Remaining staging work
 
 The offline `stage-crsp` command already consumes the ten-field stock contract
@@ -311,9 +345,9 @@ confirmed:
 
 | Component | Current behavior | Required adaptation for full manual exports |
 |---|---|---|
-| Manual source inventory | Offline daily, Names and combined CCM/company CSV/gzip inventories preserve bytes and report aggregate checks | Add supported query/release evidence, reconcile completeness across all batches and source families, and implement independent-market intake |
+| Manual source inventory | Offline daily, Names, combined CCM/company and independent-market CSV/gzip inventories preserve bytes and report aggregate checks | Add supported query/release evidence and reconcile completeness across all batches and source families |
 | Full-population daily staging | Reads the entire CSV into memory; accepts only known `NA` return flags | Stream/partition large files and review dictionary-defined missing codes, with explicit exclusions or unresolved records rather than zero filling |
-| Independent benchmark | Existing staging derives `vwretd` from stock rows; independent-market intake is not implemented | Preserve and validate the separate market source, then normalize its documented fields and reconcile overlapping values without deleting post-terminal benchmark sessions |
+| Independent benchmark | Raw two-field market inventory is implemented; existing staging still derives `vwretd` from stock rows | Verify market-source meaning, normalize its documented fields and reconcile overlapping values without deleting post-terminal benchmark sessions |
 | Historical universe | Requires normalized Parquet inputs | Map dated Names classifications, liquidity conventions and reviewed historical CIK links explicitly; preserve raw headers and source bounds |
 
 The online exporter's `verify` and `assemble` commands require its own
