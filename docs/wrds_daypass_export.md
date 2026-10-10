@@ -197,17 +197,28 @@ require review before calculating dollar volume.
 
 ### Independent market returns
 
-Also obtain an **independent value-weighted daily total-market return** export
-for the same date envelope, with `DlyCalDt`/`dlycaldt` and `vwretd` as the source
-fields when actually offered. Save the exact delivered header, documented
-benchmark, and source table. A market return repeated only on existing stock
-rows cannot prove benchmark coverage after a stock's terminal event.
+On the **Annual Update** page, find **Stock – Version 2 (CIZ)** and click
+**Daily Stock Market Indexes**, shown at the top right beside **Daily Stock File**.
 
-The current daily form's **Daily Stock Market Indexes** navigation and mapping
-identify `VWRETD` with CIZ index **`IndNo = 1000200`** and total-return field
-**`DlyTotRet`**. Use that mapping to locate the appropriate independent series,
-then preserve the index form's actual delivered headers and index identifier.
-This UI mapping does not mean that its CSV header will be `vwretd`.
+The observed form offers these two fields directly:
+
+| Field | Displayed meaning |
+|---|---|
+| `dlycaldt` | Daily Calendar Date |
+| `vwretd` | Value-weighted return including dividends |
+
+Set dates to **2009-10-07 through 2022-02-02**, select those two fields, and leave
+conditional filters inactive. Choose **CSV**, **gzip**, and ISO **`YYYY-MM-DD`**
+dates, then submit and preserve the download and query evidence. No index-ID
+selector was visible on this form; no separate `IndNo` selection or output is
+required for this route.
+
+The earlier CRSP mapping associates `VWRETD` with CIZ **`IndNo = 1000200`** and
+**`DlyTotRet`**. Those names describe an alternate CIZ representation, not extra
+fields to select on the observed `dlycaldt`/`vwretd` form. Preserve the actual
+delivered headers, documented benchmark, and source table. This independent
+market file is needed because a benchmark repeated only on existing stock rows
+cannot prove coverage after a stock's terminal event.
 
 ## 4. Offline intake and current implementation limits
 
@@ -247,6 +258,44 @@ selection remain unknown until supported by separately preserved evidence.
 The receipt explicitly records `model_ready: false`; date coverage alone does
 not establish complete security coverage or resolve conflicting records.
 
+### Inventory Names and CCM downloads locally
+
+Use the separate metadata command for Names and the combined CCM/company file.
+Replace each example source path with the downloaded CSV or gzip file, and use a
+new private output directory for each run:
+
+```bash
+uv run --locked --python 3.12 python scripts/wrds_manual_metadata.py \
+  inventory --role names \
+  --source PATH_TO_NAMES.csv.gz \
+  --request-start 2009-10-07 --request-end 2022-02-02 \
+  --output data/private/wrds-intake/names-v2
+
+uv run --locked --python 3.12 python scripts/wrds_manual_metadata.py \
+  inventory --role ccm \
+  --source PATH_TO_CCM.csv.gz \
+  --request-start 2009-10-07 --request-end 2022-02-02 \
+  --output data/private/wrds-intake/ccm-v2
+```
+
+Names requires the 24 fields above; CCM requires the combined 12 link/company
+fields and preserves any extra delivered columns. Each inventory saves a
+read-only, byte-preserving source copy and aggregate `receipt.json`, including
+hashes, headers, row counts, exact duplicates, historical-key variants, date-bound
+classifications, definite requested overlap, and unresolved interval-overlap
+candidates. Metadata histories outside the requested dates, including bounds
+after 2022, remain preserved raw. They do not authorize final-period outcomes or
+establish historical information availability. Blank, `B`, `E`, and other
+nonfinite bounds remain unresolved; no rows are dropped or normalized.
+
+If the site actually supplied a SQL file, append `--sql PATH_TO_QUERY.sql`.
+The command preserves it and performs a restricted text check; it never executes
+SQL or verifies vendor execution. SQL is optional: the observed CCM results page
+offered compressed output without SQL. Preserve screenshots and displayed input
+parameters separately as query evidence; do not create substitute vendor SQL.
+Missing SQL, source release and vendor timestamps remain unknown. Both metadata
+receipts retain `model_ready: false` and zero source approvals.
+
 ### Remaining staging work
 
 The offline `stage-crsp` command already consumes the ten-field stock contract
@@ -262,9 +311,9 @@ confirmed:
 
 | Component | Current behavior | Required adaptation for full manual exports |
 |---|---|---|
-| Manual source inventory | Offline daily CSV/gzip inventory preserves bytes and reports aggregate coverage, duplicates and flags | Add supported query/release evidence, reconcile completeness across all batches, and inventory Names, links, company headers and independent market sources |
+| Manual source inventory | Offline daily, Names and combined CCM/company CSV/gzip inventories preserve bytes and report aggregate checks | Add supported query/release evidence, reconcile completeness across all batches and source families, and implement independent-market intake |
 | Full-population daily staging | Reads the entire CSV into memory; accepts only known `NA` return flags | Stream/partition large files and review dictionary-defined missing codes, with explicit exclusions or unresolved records rather than zero filling |
-| Independent benchmark | Existing staging derives `vwretd` from stock rows | Accept a separate verified market CSV and reconcile overlapping benchmark values without deleting post-terminal benchmark sessions |
+| Independent benchmark | Existing staging derives `vwretd` from stock rows; independent-market intake is not implemented | Preserve and validate the separate market source, then normalize its documented fields and reconcile overlapping values without deleting post-terminal benchmark sessions |
 | Historical universe | Requires normalized Parquet inputs | Map dated Names classifications, liquidity conventions and reviewed historical CIK links explicitly; preserve raw headers and source bounds |
 
 The online exporter's `verify` and `assemble` commands require its own
