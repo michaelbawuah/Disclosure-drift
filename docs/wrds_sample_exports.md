@@ -1,9 +1,11 @@
-# WRDS sample exports inspected on 9 October 2026
+# WRDS sample and pilot exports inspected on 9-10 October 2026
 
 The owner downloaded these files through Cornell's authenticated WRDS session.
 The [receipt](../reports/market_access_samples.json) records exact byte hashes,
-row counts and actual column names. The same hashes were checked in the owner's
-Mac Downloads folder. Licensed rows remain outside public git.
+row counts and actual column names. Matching downloads were checked where available;
+all nine supplied files are archived with verified hashes in the owner's ignored
+local data directory. The pilot Names CSV was archived from the supplied attachment.
+Licensed rows remain outside public git.
 
 | File | Observed result | Scope |
 |---|---|---|
@@ -13,6 +15,9 @@ Mac Downloads folder. Licensed rows remain outside public git.
 | `crsp_names_apple.sql` | Vendor SQL supplied | Source view `crsp_a_stock.wrds_names_query` |
 | `crsp_ccm_pilot.csv` | 60 rows, 47 columns | 19 of the 20 requested pilot CIKs |
 | `crsp_ccm_xom.csv` | 2 rows, 47 columns | XOM ticker supplement; header CIK differs from pilot filings |
+| `crsp_names_pilot.csv` | 237 rows, 24 columns | Dated security descriptions for all 20 candidate PERMNOs |
+| `crsp_names_pilot.sql` | Vendor SQL supplied | Confirms the 20 requested PERMNOs and all 24 selected columns |
+| `crsp_daily_pilot.csv` | 36,000 rows, 10 columns | 1,800 sessions per security for all 20 candidates, 4 November 2014 to 28 December 2021 |
 
 ## What was checked
 
@@ -27,6 +32,31 @@ nonoverlapping, and every sample daily observation matches exactly one interval.
 The historical SIC for the sample dates differs from the header SIC, demonstrating
 why historical industry controls need a dated join. The Names output has no CIK.
 This is interval coverage evidence, not proof of contemporaneous data vintages.
+
+The full pilot Names CSV has exactly the 20 PERMNOs requested, and its 24 columns
+match the SQL selection in order. All 237 date intervals are valid, with no gaps,
+overlaps or duplicate PERMNO/start-date keys. Its Apple rows match the earlier
+sample exactly. The control-history start, controls date, entry-reference date and
+label end each match exactly one record for every candidate event: **540 of 540**
+boundary checks pass. Continuous interval coverage makes the intervening dates
+covered too. These checks use provisional retrieval associations, not approved
+CIK mappings. Historical SIC differs from header SIC at **76 of 135** controls
+dates. Preserve dated SIC for normalization; do not substitute header SIC.
+
+The full daily export has unique security/session keys and exactly the 1,800 XNYS
+sessions in the requested envelope for every candidate: no missing or extra dates.
+All stock and benchmark returns are numeric, finite and at least minus one; every
+capitalization is positive. All 36,000 return-quality flags are the literal source
+code `NA`, and every delisting flag is `N`. The benchmark agrees across securities
+on all 1,800 dates. The five-row expanded Apple sample matches the full export
+exactly. All daily observations join exactly one dated Names record with the same
+PERMCO. These are source consistency checks, not independent vendor verification.
+
+Using the provisional retrieval associations, all 135 event windows have their
+60 control sessions, entry-reference row and 20 return sessions: 8,100 control-row,
+135 entry-row and 2,700 label-row checks pass. No compounded event labels or fitted
+models were created. The daily query ID, vendor SQL and exact source release date
+have not been supplied; they are recorded as unknown rather than inferred.
 
 The combined CCM files have the same schema, 62 rows, no duplicate link keys and
 no reversed explicit date intervals. Of these, 33 rows have blank permanent security
@@ -50,6 +80,12 @@ candidate PERMNO `11850`. This is evidence of a header-identity mismatch, not en
 to authorize assigning that header CIK throughout the historical link interval.
 The reason for the changed header has not been established from primary filings.
 
+The pilot Names export now shows the original Exxon Mobil name and historical
+CUSIP throughout our development windows under the candidate PERMNO. This supports
+the candidate security and provides dated industry records. It does not add a CIK
+field or certify the full CIK/security history. The original SEC filing CIK remains
+unchanged and independent historical identity review is still pending.
+
 Nineteen requested CIKs match the batch file directly. Adding the XOM supplement
 provides 20 candidate securities for the next retrieval. It does **not** establish
 20 audited historical CIK-to-security mappings. Preserve the historical SEC filing
@@ -60,20 +96,15 @@ security selection has been approved.
 
 ## Next data request
 
-Use **CRSP / Annual Update / Stock - Version 2 (CIZ) / Names** for the 20 candidate
-PERMNOs prepared from these private files. Select all 24 variables, CSV,
-uncompressed and ISO dates; save as `crsp_names_pilot.csv`, plus SQL if offered.
-Reconcile dated names, security types and identifiers against original SEC filings
-before admitting a link to label staging. Names alone cannot certify a CIK history.
+The pilot daily and Names exports are received. The remaining small export is a
+[Whole Foods delisting QA case](wrds_delisting_check.md) in August 2017. The pilot
+contains no delisting rows and cannot validate terminal-payoff handling by itself.
+Reconcile the dated Names records against original SEC filings before label staging,
+and finish the source-release, identifier-change and independent human reviews.
 
-Then obtain daily stock/benchmark observations for the pilot request envelope
-**2014-11-04 through 2021-12-28**, with the exact required fields and dictionaries.
 The [135 event windows](../reports/pilot_market_request/event_windows.csv) define
-the precise control and label sessions. Separately complete the development-period
-delisting example, identifier-change review and all pending human audits.
-
-Only a five-session actual-return sample has been inspected so far. No actual
-filing-event labels or prediction models have been generated. No final-period
+the precise control and label sessions. No actual filing-event labels or prediction
+models have been generated. No final-period
 2022-2025 returns or evaluation outcomes have been examined; identifier metadata
 outside development dates was read solely to inspect the delivered schemas/history.
 The protocol and final evaluation gate are unchanged.

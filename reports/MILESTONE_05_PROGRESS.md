@@ -1,18 +1,37 @@
 # Milestone 05 progress: export request and pre-event controls
 
-Status on 2026-10-09: **in progress, not completed**. Authenticated CRSP sample
-exports have now been inspected. Full pilot returns, vendor normalization,
+Status on 2026-10-10: **in progress, not completed**. Authenticated CRSP sample
+and full pilot exports have been inspected. Vendor normalization, delisting QA,
 historical identity approval and independent human reviews remain pending.
 
 ## Sample-access update
 
 The [sample evidence note](../docs/wrds_sample_exports.md) and
 [file receipt](market_access_samples.json) record actual daily-stock, benchmark,
-capitalization, historical Names and CCM exports. File hashes match the owner's
-Mac downloads. The two CCM files contain 62 rows with 47 columns each; 19 requested
+capitalization, historical Names and CCM exports. All nine files have verified
+private archive copies on the owner's Mac. The pilot Names CSV was archived from
+the supplied attachment; the other eight match original Mac downloads. The two
+CCM files contain 62 rows with 47 columns each; 19 requested
 CIKs match directly, while the XOM supplement carries a different header CIK.
 That mismatch is unresolved and has not been rewritten into an approved mapping.
 The 20 candidate securities are an export worklist, not approved historical links.
+
+The full historical Names export is now received: **237 records, 24 columns,
+all 20 requested PERMNOs**, with matching vendor SQL. No duplicate keys, invalid
+date intervals, gaps or overlaps were found. All **540** requested event boundary
+dates have exactly one candidate security-description record. At **76 of 135**
+controls dates, dated SIC differs from header SIC. These checks establish source
+coverage and the need for dated industry joins, not approval of historical CIKs.
+
+The full daily export is received: **36,000 rows, 20 securities, 1,800 sessions
+each**, with all ten requested columns. There are no missing or duplicate
+security/session rows, invalid returns or nonpositive capitalization values. The
+benchmark is consistent across all securities, and every daily row joins one
+dated Names record. All 135 candidate event windows have complete source coverage
+(8,100 control-session, 135 entry-reference and 2,700 label-session checks).
+All delisting flags are `N`, so the [small terminal-event export](../docs/wrds_delisting_check.md)
+is still required. The daily export's SQL, query ID and exact release date remain
+unknown. Coverage checks do not approve historical CIK mappings or calculate labels.
 
 This update changes documentation and provenance receipts only. No vendor adapter,
 actual event labels, fitted models or completed human reviews are added.
@@ -56,8 +75,8 @@ continues to produce engineering labels, not a model-ready dataset.
 
 ## Remaining Milestone 05 work
 
-1. Expand the verified samples to the pilot windows and finish source dictionaries,
-   including a development-period delisting and historical identifier-change QA case.
+1. Finish source dictionaries and release/query metadata, including a development-period
+   delisting and historical identifier-change QA case. Pilot window coverage is verified.
 2. Implement/review source normalization and historical snapshot availability,
    including return conventions, currency/units, identifier dates and industry.
 3. Import the pilot data, join audited identities, calculate labels and controls,

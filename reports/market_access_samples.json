@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "inspection_date_local": "2026-10-09",
+  "inspection_date_local": "2026-10-10",
   "inspection_timezone": "America/New_York",
-  "scope": "sample_export_inspection_only",
+  "scope": "sample_and_pilot_export_inspection_only",
   "files": [
     {
       "filename": "crsp_access_check.csv",
@@ -193,6 +193,73 @@
         "SPCINDCD",
         "SPCSECCD"
       ]
+    },
+    {
+      "filename": "crsp_names_pilot.csv",
+      "bytes": 32419,
+      "sha256": "6faf8d24087c2abb67d1b3c4895857188cddc4b23b272b4f067e9c85bc7c59a1",
+      "matches_owner_mac_download": false,
+      "private_archive_relative_path": "data/raw/wrds/2026-10-09/crsp_names_pilot.csv",
+      "owner_mac_archive_sha256_verified": true,
+      "rows": 237,
+      "column_count": 24,
+      "columns": [
+        "permno",
+        "hdrprimaryexch",
+        "nasdissuno",
+        "hdrsiccd",
+        "permco",
+        "secinfostartdt",
+        "secinfoenddt",
+        "securitybegdt",
+        "securityenddt",
+        "cusip",
+        "ticker",
+        "issuernm",
+        "shareclass",
+        "usincflg",
+        "issuertype",
+        "securitytype",
+        "securitysubtype",
+        "sharetype",
+        "securityactiveflg",
+        "siccd",
+        "primaryexch",
+        "tradingsymbol",
+        "naics",
+        "tradingstatusflg"
+      ],
+      "archive_provenance": "Exact owner-supplied attachment; matching original Mac download was not located."
+    },
+    {
+      "filename": "crsp_names_pilot.sql",
+      "bytes": 1745,
+      "sha256": "556924430cf54c6eb3b7a8ebe0654b3323c659af3659cbc623017fc4d7498efa",
+      "matches_owner_mac_download": true,
+      "private_archive_relative_path": "data/raw/wrds/2026-10-09/crsp_names_pilot.sql",
+      "owner_mac_archive_sha256_verified": true
+    },
+    {
+      "filename": "crsp_daily_pilot.csv",
+      "bytes": 2611436,
+      "sha256": "884faf245e5b03bffcd1217a3be802dff91433319de05494da9ce6beac67d0d6",
+      "matches_owner_mac_download": true,
+      "private_archive_relative_path": "data/raw/wrds/2026-10-10/crsp_daily_pilot.csv",
+      "owner_mac_archive_sha256_verified": true,
+      "rows": 36000,
+      "column_count": 10,
+      "columns": [
+        "PERMNO",
+        "HdrCUSIP",
+        "Ticker",
+        "PERMCO",
+        "DlyCalDt",
+        "DlyDelFlg",
+        "DlyCap",
+        "DlyRet",
+        "DlyRetMissFlg",
+        "vwretd"
+      ]
     }
   ],
   "ccm": {
@@ -222,12 +289,99 @@
   },
   "remaining": [
     "Historical CIK/security identity review",
-    "Full pilot daily-return and snapshot coverage",
-    "Vendor normalization and source release metadata",
+    "Vendor normalization, exact source release/query metadata and snapshot availability audit",
     "Development-period delisting QA",
     "Independent filing and label/control trace reviews"
   ],
   "actual_event_labels_generated": false,
   "final_period_return_outcomes_examined": false,
-  "protocol_changed": false
+  "protocol_changed": false,
+  "names_pilot": {
+    "rows": 237,
+    "securities": 20,
+    "column_count": 24,
+    "source_view_from_vendor_sql": "crsp_a_stock.wrds_names_query",
+    "query_id": null,
+    "duplicate_interval_keys": 0,
+    "invalid_intervals": 0,
+    "gaps": 0,
+    "overlaps": 0,
+    "candidate_event_boundary_checks": 540,
+    "controls_dates_with_historical_header_sic_difference": 76,
+    "apple_sample_rows_matching": 11,
+    "includes_cik_field": false,
+    "historical_cik_mapping_approved": false
+  },
+  "daily_pilot": {
+    "source_file": "crsp_daily_pilot.csv",
+    "source_sha256": "884faf245e5b03bffcd1217a3be802dff91433319de05494da9ce6beac67d0d6",
+    "rows": 36000,
+    "securities": 20,
+    "columns": [
+      "PERMNO",
+      "HdrCUSIP",
+      "Ticker",
+      "PERMCO",
+      "DlyCalDt",
+      "DlyDelFlg",
+      "DlyCap",
+      "DlyRet",
+      "DlyRetMissFlg",
+      "vwretd"
+    ],
+    "first_session": "2014-11-04",
+    "last_session": "2021-12-28",
+    "expected_exchange_sessions": 1800,
+    "sessions_per_security": {
+      "10107": 1800,
+      "11308": 1800,
+      "11850": 1800,
+      "12060": 1800,
+      "12490": 1800,
+      "13856": 1800,
+      "14593": 1800,
+      "18163": 1800,
+      "18542": 1800,
+      "22111": 1800,
+      "26403": 1800,
+      "47896": 1800,
+      "55976": 1800,
+      "59328": 1800,
+      "59408": 1800,
+      "66181": 1800,
+      "76076": 1800,
+      "84788": 1800,
+      "86580": 1800,
+      "92655": 1800
+    },
+    "duplicate_security_session_keys": 0,
+    "missing_security_sessions": 0,
+    "extra_security_sessions": 0,
+    "nonfinite_or_invalid_returns": 0,
+    "nonpositive_or_invalid_capitalization": 0,
+    "delisting_flag_counts": {
+      "N": 36000
+    },
+    "return_missing_flag_counts": {
+      "NA": 36000
+    },
+    "benchmark_sessions": 1800,
+    "benchmark_cross_security_conflicts": 0,
+    "dated_names_unique_matches": 36000,
+    "daily_names_permco_conflicts": 0,
+    "candidate_events_with_complete_windows": 135,
+    "control_session_checks": 8100,
+    "label_session_checks": 2700,
+    "entry_reference_checks": 135,
+    "names_boundary_checks": 540,
+    "dated_header_sic_differences": 76,
+    "expanded_apple_sample_matches": 5,
+    "historical_cik_mapping_approved": false,
+    "event_labels_calculated": false,
+    "holdout_returns_examined": false,
+    "query_id": null,
+    "query_sql_status": "not_supplied",
+    "source_release_date": null,
+    "coverage_join_status": "provisional_retrieval_associations_only"
+  }
 }
