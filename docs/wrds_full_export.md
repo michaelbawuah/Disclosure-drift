@@ -1,5 +1,13 @@
 # Run the full-study WRDS source export
 
+**Choose the access route first.** The commands below require an authenticated
+WRDS database connection. A website Access Pass/Daypass is a separate route:
+follow the [manual browser-export guide](wrds_daypass_export.md) instead of
+retrying a Python username/password prompt. WRDS requires website login and
+download queries to be submitted manually; this exporter connects to the
+database and does not automate the website. See the
+[official access rules](https://wrds-www.wharton.upenn.edu/users/tou/).
+
 The exporter collects the missing historical source inputs into private,
 resumable CSV checkpoints. **The default export covers development population
 selection years 2010–2021.** Final population price/volume windows and final

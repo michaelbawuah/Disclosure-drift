@@ -108,11 +108,14 @@ The delivered implementation files match the recorded execution hashes.
 
 ## What happens next
 
-The immediate dependency is the actual full historical source export. The
-[WRDS guide](../docs/wrds_full_export.md) now provides one executable sequence:
+The immediate dependency is the actual full historical source export. For a
+website Access Pass/Daypass, follow the
+[manual browser-export guide](../docs/wrds_daypass_export.md) and retain the
+original files and query evidence locally. With authenticated database access,
+the [WRDS guide](../docs/wrds_full_export.md) provides a separate sequence:
 inspect the account's catalog, verify five source bindings, collect development
 population windows, collect development market sources, then verify and assemble
-the monthly files. Authentication remains in the user's local WRDS prompt.
+the monthly files. Its authentication remains in the user's local WRDS prompt.
 
 | Stage | Work remaining |
 |---|---|

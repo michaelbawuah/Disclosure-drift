@@ -80,8 +80,10 @@ requires the source snapshots and review bundles described in the contracts.
 The [full data request](docs/full_study_data_request.md) specifies the required
 historical exports. Return coverage extends through **February 3, 2026** for
 late-2025 filing labels. Development and final-return exports remain separate.
-The [WRDS execution guide](docs/wrds_full_export.md) supplies the runnable
-catalog, source-binding, monthly export, resume and offline assembly commands.
+Use the [manual browser-export guide](docs/wrds_daypass_export.md) for a WRDS
+website Access Pass/Daypass. With authenticated database access, the
+[WRDS execution guide](docs/wrds_full_export.md) supplies the runnable catalog,
+source-binding, monthly export, resume and offline assembly commands.
 Start with development population selection years 2010–2021. Both holdout
 population price/volume windows and holdout return collection require completed
 development prerequisites.
