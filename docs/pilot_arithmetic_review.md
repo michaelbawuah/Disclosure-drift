@@ -1,5 +1,10 @@
 # Pilot arithmetic review
 
+The user's supplied 20/20 independent numerical and printed-timing pass has now
+been explicitly recorded against the unchanged evidence. See
+[review progress](review_progress.md) for the completed review, preserved unknown
+original timestamp, source hashes and the separate remaining source/identity work.
+
 The [review follow-up](review_followup.md) answers the verdict/open-end questions,
 records the submitted independent check and raw-row reconciliation, and adds a
 separate edge-case packet plus a focused view of the existing 30 filing pairs.
@@ -84,7 +89,8 @@ historical CIK links, source availability or filing boundaries.
 - Resolve the exact source release/query metadata and document historical availability
   evidence or its limitations. Retrieval date is not historical availability.
 - Complete the 30-pair filing sample, registered reference-boundary reviews and the
-  20 arithmetic reviews. Promote only approved inputs and finalize exclusions.
+  remaining original-source trace judgments. Preserve the user's completed 20-case
+  numerical and printed-timing review; promote only approved inputs and finalize exclusions.
 
 The implemented audit runs without those approvals so reviewers have concrete
 calculations to inspect. It explicitly reports `milestone_05_complete=false` and

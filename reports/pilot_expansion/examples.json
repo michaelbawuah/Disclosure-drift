@@ -1,0 +1,51 @@
+[
+  {
+    "year": 2015,
+    "accession": "0000050863-15-000015",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+    "opening_12_words": "The following risks could materially and adversely affect our business, financial condition,",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2016,
+    "accession": "0000200406-16-000071",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040616000071/form10-k20160103.htm",
+    "opening_12_words": "The Company may from time to time make certain forward-looking statements in",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2017,
+    "accession": "0001018724-17-000011",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000011/amzn-20161231x10k.htm",
+    "opening_12_words": "Please carefully consider the following risk factors. If any of the following",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2018,
+    "accession": "0000080424-18-000055",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042418000055/fy171810-kreport.htm",
+    "opening_12_words": "We discuss our expectations regarding future performance, events and outcomes, such as",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2019,
+    "accession": "0000093410-19-000008",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341019000008/cvx12312018-10kdoc.htm",
+    "opening_12_words": "Chevron is a global energy company and its operating and financial results",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2020,
+    "accession": "0001551152-20-000007",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115220000007/abbv-20191231x10k.htm",
+    "opening_12_words": "You should carefully consider the following risks and other information in this",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2021,
+    "accession": "0000796343-21-000004",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634321000004/adbe-20201127.htm",
+    "opening_12_words": "As previously discussed, our actual results could differ materially from our forward-looking",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  }
+]

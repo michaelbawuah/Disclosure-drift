@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "status": "actual_checkpoint_text_validation_completed",
+  "analysis": "RETROSPECTIVE_TEXT_ENCODER_VALIDATION",
+  "data_kind": "REAL_SEC_TEXT_DESCRIPTIVE_PILOT",
+  "validation_id": "2abcdea6c477e6721ba5cf7f00703269195e908eac886921a07c3cf0ec5da4d2",
+  "plan_sha256": "06800c3697e1b7bedd99e82bf735b50de505681bce1cf203fddde74c1bcf2ff9",
+  "actual_checkpoint_execution": true,
+  "synthetic_encoder_used": false,
+  "checkpoint_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "artifact_sha256": {
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+  },
+  "spec_sha256": "1a1d55425772edb8d3da8aebb3087e160c68055007b276a93274a383702db63a",
+  "code_commit": "ffdeaab4e8229216fda5b3571f0e2ad6282e7053",
+  "code_files": {
+    "semantic.py": "e91697fc4b8791e3484897caafd0e3aafc4adbb51c7346af569fc69cfad9bc88",
+    "semantic_validation.py": "09cf74518a1045f3063e237009756e6bb7b9a4ac5e17b93c2f577be0bd1b6c36",
+    "pilot_checkpoint.py": "b90a13e9b623cf004c5d43a345caa38b336fe98399bdb350d769499f566f18ef",
+    "protocol.py": "0fed0fdd73a093cd45be47e66e8217a21f9759c962024e9babb4ffb2a69f53ac"
+  },
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "sources": {
+    "pairs": {
+      "file": "source_pairs.parquet",
+      "sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0"
+    },
+    "filings": {
+      "file": "source_filings.parquet",
+      "sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380"
+    },
+    "audit": {
+      "file": "audit_summary.json",
+      "sha256": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb"
+    },
+    "evidence": {
+      "file": "filing_evidence.parquet",
+      "sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626"
+    },
+    "spec": {
+      "file": "semantic_spec.json",
+      "sha256": "1a1d55425772edb8d3da8aebb3087e160c68055007b276a93274a383702db63a"
+    },
+    "protocol": {
+      "file": "protocol.json",
+      "sha256": "ac6f832189016f846a931ae9ebefecc10522d2a021b33a2caa8856be6af049c7"
+    }
+  },
+  "source_audit": {
+    "filings": 155,
+    "issuers": 20,
+    "annual_pairs": 135,
+    "automated_evidence_ok": 155,
+    "filings_with_blocking_issues": 0,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "timestamp_disagreements": 72,
+    "reference_resolutions": 14
+  },
+  "rows": 135,
+  "unique_documents": 155,
+  "source_filings": 155,
+  "issuers": 20,
+  "year_counts": {
+    "2015": 19,
+    "2016": 19,
+    "2017": 19,
+    "2018": 19,
+    "2019": 19,
+    "2020": 20,
+    "2021": 20
+  },
+  "content_tokens_encoded": 1459865,
+  "chunks_encoded": 5828,
+  "tokens_truncated": 0,
+  "dimensions": 384,
+  "distance_summary": {
+    "minimum": 0.0009384074838936218,
+    "median": 0.00632818730688256,
+    "p10": 0.002681514337323354,
+    "p90": 0.01756767906042056,
+    "maximum": 0.10261717162567652
+  },
+  "reproducibility_checks_passed": 3,
+  "numerical_checks": {
+    "batch_size": 16,
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "same_batch_max_abs_tolerance": 1e-12,
+    "different_batch_max_abs_tolerance": 1e-06,
+    "unit_norm_tolerance": 1e-12,
+    "unchanged_distance_tolerance": 1e-12,
+    "tokens_truncated_allowed": 0,
+    "expected_embedding_dimensions": 384
+  },
+  "backend": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.19.0",
+    "huggingface-hub": "2.2.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.3",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1"
+  },
+  "execution": {
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "model_training": false,
+    "model_device": "cpu",
+    "model_dtype": "torch.float32",
+    "tokenizer_class": "BertTokenizer"
+  },
+  "platform": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "runtime_seconds": {
+    "model_initialization_including_cache_access": 1.5217659670015564,
+    "unique_document_inference": 468.77408862599987,
+    "total": 487.60563544600154
+  },
+  "chronology_scope": "retrospective_only",
+  "primary_model_input": false,
+  "returns_read": false,
+  "final_period_opened": false,
+  "predictive_performance_claim": false,
+  "model_ready": false,
+  "empirical_gate_satisfied": false,
+  "human_manual_validation_complete": false,
+  "manual_validation_status": "pending_named_human_review",
+  "limitations": [
+    "Purposive parser sample is not the historical investment universe",
+    "Training and fine-tuning data cutoffs are unverified; no historical checkpoint availability claim",
+    "Actual diagnostic results are not named human reviews or semantic-quality validation",
+    "Descriptive semantic distances are not evidence of return predictability"
+  ],
+  "files": {
+    "document_embeddings.npz": "74382f71711ab23d7a3e39dd89202568fd750aa07cd2ed89f2b4189290ef671e",
+    "document_encoding_receipts.parquet": "02764a42ef10a98bfaf8cf02c9b59caaecfcd84efc42ddfd9261e0c8e3b03ed8",
+    "execution_started.json": "31e6f2796ba13ad03d60f39b53f296a5693bf047ad2c361162fd3d88977fe267",
+    "manual_examples.json": "766d31ae6502f239a59bb395e725a86ab7802ff0531bc66355a371d4621d89c8",
+    "reproducibility_checks.json": "7728347cf43abe6ed85182c2c0905166b0b8ad5dc122f71e422675ce6ff933b2",
+    "semantic_features.csv": "bdefd1d580a175884c2e331b4c1c6178b503f72102f43062a3368bf9b1b999ff",
+    "semantic_features.parquet": "3a1bf1366d2bf3ac3190dbef9a338913b9798de080279c6bb524744bb53a73cd",
+    "semantic_spec.json": "1a1d55425772edb8d3da8aebb3087e160c68055007b276a93274a383702db63a"
+  }
+}

@@ -150,7 +150,7 @@ def build_pilot_checkpoint(pairs_path, filings_path, audit_path, output, config)
                "milestone_06_complete": False,
                "sources": {"filings": sha256(filing_raw), "pairs": sha256(pair_raw),
                            "audit": sha256(audit_raw), "filing_evidence": sha256(evidence_raw)},
-               "limitations": ["20-issuer parser sample is not the historical investment universe",
+               "limitations": ["Purposive parser sample is not the historical investment universe",
                                "Pilot coverage is reported by acceptance year; it is not the planned full study",
                                "filing and market source reviews remain pending",
                                "text distributions are descriptive, not predictive evidence"]}

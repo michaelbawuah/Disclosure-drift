@@ -1,0 +1,14 @@
+{
+  "sample_type": "Purposive text-only expansion to 100\u2013150 original annual filing pairs accepted in 2019\u20132021; not a historical investment universe. Companies chosen across document formats and business sectors without market outcomes.",
+  "companies_requested": 15,
+  "filings_downloaded": 60,
+  "automated_extraction_ok": 60,
+  "pairs_ready_for_manual_review": 45,
+  "excluded_pairs": [],
+  "network_requests_this_run": 0,
+  "failures": [],
+  "reference_resolutions": 5,
+  "manual_audit": "pending",
+  "market_returns": "not_loaded",
+  "empirical_predictive_results": "none"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "data_kind": "REAL_SEC_TEXT_DESCRIPTIVE_PILOT",
+  "validation_id": "2abcdea6c477e6721ba5cf7f00703269195e908eac886921a07c3cf0ec5da4d2",
+  "source_receipt_sha256": "67f0217d54a836d951b5715ca8814f443188f30610a5c55a39f4baf15078fe5e",
+  "files": {
+    "all_pair_distances.csv": "84c401ca534220afcc656e9545154aae8406f6ae60b6aef5dd06b38bd5c8f1ba",
+    "environment_distributions.json": "2b599cc604270939df92ae3c1f53684cd2b923c318b85249a8f2569c0ddb4c6f",
+    "independent_replication.json": "cdc30f9040bca546168b660ff4a3f233f2d088394c14e893ef786f4a3dd057cb",
+    "manual_examples.json": "766d31ae6502f239a59bb395e725a86ab7802ff0531bc66355a371d4621d89c8",
+    "method_record.json": "0e1358fec3040ef2b9ce5f045d59dc41cf25a062bc1adf3ff3acf1d5c6a60b70",
+    "report.md": "d5ee7109311eb0206d85401bdc548e9fdb1bbbde6a0d6e9d8373998a1b7f18ff",
+    "reproducibility_checks.json": "7728347cf43abe6ed85182c2c0905166b0b8ad5dc122f71e422675ce6ff933b2",
+    "source_examples.json": "0229d3cab8b3e2ff67e8cb8b0fe08be1ed2e6bf65fd7e88218256ab253ac9719",
+    "validation_receipt.json": "67f0217d54a836d951b5715ca8814f443188f30610a5c55a39f4baf15078fe5e"
+  }
+}

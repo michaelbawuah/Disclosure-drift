@@ -7,7 +7,7 @@ import pytest
 
 from disclosure_research.audit import build_audit
 from disclosure_research.edgar import SecClient
-from disclosure_research.extraction import VERSION, TOKEN, clean_html, extract_risk_factors, pair_filings
+from disclosure_research.extraction import END, START, VERSION, TOKEN, clean_html, extract_risk_factors, pair_filings
 from disclosure_research.ingest import ingest_smoke
 from disclosure_research.references import load_reference_rules, resolve_section, sha256
 
@@ -90,6 +90,64 @@ def test_rule_cannot_override_a_substantive_numbered_section():
     raw = raw.replace(b"Pages 4-5", BODY.encode())
     rule.update(primary_sha256=sha256(raw), primary_reference_sha256=sha256(extract_risk_factors(raw).text))
     with pytest.raises(ValueError, match="Numbered Item 1A reference"):
+        resolve_section(raw, PRIMARY, ACCESSION, {ACCESSION: rule})
+
+
+@pytest.mark.parametrize("kind", ["same_document_repeated_heading_range", "same_document_labeled_risk_range",
+                                  "same_document_indexed_risk_range"])
+def test_registered_expansion_layouts_keep_the_full_original_section(tmp_path, kind):
+    if kind == "same_document_repeated_heading_range":
+        raw = (f"<h2>Item 1A. Risk Factors</h2><p>{BODY}</p>"
+               "<h2>Item 1A. Risk Factors</h2><p>final risk paragraph</p>"
+               "<h2>Item 1B. Unresolved Staff Comments</h2><p>excluded</p>").encode()
+        text = clean_html(raw)
+        start, end = next(START.finditer(text)).end(), next(END.finditer(text)).start()
+    elif kind == "same_document_labeled_risk_range":
+        raw = (f"<h2>RISK FACTORS</h2><p>{BODY}</p>"
+               "<h2>LEGAL PROCEEDINGS</h2><p>excluded</p>"
+               "<h2>Item 1A. Risk Factors and Cautionary Statement</h2><p>Pages 3, 25-30</p>"
+               "<h2>Item 1B. Unresolved Staff Comments</h2>").encode()
+        text = clean_html(raw)
+        start, end = len("RISK FACTORS"), text.index("LEGAL PROCEEDINGS")
+    else:
+        raw = (f"<h2>RISK FACTORS</h2><p>{BODY}</p>"
+               "<h2>QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISKS</h2><p>excluded</p>"
+               "<h2>Item 1A. Risk Factors</h2><p>24</p>"
+               "<h2>Item 1B. Unresolved Staff Comments</h2>").encode()
+        text = clean_html(raw)
+        start, end = len("RISK FACTORS"), text.index("QUANTITATIVE AND QUALITATIVE")
+    body = text[start:end].strip(" .:-\n")
+    rule = {"accession": ACCESSION, "primary_url": PRIMARY, "primary_sha256": sha256(raw),
+            "primary_reference_sha256": sha256(extract_risk_factors(raw).text),
+            "kind": kind, "source_url": PRIMARY, "source_sha256": sha256(raw),
+            "start_offset": start, "end_offset": end, "token_count": len(TOKEN.findall(body)),
+            "text_sha256": sha256(body), "boundary_notes": "Explicit synthetic source-bound layout case."}
+    rules = write_rules(tmp_path / "rules.json", [rule])
+    result = resolve_section(raw, PRIMARY, ACCESSION, rules)
+    assert result.extraction.status == "ok" and result.extraction.text == body
+    assert BODY.strip() in result.extraction.text and "excluded" not in result.extraction.text
+    assert result.source_url == PRIMARY and result.index_url == ""
+    broken = copy.deepcopy(rule)
+    broken["start_offset"] += 1
+    with pytest.raises(ValueError, match="range must"):
+        resolve_section(raw, PRIMARY, ACCESSION, {ACCESSION: broken})
+
+
+def test_repeated_heading_rule_cannot_cross_a_real_item_boundary():
+    raw = (f"<h2>Item 1A. Risk Factors</h2><p>{BODY}</p>"
+           "<h2>Item 1A. Risk Factors</h2><p>ending</p>"
+           "<h2>Item 1B. Unresolved Staff Comments</h2><p>excluded</p>"
+           "<h2>Item 2. Properties</h2>").encode()
+    text = clean_html(raw)
+    start = next(START.finditer(text)).end()
+    end = list(END.finditer(text))[-1].start()
+    body = text[start:end].strip(" .:-\n")
+    rule = {"accession": ACCESSION, "primary_url": PRIMARY, "primary_sha256": sha256(raw),
+            "primary_reference_sha256": sha256(extract_risk_factors(raw).text),
+            "kind": "same_document_repeated_heading_range", "source_url": PRIMARY,
+            "source_sha256": sha256(raw), "start_offset": start, "end_offset": end,
+            "token_count": len(TOKEN.findall(body)), "text_sha256": sha256(body)}
+    with pytest.raises(ValueError, match="first Item 1B/2"):
         resolve_section(raw, PRIMARY, ACCESSION, {ACCESSION: rule})
 
 

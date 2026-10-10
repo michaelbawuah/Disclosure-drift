@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "prior_user_packet_review_recorded",
+  "user_arithmetic_and_packet_timing_passes": 20,
+  "observed_max_abs_error": 1.27675647831893e-15,
+  "reviewer_type": "human",
+  "original_reviewed_at": null,
+  "original_review_time_unknown": true,
+  "recorded_at": "2026-10-10T18:13:10.771208+00:00",
+  "recorded_by": "assistant",
+  "assistant_reproduction_matches_saved_results": true,
+  "original_pending_draft_preserved": true,
+  "legacy_full_source_trace_review_imported": false,
+  "new_human_raw_source_reviews": 0,
+  "new_human_identity_reviews": 0,
+  "new_human_filing_reviews": 0,
+  "source_release_approved": false,
+  "model_ready": false,
+  "final_period_opened": false,
+  "bindings": {
+    "archive_sha256": "9b552168ccb0515fc6e8500892a3e4bcfc47fb4015772649151b38ea1ede7516",
+    "delivery_manifest_sha256": "7a4dcd89326f9e91eea46b71c1f283253e14541d464a2f7ae94a41106a8b20d2",
+    "original_packet_sha256": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+    "user_statement_sha256": "0b7d075377208b5d7621c40104b7db05853d2a5b40b9f5d11abed6efb969d4df",
+    "followup_summary.json": "5e3b9c12e2f2ee236b55f3205b3eeddf275f1f70b9bc4c1ff301a144cb86e65a",
+    "original_fixed20/audit_summary.json": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+    "original_fixed20/review.html": "e93aaeb076b9f60a2a258a1d9e7a5d4429c003d182d844992225ac7063260b59",
+    "original_fixed20/independent_traces.jsonl": "5b86df3e330db60ce90230b67e3c4e942cd9ea3503d8283ad8eb72e9a2310db2",
+    "original_fixed20/trace_reviews.template.jsonl": "6cba1b6ede95c536758552d4ddfa7e6b02b9bbc0df20c82c127884e941f079ce",
+    "user_recheck_results.json": "bab5f9d479bc1b3d5c19decd26dcab385b66bccbe86c53db60527c8b47afb50d",
+    "user_submission/pilot-recheck.py": "c542de49930621e3ed8a09d8fee022f34d8ca195780d8113279502c8be622c98",
+    "user_submission/review-verdicts-DRAFT.jsonl": "3fb53907fa6a6d872c92c591c6faaf53bf2859ecd70dee92f970cd113df42d46"
+  },
+  "review_code_sha256": "c6c702c094ba8bc518c02a89dad1e74e93243765150cd5a08c54047f32c607da",
+  "files": {
+    "pilot-recheck.py": "c542de49930621e3ed8a09d8fee022f34d8ca195780d8113279502c8be622c98",
+    "review-verdicts-DRAFT.jsonl": "3fb53907fa6a6d872c92c591c6faaf53bf2859ecd70dee92f970cd113df42d46",
+    "user_arithmetic_reviews.recorded.jsonl": "02bd331f7e8984d293429472e08dfacafb674283438df8d05d990917522c8c3b",
+    "user_recheck_results.json": "bab5f9d479bc1b3d5c19decd26dcab385b66bccbe86c53db60527c8b47afb50d",
+    "user_statement.json": "0b7d075377208b5d7621c40104b7db05853d2a5b40b9f5d11abed6efb969d4df"
+  }
+}

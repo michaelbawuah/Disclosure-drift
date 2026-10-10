@@ -13,10 +13,12 @@ from urllib.parse import urljoin, urlsplit
 
 from lxml import html
 
-from .extraction import VERSION, TOKEN, Extraction, clean_html, extract_risk_factors
+from .extraction import END, START, VERSION, TOKEN, Extraction, clean_html, extract_risk_factors
 
 RESOLUTION_VERSION = "reference-range-v1"
-KINDS = {"same_document_range", "same_accession_exhibit_range"}
+KINDS = {"same_document_range", "same_accession_exhibit_range",
+         "same_document_repeated_heading_range", "same_document_labeled_risk_range",
+         "same_document_indexed_risk_range"}
 
 
 def sha256(value: bytes | str) -> str:
@@ -109,7 +111,18 @@ def resolve_section(raw: bytes, primary_url: str, accession: str, rules: dict,
         raise ValueError("Numbered Item 1A reference differs from the registered evidence")
     directory = _filing_directory(primary_url, accession)
     source_url, index_url, index_hash = rule["source_url"], "", ""
-    if rule["kind"] == "same_document_range":
+    if rule["kind"] in {"same_document_repeated_heading_range", "same_document_labeled_risk_range",
+                         "same_document_indexed_risk_range"}:
+        if source_url != primary_url:
+            raise ValueError("Registered same-document boundaries cannot change the risk source")
+        if rule["kind"] == "same_document_labeled_risk_range" and not re.search(
+                r"\bpages?\s+\d+(?:\s*[,–—-]\s*\d+)+", initial.text, re.I):
+            raise ValueError("Labeled risk range requires an explicit Item 1A page reference")
+        if rule["kind"] == "same_document_indexed_risk_range" and not re.fullmatch(
+                r"[1-9]\d*", initial.text):
+            raise ValueError("Indexed risk range requires a single-page Item 1A index reference")
+        source = raw
+    elif rule["kind"] == "same_document_range":
         if source_url != primary_url or not re.fullmatch(
                 r"(?:Pages?\s*)?\d+\s*[-–—]\s*\d+", initial.text, re.I):
             raise ValueError("Same-document resolution requires the original Item 1A page reference")
@@ -137,6 +150,23 @@ def resolve_section(raw: bytes, primary_url: str, accession: str, rules: dict,
     start, end = rule["start_offset"], rule["end_offset"]
     if not 0 <= start < end <= len(normalized):
         raise ValueError("Reference range is outside the normalized source")
+    if rule["kind"] == "same_document_repeated_heading_range":
+        starts, ends = list(START.finditer(normalized)), list(END.finditer(normalized))
+        if (not any(match.end() == start for match in starts)
+                or sum(start < match.start() < end for match in starts) < 1
+                or not any(match.start() == end for match in ends)
+                or any(start < match.start() < end for match in ends)):
+            raise ValueError("Repeated-heading range must join Item 1A pages up to the first Item 1B/2")
+    elif rule["kind"] in {"same_document_labeled_risk_range", "same_document_indexed_risk_range"}:
+        starts = list(re.finditer(r"(?im)^[ \t]*risk factors[ \t]*$", normalized))
+        end_label = (r"quantitative and qualitative disclosures about market risks"
+                     if rule["kind"] == "same_document_indexed_risk_range" else
+                     r"(?:legal proceedings|properties|unresolved staff comments)")
+        ends = list(re.finditer(r"(?im)^[ \t]*" + end_label + r"[ \t]*$", normalized))
+        if (not any(match.end() == start for match in starts)
+                or not any(match.start() == end for match in ends)
+                or any(start < match.start() < end for match in ends)):
+            raise ValueError("Labeled risk range must bound the complete Risk Factors section")
     text = normalized[start:end].strip(" .:-\n")
     count = len(TOKEN.findall(text))
     if count != rule["token_count"] or sha256(text) != rule["text_sha256"]:

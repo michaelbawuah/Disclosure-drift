@@ -1,0 +1,89 @@
+{
+  "purpose": "Purposive text-only expansion to 100\u2013150 original annual filing pairs accepted in 2019\u20132021; not a historical investment universe. Companies chosen across document formats and business sectors without market outcomes.",
+  "discovery_source": "https://www.sec.gov/files/company_tickers.json",
+  "discovery_sha256": "bb1521ff938ce1217343362f335aae521d9978b105229eabef69124ac24bbb1c",
+  "discovery_fetched_at": "2026-10-10T18:02:27.495461+00:00",
+  "filing_year_start": 2018,
+  "filing_year_end": 2021,
+  "pair_year_start": 2019,
+  "pair_year_end": 2021,
+  "selection_recorded_before_download": true,
+  "selection_note": "Fifteen additional issuers selected before reading new filing text or outcomes. Retain all filing/extraction failures in the receipt; no outcome-based replacement.",
+  "companies": [
+    {
+      "name": "ADOBE INC.",
+      "ticker": "ADBE",
+      "cik": "0000796343"
+    },
+    {
+      "name": "COMCAST CORP",
+      "ticker": "CMCSA",
+      "cik": "0001166691"
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "cik": "0001318605"
+    },
+    {
+      "name": "FORD MOTOR CO",
+      "ticker": "F",
+      "cik": "0000037996"
+    },
+    {
+      "name": "VISA INC.",
+      "ticker": "V",
+      "cik": "0001403161"
+    },
+    {
+      "name": "Mastercard Inc",
+      "ticker": "MA",
+      "cik": "0001141391"
+    },
+    {
+      "name": "MCDONALDS CORP",
+      "ticker": "MCD",
+      "cik": "0000063908"
+    },
+    {
+      "name": "NIKE, Inc.",
+      "ticker": "NKE",
+      "cik": "0000320187"
+    },
+    {
+      "name": "COSTCO WHOLESALE CORP /NEW",
+      "ticker": "COST",
+      "cik": "0000909832"
+    },
+    {
+      "name": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "cik": "0001551152"
+    },
+    {
+      "name": "AMGEN INC",
+      "ticker": "AMGN",
+      "cik": "0000318154"
+    },
+    {
+      "name": "GOLDMAN SACHS GROUP INC",
+      "ticker": "GS",
+      "cik": "0000886982"
+    },
+    {
+      "name": "HONEYWELL INTERNATIONAL INC",
+      "ticker": "HON",
+      "cik": "0000773840"
+    },
+    {
+      "name": "CHEVRON CORP",
+      "ticker": "CVX",
+      "cik": "0000093410"
+    },
+    {
+      "name": "AT&T INC.",
+      "ticker": "T",
+      "cik": "0000732717"
+    }
+  ]
+}

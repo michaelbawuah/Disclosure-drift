@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "batch_size": 16,
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "same_batch_max_abs_tolerance": 1e-12,
+    "different_batch_max_abs_tolerance": 1e-06,
+    "unit_norm_tolerance": 1e-12,
+    "unchanged_distance_tolerance": 1e-12,
+    "tokens_truncated_allowed": 0,
+    "expected_embedding_dimensions": 384
+  },
+  "rechecks": [
+    {
+      "accession": "0000050863-15-000015",
+      "document_sha256": "8c25bf821c43eb36e7bd583e6a4e9427eed1715834aa0b2fcf93a15d0fb84363",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+      "same_batch_bitwise_equal": true,
+      "same_batch_max_abs_difference": 0.0,
+      "batch_1_vs_16_max_abs_difference": 0.0,
+      "unchanged_document_distance": 0.0,
+      "passed": true
+    },
+    {
+      "accession": "0000080424-18-000055",
+      "document_sha256": "67ca680a150c5615e3bc1e4815c588bbe8f982d48e40cf1189471bf0d85fa486",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042418000055/fy171810-kreport.htm",
+      "same_batch_bitwise_equal": true,
+      "same_batch_max_abs_difference": 0.0,
+      "batch_1_vs_16_max_abs_difference": 4.73885733431878e-09,
+      "unchanged_document_distance": 0.0,
+      "passed": true
+    },
+    {
+      "accession": "0000021344-21-000008",
+      "document_sha256": "deee08c0cb880b22f68fc6136cdd08967fa86946e2c5bd34114c49b03c86f191",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134421000008/ko-20201231.htm",
+      "same_batch_bitwise_equal": true,
+      "same_batch_max_abs_difference": 0.0,
+      "batch_1_vs_16_max_abs_difference": 1.329687679407776e-09,
+      "unchanged_document_distance": 0.0,
+      "passed": true
+    }
+  ]
+}

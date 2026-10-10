@@ -1,0 +1,18 @@
+{
+  "filings": 215,
+  "issuers": 35,
+  "annual_pairs": 180,
+  "pairs_selected_for_review": 30,
+  "automated_evidence_ok": 215,
+  "filings_with_blocking_issues": 0,
+  "timestamp_disagreements": 104,
+  "human_reviews_complete": 0,
+  "assistant_reviews_complete": 0,
+  "reference_resolutions": 19,
+  "source_table_sha256": "9e95116227a6830d965fbacfd740863deeb01f1f7d887e0a19ff66f84cf4c82c",
+  "manual_audit": "pending",
+  "dissemination_verification": "pending; second-session proxy remains explicit",
+  "market_returns_used": false,
+  "evidence_table_sha256": "668d44868ed3e2d1fdeeba4d665127f6ef0d6585c73ad177cceb9bd5e6776ebd",
+  "pair_table_sha256": "50b0ef2a54679f617e209ec2cf26eebaf31d2e4bc2420e0912b85dedccadf38a"
+}

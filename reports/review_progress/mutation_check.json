@@ -1,0 +1,17 @@
+{
+  "kind": "assistant_reproduction_of_user_reported_mutation_test",
+  "reviewer_type": "assistant",
+  "recorded_at": "2026-10-10T18:07:48.824694+00:00",
+  "original_html_sha256": "e93aaeb076b9f60a2a258a1d9e7a5d4429c003d182d844992225ac7063260b59",
+  "mutated_html_sha256": "df1171e97bf98b5227b5ef0bde3ebb1ce37ba23dd1a0a55c3cd4616533f31552",
+  "submitted_script_sha256": "c542de49930621e3ed8a09d8fee022f34d8ca195780d8113279502c8be622c98",
+  "alteration": "Added 0.0001 to the first control return in the first fixed trace; original untouched",
+  "traces": 20,
+  "traces_with_detected_issues": 1,
+  "event_id": "0000320193-19-000119",
+  "original_script_exit_status": 0,
+  "process_status_is_not_used_as_success_evidence": true,
+  "detected_measures": [
+    "momentum_60"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "daily": {"library": "crsp_a_stock", "table": "wrds_dsfv2_query", "source_release": null, "release_evidence": null},
+    "names": {"library": "crsp_a_stock", "table": "wrds_names_query", "source_release": null, "release_evidence": null},
+    "links": {"library": "crsp", "table": "ccmxpf_lnkhist", "source_release": null, "release_evidence": null},
+    "company": {"library": "comp", "table": "company", "source_release": null, "release_evidence": null},
+    "market": {"library": "crsp", "table": "wrds_dailyindexret_query", "source_release": null, "release_evidence": null}
+  }
+}

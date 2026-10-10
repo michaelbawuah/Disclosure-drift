@@ -1,0 +1,38 @@
+{
+  "status": "pending_named_human_review",
+  "examples": [
+    {
+      "id": "unchanged",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Supplier concentration can disrupt production.",
+      "expectation": "cosine_distance_numerically_zero",
+      "reviewer_type": null,
+      "verdict": "pending",
+      "actual_model_cosine_distance": 0.0,
+      "input_kind": "CONSTRUCTED_DIAGNOSTIC_EXAMPLE",
+      "human_review_complete": false
+    },
+    {
+      "id": "rewording",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Production may be interrupted when too few suppliers provide essential components.",
+      "expectation": "manual_inspection_no_numeric_threshold_selected_from_outcomes",
+      "reviewer_type": null,
+      "verdict": "pending",
+      "actual_model_cosine_distance": 0.30430814961800656,
+      "input_kind": "CONSTRUCTED_DIAGNOSTIC_EXAMPLE",
+      "human_review_complete": false
+    },
+    {
+      "id": "new_risk",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Supplier concentration can disrupt production. Cyberattacks may expose customer data and disable our network.",
+      "expectation": "manual_inspection_no_numeric_threshold_selected_from_outcomes",
+      "reviewer_type": null,
+      "verdict": "pending",
+      "actual_model_cosine_distance": 0.3148149667470651,
+      "input_kind": "CONSTRUCTED_DIAGNOSTIC_EXAMPLE",
+      "human_review_complete": false
+    }
+  ]
+}

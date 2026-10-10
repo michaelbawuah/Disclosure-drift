@@ -153,6 +153,34 @@ def test_duplicate_substantive_sections_require_review():
     assert extract_risk_factors(section + section).status == "review"
 
 
+@pytest.mark.parametrize("continuation", [" (Continued)", " — Continued", " Continued"])
+def test_continuation_page_headings_preserve_the_entire_risk_section(continuation):
+    raw = (f"<h2>Item 1A. Risk Factors</h2><p>{body('opening', 250)}</p>"
+           f"<h2>Item 1A. Risk Factors{continuation}</h2><p>{body('middle', 250)}</p>"
+           f"<h2>Item 1A. Risk Factors{continuation}</h2><p>{body('ending', 40)}</p>"
+           "<h2>Item 1B. Unresolved Staff Comments</h2><p>outside the section</p>")
+    result = extract_risk_factors(raw)
+    assert result.status == "ok"
+    assert result.text.count("opening") == result.text.count("middle") == 250
+    assert result.text.count("ending") == 40
+    assert "outside" not in result.text
+    assert result.version == "item1a-v2-continued-headings"
+
+
+def test_continuation_without_an_original_heading_remains_missing():
+    raw = (f"<h2>Item 1A. Risk Factors (Continued)</h2><p>{body('truncated')}</p>"
+           "<h2>Item 1B. Unresolved Staff Comments</h2>")
+    assert extract_risk_factors(raw).status == "missing"
+
+
+def test_normal_heading_with_continued_as_first_body_word_stays_eligible():
+    raw = (f"<h2>Item 1A. Risk Factors</h2><p>Continued {body('competition')}</p>"
+           "<h2>Item 1B. Unresolved Staff Comments</h2>")
+    result = extract_risk_factors(raw)
+    assert result.status == "ok" and result.text.startswith("Continued competition")
+    assert result.version == "item1a-v1"
+
+
 def record(year, status="ok"):
     return {"cik": "0000000123", "acceptance_date": f"{year}-03-01", "accessionNumber": str(year),
             "reportDate": f"{year - 1}-12-31", "extraction_status": status, "risk_text": "risk supply",

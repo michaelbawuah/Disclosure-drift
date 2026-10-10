@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "data_kind": "REAL_SEC_TEXT_DESCRIPTIVE_PILOT",
+  "analysis": "RETROSPECTIVE_TEXT_ENCODER_VALIDATION",
+  "created_at": "2026-10-10T18:19:39.973719+00:00",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "sources": {
+    "pairs": {
+      "file": "source_pairs.parquet",
+      "sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0"
+    },
+    "filings": {
+      "file": "source_filings.parquet",
+      "sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380"
+    },
+    "audit": {
+      "file": "audit_summary.json",
+      "sha256": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb"
+    },
+    "evidence": {
+      "file": "filing_evidence.parquet",
+      "sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626"
+    },
+    "spec": {
+      "file": "semantic_spec.json",
+      "sha256": "1a1d55425772edb8d3da8aebb3087e160c68055007b276a93274a383702db63a"
+    },
+    "protocol": {
+      "file": "protocol.json",
+      "sha256": "ac6f832189016f846a931ae9ebefecc10522d2a021b33a2caa8856be6af049c7"
+    }
+  },
+  "code_commit": "ffdeaab4e8229216fda5b3571f0e2ad6282e7053",
+  "code_files": {
+    "semantic.py": "e91697fc4b8791e3484897caafd0e3aafc4adbb51c7346af569fc69cfad9bc88",
+    "semantic_validation.py": "09cf74518a1045f3063e237009756e6bb7b9a4ac5e17b93c2f577be0bd1b6c36",
+    "pilot_checkpoint.py": "b90a13e9b623cf004c5d43a345caa38b336fe98399bdb350d769499f566f18ef",
+    "protocol.py": "0fed0fdd73a093cd45be47e66e8217a21f9759c962024e9babb4ffb2a69f53ac"
+  },
+  "source_audit": {
+    "filings": 155,
+    "issuers": 20,
+    "annual_pairs": 135,
+    "automated_evidence_ok": 155,
+    "filings_with_blocking_issues": 0,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "timestamp_disagreements": 72,
+    "reference_resolutions": 14
+  },
+  "sample_rule": "all source-audited pairs in the supplied development-only pilot",
+  "recheck_selection": "minimum SHA256(protocol seed:accession) in first, middle and last acceptance years",
+  "recheck_observation_ids": [
+    "0000050863-15-000015",
+    "0000080424-18-000055",
+    "0000021344-21-000008"
+  ],
+  "checks": {
+    "batch_size": 16,
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "same_batch_max_abs_tolerance": 1e-12,
+    "different_batch_max_abs_tolerance": 1e-06,
+    "unit_norm_tolerance": 1e-12,
+    "unchanged_distance_tolerance": 1e-12,
+    "tokens_truncated_allowed": 0,
+    "expected_embedding_dimensions": 384
+  },
+  "returns_read": false,
+  "final_period_opened": false,
+  "primary_model_input": false,
+  "model_ready": false,
+  "empirical_gate_satisfied": false,
+  "manual_validation_status": "pending_named_human_review",
+  "validation_id": "2abcdea6c477e6721ba5cf7f00703269195e908eac886921a07c3cf0ec5da4d2",
+  "record_type": "PUBLIC_METHOD_RECORD_DERIVED_FROM_VALIDATION_PLAN",
+  "original_validation_plan_sha256": "06800c3697e1b7bedd99e82bf735b50de505681bce1cf203fddde74c1bcf2ff9"
+}

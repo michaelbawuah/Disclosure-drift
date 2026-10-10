@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "data_kind": "REAL_SEC_TEXT_DESCRIPTIVE_PILOT",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "input_sources": [
+    {
+      "source_directory": "/workspace/scratch/9e92fbf7895c/Disclosure-drift/data/processed/pilot-resolved",
+      "filings_sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+      "pairs_sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0"
+    },
+    {
+      "source_directory": "/workspace/scratch/9e92fbf7895c/Disclosure-drift/data/processed/pilot-expansion-2019-2021-resolved",
+      "filings_sha256": "0677d0de846e3a352678803c2b76a6996196df781ef82aabd5417f940957fd95",
+      "pairs_sha256": "8b2dd90e514f8eccc6be8a803e6a171627ad6516d4404f526f17076606ab7eb8"
+    }
+  ],
+  "original_pairs_preserved": 180,
+  "filings": 215,
+  "pairs": 180,
+  "issuers": 35,
+  "excluded_pairs": [
+    {
+      "cik": "0001744489",
+      "accession": "0001744489-19-000225",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000796343",
+      "accession": "0000796343-18-000015",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0001166691",
+      "accession": "0001166691-18-000004",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0001564590-18-002956",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000037996",
+      "accession": "0000037996-18-000015",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0001403161",
+      "accession": "0001403161-18-000055",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0001141391",
+      "accession": "0001141391-18-000009",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000063908",
+      "accession": "0000063908-18-000010",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000320187",
+      "accession": "0000320187-18-000142",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000909832",
+      "accession": "0000909832-18-000013",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0001551152",
+      "accession": "0001551152-18-000014",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000318154",
+      "accession": "0000318154-18-000004",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000886982",
+      "accession": "0001193125-18-056383",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000773840",
+      "accession": "0000930413-18-000292",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000093410",
+      "accession": "0000093410-18-000010",
+      "reason": "missing_previous_original_filing"
+    },
+    {
+      "cik": "0000732717",
+      "accession": "0000732717-18-000009",
+      "reason": "missing_previous_original_filing"
+    }
+  ],
+  "source_audit": {
+    "filings": 215,
+    "issuers": 35,
+    "annual_pairs": 180,
+    "pairs_selected_for_review": 30,
+    "automated_evidence_ok": 215,
+    "filings_with_blocking_issues": 0,
+    "timestamp_disagreements": 104,
+    "human_reviews_complete": 0,
+    "assistant_reviews_complete": 0,
+    "reference_resolutions": 19,
+    "source_table_sha256": "9e95116227a6830d965fbacfd740863deeb01f1f7d887e0a19ff66f84cf4c82c",
+    "manual_audit": "pending",
+    "dissemination_verification": "pending; second-session proxy remains explicit",
+    "market_returns_used": false,
+    "evidence_table_sha256": "668d44868ed3e2d1fdeeba4d665127f6ef0d6585c73ad177cceb9bd5e6776ebd",
+    "pair_table_sha256": "50b0ef2a54679f617e209ec2cf26eebaf31d2e4bc2420e0912b85dedccadf38a"
+  },
+  "returns_read": false,
+  "historical_universe_claim": false,
+  "predictive_performance_claim": false,
+  "status": "source_verified_descriptive_pilot",
+  "pilot_2019_2021_pairs": 104,
+  "planned_pilot_pair_count_met": true,
+  "checkpoint_sha256": "85603234ba8b2b0965b96779f44739949773d331cc8a7576c9e0c2e38369953a"
+}

@@ -82,3 +82,32 @@ whether an idea was specified before outcomes were examined.
 - Interpretation: software integration only. No selected synthetic alpha or
   score is an empirical model choice or market finding. Real final access remains
   unopened and all human/source gates continue to apply.
+
+## Expanded pilot, recorded reviews and actual MiniLM execution, 2026-10-10
+
+- Collected 60 additional original SEC filings for 15 issuers selected without
+  market outcomes. Resolved five source-bound layout cases and Ford continuation
+  headings. Original 155 texts and 135 pairs remain unchanged.
+- Combined fresh source audit: 215 filings, 180 pairs, 35 issuers, zero blocking
+  findings. The 104 pairs in 2019–2021 meet the planned 100–150-pair count.
+  Nineteen reference resolutions and 104 API/header disagreements are preserved.
+- Recorded the user's previously completed 20/20 numerical and printed-timing
+  review against the exact original packet. The unchanged submitted script
+  reproduces saved results and detects the fourth-decimal mutation. Remaining
+  source judgments are not silently approved by that arithmetic verdict.
+- Actual pinned MiniLM: 155 original filing texts, 135 pairs, 1,459,865 content
+  WordPiece tokens, 5,828 chunks, zero truncation. Two independent Python processes
+  reproduce all document vectors and pair features exactly. Median descriptive
+  distance 0.00632819; no calibrated economic interpretation or outcome model.
+- Fixed a real Transformers 5 tokenizer interface incompatibility while preserving
+  all chunk token IDs. Named human semantic judgments remain pending.
+- Added catalog-validated, monthly, resumable WRDS source export and offline
+  verification/assembly. Population defaults to 2010–2021. Both final population
+  price/volume windows and final returns require development prerequisites.
+  No actual full-study WRDS export occurred in this execution.
+- `make reproduce-full`: Ruff and 444 tests passed; complete synthetic study
+  passed. Eight dependency deprecation warnings were emitted. All invented
+  outcomes remain software fixtures, separate from the real SEC text runs.
+- Evidence: `reports/RESEARCH_EXECUTION_UPDATE.md`, `reports/pilot_expansion/`,
+  `reports/review_progress/`, `reports/semantic_validation/`, and
+  `reports/execution_verification.json`.

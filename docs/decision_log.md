@@ -372,3 +372,30 @@ of the study remain pending. No financial predictive finding is claimed.
   integration. The final score, confidence intervals and research milestone
   sign-offs remain pending for actual data. Independent assistant cross-review
   is not the plan's independent-person reproduction.
+
+## 2026-10-10 — Execute the next empirical preparation work
+
+- Expand the SEC-only pilot with 15 issuers selected before new text or outcomes.
+  Preserve the original source/pair artifacts and combine only after exact
+  original-pair matching and a fresh source audit. The resulting 104 pairs in
+  2019–2021 meet the planned count; historical universe eligibility is separate.
+- Keep the HTML normalizer unchanged. Recognize explicit continuation headings
+  and bind exceptional Mastercard, McDonald's and Honeywell ranges to original
+  source hashes and inspected boundaries. Document McDonald's risk-block scope.
+- Reject unknown columns before combining SEC tables; parse dates, text and hashes
+  from the same byte snapshot. Code review reproduced an accidental outcome-column
+  path and a source-version race; both have directed regression coverage.
+- Preserve the user's completed 20-case numerical and printed-timing verdict.
+  Record the original time as unknown and distinguish it from the later recording
+  time. Do not infer identity, vendor-availability or filing approval from it.
+- Execute the pinned retrospective MiniLM checkpoint on original SEC text with
+  complete token coverage and fixed numerical checks. Two independent processes
+  reproduce all vectors and features exactly. Preserve both attempts and bind the
+  final receipt to the exact working-tree source hashes; manual semantic judgments
+  and actual return-model comparisons remain pending.
+- Make WRDS collection runnable and resumable, with explicit table/column bindings,
+  preserved source strings, monthly receipts and offline assembly. Default to
+  development population years. Gate final population price/volume windows as
+  well as final returns, because later selection windows can reveal price changes.
+- Publish current progress separately from the earlier 20-issuer PDFs. Preserve
+  private licensed/source checkpoints and avoid fabricated empirical estimates.

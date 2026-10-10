@@ -20,6 +20,17 @@ def token_chunks(tokens: list[int], content_tokens: int = 254) -> list[list[int]
     return [tokens[i:i + content_tokens] for i in range(0, len(tokens), content_tokens)]
 
 
+def bert_chunk_inputs(chunk: list[int], cls_token_id: int, sep_token_id: int) -> dict:
+    """Wrap existing WordPiece IDs without decoding or tokenizing them again.
+
+    Transformers 5 removed ``prepare_for_model`` from its Rust-backed tokenizer
+    interface. The pinned BERT single-sequence layout is checked against the
+    tokenizer's native output when the encoder loads.
+    """
+    ids = [cls_token_id, *chunk, sep_token_id]
+    return {"input_ids": ids, "token_type_ids": [0] * len(ids), "attention_mask": [1] * len(ids)}
+
+
 def aggregate_chunks(embeddings, token_counts) -> np.ndarray:
     vectors, counts = np.asarray(embeddings, dtype=float), np.asarray(token_counts, dtype=float)
     if (vectors.ndim != 2 or len(vectors) == 0 or counts.shape != (len(vectors),)
@@ -49,6 +60,15 @@ def validate_spec(spec: dict) -> None:
     if (spec.get("schema_version") != 1 or spec.get("primary_model_input") is not False
             or spec.get("chronology_scope") != "retrospective_only"):
         raise ValueError("Semantic comparator requires explicit retrospective secondary status")
+    if (spec.get("model_id") != "sentence-transformers/all-MiniLM-L6-v2"
+            or spec.get("pooling") != "attention_mask_mean_including_special_tokens"
+            or spec.get("precision") != "float32_cpu_eval"
+            or spec.get("max_model_tokens") != 256):
+        raise ValueError("Semantic architecture, pooling, precision or sequence limit changed")
+    if (spec.get("training_data_cutoff_verified") is not False
+            or spec.get("fine_tuning_cutoff_verified") is not False
+            or spec.get("checkpoint_historical_availability_claim") is not False):
+        raise ValueError("This retrospective checkpoint has no verified historical availability or training cutoff")
     if not re.fullmatch(r"[0-9a-f]{40}", spec.get("revision", "")):
         raise ValueError("Pin the exact semantic checkpoint revision")
     if not re.fullmatch(r"[0-9a-f]{64}", spec.get("weights_sha256", "")):
@@ -65,7 +85,7 @@ def validate_spec(spec: dict) -> None:
 class PinnedSemanticEncoder:
     """CPU, evaluation mode, safetensors-only; no remote model code or truncation."""
 
-    def __init__(self, spec: dict, cache_dir=None, batch_size: int = 16):
+    def __init__(self, spec: dict, cache_dir=None, batch_size: int = 16, *, local_model_dir=None):
         validate_spec(spec)
         if isinstance(batch_size, bool) or not isinstance(batch_size, int) or batch_size < 1:
             raise ValueError("batch_size must be a positive integer")
@@ -76,8 +96,9 @@ class PinnedSemanticEncoder:
         except ImportError as exc:
             raise RuntimeError("Install the pinned semantic extra: uv sync --extra semantic") from exc
         names = ["model.safetensors"] + list(spec["artifact_sha256"])
-        location = Path(snapshot_download(repo_id=spec["model_id"], revision=spec["revision"],
-                                          allow_patterns=names, cache_dir=cache_dir))
+        location = (Path(local_model_dir) if local_model_dir is not None else
+                    Path(snapshot_download(repo_id=spec["model_id"], revision=spec["revision"],
+                                           allow_patterns=names, cache_dir=cache_dir)))
         expected = {**spec["artifact_sha256"], "model.safetensors": spec["weights_sha256"]}
         for name, digest in expected.items():
             if hashlib.sha256((location / name).read_bytes()).hexdigest() != digest:
@@ -85,9 +106,15 @@ class PinnedSemanticEncoder:
         self.tokenizer = AutoTokenizer.from_pretrained(location, local_files_only=True, trust_remote_code=False)
         if self.tokenizer.num_special_tokens_to_add(pair=False) != 2:
             raise ValueError("Tokenizer special-token layout differs from frozen specification")
+        if (self.tokenizer.cls_token_id, self.tokenizer.sep_token_id, self.tokenizer.pad_token_id) != (101, 102, 0):
+            raise ValueError("Pinned BERT special-token identifiers differ")
+        probe = "Verify the pinned single sequence token layout."
+        content = self.tokenizer.encode(probe, add_special_tokens=False, truncation=False)
+        if dict(self.tokenizer(probe, add_special_tokens=True, truncation=False)) != bert_chunk_inputs(content, 101, 102):
+            raise ValueError("Pinned BERT chunk layout differs from native tokenizer processing")
         self.model = AutoModel.from_pretrained(location, local_files_only=True,
                                                trust_remote_code=False, use_safetensors=True).float().cpu().eval()
-        self.torch, self.spec, self.batch_size = torch, spec, batch_size
+        self.torch, self.spec, self.batch_size, self.location = torch, spec, batch_size, location
 
     def encode(self, text: str) -> tuple[np.ndarray, dict]:
         if not isinstance(text, str) or not text.strip():
@@ -97,8 +124,8 @@ class PinnedSemanticEncoder:
         vectors = []
         with self.torch.inference_mode():
             for start in range(0, len(chunks), self.batch_size):
-                rows = [self.tokenizer.prepare_for_model(chunk, add_special_tokens=True,
-                          truncation=False, return_attention_mask=True) for chunk in chunks[start:start + self.batch_size]]
+                rows = [bert_chunk_inputs(chunk, self.tokenizer.cls_token_id, self.tokenizer.sep_token_id)
+                        for chunk in chunks[start:start + self.batch_size]]
                 batch = self.tokenizer.pad(rows, padding=True, return_tensors="pt")
                 if batch["input_ids"].shape[1] > 256:
                     raise ValueError("Semantic sequence exceeds its frozen maximum")

@@ -1,0 +1,16 @@
+{
+  "analysis": "INDEPENDENT_PROCESS_REPLICATION",
+  "documents": 155,
+  "pairs": 135,
+  "same_encoder_code": true,
+  "all_document_vectors_bitwise_equal": true,
+  "all_pair_features_equal": true,
+  "max_abs_vector_difference": 0.0,
+  "tolerance": 1e-12,
+  "passed": true,
+  "current_receipt_sha256": "67f0217d54a836d951b5715ca8814f443188f30610a5c55a39f4baf15078fe5e",
+  "prior_receipt_sha256": "a160e72d8fdd96f36aadaf15fb7023b289c8115d3f169ca3118fab087fa9c31f",
+  "prior_validation_id": "baeb99a65ffafced31113a1ffabfb7599583fa786f5a792e6d6cc767599f652f",
+  "current_validation_id": "2abcdea6c477e6721ba5cf7f00703269195e908eac886921a07c3cf0ec5da4d2",
+  "reason_for_repeat": "Tightened plan sample verification; reran the unchanged encoder from the hardened plan"
+}

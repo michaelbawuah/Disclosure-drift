@@ -2,10 +2,11 @@ UV ?= uv
 RUN_ID := $(shell date -u +%Y%m%dT%H%M%SZ)
 FULL_OUTPUT ?= outputs/full-demo-$(RUN_ID)
 CHECKPOINT_OUTPUT ?= outputs/pilot-checkpoint-$(RUN_ID)
+EXPANDED_CHECKPOINT_OUTPUT ?= outputs/pilot-expanded-checkpoint-$(RUN_ID)
 REPORT_OUTPUT ?= outputs/research-report-$(RUN_ID)
 .DEFAULT_GOAL := help
 
-.PHONY: help sync check status demo market-demo reproduce reproduce-full full-demo pilot-checkpoint research-report ingest audit pilot-ingest pilot-audit reference-reproduce pilot-resolved-reproduce
+.PHONY: help sync check status demo market-demo reproduce reproduce-full full-demo pilot-checkpoint pilot-expand research-report ingest audit pilot-ingest pilot-audit reference-reproduce pilot-resolved-reproduce
 
 help:
 	@printf '%s\n' \
@@ -13,6 +14,7 @@ help:
 	  'make reproduce-full  Verify all code and the complete synthetic study pipeline' \
 	  'make full-demo  Historical selection, frozen evaluation and robustness on invented inputs' \
 	  'make pilot-checkpoint  Rebuild SEC-only descriptive pilot exhibits from restored evidence' \
+	  'make pilot-expand  Collect 15 additional issuers and audit the combined SEC text pilot' \
 	  'make research-report  Build progress PDFs and figures from public pilot exhibits' \
 	  'make check      Sync the lockfile, then run lint and tests' \
 	  'make status     Show the current research gates' \
@@ -54,6 +56,10 @@ reproduce-full: reproduce
 
 pilot-checkpoint: sync
 	$(UV) run --locked --no-sync disclosure pilot-checkpoint --output "$(CHECKPOINT_OUTPUT)"
+
+pilot-expand: sync
+	$(UV) run --locked --no-sync disclosure ingest --companies configs/pilot_expansion_2019_2021.json --resolutions configs/pilot_expansion_resolutions.json --output data/processed/pilot-expansion-2019-2021-resolved
+	$(UV) run --locked --no-sync python scripts/build_pilot_expansion.py --output "$(EXPANDED_CHECKPOINT_OUTPUT)"
 
 research-report:
 	$(UV) run --locked --extra report disclosure research-report --output "$(REPORT_OUTPUT)"

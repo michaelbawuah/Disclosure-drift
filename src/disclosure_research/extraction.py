@@ -6,11 +6,14 @@ from dataclasses import asdict, dataclass
 from lxml import html
 
 VERSION = "item1a-v1"
+EXTRACTION_VERSION = "item1a-v2-continued-headings"
 BLOCKS = {"p", "div", "table", "tr", "td", "th", "h1", "h2", "h3", "h4", "li", "br", "hr"}
 START = re.compile(r"(?im)^\s*item\s*1\s*a\s*[.\-:–—]*\s*risk\s+factors\b")
 END = re.compile(r"(?im)^\s*item\s*(?:1\s*[bc]|2)\s*[.\-:–—]*\s*"
                  r"(?:unresolved\s+staff\s+comments|cybersecurity|properties)\b")
 TOKEN = re.compile(r"\b[a-zA-Z]{2,}\b")
+CONTINUED = re.compile(r"[ \t]*(?:\([ \t]*continued[ \t]*\)|[—–:-][ \t]*continued\b|continued\b)",
+                       re.I)
 
 
 def clean_html(raw: bytes | str) -> str:
@@ -58,7 +61,15 @@ class Extraction:
 
 def extract_risk_factors(raw: bytes | str, min_tokens: int = 200) -> Extraction:
     text = clean_html(raw)
-    starts, ends = list(START.finditer(text)), list(END.finditer(text))
+    # A repeated page heading belongs to the section already in progress.
+    # Treating it as another candidate previously discarded every page before
+    # the final continuation heading. Keep the normalized source unchanged so
+    # registered offsets and source hashes remain meaningful.
+    all_starts = list(START.finditer(text))
+    starts = [match for match in all_starts
+              if not CONTINUED.match(text, match.end())]
+    version = EXTRACTION_VERSION if len(starts) != len(all_starts) else VERSION
+    ends = list(END.finditer(text))
     candidates = []
     for i, start in enumerate(starts):
         next_start = starts[i + 1].start() if i + 1 < len(starts) else len(text)
@@ -68,12 +79,12 @@ def extract_risk_factors(raw: bytes | str, min_tokens: int = 200) -> Extraction:
             candidates.append((len(TOKEN.findall(body)), start.end(), end.start(), body))
     if not candidates:
         return Extraction("missing", "", 0, 0, None, None,
-                          "No bounded Item 1A section; requires manual inspection")
+                          "No bounded Item 1A section; requires manual inspection", version)
     count, start, end, body = max(candidates)
     long_count = sum(x[0] >= min_tokens for x in candidates)
     status = "ok" if count >= min_tokens and long_count == 1 else "review"
     reason = "Unique substantive bounded section" if status == "ok" else "Short or ambiguous section"
-    return Extraction(status, body, count, len(candidates), start, end, reason)
+    return Extraction(status, body, count, len(candidates), start, end, reason, version)
 
 
 def pair_filings(records: list[dict], start_year: int, end_year: int) -> tuple[list[dict], list[dict]]:

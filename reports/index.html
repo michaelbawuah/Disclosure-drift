@@ -33,20 +33,27 @@
     <div class="eyebrow">Michael Baffour Awuah · Research progress · 10 October 2026</div>
     <h1>What changes when<br>the risk disclosure changes?</h1>
     <p class="lead">A study of whether changes in annual Item 1A disclosures improve 20-session market-adjusted return forecasts beyond momentum, volatility, size and historical industry.</p>
-    <div class="actions"><a class="button primary" href="research_progress/Research_Progress_Report.pdf">Read the progress report</a><a class="button" href="https://github.com/michaelbawuah/Disclosure-drift">Explore the repository</a></div>
+    <div class="actions"><a class="button primary" href="RESEARCH_EXECUTION_UPDATE.md">Read the latest execution update</a><a class="button" href="https://github.com/michaelbawuah/Disclosure-drift">Explore the repository</a></div>
   </div>
   <div class="status"><strong>Software implemented; empirical result pending.</strong><p>The real 2022–2025 evaluation remains unopened. Historical data and source-bound human reviews are still needed. Synthetic demonstrations verify the pipeline and do not establish predictive performance.</p></div>
   <div class="metrics" aria-label="Observed SEC parser pilot">
-    <div class="metric"><b>155</b><span>Original annual filings</span></div>
-    <div class="metric"><b>135</b><span>Consecutive annual pairs</span></div>
-    <div class="metric"><b>20</b><span>Parser-pilot issuers</span></div>
+    <div class="metric"><b>215</b><span>Original annual filings</span></div>
+    <div class="metric"><b>180</b><span>Consecutive annual pairs</span></div>
+    <div class="metric"><b>35</b><span>Parser-pilot issuers</span></div>
   </div>
   <section id="evidence" class="panel">
     <div class="eyebrow">Observed evidence</div><h2>A reproducible text checkpoint</h2>
-    <p>The recovered SEC sources pass all 155 automated checks. The audit preserves 14 reference resolutions and 72 API/header timestamp differences. All 135 provisional market calculations independently reconcile within 1e-12, while their historical identities remain unapproved.</p>
-    <figure><img src="research_progress/figures/pilot_coverage.png" alt="Pilot annual pairs: 19 in each year 2015 through 2019, and 20 in each of 2020 and 2021."><figcaption class="caption">Only 59 pairs are from 2019–2021. The longer parser sample does not satisfy the original 100–150-pair target for those years or establish a historical investment universe.</figcaption></figure>
-    <figure><img src="research_progress/figures/text_distributions.png" alt="Observed pilot distributions of log length change, Jaccard distance, and earlier-year TF-IDF cosine distance."><figcaption class="caption">Text distributions are descriptive. TF-IDF uses earlier acceptance years only; the first 19 observations remain unavailable.</figcaption></figure>
-    <div class="links"><a href="pilot_checkpoint/pilot_checkpoint.json">Text checkpoint receipt</a><a href="pilot_arithmetic_summary.json">Arithmetic receipt</a><a href="research_progress/Pilot_Checkpoint_Report.pdf">Four-page pilot report</a></div>
+    <p>The expanded SEC sources pass all 215 automated checks. The audit preserves 19 reference resolutions and 104 API/header timestamp differences. The original 155 filing texts and 135 pairs remain unchanged.</p>
+    <p><strong>104 pairs fall in 2019–2021, meeting the planned 100–150-pair count criterion.</strong> The additional 15 issuers were selected without market outcomes. Historical investment-universe selection and the approved controls smoke remain separate requirements.</p>
+    <div class="table-scroll"><table><thead><tr><th>Acceptance year</th><th>Annual pairs</th><th>Issuers</th></tr></thead><tbody>
+      <tr><td>2015–2018</td><td>19 each year</td><td>19 each year</td></tr>
+      <tr><td>2019</td><td>34</td><td>34</td></tr>
+      <tr><td>2020</td><td>35</td><td>35</td></tr>
+      <tr><td>2021</td><td>35</td><td>35</td></tr>
+    </tbody></table></div>
+    <p>The user's <strong>20/20 independent numerical and printed-timing review is recorded</strong> against the exact original packet. All 135 provisional market calculations also reconcile independently within 1e-12; their historical identities remain unapproved.</p>
+    <p class="caption">The expanded text features remain descriptive. TF-IDF uses earlier acceptance years only; the first 19 observations remain unavailable. Earlier PDF figures preserve the original 20-issuer snapshot.</p>
+    <div class="links"><a href="pilot_expansion/pilot_checkpoint.json">Expanded checkpoint</a><a href="pilot_expansion/text_features.csv">All descriptive features</a><a href="review_progress/user_arithmetic_receipt.json">Completed user review</a><a href="../docs/pilot_expansion.md">Source corrections</a></div>
   </section>
   <section class="grid">
     <div><h2>The frozen comparison</h2><p>Both ridge models use the same pre-event controls. The augmented model adds log length change, Jaccard distance and training-only TF-IDF cosine distance. Penalties are selected on 2016–2021 development folds.</p><p>Final annual refits use only earlier events whose labels have matured. Paired reference-month blocks preserve firms and time dependence, with three-month and six-month intervals.</p><a href="../protocol.md">Read the primary protocol</a></div>
@@ -55,14 +62,14 @@
   <section id="milestones" class="panel">
     <div class="eyebrow">Milestones 6–11</div><h2>What is built, and what remains</h2>
     <div class="table-scroll"><table><thead><tr><th>Stage</th><th>Implemented</th><th>Remaining empirical work</th></tr></thead><tbody>
-      <tr><td>6 · Pilot</td><td>Source reproduction, text exhibits, audited smoke command, report</td><td>Reviews, sufficient 2019–2021 coverage, approved controls smoke</td></tr>
-      <tr><td>7 · Dataset</td><td>Historical selector, SEC ingestion, audited joins, sealed targets</td><td>Full historical exports and additional filing audit</td></tr>
-      <tr><td>8 · Freeze</td><td>Chronological selection, ablations, retrospective semantic comparator, fingerprints</td><td>Actual development choices and semantic/source evidence</td></tr>
+      <tr><td>6 · Pilot</td><td>104 pairs in the planned window, source audit, recorded 20/20 user check, descriptive exhibits</td><td>Remaining source judgments and approved controls smoke</td></tr>
+      <tr><td>7 · Dataset</td><td>Resumable WRDS exporter, historical selector, SEC ingestion, audited joins, sealed targets</td><td>Actual full historical exports and additional filing audit</td></tr>
+      <tr><td>8 · Freeze</td><td>Actual pinned MiniLM execution, chronological selection, ablations and fingerprints</td><td>Actual development choices and human semantic/source judgments</td></tr>
       <tr><td>9 · Evaluation</td><td>Annual final refits, paired intervals and durable access records</td><td>Approved 2022–2025 estimates</td></tr>
       <tr><td>10 · Robustness</td><td>Year/month/groups, ablations, source-delay rebuilds and failure cases</td><td>Empirical execution and interpretation</td></tr>
       <tr><td>11 · Package</td><td>Code, tests, progress reports, figures and overview</td><td>Final measured results and independent reproduction</td></tr>
     </tbody></table></div>
-    <p class="caption">The actual MiniLM backend and human semantic examples have not been validated. Its pinned revision is retrospective and makes no claim of historical availability.</p>
+    <p class="caption">MiniLM encoded all 155 original filings and 135 pairs, with zero truncated tokens and numerical reproducibility checks. Its pinned revision is retrospective; human semantic example review remains pending. <a href="semantic_validation/report.md">Read the actual execution report.</a></p>
     <a href="MILESTONES_06_11.md">Read the complete milestone record</a>
   </section>
   <section class="grid">
@@ -70,7 +77,7 @@
 cd Disclosure-drift
 make reproduce-full
 make research-report</code></pre><p class="caption">The public build uses invented market data. Source audits additionally require the original cached sources and licensed private inputs.</p></div>
-    <div><h2>Next empirical input</h2><p>The full request covers dated listings, share classes, CIK/security links, liquidity, total returns and historical industry. Late-2025 filing labels need return coverage through <strong>February 3, 2026</strong>.</p><p>Complete the source-bound reviews, then run development and freeze the actual choices before the final evaluation.</p><a href="../docs/full_study_data_request.md">Open the exact data request</a></div>
+    <div><h2>Next empirical input</h2><p>The runnable WRDS exporter validates the account's source catalog, collects monthly development inputs, and resumes from verified checkpoints. Final population price/volume and final returns use separate gated collections.</p><p>Complete the remaining source judgments, run development, and freeze actual choices before the final evaluation. Late-2025 labels require coverage through <strong>February 3, 2026</strong>.</p><a href="../docs/wrds_full_export.md">Run the historical source export</a></div>
   </section>
 </main>
 <footer>Inspired by Cohen, Malloy and Nguyen's <a href="https://doi.org/10.1111/jofi.12885">Lazy Prices</a>. This is a separate annual Risk Factors investigation. Code and draft reports were co-developed with Codex; automated checks do not substitute for human review or independent reproduction.</footer>

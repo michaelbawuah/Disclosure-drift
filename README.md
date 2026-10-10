@@ -20,18 +20,24 @@ all three text features to the same market controls.
 
 | Evidence | Verified scope |
 |---|---|
-| Recovered SEC pilot | 155 original filings, 135 annual pairs, 20 issuers, 2015–2021 |
-| Source audit | 155 automated passes; 14 reference resolutions reproduced; 72 API/header timestamp differences preserved |
+| Expanded SEC pilot | 215 original filings, 180 annual pairs, 35 issuers; 104 pairs in the planned 2019–2021 window |
+| Source audit | 215 automated passes; 19 reference resolutions reproduced; 104 API/header timestamp differences preserved |
+| Completed user review | 20/20 independent numerical and printed-timing checks recorded against the exact original packet |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
-| Real text checkpoint | Coverage, source-linked examples, and descriptive length/Jaccard/earlier-year TF-IDF distributions |
+| Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
+| Historical data collection | Runnable, resumable WRDS catalog/export/verification tooling; actual full-study exports still needed |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
 | Empirical completion | Full historical exports, source-bound human reviews, development selection and final estimates remain pending |
 
-Start with the [Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
-[verification receipt](reports/build_verification.json),
-[eight-page research progress report](reports/research_progress/Research_Progress_Report.pdf),
-[four-page pilot checkpoint](reports/research_progress/Pilot_Checkpoint_Report.pdf),
-and [project overview](reports/index.html).
+Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
+[Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
+[expanded text checkpoint](reports/pilot_expansion/pilot_checkpoint.json),
+[actual semantic validation](reports/semantic_validation/report.md),
+[review progress](docs/review_progress.md), and [project overview](reports/index.html).
+The [eight-page progress PDF](reports/research_progress/Research_Progress_Report.pdf),
+[four-page pilot PDF](reports/research_progress/Pilot_Checkpoint_Report.pdf), and
+[earlier build receipt](reports/build_verification.json) preserve the original
+20-issuer snapshot from before this expansion and actual encoder run.
 Earlier [M4](reports/MILESTONE_04.md) and [M5](reports/MILESTONE_05_PROGRESS.md)
 reports remain part of the audit trail.
 
@@ -74,11 +80,16 @@ requires the source snapshots and review bundles described in the contracts.
 The [full data request](docs/full_study_data_request.md) specifies the required
 historical exports. Return coverage extends through **February 3, 2026** for
 late-2025 filing labels. Development and final-return exports remain separate.
+The [WRDS execution guide](docs/wrds_full_export.md) supplies the runnable
+catalog, source-binding, monthly export, resume and offline assembly commands.
+Start with development population selection years 2010–2021. Both holdout
+population price/volume windows and holdout return collection require completed
+development prerequisites.
 The [historical dataset contract](docs/historical_dataset.md) defines every
 normalized input and source-bound review record.
 
 ```bash
-# Outcome-free population request; use a new output directory.
+# Offline source request; use a new output directory.
 uv run --locked disclosure plan-full-export --output outputs/full-export-request
 
 # Select from the full historical population.
@@ -128,17 +139,20 @@ audit trail and do not authenticate a reviewer's identity.
 
 ## Rebuild the pilot checkpoint
 
-The existing parser pilot is a document-format sample. It has only **59 pairs
-in 2019–2021**, short of the original plan's 100–150-pair checkpoint for those
-years. Its 135 pairs across a longer period do not establish the historical
-investment universe.
+The expanded document-format pilot has **104 pairs in 2019–2021**, meeting the
+original plan's 100–150-pair count criterion. It contains 215 filings and 180
+pairs overall. Historical investment-universe selection, source judgments and
+the approved controls smoke remain separate requirements.
 
 ```bash
-make pilot-checkpoint
+make pilot-expand
 ```
 
-This uses the restored 155-filing sources and matching source audit. It reads
-SEC text only and publishes source links, distributions and coverage. The
+This collects 15 additional issuers, preserves all original 135 pairs, and
+rebuilds the combined audit and descriptive checkpoint. See the
+[source corrections and reproduction guide](docs/pilot_expansion.md).
+`make pilot-checkpoint` retains the original 155-filing snapshot workflow.
+Both read SEC text only and publish source links, distributions and coverage. The
 controls-only `pilot-baseline` command exists but requires an approved dataset;
 it has not been run on the unapproved candidate market calculations.
 

@@ -1,0 +1,55 @@
+{
+  "examples": [
+    {
+      "accession": "0000050863-15-000015",
+      "previous_accession": "0000050863-14-000020",
+      "cik": "0000050863",
+      "acceptance_date": "2015-02-13",
+      "semantic_distance": 0.011600986658620194,
+      "current_text_sha256": "8c25bf821c43eb36e7bd583e6a4e9427eed1715834aa0b2fcf93a15d0fb84363",
+      "previous_text_sha256": "d68e83949d73a02cfeb52d491f9877fb0512e36fd8e4f0bb65400d005f9a2dff",
+      "current_tokens": 6936,
+      "previous_tokens": 6293,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+      "previous_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/a10kdocument12282013.htm",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+      "previous_risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/a10kdocument12282013.htm",
+      "selection": "minimum SHA256(protocol seed:accession) in first, middle and last acceptance years",
+      "human_review_complete": false
+    },
+    {
+      "accession": "0000080424-18-000055",
+      "previous_accession": "0000080424-17-000047",
+      "cik": "0000080424",
+      "acceptance_date": "2018-08-07",
+      "semantic_distance": 0.011919528695864767,
+      "current_text_sha256": "67ca680a150c5615e3bc1e4815c588bbe8f982d48e40cf1189471bf0d85fa486",
+      "previous_text_sha256": "0be043049bdce66cce3460144c082c186c8ebba41dc5b49e8ea0a92236ecdb48",
+      "current_tokens": 4712,
+      "previous_tokens": 4168,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042418000055/fy171810-kreport.htm",
+      "previous_source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042417000047/fy161710-kreport.htm",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042418000055/fy171810-kreport.htm",
+      "previous_risk_source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042417000047/fy161710-kreport.htm",
+      "selection": "minimum SHA256(protocol seed:accession) in first, middle and last acceptance years",
+      "human_review_complete": false
+    },
+    {
+      "accession": "0000021344-21-000008",
+      "previous_accession": "0000021344-20-000006",
+      "cik": "0000021344",
+      "acceptance_date": "2021-02-25",
+      "semantic_distance": 0.0069772901387705755,
+      "current_text_sha256": "deee08c0cb880b22f68fc6136cdd08967fa86946e2c5bd34114c49b03c86f191",
+      "previous_text_sha256": "64d59e07790fb34e0359d134da8c02a9c250ad3bcbd45a7174af040c8238fe59",
+      "current_tokens": 15147,
+      "previous_tokens": 13405,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134421000008/ko-20201231.htm",
+      "previous_source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134420000006/a2019123110-k.htm",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134421000008/ko-20201231.htm",
+      "previous_risk_source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134420000006/a2019123110-k.htm",
+      "selection": "minimum SHA256(protocol seed:accession) in first, middle and last acceptance years",
+      "human_review_complete": false
+    }
+  ]
+}

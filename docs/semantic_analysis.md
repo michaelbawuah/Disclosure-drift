@@ -68,15 +68,25 @@ uv run --locked disclosure semantic-evaluate-final \
   --output outputs/semantic-final
 ```
 
-## What remains unverified
+## Actual text-only execution and remaining review
 
-The checkpoint metadata and configuration hashes were retrieved. Chunking,
-aggregation and model orchestration are exercised by synthetic tests. The
-actual MiniLM model has **not** been executed in this build, so no runtime,
-empirical semantic distance or semantic forecast result is claimed.
+The actual pinned MiniLM weights have now executed on the original audited
+20-issuer SEC text pilot: 135 annual pairs from 155 unique documents. The run
+encoded all 1,459,865 WordPiece content tokens in 5,828 chunks with zero
+truncation. Three preselected real documents passed repeated-encoding and
+batch-size agreement checks. This is evidence of backend execution and
+numerical reproducibility, with no market outcomes opened or forecast model fit.
 
-Before empirical access, execute and inspect the fixed unchanged, rewording
-and new-risk examples; record the named reviewer's evidence and chronology
-judgment. Assistant checks cannot supply the required human judgment. The
-pending manual template and development choices intentionally block the real
-freeze.
+The [execution report](../reports/semantic_validation/report.md) contains the
+source-bound distances, artifact hashes, exact runtime, environment and
+reproducibility evidence. [Reproduction commands](semantic_validation.md) cover
+the ordinary semantic extra, the isolated CPU environment and an offline
+hash-verified snapshot. Real execution also exposed and corrected a Transformers
+5 tokenizer compatibility bug; the intended complete-token method is unchanged.
+
+The unchanged, rewording and new-risk diagnostic examples have actual model
+scores. Their named human reviews remain pending, as do the filing reviews and
+audited market-data prerequisites. Record the reviewer's evidence and chronology
+judgment before empirical access. Assistant checks do not supply that judgment,
+and this text-only result does not satisfy the empirical freeze or establish
+semantic forecast performance.

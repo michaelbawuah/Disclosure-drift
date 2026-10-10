@@ -1,0 +1,61 @@
+{
+  "existing_filings_checked": 155,
+  "changed_filings": 0,
+  "changes": [],
+  "returns_read": false,
+  "baseline_code_commit": "ffdeaab4e8229216fda5b3571f0e2ad6282e7053",
+  "previous_extraction_code_sha256": "182aa83ff89ac970cd83fae98449b4e46e44e8455ff9a04031e1fa51725a5aca",
+  "current_extraction_code_sha256": "a19dc3f1fced8364fb6666ad520ef5f520cf608d4a7c4459ff3ea3989dcfcde5",
+  "new_ford_cases": [
+    {
+      "accession": "0000037996-18-000015",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000015/f1231201710-k.htm",
+      "source_sha256": "dc67312818ac2fa7321956d46c28391422ab656fcfa94717ef7bcc5147ee8021",
+      "previous_token_count": 846,
+      "current_token_count": 4036,
+      "previous_status": "ok",
+      "current_status": "ok",
+      "previous_version": "item1a-v1",
+      "current_version": "item1a-v2-continued-headings",
+      "new_text_sha256": "bf72b1fdff5f57aebd3563e3f1209c986cc16295fdf28719586fdf622110838a"
+    },
+    {
+      "accession": "0000037996-19-000012",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799619000012/f1231201810-k.htm",
+      "source_sha256": "944942b40e42cff578cd94cb99abddbf4fe6968ac572e9f3368549279b2c0c2b",
+      "previous_token_count": 105,
+      "current_token_count": 4450,
+      "previous_status": "review",
+      "current_status": "ok",
+      "previous_version": "item1a-v1",
+      "current_version": "item1a-v2-continued-headings",
+      "new_text_sha256": "d7f262fc6c6f606a0b69caf11b2c76dd50e2525b6bea9fb9a7641ef8fb0cddb3"
+    },
+    {
+      "accession": "0000037996-20-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000010/f1231201910-k.htm",
+      "source_sha256": "37ad3dcf7c982ba2278a564e9206bdd006def2517cce2a446d566968770745a0",
+      "previous_token_count": 480,
+      "current_token_count": 5634,
+      "previous_status": "ok",
+      "current_status": "ok",
+      "previous_version": "item1a-v1",
+      "current_version": "item1a-v2-continued-headings",
+      "new_text_sha256": "d965f2470f132274d903962fa27defdaed1a9412198d00efd7e6208782d6e0cb"
+    },
+    {
+      "accession": "0000037996-21-000012",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799621000012/f-20201231.htm",
+      "source_sha256": "3f29f06f0ec843ff9f83e06d08446329993d77741f38c45ec89868a87a197ca7",
+      "previous_token_count": 245,
+      "current_token_count": 7388,
+      "previous_status": "ok",
+      "current_status": "ok",
+      "previous_version": "item1a-v1",
+      "current_version": "item1a-v2-continued-headings",
+      "new_text_sha256": "c4a911ffaa4b65cd74773730527e65c985986d36a1f47ef269b3bff55174ea7a"
+    }
+  ],
+  "source_rules_sha256": "b87c7402d4130eea83c534ed4dd1f510fc7c23a39412d3e953e3e56ffd253e32",
+  "all_original_reference_rules_preserved": true
+}

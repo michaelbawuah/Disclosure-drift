@@ -351,12 +351,15 @@ def main(argv=None) -> int:
              "historical_identity_review": "review-identities assembles evidence; historical link approval is pending",
              "pre_event_controls": "calculator and CRSP snapshot staging implemented; source availability audit required",
              "pilot_arithmetic_audit": "audit-pilot-market reconciles provisional candidate labels/controls; no identity or human approval inferred",
+             "recorded_user_numerical_review": "20/20 arithmetic and printed-timing passes recorded; see reports/review_progress",
+             "expanded_text_pilot": "215 filings, 180 pairs, 104 pairs in 2019-2021; source-verified descriptive checkpoint",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
-             "embedding_checkpoint_and_protocol": "pending before final test access",
+             "embedding_checkpoint_and_protocol": "actual pinned backend executed; human semantic review and empirical freeze pending",
              "historical_universe_and_dataset": "implemented; requires full historical source exports and reviews",
+             "historical_source_export": "resumable WRDS helper in scripts/wrds_full_export.py; full vendor exports not yet collected",
              "development_freeze_and_final_evaluator": "implemented with evidence, code, dataset fingerprints and run ledger",
              "robustness": "year/month, block intervals, ablations, delay rebuilds, subgroups and failure cases implemented",
-             "semantic_comparator": "pinned retrospective checkpoint; complete token coverage; manual validation pending",
+             "semantic_comparator": "actual retrospective MiniLM run on original 155 filings/135 pairs; complete token coverage; manual validation pending",
              "final_2022_2025_evaluation": "blocked; no empirical result exists"}
     print(json.dumps(gates, indent=2))
     return 2 if args.command == "evaluate-final" else 0

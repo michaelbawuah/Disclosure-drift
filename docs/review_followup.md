@@ -1,5 +1,11 @@
 # M5 review follow-up
 
+**Recorded update:** the user's explicit **20/20 arithmetic and printed-timing
+pass** is now bound to the original packet and saved results in the
+[review-progress record](review_progress.md). The original review time was not
+recovered and is not invented. The older pending draft remains preserved; it does
+not negate the completed numerical review or require the user to repeat it.
+
 Milestone 05 remains open. The original 20 trace selections, evidence IDs, generated
 packets and pending verdicts are unchanged. This follow-up adds review coverage and
 locates the existing filing sample; it does not complete human reviews or approve
@@ -48,9 +54,10 @@ point-in-time availability are separate pending questions.
 
 The submitted `pilot-recheck.py` was run unchanged on the existing HTML packet:
 20 of 20 traces pass, with maximum observed difference **1.27675647831893e-15**.
-The draft has 20 valid evidence bindings and all verdicts remain pending. Its first
-AAPL 2019 note says `1e-03`; the rerun gives approximately `1.28e-15`. That note should
-be corrected by the reviewer before sign-off. The original attachment is preserved.
+The older draft has 20 valid evidence bindings and its original fields remain
+pending. Its first AAPL 2019 note says `1e-03`; the saved result and rerun give
+approximately `1.28e-15`. The separate recorded user verdict credits the actual
+20/20 numerical pass and observed errors. The original attachment is preserved.
 
 The script's configured recomputation tolerance is `2e-5`, even though its observed
 errors are much smaller. For future runs, use `1e-12` for comparisons with the full
@@ -64,8 +71,9 @@ The follow-up checks every cited record against the hash-bound original CSVs:
 1,200 control references, 400 stock-label references, 400 benchmark references,
 20 capitalization references and 20 dated Names references. All **2,040 record
 references** match. These counts include repeated references, not distinct source
-records. This is an assistant-run source check and leaves the user's manual checks
-and all verdicts pending. Neither check establishes vendor historical availability.
+records. This is an assistant-run original-source check; it is distinct from the
+user's completed arithmetic check on the printed packet. No human original-CSV
+review or vendor historical-availability judgment is inferred from either result.
 
 ## Supplemental coverage
 
