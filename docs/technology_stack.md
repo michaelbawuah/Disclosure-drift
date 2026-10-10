@@ -19,8 +19,8 @@ These implementation choices do not change the frozen statistical protocol.
 | Validation | Custom expanding chronological folds with training-label maturity checks | Implemented |
 | Reproduction | uv lockfile and Makefile | Implemented for the current engineering milestone |
 | Tests and quality | pytest, ruff, Git and GitHub Actions | Implemented |
-| Figures and report | Matplotlib and Quarto with Python execution | Planned; no report build is claimed yet |
-| Semantic changes | One audited Hugging Face checkpoint via transformers or sentence-transformers | Specification required before opening the holdout |
+| Figures and report | Matplotlib and ReportLab; PDF rendering verified with Poppler | Progress-report builder implemented; final empirical report pending |
+| Semantic changes | Pinned MiniLM safetensors through transformers; separate ridge secondary | Implemented; actual encoder execution and human example/chronology review pending |
 | Optional trees | LightGBM as a separately specified secondary comparison | Deferred; outside the primary ridge comparison |
 
 ## Runtime and dependency changes
@@ -33,8 +33,10 @@ Do not silently regenerate the lockfile during an experiment.
 The Makefile starts with `uv sync --locked`, which fails if the dependency
 declarations and lockfile disagree. Subsequent commands use the synchronized
 environment without another automatic sync. Optional libraries enter the lockfile
-when their actual research stage is implemented. Quarto is a separate reporting
-CLI; its version will also need recording when report rendering is added.
+when their actual research stage is implemented. Optional `report` and `semantic`
+extras are now locked. ReportLab keeps the report builder inside the Python
+environment, avoiding an additional document-build CLI. This implementation
+choice does not alter the frozen statistical protocol.
 
 HTTPX includes its SOCKS extra so configured proxy environments work without an
 untracked installation. The transport honors the environment's proxy settings.
@@ -42,14 +44,15 @@ untracked installation. The transport honors the environment's proxy settings.
 ## What one command currently reproduces
 
 ```bash
-make reproduce
+make reproduce-full
 ```
 
 This synchronizes the environment, runs lint and the research-integrity tests,
 verifies the protocol fingerprint, prints the outstanding research gates, and
-rebuilds the 144-row **synthetic** engineering demo. GitHub Actions runs the same
-command. It does not download SEC documents, access a WRDS account, open the final
-holdout, or produce an empirical financial finding.
+rebuilds the original demos and the full **synthetic** study: 192 selected annual
+memberships, 144 development observations and 48 final observations. GitHub
+Actions runs the same command. It does not download SEC documents, access a
+WRDS account, open the empirical final holdout, or produce a market finding.
 
 After setting `SEC_USER_AGENT`, use `make ingest` for the development-year SEC
 sample. Actual study reproduction will additionally require the audited source
@@ -74,4 +77,4 @@ report pipeline described in the protocol and market-data contract.
 - [Python version status](https://devguide.python.org/versions/)
 - [HTTPX streaming, headers, status errors and timeouts](https://www.python-httpx.org/quickstart/)
 - [uv locking and syncing](https://docs.astral.sh/uv/concepts/projects/sync/)
-- [Quarto with Python](https://quarto.org/docs/computations/python.html)
+- [ReportLab documentation](https://docs.reportlab.com/)

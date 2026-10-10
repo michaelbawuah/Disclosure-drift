@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "status": "frozen_methods_pending_empirical_development_choices",
+  "reference_delays": {
+    "primary": 2,
+    "secondary": [
+      1,
+      5
+    ],
+    "penalties": "frozen_primary",
+    "independent_labels_and_controls": true
+  },
+  "ablations": {
+    "features": {
+      "length_only": [
+        "log_length_change"
+      ],
+      "jaccard_only": [
+        "jaccard_distance"
+      ],
+      "tfidf_only": [
+        "tfidf_cosine_distance"
+      ],
+      "length_jaccard": [
+        "log_length_change",
+        "jaccard_distance"
+      ],
+      "length_tfidf": [
+        "log_length_change",
+        "tfidf_cosine_distance"
+      ],
+      "jaccard_tfidf": [
+        "jaccard_distance",
+        "tfidf_cosine_distance"
+      ]
+    },
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selection_metric": "pooled_development_mse",
+    "selected_alphas": null
+  },
+  "paragraph_analysis": {
+    "role": "descriptive_only",
+    "predictor": false,
+    "similarity_threshold": 0.5
+  },
+  "semantic": {
+    "status": "method_pinned_manual_validation_pending",
+    "checkpoint": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "checkpoint_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+    "release_date": "2026-06-01 (observed revision timestamp; not proof of original training date)",
+    "training_cutoff": "unknown",
+    "fine_tuning_cutoff": "unknown",
+    "chunking": {
+      "content_tokens": 254,
+      "special_tokens": 2,
+      "overlap": 0,
+      "truncate": false
+    },
+    "aggregation": "content_token_weighted_normalized_mean",
+    "development_tuning": "separate controls-plus-semantic ridge; same four-alphas and chronological six-fold rule; not yet run",
+    "comparison": "separate retrospective secondary against primary controls; cannot alter primary",
+    "chronology_interpretation": "retrospective",
+    "chronology_scope": "retrospective_only",
+    "checkpoint_historical_availability_claim": false,
+    "primary_model_input": false,
+    "no_historical_point_in_time_claim": true,
+    "chronology_evidence": [],
+    "manual_validation": {
+      "status": "pending",
+      "examples": [
+        "unchanged",
+        "reworded",
+        "new_risk"
+      ]
+    }
+  },
+  "rule_transition": {
+    "role": "descriptive_coverage_audit"
+  },
+  "rank_correlation": {
+    "grouping": "reference_month",
+    "minimum_observations": 3,
+    "ties": "average",
+    "constant_groups": "unavailable"
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261009,
+    "months": 3,
+    "sensitivity_months": 6
+  },
+  "subgroups": {
+    "industry_scheme": "SIC",
+    "size_cutpoints_usd": [
+      10000000000,
+      100000000000
+    ],
+    "industry": "exact_prior_close_category",
+    "selection": "fixed_before_final_access"
+  },
+  "primary_protocol_changed": false
+}

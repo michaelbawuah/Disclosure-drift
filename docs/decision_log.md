@@ -328,3 +328,47 @@ of the study remain pending. No financial predictive finding is claimed.
 - Keep Milestone 05 open for historical identity/class and end-bound approval,
   release/availability review, independent filing/trace review and approved import.
   Candidate calculation success is not a research result or final exclusion policy.
+
+## 2026-10-10 - Build the M6–M11 pipeline and preserve empirical boundaries
+
+- Continue under the frozen v1.0.0 primary protocol. The earlier planning PDF
+  does not override the later unranked target, 2022–2025 final years or moving
+  reference-month bootstrap. No primary protocol or lock change was made.
+- Recover the existing private source checkpoint and rebuild the 155-filing
+  audit and all 135 candidate arithmetic checks. Preserve 72 timestamp
+  differences, 14 reference resolutions, seven header-CIK differences, pending
+  source availability and all unresolved historical-link bounds. Human reviews
+  remain zero. Reproduced candidate/trace values do not approve identities.
+- Publish a source-audit-bound text checkpoint with immutable byte reads,
+  per-pair evidence checks and deterministic examples. Report only 59 pairs in
+  2019–2021; the 135-pair 2015–2021 parser sample is not equivalent to the
+  original plan's 100–150-pair checkpoint or the historical population.
+- Implement the full historical selector using information available before
+  each year start, one most-liquid eligible class per CIK and the frozen
+  60-session/40-valid-session rule. Bind memberships and exclusions to sources.
+  Build an outcome-free request from October 7, 2009 liquidity through the
+  February 3, 2026 final label tail.
+- Assemble explicit one-to-one model inputs with dated controls, reconstructed
+  clocks, label arithmetic and actual hashed source/review records. Split final
+  features from targets. Pending/failed/stale reviews remain unresolved; an
+  assistant or a boolean cannot supply a human pass.
+- Reproduce development selections before freezing, bind the exact running
+  source and Git commit, and reserve persistent final access before reading the
+  target snapshot. Allow exact same-freeze reproduction and automatic annual
+  mature-label refits; refuse changed procedures after final access.
+- Add six separately selected development-only ablation models and fixed
+  diagnostics. Final secondary runners consume only the original completed
+  run's verified saved outcomes. Rebuild reference-delay inputs independently;
+  preserve unavailable results and declared bootstrap settings.
+- Pin a separate retrospective MiniLM comparator by revision, safetensors and
+  tokenizer/config hashes. Use all tokens in fixed chunks. Unknown training
+  cutoffs remain unknown; actual encoder execution and named human examples
+  remain pending. Synthetic semantic tests use a declared toy encoder.
+- Use Matplotlib and ReportLab for portable figures/PDFs inside the locked
+  Python environment. Publish an eight-page progress report, four-page pilot
+  checkpoint and repository overview, without fabricated empirical tables.
+- `make reproduce-full` passed Ruff, **361 tests**, protocol verification,
+  existing demos and the full 192-membership/144-development/48-final synthetic
+  integration. The final score, confidence intervals and research milestone
+  sign-offs remain pending for actual data. Independent assistant cross-review
+  is not the plan's independent-person reproduction.

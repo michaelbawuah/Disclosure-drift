@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "primary_model_input": false,
+  "chronology_scope": "retrospective_only",
+  "observed_repository_created_at": "2022-03-02T23:29:05.000Z",
+  "observed_revision_last_modified": "2026-06-01T06:29:13.000Z",
+  "training_data_cutoff_verified": false,
+  "fine_tuning_cutoff_verified": false,
+  "checkpoint_historical_availability_claim": false,
+  "chunking": {
+    "content_tokens": 254,
+    "special_tokens": 2,
+    "overlap": 0,
+    "truncate": false,
+    "aggregation": "content_token_weighted_normalized_mean"
+  },
+  "pooling": "attention_mask_mean_including_special_tokens",
+  "precision": "float32_cpu_eval",
+  "max_model_tokens": 256,
+  "model_card_sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+  "artifact_sha256": {
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+  },
+  "source_urls": [
+    "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2",
+    "https://sbert.net/examples/sentence_transformer/applications/computing-embeddings/README.html"
+  ],
+  "manual_validation_status": "pending_unchanged_reworded_new_risk_examples",
+  "validation_examples": [
+    {
+      "id": "unchanged",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Supplier concentration can disrupt production.",
+      "expectation": "cosine_distance_numerically_zero",
+      "reviewer_type": null,
+      "verdict": "pending"
+    },
+    {
+      "id": "rewording",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Production may be interrupted when too few suppliers provide essential components.",
+      "expectation": "manual_inspection_no_numeric_threshold_selected_from_outcomes",
+      "reviewer_type": null,
+      "verdict": "pending"
+    },
+    {
+      "id": "new_risk",
+      "previous": "Supplier concentration can disrupt production.",
+      "current": "Supplier concentration can disrupt production. Cyberattacks may expose customer data and disable our network.",
+      "expectation": "manual_inspection_no_numeric_threshold_selected_from_outcomes",
+      "reviewer_type": null,
+      "verdict": "pending"
+    }
+  ]
+}

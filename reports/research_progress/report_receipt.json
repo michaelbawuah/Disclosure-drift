@@ -1,0 +1,23 @@
+{
+  "report_type": "research_progress_not_final_empirical_result",
+  "empirical_result_estimated": false,
+  "figures": [
+    "figures/pilot_coverage.png",
+    "figures/text_distributions.png",
+    "figures/research_periods.png"
+  ],
+  "reports": [
+    "Research_Progress_Report.pdf",
+    "Pilot_Checkpoint_Report.pdf"
+  ],
+  "input_sha256": {
+    "pilot_checkpoint": "9623325b997fee2d15959286903c6587f9ad04bbc33ba8eb5d8d7c6d1a9c1346",
+    "pilot_arithmetic_summary": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+    "review_followup_summary": "5e3b9c12e2f2ee236b55f3205b3eeddf275f1f70b9bc4c1ff301a144cb86e65a"
+  },
+  "verification_sha256": "5886f7cf61abc3fc0d2dcadb647545577c4c732ea6b033359528cdc5455d02d9",
+  "report_sha256": {
+    "Research_Progress_Report.pdf": "f1a0005ba7495533211a8361bc0b8f1f44c0fb06741d05263a89d7d516b2a235",
+    "Pilot_Checkpoint_Report.pdf": "3c9696a18fb6ddfed07c4703b12e6145b5e88541c1922be9d4d6560784d9f6cb"
+  }
+}

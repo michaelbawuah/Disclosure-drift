@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "outcomes_loaded": false,
+  "universe_selection_years": 16,
+  "maximum_issuers_per_year": 500,
+  "population": "All historically eligible US common stocks, including later delistings",
+  "never_use": "A current constituent list or the 20-issuer parser pilot",
+  "universe_normalized_columns": {
+    "listings": [
+      "classification_source",
+      "evidence_id",
+      "known_at",
+      "listing_status",
+      "market_country",
+      "security_id",
+      "share_type",
+      "valid_from",
+      "valid_to"
+    ],
+    "identity_links": [
+      "cik",
+      "evidence_id",
+      "known_at",
+      "mapping_source",
+      "security_id",
+      "valid_from",
+      "valid_to"
+    ],
+    "daily_liquidity": [
+      "available_at",
+      "dollar_volume_usd",
+      "security_id",
+      "session"
+    ]
+  },
+  "development": {
+    "filing_acceptance_years": [
+      2010,
+      2021
+    ],
+    "last_label_session": "2022-02-02",
+    "return_target_values": "development_only_separate_export"
+  },
+  "holdout": {
+    "filing_acceptance_years": [
+      2022,
+      2025
+    ],
+    "last_label_session": "2026-02-03",
+    "return_target_values": "separate_sealed_export",
+    "access": "validated_development_freeze_prerequisites_required"
+  },
+  "sec_predecessor_filing_year": 2009,
+  "source_review_required": [
+    "exact vendor release and query metadata",
+    "historical population and common-stock classification coverage",
+    "dated CIK/security links including share classes and finite end bounds",
+    "USD price/volume and capitalization units",
+    "total return with dividends and delisting once",
+    "value-weighted total-return benchmark",
+    "historical availability versus later revisions"
+  ],
+  "license": "Keep raw market exports and event-level market values private",
+  "windows_sha256": "19ca0c144113c86fec7d765c487add09b2da8afedf4251f835ee6b18186ba134"
+}

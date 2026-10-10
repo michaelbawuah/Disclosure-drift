@@ -8,4 +8,4 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
-      - run: make reproduce
+      - run: make reproduce-full

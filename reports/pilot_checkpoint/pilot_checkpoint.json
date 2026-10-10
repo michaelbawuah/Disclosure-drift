@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "data_kind": "REAL_SEC_TEXT_DESCRIPTIVE_PILOT",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "filings": 155,
+  "pairs": 135,
+  "issuers": 20,
+  "year_coverage": [
+    {
+      "year": 2015,
+      "pairs": 19,
+      "issuers": 19
+    },
+    {
+      "year": 2016,
+      "pairs": 19,
+      "issuers": 19
+    },
+    {
+      "year": 2017,
+      "pairs": 19,
+      "issuers": 19
+    },
+    {
+      "year": 2018,
+      "pairs": 19,
+      "issuers": 19
+    },
+    {
+      "year": 2019,
+      "pairs": 19,
+      "issuers": 19
+    },
+    {
+      "year": 2020,
+      "pairs": 20,
+      "issuers": 20
+    },
+    {
+      "year": 2021,
+      "pairs": 20,
+      "issuers": 20
+    }
+  ],
+  "pilot_2019_2021_pairs": 59,
+  "feature_summaries": {
+    "previous_tokens": {
+      "observations": 135,
+      "missing": 0,
+      "minimum": 1272.0,
+      "median": 7320.0,
+      "p10": 3282.2,
+      "p90": 12505.600000000002,
+      "maximum": 16410.0
+    },
+    "current_tokens": {
+      "observations": 135,
+      "missing": 0,
+      "minimum": 1475.0,
+      "median": 7601.0,
+      "p10": 3448.2000000000003,
+      "p90": 12675.2,
+      "maximum": 18496.0
+    },
+    "log_length_change": {
+      "observations": 135,
+      "missing": 0,
+      "minimum": -0.7328371634553221,
+      "median": 0.045946111059469885,
+      "p10": -0.023037869238611463,
+      "p90": 0.16979193767804335,
+      "maximum": 0.73832424793006
+    },
+    "jaccard_distance": {
+      "observations": 135,
+      "missing": 0,
+      "minimum": 0.010810810810810811,
+      "median": 0.09816339455351486,
+      "p10": 0.03451937158207987,
+      "p90": 0.22030713377100503,
+      "maximum": 0.6847246891651866
+    },
+    "tfidf_cosine_distance": {
+      "observations": 116,
+      "missing": 19,
+      "minimum": 0.00027145749087376103,
+      "median": 0.003866551759476422,
+      "p10": 0.0010400851943502265,
+      "p90": 0.013144632000196943,
+      "maximum": 0.4073838580114302
+    }
+  },
+  "timestamp_disagreements": 72,
+  "source_audit_passes": 155,
+  "human_filing_reviews": 0,
+  "reference_resolutions": 14,
+  "vocabulary_policy": "strictly earlier acceptance years; first year TF-IDF unavailable",
+  "returns_read": false,
+  "predictive_performance_claim": false,
+  "controls_baseline_smoke": "blocked_until_audited_model_dataset",
+  "milestone_06_complete": false,
+  "sources": {
+    "filings": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+    "pairs": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0",
+    "audit": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb",
+    "filing_evidence": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626"
+  },
+  "limitations": [
+    "20-issuer parser sample is not the historical investment universe",
+    "Pilot coverage is reported by acceptance year; it is not the planned full study",
+    "filing and market source reviews remain pending",
+    "text distributions are descriptive, not predictive evidence"
+  ],
+  "files": {
+    "coverage_by_year.csv": "9ca08145c53a7e427cdd23194fa3aa7ae8526098365cbec3d89d37c58e98f93c",
+    "examples.json": "2147968e67dad8b1156e4a3b579a8b74c8db6dd13e009ac066dc7cfa80f1fc48",
+    "text_features.csv": "850bb2f99db7a21367a4a3d75802340eac6c52303164c8543eec0e307219e121"
+  }
+}

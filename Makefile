@@ -1,11 +1,19 @@
 UV ?= uv
+RUN_ID := $(shell date -u +%Y%m%dT%H%M%SZ)
+FULL_OUTPUT ?= outputs/full-demo-$(RUN_ID)
+CHECKPOINT_OUTPUT ?= outputs/pilot-checkpoint-$(RUN_ID)
+REPORT_OUTPUT ?= outputs/research-report-$(RUN_ID)
 .DEFAULT_GOAL := help
 
-.PHONY: help sync check status demo market-demo reproduce ingest audit pilot-ingest pilot-audit reference-reproduce pilot-resolved-reproduce
+.PHONY: help sync check status demo market-demo reproduce reproduce-full full-demo pilot-checkpoint research-report ingest audit pilot-ingest pilot-audit reference-reproduce pilot-resolved-reproduce
 
 help:
 	@printf '%s\n' \
 	  'make reproduce  Sync the lockfile, lint, test, verify protocol, run the synthetic demo' \
+	  'make reproduce-full  Verify all code and the complete synthetic study pipeline' \
+	  'make full-demo  Historical selection, frozen evaluation and robustness on invented inputs' \
+	  'make pilot-checkpoint  Rebuild SEC-only descriptive pilot exhibits from restored evidence' \
+	  'make research-report  Build progress PDFs and figures from public pilot exhibits' \
 	  'make check      Sync the lockfile, then run lint and tests' \
 	  'make status     Show the current research gates' \
 	  'make demo       Rebuild the synthetic engineering demonstration' \
@@ -37,6 +45,18 @@ reproduce: check
 	$(UV) run --locked --no-sync disclosure status
 	$(UV) run --locked --no-sync disclosure demo
 	$(UV) run --locked --no-sync disclosure market-demo
+
+full-demo: sync
+	$(UV) run --locked --no-sync disclosure full-demo --output "$(FULL_OUTPUT)"
+
+reproduce-full: reproduce
+	$(UV) run --locked --no-sync disclosure full-demo --output "$(FULL_OUTPUT)"
+
+pilot-checkpoint: sync
+	$(UV) run --locked --no-sync disclosure pilot-checkpoint --output "$(CHECKPOINT_OUTPUT)"
+
+research-report:
+	$(UV) run --locked --extra report disclosure research-report --output "$(REPORT_OUTPUT)"
 
 ingest: sync
 	$(UV) run --locked --no-sync disclosure ingest

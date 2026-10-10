@@ -1,0 +1,9 @@
+{
+  "development_dataset": "data/processed/development/dataset.parquet",
+  "development_predictions": "outputs/development/development_predictions.parquet",
+  "selection": "outputs/development/selection.json",
+  "manifest": "data/processed/development/dataset_manifest.json",
+  "exclusions": "data/processed/development/exclusions.parquet",
+  "audit_evidence": "data/private/development_audit_evidence.json",
+  "secondary_spec": "data/private/completed_secondary_specification.json"
+}

@@ -1,0 +1,9 @@
+Disclosure Drift — automated build verification
+Command: make reproduce-full FULL_OUTPUT=outputs/full-demo-verified-20261010
+Ruff: passed
+361 passed, 4 warnings in 62.30s
+Passed: 192 invented memberships; 144 development and 48 final observations; all four robustness components completed
+Real empirical models: not run
+Actual MiniLM encoder: not run
+Real final evaluation: unopened
+Independent human reproduction: pending

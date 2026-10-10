@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "all_pages_visually_checked": true,
+  "check_method": "All eight layout pages inspected; final raster pages matched inspected layouts; all four pilot pages matched the corresponding full-report pages.",
+  "overflows_or_clipping_observed": false,
+  "reports": {
+    "Research_Progress_Report.pdf": {
+      "pages": 8,
+      "sha256": "f1a0005ba7495533211a8361bc0b8f1f44c0fb06741d05263a89d7d516b2a235"
+    },
+    "Pilot_Checkpoint_Report.pdf": {
+      "pages": 4,
+      "sha256": "3c9696a18fb6ddfed07c4703b12e6145b5e88541c1922be9d4d6560784d9f6cb"
+    }
+  }
+}

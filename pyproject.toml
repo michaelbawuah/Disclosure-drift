@@ -19,6 +19,16 @@ dev = ["pytest>=8.3,<10", "ruff>=0.11,<1"]
 [project.scripts]
 disclosure = "disclosure_research.cli:main"
 
+[project.optional-dependencies]
+semantic = [
+    "torch>=2.5,<3",
+    "transformers>=4.48,<6",
+]
+report = [
+    "matplotlib>=3.9,<4",
+    "reportlab>=4,<5",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/disclosure_research"]
 

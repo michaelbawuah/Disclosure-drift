@@ -1,0 +1,51 @@
+[
+  {
+    "year": 2015,
+    "accession": "0000050863-15-000015",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+    "opening_12_words": "The following risks could materially and adversely affect our business, financial condition,",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2016,
+    "accession": "0000200406-16-000071",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040616000071/form10-k20160103.htm",
+    "opening_12_words": "The Company may from time to time make certain forward-looking statements in",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2017,
+    "accession": "0001018724-17-000011",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000011/amzn-20161231x10k.htm",
+    "opening_12_words": "Please carefully consider the following risk factors. If any of the following",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2018,
+    "accession": "0000080424-18-000055",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042418000055/fy171810-kreport.htm",
+    "opening_12_words": "We discuss our expectations regarding future performance, events and outcomes, such as",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2019,
+    "accession": "0000077476-19-000017",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000017/pepsico201810-k.htm",
+    "opening_12_words": "You should carefully consider the risks described below in addition to the",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2020,
+    "accession": "0001744489-20-000197",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448920000197/dis-20201003.htm",
+    "opening_12_words": "For an enterprise as large and complex as the Company, a wide",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  },
+  {
+    "year": 2021,
+    "accession": "0000021344-21-000008",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134421000008/ko-20201231.htm",
+    "opening_12_words": "In addition to the other information set forth in this report, you",
+    "selection": "smallest SHA256(seed:accession) within acceptance year"
+  }
+]

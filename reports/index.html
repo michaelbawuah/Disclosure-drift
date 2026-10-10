@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Disclosure Drift research progress: annual risk-disclosure changes and 20-session return forecasts. Public code, observed pilot evidence and explicit empirical completion requirements.">
+  <title>Disclosure Drift · Research progress</title>
+  <style>
+    :root{--ink:#183042;--teal:#087e8b;--muted:#536b79;--line:#dbe5e9;--paper:#f5f8f9;--gold:#795b19}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:#076b79;text-underline-offset:3px}a:hover{color:#03434c}header,main,footer{max-width:1060px;margin:auto;padding:0 32px}
+    header{padding-top:44px}.brand{letter-spacing:.14em;font-size:.8rem;font-weight:750;color:var(--teal)}nav{float:right;font-size:.9rem}nav a{margin-left:18px}
+    .hero{padding:64px 0 36px;max-width:850px}h1{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.045em;line-height:1.12;margin:12px 0 24px;font-weight:740}
+    .lead{font-size:1.22rem;max-width:760px;color:var(--muted)}.eyebrow{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.button{display:inline-block;padding:11px 19px;border:1px solid var(--teal);border-radius:6px;text-decoration:none;font-weight:650}.button.primary{background:var(--teal);color:white}
+    .status{border-left:4px solid #c59f49;background:#fff8e8;padding:18px 23px;margin:12px 0 30px;color:#614d26}.status strong{display:block;margin-bottom:4px}.status p{margin:0}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0 46px}.metric{background:white;border:1px solid var(--line);padding:24px;border-radius:8px}.metric b{display:block;font-size:2.2rem;line-height:1.2}.metric span{font-size:.9rem;color:var(--muted)}
+    section{margin:44px 0}h2{font-size:1.65rem;letter-spacing:-.02em;margin:0 0 14px}h3{font-size:1.08rem;margin:20px 0 7px}p{margin:10px 0 16px}.panel{padding:30px;background:white;border:1px solid var(--line);border-radius:9px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.caption{font-size:.86rem;color:var(--muted);margin:10px 0 0}figure{margin:22px 0}img{max-width:100%;height:auto;display:block;border-radius:5px}
+    .table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--teal);background:#f1f7f8;font-weight:700}td:first-child{font-weight:650}
+    code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em}pre{background:#193443;color:#f0f8f9;padding:22px;border-radius:7px;overflow:auto;line-height:1.8}
+    .links{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:20px}footer{border-top:1px solid var(--line);padding-top:28px;padding-bottom:36px;font-size:.84rem;color:var(--muted)}
+    @media(max-width:680px){header,main,footer{padding-left:20px;padding-right:20px}nav{float:none;margin-top:18px}nav a{margin:0 18px 0 0}.hero{padding-top:38px}.grid{grid-template-columns:1fr}.metrics{gap:9px}.metric{padding:17px 12px}.metric b{font-size:1.8rem}.panel{padding:20px}th,td{padding:10px 8px}}
+  </style>
+</head>
+<body>
+<header>
+  <span class="brand">DISCLOSURE DRIFT</span>
+  <nav aria-label="Research navigation"><a href="#evidence">Evidence</a><a href="#milestones">Milestones</a><a href="https://github.com/michaelbawuah/Disclosure-drift">Code ↗</a></nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="eyebrow">Michael Baffour Awuah · Research progress · 10 October 2026</div>
+    <h1>What changes when<br>the risk disclosure changes?</h1>
+    <p class="lead">A study of whether changes in annual Item 1A disclosures improve 20-session market-adjusted return forecasts beyond momentum, volatility, size and historical industry.</p>
+    <div class="actions"><a class="button primary" href="research_progress/Research_Progress_Report.pdf">Read the progress report</a><a class="button" href="https://github.com/michaelbawuah/Disclosure-drift">Explore the repository</a></div>
+  </div>
+  <div class="status"><strong>Software implemented; empirical result pending.</strong><p>The real 2022–2025 evaluation remains unopened. Historical data and source-bound human reviews are still needed. Synthetic demonstrations verify the pipeline and do not establish predictive performance.</p></div>
+  <div class="metrics" aria-label="Observed SEC parser pilot">
+    <div class="metric"><b>155</b><span>Original annual filings</span></div>
+    <div class="metric"><b>135</b><span>Consecutive annual pairs</span></div>
+    <div class="metric"><b>20</b><span>Parser-pilot issuers</span></div>
+  </div>
+  <section id="evidence" class="panel">
+    <div class="eyebrow">Observed evidence</div><h2>A reproducible text checkpoint</h2>
+    <p>The recovered SEC sources pass all 155 automated checks. The audit preserves 14 reference resolutions and 72 API/header timestamp differences. All 135 provisional market calculations independently reconcile within 1e-12, while their historical identities remain unapproved.</p>
+    <figure><img src="research_progress/figures/pilot_coverage.png" alt="Pilot annual pairs: 19 in each year 2015 through 2019, and 20 in each of 2020 and 2021."><figcaption class="caption">Only 59 pairs are from 2019–2021. The longer parser sample does not satisfy the original 100–150-pair target for those years or establish a historical investment universe.</figcaption></figure>
+    <figure><img src="research_progress/figures/text_distributions.png" alt="Observed pilot distributions of log length change, Jaccard distance, and earlier-year TF-IDF cosine distance."><figcaption class="caption">Text distributions are descriptive. TF-IDF uses earlier acceptance years only; the first 19 observations remain unavailable.</figcaption></figure>
+    <div class="links"><a href="pilot_checkpoint/pilot_checkpoint.json">Text checkpoint receipt</a><a href="pilot_arithmetic_summary.json">Arithmetic receipt</a><a href="research_progress/Pilot_Checkpoint_Report.pdf">Four-page pilot report</a></div>
+  </section>
+  <section class="grid">
+    <div><h2>The frozen comparison</h2><p>Both ridge models use the same pre-event controls. The augmented model adds log length change, Jaccard distance and training-only TF-IDF cosine distance. Penalties are selected on 2016–2021 development folds.</p><p>Final annual refits use only earlier events whose labels have matured. Paired reference-month blocks preserve firms and time dependence, with three-month and six-month intervals.</p><a href="../protocol.md">Read the primary protocol</a></div>
+    <div><h2>Evidence before estimates</h2><p>Historical population selection, source hashes, review records, exclusions, development predictions and code are bound to the freeze. Final features and targets are separate.</p><p>The complete invented demonstration selects 192 annual memberships, trains on 144 development events and evaluates 48 synthetic final events. The real final sample is still pending.</p><a href="build_verification.json">Inspect the verification record</a></div>
+  </section>
+  <section id="milestones" class="panel">
+    <div class="eyebrow">Milestones 6–11</div><h2>What is built, and what remains</h2>
+    <div class="table-scroll"><table><thead><tr><th>Stage</th><th>Implemented</th><th>Remaining empirical work</th></tr></thead><tbody>
+      <tr><td>6 · Pilot</td><td>Source reproduction, text exhibits, audited smoke command, report</td><td>Reviews, sufficient 2019–2021 coverage, approved controls smoke</td></tr>
+      <tr><td>7 · Dataset</td><td>Historical selector, SEC ingestion, audited joins, sealed targets</td><td>Full historical exports and additional filing audit</td></tr>
+      <tr><td>8 · Freeze</td><td>Chronological selection, ablations, retrospective semantic comparator, fingerprints</td><td>Actual development choices and semantic/source evidence</td></tr>
+      <tr><td>9 · Evaluation</td><td>Annual final refits, paired intervals and durable access records</td><td>Approved 2022–2025 estimates</td></tr>
+      <tr><td>10 · Robustness</td><td>Year/month/groups, ablations, source-delay rebuilds and failure cases</td><td>Empirical execution and interpretation</td></tr>
+      <tr><td>11 · Package</td><td>Code, tests, progress reports, figures and overview</td><td>Final measured results and independent reproduction</td></tr>
+    </tbody></table></div>
+    <p class="caption">The actual MiniLM backend and human semantic examples have not been validated. Its pinned revision is retrospective and makes no claim of historical availability.</p>
+    <a href="MILESTONES_06_11.md">Read the complete milestone record</a>
+  </section>
+  <section class="grid">
+    <div><h2>Reproduce the software</h2><pre><code>git clone https://github.com/michaelbawuah/Disclosure-drift.git
+cd Disclosure-drift
+make reproduce-full
+make research-report</code></pre><p class="caption">The public build uses invented market data. Source audits additionally require the original cached sources and licensed private inputs.</p></div>
+    <div><h2>Next empirical input</h2><p>The full request covers dated listings, share classes, CIK/security links, liquidity, total returns and historical industry. Late-2025 filing labels need return coverage through <strong>February 3, 2026</strong>.</p><p>Complete the source-bound reviews, then run development and freeze the actual choices before the final evaluation.</p><a href="../docs/full_study_data_request.md">Open the exact data request</a></div>
+  </section>
+</main>
+<footer>Inspired by Cohen, Malloy and Nguyen's <a href="https://doi.org/10.1111/jofi.12885">Lazy Prices</a>. This is a separate annual Risk Factors investigation. Code and draft reports were co-developed with Codex; automated checks do not substitute for human review or independent reproduction.</footer>
+</body>
+</html>
