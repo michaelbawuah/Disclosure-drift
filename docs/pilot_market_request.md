@@ -1,6 +1,8 @@
 # Pilot market export and trace review
 
-First perform the [Cornell entitlement check](data_access_checklist.md).
+The initial [Cornell entitlement check](data_access_checklist.md) has passed for
+the [observed sample query outputs](wrds_sample_exports.md). Broader data coverage
+and historical identity verification remain pending.
 The published [request summary](../reports/pilot_market_request/export_plan.json)
 and CSV files describe required dates, not completed CRSP exports.
 

@@ -1,7 +1,21 @@
 # Milestone 05 progress: export request and pre-event controls
 
-Status on 2026-10-09: **in progress, not completed**. No authenticated CRSP export,
-actual return observations, vendor normalization or human review has been verified.
+Status on 2026-10-09: **in progress, not completed**. Authenticated CRSP sample
+exports have now been inspected. Full pilot returns, vendor normalization,
+historical identity approval and independent human reviews remain pending.
+
+## Sample-access update
+
+The [sample evidence note](../docs/wrds_sample_exports.md) and
+[file receipt](market_access_samples.json) record actual daily-stock, benchmark,
+capitalization, historical Names and CCM exports. File hashes match the owner's
+Mac downloads. The two CCM files contain 62 rows with 47 columns each; 19 requested
+CIKs match directly, while the XOM supplement carries a different header CIK.
+That mismatch is unresolved and has not been rewritten into an approved mapping.
+The 20 candidate securities are an export worklist, not approved historical links.
+
+This update changes documentation and provenance receipts only. No vendor adapter,
+actual event labels, fitted models or completed human reviews are added.
 
 ## Delivered
 
@@ -42,8 +56,8 @@ continues to produce engineering labels, not a model-ready dataset.
 
 ## Remaining Milestone 05 work
 
-1. Confirm actual table entitlements and obtain small authorized exports plus their
-   exact dictionaries, including delisting and identifier-change QA examples.
+1. Expand the verified samples to the pilot windows and finish source dictionaries,
+   including a development-period delisting and historical identifier-change QA case.
 2. Implement/review source normalization and historical snapshot availability,
    including return conventions, currency/units, identifier dates and industry.
 3. Import the pilot data, join audited identities, calculate labels and controls,

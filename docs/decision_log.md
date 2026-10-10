@@ -161,3 +161,24 @@ of the study remain pending. No financial predictive finding is claimed.
   and future-outcome perturbations. A real snapshot adapter and its source-availability
   audit remain pending; label staging is still separate from model-ready data.
 - Replace a broken CRSP documentation link with WRDS's current format-guidance page.
+
+## 2026-10-09 - Real WRDS samples and header-identity mismatch
+
+- Inspect the owner's actual daily-stock, historical Names and CCM exports; record
+  exact file hashes, schemas and counts without publishing licensed source rows.
+  Confirm matching bytes in the owner's Downloads folder. Sample access is now
+  observed, while complete research coverage remains unverified.
+- Preserve literal return-quality codes, blank optional fields and CCM end-date
+  markers in the raw files. The CCM form showed 51 selected variables, but both
+  returned CSVs have 47 columns; record the observed schema rather than claiming
+  that all 51 were delivered. The core link fields are present.
+- Accept the CCM CSV-only result with its available query-page evidence. Do not
+  fabricate vendor SQL. Query 11768919 returned 60 rows for 19 requested CIKs.
+  The separate XOM ticker request returned two rows carrying a different header
+  CIK from the original pilot filings. Preserve both identities for dated review.
+- Treat the resulting 20-security list as a candidate retrieval list only.
+  Header CIKs, company names and SIC codes are not made historical by CCM link
+  dates. Do not splice predecessor filings or approve identity substitutions.
+- Next obtain historical Names for the candidate securities, then the requested
+  development-period market windows. Keep independent human review, delisting QA,
+  full-universe selection and the final-period evaluation gate unchanged.

@@ -4,15 +4,16 @@ Open Cornell's current WRDS entry point:
 https://johnson.library.cornell.edu/database/wharton-research-data-services-wrds/
 
 Check actual entitlements rather than assuming the platform contains every needed
-subscription. This build has not signed in to a Cornell or WRDS account.
+subscription. The owner completed authenticated WRDS sample exports on 9 October
+2026. Their files have been inspected; see the [sample evidence](wrds_sample_exports.md).
 
 Cornell's entry page was checked on 9 October 2026. It lists day-pass access for
 current Cornell students, faculty and staff, and describes individual accounts for
 JCB faculty and students. For an Engineering undergraduate, begin with the listed
 day-pass route; do not assume eligibility for an individual account or a particular
-dataset. The next user action is to open the Cornell entry point and check whether
-CRSP and the required historical tables are available. No private entitlement has
-been verified by this project.
+dataset. Successful samples now establish access to the observed daily-stock,
+historical Names and CCM query outputs. They do not establish complete historical
+coverage, access to every required table or a completed market-data audit.
 
 ## Quick entitlement check
 
@@ -67,7 +68,8 @@ delisting flags must be checked against the source documentation before normaliz
 
 The [normalized import and event-label staging tools](market_import.md) are ready
 for that verified sample. The manifest template intentionally leaves source-specific
-fields blank. Current verification uses invented market returns only.
+fields blank. Importer tests still use invented market returns. Actual sample
+observations have been inspected separately, without importing research labels.
 
 The [pilot export request](pilot_market_request.md) supplies exact dates for all
 135 current development events and a pending 20-event label/control trace sample.
