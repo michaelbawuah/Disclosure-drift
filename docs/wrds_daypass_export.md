@@ -17,8 +17,9 @@ The previous pilot demonstrated website exports of CRSP CIZ daily data, dated
 Names, and CCM data; see [the observed source receipts](wrds_sample_exports.md).
 The official daily URL is
 [CRSP → Annual Update → Stock Version 2 → Daily Stock File](https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/annual-update/stock-version-2/daily-stock-file/).
-Public retrieval reaches its sign-in page. The current pass's available fields, independent
-index access, and a standalone company-header form still require checking.
+Public retrieval reaches its sign-in page. The current pass's first daily export
+contains all 13 fields listed below. Independent index access and a standalone
+company-header form still require checking.
 If a form lacks a required field or selection, record that gap rather than
 substituting a different dataset.
 
@@ -48,7 +49,7 @@ leading-zero identifiers, blank values, literal `NA`, open-bound `E` markers,
 missing-return flags, and blank terminal tickers. Do not drop records with an
 unresolved flag or link type from the source export.
 
-## 2. Start with one daily CSV, then continue by year
+## 2. Start with one daily CSV, then continue in batches
 
 Open **CRSP → Annual Update → Stock Version 2 → Daily Stock File**. Set the first
 request to **2009-10-07 through 2009-12-31** and choose **all securities** rather
@@ -62,20 +63,41 @@ vwretd
 ```
 
 If identifiers or date are automatically included by the form, leave them
-included. Choose CSV and ISO dates when available, submit the query, and preserve
-its settings and downloaded file as described above. Name the first file
-`crsp_daily_2009-10-07_2009-12-31.csv`. This combines daily returns and the raw
+included. Choose CSV, gzip compression, and ISO dates when available, submit the
+query, and preserve its settings and downloaded file as described above. An
+example first-file name is `crsp_daily_2009-10-07_2009-12-31.csv`; retain the
+`.gz` suffix for compressed files. This combines daily returns and the raw
 price/volume inputs needed for historical liquidity selection. Do not include
 licensed data rows in chat; file headers, query status, and aggregate counts are
 sufficient for initial troubleshooting.
 
-After the first export succeeds, repeat for **2010, 2011, …, 2021**, one full
-calendar year per file, and one final interval **2022-01-01 through 2022-02-02**.
+If time is short, use these larger batches after the first export succeeds.
+Keep the same fields and all-security selection, and finish **one query at a
+time** before submitting the next:
+
+| Batch | Start | End |
+|---|---|---|
+| First daily file | 2009-10-07 | 2009-12-31 |
+| 2010–2012 | 2010-01-01 | 2012-12-31 |
+| 2013–2015 | 2013-01-01 | 2015-12-31 |
+| 2016–2018 | 2016-01-01 | 2018-12-31 |
+| 2019–2021 | 2019-01-01 | 2021-12-31 |
+| Development outcome tail only | 2022-01-01 | 2022-02-02 |
+
+The first file downloaded on 2026-10-10 actually begins **2009-07-10** and
+contains the required October–December interval. Preserve that original file;
+there is no need to repeat the query just to remove the earlier rows. The offline
+inventory reports actual coverage separately from the requested slice.
+
+Annual files for **2010, 2011, …, 2021** remain a valid alternative and the
+fallback if a larger download fails or exceeds the site's available result limit.
+Split an affected year into shorter intervals if necessary, and preserve every
+request. Check each result for completeness; a successful truncated query is not
+full coverage.
+
 The complete allowed source envelope is **2009-10-07 through 2022-02-02**. The
 early-2022 tail supplies the fixed 20-session outcomes of late-2021 filings; it
-does not authorize modeling 2022 filings. If the site imposes a smaller result
-limit, split the affected year by month and preserve every request. A successful
-truncated query is not full coverage.
+does not authorize modeling 2022 filings.
 
 The previous CIZ daily form provided attached `vwretd`. If it does not appear in
 this pass, preserve the stock export and obtain the independent market file
@@ -181,11 +203,51 @@ fields when actually offered. Save the exact delivered header, documented
 benchmark, and source table. A market return repeated only on existing stock
 rows cannot prove benchmark coverage after a stock's terminal event.
 
+The current daily form's **Daily Stock Market Indexes** navigation and mapping
+identify `VWRETD` with CIZ index **`IndNo = 1000200`** and total-return field
+**`DlyTotRet`**. Use that mapping to locate the appropriate independent series,
+then preserve the index form's actual delivered headers and index identifier.
+This UI mapping does not mean that its CSV header will be `vwretd`.
+
 ## 4. Offline intake and current implementation limits
 
 Keep licensed CSVs and event-level outputs on the owner's Mac under ignored
 `data/` or `outputs/`. Public repository changes can include code, empty templates
 and source-free aggregate verification, without uploading the licensed rows.
+
+### Inventory each daily download locally
+
+From the project directory, run the following command, replacing `--source` with
+the actual downloaded filename. Both plain CSV and gzip-compressed CSV are
+accepted; extraction is unnecessary. Set the requested dates for that batch and
+choose a new output directory for every run:
+
+```bash
+uv run --locked --python 3.12 python scripts/wrds_manual_inventory.py \
+  manualdaily inventory \
+  --source data/raw/wrds-daypass/2026-10-10/crsp_daily_2009-10-07_2009-12-31.csv \
+  --request-start 2009-10-07 \
+  --request-end 2009-12-31 \
+  --output data/private/wrds-intake/2009-v1
+```
+
+The command requires exactly the 13 daily fields above, with case-insensitive
+header matching. It makes a read-only, byte-preserving copy as `source.csv` or
+`source.csv.gz` and writes an aggregate `receipt.json` beside it. It records the
+source SHA-256, headers, row and security counts, actual and requested date
+coverage, missing XNYS sessions, exact repeated rows, conflicting security/date
+records, blank/numeric classifications, and uninterpreted flag counts. It uses
+disk-backed processing for large files and checks every date against the
+development boundary before interpreting numeric values.
+
+No rows are removed, filled, or normalized, including extra early rows. A new
+output directory is required, so existing evidence is not overwritten. Source
+release, vendor query details, download timestamps, and verified all-security
+selection remain unknown until supported by separately preserved evidence.
+The receipt explicitly records `model_ready: false`; date coverage alone does
+not establish complete security coverage or resolve conflicting records.
+
+### Remaining staging work
 
 The offline `stage-crsp` command already consumes the ten-field stock contract
 (`PERMNO`, `HdrCUSIP`, `Ticker`, `PERMCO`, `DlyCalDt`, `DlyDelFlg`, `DlyCap`,
@@ -200,7 +262,7 @@ confirmed:
 
 | Component | Current behavior | Required adaptation for full manual exports |
 |---|---|---|
-| Manual source inventory | No day-pass bundle import command | Inventory files, headers, hashes, query evidence, ranges, row counts and part completeness; report unknown provenance explicitly |
+| Manual source inventory | Offline daily CSV/gzip inventory preserves bytes and reports aggregate coverage, duplicates and flags | Add supported query/release evidence, reconcile completeness across all batches, and inventory Names, links, company headers and independent market sources |
 | Full-population daily staging | Reads the entire CSV into memory; accepts only known `NA` return flags | Stream/partition large files and review dictionary-defined missing codes, with explicit exclusions or unresolved records rather than zero filling |
 | Independent benchmark | Existing staging derives `vwretd` from stock rows | Accept a separate verified market CSV and reconcile overlapping benchmark values without deleting post-terminal benchmark sessions |
 | Historical universe | Requires normalized Parquet inputs | Map dated Names classifications, liquidity conventions and reviewed historical CIK links explicitly; preserve raw headers and source bounds |
