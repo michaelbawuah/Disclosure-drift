@@ -15,6 +15,7 @@ from .audit import build_audit
 from .crsp_staging import stage_crsp
 from .export_plan import build_export_plan
 from .ingest import ingest_smoke
+from .identity_review import build_identity_review
 from .labels import export_label_events, prepare_labels
 from .market_data import import_market
 from .market_demo import run_demo as market_demo
@@ -80,6 +81,15 @@ def main(argv=None) -> int:
     crsp.add_argument("--request-start", required=True)
     crsp.add_argument("--request-end", required=True)
     crsp.add_argument("--output", required=True, help="New private staging directory")
+    identity = commands.add_parser("review-identities", help="Assemble private historical identity evidence without approving links")
+    identity.add_argument("--events", required=True)
+    identity.add_argument("--filings", required=True)
+    identity.add_argument("--audit", required=True)
+    identity.add_argument("--companies", default="configs/pilot_companies.json")
+    identity.add_argument("--ccm", required=True, nargs="+")
+    identity.add_argument("--names", required=True)
+    identity.add_argument("--cache", default="data/raw/sec_cache")
+    identity.add_argument("--output", required=True, help="New private review directory")
     event_export = commands.add_parser("export-label-events", help="Export an event queue from a fresh source audit")
     event_export.add_argument("--filings", required=True)
     event_export.add_argument("--pairs", required=True)
@@ -103,6 +113,10 @@ def main(argv=None) -> int:
         print(json.dumps(write_lock(config, lock), indent=2))
         return 0
     verify_lock(config, lock)
+    if args.command == "review-identities":
+        print(json.dumps(build_identity_review(args.events, args.filings, args.audit,
+                         args.companies, args.ccm, args.names, args.cache, args.output, config), indent=2))
+        return 0
     if args.command == "stage-crsp":
         print(json.dumps(stage_crsp(args.daily, args.names, args.output, config,
                                     args.request_start, args.request_end), indent=2))
@@ -153,6 +167,7 @@ def main(argv=None) -> int:
     gates = {"protocol": "locked", "market_data_access": "export evidence in reports/market_access_samples.json",
              "market_import_and_label_staging": "implemented; real import still needs source and identity audits",
              "crsp_source_staging": "stage-crsp implemented; staging does not certify research readiness",
+             "historical_identity_review": "review-identities assembles evidence; historical link approval is pending",
              "pre_event_controls": "calculator and CRSP snapshot staging implemented; source availability audit required",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "pending before final test access",

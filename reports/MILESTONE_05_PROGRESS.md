@@ -42,6 +42,16 @@ explicitly retaining incomplete source/identity/terminal audit status. It create
 no approved CIK links or import-ready manifest. No actual event labels, fitted
 models or completed human reviews are added.
 
+The [historical identity review packet](../docs/identity_review.md) now covers all
+135 events and rechecks 155 cached SEC headers, all consistent with the original
+filer CIK, accession and form. Each event has one candidate security, with 10,935
+required session checks covered by one dated Names record and matching PERMCO.
+Seven Exxon events explicitly retain the historical/CCM-header CIK disagreement.
+All 135 candidate `E` end markers and historical identity verdicts remain pending.
+The [aggregate receipt](identity_pilot_summary.json) publishes counts and hashes;
+the detailed HTML, source rows and review templates stay private. No returns were
+loaded by this command, and no independent human review is claimed.
+
 ## Delivered
 
 - A concrete [Cornell WRDS entitlement check](../docs/data_access_checklist.md):
@@ -66,7 +76,13 @@ a human review.
 
 ## Verification
 
-The latest cloud `make reproduce` run passes **154 tests**, Ruff, the protocol
+The latest cloud `make reproduce` run passes **178 tests**, Ruff, the protocol
+lock and both synthetic demos. The 24 new identity-review cases cover original
+CIKs and annual-pair binding, changed evidence, non-ticker candidate discovery,
+interior gaps and ambiguous histories, unresolved end markers, cache/header
+identity errors, holdout refusal, escaped HTML and deterministic CLI reproduction.
+
+The preceding cloud `make reproduce` run passed **154 tests**, Ruff, the protocol
 lock and both synthetic demos. The 27 additional cases cover CIZ flags, the
 missing-terminal tail, unchanged terminal returns, cash after termination,
 capitalization units, historical industry boundaries, rejected ambiguous data,

@@ -243,3 +243,19 @@ of the study remain pending. No financial predictive finding is claimed.
 - Cloud `make reproduce` passes 154 tests, Ruff, the frozen protocol check and both
   synthetic demos. Invented terminal cases test arithmetic; they do not replace
   the missing actual terminal observation or independent human review.
+
+## 2026-10-10 - Historical identity review packet
+
+- Add `review-identities` to assemble source-bound development events, original
+  SEC headers, CCM candidate records and dated Names evidence. Verify the audited
+  annual pair before using either accession. Read no market returns.
+- Check all 155 cached headers against original CIKs, accessions and 10-K forms.
+  Assemble 135 event candidates and verify all 10,935 required dated-description
+  sessions. Retain seven Exxon header-CIK differences, all literal `E` end markers
+  and every pending human verdict. No ticker match, first candidate, header CIK or
+  company-name similarity is promoted into an approved mapping.
+- Keep source records and the detailed review packet private; publish aggregate
+  counts and hashes only. The command cannot approve or import links. Existing
+  WFM terminal QA, source release/availability and manual audit requirements remain.
+- Cloud `make reproduce` passes 178 tests, Ruff, the frozen protocol check and
+  both synthetic demos. No real labels, controls or fitted models are generated.

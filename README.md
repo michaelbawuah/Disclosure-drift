@@ -17,6 +17,9 @@ The received CRSP pilot has 36,000 rows covering 20 securities and 1,800 session
 CSV-to-Parquet/DuckDB staging now preserves source flags, USD capitalization and
 dated SIC. The WFM QA export lacks a terminal row; delisting verification,
 historical identity approval, source-availability review and human audits remain pending.
+A private identity-review packet now checks all 155 SEC headers and assembles
+dated security evidence for 135 events, with seven Exxon header-CIK differences
+kept explicit. It creates no approved historical links.
 The frozen final evaluation has not been opened; all model demos are synthetic.
 
 See the [Milestone 05 progress report](reports/MILESTONE_05_PROGRESS.md),
@@ -158,6 +161,11 @@ or an import-ready manifest. The [source receipt](reports/market_access_samples.
 records what was received, the completed coverage checks and the missing WFM
 terminal evidence.
 
+Use the [historical identity review command](docs/identity_review.md) to assemble
+the existing SEC headers, CCM candidates and dated Names records into a private
+HTML/Parquet packet. Its [aggregate receipt](reports/identity_pilot_summary.json)
+records the 135-event pilot without publishing licensed rows.
+
 After the historical universe, links, labels and controls have been independently
 verified, prepare the documented development Parquet table and run:
 
@@ -178,6 +186,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 | `timing.py`, `market.py` | Session arithmetic, historical links and return labels |
 | `market_data.py`, `labels.py` | Validated Parquet/DuckDB imports and audit-bound event-label staging |
 | `crsp_staging.py` | CIZ CSV staging, original flags, units, dated SIC and explicit coverage gaps |
+| `identity_review.py` | Source-bound SEC/CCM/Names evidence, dated candidate coverage and pending reviews |
 | `controls.py`, `export_plan.py` | Prior-session controls and outcome-free pilot export requests |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |

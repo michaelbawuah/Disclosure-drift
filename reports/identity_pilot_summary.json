@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "data_kind": "HISTORICAL_IDENTITY_REVIEW_NOT_APPROVED",
+  "events": 135,
+  "issuers": 20,
+  "filing_headers_checked": 155,
+  "filing_headers_identity_consistent": 155,
+  "ccm_source_rows": 62,
+  "ccm_rows_without_security_id": 33,
+  "names_source_rows": 237,
+  "candidate_rows": 135,
+  "events_with_one_candidate_security": 135,
+  "events_without_candidate_security": 0,
+  "events_with_multiple_candidate_rows": 0,
+  "events_with_header_cik_difference": 7,
+  "events_with_interval_coverage_issues": 0,
+  "candidate_rows_with_unresolved_end_marker": 135,
+  "review_priority_counts": {
+    "review_historical_identity": 128,
+    "resolve_header_cik": 7
+  },
+  "source_hashes": {
+    "filings": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+    "filing_pairs": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0",
+    "audit_summary": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb",
+    "filing_evidence": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626",
+    "events": "fb684e79c47928c1d4023fa3fd4e2ac5cc43b61a93ed925f81a32b658005dc0d",
+    "companies": "e339f3e9c67496eef65bda1e8301605fe11e46a4241dd0e56fa7aa88c23fbb43",
+    "ccm": {
+      "crsp_ccm_pilot.csv": "645ef511cf02d0659a9b26cc9b54ae6b50404f0801faaaa3813fad0f139c73cd",
+      "crsp_ccm_xom.csv": "a9c8031198147858a7cafa0ce14cb6eec3f0337182ab7b736c4b59b923223fea"
+    },
+    "names": "6faf8d24087c2abb67d1b3c4895857188cddc4b23b272b4f067e9c85bc7c59a1",
+    "protocol": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "review_code": "814d60121fadce5cbf8cb95dbeff5bb52bc15217e220b5b0c2eed92e7e19d25b"
+  },
+  "market_returns_loaded": false,
+  "human_reviews_completed": 0,
+  "approved_security_links_created": 0,
+  "model_ready": false,
+  "final_period_opened": false,
+  "files": {
+    "candidate_links.parquet": "3bf5b1369094a9c711dc01cf3122927da0306baa9c6d605011e66bd68112a9c5",
+    "ccm_evidence.parquet": "7df07064c78eb3c482103f77f626095a0d0a19a43b5fd115cb5c3b833a578728",
+    "event_identity_queue.parquet": "4e8c8c0c5387fd75fc9e783c3a632a084b2308409da2582a33d158cbd6c95cb9",
+    "filing_headers.parquet": "2463a07f908d1986dbcd0e2e5d26723c481de246b01e4865db161f87b1453990",
+    "identity_review.html": "4a19e1494bbb0d57ef8335c14e20b2a0a3414cd1e5270e62f2bc96ad5f09b748",
+    "identity_reviews.template.jsonl": "9dcf6fb0b0f220eb229d42aa0f4f7dbf79afc0ef6096f378ce4ac8215665ce7a",
+    "names_evidence.parquet": "03d7d9f64c77ab743c1e82e302748f33bdc6de2c8fd71adc5189eeaec2331de1"
+  },
+  "receipt_scope": "Aggregate counts and hashes only; detailed licensed evidence remains private.",
+  "required_session_checks": 10935
+}
