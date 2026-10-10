@@ -259,3 +259,20 @@ of the study remain pending. No financial predictive finding is claimed.
   WFM terminal QA, source release/availability and manual audit requirements remain.
 - Cloud `make reproduce` passes 178 tests, Ruff, the frozen protocol check and
   both synthetic demos. No real labels, controls or fitted models are generated.
+
+## 2026-10-10 - Corporate sources and a real identifier-change case
+
+- Locate SEC primary evidence for Exxon's July 2026 holding-company reorganization,
+  both registrant CIKs and the old/new common-stock CUSIPs. These identities explain
+  the observed historical-filer/current-header pattern, without certifying vendor
+  provenance or approving the historical security link. Cache this material apart
+  from model filings; preserve original CIKs and the existing review packet.
+- Check GE's August 2021 reverse-split CUSIP transition against its SEC 8-K and
+  the supplied Names/daily files. Reproduce ten source/staged sessions across two
+  contiguous Names intervals, stable permanent IDs, dated snapshots and unchanged
+  return values. Five pre-change rows expose a current-header/dated-CUSIP difference.
+  This is identifier QA, not an independent split-return or human-review result.
+- Record WRDS's official `.E` join predicate as support for an open-ended candidate
+  interpretation. Leave extract-specific bounds, release metadata and approvals
+  pending. The WFM terminal observation is still absent; diagnose its original
+  query before requesting a new export. No labels, fits or holdout results are added.

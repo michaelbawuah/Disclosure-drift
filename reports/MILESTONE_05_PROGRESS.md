@@ -13,7 +13,8 @@ private archive copies on the owner's Mac. The pilot Names CSV was archived from
 the supplied attachment; the other nine match original Mac downloads. The two
 CCM files contain 62 rows with 47 columns each; 19 requested
 CIKs match directly, while the XOM supplement carries a different header CIK.
-That mismatch is unresolved and has not been rewritten into an approved mapping.
+SEC corporate sources now document both identities and their July 2026
+reorganization; historical mapping approval remains pending.
 The 20 candidate securities are an export worklist, not approved historical links.
 
 The full historical Names export is now received: **237 records, 24 columns,
@@ -51,6 +52,14 @@ All 135 candidate `E` end markers and historical identity verdicts remain pendin
 The [aggregate receipt](identity_pilot_summary.json) publishes counts and hashes;
 the detailed HTML, source rows and review templates stay private. No returns were
 loaded by this command, and no independent human review is claimed.
+
+The [corporate-source follow-up](../docs/identity_source_evidence.md) documents
+Exxon's original and successor CIKs/CUSIPs. It also checks GE's August 2021 CUSIP
+transition using the existing files: ten sessions, two contiguous Names intervals,
+stable permanent IDs and unchanged staged returns. Five pre-change sessions have
+a current header CUSIP that differs from the dated CUSIP. The
+[aggregate receipt](ge_identifier_check.json) records this passing automated case;
+split-return arithmetic, historical-link approval and human review remain separate.
 
 ## Delivered
 
@@ -106,7 +115,8 @@ continues to produce engineering labels, not a model-ready dataset.
 ## Remaining Milestone 05 work
 
 1. Finish source dictionaries and release/query metadata, including a development-period
-   delisting and historical identifier-change QA case. Pilot window coverage is verified.
+   delisting case. Pilot coverage and GE's automated identifier-change check are verified;
+   independent review remains pending.
 2. Implement/review source normalization and historical snapshot availability,
    including return conventions, currency/units, identifier dates and industry.
 3. Import the pilot data, join audited identities, calculate labels and controls,

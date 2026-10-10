@@ -1,0 +1,44 @@
+{
+  "case": "GE 2021 reverse-split CUSIP transition; fixed development-period source QA",
+  "status": "automated_identifier_and_staging_checks_passed",
+  "window_start": "2021-07-26",
+  "window_end": "2021-08-06",
+  "transition_session": "2021-08-02",
+  "expected_sessions": 10,
+  "source_rows": 10,
+  "dated_names_intervals": 2,
+  "unique_names_match_each_session": true,
+  "continuous_permno_and_permco": true,
+  "header_vs_dated_cusip_disagreements": 5,
+  "staged_returns_unchanged": true,
+  "dated_snapshots_and_source_rows_match": true,
+  "source_reference": "https://www.sec.gov/Archives/edgar/data/40545/000120677421001925/ge3936671-8k.htm",
+  "source_reference_usage": "Item 3.03 assistant-inspected for date and new CUSIP; the script does not certify the SEC text",
+  "inputs": {
+    "names": {
+      "path": "data/raw/wrds/2026-10-09/crsp_names_pilot.csv",
+      "sha256": "6faf8d24087c2abb67d1b3c4895857188cddc4b23b272b4f067e9c85bc7c59a1"
+    },
+    "daily": {
+      "path": "data/raw/wrds/2026-10-10/crsp_daily_pilot.csv",
+      "sha256": "884faf245e5b03bffcd1217a3be802dff91433319de05494da9ce6beac67d0d6"
+    },
+    "staged_returns": {
+      "path": "data/staging/crsp-pilot-v1/daily_returns.parquet",
+      "sha256": "e7e14a1f7e649cacc4cdd8977c737c73ed2bfc884157729d0bdf7e79cb20baf5"
+    },
+    "staged_snapshots": {
+      "path": "data/staging/crsp-pilot-v1/security_snapshots.parquet",
+      "sha256": "7314cbb8aea714c94e7d18767985d29910dc007b77fb6fc8ee300454f7428103"
+    }
+  },
+  "verification_script_sha256": "71e2b6f969ec97510995aec4819533d06182b53e11459c6b03041475c192b80c",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "human_reviews_completed": 0,
+  "historical_cik_mapping_approved": false,
+  "split_return_arithmetic_verified": false,
+  "terminal_handling_verified": false,
+  "actual_event_labels_generated": false,
+  "model_fitted": false,
+  "final_period_returns_used": false
+}

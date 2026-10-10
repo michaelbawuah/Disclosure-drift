@@ -71,8 +71,10 @@ headers, all identity-consistent. Each event has one candidate security, and all
 PERMCO. This is coverage evidence, not approval.
 
 Seven Exxon events retain the original filing CIK and explicitly flag the different
-CCM header CIK. The other 128 events still require historical-link review. All
-135 candidate end markers are unresolved `E` values; all review verdicts remain
+CCM header CIK. The [corporate-source follow-up](identity_source_evidence.md)
+documents the July 2026 reorganization and both CIKs; historical-link approval
+remains pending for all 135 events. WRDS documentation supports an open-ended
+interpretation of `E`, but export-specific normalization bounds and all verdicts remain
 pending. No approved mapping, actual label or empirical result was produced.
 
 The public [aggregate receipt](../reports/identity_pilot_summary.json) contains

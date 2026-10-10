@@ -19,7 +19,9 @@ dated SIC. The WFM QA export lacks a terminal row; delisting verification,
 historical identity approval, source-availability review and human audits remain pending.
 A private identity-review packet now checks all 155 SEC headers and assembles
 dated security evidence for 135 events, with seven Exxon header-CIK differences
-kept explicit. It creates no approved historical links.
+kept explicit. A [source follow-up](docs/identity_source_evidence.md) documents
+Exxon's 2026 reorganization and verifies GE's 2021 CUSIP transition through staging.
+Historical links still require approval.
 The frozen final evaluation has not been opened; all model demos are synthetic.
 
 See the [Milestone 05 progress report](reports/MILESTONE_05_PROGRESS.md),
