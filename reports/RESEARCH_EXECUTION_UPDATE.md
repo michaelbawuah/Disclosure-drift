@@ -2,12 +2,15 @@
 
 This execution advanced three previously open tasks: the planned pilot now has
 enough 2019–2021 pairs, the actual semantic checkpoint has run on real SEC text,
-and full-study WRDS collection has runnable, resumable tooling. The user's earlier
+and full-study WRDS collection has runnable, resumable tooling. Manual downloads
+now cover all requested development daily dates, with Names, combined CCM/company
+metadata and the independent benchmark preserved locally. The user's earlier
 20/20 numerical review is also preserved as a completed review.
 
-**The empirical forecasting study remains unfinished.** Full historical vendor
-exports, remaining source judgments, actual development selection, final estimates,
-robustness interpretation and independent-person reproduction are still needed.
+**The empirical forecasting study remains unfinished.** Security-universe
+completeness, source normalization and judgments, actual development selection,
+final estimates, robustness interpretation and independent-person reproduction
+are still needed.
 The primary protocol is unchanged and the actual 2022–2025 evaluation remains unopened.
 
 ## Completed in this execution
@@ -22,6 +25,7 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Execute actual MiniLM | **155 real filing texts, 135 pairs, 1,459,865 WordPiece tokens, 5,828 chunks, zero truncation** | [Semantic execution report](semantic_validation/report.md) |
 | Reproduce actual inference | Two independent processes produced identical vectors for every document and identical pair features | [Replication receipt](semantic_validation/independent_replication.json) |
 | Prepare full historical collection | Account-catalog inspection, explicit source bindings, bounded monthly exports, source hashes, resumable checkpoints and offline assembly | [WRDS execution guide](../docs/wrds_full_export.md) |
+| Preserve development market sources | Four daily batches cover the requested dates 2009-10-07–2022-02-02; Names, combined CCM/company metadata and the independent benchmark are saved locally | [Manual export and inventory guide](../docs/wrds_daypass_export.md); private byte-preserving source copies and inventory receipts |
 | Verify the software | **444 tests passed; Ruff passed; complete synthetic study completed** | [Execution verification](execution_verification.json) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
@@ -108,18 +112,28 @@ The delivered implementation files match the recorded execution hashes.
 
 ## What happens next
 
-The immediate dependency is the actual full historical source export. For a
-website Access Pass/Daypass, follow the
-[manual browser-export guide](../docs/wrds_daypass_export.md) and retain the
-original files and query evidence locally. With authenticated database access,
-the [WRDS guide](../docs/wrds_full_export.md) provides a separate sequence:
-inspect the account's catalog, verify five source bindings, collect development
-population windows, collect development market sources, then verify and assemble
-the monthly files. Its authentication remains in the user's local WRDS prompt.
+The immediate work is normalization and reconciliation of the preserved sources,
+followed by historical universe construction. The **2016-01-01–2022-02-02** daily
+batch was checked across all **1,533 expected XNYS sessions**: **11,790,771 rows**,
+**12,259 distinct PERMNOs**, and **96 delivered columns** in **7,092,279,548 bytes**.
+Its SHA-256 is
+`c5609c9375fca7cd8138efac54ef6e94ab1d53bd6b615479f041ec96c34d1a06`.
+The required 13-field projection contains **2,406 exact repeated-row excesses**
+across **2,322 repeated security/date keys**, with **zero conflicting keys**.
+Those checks compare the required projection, not all 96 delivered columns;
+the original bytes and extra columns remain preserved.
+
+Together, the four daily batches cover the requested development dates
+**2009-10-07 through 2022-02-02**. Date coverage does not establish that every
+eligible historical security is present. Names, combined CCM/company metadata
+and the independent benchmark have also been saved locally. The
+[manual guide](../docs/wrds_daypass_export.md) describes their separate offline
+inventories; source meaning, release/vintage and historical CIK judgments remain
+unresolved, and these raw files are not yet a normalized research dataset.
 
 | Stage | Work remaining |
 |---|---|
-| Historical inputs | Actual dated population, liquidity, CIK/security links, returns, benchmark, size and industry sources; documented release, units and availability |
+| Historical inputs | Reconcile the received sources and verify security-universe completeness, historical CIK/security links, benchmark consistency, release/vintage, units and availability |
 | Pilot closure | Remaining source and filing judgments, followed by the approved controls-only smoke |
 | Full dataset | Reviewed normalization, historical universe selection, predecessor filings and full-sample source audit |
 | Development | Run actual 2016–2021 comparisons; complete semantic example review; freeze actual primary and secondary choices |
@@ -130,8 +144,9 @@ Default population collection covers selection years 2010–2021, with the first
 liquidity window beginning October 7, 2009. Development return coverage ends
 February 2, 2022 for late-2021 labels. Both holdout population price/volume and
 holdout returns require completed development prerequisites; final label coverage
-extends through February 3, 2026. No full WRDS source rows were retrieved during
-this execution, and no historical availability timestamp or human approval was invented.
+extends through February 3, 2026. Development sources are now preserved locally;
+no historical availability timestamp or human approval has been inferred from
+their acquisition. The final-period source gate remains unchanged.
 
 The earlier eight-page progress PDF and four-page pilot PDF remain intact as the
 original 20-issuer snapshot. This update, the current

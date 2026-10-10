@@ -6,8 +6,10 @@
 
 **Status:** The software and reporting work has advanced through the final
 evaluation and secondary-analysis stages. The actual empirical milestones are
-not complete because full historical sources and several required source judgments
-remain outstanding. The user's 20/20 numerical review is complete.
+not complete. Development daily exports now cover the required source dates,
+and Names, combined CCM/company metadata and the independent benchmark are saved
+locally. Security-universe completeness, normalization and required source
+judgments remain outstanding. The user's 20/20 numerical review is complete.
 
 The frozen primary protocol has not changed. Its hash is
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
@@ -20,7 +22,7 @@ in 2022–2025, and paired three-/six-month reference-month blocks.
 | Milestone | Delivered | Empirical requirement still open |
 |---|---|---|
 | **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
-| **7: full dataset** | Historical year-start selector; runnable resumable WRDS exporter with catalog and query receipts; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Actual full historical exports, reviewed normalization and predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
+| **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Verified security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
 | **8: development and freeze** | Eight primary configurations over six development folds; six ablation subsets; actual MiniLM execution on 155 real filings / 135 pairs with full token coverage and numerical checks; code/data/review/selection freeze | Approved empirical development, human semantic example review, and a freeze of actual choices/evidence |
 | **9: final evaluation** | Four annual mature-label refits; paired incremental R-squared; 2,000-draw three-/six-month intervals; exact prediction artifacts; durable access ledger and changed-freeze refusal | Execute the approved freeze on the actual 2022–2025 observations; report the measured result |
 | **10: robustness** | Year/month/leave-one-year-out diagnostics; fixed size/industry groups; six frozen ablations; source-linked failures; independent delay rebuild APIs; descriptive paragraph comparison; verified-run orchestration | Execute all declared checks on empirical predictions and independently rebuilt delay data; inspect real cases; interpret limitations |
@@ -141,13 +143,18 @@ and matching source audit. Licensed market rows remain excluded from Git.
 
 ## Exact next empirical step
 
-Run the catalog and default development-population collection in the
-[WRDS guide](../docs/wrds_full_export.md), then collect development market sources.
-The exporter validates selected fields, saves monthly queries with hashes and
-UTC timestamps, and resumes completed parts without silently replacing them.
-Holdout population price/volume and return collections are separately gated.
-The first liquidity window starts **October 7, 2009**; late-2025 filing labels
-require coverage through **February 3, 2026**. Complete the source-bound human
-reviews against the existing evidence, then run development and freeze the
-actual procedure. The remaining commands and reports can then consume approved
-empirical inputs without changing the primary design.
+Normalize and reconcile the locally preserved development exports documented in
+the [manual WRDS guide](../docs/wrds_daypass_export.md). The four daily batches
+cover the requested dates **October 7, 2009 through February 2, 2022**, including
+the first liquidity window and the late-2021 outcome tail. Names, combined
+CCM/company metadata and the independent benchmark are also preserved. Raw date
+coverage does not certify the complete historical security universe or produce
+model-ready inputs.
+
+Review source units and return conventions, dated classifications, historical
+CIK links and source vintage/availability; reconcile the benchmark and explain
+full-sample coverage. Complete the source-bound human reviews against the
+existing evidence, then run development and freeze the actual procedure.
+Holdout population price/volume and return collections remain separately gated;
+the actual 2022–2025 study has not been executed. The primary design and completed
+20/20 numerical review remain unchanged.
