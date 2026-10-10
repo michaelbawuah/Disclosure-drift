@@ -23,10 +23,17 @@ Original multi-gigabyte CSVs are not copied or reopened by this consumer; their
 hash verification is the responsibility of the bound upstream source stage.
 
 DuckDB uses a 1 GB memory limit, two threads and local spill files to deduplicate
-the complete requested source projection. Python reader batches adapt to the
+all sources within one calendar month at a time. Every security/date key belongs
+to exactly one month, so cross-file duplicate and conflict semantics are retained.
+Source record ordinals are verified consecutively during the date pass instead
+of building a global record-uniqueness hash table. Python reader batches adapt to the
 largest observed row, with an estimated 32 MiB byte budget. A row exceeding that
 budget is refused. Bounded batches stream into Parquet parts of at most 250,000
 rows. Final directories have mode 0700 and files mode 0400.
+
+The first production attempt with global grouping reached the configured memory
+limit and produced no successful candidate bundle. The monthly approach addresses
+that observed scaling limit without changing source values or research policy.
 
 Exact repetitions of all 13 raw fields become one candidate projection, with
 the original record count and distinct-source-file count. Every distinct

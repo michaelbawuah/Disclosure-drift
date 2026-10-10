@@ -284,3 +284,29 @@ def test_request_before_frozen_source_start_is_refused(tmp_path, config):
     _receipt(stage, manifest)
     with pytest.raises(ValueError, match="locked development window"):
         _build(tmp_path, config, stage)
+
+
+def test_month_partitions_preserve_cross_file_duplicates_and_conflicts(tmp_path, config):
+    a = [_raw(), _raw(3, dlycaldt="2020-02-03", dlyret=".02")]
+    b = [_raw(source_sha256="c" * 64, source_inventory_sha256="d" * 64),
+         _raw(3, source_sha256="c" * 64, source_inventory_sha256="d" * 64,
+              dlycaldt="2020-02-03", dlyret=".03")]
+    stage, manifest = _bundle(tmp_path, config, [a, b])
+    manifest["request"]["end"] = "2020-02-03"
+    _receipt(stage, manifest)
+    receipt = _build(tmp_path, config, stage)
+    rows = _output_rows(tmp_path)
+    assert len(rows) == 3
+    assert receipt["processing"]["grouping_partitions"] == 2
+    assert receipt["projection"]["source_records"] == 4
+    assert receipt["projection"]["equivalent_13_field_record_excess"] == 1
+    assert receipt["projection"]["conflicting_security_date_keys"] == 1
+    assert rows[0]["projection_record_count"] == 2
+    assert rows[0]["projection_source_file_count"] == 2
+    assert all(row["total_return_candidate"] is None for row in rows[1:])
+
+
+def test_omitted_or_out_of_order_source_record_is_refused(tmp_path, config):
+    stage, _ = _bundle(tmp_path, config, [[_raw(3), _raw(2)]])
+    with pytest.raises(ValueError, match="out of order"):
+        _build(tmp_path, config, stage)

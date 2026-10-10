@@ -10,7 +10,7 @@ import math
 import re
 import tempfile
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from decimal import Decimal, InvalidOperation, localcontext
 from pathlib import Path
 
@@ -188,6 +188,8 @@ def _preflight(parts, sources, manifest) -> dict:
                 if (pair not in sources or row["source_csv_record"] < 2
                         or row["source_csv_record"] > sources[pair] + 1):
                     raise ValueError("Projected record does not match bound source provenance")
+                if row["source_csv_record"] != counts[pair] + 2:
+                    raise ValueError("Source CSV record provenance is repeated, missing, or out of order")
                 counts[pair] += 1
                 dates[day] += 1
                 seen += 1
@@ -304,6 +306,16 @@ def _candidate(row: dict, sessions: set[str]) -> dict:
     return out
 
 
+def _month_windows(start: str, end: str):
+    current = date.fromisoformat(start)
+    last = date.fromisoformat(end)
+    while current <= last:
+        next_month = (current.replace(day=28) + timedelta(days=4)).replace(day=1)
+        through = min(last, next_month - timedelta(days=1))
+        yield current.isoformat(), through.isoformat()
+        current = next_month
+
+
 def build_candidates(stage_directory: str | Path, *, output: str | Path,
                      config: dict, repo_root: str | Path) -> dict:
     """Create source-bound candidates; never mark a row or bundle model-ready."""
@@ -337,35 +349,18 @@ def build_candidates(stage_directory: str | Path, *, output: str | Path,
             if 4 * largest_row + 4096 > _BATCH_BYTES:
                 raise ValueError("One source row exceeds the candidate reader byte budget")
             batch_rows = min(_BATCH, _BATCH_BYTES // (4 * largest_row + 4096))
-            if db.execute("SELECT COUNT(*) FROM (SELECT source_sha256, source_inventory_sha256, "
-                          "source_csv_record FROM raw GROUP BY ALL HAVING COUNT(*) > 1)").fetchone()[0]:
-                raise ValueError("Source CSV record provenance is repeated in the projection")
             fields = ", ".join(f'"{name}"' for name in DAILY_FIELDS)
             representative = ("struct_pack(source_sha256 := source_sha256, "
                               "source_inventory_sha256 := source_inventory_sha256, "
                               "source_csv_record := source_csv_record)")
-            db.execute(f"CREATE TABLE projections AS SELECT {fields}, COUNT(*)::BIGINT record_count, "
-                       "COUNT(DISTINCT source_sha256)::BIGINT source_file_count, "
-                       f"arg_min({representative}, {representative}) representative "
-                       f"FROM raw WHERE in_requested_window GROUP BY {fields}")
-            db.execute("CREATE TABLE conflicts AS SELECT permno, dlycaldt, COUNT(*)::BIGINT variants "
-                       "FROM projections GROUP BY permno, dlycaldt HAVING COUNT(*) > 1")
-            conflict_keys = db.execute("SELECT COUNT(*) FROM conflicts").fetchone()[0]
-            distinct = db.execute("SELECT COUNT(*) FROM projections").fetchone()[0]
-            raw_count = db.execute("SELECT COALESCE(SUM(record_count),0) FROM projections").fetchone()[0]
-            if raw_count != coverage["requested_rows"]:
-                raise ValueError("Deduplication did not account for every requested source record")
             order = ["dlycaldt", "permno", *[name for name in DAILY_FIELDS
                                            if name not in {"dlycaldt", "permno"}]]
             projected = ", ".join(f'p."{name}"' for name in DAILY_FIELDS)
-            cursor = db.execute("SELECT p.*, COALESCE(c.variants,1)::BIGINT variants, "
-                                f"sha256(to_json(list_value({projected}))) projection_sha256 "
-                                "FROM projections p LEFT JOIN conflicts c USING(permno,dlycaldt) "
-                                + "ORDER BY " + ", ".join(f'p."{name}"' for name in order))
             outputs, counts = [], {name: Counter() for name in
                                    ("return_status", "capitalization_status", "liquidity_status",
                                     "delisting_status", "return_missing_flag", "price_flag")}
             candidate_rows = part_rows = 0
+            conflict_keys = distinct = raw_count = partitions = 0
             writer = path = None
 
             def close_part():
@@ -379,33 +374,56 @@ def build_candidates(stage_directory: str | Path, *, output: str | Path,
                 writer, part_rows = None, 0
 
             try:
-                for batch in cursor.fetch_record_batch(batch_rows):
-                    rows = [_candidate(row, sessions) for row in batch.to_pylist()]
-                    for row in rows:
-                        for name, count in counts.items():
-                            value = row[name]
-                            if name in _FLAG_CODES and value not in _FLAG_CODES[name]:
-                                value = "__UNRECOGNIZED__"
-                            count[value] += 1
-                    table = pa.Table.from_pylist(rows, schema=CANDIDATE_SCHEMA)
-                    offset = 0
-                    while offset < len(rows):
-                        if writer is None:
-                            path = bundle / "candidates" / f"part-{len(outputs) + 1:06d}.parquet"
-                            writer = pq.ParquetWriter(path, CANDIDATE_SCHEMA, compression="zstd")
-                        size = min(len(rows) - offset, _PART_ROWS - part_rows)
-                        writer.write_table(table.slice(offset, size))
-                        part_rows += size
-                        offset += size
-                        if part_rows == _PART_ROWS:
-                            close_part()
-                    candidate_rows += len(rows)
+                # A security/date key belongs to exactly one month. Grouping
+                # across every source inside each month preserves exact global
+                # duplicate/conflict semantics without one 23-million-key hash table.
+                for first, last in _month_windows(manifest["request"]["start"], manifest["request"]["end"]):
+                    db.execute(f"CREATE OR REPLACE TABLE projections AS SELECT {fields}, "
+                               "COUNT(*)::BIGINT record_count, "
+                               "COUNT(DISTINCT source_sha256)::BIGINT source_file_count, "
+                               f"arg_min({representative}, {representative}) representative "
+                               f"FROM raw WHERE in_requested_window AND dlycaldt BETWEEN ? AND ? GROUP BY {fields}",
+                               [first, last])
+                    db.execute("CREATE OR REPLACE TABLE conflicts AS SELECT permno, dlycaldt, "
+                               "COUNT(*)::BIGINT variants FROM projections "
+                               "GROUP BY permno, dlycaldt HAVING COUNT(*) > 1")
+                    conflict_keys += db.execute("SELECT COUNT(*) FROM conflicts").fetchone()[0]
+                    distinct += db.execute("SELECT COUNT(*) FROM projections").fetchone()[0]
+                    raw_count += db.execute("SELECT COALESCE(SUM(record_count),0) FROM projections").fetchone()[0]
+                    partitions += 1
+                    cursor = db.execute("SELECT p.*, COALESCE(c.variants,1)::BIGINT variants, "
+                                        f"sha256(to_json(list_value({projected}))) projection_sha256 "
+                                        "FROM projections p LEFT JOIN conflicts c USING(permno,dlycaldt) "
+                                        + "ORDER BY " + ", ".join(f'p."{name}"' for name in order))
+                    for batch in cursor.fetch_record_batch(batch_rows):
+                        rows = [_candidate(row, sessions) for row in batch.to_pylist()]
+                        for row in rows:
+                            for name, count in counts.items():
+                                value = row[name]
+                                if name in _FLAG_CODES and value not in _FLAG_CODES[name]:
+                                    value = "__UNRECOGNIZED__"
+                                count[value] += 1
+                        table = pa.Table.from_pylist(rows, schema=CANDIDATE_SCHEMA)
+                        offset = 0
+                        while offset < len(rows):
+                            if writer is None:
+                                path = bundle / "candidates" / f"part-{len(outputs) + 1:06d}.parquet"
+                                writer = pq.ParquetWriter(path, CANDIDATE_SCHEMA, compression="zstd")
+                            size = min(len(rows) - offset, _PART_ROWS - part_rows)
+                            writer.write_table(table.slice(offset, size))
+                            part_rows += size
+                            offset += size
+                            if part_rows == _PART_ROWS:
+                                close_part()
+                        candidate_rows += len(rows)
                 close_part()
             finally:
                 if writer is not None:
                     writer.close()
             if candidate_rows != distinct:
                 raise ValueError("Candidate outputs do not account for every distinct projection")
+            if raw_count != coverage["requested_rows"]:
+                raise ValueError("Monthly deduplication did not account for every requested source record")
         finally:
             db.close()
         _unchanged(guards)
@@ -444,6 +462,8 @@ def build_candidates(stage_directory: str | Path, *, output: str | Path,
                 "aggregate_flags": "documented code sets plus __UNRECOGNIZED__ bucket; exact flags remain in private rows",
             },
             "processing": {"duckdb_memory_limit": "1GB", "duckdb_threads": 2,
+                           "grouping_partitions": partitions, "grouping_partition_unit": "calendar_month",
+                           "source_ordinals_verified_in_streaming_order": True,
                            "maximum_observed_raw_row_characters": largest_row,
                            "arrow_reader_batch_rows": batch_rows,
                            "estimated_python_batch_byte_target": _BATCH_BYTES,
