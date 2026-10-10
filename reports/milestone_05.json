@@ -1,0 +1,34 @@
+{
+  "milestone": 5,
+  "status": "in_progress_pending_research_reviews",
+  "automated_pilot_checks_passed": true,
+  "full_signoff_complete": false,
+  "candidate_cases": 135,
+  "candidate_arithmetic_passed": 135,
+  "candidate_arithmetic_blocked": 0,
+  "fixed_trace_packets": 20,
+  "human_trace_reviews_passed": 0,
+  "human_trace_reviews_remaining": 20,
+  "historical_identity_approvals_pending": 135,
+  "source_release_verified": false,
+  "point_in_time_availability_verified": false,
+  "terminal_case": "WFM automated source QA passed",
+  "identifier_change_case": "GE automated source QA passed",
+  "test_count": 190,
+  "test_scope": "cloud make reproduce; synthetic tests and demos, plus separately run real-source candidate QA",
+  "remaining": [
+    "Historical CIK/security, share-class and open-end interval approvals",
+    "Exact source release/query and availability review",
+    "Independent filing/reference and 20-event arithmetic reviews",
+    "Promote approved inputs and finalize research exclusions"
+  ],
+  "evidence": [
+    "reports/pilot_arithmetic_summary.json",
+    "reports/wfm_terminal_check.json",
+    "reports/ge_identifier_check.json",
+    "reports/identity_pilot_summary.json"
+  ],
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "final_period_opened": false,
+  "model_ready": false
+}

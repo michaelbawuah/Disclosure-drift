@@ -299,3 +299,32 @@ of the study remain pending. No financial predictive finding is claimed.
   separately. Automated terminal-case QA passes; human reviews and historical
   identity/source availability gates remain pending. No real filing labels,
   model results or final-period outcomes are added.
+
+## 2026-10-10 - Complete the candidate label/control arithmetic workflow
+
+- Restore the unchanged source-bound 135-event queue and identity evidence. Stage
+  the existing daily/Names exports again with original bytes preserved. No new
+  WRDS download or final-period data is needed for the arithmetic review.
+- Add `audit-pilot-market`: verify filing, pair, identity, export-plan, raw source
+  and staged-table hashes; retain only unambiguous candidate rows for conditional
+  calculations. Keep historical CIK approvals, open end markers and source release
+  assumptions unresolved. Do not generate approved links or an import manifest.
+- Calculate all seven numeric label/control measures for 135 candidate cases and
+  reconcile them with independent Decimal arithmetic using the raw CSVs. All 135
+  pass, zero cases are blocked, and maximum absolute difference is about 1.43e-15
+  against the 1e-12 tolerance. Dated SIC is independently matched too.
+- Generate all 20 previously selected arithmetic traces, with 60 control records,
+  20 label records, exact-date capitalization/industry and source record references.
+  Do not inspect outcomes to change the review sample. Publish aggregate counts
+  and hashes; keep licensed rows and all individual calculated values private.
+- Add evidence-bound review ingestion that preserves pending records, rejects stale
+  or duplicate declarations, and distinguishes human from assistant reviewers. No
+  human verdict is supplied by this build. It does not authenticate reviewers or
+  approve historical identities, availability, filing boundaries or model inputs.
+- `make reproduce` passes 190 tests, Ruff, the frozen protocol and both synthetic
+  demos. New tests cover independent arithmetic, reference-day exclusion, changed
+  source/plan evidence, holdout-before-market refusal, candidate ambiguity, wrong
+  capitalization units, output preservation and stale/assistant review handling.
+- Keep Milestone 05 open for historical identity/class and end-bound approval,
+  release/availability review, independent filing/trace review and approved import.
+  Candidate calculation success is not a research result or final exclusion policy.

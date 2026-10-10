@@ -342,7 +342,7 @@
     "Exact source release/query metadata and point-in-time availability audit",
     "Independent filing and label/control trace reviews"
   ],
-  "actual_event_labels_generated": false,
+  "actual_event_labels_generated": true,
   "final_period_return_outcomes_examined": false,
   "protocol_changed": false,
   "names_pilot": {
@@ -597,5 +597,18 @@
     "human_reviews_completed": 0,
     "actual_filing_labels_generated": false,
     "original_staging_receipt_preserved": true
+  },
+  "actual_event_label_status": "Provisional candidate arithmetic only; historical identities unapproved",
+  "approved_filing_labels_generated": false,
+  "pilot_arithmetic_followup": {
+    "public_receipt": "reports/pilot_arithmetic_summary.json",
+    "public_receipt_sha256": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+    "candidate_cases_calculated": 135,
+    "qa_cases_blocked": 0,
+    "fixed_trace_cases": 20,
+    "human_trace_reviews_passed": 0,
+    "historical_cik_mapping_approved": false,
+    "model_ready": false,
+    "milestone_05_complete": false
   }
 }

@@ -19,6 +19,7 @@ from .identity_review import build_identity_review
 from .labels import export_label_events, prepare_labels
 from .market_data import import_market
 from .market_demo import run_demo as market_demo
+from .pilot_audit import audit_pilot_market
 from .modeling import development_comparison
 from .protocol import load_protocol, verify_lock, write_lock
 from .references import load_reference_rules
@@ -90,6 +91,10 @@ def main(argv=None) -> int:
     identity.add_argument("--names", required=True)
     identity.add_argument("--cache", default="data/raw/sec_cache")
     identity.add_argument("--output", required=True, help="New private review directory")
+    pilot_audit = commands.add_parser("audit-pilot-market", help="Reconcile candidate labels/controls with raw-source arithmetic")
+    for field in ["events", "filings", "audit", "identity", "staging", "daily", "names", "plan", "output"]:
+        pilot_audit.add_argument("--" + field, required=True)
+    pilot_audit.add_argument("--reviews", help="Optional evidence-bound human or assistant trace reviews")
     event_export = commands.add_parser("export-label-events", help="Export an event queue from a fresh source audit")
     event_export.add_argument("--filings", required=True)
     event_export.add_argument("--pairs", required=True)
@@ -113,6 +118,12 @@ def main(argv=None) -> int:
         print(json.dumps(write_lock(config, lock), indent=2))
         return 0
     verify_lock(config, lock)
+    if args.command == "audit-pilot-market":
+        summary = audit_pilot_market(args.events, args.filings, args.audit, args.identity,
+                                    args.staging, args.daily, args.names, args.plan, args.output,
+                                    config, args.reviews)
+        print(json.dumps(summary, indent=2))
+        return 1 if summary["qa_cases_blocked"] else 0
     if args.command == "review-identities":
         print(json.dumps(build_identity_review(args.events, args.filings, args.audit,
                          args.companies, args.ccm, args.names, args.cache, args.output, config), indent=2))
@@ -169,6 +180,7 @@ def main(argv=None) -> int:
              "crsp_source_staging": "stage-crsp implemented; staging does not certify research readiness",
              "historical_identity_review": "review-identities assembles evidence; historical link approval is pending",
              "pre_event_controls": "calculator and CRSP snapshot staging implemented; source availability audit required",
+             "pilot_arithmetic_audit": "audit-pilot-market reconciles provisional candidate labels/controls; no identity or human approval inferred",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "pending before final test access",
              "final_2022_2025_evaluation": "blocked; no empirical result exists"}

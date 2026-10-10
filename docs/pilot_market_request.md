@@ -91,3 +91,9 @@ The template is a work queue, not an executable approval gate. No command curren
 accepts it as authorization to model. Complete the separate 30-pair filing review
 and registered-reference review as well; retain failed examples and exclusions.
 No development experiment or final-period evaluation is authorized by this packet.
+
+The [pilot arithmetic command](pilot_arithmetic_review.md) now generates the actual
+20-case reading packet, independent calculations, raw row references and new
+evidence-bound JSONL review templates. Its optional `--reviews` input records human
+and assistant declarations separately and rejects stale evidence. Those declarations
+do not approve historical identities or authorize modeling.

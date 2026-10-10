@@ -13,6 +13,10 @@ universe and full prepared dataset remain pending. The
 [CIZ CSV staging adapter](crsp_staging.md) now converts the observed daily/Names
 schemas to returns, benchmark and dated snapshots, with source and human audits
 still unresolved. Staging is not an approved import bundle.
+The [pilot arithmetic audit](pilot_arithmetic_review.md) now combines staged returns
+and snapshots with source-bound candidate identity evidence. Its private results
+have an explicit provisional-QA data kind and omit the text/model input schema.
+They do not replace the approved historical links required below.
 
 ## Returns and benchmark
 

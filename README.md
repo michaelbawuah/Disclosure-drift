@@ -24,6 +24,10 @@ dated security evidence for 135 events, with seven Exxon header-CIK differences
 kept explicit. A [source follow-up](docs/identity_source_evidence.md) documents
 Exxon's 2026 reorganization and verifies GE's 2021 CUSIP transition through staging.
 Historical links still require approval.
+The [pilot arithmetic audit](docs/pilot_arithmetic_review.md) now calculates labels
+and controls for all 135 provisional security candidates, independently reconciles
+them to raw CSV decimals, and supplies the 20 preselected trace reviews. All 135
+arithmetic checks pass; these are unapproved candidate calculations, not modeling data.
 The frozen final evaluation has not been opened; all model demos are synthetic.
 
 See the [Milestone 05 progress report](reports/MILESTONE_05_PROGRESS.md),
@@ -191,6 +195,7 @@ not a confirmatory result. There is no current claim of predictive performance.
 | `market_data.py`, `labels.py` | Validated Parquet/DuckDB imports and audit-bound event-label staging |
 | `crsp_staging.py` | CIZ CSV staging, original flags, units, dated SIC and explicit coverage gaps |
 | `identity_review.py` | Source-bound SEC/CCM/Names evidence, dated candidate coverage and pending reviews |
+| `pilot_audit.py` | Source-bound candidate calculations, independent decimal arithmetic and 20 trace reviews |
 | `controls.py`, `export_plan.py` | Prior-session controls and outcome-free pilot export requests |
 | `features.py`, `modeling.py` | Training-only text measures and chronological baselines |
 | `evaluation.py` | Paired score and contiguous-month uncertainty estimates |
@@ -211,8 +216,10 @@ each research gate. The report will describe measured outcomes, including nulls.
 
 ## Next milestone
 
-Review the initial 30-pair sample and all registered reference boundaries, including
-the source-method transitions. Resolve the missing terminal row in the WFM export
-and complete source metadata, then build and audit the historical universe, joins and pre-event
-controls before running real development experiments.
+Complete the pending historical-identity/source reviews, initial 30-pair filing
+sample, registered reference boundaries and 20 label/control traces. The WFM terminal
+case and all 135 candidate arithmetic checks pass. Milestone 05 remains open until
+the independent reviews and source assumptions are resolved; the exact remaining
+items are in the [progress report](reports/MILESTONE_05_PROGRESS.md).
+Then build and audit the historical universe before real development experiments.
 Select and audit a semantic checkpoint before unlocking the primary final evaluation.

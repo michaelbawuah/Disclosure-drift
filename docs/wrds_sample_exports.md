@@ -56,8 +56,10 @@ PERMCO. These are source consistency checks, not independent vendor verification
 
 Using the provisional retrieval associations, all 135 event windows have their
 60 control sessions, entry-reference row and 20 return sessions: 8,100 control-row,
-135 entry-row and 2,700 label-row checks pass. No compounded event labels or fitted
-models were created. The daily query ID, vendor SQL and exact source release date
+135 entry-row and 2,700 label-row checks pass. That inspection created no compounded
+labels or models. A later [arithmetic audit](pilot_arithmetic_review.md) calculates
+135 provisional candidate labels/controls without approving the links. The daily
+query ID, vendor SQL and exact source release date
 have not been supplied; they are recorded as unknown rather than inferred.
 
 The combined CCM files have the same schema, 62 rows, no duplicate link keys and
@@ -112,8 +114,8 @@ and finish source-release/availability and independent human reviews. GE's separ
 automated identifier-change case also passes; historical approvals remain pending.
 
 The [135 event windows](../reports/pilot_market_request/event_windows.csv) define
-the precise control and label sessions. No actual filing-event labels or prediction
-models have been generated. No final-period
+the precise control and label sessions. Candidate calculations now exist for review;
+no approved filing-label dataset or prediction model has been generated. No final-period
 2022-2025 returns or evaluation outcomes have been examined; identifier metadata
 outside development dates was read solely to inspect the delivered schemas/history.
 The protocol and final evaluation gate are unchanged.

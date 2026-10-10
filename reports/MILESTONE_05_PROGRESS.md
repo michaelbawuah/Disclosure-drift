@@ -1,9 +1,12 @@
-# Milestone 05 progress: export request and pre-event controls
+# Milestone 05 progress: pilot labels, controls and review evidence
 
 Status on 2026-10-10: **in progress, not completed**. Authenticated CRSP sample
 and full pilot exports have been inspected and staged in Parquet/DuckDB. Automated
 WFM terminal-return and GE identifier-change cases pass. Historical identity
 approval, source-release/availability and independent human reviews remain pending.
+The new arithmetic/review workflow runs end to end: **135 of 135 provisional
+candidate cases pass**, with **20 fixed review traces** and zero calculation
+failures. Milestone 05 is not fully signed off while the reviews below are pending.
 
 ## Sample-access update
 
@@ -44,8 +47,9 @@ The new [CIZ source-staging command](../docs/crsp_staging.md) converts the pilot
 36,000 return rows, 1,800 benchmark rows and 36,000 dated snapshots. It preserves
 literal source flags, converts thousands to USD and joins historical SIC, while
 explicitly retaining incomplete source/identity/terminal audit status. It creates
-no approved CIK links or import-ready manifest. No actual event labels, fitted
-models or completed human reviews are added.
+no approved CIK links or import-ready manifest. Staging itself adds no labels,
+fitted models or completed human reviews. The separate conditional arithmetic
+workflow below now calculates candidate labels and controls for review.
 
 The [historical identity review packet](../docs/identity_review.md) now covers all
 135 events and rechecks 155 cached SEC headers, all consistent with the original
@@ -67,6 +71,17 @@ split-return arithmetic, historical-link approval and human review remain separa
 
 ## Delivered
 
+- A source-bound [pilot arithmetic workflow](../docs/pilot_arithmetic_review.md)
+  combining event clocks, dated candidate identities, returns and control snapshots.
+  All 135 cases reconcile seven numeric measures to independent Decimal calculations
+  from the original CSV values. Maximum absolute difference: **1.43e-15**, against
+  a **1e-12** tolerance. Dated industry matches too. No reference-day label leakage,
+  benchmark filling, missing-return filling or automatic identity approval is used.
+- Twenty readable trace cases with 60 control sessions, 20 label sessions, exact
+  CSV record numbers, historical snapshot evidence and pending review templates.
+  Optional review ingestion rejects unknown, duplicate or stale evidence and
+  counts human and assistant declarations separately. The existing filing and
+  identity reviews remain distinct requirements.
 - A concrete [Cornell WRDS entitlement check](../docs/data_access_checklist.md):
   use the published student day-pass route and attempt a small daily-return export
   for AAPL in January 2021. Access to other required tables must be checked separately.
@@ -88,6 +103,16 @@ not change. Request generation does not certify the queue's provenance or record
 a human review.
 
 ## Verification
+
+The latest cloud `make reproduce` passes **190 tests**, Ruff, the frozen protocol
+and both synthetic demos. Eleven new cases cover independent source arithmetic,
+changed evidence, holdout refusal, ambiguous candidates, incorrect units, preserved
+outputs and review-declaration handling.
+
+The [aggregate arithmetic receipt](pilot_arithmetic_summary.json) records the actual
+135-case run, zero blocked calculations, fixed review selection and source/output
+hashes. Seven Exxon header-CIK differences and all 135 unresolved link end markers
+remain explicit. Detailed values, source rows, Parquet/DuckDB and HTML stay private.
 
 The WFM source script verifies all 11 observations, unchanged delivered returns,
 missing terminal capitalization and two independently compounded QA windows. The
@@ -130,9 +155,11 @@ continues to produce engineering labels, not a model-ready dataset.
    independent review remains pending.
 2. Review the implemented daily/Names normalization and historical snapshot
    availability; finish approved historical CIK/CCM links and explicit end-marker bounds.
-3. Import the pilot data, join audited identities, calculate labels and controls,
-   and complete independent human filing and 20-event arithmetic traces.
-4. Resolve exclusions and document their counts before the end-to-end pilot study.
+3. Complete independent human filing and 20-event arithmetic reviews. The source-bound
+   calculations and review-ingestion code now exist; no human verdict has been supplied.
+4. After identities/source assumptions are approved, promote the reviewed inputs
+   through the normalized importer. Finalize study exclusions and their reasons;
+   zero arithmetic failures does not imply zero final research exclusions.
 
 The 20-issuer sample remains a document-format pilot, not the historical investment
 universe. Final-period 2022-2025 filing events remain blocked from development.

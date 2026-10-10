@@ -77,5 +77,10 @@ remains pending for all 135 events. WRDS documentation supports an open-ended
 interpretation of `E`, but export-specific normalization bounds and all verdicts remain
 pending. No approved mapping, actual label or empirical result was produced.
 
+The later [arithmetic audit](pilot_arithmetic_review.md) calculates conditional
+labels and controls for the 135 candidates and verifies raw-source arithmetic.
+It retains all identity verdicts as pending, including seven header-CIK differences
+and 135 open-end markers. It creates no approved mapping or empirical forecast result.
+
 The public [aggregate receipt](../reports/identity_pilot_summary.json) contains
 counts and hashes only. Raw records and the detailed HTML stay outside public git.
