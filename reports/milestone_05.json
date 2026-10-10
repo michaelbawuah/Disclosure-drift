@@ -14,8 +14,13 @@
   "point_in_time_availability_verified": false,
   "terminal_case": "WFM automated source QA passed",
   "identifier_change_case": "GE automated source QA passed",
-  "test_count": 190,
-  "test_scope": "cloud make reproduce; synthetic tests and demos, plus separately run real-source candidate QA",
+  "test_count": 196,
+  "test_scope": "cloud Ruff and full pytest; separately run actual-source review follow-up; prior 190-test make reproduce included both synthetic demos",
+  "fixed_trace_source_checks_passed": 20,
+  "source_record_references_checked": 2040,
+  "supplemental_edge_cases": 4,
+  "filing_review_pairs_delivered": 30,
+  "distinct_filings_in_pair_packet": 58,
   "remaining": [
     "Historical CIK/security, share-class and open-end interval approvals",
     "Exact source release/query and availability review",
@@ -23,6 +28,7 @@
     "Promote approved inputs and finalize research exclusions"
   ],
   "evidence": [
+    "reports/review_followup_summary.json",
     "reports/pilot_arithmetic_summary.json",
     "reports/wfm_terminal_check.json",
     "reports/ge_identifier_check.json",

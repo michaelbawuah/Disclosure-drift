@@ -1,0 +1,69 @@
+{
+  "status": "review_followup_delivered_M5_still_pending",
+  "fixed_traces_unchanged": 20,
+  "fixed_permnos": 13,
+  "source_row_checks_passed": 20,
+  "source_record_references_checked": {
+    "control_rows": 1200,
+    "stock_label_rows": 400,
+    "benchmark_rows": 400,
+    "capitalization_rows": 20,
+    "names_rows": 20
+  },
+  "source_checks_reviewer_type": "assistant",
+  "submitted_recheck": {
+    "traces_passed": 20,
+    "observed_max_abs_error": 1.27675647831893e-15,
+    "results_sha256": "bab5f9d479bc1b3d5c19decd26dcab385b66bccbe86c53db60527c8b47afb50d",
+    "submitted_draft_sha256": "3fb53907fa6a6d872c92c591c6faaf53bf2859ecd70dee92f970cd113df42d46"
+  },
+  "filing_pairs": 30,
+  "distinct_pair_filings": 58,
+  "filing_pair_selection_sha256": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278",
+  "supplemental_cases": [
+    {
+      "case_id": "vendor-header-cik-difference",
+      "kind": "REAL_PROVISIONAL_FILING_EVENT",
+      "automated_check_passed": true
+    },
+    {
+      "case_id": "wfm-ordinary_plus_terminal",
+      "kind": "REAL_RETURNS_ARTIFICIAL_EVENT_CLOCK",
+      "automated_check_passed": true
+    },
+    {
+      "case_id": "wfm-terminal_only",
+      "kind": "REAL_RETURNS_ARTIFICIAL_EVENT_CLOCK",
+      "automated_check_passed": true
+    },
+    {
+      "case_id": "synthetic-59-control-sessions",
+      "kind": "SYNTHETIC_FAULT_INJECTION",
+      "automated_check_passed": true
+    }
+  ],
+  "existing_accession_prefix_cases": 4,
+  "actual_small_cap_coverage_added": false,
+  "draft_reviews_promoted": false,
+  "human_review_counts_changed": false,
+  "milestone_05_complete": false,
+  "model_ready": false,
+  "final_period_opened": false,
+  "original_arithmetic_receipt_sha256": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+  "original_trace_sha256": "5b86df3e330db60ce90230b67e3c4e942cd9ea3503d8283ad8eb72e9a2310db2",
+  "source_hashes": {
+    "raw_daily": "884faf245e5b03bffcd1217a3be802dff91433319de05494da9ce6beac67d0d6",
+    "raw_names": "6faf8d24087c2abb67d1b3c4895857188cddc4b23b272b4f067e9c85bc7c59a1",
+    "protocol": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "generator_sha256": "ae65dc8a19da220e8211fd2ce1bd39853a1f07a9fb8e7ede2a927647aa4d1f2a",
+  "files": {
+    "edge_cases.html": "f5c7b66f73920839b15ae8fd39f7322cab3264eae6216662d25639ad52f9f721",
+    "edge_reviews.template.jsonl": "aef5a6392dec71a88284384a26d32c1db8928190966ee825f7b929a0fb859569",
+    "edge_traces.jsonl": "f2347446f0db0892af5310221cee7bc4ae198b681ac69736307da8b3234995b6",
+    "filing_pairs_30.csv": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278",
+    "filing_pairs_30.html": "b9f4711e14046d20158e0253a2791c16bd983d85a33be1fd9fd587517d6d1600",
+    "filing_reviews.template.jsonl": "02337c2cb149fada6c925f9ca554a1ebfc40815b053971745a7de17b8d0f1ee1",
+    "source_row_checks.jsonl": "697b6700dc70d6db23d626a22fdd598d369a7032849abb681ea5a6766c9571a0"
+  }
+}

@@ -1,5 +1,10 @@
 # Filing audit workflow
 
+For the current resolved pilot, open [the expanded reading packet](../reports/expanded_audit.html)
+and [its fixed 30-pair list](../reports/expanded_review_pairs.csv). The
+[M5 follow-up](review_followup.md) provides a focused side-by-side packet for those
+same 30 pairs (58 distinct filings), without changing selection or evidence IDs.
+
 The audit command produces offline source evidence, a stable pair-review sample,
 and an HTML reading packet. It does not turn automated checks into human approval.
 No return observations are loaded, and filings after 2021 are rejected.

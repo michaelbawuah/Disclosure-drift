@@ -1,5 +1,9 @@
 # Pilot arithmetic review
 
+The [review follow-up](review_followup.md) answers the verdict/open-end questions,
+records the submitted independent check and raw-row reconciliation, and adds a
+separate edge-case packet plus a focused view of the existing 30 filing pairs.
+
 `audit-pilot-market` joins the source-bound development event queue to its source-bound
 **candidate evidence**, then calculates labels and controls for arithmetic QA. It
 checks all numeric results independently using literal CSV Decimal values. This

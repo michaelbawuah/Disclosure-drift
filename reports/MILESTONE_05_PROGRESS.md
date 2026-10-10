@@ -71,6 +71,12 @@ split-return arithmetic, historical-link approval and human review remain separa
 
 ## Delivered
 
+- The [review follow-up](../docs/review_followup.md) reproduces the submitted
+  20/20 arithmetic passes and compares all 2,040 cited record references to the raw
+  CSVs. A focused 30-pair/58-filing packet and four separate directed edge cases
+  are now available. The original fixed sample and all pending verdicts are unchanged.
+  These checks are automated assistance, not completed human sign-off.
+
 - A source-bound [pilot arithmetic workflow](../docs/pilot_arithmetic_review.md)
   combining event clocks, dated candidate identities, returns and control snapshots.
   All 135 cases reconcile seven numeric measures to independent Decimal calculations
@@ -103,6 +109,10 @@ not change. Request generation does not certify the queue's provenance or record
 a human review.
 
 ## Verification
+
+The review follow-up passes Ruff and the full **196-test** suite. Six additional
+checks catch mutated source values and wrong record references, preserve the
+frozen filing sample, and verify that a synthetic short history is rejected.
 
 The latest cloud `make reproduce` passes **190 tests**, Ruff, the frozen protocol
 and both synthetic demos. Eleven new cases cover independent source arithmetic,
