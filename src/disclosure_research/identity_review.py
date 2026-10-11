@@ -16,6 +16,7 @@ from .crsp_staging import _csv, _ids
 from .labels import load_development_events
 from .market_data import fingerprint, iso_dates, sha256
 from .protocol import canonical_hash
+from .sec_identity_evidence import header_identity
 
 CCM_FIELDS = """gvkey conm tic cusip cik LINKPRIM LIID LINKTYPE
 LPERMNO LPERMCO LINKDT LINKENDDT""".split()
@@ -76,24 +77,20 @@ def _header(filing, cache):
     item = {"accession": filing["accessionNumber"], "filing_cik": filing["cik"],
             "source_url": filing["source_url"], "header_url": filing["header_url"],
             "header_sha256": filing["header_sha256"], "header_cik": "",
-            "header_name": "", "header_identity_ok": False, "issue": ""}
+            "header_name": "", "header_identity_ok": False, "issue": "",
+            "header_filer_count": 0, "matching_filer_count": 0, "header_filers_json": "[]"}
     try:
-        text = cached_body(Path(cache), filing["header_url"], filing["header_sha256"]).decode("utf-8")
-
-        def one(pattern, source):
-            values = re.findall(pattern, source, flags=re.I | re.S)
-            if len(values) != 1:
-                raise ValueError("Header needs one unambiguous filer and company identity")
-            return values[0].strip()
-
-        filer = one(r"<FILER>(.*?)</FILER>", text)
-        company = one(r"<COMPANY-DATA>(.*?)</COMPANY-DATA>", filer)
-        item["header_cik"] = one(r"<CIK>([^<\r\n]+)", company)
-        item["header_name"] = one(r"<CONFORMED-NAME>([^<\r\n]+)", company)
-        accession = one(r"<ACCESSION-NUMBER>([^<\r\n]+)", text)
-        form = one(r"<TYPE>([^<\r\n]+)", text)
-        if item["header_cik"] != filing["cik"] or accession != filing["accessionNumber"] or form != "10-K":
-            raise ValueError("Header CIK, accession or form differs from the original 10-K record")
+        raw = cached_body(Path(cache), filing["header_url"], filing["header_sha256"])
+        parsed = header_identity(raw, expected_cik=filing["cik"], expected_accession=filing["accessionNumber"])
+        item.update(header_filer_count=parsed["filer_count"], matching_filer_count=parsed["matching_filer_count"],
+                    header_filers_json=json.dumps(parsed["filers"], sort_keys=True))
+        if not parsed["header_identity_consistent"]:
+            raise ValueError("Header needs exactly one matching original filer and consistent accession/form")
+        # Co-filers remain source context; only the unique manifest-CIK match
+        # supplies the existing display fields. Review/approval gates are unchanged.
+        matched = next(row for row in parsed["filers"] if row["matches_manifest_cik"])
+        item["header_cik"] = matched["cik_raw_values"][0].strip()
+        item["header_name"] = matched["conformed_name_raw_values"][0].strip()
         item["header_identity_ok"] = True
     except (ValueError, OSError, KeyError, UnicodeError) as exc:
         item["issue"] = str(exc)

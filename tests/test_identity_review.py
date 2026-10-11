@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from disclosure_research.identity_review import build_identity_review
+from disclosure_research.identity_review import _header, build_identity_review
 from disclosure_research.cli import main
 from disclosure_research.market_data import sha256
 from disclosure_research.protocol import load_protocol
@@ -266,3 +266,29 @@ def test_cli_reproduces_the_same_packet_without_network_or_returns(inputs, capsy
     assert main(argv) == 0
     second = json.loads(capsys.readouterr().out)
     assert first == second
+
+
+def test_header_retains_distinct_cofiler_and_keeps_only_unique_original_match(inputs):
+    filing = pd.read_parquet(inputs["filings_path"]).iloc[0].to_dict()
+    key = sha256(filing["header_url"].encode())
+    path = inputs["cache"] / f"{key}.bin"
+    raw = path.read_bytes() + (b"<FILER><COMPANY-DATA><CIK>0000000002\n"
+                               b"<CONFORMED-NAME>Other Co-Filer\n</COMPANY-DATA></FILER>")
+    path.write_bytes(raw)
+    filing["header_sha256"] = sha256(raw)
+    (inputs["cache"] / f"{key}.json").write_text(json.dumps({"url": filing["header_url"], "sha256": sha256(raw)}))
+    result = _header(filing, inputs["cache"])
+    assert result["header_identity_ok"] is True
+    assert result["header_cik"] == "0000000001" and result["header_name"] == "Invented & Company"
+    assert result["header_filer_count"] == 2 and result["matching_filer_count"] == 1
+    context = json.loads(result["header_filers_json"])
+    assert [row["matches_manifest_cik"] for row in context] == [True, False]
+    # A second occurrence of the original filer remains ambiguous, even when
+    # every source byte/hash is valid; the existing review gate stays closed.
+    raw += b"<FILER><COMPANY-DATA><CIK>0000000001\n<CONFORMED-NAME>Repeated Original\n</COMPANY-DATA></FILER>"
+    path.write_bytes(raw)
+    filing["header_sha256"] = sha256(raw)
+    (inputs["cache"] / f"{key}.json").write_text(json.dumps({"url": filing["header_url"], "sha256": sha256(raw)}))
+    repeated = _header(filing, inputs["cache"])
+    assert repeated["header_identity_ok"] is False and repeated["matching_filer_count"] == 2
+    assert len(json.loads(repeated["header_filers_json"])) == 3
