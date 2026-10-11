@@ -1,0 +1,573 @@
+{
+  "final_period_sources_requested": false,
+  "historical_availability_inferred": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "known_at_inferred": false,
+  "market_outcomes_read": false,
+  "model_ready": false,
+  "recorded_at_utc": "2026-10-11T16:34:13.775155+00:00",
+  "request_policy": {
+    "automatic_retries": 0,
+    "minimum_delay_after_each_source_seconds": 0.6,
+    "stop_after_403": true,
+    "user_agent": "Michael Baffour Awuah Disclosure-drift research https://github.com/michaelbawuah/Disclosure-drift",
+    "workers": 1
+  },
+  "schema_version": 1,
+  "scope": "Eight pre-2020 original SEC HTML filings/exhibits, source byte preservation, reported corporate identities/events and listed symbol/class context. These are separate from ownership metadata validation.",
+  "script": {
+    "bytes": 7649,
+    "path": "scripts/ownership_multi_cik_context.py",
+    "sha256": "bde68a5bedab21d79af15563df3b218876e53dbb46d1aa34c32dcf129c649288"
+  },
+  "source_approvals_created": 0,
+  "sources": [
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-01",
+      "completed_at_utc": "2026-10-11T16:33:47.539049+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "completion at 12:01 a.m.",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2176
+          ]
+        },
+        {
+          "literal": "Predecessor US Ecology",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2645,
+            2922,
+            2973,
+            3550,
+            3648,
+            4015,
+            4186,
+            4620,
+            5103,
+            6287,
+            6316,
+            6506,
+            6746,
+            6772,
+            7070,
+            7123,
+            7185,
+            7253,
+            7490,
+            8565,
+            10803,
+            11652,
+            12141,
+            12463,
+            12715,
+            12943,
+            13073,
+            14924,
+            17796,
+            17982,
+            18466,
+            19482,
+            19561,
+            20481,
+            21746
+          ]
+        },
+        {
+          "literal": "wholly-owned subsidiary",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            3041,
+            3262,
+            3621
+          ]
+        },
+        {
+          "literal": "November 1, 2019",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            244,
+            2224,
+            3997,
+            5282,
+            11981,
+            14513,
+            17273,
+            22185,
+            23976,
+            24181,
+            24455,
+            24566,
+            24687,
+            24730,
+            25224
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1783400/000110465919058632/a19-21013_128k.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 25543,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/ecol_merger.normalized.txt",
+        "sha256": "1089a4d922eccc6e819b224c9408e7871b67e111f839c4fe3ff69face6ab7e6d"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:33:47 GMT",
+        "ETag": null,
+        "Last-Modified": "Fri, 01 Nov 2019 10:31:42 GMT"
+      },
+      "shortest_matching_cover_rows": [],
+      "source": {
+        "bytes": 82590,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/ecol_merger.html",
+        "sha256": "4973969f1e0b5c3bda0d3a3b9d29147df2183535c08e185dc9c9c354693d2240"
+      },
+      "source_id": "ecol_merger",
+      "started_at_utc": "2026-10-11T16:33:44.055329+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783400/000110465919058632/a19-21013_128k.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-02",
+      "completed_at_utc": "2026-10-11T16:33:50.952869+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "1895 Bancorp of Wisconsin, Inc.",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            320,
+            2165,
+            2867
+          ]
+        },
+        {
+          "literal": "BCOW",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            969
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1751692/000094337419000425/form8k_092419.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 3279,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/bcow_cover.normalized.txt",
+        "sha256": "8eb466e71b54f1fa5e391c45ac9810c865d6aa8af108b407520682b1fdd3536c"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:33:50 GMT",
+        "ETag": null,
+        "Last-Modified": "Tue, 24 Sep 2019 13:31:08 GMT"
+      },
+      "shortest_matching_cover_rows": [
+        "Common Stock, par value $0.01 per share BCOW The NASDAQ Stock Market, LLC"
+      ],
+      "source": {
+        "bytes": 26358,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/bcow_cover.html",
+        "sha256": "a4591351e0832687f1ece32da30e00f6f5e4c1a943986ce43c860f691dc76e3a"
+      },
+      "source_id": "bcow_cover",
+      "started_at_utc": "2026-10-11T16:33:48.139297+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1751692/000094337419000425/form8k_092419.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-03",
+      "completed_at_utc": "2026-10-11T16:33:54.343772+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "The Goldman Sachs Group, Inc.",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            1451,
+            4649
+          ]
+        },
+        {
+          "literal": "Common stock, par value $.01 per share",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2591
+          ]
+        },
+        {
+          "literal": "GS",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2630,
+            2763,
+            2900,
+            3037,
+            3189,
+            3342,
+            3471,
+            3596,
+            3707,
+            3780,
+            3868,
+            3942
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519293432/d831594d8k.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 7115,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/goldman_cover.normalized.txt",
+        "sha256": "199122a6c8f833a109a516f83e88c8456b10c543e774dd7da13925229486faf6"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:33:54 GMT",
+        "ETag": null,
+        "Last-Modified": "Fri, 15 Nov 2019 21:18:20 GMT"
+      },
+      "shortest_matching_cover_rows": [
+        "Common stock, par value $.01 per share GS NYSE"
+      ],
+      "source": {
+        "bytes": 58192,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/goldman_cover.html",
+        "sha256": "af931f0a693050095c11298fd2b1b1d683c0201a0eba066c6b8a012c0eda250e"
+      },
+      "source_id": "goldman_cover",
+      "started_at_utc": "2026-10-11T16:33:51.553087+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312519293432/d831594d8k.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-04",
+      "completed_at_utc": "2026-10-11T16:33:57.765291+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "Old Provident",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2199,
+            2445
+          ]
+        },
+        {
+          "literal": "New Provident",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2313,
+            2513
+          ]
+        },
+        {
+          "literal": "close of business on October 16, 2019",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            2637
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1778784/000094337419000460/form8k_101119.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 3182,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_conversion.normalized.txt",
+        "sha256": "ae28f8dc0b0670c35dffefc98ba95142d8b0e6b5be44621701896091e385bf6a"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:33:57 GMT",
+        "ETag": null,
+        "Last-Modified": "Fri, 18 Oct 2019 10:00:57 GMT"
+      },
+      "shortest_matching_cover_rows": [],
+      "source": {
+        "bytes": 14409,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_conversion.html",
+        "sha256": "fb769e2e62f295c542f02edc3681dbe6ef4c7fe44859a445ba40a63a653367a5"
+      },
+      "source_id": "provident_conversion",
+      "started_at_utc": "2026-10-11T16:33:54.943995+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1778784/000094337419000460/form8k_101119.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-04",
+      "completed_at_utc": "2026-10-11T16:34:01.192353+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "ceased to exist",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            835
+          ]
+        },
+        {
+          "literal": "October 17, 2019",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            1135
+          ]
+        },
+        {
+          "literal": "PVBC",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            1116
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1778784/000094337419000460/ex99-2_8k101119.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 4103,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_closing_release.normalized.txt",
+        "sha256": "ca05367206ff00ad06215eeec015565a3d0d73aa311538e678ec674227f7a441"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:34:01 GMT",
+        "ETag": null,
+        "Last-Modified": "Fri, 18 Oct 2019 10:00:57 GMT"
+      },
+      "shortest_matching_cover_rows": [],
+      "source": {
+        "bytes": 7459,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_closing_release.html",
+        "sha256": "ec5caa86cbc0727c8ed0962c4b3f3d192752e361ee7149ef45636c5df01c2ffe"
+      },
+      "source_id": "provident_closing_release",
+      "started_at_utc": "2026-10-11T16:33:58.365502+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1778784/000094337419000460/ex99-2_8k101119.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-05",
+      "completed_at_utc": "2026-10-11T16:34:04.516764+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "TIDEWATER INC.",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            620,
+            4414
+          ]
+        },
+        {
+          "literal": "Common stock, $0.001 par value per share",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            1778
+          ]
+        },
+        {
+          "literal": "TDW",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            1819,
+            1900,
+            1986,
+            2063
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/98222/000119312519279310/d827369d8k.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 4543,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/tidewater_cover.normalized.txt",
+        "sha256": "261da263ffdb3f55bef5ab2af7ba0c9a9d7dd2301781b416281937c49be286d1"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:34:04 GMT",
+        "ETag": null,
+        "Last-Modified": "Thu, 31 Oct 2019 10:02:29 GMT"
+      },
+      "shortest_matching_cover_rows": [
+        "Common stock, $0.001 par value per share TDW New York Stock Exchange"
+      ],
+      "source": {
+        "bytes": 37167,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/tidewater_cover.html",
+        "sha256": "a9122c060677f9b913be2d6f20016dc6e5562039a2ddecb53ce13296548dff74"
+      },
+      "source_id": "tidewater_cover",
+      "started_at_utc": "2026-10-11T16:34:01.792555+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/98222/000119312519279310/d827369d8k.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-06",
+      "completed_at_utc": "2026-10-11T16:34:08.542933+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "May 3, 2016",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            274,
+            9133,
+            9536,
+            10688,
+            13101,
+            191349,
+            286263,
+            301722,
+            313103,
+            357035,
+            386765,
+            386887,
+            388473,
+            462702,
+            463220,
+            468724,
+            471882,
+            472212,
+            472391,
+            481961,
+            485557,
+            488141,
+            488366,
+            488532,
+            488634,
+            488760,
+            489982,
+            490459,
+            493536,
+            593065,
+            593492,
+            593575,
+            598306,
+            600367,
+            601503,
+            615560,
+            617980,
+            621367,
+            621697
+          ]
+        },
+        {
+          "literal": "Valeritas Holdings, Inc.",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            7750,
+            8137,
+            10655,
+            11567,
+            28407,
+            287230,
+            358164,
+            395492,
+            490039,
+            593626,
+            601619,
+            602581
+          ]
+        },
+        {
+          "literal": "surviving entity and as a wholly owned subsidiary",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            594011,
+            602004
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1619250/000119312516583971/d180550d8k.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 628903,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/valeritas_merger.normalized.txt",
+        "sha256": "078a99a94cb86466c16acd28217f9dcd45087ea3428ff8c8655c9348f9973039"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:34:08 GMT",
+        "ETag": null,
+        "Last-Modified": "Tue, 03 Oct 2017 14:28:28 GMT"
+      },
+      "shortest_matching_cover_rows": [],
+      "source": {
+        "bytes": 1453842,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/valeritas_merger.html",
+        "sha256": "c7fcee5e574494992998001428e3a6dba6c41c5c6331c9454f573684bd6004bc"
+      },
+      "source_id": "valeritas_merger",
+      "started_at_utc": "2026-10-11T16:34:05.116956+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619250/000119312516583971/d180550d8k.htm"
+    },
+    {
+      "all_anchors_present": true,
+      "case_id": "multi-cik-07",
+      "completed_at_utc": "2026-10-11T16:34:13.174963+00:00",
+      "evidence_anchors": [
+        {
+          "literal": "Westlake Chemical Partners LP",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            19430,
+            23573,
+            24933,
+            25051,
+            30876,
+            63063,
+            63331,
+            74753,
+            78501,
+            80011
+          ]
+        },
+        {
+          "literal": "Common units representing limited partnership interests",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            19967
+          ]
+        },
+        {
+          "literal": "WLKP",
+          "normalization": "lxml itertext joined with spaces; Unicode whitespace collapsed",
+          "normalized_character_starts": [
+            20023
+          ]
+        }
+      ],
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1604665/000160466519000033/a2019093010qwlkp.htm",
+      "http_status": 200,
+      "normalized_text": {
+        "bytes": 111673,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/westlake_partners_cover.normalized.txt",
+        "sha256": "e09857f7f82d7c8d0191526222d54bb39a5400fbd5994c1022333397ddd84c2e"
+      },
+      "response_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 11 Oct 2026 16:34:12 GMT",
+        "ETag": null,
+        "Last-Modified": "Wed, 06 Nov 2019 17:38:50 GMT"
+      },
+      "shortest_matching_cover_rows": [
+        "Common units representing limited partnership interests WLKP The New York Stock Exchange"
+      ],
+      "source": {
+        "bytes": 1386337,
+        "path": "outputs/multi-cik-followup-20261011/corporate-context/westlake_partners_cover.html",
+        "sha256": "a18c9cab4950d13a85b7082521e7312829f49dcd0a5b367a7550c1c309fd1ff9"
+      },
+      "source_id": "westlake_partners_cover",
+      "started_at_utc": "2026-10-11T16:34:09.143128+00:00",
+      "status": "ORIGINAL_CONTEXT_SOURCE_PRESERVED",
+      "url": "https://www.sec.gov/Archives/edgar/data/1604665/000160466519000033/a2019093010qwlkp.htm"
+    }
+  ],
+  "status": "SEPARATE_CORPORATE_CONTEXT_SOURCE_EVIDENCE"
+}

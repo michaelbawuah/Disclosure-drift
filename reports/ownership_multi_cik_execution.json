@@ -1,0 +1,347 @@
+{
+  "artifacts": [
+    {
+      "bytes": 10826,
+      "path": "docs/ownership_multi_cik_findings.md",
+      "sha256": "e5ab4ff0208464510512e52c4b5e1a318f51c4ab553b6ab33b8e34b324dcdfc8"
+    },
+    {
+      "bytes": 70637,
+      "path": "reports/ownership_multi_cik_originals.json",
+      "sha256": "b518a1bd5135f611d308a85c3deaac0707be60bfd00577781c9a060260c7c74a"
+    },
+    {
+      "bytes": 159481,
+      "path": "reports/ownership_multi_cik_source_validation.json",
+      "sha256": "3e7cc9829d2dc7406f29a2abbb0f006fc517f49d3144151d1e624fbead44f35b"
+    },
+    {
+      "bytes": 19795,
+      "path": "reports/ownership_multi_cik_context.json",
+      "sha256": "41c07d311ab9cdc460b0b5e1f6fe2b51f830d116dba84b52510b67474477b6ef"
+    },
+    {
+      "bytes": 34568,
+      "path": "reports/ownership_followup_verification.json",
+      "sha256": "a9f44b970768f2091ea7a3129920fb16fa57b22602ad1b47ba120dc8acd1107b"
+    },
+    {
+      "bytes": 52459,
+      "path": "outputs/multi-cik-followup-20261011/queue.json",
+      "sha256": "4c681c125f3e5e1b555675cb281b1df7aea23b494ea50d47858c065da176b6f5"
+    },
+    {
+      "bytes": 8347,
+      "path": "outputs/multi-cik-followup-20261011/selection_receipt.json",
+      "sha256": "1ad96bd8648a2b7e9c019d6774bf2cd46bbad4bc9c25216e93f9d7c6139e3557"
+    },
+    {
+      "bytes": 783,
+      "path": "outputs/multi-cik-followup-20261011/protected_before.json",
+      "sha256": "fb6adaa1f60548502086d8344f602a8d34c3e6a60617383d2306a8d83ed5cb84"
+    },
+    {
+      "bytes": 2087,
+      "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_protected_after.json",
+      "sha256": "e57800353e660ab7b48f826a1bdec162f2909f90036a3852b5b644883a9e0b99"
+    },
+    {
+      "bytes": 15734,
+      "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_transfer_manifest.json",
+      "sha256": "9c207be7e0339b86e9131515a12f60d9c7d50f79587291fdabcb4a84881a1953"
+    },
+    {
+      "bytes": 16633,
+      "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_mac_transfer_receipt.json",
+      "sha256": "00991383fc25913bafafee76ee3c3534f12bd5ae6587c2d585b3c03b91aee63d"
+    },
+    {
+      "bytes": 10800,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/collection_receipt.json",
+      "sha256": "8ab25c6b26fdcf749d4030abe79eb061b10ac04bf6e9e4dbcc94a5a2419a60ca"
+    },
+    {
+      "bytes": 977,
+      "path": "outputs/multi-cik-followup-20261011/container-probe-attempt.json",
+      "sha256": "4b3099271a3cacf9320f61a864518609d81ae394338269fcd7cedad02162b3c3"
+    }
+  ],
+  "code": {
+    "canonical_difference_from_mac_executed_bytes": "Exactly one appended final newline; both original byte sequences retained. The earlier failure report is unchanged.",
+    "canonical_scripts": [
+      {
+        "bytes": 34582,
+        "path": "scripts/ownership_multi_cik.py",
+        "sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c"
+      },
+      {
+        "bytes": 10642,
+        "path": "scripts/ownership_multi_cik_sources.py",
+        "sha256": "ed8c258e380c91378c1c3c9a582ac5febe447c595003e8e633501aa238a3a3a4"
+      },
+      {
+        "bytes": 7649,
+        "path": "scripts/ownership_multi_cik_context.py",
+        "sha256": "bde68a5bedab21d79af15563df3b218876e53dbb46d1aa34c32dcf129c649288"
+      }
+    ],
+    "executed_snapshots": [
+      {
+        "bytes": 7649,
+        "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_context_executed_container.py",
+        "sha256": "bde68a5bedab21d79af15563df3b218876e53dbb46d1aa34c32dcf129c649288"
+      },
+      {
+        "bytes": 34582,
+        "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_parser_executed_container.py",
+        "sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c"
+      },
+      {
+        "bytes": 34581,
+        "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_selector_executed_mac.py",
+        "sha256": "35eac10f578b226bd286148765e5f169e3e59b44bdf05cc1b295e06ddb9e36a2"
+      },
+      {
+        "bytes": 10642,
+        "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_sources_executed_container.py",
+        "sha256": "ed8c258e380c91378c1c3c9a582ac5febe447c595003e8e633501aa238a3a3a4"
+      }
+    ],
+    "freeze": "All three canonical script bytes frozen after Ruff pass and before final execution binding.",
+    "mac_selector_and_failure_script": {
+      "bytes": 34581,
+      "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_selector_executed_mac.py",
+      "sha256": "35eac10f578b226bd286148765e5f169e3e59b44bdf05cc1b295e06ddb9e36a2"
+    }
+  },
+  "corporate_context": {
+    "all_prescribed_evidence_anchors_present": true,
+    "classification_scope": "Source diagnostics, not resolved historical security links. PVBC old-CIK source postdates conversion; VLRX relationship dates to 2016.",
+    "corporate_transition_or_parent_subsidiary_context_cases": [
+      "multi-cik-01",
+      "multi-cik-04",
+      "multi-cik-06"
+    ],
+    "original_bytes": 3066354,
+    "original_symbol_inconsistency_cases": [
+      "multi-cik-02",
+      "multi-cik-03",
+      "multi-cik-05",
+      "multi-cik-07"
+    ],
+    "preserved_sources": 8
+  },
+  "corporate_context_sources": [
+    {
+      "bytes": 82590,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/ecol_merger.html",
+      "sha256": "4973969f1e0b5c3bda0d3a3b9d29147df2183535c08e185dc9c9c354693d2240"
+    },
+    {
+      "bytes": 26358,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/bcow_cover.html",
+      "sha256": "a4591351e0832687f1ece32da30e00f6f5e4c1a943986ce43c860f691dc76e3a"
+    },
+    {
+      "bytes": 58192,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/goldman_cover.html",
+      "sha256": "af931f0a693050095c11298fd2b1b1d683c0201a0eba066c6b8a012c0eda250e"
+    },
+    {
+      "bytes": 14409,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_conversion.html",
+      "sha256": "fb769e2e62f295c542f02edc3681dbe6ef4c7fe44859a445ba40a63a653367a5"
+    },
+    {
+      "bytes": 7459,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/provident_closing_release.html",
+      "sha256": "ec5caa86cbc0727c8ed0962c4b3f3d192752e361ee7149ef45636c5df01c2ffe"
+    },
+    {
+      "bytes": 37167,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/tidewater_cover.html",
+      "sha256": "a9122c060677f9b913be2d6f20016dc6e5562039a2ddecb53ce13296548dff74"
+    },
+    {
+      "bytes": 1453842,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/valeritas_merger.html",
+      "sha256": "c7fcee5e574494992998001428e3a6dba6c41c5c6331c9454f573684bd6004bc"
+    },
+    {
+      "bytes": 1386337,
+      "path": "outputs/multi-cik-followup-20261011/corporate-context/westlake_partners_cover.html",
+      "sha256": "a18c9cab4950d13a85b7082521e7312829f49dcd0a5b367a7550c1c309fd1ff9"
+    }
+  ],
+  "guardrails": {
+    "acceptance_clock_used_to_reselect_sources": false,
+    "completed_47_case_originals_refetched": false,
+    "completed_arithmetic_review_repeated": false,
+    "continuous_intervals_inferred": false,
+    "final_period_2022_2025_opened": false,
+    "historical_availability_inferred": false,
+    "historical_security_links_created": 0,
+    "human_reviews_created": 0,
+    "known_at_inferred": false,
+    "licensed_rows_exported": false,
+    "market_outcomes_opened": false,
+    "model_ready": false,
+    "original_ambiguity_accounting_preserved": true,
+    "original_source_occurrence_accounting_preserved": true,
+    "protocol_or_model_gates_modified": false,
+    "source_approvals_created": 0
+  },
+  "mac_transfer": {
+    "doc_and_this_binding_receipt_delivered_separately": true,
+    "existing_identical_files_left_unchanged": 4,
+    "files_verified": 74,
+    "new_files_written": 69,
+    "owned_canonical_script_updated": 1,
+    "prior_mac_script_snapshot_retained": true,
+    "private_associations_stay_on_mac": true,
+    "receipt": {
+      "bytes": 16633,
+      "path": "outputs/multi-cik-followup-20261011/ownership_multi_cik_mac_transfer_receipt.json",
+      "sha256": "00991383fc25913bafafee76ee3c3534f12bd5ae6587c2d585b3c03b91aee63d"
+    }
+  },
+  "original_source_summary": {
+    "acceptance_precedes_information_cutoff_count": 14,
+    "cases": 7,
+    "comparison_true_counts": {
+      "header_accession_matches_queue": 14,
+      "header_and_xml_issuer_cik_agree": 14,
+      "header_filing_date_matches_queue": 14,
+      "header_form_xml_form_and_queue_agree": 14,
+      "header_issuer_cik_matches_queue": 14,
+      "header_issuer_name_exactly_matches_queue": 14,
+      "xml_cik_literal_has_same_zero_padding_as_queue": 14,
+      "xml_issuer_cik_matches_queue": 14,
+      "xml_issuer_name_exactly_matches_queue": 14,
+      "xml_symbol_exactly_matches_queue": 14
+    },
+    "completed_47_case_overlap": 0,
+    "contributing_observation_rows": 129,
+    "contributing_unique_sec_occurrences": 129,
+    "header_reporting_owner_role_occurrences": 25,
+    "mac_http_403_attempts_preserved": 14,
+    "original_source_bytes": 154250,
+    "preserved_original_sources": 14,
+    "selected_original_sources": 14,
+    "status_counts": {
+      "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED": 14
+    },
+    "structured_issuer_inspections": 14
+  },
+  "original_sources": [
+    {
+      "bytes": 9215,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0000769993-19-000566.txt",
+      "sha256": "162be38f6db6fa4664bf8d786f748c7a64aaa9fdac850c52495aa20397b29cc3"
+    },
+    {
+      "bytes": 9407,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001104659-19-065541.txt",
+      "sha256": "0be7a847b0da1da79e7c5beaea86da1c2b184e251e8aa198793da5a60a296134"
+    },
+    {
+      "bytes": 23151,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051965.txt",
+      "sha256": "9412ae3770dc05611ec623fcc9266168c4c430625776ca575c156e70a58f21c7"
+    },
+    {
+      "bytes": 23296,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051972.txt",
+      "sha256": "225a0b40030f4bf40047a45c8b0b0c6b161dfb26c6e61e6f8634584851d88fc9"
+    },
+    {
+      "bytes": 6456,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021150.txt",
+      "sha256": "c21a3b4b767eced4ac83966cf56674ad7bab5a19965a111200d2935e39e356ca"
+    },
+    {
+      "bytes": 10768,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021175.txt",
+      "sha256": "8a710d7821fb51706f7e116ef0508e250075fec9d9ce03d4b476098b6eb5effc"
+    },
+    {
+      "bytes": 5541,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019638.txt",
+      "sha256": "2f0c3301ef9cc4107985a6ab18e8f9615967442570734df402fb8174a0e8e39b"
+    },
+    {
+      "bytes": 9073,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019734.txt",
+      "sha256": "43204fde8861b605b7371748f2db2150678ad1a3f0a061e1ec524eec45f5f9dd"
+    },
+    {
+      "bytes": 4438,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-020895.txt",
+      "sha256": "d5ef4cd71e66f566fe30a2b90d5f7770cc67603e6c45b92f015bf87b5960af4b"
+    },
+    {
+      "bytes": 16598,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021001.txt",
+      "sha256": "8cbe8fec9a0d7befbc8877bcfa772b2f16e29ade227b3a106ae9780dd91d45a3"
+    },
+    {
+      "bytes": 10313,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021775.txt",
+      "sha256": "ba16ca0944b3532321005da20bf025564791245d4f79107d836c5f3614e24fdd"
+    },
+    {
+      "bytes": 7453,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021835.txt",
+      "sha256": "e24d29a5599ba5f1150a931c1c0dcd81b0917edc030b5313764ff654a6892a26"
+    },
+    {
+      "bytes": 11133,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022199.txt",
+      "sha256": "e1fd9f09fde80fb86e3b094a11afc94d1d4f2220e1e64f991302527df5279d09"
+    },
+    {
+      "bytes": 7408,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022217.txt",
+      "sha256": "993bd4b993b19472457b853600a8c9db1aba0f9fc107e872f867e1465210ef72"
+    }
+  ],
+  "recorded_at_utc": "2026-10-11T16:40:51.460331+00:00",
+  "schema_version": 1,
+  "scope": "Fixed seven multiple-earlier-CIK cases; earliest original filing per case/CIK plus eight bounded pre-2020 primary corporate-context sources.",
+  "selection": {
+    "all_observation_rows": 31466,
+    "all_original_sec_tsv_occurrences": 38145,
+    "all_summary_rows": 4122,
+    "completed_47_case_overlap": 0,
+    "contributing_observation_rows": 129,
+    "contributing_unique_sec_occurrences": 129,
+    "distinct_ciks_per_case": 2,
+    "multiple_cik_cases": 7,
+    "ownership_bundle_receipt_sha256": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+    "selected_original_filings": 14,
+    "upstream_names_ccm_population_or_match_rerun": false
+  },
+  "starting_git_head": "217f11674dc0bdf2375a089e030ad9e8f11886fa",
+  "status": "SEVEN_CASE_ORIGINAL_SOURCE_AUDIT_COMPLETE_NO_LINK_APPROVAL",
+  "verification": {
+    "independent_report": {
+      "bytes": 34568,
+      "path": "reports/ownership_followup_verification.json",
+      "sha256": "a9f44b970768f2091ea7a3129920fb16fa57b22602ad1b47ba120dc8acd1107b"
+    },
+    "independent_scope": "Full stored cohort regrouping and 14 original ownership submissions; eight corporate-context pages are separately source-preserved and anchor-checked by this audit.",
+    "new_tests_added": 0,
+    "protected_files_unchanged": {
+      "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+      "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+      "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+      "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+      "reports/sec_ownership_execution.json": "6cdf513b98f60ede325c532590c6bb9f6fb50c9b6a60f4e29d2e12861e9d53f5",
+      "reports/sec_ownership_original_followup.json": "44eea2e8870bf7aa230562634520c683b7010c441c915fde69d5b674650e9844",
+      "reports/sec_ownership_verification.json": "508b60b7e31c3f05104fe82ba9caaee2b3dd6d3dfbfe69e90c4af8b368e391bf"
+    },
+    "ruff_command": "uv run --locked --python 3.12 ruff check scripts/ownership_multi_cik.py scripts/ownership_multi_cik_sources.py scripts/ownership_multi_cik_context.py",
+    "ruff_exit_code": 0,
+    "ruff_stdout": "All checks passed!"
+  }
+}

@@ -1,0 +1,1954 @@
+{
+  "continuous_intervals_inferred": false,
+  "final_period_outcomes_opened": false,
+  "final_period_sources_requested": false,
+  "groups": [
+    {
+      "case_id": "multi-cik-01",
+      "distinct_earlier_ciks": [
+        "0000742126",
+        "0001783400"
+      ],
+      "earlier_observation_rows": 42,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 42,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022949",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 20608
+        },
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022952",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 21143
+        },
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022951",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 21306
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021183",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37642
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021175",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37652
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021252",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37694
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021177",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37695
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021216",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37706
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021251",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37710
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021205",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37711
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021214",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37752
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021238",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37754
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021208",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37756
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021210",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37757
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021155",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37791
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021176",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37807
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021150",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37828
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021248",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37837
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021152",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37856
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021178",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37859
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021233",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37893
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021232",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37907
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021156",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37964
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021203",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37967
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021157",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37973
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021206",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37985
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021207",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37988
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021250",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37990
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021229",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38007
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021236",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38029
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021231",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38032
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021213",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38041
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021185",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38062
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021212",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38073
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021237",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38086
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021179",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38093
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021235",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38106
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021153",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38107
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021184",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38135
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021154",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38137
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021151",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38142
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021249",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38143
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "ECOL"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021150",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37828
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021175",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37652
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 42
+    },
+    {
+      "case_id": "multi-cik-02",
+      "distinct_earlier_ciks": [
+        "0001435508",
+        "0001751692"
+      ],
+      "earlier_observation_rows": 24,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 24,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022206",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5254
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022203",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5278
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022212",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5416
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022202",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5465
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022216",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5495
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022213",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5527
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022210",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5567
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022199",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5590
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022218",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5608
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022211",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5667
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022217",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001751692",
+          "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5685
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022207",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5732
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022204",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5734
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022205",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5745
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022201",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5765
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022200",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5800
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022215",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5838
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023187",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "17-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 15872
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023054",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "13-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 19898
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023053",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "13-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 20169
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022977",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 21569
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022729",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "06-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 28113
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022628",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "04-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 31234
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022414",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 36191
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "FSFG"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022199",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5590
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022217",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001751692",
+          "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5685
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 24
+    },
+    {
+      "case_id": "multi-cik-03",
+      "distinct_earlier_ciks": [
+        "0000886982",
+        "0001634038"
+      ],
+      "earlier_observation_rows": 11,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 11,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001104659-19-067128",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5421
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000568",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5528
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000566",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0000886982",
+          "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5532
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-067129",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5546
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000570",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5795
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000569",
+          "DOCUMENT_TYPE": "4/A",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5810
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065543",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 10785
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065542",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11023
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065545",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11025
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065541",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11325
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065544",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11670
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "PROS"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000566",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0000886982",
+          "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5532
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065541",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11325
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 11
+    },
+    {
+      "case_id": "multi-cik-04",
+      "distinct_earlier_ciks": [
+        "0001635840",
+        "0001778784"
+      ],
+      "earlier_observation_rows": 22,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 22,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023625",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "27-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 3395
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023624",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "27-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 3583
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021844",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10747
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021846",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10865
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021842",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10898
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021850",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10909
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021839",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10951
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021848",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11276
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021835",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11334
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021837",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11467
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019640",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16114
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019658",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16138
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019654",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16191
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019647",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16241
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019649",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16254
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019656",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16306
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019661",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16326
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019651",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16388
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019664",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16400
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019645",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16440
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019638",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16483
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022942",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 21934
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "PVBC"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021835",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11334
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019638",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16483
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 22
+    },
+    {
+      "case_id": "multi-cik-05",
+      "distinct_earlier_ciks": [
+        "0000098222",
+        "0001758730"
+      ],
+      "earlier_observation_rows": 19,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 19,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019882",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7190
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019888",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7290
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019884",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7296
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019885",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7299
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019889",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7315
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019887",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7336
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019883",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7376
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019886",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7381
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019734",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12434
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019737",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12487
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021775",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-NOV-2019",
+          "ISSUERCIK": "0000098222",
+          "ISSUERNAME": "TIDEWATER INC",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 13020
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021691",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18149
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021688",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18221
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021693",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18304
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021692",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18369
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021690",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18391
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021689",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18400
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021694",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18450
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021695",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18463
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "TW"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021775",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-NOV-2019",
+          "ISSUERCIK": "0000098222",
+          "ISSUERNAME": "TIDEWATER INC",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 13020
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019734",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12434
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 19
+    },
+    {
+      "case_id": "multi-cik-06",
+      "distinct_earlier_ciks": [
+        "0001445274",
+        "0001619250"
+      ],
+      "earlier_observation_rows": 3,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 3,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0000919574-19-007783",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "23-DEC-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 6597
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051972",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 34717
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051965",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001445274",
+          "ISSUERNAME": "VALERITAS INC",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 35378
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "VLRX"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051965",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001445274",
+          "ISSUERNAME": "VALERITAS INC",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 35378
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051972",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 34717
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 3
+    },
+    {
+      "case_id": "multi-cik-07",
+      "distinct_earlier_ciks": [
+        "0001262823",
+        "0001604665"
+      ],
+      "earlier_observation_rows": 8,
+      "historical_relationship_or_symbol_cause": "PENDING_SEPARATE_ORIGINAL_CORPORATE_SOURCE_REVIEW",
+      "observation_rows": 8,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021001",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001604665",
+          "ISSUERNAME": "Westlake Chemical Partners LP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20680
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-020895",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20686
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022526",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33448
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022522",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33479
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022528",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33481
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022524",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33710
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022525",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33803
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022523",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 34163
+        }
+      ],
+      "original_source_status": "ORIGINAL_SOURCE_DISCREPANCY_OR_STRUCTURE_UNRESOLVED",
+      "public_symbols": [
+        "WLK"
+      ],
+      "selected_original_sources_confirmed": 0,
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-020895",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20686
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021001",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001604665",
+          "ISSUERNAME": "Westlake Chemical Partners LP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20680
+        }
+      ],
+      "unambiguous_earlier_observation_rows": 8
+    }
+  ],
+  "historical_availability_inferred": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "information_cutoff": "2019-12-31T21:00:00+00:00",
+  "inputs": {
+    "collection_receipt": {
+      "bytes": 9212,
+      "path": "outputs/multi-cik-followup-20261011/collection_receipt.json",
+      "sha256": "485201921921b0b39f95c2db6819664bdfa6a884b5e5a68ddbdf6dbc8adabd22"
+    },
+    "ownership_bundle_receipt_sha256": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+    "queue": {
+      "bytes": 52459,
+      "path": "outputs/multi-cik-followup-20261011/queue.json",
+      "sha256": "4c681c125f3e5e1b555675cb281b1df7aea23b494ea50d47858c065da176b6f5"
+    },
+    "script": {
+      "bytes": 34581,
+      "path": "scripts/ownership_multi_cik.py",
+      "sha256": "35eac10f578b226bd286148765e5f169e3e59b44bdf05cc1b295e06ddb9e36a2"
+    },
+    "selection_receipt": {
+      "bytes": 8347,
+      "path": "outputs/multi-cik-followup-20261011/selection_receipt.json",
+      "sha256": "1ad96bd8648a2b7e9c019d6774bf2cd46bbad4bc9c25216e93f9d7c6139e3557"
+    },
+    "submission_source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c"
+  },
+  "known_at_inferred": false,
+  "market_returns_read": false,
+  "model_ready": false,
+  "parsing_scope": "Original SEC header and original ownershipDocument prefix through issuer end only. Remaining ownership, transaction, holdings, remarks and signature content is preserved but not parsed.",
+  "protected_after": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+    "reports/sec_ownership_execution.json": "6cdf513b98f60ede325c532590c6bb9f6fb50c9b6a60f4e29d2e12861e9d53f5",
+    "reports/sec_ownership_original_followup.json": "44eea2e8870bf7aa230562634520c683b7010c441c915fde69d5b674650e9844",
+    "reports/sec_ownership_verification.json": "508b60b7e31c3f05104fe82ba9caaee2b3dd6d3dfbfe69e90c4af8b368e391bf"
+  },
+  "protected_before": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+    "reports/sec_ownership_execution.json": "6cdf513b98f60ede325c532590c6bb9f6fb50c9b6a60f4e29d2e12861e9d53f5",
+    "reports/sec_ownership_original_followup.json": "44eea2e8870bf7aa230562634520c683b7010c441c915fde69d5b674650e9844",
+    "reports/sec_ownership_verification.json": "508b60b7e31c3f05104fe82ba9caaee2b3dd6d3dfbfe69e90c4af8b368e391bf"
+  },
+  "recorded_at_utc": "2026-10-11T16:29:04.860830+00:00",
+  "records": [
+    {
+      "available_at": null,
+      "case_id": "multi-cik-01",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001437749-19-021150",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:10.819649+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:10.418326+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/742126/000143774919021150/0001437749-19-021150.txt",
+        "case_id": "multi-cik-01",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 1,
+        "source_tsv_record": 37828,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 1,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-021150",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "01-NOV-2019",
+        "ISSUERCIK": "0000742126",
+        "ISSUERNAME": "US Ecology Holdings, Inc.",
+        "ISSUERTRADINGSYMBOL": "ECOL",
+        "case_id": "multi-cik-01",
+        "source_tsv_record": 37828
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-01",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001437749-19-021175",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:11.202424+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:10.418527+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1783400/000143774919021175/0001437749-19-021175.txt",
+        "case_id": "multi-cik-01",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 2,
+        "source_tsv_record": 37652,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 2,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-021175",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "01-NOV-2019",
+        "ISSUERCIK": "0001783400",
+        "ISSUERNAME": "US Ecology, Inc.",
+        "ISSUERTRADINGSYMBOL": "ECOL",
+        "case_id": "multi-cik-01",
+        "source_tsv_record": 37652
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-02",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-022199",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:12.026216+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:10.821042+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1435508/000156761919022199/0001567619-19-022199.txt",
+        "case_id": "multi-cik-02",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 3,
+        "source_tsv_record": 5590,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 3,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-022199",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0001435508",
+        "ISSUERNAME": "First Savings Financial Group Inc",
+        "ISSUERTRADINGSYMBOL": "FSFG",
+        "case_id": "multi-cik-02",
+        "source_tsv_record": 5590
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-02",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-022217",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:12.423959+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:11.203640+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1751692/000156761919022217/0001567619-19-022217.txt",
+        "case_id": "multi-cik-02",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 4,
+        "source_tsv_record": 5685,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 4,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-022217",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0001751692",
+        "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+        "ISSUERTRADINGSYMBOL": "FSFG",
+        "case_id": "multi-cik-02",
+        "source_tsv_record": 5685
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-03",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0000769993-19-000566",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:13.075658+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:12.026906+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/886982/000076999319000566/0000769993-19-000566.txt",
+        "case_id": "multi-cik-03",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 5,
+        "source_tsv_record": 5532,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 5,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0000769993-19-000566",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0000886982",
+        "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+        "ISSUERTRADINGSYMBOL": "PROS",
+        "case_id": "multi-cik-03",
+        "source_tsv_record": 5532
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-03",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001104659-19-065541",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:13.763642+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:12.425159+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1634038/000110465919065541/0001104659-19-065541.txt",
+        "case_id": "multi-cik-03",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 6,
+        "source_tsv_record": 11325,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 6,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-065541",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "19-NOV-2019",
+        "ISSUERCIK": "0001634038",
+        "ISSUERNAME": "ProSight Global, Inc.",
+        "ISSUERTRADINGSYMBOL": "PROS",
+        "case_id": "multi-cik-03",
+        "source_tsv_record": 11325
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-04",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-021835",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:14.428407+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:13.079618+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1635840/000156761919021835/0001567619-19-021835.txt",
+        "case_id": "multi-cik-04",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 7,
+        "source_tsv_record": 11334,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 7,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021835",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "19-NOV-2019",
+        "ISSUERCIK": "0001635840",
+        "ISSUERNAME": "Provident Bancorp, Inc.",
+        "ISSUERTRADINGSYMBOL": "PVBC",
+        "case_id": "multi-cik-04",
+        "source_tsv_record": 11334
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-04",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-019638",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:14.814486+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:13.765155+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1778784/000156761919019638/0001567619-19-019638.txt",
+        "case_id": "multi-cik-04",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 8,
+        "source_tsv_record": 16483,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 8,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-019638",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "16-OCT-2019",
+        "ISSUERCIK": "0001778784",
+        "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+        "ISSUERTRADINGSYMBOL": "PVBC",
+        "case_id": "multi-cik-04",
+        "source_tsv_record": 16483
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-05",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-021775",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:15.420981+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:14.430164+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/98222/000156761919021775/0001567619-19-021775.txt",
+        "case_id": "multi-cik-05",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 9,
+        "source_tsv_record": 13020,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 9,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021775",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "18-NOV-2019",
+        "ISSUERCIK": "0000098222",
+        "ISSUERNAME": "TIDEWATER INC",
+        "ISSUERTRADINGSYMBOL": "TW",
+        "case_id": "multi-cik-05",
+        "source_tsv_record": 13020
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-05",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-019734",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:16.009857+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:14.815830+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1758730/000156761919019734/0001567619-19-019734.txt",
+        "case_id": "multi-cik-05",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 10,
+        "source_tsv_record": 12434,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 10,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-019734",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "18-OCT-2019",
+        "ISSUERCIK": "0001758730",
+        "ISSUERNAME": "Tradeweb Markets Inc.",
+        "ISSUERTRADINGSYMBOL": "TW",
+        "case_id": "multi-cik-05",
+        "source_tsv_record": 12434
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-06",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001209191-19-051965",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:16.659402+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:15.421954+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1445274/000120919119051965/0001209191-19-051965.txt",
+        "case_id": "multi-cik-06",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 11,
+        "source_tsv_record": 35378,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 11,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-051965",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "02-OCT-2019",
+        "ISSUERCIK": "0001445274",
+        "ISSUERNAME": "VALERITAS INC",
+        "ISSUERTRADINGSYMBOL": "VLRX",
+        "case_id": "multi-cik-06",
+        "source_tsv_record": 35378
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-06",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001209191-19-051972",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:17.271875+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:16.011342+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1619250/000120919119051972/0001209191-19-051972.txt",
+        "case_id": "multi-cik-06",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 12,
+        "source_tsv_record": 34717,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 12,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-051972",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "02-OCT-2019",
+        "ISSUERCIK": "0001619250",
+        "ISSUERNAME": "Valeritas Holdings Inc.",
+        "ISSUERTRADINGSYMBOL": "VLRX",
+        "case_id": "multi-cik-06",
+        "source_tsv_record": 34717
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-07",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-020895",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:17.996143+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:16.661001+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1262823/000156761919020895/0001567619-19-020895.txt",
+        "case_id": "multi-cik-07",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 13,
+        "source_tsv_record": 20686,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 13,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-020895",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "12-NOV-2019",
+        "ISSUERCIK": "0001262823",
+        "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+        "ISSUERTRADINGSYMBOL": "WLK",
+        "case_id": "multi-cik-07",
+        "source_tsv_record": 20686
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "available_at": null,
+      "case_id": "multi-cik-07",
+      "known_at": null,
+      "preservation_attempt": {
+        "accession": "0001567619-19-021001",
+        "alternate_path_or_403_bypass_attempted": false,
+        "attempt_completed_utc": "2026-10-11T16:28:18.518210+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:28:17.273072+00:00",
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1604665/000156761919021001/0001567619-19-021001.txt",
+        "case_id": "multi-cik-07",
+        "error_type": "HTTPError",
+        "http_status": 403,
+        "queue_ordinal": 14,
+        "source_tsv_record": 20680,
+        "status": "HTTP_ERROR"
+      },
+      "queue_ordinal": 14,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021001",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "12-NOV-2019",
+        "ISSUERCIK": "0001604665",
+        "ISSUERNAME": "Westlake Chemical Partners LP",
+        "ISSUERTRADINGSYMBOL": "WLK",
+        "case_id": "multi-cik-07",
+        "source_tsv_record": 20680
+      },
+      "status": "SOURCE_NOT_PRESERVED"
+    }
+  ],
+  "request_policy": {
+    "alternate_paths_after_403": false,
+    "automatic_retries": 0,
+    "maximum_source_bytes": 8388608,
+    "minimum_seconds_between_request_starts": 0.6,
+    "timeout_seconds": 30,
+    "user_agent": "Michael Baffour Awuah Disclosure-drift research https://github.com/michaelbawuah/Disclosure-drift",
+    "workers": 2
+  },
+  "schema_version": 1,
+  "selection_policy": "Every security with >1 distinct positive earlier CIK comparison key; earliest reported filing_date, then accession, then original TSV record per security/CIK; no uniqueness filtering or voting",
+  "selection_scope": "All 4122 stored cohort summaries and all 31466 stored observations were checked, earlier distinct CIK sets independently regrouped; exact selected SEC rows checked against all 38145 original TSV occurrences. Underlying Names/CCM matching and cohort selection were not rerun.",
+  "source_approvals_created": 0,
+  "source_receipts": {},
+  "status": "BOUNDED_MULTI_CIK_ORIGINAL_SOURCE_AUDIT",
+  "summary": {
+    "acceptance_precedes_information_cutoff_count": 0,
+    "cases": 7,
+    "comparison_true_counts": {},
+    "completed_47_cases_repeated": 0,
+    "contributing_observation_rows": 129,
+    "contributing_unique_sec_occurrences": 129,
+    "header_reporting_owner_role_occurrences": 0,
+    "original_source_bytes": 0,
+    "preserved_original_sources": 0,
+    "selected_original_sources": 14,
+    "status_counts": {
+      "SOURCE_NOT_PRESERVED": 14
+    },
+    "structured_issuer_inspections": 0
+  },
+  "vendor_identifiers_exported": false,
+  "vendor_names_rows_exported": false
+}

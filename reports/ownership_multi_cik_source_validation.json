@@ -1,0 +1,4396 @@
+{
+  "continuous_intervals_inferred": false,
+  "final_period_outcomes_opened": false,
+  "final_period_sources_requested": false,
+  "groups": [
+    {
+      "case_id": "multi-cik-01",
+      "distinct_earlier_ciks": [
+        "0000742126",
+        "0001783400"
+      ],
+      "earlier_observation_rows": 42,
+      "observation_rows": 42,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022949",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 20608
+        },
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022952",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 21143
+        },
+        {
+          "ACCESSION_NUMBER": "0001213900-19-022951",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 21306
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021183",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37642
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021175",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37652
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021252",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37694
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021177",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37695
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021216",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37706
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021251",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37710
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021205",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37711
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021214",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37752
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021238",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37754
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021208",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37756
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021210",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37757
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021155",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37791
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021176",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37807
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021150",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37828
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021248",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37837
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021152",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37856
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021178",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37859
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021233",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37893
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021232",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37907
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021156",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37964
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021203",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37967
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021157",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37973
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021206",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37985
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021207",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37988
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021250",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37990
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021229",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38007
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021236",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38029
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021231",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38032
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021213",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38041
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021185",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38062
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021212",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38073
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021237",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38086
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021179",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38093
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021235",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38106
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021153",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38107
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021184",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38135
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021154",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38137
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021151",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38142
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021249",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 38143
+        }
+      ],
+      "public_symbols": [
+        "ECOL"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021150",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0000742126",
+          "ISSUERNAME": "US Ecology Holdings, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37828
+        },
+        {
+          "ACCESSION_NUMBER": "0001437749-19-021175",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "01-NOV-2019",
+          "ISSUERCIK": "0001783400",
+          "ISSUERNAME": "US Ecology, Inc.",
+          "ISSUERTRADINGSYMBOL": "ECOL",
+          "source_tsv_record": 37652
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 42
+    },
+    {
+      "case_id": "multi-cik-02",
+      "distinct_earlier_ciks": [
+        "0001435508",
+        "0001751692"
+      ],
+      "earlier_observation_rows": 24,
+      "observation_rows": 24,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022206",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5254
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022203",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5278
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022212",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5416
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022202",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5465
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022216",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5495
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022213",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5527
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022210",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5567
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022199",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5590
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022218",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5608
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022211",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5667
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022217",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001751692",
+          "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5685
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022207",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5732
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022204",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5734
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022205",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5745
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022201",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5765
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022200",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5800
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022215",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5838
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023187",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "17-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 15872
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023054",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "13-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 19898
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023053",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "13-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 20169
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022977",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 21569
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022729",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "06-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 28113
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022628",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "04-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 31234
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022414",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-DEC-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 36191
+        }
+      ],
+      "public_symbols": [
+        "FSFG"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022199",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001435508",
+          "ISSUERNAME": "First Savings Financial Group Inc",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5590
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022217",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001751692",
+          "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+          "ISSUERTRADINGSYMBOL": "FSFG",
+          "source_tsv_record": 5685
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 24
+    },
+    {
+      "case_id": "multi-cik-03",
+      "distinct_earlier_ciks": [
+        "0000886982",
+        "0001634038"
+      ],
+      "earlier_observation_rows": 11,
+      "observation_rows": 11,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001104659-19-067128",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5421
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000568",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5528
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000566",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0000886982",
+          "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5532
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-067129",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5546
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000570",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5795
+        },
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000569",
+          "DOCUMENT_TYPE": "4/A",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5810
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065543",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 10785
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065542",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11023
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065545",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11025
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065541",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11325
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065544",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11670
+        }
+      ],
+      "public_symbols": [
+        "PROS"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0000769993-19-000566",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "25-NOV-2019",
+          "ISSUERCIK": "0000886982",
+          "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 5532
+        },
+        {
+          "ACCESSION_NUMBER": "0001104659-19-065541",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001634038",
+          "ISSUERNAME": "ProSight Global, Inc.",
+          "ISSUERTRADINGSYMBOL": "PROS",
+          "source_tsv_record": 11325
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 11
+    },
+    {
+      "case_id": "multi-cik-04",
+      "distinct_earlier_ciks": [
+        "0001635840",
+        "0001778784"
+      ],
+      "earlier_observation_rows": 22,
+      "observation_rows": 22,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023625",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "27-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 3395
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-023624",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "27-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 3583
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021844",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10747
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021846",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10865
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021842",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10898
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021850",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10909
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021839",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 10951
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021848",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11276
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021835",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11334
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021837",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11467
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019640",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16114
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019658",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16138
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019654",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16191
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019647",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16241
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019649",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16254
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019656",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16306
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019661",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16326
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019651",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16388
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019664",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16400
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019645",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16440
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019638",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16483
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022942",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-DEC-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 21934
+        }
+      ],
+      "public_symbols": [
+        "PVBC"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021835",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "19-NOV-2019",
+          "ISSUERCIK": "0001635840",
+          "ISSUERNAME": "Provident Bancorp, Inc.",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 11334
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019638",
+          "DOCUMENT_TYPE": "3",
+          "FILING_DATE": "16-OCT-2019",
+          "ISSUERCIK": "0001778784",
+          "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+          "ISSUERTRADINGSYMBOL": "PVBC",
+          "source_tsv_record": 16483
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 22
+    },
+    {
+      "case_id": "multi-cik-05",
+      "distinct_earlier_ciks": [
+        "0000098222",
+        "0001758730"
+      ],
+      "earlier_observation_rows": 19,
+      "observation_rows": 19,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019882",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7190
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019888",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7290
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019884",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7296
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019885",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7299
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019889",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7315
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019887",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7336
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019883",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7376
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019886",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "22-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 7381
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019734",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12434
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019737",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12487
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021775",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-NOV-2019",
+          "ISSUERCIK": "0000098222",
+          "ISSUERNAME": "TIDEWATER INC",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 13020
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021691",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18149
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021688",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18221
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021693",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18304
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021692",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18369
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021690",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18391
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021689",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18400
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021694",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18450
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021695",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "15-NOV-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 18463
+        }
+      ],
+      "public_symbols": [
+        "TW"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021775",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-NOV-2019",
+          "ISSUERCIK": "0000098222",
+          "ISSUERNAME": "TIDEWATER INC",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 13020
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-019734",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "18-OCT-2019",
+          "ISSUERCIK": "0001758730",
+          "ISSUERNAME": "Tradeweb Markets Inc.",
+          "ISSUERTRADINGSYMBOL": "TW",
+          "source_tsv_record": 12434
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 19
+    },
+    {
+      "case_id": "multi-cik-06",
+      "distinct_earlier_ciks": [
+        "0001445274",
+        "0001619250"
+      ],
+      "earlier_observation_rows": 3,
+      "observation_rows": 3,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0000919574-19-007783",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "23-DEC-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 6597
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051972",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 34717
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051965",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001445274",
+          "ISSUERNAME": "VALERITAS INC",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 35378
+        }
+      ],
+      "public_symbols": [
+        "VLRX"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051965",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001445274",
+          "ISSUERNAME": "VALERITAS INC",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 35378
+        },
+        {
+          "ACCESSION_NUMBER": "0001209191-19-051972",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "02-OCT-2019",
+          "ISSUERCIK": "0001619250",
+          "ISSUERNAME": "Valeritas Holdings Inc.",
+          "ISSUERTRADINGSYMBOL": "VLRX",
+          "source_tsv_record": 34717
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 3
+    },
+    {
+      "case_id": "multi-cik-07",
+      "distinct_earlier_ciks": [
+        "0001262823",
+        "0001604665"
+      ],
+      "earlier_observation_rows": 8,
+      "observation_rows": 8,
+      "original_source_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021001",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001604665",
+          "ISSUERNAME": "Westlake Chemical Partners LP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20680
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-020895",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20686
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022526",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33448
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022522",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33479
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022528",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33481
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022524",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33710
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022525",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 33803
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-022523",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "03-DEC-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 34163
+        }
+      ],
+      "public_symbols": [
+        "WLK"
+      ],
+      "selected_public_occurrences": [
+        {
+          "ACCESSION_NUMBER": "0001567619-19-020895",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001262823",
+          "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20686
+        },
+        {
+          "ACCESSION_NUMBER": "0001567619-19-021001",
+          "DOCUMENT_TYPE": "4",
+          "FILING_DATE": "12-NOV-2019",
+          "ISSUERCIK": "0001604665",
+          "ISSUERNAME": "Westlake Chemical Partners LP",
+          "ISSUERTRADINGSYMBOL": "WLK",
+          "source_tsv_record": 20680
+        }
+      ],
+      "selected_sources_confirmed": 2,
+      "source_status": "MULTIPLE_ORIGINAL_ISSUERS_REPORT_SAME_LITERAL_SYMBOL",
+      "unambiguous_earlier_observation_rows": 8
+    }
+  ],
+  "historical_availability_inferred": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "information_cutoff": "2019-12-31T21:00:00+00:00",
+  "inputs": {
+    "collection_receipt": {
+      "bytes": 10800,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/collection_receipt.json",
+      "sha256": "8ab25c6b26fdcf749d4030abe79eb061b10ac04bf6e9e4dbcc94a5a2419a60ca"
+    },
+    "mac_failure_record": {
+      "bytes": 70637,
+      "path": "reports/ownership_multi_cik_originals.json",
+      "sha256": "b518a1bd5135f611d308a85c3deaac0707be60bfd00577781c9a060260c7c74a"
+    },
+    "ownership_bundle_receipt_sha256": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+    "queue": {
+      "bytes": 52459,
+      "path": "outputs/multi-cik-followup-20261011/queue.json",
+      "sha256": "4c681c125f3e5e1b555675cb281b1df7aea23b494ea50d47858c065da176b6f5"
+    },
+    "selection_receipt": {
+      "bytes": 8347,
+      "path": "outputs/multi-cik-followup-20261011/selection_receipt.json",
+      "sha256": "1ad96bd8648a2b7e9c019d6774bf2cd46bbad4bc9c25216e93f9d7c6139e3557"
+    },
+    "selector_and_issuer_parser": {
+      "bytes": 34582,
+      "path": "scripts/ownership_multi_cik.py",
+      "sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c"
+    },
+    "source_script": {
+      "bytes": 10642,
+      "path": "scripts/ownership_multi_cik_sources.py",
+      "sha256": "ed8c258e380c91378c1c3c9a582ac5febe447c595003e8e633501aa238a3a3a4"
+    },
+    "submission_source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c"
+  },
+  "known_at_inferred": false,
+  "market_returns_read": false,
+  "model_ready": false,
+  "parsing_scope": "Original SEC header and original ownershipDocument prefix through issuer end only. No parser receives subsequent holdings, transaction, remarks or signature content.",
+  "recorded_at_utc": "2026-10-11T16:31:22.933892+00:00",
+  "records": [
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-01",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-01T09:38:47-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191101093847"
+        },
+        "acceptance_utc": "2019-11-01T13:38:47+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001437749-19-021150"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191101"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191101"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 681,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 437,
+              "byte_start": 427,
+              "raw_value": "0001617541"
+            },
+            "cik_comparison_key": "0001617541",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1405,
+            "block_byte_start": 681,
+            "cik": {
+              "byte_end_exclusive": 795,
+              "byte_start": 785,
+              "raw_value": "0000742126"
+            },
+            "cik_comparison_key": "0000742126",
+            "name": {
+              "byte_end_exclusive": 761,
+              "byte_start": 736,
+              "raw_value": "US Ecology Holdings, Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1418,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0000742126",
+        "issuer_element_byte_end_exclusive": 1911,
+        "issuer_element_byte_start": 1732,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1770,
+            "byte_start": 1760,
+            "parsed_text": "0000742126",
+            "raw_xml_text": "0000742126"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1828,
+            "byte_start": 1803,
+            "parsed_text": "US Ecology Holdings, Inc.",
+            "raw_xml_text": "US Ecology Holdings, Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1875,
+            "byte_start": 1871,
+            "parsed_text": "ECOL",
+            "raw_xml_text": "ECOL"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1911,
+        "issuer_prefix_byte_start": 1503,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-01"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001437749-19-021150",
+        "bytes": 6456,
+        "case_id": "multi-cik-01",
+        "new_request_issued": false,
+        "queue_ordinal": 1,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021150.receipt.json",
+        "sha256": "c21a3b4b767eced4ac83966cf56674ad7bab5a19965a111200d2935e39e356ca",
+        "source_tsv_record": 37828,
+        "status": "PRESERVED_EARLIER_CONTAINER_PROBE"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 6439,
+        "document_byte_start": 1419,
+        "filename": {
+          "byte_end_exclusive": 1470,
+          "byte_start": 1460,
+          "raw_value": "rdgdoc.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1437,
+          "byte_start": 1436,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1449,
+          "byte_start": 1448,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 1,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-021150",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "01-NOV-2019",
+        "ISSUERCIK": "0000742126",
+        "ISSUERNAME": "US Ecology Holdings, Inc.",
+        "ISSUERTRADINGSYMBOL": "ECOL",
+        "case_id": "multi-cik-01",
+        "source_tsv_record": 37828
+      },
+      "source_id": "0001437749-19-021150",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-01",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-01T11:21:33-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191101112133"
+        },
+        "acceptance_utc": "2019-11-01T15:21:33+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001437749-19-021175"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191101"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191101"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "3"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 681,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 437,
+              "byte_start": 427,
+              "raw_value": "0001617541"
+            },
+            "cik_comparison_key": "0001617541",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1309,
+            "block_byte_start": 681,
+            "cik": {
+              "byte_end_exclusive": 786,
+              "byte_start": 776,
+              "raw_value": "0001783400"
+            },
+            "cik_comparison_key": "0001783400",
+            "name": {
+              "byte_end_exclusive": 752,
+              "byte_start": 736,
+              "raw_value": "US Ecology, Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1322,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "3",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001783400",
+        "issuer_element_byte_end_exclusive": 1798,
+        "issuer_element_byte_start": 1628,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1666,
+            "byte_start": 1656,
+            "parsed_text": "0001783400",
+            "raw_xml_text": "0001783400"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1715,
+            "byte_start": 1699,
+            "parsed_text": "US Ecology, Inc.",
+            "raw_xml_text": "US Ecology, Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1762,
+            "byte_start": 1758,
+            "parsed_text": "ECOL",
+            "raw_xml_text": "ECOL"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1798,
+        "issuer_prefix_byte_start": 1407,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-01"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001437749-19-021175",
+        "attempt_completed_utc": "2026-10-11T16:30:42.181365+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:37.616838+00:00",
+        "bytes": 10768,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1783400/000143774919021175/0001437749-19-021175.txt",
+        "case_id": "multi-cik-01",
+        "queue_ordinal": 2,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021175.receipt.json",
+        "sha256": "8a710d7821fb51706f7e116ef0508e250075fec9d9ce03d4b476098b6eb5effc",
+        "source_tsv_record": 37652,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 2,
+        "document_byte_end_exclusive": 2735,
+        "document_byte_start": 1323,
+        "filename": {
+          "byte_end_exclusive": 1374,
+          "byte_start": 1364,
+          "raw_value": "rdgdoc.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1341,
+          "byte_start": 1340,
+          "raw_value": "3"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1353,
+          "byte_start": 1352,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 2,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-021175",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "01-NOV-2019",
+        "ISSUERCIK": "0001783400",
+        "ISSUERNAME": "US Ecology, Inc.",
+        "ISSUERTRADINGSYMBOL": "ECOL",
+        "case_id": "multi-cik-01",
+        "source_tsv_record": 37652
+      },
+      "source_id": "0001437749-19-021175",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-02",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-25T17:12:41-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191125171241"
+        },
+        "acceptance_utc": "2019-11-25T22:12:41+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-022199"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191125"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191125"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 663,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 440,
+              "byte_start": 430,
+              "raw_value": "0001454153"
+            },
+            "cik_comparison_key": "0001454153",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1216,
+            "block_byte_start": 663,
+            "cik": {
+              "byte_end_exclusive": 785,
+              "byte_start": 775,
+              "raw_value": "0001435508"
+            },
+            "cik_comparison_key": "0001435508",
+            "name": {
+              "byte_end_exclusive": 751,
+              "byte_start": 718,
+              "raw_value": "First Savings Financial Group Inc"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1229,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001435508",
+        "issuer_element_byte_end_exclusive": 1728,
+        "issuer_element_byte_start": 1541,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1579,
+            "byte_start": 1569,
+            "parsed_text": "0001435508",
+            "raw_xml_text": "0001435508"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1645,
+            "byte_start": 1612,
+            "parsed_text": "First Savings Financial Group Inc",
+            "raw_xml_text": "First Savings Financial Group Inc"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1692,
+            "byte_start": 1688,
+            "parsed_text": "FSFG",
+            "raw_xml_text": "FSFG"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1728,
+        "issuer_prefix_byte_start": 1312,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-21"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-022199",
+        "attempt_completed_utc": "2026-10-11T16:30:46.513092+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:42.181535+00:00",
+        "bytes": 11133,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1435508/000156761919022199/0001567619-19-022199.txt",
+        "case_id": "multi-cik-02",
+        "queue_ordinal": 3,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022199.receipt.json",
+        "sha256": "e1fd9f09fde80fb86e3b094a11afc94d1d4f2220e1e64f991302527df5279d09",
+        "source_tsv_record": 5590,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 11116,
+        "document_byte_start": 1230,
+        "filename": {
+          "byte_end_exclusive": 1279,
+          "byte_start": 1271,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1248,
+          "byte_start": 1247,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1260,
+          "byte_start": 1259,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 3,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-022199",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0001435508",
+        "ISSUERNAME": "First Savings Financial Group Inc",
+        "ISSUERTRADINGSYMBOL": "FSFG",
+        "case_id": "multi-cik-02",
+        "source_tsv_record": 5590
+      },
+      "source_id": "0001567619-19-022199",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-02",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-25T17:29:17-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191125172917"
+        },
+        "acceptance_utc": "2019-11-25T22:29:17+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-022217"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191125"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191125"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 719,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 445,
+              "byte_start": 435,
+              "raw_value": "0001513358"
+            },
+            "cik_comparison_key": "0001513358",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1263,
+            "block_byte_start": 719,
+            "cik": {
+              "byte_end_exclusive": 839,
+              "byte_start": 829,
+              "raw_value": "0001751692"
+            },
+            "cik_comparison_key": "0001751692",
+            "name": {
+              "byte_end_exclusive": 805,
+              "byte_start": 774,
+              "raw_value": "1895 Bancorp of Wisconsin, Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1276,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001751692",
+        "issuer_element_byte_end_exclusive": 1773,
+        "issuer_element_byte_start": 1588,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1626,
+            "byte_start": 1616,
+            "parsed_text": "0001751692",
+            "raw_xml_text": "0001751692"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1690,
+            "byte_start": 1659,
+            "parsed_text": "1895 Bancorp of Wisconsin, Inc.",
+            "raw_xml_text": "1895 Bancorp of Wisconsin, Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1737,
+            "byte_start": 1733,
+            "parsed_text": "FSFG",
+            "raw_xml_text": "FSFG"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1773,
+        "issuer_prefix_byte_start": 1359,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-21"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-022217",
+        "attempt_completed_utc": "2026-10-11T16:30:50.142105+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:46.513268+00:00",
+        "bytes": 7408,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1751692/000156761919022217/0001567619-19-022217.txt",
+        "case_id": "multi-cik-02",
+        "queue_ordinal": 4,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022217.receipt.json",
+        "sha256": "993bd4b993b19472457b853600a8c9db1aba0f9fc107e872f867e1465210ef72",
+        "source_tsv_record": 5685,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 7391,
+        "document_byte_start": 1277,
+        "filename": {
+          "byte_end_exclusive": 1326,
+          "byte_start": 1318,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1295,
+          "byte_start": 1294,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1307,
+          "byte_start": 1306,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 4,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-022217",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0001751692",
+        "ISSUERNAME": "1895 Bancorp of Wisconsin, Inc.",
+        "ISSUERTRADINGSYMBOL": "FSFG",
+        "case_id": "multi-cik-02",
+        "source_tsv_record": 5685
+      },
+      "source_id": "0001567619-19-022217",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-03",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-25T18:08:02-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191125180802"
+        },
+        "acceptance_utc": "2019-11-25T23:08:02+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0000769993-19-000566"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191125"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191125"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 1,
+        "reporting_owner_role_count": 2,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 1030,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 447,
+              "byte_start": 437,
+              "raw_value": "0000886982"
+            },
+            "cik_comparison_key": "0000886982",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1630,
+            "block_byte_start": 1030,
+            "cik": {
+              "byte_end_exclusive": 1148,
+              "byte_start": 1138,
+              "raw_value": "0000769993"
+            },
+            "cik_comparison_key": "0000769993",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 2
+          },
+          {
+            "block_byte_end_exclusive": 2245,
+            "block_byte_start": 1630,
+            "cik": {
+              "byte_end_exclusive": 1742,
+              "byte_start": 1732,
+              "raw_value": "0000886982"
+            },
+            "cik_comparison_key": "0000886982",
+            "name": {
+              "byte_end_exclusive": 1708,
+              "byte_start": 1685,
+              "raw_value": "GOLDMAN SACHS GROUP INC"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 3
+          }
+        ],
+        "source_byte_end_exclusive": 2258,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0000886982",
+        "issuer_element_byte_end_exclusive": 2759,
+        "issuer_element_byte_start": 2582,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 2620,
+            "byte_start": 2610,
+            "parsed_text": "0000886982",
+            "raw_xml_text": "0000886982"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 2676,
+            "byte_start": 2653,
+            "parsed_text": "GOLDMAN SACHS GROUP INC",
+            "raw_xml_text": "GOLDMAN SACHS GROUP INC"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 2723,
+            "byte_start": 2719,
+            "parsed_text": "PROS",
+            "raw_xml_text": "PROS"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 2759,
+        "issuer_prefix_byte_start": 2343,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-21-05:00"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0000769993-19-000566",
+        "attempt_completed_utc": "2026-10-11T16:30:53.025361+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:50.142269+00:00",
+        "bytes": 9215,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/886982/000076999319000566/0000769993-19-000566.txt",
+        "case_id": "multi-cik-03",
+        "queue_ordinal": 5,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0000769993-19-000566.receipt.json",
+        "sha256": "162be38f6db6fa4664bf8d786f748c7a64aaa9fdac850c52495aa20397b29cc3",
+        "source_tsv_record": 5532,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 9198,
+        "document_byte_start": 2259,
+        "filename": {
+          "byte_end_exclusive": 2330,
+          "byte_start": 2300,
+          "raw_value": "ownershipdoc11192019045835.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 2277,
+          "byte_start": 2276,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 2289,
+          "byte_start": 2288,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 5,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0000769993-19-000566",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "25-NOV-2019",
+        "ISSUERCIK": "0000886982",
+        "ISSUERNAME": "GOLDMAN SACHS GROUP INC",
+        "ISSUERTRADINGSYMBOL": "PROS",
+        "case_id": "multi-cik-03",
+        "source_tsv_record": 5532
+      },
+      "source_id": "0000769993-19-000566",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-03",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-19T18:25:34-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191119182534"
+        },
+        "acceptance_utc": "2019-11-19T23:25:34+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001104659-19-065541"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191119"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191119"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 652,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 439,
+              "byte_start": 429,
+              "raw_value": "0001091162"
+            },
+            "cik_comparison_key": "0001091162",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1215,
+            "block_byte_start": 652,
+            "cik": {
+              "byte_end_exclusive": 762,
+              "byte_start": 752,
+              "raw_value": "0001634038"
+            },
+            "cik_comparison_key": "0001634038",
+            "name": {
+              "byte_end_exclusive": 728,
+              "byte_start": 707,
+              "raw_value": "ProSight Global, Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1228,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001634038",
+        "issuer_element_byte_end_exclusive": 1736,
+        "issuer_element_byte_start": 1561,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1599,
+            "byte_start": 1589,
+            "parsed_text": "0001634038",
+            "raw_xml_text": "0001634038"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1653,
+            "byte_start": 1632,
+            "parsed_text": "ProSight Global, Inc.",
+            "raw_xml_text": "ProSight Global, Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1700,
+            "byte_start": 1696,
+            "parsed_text": "PROS",
+            "raw_xml_text": "PROS"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1736,
+        "issuer_prefix_byte_start": 1332,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-15"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001104659-19-065541",
+        "attempt_completed_utc": "2026-10-11T16:30:55.898942+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:53.025489+00:00",
+        "bytes": 9407,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1634038/000110465919065541/0001104659-19-065541.txt",
+        "case_id": "multi-cik-03",
+        "queue_ordinal": 6,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001104659-19-065541.receipt.json",
+        "sha256": "0be7a847b0da1da79e7c5beaea86da1c2b184e251e8aa198793da5a60a296134",
+        "source_tsv_record": 11325,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 9390,
+        "document_byte_start": 1229,
+        "filename": {
+          "byte_end_exclusive": 1287,
+          "byte_start": 1270,
+          "raw_value": "tm1923344-1_4.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1247,
+          "byte_start": 1246,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1259,
+          "byte_start": 1258,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 6,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-065541",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "19-NOV-2019",
+        "ISSUERCIK": "0001634038",
+        "ISSUERNAME": "ProSight Global, Inc.",
+        "ISSUERTRADINGSYMBOL": "PROS",
+        "case_id": "multi-cik-03",
+        "source_tsv_record": 11325
+      },
+      "source_id": "0001104659-19-065541",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-04",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-19T14:53:51-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191119145351"
+        },
+        "acceptance_utc": "2019-11-19T19:53:51+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-021835"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191119"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191119"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 644,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 439,
+              "byte_start": 429,
+              "raw_value": "0001749520"
+            },
+            "cik_comparison_key": "0001749520",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1153,
+            "block_byte_start": 644,
+            "cik": {
+              "byte_end_exclusive": 756,
+              "byte_start": 746,
+              "raw_value": "0001635840"
+            },
+            "cik_comparison_key": "0001635840",
+            "name": {
+              "byte_end_exclusive": 722,
+              "byte_start": 699,
+              "raw_value": "Provident Bancorp, Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1166,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001635840",
+        "issuer_element_byte_end_exclusive": 1655,
+        "issuer_element_byte_start": 1478,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1516,
+            "byte_start": 1506,
+            "parsed_text": "0001635840",
+            "raw_xml_text": "0001635840"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1572,
+            "byte_start": 1549,
+            "parsed_text": "Provident Bancorp, Inc.",
+            "raw_xml_text": "Provident Bancorp, Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1619,
+            "byte_start": 1615,
+            "parsed_text": "PVBC",
+            "raw_xml_text": "PVBC"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1655,
+        "issuer_prefix_byte_start": 1249,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-10-28"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-021835",
+        "attempt_completed_utc": "2026-10-11T16:30:58.738882+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:55.899066+00:00",
+        "bytes": 7453,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1635840/000156761919021835/0001567619-19-021835.txt",
+        "case_id": "multi-cik-04",
+        "queue_ordinal": 7,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021835.receipt.json",
+        "sha256": "e24d29a5599ba5f1150a931c1c0dcd81b0917edc030b5313764ff654a6892a26",
+        "source_tsv_record": 11334,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 7436,
+        "document_byte_start": 1167,
+        "filename": {
+          "byte_end_exclusive": 1216,
+          "byte_start": 1208,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1185,
+          "byte_start": 1184,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1197,
+          "byte_start": 1196,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 7,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021835",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "19-NOV-2019",
+        "ISSUERCIK": "0001635840",
+        "ISSUERNAME": "Provident Bancorp, Inc.",
+        "ISSUERTRADINGSYMBOL": "PVBC",
+        "case_id": "multi-cik-04",
+        "source_tsv_record": 11334
+      },
+      "source_id": "0001567619-19-021835",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-04",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-10-16T16:42:27-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191016164227"
+        },
+        "acceptance_utc": "2019-10-16T20:42:27+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-019638"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191016"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191016"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "3"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 644,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 439,
+              "byte_start": 429,
+              "raw_value": "0001749520"
+            },
+            "cik_comparison_key": "0001749520",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1163,
+            "block_byte_start": 644,
+            "cik": {
+              "byte_end_exclusive": 761,
+              "byte_start": 751,
+              "raw_value": "0001778784"
+            },
+            "cik_comparison_key": "0001778784",
+            "name": {
+              "byte_end_exclusive": 727,
+              "byte_start": 699,
+              "raw_value": "Provident Bancorp, Inc. /MD/"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1176,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "3",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001778784",
+        "issuer_element_byte_end_exclusive": 1662,
+        "issuer_element_byte_start": 1480,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1518,
+            "byte_start": 1508,
+            "parsed_text": "0001778784",
+            "raw_xml_text": "0001778784"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1579,
+            "byte_start": 1551,
+            "parsed_text": "Provident Bancorp, Inc. /MD/",
+            "raw_xml_text": "Provident Bancorp, Inc. /MD/"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1626,
+            "byte_start": 1622,
+            "parsed_text": "PVBC",
+            "raw_xml_text": "PVBC"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1662,
+        "issuer_prefix_byte_start": 1259,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-10-16"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-019638",
+        "attempt_completed_utc": "2026-10-11T16:31:01.738965+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:30:58.739353+00:00",
+        "bytes": 5541,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1778784/000156761919019638/0001567619-19-019638.txt",
+        "case_id": "multi-cik-04",
+        "queue_ordinal": 8,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019638.receipt.json",
+        "sha256": "2f0c3301ef9cc4107985a6ab18e8f9615967442570734df402fb8174a0e8e39b",
+        "source_tsv_record": 16483,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 5524,
+        "document_byte_start": 1177,
+        "filename": {
+          "byte_end_exclusive": 1226,
+          "byte_start": 1218,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1195,
+          "byte_start": 1194,
+          "raw_value": "3"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1207,
+          "byte_start": 1206,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 8,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-019638",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "16-OCT-2019",
+        "ISSUERCIK": "0001778784",
+        "ISSUERNAME": "Provident Bancorp, Inc. /MD/",
+        "ISSUERTRADINGSYMBOL": "PVBC",
+        "case_id": "multi-cik-04",
+        "source_tsv_record": 16483
+      },
+      "source_id": "0001567619-19-019638",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-05",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-18T17:18:35-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191118171835"
+        },
+        "acceptance_utc": "2019-11-18T22:18:35+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-021775"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191118"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191118"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 657,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 437,
+              "byte_start": 427,
+              "raw_value": "0001391071"
+            },
+            "cik_comparison_key": "0001391071",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1289,
+            "block_byte_start": 657,
+            "cik": {
+              "byte_end_exclusive": 759,
+              "byte_start": 749,
+              "raw_value": "0000098222"
+            },
+            "cik_comparison_key": "0000098222",
+            "name": {
+              "byte_end_exclusive": 725,
+              "byte_start": 712,
+              "raw_value": "TIDEWATER INC"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1302,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0000098222",
+        "issuer_element_byte_end_exclusive": 1779,
+        "issuer_element_byte_start": 1614,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1652,
+            "byte_start": 1642,
+            "parsed_text": "0000098222",
+            "raw_xml_text": "0000098222"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1698,
+            "byte_start": 1685,
+            "parsed_text": "TIDEWATER INC",
+            "raw_xml_text": "TIDEWATER INC"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1743,
+            "byte_start": 1741,
+            "parsed_text": "TW",
+            "raw_xml_text": "TW"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1779,
+        "issuer_prefix_byte_start": 1385,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-18"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-021775",
+        "attempt_completed_utc": "2026-10-11T16:31:06.636222+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:01.739079+00:00",
+        "bytes": 10313,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/98222/000156761919021775/0001567619-19-021775.txt",
+        "case_id": "multi-cik-05",
+        "queue_ordinal": 9,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021775.receipt.json",
+        "sha256": "ba16ca0944b3532321005da20bf025564791245d4f79107d836c5f3614e24fdd",
+        "source_tsv_record": 13020,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 2,
+        "document_byte_end_exclusive": 4526,
+        "document_byte_start": 1303,
+        "filename": {
+          "byte_end_exclusive": 1352,
+          "byte_start": 1344,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1321,
+          "byte_start": 1320,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1333,
+          "byte_start": 1332,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 9,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021775",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "18-NOV-2019",
+        "ISSUERCIK": "0000098222",
+        "ISSUERNAME": "TIDEWATER INC",
+        "ISSUERTRADINGSYMBOL": "TW",
+        "case_id": "multi-cik-05",
+        "source_tsv_record": 13020
+      },
+      "source_id": "0001567619-19-021775",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-05",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-10-18T16:05:55-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191018160555"
+        },
+        "acceptance_utc": "2019-10-18T20:05:55+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-019734"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191018"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191018"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 692,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 440,
+              "byte_start": 430,
+              "raw_value": "0001771193"
+            },
+            "cik_comparison_key": "0001771193",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1240,
+            "block_byte_start": 692,
+            "cik": {
+              "byte_end_exclusive": 802,
+              "byte_start": 792,
+              "raw_value": "0001758730"
+            },
+            "cik_comparison_key": "0001758730",
+            "name": {
+              "byte_end_exclusive": 768,
+              "byte_start": 747,
+              "raw_value": "Tradeweb Markets Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1253,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001758730",
+        "issuer_element_byte_end_exclusive": 1738,
+        "issuer_element_byte_start": 1565,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1603,
+            "byte_start": 1593,
+            "parsed_text": "0001758730",
+            "raw_xml_text": "0001758730"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1657,
+            "byte_start": 1636,
+            "parsed_text": "Tradeweb Markets Inc.",
+            "raw_xml_text": "Tradeweb Markets Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1702,
+            "byte_start": 1700,
+            "parsed_text": "TW",
+            "raw_xml_text": "TW"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1738,
+        "issuer_prefix_byte_start": 1336,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-10-17"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-019734",
+        "attempt_completed_utc": "2026-10-11T16:31:10.199103+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:06.636388+00:00",
+        "bytes": 9073,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1758730/000156761919019734/0001567619-19-019734.txt",
+        "case_id": "multi-cik-05",
+        "queue_ordinal": 10,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019734.receipt.json",
+        "sha256": "43204fde8861b605b7371748f2db2150678ad1a3f0a061e1ec524eec45f5f9dd",
+        "source_tsv_record": 12434,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 9056,
+        "document_byte_start": 1254,
+        "filename": {
+          "byte_end_exclusive": 1303,
+          "byte_start": 1295,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1272,
+          "byte_start": 1271,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1284,
+          "byte_start": 1283,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 10,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-019734",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "18-OCT-2019",
+        "ISSUERCIK": "0001758730",
+        "ISSUERNAME": "Tradeweb Markets Inc.",
+        "ISSUERTRADINGSYMBOL": "TW",
+        "case_id": "multi-cik-05",
+        "source_tsv_record": 12434
+      },
+      "source_id": "0001567619-19-019734",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-06",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-10-02T19:31:19-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191002193119"
+        },
+        "acceptance_utc": "2019-10-02T23:31:19+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001209191-19-051965"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191002"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191002"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 6,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 947,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 437,
+              "byte_start": 427,
+              "raw_value": "0001702352"
+            },
+            "cik_comparison_key": "0001702352",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1488,
+            "block_byte_start": 947,
+            "cik": {
+              "byte_end_exclusive": 1074,
+              "byte_start": 1064,
+              "raw_value": "0001528226"
+            },
+            "cik_comparison_key": "0001528226",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 2
+          },
+          {
+            "block_byte_end_exclusive": 2038,
+            "block_byte_start": 1488,
+            "cik": {
+              "byte_end_exclusive": 1624,
+              "byte_start": 1614,
+              "raw_value": "0001528224"
+            },
+            "cik_comparison_key": "0001528224",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 3
+          },
+          {
+            "block_byte_end_exclusive": 2599,
+            "block_byte_start": 2038,
+            "cik": {
+              "byte_end_exclusive": 2185,
+              "byte_start": 2175,
+              "raw_value": "0001528225"
+            },
+            "cik_comparison_key": "0001528225",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 4
+          },
+          {
+            "block_byte_end_exclusive": 3135,
+            "block_byte_start": 2599,
+            "cik": {
+              "byte_end_exclusive": 2745,
+              "byte_start": 2735,
+              "raw_value": "0001568245"
+            },
+            "cik_comparison_key": "0001568245",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 5
+          },
+          {
+            "block_byte_end_exclusive": 3779,
+            "block_byte_start": 3135,
+            "cik": {
+              "byte_end_exclusive": 3287,
+              "byte_start": 3277,
+              "raw_value": "0001702221"
+            },
+            "cik_comparison_key": "0001702221",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 6
+          },
+          {
+            "block_byte_end_exclusive": 4312,
+            "block_byte_start": 3779,
+            "cik": {
+              "byte_end_exclusive": 3881,
+              "byte_start": 3871,
+              "raw_value": "0001445274"
+            },
+            "cik_comparison_key": "0001445274",
+            "name": {
+              "byte_end_exclusive": 3847,
+              "byte_start": 3834,
+              "raw_value": "VALERITAS INC"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 7
+          }
+        ],
+        "source_byte_end_exclusive": 4325,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001445274",
+        "issuer_element_byte_end_exclusive": 4815,
+        "issuer_element_byte_start": 4648,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 4686,
+            "byte_start": 4676,
+            "parsed_text": "0001445274",
+            "raw_xml_text": "0001445274"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 4732,
+            "byte_start": 4719,
+            "parsed_text": "VALERITAS INC",
+            "raw_xml_text": "VALERITAS INC"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 4779,
+            "byte_start": 4775,
+            "parsed_text": "VLRX",
+            "raw_xml_text": "VLRX"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 4815,
+        "issuer_prefix_byte_start": 4419,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-09-30"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001209191-19-051965",
+        "attempt_completed_utc": "2026-10-11T16:31:12.958103+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:10.199250+00:00",
+        "bytes": 23151,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1445274/000120919119051965/0001209191-19-051965.txt",
+        "case_id": "multi-cik-06",
+        "queue_ordinal": 11,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051965.receipt.json",
+        "sha256": "9412ae3770dc05611ec623fcc9266168c4c430625776ca575c156e70a58f21c7",
+        "source_tsv_record": 35378,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 23134,
+        "document_byte_start": 4326,
+        "filename": {
+          "byte_end_exclusive": 4375,
+          "byte_start": 4367,
+          "raw_value": "doc4.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 4344,
+          "byte_start": 4343,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 4356,
+          "byte_start": 4355,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 11,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-051965",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "02-OCT-2019",
+        "ISSUERCIK": "0001445274",
+        "ISSUERNAME": "VALERITAS INC",
+        "ISSUERTRADINGSYMBOL": "VLRX",
+        "case_id": "multi-cik-06",
+        "source_tsv_record": 35378
+      },
+      "source_id": "0001209191-19-051965",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-06",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-10-02T20:17:18-04:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191002201718"
+        },
+        "acceptance_utc": "2019-10-03T00:17:18+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001209191-19-051972"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191002"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191002"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 6,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 947,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 437,
+              "byte_start": 427,
+              "raw_value": "0001702352"
+            },
+            "cik_comparison_key": "0001702352",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1488,
+            "block_byte_start": 947,
+            "cik": {
+              "byte_end_exclusive": 1074,
+              "byte_start": 1064,
+              "raw_value": "0001528226"
+            },
+            "cik_comparison_key": "0001528226",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 2
+          },
+          {
+            "block_byte_end_exclusive": 2038,
+            "block_byte_start": 1488,
+            "cik": {
+              "byte_end_exclusive": 1624,
+              "byte_start": 1614,
+              "raw_value": "0001528224"
+            },
+            "cik_comparison_key": "0001528224",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 3
+          },
+          {
+            "block_byte_end_exclusive": 2599,
+            "block_byte_start": 2038,
+            "cik": {
+              "byte_end_exclusive": 2185,
+              "byte_start": 2175,
+              "raw_value": "0001528225"
+            },
+            "cik_comparison_key": "0001528225",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 4
+          },
+          {
+            "block_byte_end_exclusive": 3135,
+            "block_byte_start": 2599,
+            "cik": {
+              "byte_end_exclusive": 2745,
+              "byte_start": 2735,
+              "raw_value": "0001568245"
+            },
+            "cik_comparison_key": "0001568245",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 5
+          },
+          {
+            "block_byte_end_exclusive": 3779,
+            "block_byte_start": 3135,
+            "cik": {
+              "byte_end_exclusive": 3287,
+              "byte_start": 3277,
+              "raw_value": "0001702221"
+            },
+            "cik_comparison_key": "0001702221",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 6
+          },
+          {
+            "block_byte_end_exclusive": 4447,
+            "block_byte_start": 3779,
+            "cik": {
+              "byte_end_exclusive": 3891,
+              "byte_start": 3881,
+              "raw_value": "0001619250"
+            },
+            "cik_comparison_key": "0001619250",
+            "name": {
+              "byte_end_exclusive": 3857,
+              "byte_start": 3834,
+              "raw_value": "Valeritas Holdings Inc."
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 7
+          }
+        ],
+        "source_byte_end_exclusive": 4460,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001619250",
+        "issuer_element_byte_end_exclusive": 4960,
+        "issuer_element_byte_start": 4783,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 4821,
+            "byte_start": 4811,
+            "parsed_text": "0001619250",
+            "raw_xml_text": "0001619250"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 4877,
+            "byte_start": 4854,
+            "parsed_text": "Valeritas Holdings Inc.",
+            "raw_xml_text": "Valeritas Holdings Inc."
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 4924,
+            "byte_start": 4920,
+            "parsed_text": "VLRX",
+            "raw_xml_text": "VLRX"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 4960,
+        "issuer_prefix_byte_start": 4554,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-09-30"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001209191-19-051972",
+        "attempt_completed_utc": "2026-10-11T16:31:16.260551+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:12.958339+00:00",
+        "bytes": 23296,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1619250/000120919119051972/0001209191-19-051972.txt",
+        "case_id": "multi-cik-06",
+        "queue_ordinal": 12,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051972.receipt.json",
+        "sha256": "225a0b40030f4bf40047a45c8b0b0c6b161dfb26c6e61e6f8634584851d88fc9",
+        "source_tsv_record": 34717,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 23279,
+        "document_byte_start": 4461,
+        "filename": {
+          "byte_end_exclusive": 4510,
+          "byte_start": 4502,
+          "raw_value": "doc4.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 4479,
+          "byte_start": 4478,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 4491,
+          "byte_start": 4490,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 12,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-051972",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "02-OCT-2019",
+        "ISSUERCIK": "0001619250",
+        "ISSUERNAME": "Valeritas Holdings Inc.",
+        "ISSUERTRADINGSYMBOL": "VLRX",
+        "case_id": "multi-cik-06",
+        "source_tsv_record": 34717
+      },
+      "source_id": "0001209191-19-051972",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-07",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-12T09:41:21-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191112094121"
+        },
+        "acceptance_utc": "2019-11-12T14:41:21+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-020895"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191112"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191112"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 659,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 441,
+              "byte_start": 431,
+              "raw_value": "0001298504"
+            },
+            "cik_comparison_key": "0001298504",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1203,
+            "block_byte_start": 659,
+            "cik": {
+              "byte_end_exclusive": 770,
+              "byte_start": 760,
+              "raw_value": "0001262823"
+            },
+            "cik_comparison_key": "0001262823",
+            "name": {
+              "byte_end_exclusive": 736,
+              "byte_start": 714,
+              "raw_value": "WESTLAKE CHEMICAL CORP"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1216,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001262823",
+        "issuer_element_byte_end_exclusive": 1703,
+        "issuer_element_byte_start": 1528,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1566,
+            "byte_start": 1556,
+            "parsed_text": "0001262823",
+            "raw_xml_text": "0001262823"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1621,
+            "byte_start": 1599,
+            "parsed_text": "WESTLAKE CHEMICAL CORP",
+            "raw_xml_text": "WESTLAKE CHEMICAL CORP"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1667,
+            "byte_start": 1664,
+            "parsed_text": "WLK",
+            "raw_xml_text": "WLK"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1703,
+        "issuer_prefix_byte_start": 1299,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-08"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-020895",
+        "attempt_completed_utc": "2026-10-11T16:31:19.113128+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:16.260673+00:00",
+        "bytes": 4438,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1262823/000156761919020895/0001567619-19-020895.txt",
+        "case_id": "multi-cik-07",
+        "queue_ordinal": 13,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-020895.receipt.json",
+        "sha256": "d5ef4cd71e66f566fe30a2b90d5f7770cc67603e6c45b92f015bf87b5960af4b",
+        "source_tsv_record": 20686,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 1,
+        "document_byte_end_exclusive": 4421,
+        "document_byte_start": 1217,
+        "filename": {
+          "byte_end_exclusive": 1266,
+          "byte_start": 1258,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1235,
+          "byte_start": 1234,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1247,
+          "byte_start": 1246,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 13,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-020895",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "12-NOV-2019",
+        "ISSUERCIK": "0001262823",
+        "ISSUERNAME": "WESTLAKE CHEMICAL CORP",
+        "ISSUERTRADINGSYMBOL": "WLK",
+        "case_id": "multi-cik-07",
+        "source_tsv_record": 20686
+      },
+      "source_id": "0001567619-19-020895",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    },
+    {
+      "acceptance_precedes_2020_01_01_eastern": true,
+      "acceptance_precedes_information_cutoff": true,
+      "accession_prefix_used_as_issuer_identity": false,
+      "archive_directory_cik_used_as_identity_evidence": false,
+      "available_at": null,
+      "case_id": "multi-cik-07",
+      "comparisons": {
+        "header_accession_matches_queue": true,
+        "header_and_xml_issuer_cik_agree": true,
+        "header_filing_date_matches_queue": true,
+        "header_form_xml_form_and_queue_agree": true,
+        "header_issuer_cik_matches_queue": true,
+        "header_issuer_name_exactly_matches_queue": true,
+        "xml_cik_literal_has_same_zero_padding_as_queue": true,
+        "xml_issuer_cik_matches_queue": true,
+        "xml_issuer_name_exactly_matches_queue": true,
+        "xml_symbol_exactly_matches_queue": true
+      },
+      "effective_end": null,
+      "effective_start": null,
+      "header": {
+        "acceptance_eastern": "2019-11-12T15:04:36-05:00",
+        "acceptance_raw": {
+          "byte_end_exclusive": 138,
+          "byte_start": 124,
+          "raw_value": "20191112150436"
+        },
+        "acceptance_utc": "2019-11-12T20:04:36+00:00",
+        "accession": {
+          "byte_end_exclusive": 178,
+          "byte_start": 158,
+          "raw_value": "0001567619-19-021001"
+        },
+        "date_as_of_change": {
+          "byte_end_exclusive": 327,
+          "byte_start": 319,
+          "raw_value": "20191112"
+        },
+        "filed_as_of_date": {
+          "byte_end_exclusive": 298,
+          "byte_start": 290,
+          "raw_value": "20191112"
+        },
+        "form": {
+          "byte_end_exclusive": 207,
+          "byte_start": 206,
+          "raw_value": "4"
+        },
+        "reporting_owner_ciks_equal_to_issuer_count": 0,
+        "reporting_owner_role_count": 1,
+        "roles": [
+          {
+            "block_byte_end_exclusive": 659,
+            "block_byte_start": 329,
+            "cik": {
+              "byte_end_exclusive": 441,
+              "byte_start": 431,
+              "raw_value": "0001298504"
+            },
+            "cik_comparison_key": "0001298504",
+            "role": "REPORTING-OWNER",
+            "source_role_ordinal": 1
+          },
+          {
+            "block_byte_end_exclusive": 1222,
+            "block_byte_start": 659,
+            "cik": {
+              "byte_end_exclusive": 777,
+              "byte_start": 767,
+              "raw_value": "0001604665"
+            },
+            "cik_comparison_key": "0001604665",
+            "name": {
+              "byte_end_exclusive": 743,
+              "byte_start": 714,
+              "raw_value": "Westlake Chemical Partners LP"
+            },
+            "role": "ISSUER",
+            "source_role_ordinal": 2
+          }
+        ],
+        "source_byte_end_exclusive": 1235,
+        "source_byte_start": 50
+      },
+      "historical_security_link_created": false,
+      "known_at": null,
+      "ownership_xml": {
+        "date_of_original_submission_texts": [],
+        "document_type_text": "4",
+        "full_xml_validity_claimed": false,
+        "issuer_cik_comparison_key": "0001604665",
+        "issuer_element_byte_end_exclusive": 1729,
+        "issuer_element_byte_start": 1547,
+        "issuer_fields": {
+          "issuerCik": {
+            "byte_end_exclusive": 1585,
+            "byte_start": 1575,
+            "parsed_text": "0001604665",
+            "raw_xml_text": "0001604665"
+          },
+          "issuerName": {
+            "byte_end_exclusive": 1647,
+            "byte_start": 1618,
+            "parsed_text": "Westlake Chemical Partners LP",
+            "raw_xml_text": "Westlake Chemical Partners LP"
+          },
+          "issuerTradingSymbol": {
+            "byte_end_exclusive": 1693,
+            "byte_start": 1690,
+            "parsed_text": "WLK",
+            "raw_xml_text": "WLK"
+          }
+        },
+        "issuer_prefix_byte_end_exclusive": 1729,
+        "issuer_prefix_byte_start": 1318,
+        "parser_stopped_at_issuer_end": true,
+        "period_of_report_texts": [
+          "2019-11-12"
+        ],
+        "root_tag": "ownershipDocument"
+      },
+      "preservation_attempt": {
+        "accession": "0001567619-19-021001",
+        "attempt_completed_utc": "2026-10-11T16:31:22.923575+00:00",
+        "attempt_recorded_utc": "2026-10-11T16:31:19.113277+00:00",
+        "bytes": 16598,
+        "candidate_path_issuer_is_not_assumed_correct": true,
+        "candidate_url": "https://www.sec.gov/Archives/edgar/data/1604665/000156761919021001/0001567619-19-021001.txt",
+        "case_id": "multi-cik-07",
+        "queue_ordinal": 14,
+        "receipt_path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021001.receipt.json",
+        "sha256": "8cbe8fec9a0d7befbc8877bcfa772b2f16e29ade227b3a106ae9780dd91d45a3",
+        "source_tsv_record": 20680,
+        "status": "DOWNLOADED_ORIGINAL_WRAPPER_MATCHED"
+      },
+      "primary_document": {
+        "all_document_wrappers_count": 2,
+        "document_byte_end_exclusive": 5007,
+        "document_byte_start": 1236,
+        "filename": {
+          "byte_end_exclusive": 1285,
+          "byte_start": 1277,
+          "raw_value": "doc1.xml"
+        },
+        "form": {
+          "byte_end_exclusive": 1254,
+          "byte_start": 1253,
+          "raw_value": "4"
+        },
+        "matching_ownership_document_count": 1,
+        "sequence": {
+          "byte_end_exclusive": 1266,
+          "byte_start": 1265,
+          "raw_value": "1"
+        }
+      },
+      "queue_ordinal": 14,
+      "queued_public_source_occurrence": {
+        "ACCESSION_NUMBER": "0001567619-19-021001",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "12-NOV-2019",
+        "ISSUERCIK": "0001604665",
+        "ISSUERNAME": "Westlake Chemical Partners LP",
+        "ISSUERTRADINGSYMBOL": "WLK",
+        "case_id": "multi-cik-07",
+        "source_tsv_record": 20680
+      },
+      "source_id": "0001567619-19-021001",
+      "status": "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED"
+    }
+  ],
+  "request_policy": {
+    "alternate_paths": false,
+    "automatic_retries": 0,
+    "earlier_container_probe_reused": 1,
+    "minimum_seconds_between_request_starts": 0.6,
+    "stop_after_403": true,
+    "timeout_seconds": 30,
+    "user_agent": "Michael Baffour Awuah Disclosure-drift research https://github.com/michaelbawuah/Disclosure-drift",
+    "workers": 1
+  },
+  "schema_version": 1,
+  "selection_policy": "Every security with >1 distinct positive earlier CIK comparison key; earliest reported filing_date, then accession, then original TSV record per security/CIK; no uniqueness filtering or voting",
+  "selection_scope": "Pinned Mac selection regrouped all cohort summaries/observations and checked exact original SEC TSV lineage; this source collector rereads public queue and original public submissions only.",
+  "source_approvals_created": 0,
+  "source_receipts": {
+    "0000769993-19-000566": {
+      "bytes": 9215,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:53.024691+00:00",
+      "download_started_utc": "2026-10-11T16:30:50.142314+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/886982/000076999319000566/0000769993-19-000566.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0000769993-19-000566.txt",
+      "receipt_file": {
+        "bytes": 968,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0000769993-19-000566.receipt.json",
+        "sha256": "887e0c5cd2b6ab69486ad5f21d1d97bc9e1b7398927c032b71cc0c52c1dbbe9c"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "9215",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:52 GMT",
+        "ETag": "\"040570cbda662f4a8f38cc39dfa757b6-gzip\"",
+        "Last-Modified": "Mon, 25 Nov 2019 23:08:22 GMT"
+      },
+      "sha256": "162be38f6db6fa4664bf8d786f748c7a64aaa9fdac850c52495aa20397b29cc3",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000076999319000566/0000769993-19-000566.txt"
+    },
+    "0001104659-19-065541": {
+      "bytes": 9407,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:55.898400+00:00",
+      "download_started_utc": "2026-10-11T16:30:53.025527+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1634038/000110465919065541/0001104659-19-065541.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001104659-19-065541.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001104659-19-065541.receipt.json",
+        "sha256": "849eef6c4624b2d51a9756186aba2490adda8bfc77c87366e078eb14349a3065"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "9407",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:55 GMT",
+        "ETag": "\"53fd662281c4c0e82bf61c8858fa35e7-gzip\"",
+        "Last-Modified": "Tue, 19 Nov 2019 23:26:11 GMT"
+      },
+      "sha256": "0be7a847b0da1da79e7c5beaea86da1c2b184e251e8aa198793da5a60a296134",
+      "url": "https://www.sec.gov/Archives/edgar/data/1634038/000110465919065541/0001104659-19-065541.txt"
+    },
+    "0001209191-19-051965": {
+      "bytes": 23151,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:12.957518+00:00",
+      "download_started_utc": "2026-10-11T16:31:10.199294+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1445274/000120919119051965/0001209191-19-051965.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051965.txt",
+      "receipt_file": {
+        "bytes": 972,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051965.receipt.json",
+        "sha256": "ace65effd5557e8aaa1a3c20b55ef49504c95cc59eead7b67a0ee1dc47c7d28e"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "23151",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:12 GMT",
+        "ETag": "\"4ff14f7844164a545836f60b207b3daf-gzip\"",
+        "Last-Modified": "Wed, 02 Oct 2019 23:31:58 GMT"
+      },
+      "sha256": "9412ae3770dc05611ec623fcc9266168c4c430625776ca575c156e70a58f21c7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1445274/000120919119051965/0001209191-19-051965.txt"
+    },
+    "0001209191-19-051972": {
+      "bytes": 23296,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:16.260014+00:00",
+      "download_started_utc": "2026-10-11T16:31:12.958429+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1619250/000120919119051972/0001209191-19-051972.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051972.txt",
+      "receipt_file": {
+        "bytes": 972,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001209191-19-051972.receipt.json",
+        "sha256": "9582a18894ac39d1e098b4df8de4c6c22508fa02a03aaff5f5439758c22bc14c"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "23296",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:16 GMT",
+        "ETag": "\"9c012626becfa3eca3f6bc15aaed2f68-gzip\"",
+        "Last-Modified": "Thu, 03 Oct 2019 00:17:51 GMT"
+      },
+      "sha256": "225a0b40030f4bf40047a45c8b0b0c6b161dfb26c6e61e6f8634584851d88fc9",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619250/000120919119051972/0001209191-19-051972.txt"
+    },
+    "0001437749-19-021150": {
+      "bytes": 6456,
+      "download_completed_utc": "2026-10-11T16:29:13.270313+00:00",
+      "download_started_utc": "2026-10-11T16:29:09.595503+00:00",
+      "environment": "research_container",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/742126/000143774919021150/0001437749-19-021150.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "original_probe": {
+        "bytes": 977,
+        "path": "outputs/multi-cik-followup-20261011/container-probe-attempt.json",
+        "sha256": "4b3099271a3cacf9320f61a864518609d81ae394338269fcd7cedad02162b3c3"
+      },
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021150.txt",
+      "receipt_file": {
+        "bytes": 1093,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021150.receipt.json",
+        "sha256": "43e1b23088506899c15699bb661a989602e832919160d827bc8b21762446dba2"
+      },
+      "response_metadata": {
+        "Content-Length": "6456",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:29:13 GMT",
+        "ETag": "\"86b6af78fa623180b8e0dade566aea58-gzip\"",
+        "Last-Modified": "Fri, 01 Nov 2019 13:39:18 GMT"
+      },
+      "sha256": "c21a3b4b767eced4ac83966cf56674ad7bab5a19965a111200d2935e39e356ca",
+      "url": "https://www.sec.gov/Archives/edgar/data/742126/000143774919021150/0001437749-19-021150.txt"
+    },
+    "0001437749-19-021175": {
+      "bytes": 10768,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:42.180803+00:00",
+      "download_started_utc": "2026-10-11T16:30:37.616876+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1783400/000143774919021175/0001437749-19-021175.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021175.txt",
+      "receipt_file": {
+        "bytes": 972,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001437749-19-021175.receipt.json",
+        "sha256": "ab4c28fdeadcf36a365a458a9ab08358ef1b34c58a1d9cbb097c5baef8e4f88d"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "10768",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:42 GMT",
+        "ETag": "\"d5a771c4053f56686978726ffce41867-gzip\"",
+        "Last-Modified": "Fri, 01 Nov 2019 15:22:16 GMT"
+      },
+      "sha256": "8a710d7821fb51706f7e116ef0508e250075fec9d9ce03d4b476098b6eb5effc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783400/000143774919021175/0001437749-19-021175.txt"
+    },
+    "0001567619-19-019638": {
+      "bytes": 5541,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:01.738466+00:00",
+      "download_started_utc": "2026-10-11T16:30:58.739412+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1778784/000156761919019638/0001567619-19-019638.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019638.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019638.receipt.json",
+        "sha256": "3daf2bd4acf89e134b6a3e44584c45f88b2d173993fadfc3a2626ebd54711fdf"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "5541",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:01 GMT",
+        "ETag": "\"e002316d524fc68f0ad0fe791d3e4f3a-gzip\"",
+        "Last-Modified": "Wed, 16 Oct 2019 20:42:54 GMT"
+      },
+      "sha256": "2f0c3301ef9cc4107985a6ab18e8f9615967442570734df402fb8174a0e8e39b",
+      "url": "https://www.sec.gov/Archives/edgar/data/1778784/000156761919019638/0001567619-19-019638.txt"
+    },
+    "0001567619-19-019734": {
+      "bytes": 9073,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:10.198449+00:00",
+      "download_started_utc": "2026-10-11T16:31:06.636431+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1758730/000156761919019734/0001567619-19-019734.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019734.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-019734.receipt.json",
+        "sha256": "ea0198a26e467d4da0c946c46568bc95e6bd1d341fe8bd9daa25e33695efbf64"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "9073",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:10 GMT",
+        "ETag": "\"a23a11f1a5bcc9513b2a2689f041f3bd-gzip\"",
+        "Last-Modified": "Fri, 18 Oct 2019 20:06:25 GMT"
+      },
+      "sha256": "43204fde8861b605b7371748f2db2150678ad1a3f0a061e1ec524eec45f5f9dd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1758730/000156761919019734/0001567619-19-019734.txt"
+    },
+    "0001567619-19-020895": {
+      "bytes": 4438,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:19.112628+00:00",
+      "download_started_utc": "2026-10-11T16:31:16.260715+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1262823/000156761919020895/0001567619-19-020895.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-020895.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-020895.receipt.json",
+        "sha256": "43f1ce86d7b51d8ed956d282ee00f72a19cef83204a77cf307b98d959e739544"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "4438",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:19 GMT",
+        "ETag": "\"2e7bc61b7b588bc60ebaa8f0185d3449-gzip\"",
+        "Last-Modified": "Tue, 12 Nov 2019 14:41:46 GMT"
+      },
+      "sha256": "d5ef4cd71e66f566fe30a2b90d5f7770cc67603e6c45b92f015bf87b5960af4b",
+      "url": "https://www.sec.gov/Archives/edgar/data/1262823/000156761919020895/0001567619-19-020895.txt"
+    },
+    "0001567619-19-021001": {
+      "bytes": 16598,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:22.922999+00:00",
+      "download_started_utc": "2026-10-11T16:31:19.113318+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1604665/000156761919021001/0001567619-19-021001.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021001.txt",
+      "receipt_file": {
+        "bytes": 972,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021001.receipt.json",
+        "sha256": "48beebe9c962fdbf875857f2720e2f37b452fb3b587855494140f5180cabe9d9"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "16598",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:22 GMT",
+        "ETag": "\"8b8d82c709acaef107964ba7601b36b9-gzip\"",
+        "Last-Modified": "Tue, 12 Nov 2019 20:05:08 GMT"
+      },
+      "sha256": "8cbe8fec9a0d7befbc8877bcfa772b2f16e29ade227b3a106ae9780dd91d45a3",
+      "url": "https://www.sec.gov/Archives/edgar/data/1604665/000156761919021001/0001567619-19-021001.txt"
+    },
+    "0001567619-19-021775": {
+      "bytes": 10313,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:31:06.635471+00:00",
+      "download_started_utc": "2026-10-11T16:31:01.739116+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/98222/000156761919021775/0001567619-19-021775.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021775.txt",
+      "receipt_file": {
+        "bytes": 968,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021775.receipt.json",
+        "sha256": "4ae8860c52d0ca138d95d5ba15162776f19056414c28eedc8af542f7a77adbd1"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "10313",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:31:06 GMT",
+        "ETag": "\"c3799d7816083682ebbcb859a69f5498-gzip\"",
+        "Last-Modified": "Mon, 18 Nov 2019 22:19:11 GMT"
+      },
+      "sha256": "ba16ca0944b3532321005da20bf025564791245d4f79107d836c5f3614e24fdd",
+      "url": "https://www.sec.gov/Archives/edgar/data/98222/000156761919021775/0001567619-19-021775.txt"
+    },
+    "0001567619-19-021835": {
+      "bytes": 7453,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:58.737441+00:00",
+      "download_started_utc": "2026-10-11T16:30:55.899107+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1635840/000156761919021835/0001567619-19-021835.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021835.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-021835.receipt.json",
+        "sha256": "608f580010cd22c42e6c9253ef1d79678043d967f895bc83cf30e9d762c18a1b"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "7453",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:58 GMT",
+        "ETag": "\"a71d99b27589c172e29dc0d57fb97a2b-gzip\"",
+        "Last-Modified": "Tue, 19 Nov 2019 19:54:11 GMT"
+      },
+      "sha256": "e24d29a5599ba5f1150a931c1c0dcd81b0917edc030b5313764ff654a6892a26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1635840/000156761919021835/0001567619-19-021835.txt"
+    },
+    "0001567619-19-022199": {
+      "bytes": 11133,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:46.512538+00:00",
+      "download_started_utc": "2026-10-11T16:30:42.181578+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1435508/000156761919022199/0001567619-19-022199.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022199.txt",
+      "receipt_file": {
+        "bytes": 972,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022199.receipt.json",
+        "sha256": "e1441957b2086602422064f3ac07b890e5f36b244b89b028dd68df6d2c790850"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "11133",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:46 GMT",
+        "ETag": "\"0348cc35a90b03d62ebe0baa6c969875-gzip\"",
+        "Last-Modified": "Mon, 25 Nov 2019 22:13:32 GMT"
+      },
+      "sha256": "e1fd9f09fde80fb86e3b094a11afc94d1d4f2220e1e64f991302527df5279d09",
+      "url": "https://www.sec.gov/Archives/edgar/data/1435508/000156761919022199/0001567619-19-022199.txt"
+    },
+    "0001567619-19-022217": {
+      "bytes": 7408,
+      "collector_sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c",
+      "download_completed_utc": "2026-10-11T16:30:50.141439+00:00",
+      "download_started_utc": "2026-10-11T16:30:46.513310+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1751692/000156761919022217/0001567619-19-022217.txt",
+      "historical_availability_inferred": false,
+      "http_status": 200,
+      "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022217.txt",
+      "receipt_file": {
+        "bytes": 970,
+        "path": "outputs/multi-cik-followup-20261011/container-originals/0001567619-19-022217.receipt.json",
+        "sha256": "dce31d9ffd2524e116bb44276cdd96fa25d194b4814dd094eed3b99925a43baa"
+      },
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "7408",
+        "Content-Type": "text/plain",
+        "Date": "Sun, 11 Oct 2026 16:30:50 GMT",
+        "ETag": "\"d73e79fb97cff5c8371320fc1b7cd5d9-gzip\"",
+        "Last-Modified": "Mon, 25 Nov 2019 22:29:50 GMT"
+      },
+      "sha256": "993bd4b993b19472457b853600a8c9db1aba0f9fc107e872f867e1465210ef72",
+      "url": "https://www.sec.gov/Archives/edgar/data/1751692/000156761919022217/0001567619-19-022217.txt"
+    }
+  },
+  "status": "BOUNDED_MULTI_CIK_ORIGINAL_SOURCE_VALIDATION",
+  "summary": {
+    "acceptance_precedes_information_cutoff_count": 14,
+    "cases": 7,
+    "comparison_true_counts": {
+      "header_accession_matches_queue": 14,
+      "header_and_xml_issuer_cik_agree": 14,
+      "header_filing_date_matches_queue": 14,
+      "header_form_xml_form_and_queue_agree": 14,
+      "header_issuer_cik_matches_queue": 14,
+      "header_issuer_name_exactly_matches_queue": 14,
+      "xml_cik_literal_has_same_zero_padding_as_queue": 14,
+      "xml_issuer_cik_matches_queue": 14,
+      "xml_issuer_name_exactly_matches_queue": 14,
+      "xml_symbol_exactly_matches_queue": 14
+    },
+    "completed_47_case_overlap": 0,
+    "contributing_observation_rows": 129,
+    "contributing_unique_sec_occurrences": 129,
+    "header_reporting_owner_role_occurrences": 25,
+    "mac_http_403_attempts_preserved": 14,
+    "original_source_bytes": 154250,
+    "preserved_original_sources": 14,
+    "selected_original_sources": 14,
+    "status_counts": {
+      "ORIGINAL_ISSUER_CIK_SYMBOL_AND_NAMES_CONFIRMED": 14
+    },
+    "structured_issuer_inspections": 14
+  },
+  "vendor_identifiers_exported": false,
+  "vendor_names_rows_exported": false
+}
