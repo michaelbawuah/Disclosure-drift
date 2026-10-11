@@ -1,0 +1,80 @@
+{
+  "annual_names_rows_scanned": 86064,
+  "available_at": null,
+  "comparison_scope": "Saved January 1 Names occurrences; primaryexch and tradingstatusflg literal text only",
+  "complete_daily_interval_compared": false,
+  "created_at": "2026-10-11T10:25:30.947443+00:00",
+  "daily_market_files_opened": false,
+  "expected_annual_selection_years_within_interval": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "final_period_opened": false,
+  "historical_availability_supplied": false,
+  "known_at": null,
+  "listing_receipt_sha256": "698e3b280ac18a42bf11c0bc3b1cb2ecd10c701cfb4e1ab6f283066ecd28afc6",
+  "market_outcomes_read": false,
+  "missing_annual_selection_years_within_interval": [],
+  "model_ready": false,
+  "names_parts_verified": 18,
+  "observed_annual_selection_years_within_interval": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "original_names_csv_reread": false,
+  "original_names_source_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+  "other_release_fields_mapped": false,
+  "overlap_occurrences_matching_both_published_literals": 0,
+  "overlap_occurrences_with_ambiguous_names_snapshot": 0,
+  "overlap_occurrences_with_literal_disagreement": 4,
+  "prior_arithmetic_review_modified": false,
+  "prior_vintage_compared": false,
+  "private_occurrences_bytes": 18487,
+  "private_occurrences_sha256": "834be0e9fe1fc3c522108ed2ea065b78680766b32950b68e3b3cafbd0864401a",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "public_revision_case": {
+    "company_name": "WEATHERFORD INTERNATIONAL PLC",
+    "effective_end": "2019-05-12",
+    "effective_start": "2015-05-13",
+    "locator": "PDF page 3, Individual Edits, PERMNO 32791",
+    "permno": "32791",
+    "published_changes": {
+      "exchange_code": {
+        "from": "0",
+        "to": "1"
+      },
+      "primary_exchange": {
+        "from": "X",
+        "to": "N"
+      },
+      "security_status": {
+        "from": "X",
+        "to": "R"
+      },
+      "trading_status": {
+        "from": "X",
+        "to": "A"
+      }
+    },
+    "release_label_discrepancy": "August title; July data narrative; calendar extends through August; landing metadata observed as September 30. No saved vintage inferred.",
+    "saved_field_literal_comparisons": {
+      "primaryexch": "N",
+      "tradingstatusflg": "A"
+    },
+    "source_title": "CRSP US Stock Databases Release Notes: August 2026 Monthly Update",
+    "source_url": "https://indexes.morningstar.com/api/docs/6abeb4ad280ccc81416648b9"
+  },
+  "schema_version": 1,
+  "script_sha256": "8ee6189ad3b08333fe87ccbd13f4bd9fa53fb3d9e99fc7e3bbd76c261c3e17d9",
+  "source_approvals": 0,
+  "source_inventory_sha256": "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+  "source_vintage_identified": false,
+  "status": "SAVED_NAMES_PUBLIC_REVISION_COMPARISON_NOT_VINTAGE_IDENTIFICATION",
+  "target_annual_occurrences": 12,
+  "target_occurrences_outside_correction_interval": 8,
+  "target_occurrences_with_selection_in_correction_interval": 4
+}

@@ -1,0 +1,295 @@
+{
+  "cases": [
+    {
+      "acceptance_date": "2020-02-26",
+      "accession": "0000034088-20-000016",
+      "case_finding": "The original New Jersey registrant's cover associates its no-par common stock with XOM and NYSE. The source SGML CIK is 0000034088.",
+      "case_limit": "No PERMNO, GVKEY, historical CUSIP, or full validity interval is supplied by this cover.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 976,
+        "cache_metadata_sha256": "ec1e71f76466e87de7ca9822d790dcd8a1dc72f830ba1a26def4f2bb6d755182",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "82303a9e997292a84ab6ba0d3cb8802de32a7567b0905396165e45018c18cba4",
+        "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/0000034088-20-000016.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0000034088",
+          "filer_ordinal": 1,
+          "name": "EXXON MOBIL CORP"
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 32,
+      "original_filer_cik": "0000034088",
+      "primary_source": {
+        "bytes": 10165352,
+        "cache_metadata_sha256": "47bf07dc9184088c56b6e7364ea51d992709d7a4902894ee349ef7f6fe75a71e",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "f5120418b01ebacda2117688dd724b61c46a2da2b95bba6b8eaf56bdd413547b",
+        "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/xom10k2019.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2021-02-24",
+      "accession": "0000034088-21-000012",
+      "case_finding": "The original registrant again identifies XOM common stock. Separate listed notes have distinct symbols; the cover must not be flattened into one undifferentiated security.",
+      "case_limit": "Agreement with the preceding annual cover is corroboration at two filing observations, not proof of an uninterrupted historical mapping or its availability.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 976,
+        "cache_metadata_sha256": "b9148fb597d494e97d80457ae7b1701feaeb4a7453397ea53de3e167770adf8b",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "0fad7e809701bad1522e193923836b7a73b0cc2367e19d599c87f07489c58e9a",
+        "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000012/0000034088-21-000012.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0000034088",
+          "filer_ordinal": 1,
+          "name": "EXXON MOBIL CORP"
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 33,
+      "original_filer_cik": "0000034088",
+      "primary_source": {
+        "bytes": 6179202,
+        "cache_metadata_sha256": "cd0475099dc136e52ca7c56ce5226f4275f4049ee6f1519641560a72a370317a",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "684a7f95b2aefec6dbaa1fd941edd849cfb70a35455045da7dc7cae46b239d98",
+        "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000012/xom-20201231.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2021-02-12",
+      "accession": "0000040545-21-000011",
+      "case_finding": "GE's February 2021 cover distinguishes its GE common stock from the separately listed debt instruments.",
+      "case_limit": "The later July 2021 reverse-split notice is separate boundary evidence. This cover does not establish the future CUSIP change or independently recompute returns.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 754,
+        "cache_metadata_sha256": "a1395db74221ec4d7a2bcc2473eb369b0e5239ac8d8f361413305641ee37740b",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "b65f7185f8a788fd4830175eace0f706c18c50f1d88a95aba0a509ba745cc279",
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054521000011/0000040545-21-000011.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0000040545",
+          "filer_ordinal": 1,
+          "name": "GENERAL ELECTRIC CO"
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 45,
+      "original_filer_cik": "0000040545",
+      "primary_source": {
+        "bytes": 7228820,
+        "cache_metadata_sha256": "bff5b0bb9cdb35ad0cf7c53e3a656f635e50631cfa837a37fc2d92f3bec75bb1",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "9aed9066100d9581a63c3dc859642bb0736e854f0c6297d83de77d466bb80d58",
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054521000011/ge-20201231.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2020-07-24",
+      "accession": "0000320187-20-000047",
+      "case_finding": "The listed common security on NIKE's 2020 cover is specifically Class B, ticker NKE, on NYSE.",
+      "case_limit": "A generic common-stock match must preserve Class B. Cover text alone does not identify the corresponding vendor PERMNO or historical selection eligibility.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 852,
+        "cache_metadata_sha256": "424ca7ba58e01e56e1335e4f8a9730e72332f7a4f25e1591cc58663e81d86355",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "a75f029b362ef280ed76e2e93e19212c84c01b81736d07b0d35618f4d6226966",
+        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018720000047/0000320187-20-000047.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0000320187",
+          "filer_ordinal": 1,
+          "name": "NIKE, Inc."
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 116,
+      "original_filer_cik": "0000320187",
+      "primary_source": {
+        "bytes": 3944835,
+        "cache_metadata_sha256": "92de598826c9e8c08d9550ae787e81d75e1674aee87a2ca8f36a61820f580f31",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "542ee1d0bb352b9f03c247879da168c5fc77e0211bb5a8532cfbd2c329e28195",
+        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018720000047/nke-531202010k.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2020-01-30",
+      "accession": "0001166691-20-000008",
+      "case_finding": "The combined cover assigns the registered instruments to Comcast. Its common security is Class A under CMCSA on NASDAQ; debt has other symbols. NBCUniversal's separate Section 12(b) and 12(g) lines state none.",
+      "case_limit": "The two original SGML filers remain distinct. NBCUniversal CIK 0000902739 cannot inherit Comcast's CMCSA security merely by sharing this filing. No vendor mapping is approved.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 1581,
+        "cache_metadata_sha256": "e4d6488c95e80cf10a77c1eabb061fbbded3fbb26123ad1f5476cbe60ea523d4",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "c6566dd621af640f37d56511c7d1a74e6fb765905c94752e94a5064d4aa3561d",
+        "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669120000008/0001166691-20-000008.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0001166691",
+          "filer_ordinal": 1,
+          "name": "COMCAST CORP"
+        },
+        {
+          "cik": "0000902739",
+          "filer_ordinal": 2,
+          "name": "NBCUniversal Media, LLC"
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 200,
+      "original_filer_cik": "0001166691",
+      "primary_source": {
+        "bytes": 6699732,
+        "cache_metadata_sha256": "7193c6cf11e5f6386a4445573a968a162a823e39420940fb3b1969a0ac7f2672",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "ee78ff43dc49a77852f60e181aead638926b4815814d54049783b38b9ec13fca",
+        "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669120000008/cmcsa-12312019x10k.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2020-11-19",
+      "accession": "0001403161-20-000070",
+      "case_finding": "Visa lists Class A as V on NYSE under Section 12(b). Its Class B and Class C securities are listed separately under Section 12(g); the cover also states that they lack an established public trading market.",
+      "case_limit": "Classes B and C must not be assigned the listed Class A return series. This supports a class-specific candidate review without establishing a PERMNO or historical known_at.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 858,
+        "cache_metadata_sha256": "157b81a21afed7793b7e3e2dc5f024af16a9aeca5f224de627c72140d979a948",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "02a7ef0fc8584b81d87b7b8aee65481b6288e77c75d6ccf0364b797b69acc3cd",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316120000070/0001403161-20-000070.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0001403161",
+          "filer_ordinal": 1,
+          "name": "VISA INC."
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 208,
+      "original_filer_cik": "0001403161",
+      "primary_source": {
+        "bytes": 4349106,
+        "cache_metadata_sha256": "cdbfcca2e4f567e48d973af0134d72d0cd36b1b6c2896200b518e82cc5fc16cc",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "7364aee56479aa0f0667ee584ef34a128f81d2743abf05b580ca041f01dbb1cf",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316120000070/v-20200930.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    },
+    {
+      "acceptance_date": "2019-11-20",
+      "accession": "0001744489-19-000225",
+      "case_finding": "Disney's first saved 2019 filing under CIK 0001744489 identifies DIS common stock on NYSE.",
+      "case_limit": "This does not authorize splicing the earlier Disney registrant into a predecessor pair or projecting the new registrant backward before the acquisition/reorganization.",
+      "cover_full_document_visual_review": false,
+      "header_source": {
+        "bytes": 987,
+        "cache_metadata_sha256": "fe7d65323bd90b4152403558ea20582befcb8cc61ca13f1084e6d2ffe4acee26",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "0e1b01a1584c88e374c891a7e8bb950880ee01faaf347fe4f65d930be49f4a7b",
+        "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448919000225/0001744489-19-000225.hdr.sgml"
+      },
+      "independent_cover_lexical_checks_pass": true,
+      "independently_observed_sgml_filers": [
+        {
+          "cik": "0001744489",
+          "filer_ordinal": 1,
+          "name": "Walt Disney Co"
+        }
+      ],
+      "known_at": null,
+      "manifest_csv_record": 214,
+      "original_filer_cik": "0001744489",
+      "primary_source": {
+        "bytes": 7454733,
+        "cache_metadata_sha256": "7a5dd204d6c7a5a4f0d9dc92f74fcbe824ad4d7418af443eef26d8e400decda4",
+        "original_bytes_reread_for_this_inspection": true,
+        "sha256": "c258e34a3c49474048a85d762f85f0679e664032339ef76e7c2c160ee2e33f62",
+        "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448919000225/fy2019q410k.htm"
+      },
+      "security_link_created": false,
+      "supported_link_valid_from": null,
+      "supported_link_valid_to": null
+    }
+  ],
+  "complete_evidence": {
+    "compressed_bytes": 12843,
+    "compressed_sha256": "fdbdd9e118e6954d6b44755716505c079065a6174b35fb151c067d3b796ba6f9",
+    "decompressed_bytes": 159461,
+    "decompressed_sha256": "ab999c088e7d3540accd13b9ae7bad4c62fd6a069f04dbba6e66cd375de32e2f",
+    "path": "reports/sec_cover_case_evidence.json.gz"
+  },
+  "executed_at_utc": "2026-10-11T10:20:48.153386+00:00",
+  "execution_environment": "Research workspace with preserved original SEC primary, SGML header, and cache metadata bytes; this source reread did not run on the Mac.",
+  "execution_script_sha256": "3d9594bcd2122e162ad9423b9f8be29c49cbc4d1caf11e83c1dbd0cdb6991b97",
+  "final_period_opened": false,
+  "historical_availability_supplied": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "market_returns_read": false,
+  "method": "Separate Python standard-library HTMLParser reading aid and raw-SGML regular expressions; entire source bodies and metadata rehashed against the frozen report. Production identity/extraction helpers were not imported.",
+  "model_ready": false,
+  "prior_arithmetic_review_modified": false,
+  "private_vendor_rows_read": false,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "reviewer": "ChatGPT research assistant",
+  "reviewer_type": "assistant",
+  "schema_version": 1,
+  "scope": "Original filer identity and bounded cover-text corroboration at recorded filing observations; no continuous historical link, vendor mapping or point-in-time availability certification.",
+  "selection_reason": "Identity ambiguities and share-class/source-context examples selected from the existing report, without access to vendor returns or model outcomes.",
+  "separate_process_rerun": {
+    "evidence_identical_except_execution_timestamp": true,
+    "executed_at_utc": "2026-10-11T10:26:42.740219+00:00",
+    "execution_script_sha256": "3d9594bcd2122e162ad9423b9f8be29c49cbc4d1caf11e83c1dbd0cdb6991b97",
+    "original_source_bytes_rehashed": true,
+    "result_sha256": "91d7ad43a9da71cec6701ffaf9daab190b96747a2dfffa293df602443a1c15dc"
+  },
+  "source_approvals": 0,
+  "source_report_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+  "status": "BOUNDED_ORIGINAL_SEC_COVER_CORROBORATION_NOT_VENDOR_MAPPING_APPROVAL",
+  "summary": {
+    "filer_observations": 8,
+    "filings": 7,
+    "headers_reread": 7,
+    "primary_documents_reread": 7
+  }
+}

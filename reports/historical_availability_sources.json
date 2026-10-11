@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "status": "PUBLIC_DOCUMENTATION_RESEARCH_NO_SOURCE_APPROVAL",
+  "recorded_at": "2026-10-11T10:25:04.420532+00:00",
+  "reviewer": "ChatGPT research assistant",
+  "reviewer_type": "assistant",
+  "contract_baseline_commit": "af4d33273ae6ab1e1b0926ddd0c8c65bdc761abd",
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "contract_files_sha256": {
+    "protocol.md": "225a10ce0c6ff331c968270681e3db30b2d842f8f4b5519cf81b5dac935dbdd4",
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "src/disclosure_research/universe.py": "eabc76ff98a91355e4561c2d7285c8eda1842817f0ada97a7c11f870717721e2",
+    "src/disclosure_research/dataset.py": "0bbd24e0bd98fca2e60fdac994c5d303e4b89cee366b0a9e85f5f016dd5e22e3",
+    "docs/historical_dataset.md": "89ff5dc77f5af35fde17cb08d4bc37cb1ccf06a91bbbe02ba785f3397ec4b191"
+  },
+  "scope": "Official public documentation, existing local contract, and the aggregate receipt from a bounded saved-Names comparison; no vendor session/query, licensed export, daily market values, or empirical outcomes.",
+  "sources": [
+    {
+      "id": "company_history",
+      "title": "CRSP Company History dictionary",
+      "url": "https://www.crsp.org/wp-content/uploads/ccm_files/CompanyHistory.html",
+      "locator": "Rows 2-7: HCHGDT, HCHGENDDT, LPERMNO, LPERMCO, LINKRANGETYPECD, HCIK; row 1 GVKEY",
+      "observed_date_utc": "2026-10-11",
+      "supports": "Historical CIK and effective description intervals are documented.",
+      "limits": "No first-observation/delivery timestamp is identified; access, exact delivered schema, coverage, revisions, and historical known_at are not established.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    },
+    {
+      "id": "historical_delivery",
+      "title": "NYSE Daily TAQ to CRSP Link, version 1.1, February 2022",
+      "url": "https://wrds-www.wharton.upenn.edu/documents/1336/NYSE_Daily_TAQ_to_CRSP_Linking_BPNFjWm.pdf",
+      "locator": "Page 3: Access and Updates, footnote 6; page 2 CUSIP date1/date2 semantics",
+      "observed_date_utc": "2026-10-11",
+      "supports": "The guide gives a 2-3-month CRSP Monthly lag and December 2019 delivery in February 2020; separate TAQ master-file dates concern first/last reporting of a CUSIP.",
+      "limits": "Not a universal per-field historical lag rule or a CIK crosswalk; does not assign daily available_at or establish all years fail the 40-of-60 criterion.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    },
+    {
+      "id": "development_revision",
+      "title": "CRSP US Stock Databases Release Notes, August 2026 Monthly Update",
+      "url": "https://indexes.morningstar.com/docs/release-note/crsp-us-stock-database-release-notes-august-2026-monthly?isRdp=true",
+      "locator": "PDF page 3 Individual Edits, PERMNO 32791; pages 1-2 date-label context; landing effective date",
+      "observed_date_utc": "2026-10-11",
+      "supports": "The vendor documents corrected classifications and restored market history in a 2015-2019 interval.",
+      "limits": "No saved project row is proved affected and no export vintage is identified. Conflicting release labels remain unresolved.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED",
+      "document_url": "https://indexes.morningstar.com/api/docs/6abeb4ad280ccc81416648b9"
+    },
+    {
+      "id": "release_calendar",
+      "title": "CRSP Research Data Products Release Calendar 2026-2028",
+      "url": "https://indexes.morningstar.com/docs/other-documents/morningstar-crsprdp-release-calendar?isRdp=true",
+      "locator": "PDF page 1 stock/index and CCM monthly/quarterly/annual schedules",
+      "observed_date_utc": "2026-10-11",
+      "supports": "Stock/index and CCM products have distinct scheduled releases.",
+      "limits": "The calendar is not a historical record of 2010-2021 per-row delivery, WRDS ingestion, or this export's actual release.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED",
+      "document_url": "https://indexes.morningstar.com/api/docs/6a722e32b8c2e6f34dbe0b93"
+    },
+    {
+      "id": "ciz_recalculation",
+      "title": "CRSP SIZ-to-CIZ mapping types",
+      "url": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_MT.html",
+      "locator": "Recalc and ConvChange entries",
+      "observed_date_utc": "2026-10-11",
+      "supports": "The provider documents convention changes and recalculation, including legacy single versus CIZ double precision.",
+      "limits": "Does not identify the cause or acceptable tolerance of the saved benchmark differences or certify availability.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    },
+    {
+      "id": "ciz_date_semantics",
+      "title": "CRSP SIZ-to-CIZ mapping subtypes",
+      "url": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_MU.html",
+      "locator": "DelistConvDaily, DelistConvDaily_Date, IndexReturn and SECurityRet entries",
+      "observed_date_utc": "2026-10-11",
+      "supports": "The provider documents changed event placement and recalculated security/index values.",
+      "limits": "Date placement, economic effectiveness, first information availability, and source release are different quantities.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    },
+    {
+      "id": "snapshot",
+      "title": "WRDS/S&P Compustat webinar",
+      "url": "https://wrds-www.wharton.upenn.edu/documents/2180/WRDS_SP_Webinar_Feb_002.pdf",
+      "locator": "Slides 21-22: Product offerings and Compustat Snapshot",
+      "observed_date_utc": "2026-10-11",
+      "supports": "Snapshot preserves iterations and uses product-delivery timing; item appearance history is described.",
+      "limits": "Required CIK/classification coverage and account entitlement are unverified; this does not establish CRSP price/volume vintages.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    },
+    {
+      "id": "sec_filing_availability",
+      "title": "SEC Webmaster Frequently Asked Questions",
+      "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+      "locator": "Filing acceptance-to-website lag and EDGAR timestamp questions",
+      "observed_date_utc": "2026-10-11",
+      "supports": "Acceptance and first public website availability differ; the lag is not guaranteed.",
+      "limits": "The existing documented filing assumption remains permitted; this does not supply market-universe availability or historical security mappings.",
+      "raw_document_sha256": null,
+      "raw_document_hash_status": "ORIGINAL_BODY_BYTES_NOT_ARCHIVED"
+    }
+  ],
+  "public_revision_case": {
+    "source_id": "development_revision",
+    "permno": "32791",
+    "company_name_as_printed": "WEATHERFORD INTERNATIONAL PLC",
+    "effective_interval_start": "2015-05-13",
+    "effective_interval_end": "2019-05-12",
+    "changes": [
+      {
+        "source_field_label": "exchange code",
+        "before": "0",
+        "after": "1"
+      },
+      {
+        "source_field_label": "primary exchange",
+        "before": "X",
+        "after": "N"
+      },
+      {
+        "source_field_label": "trading status",
+        "before": "X",
+        "after": "A"
+      },
+      {
+        "source_field_label": "security status",
+        "before": "X",
+        "after": "R"
+      }
+    ],
+    "market_history_action": "restored",
+    "source_schema_mapping_approved": false,
+    "saved_rows_proven_changed": false,
+    "release_labels": {
+      "document_title": "August 2026 Monthly Update",
+      "narrative_and_file_version_data_month": "July 2026",
+      "calendar_daily_end": "2026-08-31",
+      "landing_effective_date": "2026-09-30"
+    },
+    "release_labels_reconciled": false,
+    "saved_export_release": null,
+    "bounded_follow_up": "The bounded saved-Names comparison is complete and recorded separately. Its four literal disagreements require source reconciliation; neither cause nor source vintage is inferred."
+  },
+  "obtainable_evidence_request": {
+    "delivery_status": "NOT_SENT",
+    "historical_identity_fields": [
+      "HCIK",
+      "HCHGDT",
+      "HCHGENDDT",
+      "GVKEY",
+      "LPERMNO",
+      "LPERMCO",
+      "LINKRANGETYPECD"
+    ],
+    "field_names_status": "OFFICIAL_DICTIONARY_FIELDS; ACTUAL_AUTHORIZED_WRDS_SCHEMA_OR_DOCUMENTED_EQUIVALENTS_REQUIRED",
+    "coverage": "2010-2021 January 1 selections and development events, with necessary interval boundary records and original open/missing markers.",
+    "source_version_evidence": [
+      "actual product/library/view",
+      "original package or release identifier",
+      "data-cut date",
+      "vendor release/readme/manifest",
+      "preserved query and parameters",
+      "exact preserved source-file hash",
+      "separate WRDS ingestion and researcher retrieval timestamps",
+      "whether successive releases revise earlier records"
+    ],
+    "availability_semantics": [
+      "economic effective interval",
+      "first vendor observation",
+      "first product delivery",
+      "record correction/revision",
+      "date timezone and precision",
+      "field-specific preserved versions or documented conservative bounds"
+    ],
+    "daily_inputs_evidence": [
+      "price and volume definitions and units",
+      "adjustment conventions",
+      "availability of the specific used observations",
+      "revision policy",
+      "preserved earlier versions or a compatible contemporaneous source"
+    ]
+  },
+  "interpretation": {
+    "vendor_delivery_can_be_after_market_observation": true,
+    "fact_availability_contract_requires_crsp_as_only_channel": false,
+    "underlying_market_information_alternative_requires_compatible_source_evidence": true,
+    "general_lag_proves_all_years_fail_minimum": false,
+    "company_effective_dates_fill_known_at": false,
+    "current_guide_or_download_date_fills_available_at": false,
+    "filing_documented_assumption_route_preserved": true,
+    "universe_assumption_route_added": false,
+    "retrospective_design_is_current_protocol_completion": false
+  },
+  "actions": {
+    "new_known_at_values": 0,
+    "new_available_at_values": 0,
+    "new_source_approvals": 0,
+    "new_human_reviews": 0,
+    "external_messages_sent": 0,
+    "vendor_queries": 0,
+    "raw_returns_read": false,
+    "final_period_opened": false,
+    "protocol_changed": false
+  },
+  "saved_names_comparison": {
+    "public_report_path": "reports/historical_revision_case.json",
+    "public_report_sha256": "802142c792a7596de8151608d9e8013d8ca6533bcb4143343590a9bb5c55b7ae",
+    "execution_record": {
+      "status": "SAVED_NAMES_PUBLIC_REVISION_COMPARISON_NOT_VINTAGE_IDENTIFICATION",
+      "created_at": "2026-10-11T10:25:30.947443+00:00",
+      "names_parts_verified": 18,
+      "annual_names_rows_scanned": 86064,
+      "target_annual_occurrences": 12,
+      "target_occurrences_with_selection_in_correction_interval": 4,
+      "target_occurrences_outside_correction_interval": 8,
+      "expected_annual_selection_years_within_interval": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "observed_annual_selection_years_within_interval": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "missing_annual_selection_years_within_interval": [],
+      "overlap_occurrences_matching_both_published_literals": 0,
+      "overlap_occurrences_with_literal_disagreement": 4,
+      "overlap_occurrences_with_ambiguous_names_snapshot": 0,
+      "comparison_scope": "Saved January 1 Names occurrences; primaryexch and tradingstatusflg literal text only",
+      "script_sha256": "8ee6189ad3b08333fe87ccbd13f4bd9fa53fb3d9e99fc7e3bbd76c261c3e17d9",
+      "listing_receipt_sha256": "698e3b280ac18a42bf11c0bc3b1cb2ecd10c701cfb4e1ab6f283066ecd28afc6",
+      "source_inventory_sha256": "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+      "original_names_source_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+      "private_occurrences_sha256": "834be0e9fe1fc3c522108ed2ea065b78680766b32950b68e3b3cafbd0864401a",
+      "original_names_csv_reread": false,
+      "complete_daily_interval_compared": false,
+      "other_release_fields_mapped": false,
+      "prior_vintage_compared": false,
+      "daily_market_files_opened": false,
+      "market_outcomes_read": false,
+      "source_vintage_identified": false,
+      "historical_availability_supplied": false,
+      "known_at": null,
+      "available_at": null,
+      "source_approvals": 0,
+      "model_ready": false,
+      "final_period_opened": false
+    },
+    "meaning": "Four saved January 1 occurrences disagree with at least one corrected public literal. This is not a full-interval comparison, cause determination, unique vintage identification, or source approval. Licensed source rows are not copied here."
+  },
+  "updated_at": "2026-10-11T10:26:52.707696+00:00"
+}
