@@ -1,5 +1,31 @@
 # Filing review on your Mac
 
+## October 11, 2026 (UTC): assistant review completed
+
+Michael Baffour Awuah authorized assistant source inspection of this packet.
+The [completed review](../reports/filing_review/assistant/README.md) covers all
+**73 filings**: 63 earlier records retain their original fields and timestamps,
+and 10 new source-backed reviews complete the assistant coverage. Open
+`reports/filing_review/assistant/index.html` to read the findings. You do not
+need to work through the 73 filings manually to finish these assistant checks.
+
+No human filing review was created in Michael's name. The completed **20/20
+user arithmetic and printed-timing review remains separate and credited**.
+Historical identity, source availability and the empirical evaluation gates
+remain open requirements. The original pending packet and its generation
+receipt remain unchanged; the following instructions apply when someone
+conducts and records a separate personal review.
+
+The completed HTML report works on the Mac without the original processed
+source tables. The maintainer's `verify_assistant_filing_packet.py` command
+checks those table bindings as well as the portable files, so it requires the
+preserved research inputs; its optional source re-audit also needs the SEC cache.
+The full source audit was performed in the research workspace, while the Mac
+copy was checked for matching portable files, records and browser rendering.
+See the [verification record](../reports/filing_review/assistant_verification.json).
+
+## Open the original review form
+
 Open `reports/filing_review/index.html` from your local Disclosure-drift folder.
 The page works as a normal file: no server, terminal, WRDS session or manual
 JSON editing is needed to record your work. Original SEC links need an internet

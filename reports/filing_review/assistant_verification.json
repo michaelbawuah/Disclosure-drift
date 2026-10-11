@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-11T10:04:56.734767+00:00",
+  "source_commit": "176ba9f9b9dcee75c9161eecf374c3f2ac558f35",
+  "receipt_sha256": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+  "verifier_sha256": "3ce7d1a29f54a80ce6d51b72e4df6ffd405738306b2a792b06508f3361ba93b7",
+  "bundle_verification": {
+    "status": "ASSISTANT_FILING_PACKET_VERIFIED",
+    "receipt_sha256": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "packet_id": "ef9f2b4e9b22951c68872e7b3bf2e828914384d964d0da7b2c13b7b890eaf6d8",
+    "reviews_sha256": "5f7d5c34804573b78a585bdb6382079cff991cb09b80a8c13fefbfb6c74fae52",
+    "assistant_reviews": 73,
+    "preserved_prior_reviews": 63,
+    "new_assistant_reviews": 10,
+    "new_accessions": [
+      "0000040554-14-000023",
+      "0000050863-14-000020",
+      "0000050863-15-000015",
+      "0000050863-16-000105",
+      "0000050863-17-000012",
+      "0000200406-17-000006",
+      "0000200406-18-000005",
+      "0000200406-19-000009",
+      "0000200406-20-000010",
+      "0000200406-21-000008"
+    ],
+    "source_binding_files": 16,
+    "bundle_files": 15,
+    "original_sec_bytes_reread": false,
+    "source_audit_output": null,
+    "source_audit_summary": null,
+    "human_reviews_created": 0,
+    "source_approvals": 0,
+    "historical_security_links_created": 0,
+    "prior_arithmetic_review_modified": false,
+    "model_ready": false,
+    "final_period_opened": false
+  },
+  "incorrect_receipt_pin_rejected": true,
+  "ruff_repository_check": "passed",
+  "git_diff_whitespace_check": "passed",
+  "html_structure": {
+    "completed_filing_cards": 73,
+    "new_inspection_rows": 10,
+    "read_only": true,
+    "all_relative_links_resolve": true
+  },
+  "independent_artifact_review": {
+    "assistant_reviewer": "ChatGPT / review_reference_jnj",
+    "preserved_prior_eight_field_records": 63,
+    "new_boundary_and_timing_joins": 10,
+    "archived_original_files_byte_identical": 39,
+    "blocking_mismatches": 0,
+    "jnj_2021_reference_caution_preserved": true
+  },
+  "authoritative_source_audit": "assistant/execution.json",
+  "authoritative_source_audit_sha256": "b35fe4753b434e7777ce2684a2bf42cb9e26b7aefa98a46179a3816e79851ec7",
+  "full_test_suite": "Remote Research integrity checks runs make reproduce-full; see the bound evidence-commit CI status.",
+  "mac_sync": {
+    "completed_at": "2026-10-11T10:04:24.023303+00:00",
+    "head": "b404879cbcfe0ac2215c371fcdfb9910272a41ea",
+    "working_tree_clean": true,
+    "portable_bundle_files_verified": 15,
+    "assistant_records": 73,
+    "prior_records_preserved": 63,
+    "original_sec_bytes_reread_on_mac": false,
+    "full_source_verifier_on_mac": "Source tables absent from this checkout; full original-source audit was completed in the research workspace. Portable bundle is verified independently here.",
+    "layouts": [
+      {
+        "viewport": "desktop",
+        "width": 1440,
+        "height": 1100,
+        "scrollWidth": 1425,
+        "cards": 73,
+        "newRows": 10,
+        "title": "Disclosure Drift \u2014 completed assistant filing review",
+        "forms": 0,
+        "detail_expansion_pass": true,
+        "screenshot": "/tmp/disclosure-filing-review-3rv32yi9/desktop.png"
+      },
+      {
+        "viewport": "mobile",
+        "width": 390,
+        "height": 1050,
+        "scrollWidth": 375,
+        "cards": 73,
+        "newRows": 10,
+        "title": "Disclosure Drift \u2014 completed assistant filing review",
+        "forms": 0,
+        "detail_expansion_pass": true,
+        "screenshot": "/tmp/disclosure-filing-review-3rv32yi9/mobile.png"
+      }
+    ],
+    "qa_directory": "/tmp/disclosure-filing-review-3rv32yi9"
+  },
+  "browser_render_check": {
+    "status": "passed",
+    "browser": "Actual isolated Google Chrome on the Mac",
+    "viewports": [
+      "1440x1100",
+      "390x1050"
+    ],
+    "visual_inspection": "Both screenshots inspected; readable layout, no clipped text or page-level horizontal overflow. Details open and all 73 cards are present.",
+    "existing_browser_profile_modified": false
+  },
+  "human_reviews_created": 0,
+  "market_returns_read": false,
+  "model_ready": false,
+  "final_period_opened": false,
+  "evidence_commit": "b404879cbcfe0ac2215c371fcdfb9910272a41ea",
+  "remote_ci": {
+    "id": 38130473897,
+    "head_sha": "b404879cbcfe0ac2215c371fcdfb9910272a41ea",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38130473897",
+    "updated_at": "2026-10-11T10:03:46Z"
+  }
+}

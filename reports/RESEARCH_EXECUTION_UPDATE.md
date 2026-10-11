@@ -33,6 +33,28 @@ zero human reviews. See the [Mac guide](../docs/filing_review.md),
 [bound execution receipt](filing_review/execution.json) and
 [implementation verification](filing_review/verification.json).
 
+**October 11 assistant-review completion:** With Michael Baffour Awuah's
+authorization, assistant boundary/timing review now covers all **73 filings**.
+The [completion folder](filing_review/assistant/README.md) preserves the 63 prior
+records without changing their eight audit fields or review times and adds ten
+new source-backed passes. Separate source/timing inspection verifies 73 clocks,
+30 annual-pair relationships within the preserved cohort and 152 cached source
+bodies. No human review was created. The original pending packet and generation
+receipt remain unchanged; the user does not need to repeat these assistant
+checks manually. The existing 20/20 user numerical review remains credited.
+The [new source-audit execution](filing_review/assistant/execution.json) then
+reopened the original 155-filing cohort: 155 automated consistency passes,
+73 accepted assistant reviews, zero blocking issues, all 155 evidence IDs
+unchanged, and a byte-identical fixed 30-pair selection. It completed at
+`2026-10-11T09:55:36.521815+00:00` in 107.833 seconds.
+The completed bundle was also copied to the Mac, where its 15 portable file
+hashes, 73 assistant records and 63 preserved prior records matched. Actual
+isolated Chrome checks passed at 1440 and 390 pixels, including expandable
+review notes and no page-level horizontal overflow. Source tables were absent
+from that Mac checkout, so the original-byte audit is credited to the research
+workspace, not the Mac. The [completion verification](filing_review/assistant_verification.json)
+preserves this distinction and the evidence-commit CI status.
+
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
 final estimates, robustness interpretation and independent-person reproduction
@@ -62,7 +84,7 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Corroborate original SEC identities | **215 primary/header/acceptance checks; 218 filer observations; three co-filings; 1,494 lexical cover facts from 79 filings**. No approved security links | [Execution and reconciliation record](sec_identity_evidence_execution.json); [complete compressed evidence](sec_identity_evidence.json.gz); code `3a5b368`, completed `2026-10-11T01:49:28.800315+00:00` |
 | Inspect unmatched discovery context | **All 215 manifest records verified; 207 discovery matches; eight unmatched original Exxon filings**, subsequently bound to the original-source report | [Public discovery context](sec_identity_discovery_context.json); code `3a5b368`, completed `2026-10-11T01:51:48.599817+00:00` |
 | Build the portable filing-review page | **30 fixed pairs / 58 fixed filings; 24 matching reference cases; nine shared cases; 73 distinct filings**. Complete extracted risk text and original SEC links; no decisions created | [Packet receipt](filing_review/receipt.json); code `677eff5`, completed `2026-10-11T02:40:22.581723+00:00` |
-| Verify the current software | **893 tests passed; Ruff passed; complete synthetic study completed**. The 44 new filing-review cases preserve source and review gates. Actual isolated Mac Chrome checks passed for draft/export behavior and desktop/mobile layouts | [Current verification](filing_review/verification.json); [earlier verification baseline](execution_verification.json) |
+| Verify the review-page software checkpoint | **893 tests passed; Ruff passed; complete synthetic study completed**. The 44 new filing-review cases preserve source and review gates. Actual isolated Mac Chrome checks passed for draft/export behavior and desktop/mobile layouts | [Review-page verification](filing_review/verification.json); [earlier verification baseline](execution_verification.json) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
 API/header timestamp differences. The original SGML acceptance timestamp remains

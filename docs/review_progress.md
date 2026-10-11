@@ -1,5 +1,39 @@
 # Recorded review progress: original pilot evidence
 
+## October 11, 2026 (UTC): 73-filing assistant review completed
+
+Michael Baffour Awuah authorized the assistant to perform the remaining source
+checks. The [completion records](../reports/filing_review/assistant/README.md)
+cover **73 distinct filings** in the fixed-pair/reference packet. The 63 prior
+assistant records preserve all eight original audit fields, including
+`2026-10-10T18:10:19.375935+00:00`; ten new boundary reviews pass. Earlier records
+were neither rewritten nor assigned a new review time. No human review was
+created, and the user's existing 20/20 numerical review remains unchanged.
+
+The separate timing/source check covers **73/73 recorded clocks and session
+windows**, **30/30 same-CIK annual pairs and predecessor adjacency within the
+preserved 155-filing cohort**, and **152 rehashed cached source bodies**. It
+found no clock, pair-chronology or byte-binding failures. Six header-name
+differences remain documented: two Apple capitalization variants and four
+Home Depot punctuation variants. The check does not establish predecessor
+completeness outside that cohort or exact public dissemination times. See the
+[completion receipt](../reports/filing_review/assistant/receipt.json).
+
+The ten additional reviews inspect the substantive risk sections in GE 2014,
+Intel 2014–2017 and Johnson & Johnson 2017–2021. Johnson & Johnson 2021 retains
+a generic incorporated-by-reference caution: its pass covers the identified
+direct Item 1A text and does not certify unspecified referenced material.
+Page furniture and other source-specific limitations are retained in the notes.
+These are assistant textual source judgments, without a complete visual-layout
+or independent-human review claim.
+
+The original 73-pending packet and generation receipt remain historical records;
+the completed declarations are stored separately. This closes the assistant
+review checkpoint, while the empirical milestones 5–11 still require supported
+historical security/universe evidence, vendor vintage and availability, reviewed
+benchmark choice, and the remaining required judgments. The actual final period
+remains unopened.
+
 ## The user's completed numerical review is now recorded
 
 The researcher previously supplied an explicit verdict: **20 of 20 fixed traces
@@ -41,7 +75,7 @@ record uses explicit arithmetic/packet-structure verdicts: it does not silently
 insert a broader full-source trace approval into the legacy importer, or attribute
 the assistant's original-CSV inspection to the user.
 
-## Additional assistant source inspection
+## Earlier assistant source inspection: October 10, 2026 (UTC)
 
 The source investigation retains the fixed 30-pair sample: **58 distinct
 filings**. It also includes all **14 registered reference resolutions**. Nine
