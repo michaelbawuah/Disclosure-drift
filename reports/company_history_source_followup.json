@@ -1,0 +1,66 @@
+{
+  "authenticated_lookup": {
+    "browser_javascript_preferences_changed": false,
+    "credentials_read_or_entered": false,
+    "dictionary_schema_obtained": false,
+    "observation_relative_path": "data/private/wrds-intake/ccm-dictionary-access-20261011/access_observation.json",
+    "observation_sha256": "d4d337dc1356144a71f3fb498d0a23f8632787a04bb47bd1ede2b8dd5853eda6",
+    "observed_at_utc": "2026-10-11T16:28:02.129242+00:00",
+    "requested_url": "https://wrds-www-wharton-upenn-edu.proxy.library.cornell.edu/data-dictionary/crsp_a_ccm/",
+    "result": "CORNELL_SIGNIN_REQUIRED",
+    "subscription_entitlement_inferred": false
+  },
+  "final_period_outcomes_opened": false,
+  "historical_availability_supplied": false,
+  "historical_cik_export_obtained": false,
+  "human_reviews_created": 0,
+  "observations": {
+    "D_ItemDensity_FirstAvailable": "First date with nonmissing data; not a publication or delivery timestamp",
+    "formats": {
+      "CFZ": "Compustat data and CRSP links",
+      "CLZ": "Link data only"
+    },
+    "guide_date_identifies_saved_dataset_release": false,
+    "history_fields": [
+      "HCIK",
+      "HCHGDT",
+      "HCHGENDDT"
+    ],
+    "identifier_headers": [
+      "GVKEY",
+      "LPERMNO",
+      "LPERMCO",
+      "LinkRangeTypeCd"
+    ],
+    "native_filename": "Companyhistory",
+    "native_filename_is_verified_wrds_table_name": false
+  },
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "recorded_at_utc": "2026-10-11T16:31:02.516615+00:00",
+  "schema_version": 1,
+  "source": {
+    "bytes": 58774868,
+    "landing_url": "https://indexes.morningstar.com/docs/guide/crsp-compustat-merged-database-guide-for-sas-ascii-and-r?isRdp=true",
+    "pdf_pages": 500,
+    "preservation_completed_at_utc": "2026-10-11T16:30:32.373174+00:00",
+    "preservation_receipt_sha256": "8e4b365b067d0367b795eaf112f522c6a5306ff955c191ec0e3117a6b3ce0e2c",
+    "preservation_started_at_utc": "2026-10-11T16:30:25.613063+00:00",
+    "preserved_relative_path": "data/private/public-source-preservation/2026-10-11/company-history-guide/ccm-sas-ascii-r.pdf",
+    "rendered_pages_inspected": [
+      38,
+      39
+    ],
+    "sha256": "57487499440caf9101e20d87e495735b7ec7e34f4545d9c6dedb8177a8123a0e",
+    "text_pages_inspected": [
+      6,
+      9,
+      10,
+      38,
+      39
+    ],
+    "title": "CRSP/Compustat Merged Database Guide for SAS, ASCII, & R",
+    "url": "https://indexes.morningstar.com/api/docs/6a6114b9a66b920f8a81367d"
+  },
+  "source_approvals_created": 0,
+  "status": "NATIVE_COMPANY_HISTORY_DEFINITION_VERIFIED_EXPORT_PENDING"
+}

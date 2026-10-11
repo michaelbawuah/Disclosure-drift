@@ -87,6 +87,30 @@ availability or additional gates imposed by this note.
 
 ## The next obtainable input
 
+### Current native file confirmed; authenticated lookup needs sign-in
+
+The complete [2026 SAS, ASCII and R guide][current-full-guide] was retrieved and
+preserved on 11 October. Rendered pages **38–39** confirm the native filename
+`Companyhistory`, with `HCIK`, `HCHGDT`, `HCHGENDDT`, `GVKEY`, `LPERMNO`,
+`LPERMCO` and `LinkRangeTypeCd`. Page 6 distinguishes **CFZ** (Compustat and
+link data) from **CLZ** (link data only). This identifies a specific file to
+request; it does not establish a WRDS SQL table or this account's entitlement.
+Page 10's `D_ItemDensity.FirstAvailable` describes the first nonmissing data
+date, not when a historical fact became known. It cannot fill `known_at`.
+
+The ordinary authenticated lookup for the
+[annual CCM dictionary][annual-ccm-dictionary] reached Cornell's sign-in page
+at **16:28 UTC**. No dictionary schema or historical export was obtained.
+This is a fresh-session requirement, distinct from the separately observed
+`wrdssec_common` subscription denial. The exact PDF, preservation receipt and
+sanitized access observation are bound in the
+[follow-up ledger](../reports/company_history_source_followup.json).
+
+After sign-in, inspect the dictionary for the documented native history file
+and obtain the actual supported export name and schema. Preserve its metadata,
+effective-bound semantics, coverage and release evidence with the export.
+Neither the guide nor the login observation changes the existing source gates.
+
 Request **the authorized Company History schema and historical CIK export**, or
 an explicit answer that this product is unavailable. Ask for the dictionary
 fields in the first table row, histories covering the 2010–2021 annual selections
@@ -132,6 +156,8 @@ reference service, for coordination with the appropriate WRDS administrator.
 > to use suitable for historical CIK–GVKEY/PERMNO evidence?
 
 [company-history]: https://www.crsp.org/wp-content/uploads/ccm_files/CompanyHistory.html
+[current-full-guide]: https://indexes.morningstar.com/api/docs/6a6114b9a66b920f8a81367d
+[annual-ccm-dictionary]: https://wrds-www.wharton.upenn.edu/data-dictionary/crsp_a_ccm/
 [crsp-catalog]: https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/center-for-research-in-security-prices-crsp/
 [sec-suite]: https://wrds-www.wharton.upenn.edu/documents/1439/WRDS_SEC_Suite_PowerPoint_for_Video_Learning.pdf#page=22
 [historical-identifiers]: https://wrds-www.wharton.upenn.edu/pages/wrds-research/database-linking-matrix/using-compustat-historical-identifier-notebook/
