@@ -163,12 +163,21 @@ justify splicing predecessor filings into another CIK's annual pair.
 **Additional source lead:** the official
 [WRDS SEC Suite presentation, slide 22](https://wrds-www.wharton.upenn.edu/documents/1439/WRDS_SEC_Suite_PowerPoint_for_Video_Learning.pdf#page=22)
 describes `WCIKLINK_GVKEY` as a GVKEY-to-historical-CIK map useful around
-restructurings. Treat this as a concrete research lead. Access under the user's
-pass/account, the current namespace, delivered schema, coverage, date semantics
-and provenance have not been verified. Do not invent SQL, assume access, or
-treat the presentation as proof of an available historical observation. Any
-retrieved map would still need reconciliation against original SEC filings and
-security-level evidence.
+restructurings. The full historical CIK form was subsequently observed for
+product `wrdssec_common`, but displayed **Submit Form (Not Subscribed)** under
+the selected institution/session (user screenshots labeled 7.31.33 and 7.32.20,
+October 10, 2026). This is evidence of the observed access denial only; it does
+not establish that the day pass expired or a permanent institution-wide
+entitlement decision. No full historical CIK export was secured from that form.
+The images and `observation.json` are preserved locally under
+`data/private/wrds-intake/historical-cik-access-denied-v1`, with the observation
+recorded at `2026-10-10T23:49:57.814374Z`. That recording time is evidence of this
+access observation, not historical information availability.
+The actual table namespace, delivered schema, coverage, date semantics and
+provenance remain unverified. Do not invent SQL or treat the presentation as
+proof of an available historical observation. Any later retrieved map would
+still need reconciliation against original SEC filings and security-level
+evidence.
 
 ## 8. Historical `known_at` remains unresolved
 

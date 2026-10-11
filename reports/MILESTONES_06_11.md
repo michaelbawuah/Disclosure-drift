@@ -8,8 +8,11 @@
 evaluation and secondary-analysis stages. The actual empirical milestones are
 not complete. Development daily exports now cover the required source dates,
 and Names, combined CCM/company metadata and the independent benchmark are saved
-locally. Security-universe completeness, normalization and required source
-judgments remain outstanding. The user's 20/20 numerical review is complete.
+locally. The development source projection completed across all 3,103 expected
+sessions, and the revised numerical build produced 22,588,059 provisional
+candidate rows, with 52 benchmark dates still unreconciled. Security-universe
+completeness, approved normalization and required source judgments remain
+outstanding. The user's 20/20 numerical review is complete.
 
 The frozen primary protocol has not changed. Its hash is
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
@@ -22,7 +25,7 @@ in 2022–2025, and paired three-/six-month reference-month blocks.
 | Milestone | Delivered | Empirical requirement still open |
 |---|---|---|
 | **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
-| **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Verified security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
+| **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; completed source projection across all 3,103 expected sessions; 22,588,059 distinct provisional numerical rows; 86,064 dated Names snapshots; formal benchmark discrepancy audit; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Resolve 52 benchmark discrepancy dates; complete provisional liquidity processing; verify security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
 | **8: development and freeze** | Eight primary configurations over six development folds; six ablation subsets; actual MiniLM execution on 155 real filings / 135 pairs with full token coverage and numerical checks; code/data/review/selection freeze | Approved empirical development, human semantic example review, and a freeze of actual choices/evidence |
 | **9: final evaluation** | Four annual mature-label refits; paired incremental R-squared; 2,000-draw three-/six-month intervals; exact prediction artifacts; durable access ledger and changed-freeze refusal | Execute the approved freeze on the actual 2022–2025 observations; report the measured result |
 | **10: robustness** | Year/month/leave-one-year-out diagnostics; fixed size/industry groups; six frozen ablations; source-linked failures; independent delay rebuild APIs; descriptive paragraph comparison; verified-run orchestration | Execute all declared checks on empirical predictions and independently rebuilt delay data; inspect real cases; interpret limitations |
@@ -141,19 +144,75 @@ and matching source audit. Licensed market rows remain excluded from Git.
 - [Robustness methods](../docs/robustness.md)
 - [Semantic comparison](../docs/semantic_analysis.md)
 
-## Exact next empirical step
+## Actual development source processing
 
-Normalize and reconcile the locally preserved development exports documented in
-the [manual WRDS guide](../docs/wrds_daypass_export.md). The four daily batches
+Reconcile and review the staged development exports documented in the
+[manual WRDS guide](../docs/wrds_daypass_export.md) and
+[source-stage contract](../docs/wrds_manual_stage.md). The four daily batches
 cover the requested dates **October 7, 2009 through February 2, 2022**, including
 the first liquidity window and the late-2021 outcome tail. Names, combined
 CCM/company metadata and the independent benchmark are also preserved. Raw date
 coverage does not certify the complete historical security universe or produce
 model-ready inputs.
 
+The actual stage (`e431818`) completed at `2026-10-10T23:29:19.102375Z` in
+172.8 seconds with exit status 0. It preserved **23,007,130 daily records**,
+including **414,017 extra early records**, and covered all **3,103 expected
+sessions** for **22,593,113 requested records**. The output contains 1,277
+Parquet parts totaling 506,932,005 bytes, with no requested batch-date overlap.
+Of the requested rows, **22,216,260** attached benchmark values matched exactly
+and **376,853** differed across **52 dates**; there were no invalid or missing
+benchmark cells or within-date benchmark conflicts. The formal benchmark audit
+confirms absolute differences of 0.000001 on those dates, with cause unresolved and
+no tolerance accepted. These are benchmark comparisons, not identified errors
+in individual stock returns.
+
+The revised numerical build (`0d555a3`) succeeded at
+`2026-10-10T23:53:20.954933Z` after **373.15 seconds**, producing **22,588,059
+distinct 13-field candidate rows** in **91 parts / 1,587,431,523 bytes**. It
+removed **5,054 exact repeated-record excesses**, found **zero conflicting
+security/date keys**, and covered all 3,103 expected sessions with no missing or
+unexpected sessions. The 414,017 early records remain upstream. Return, USD
+capitalization and price-volume candidates retain unresolved flags and missing
+values explicitly; 80 `MV` rows remain withheld from return candidates and
+5,413 `Y` rows still require payoff/termination review. The first build (`e5e206`)
+failed after 41.38 seconds with an `OutOfMemoryException` under 1 GB and produced
+no successful bundle; the successful rerun used bounded monthly grouping at the
+same memory limit. The completed candidate output remains unapproved, with
+benchmark reconciliation false and no identity, availability, labels or forecasts.
+
+The Names build at `1418e0e` completed in **3.2 seconds**, creating **86,064
+annual snapshots** in 18 parts from 23,606 of the 191,048 original records. The
+narrow ordinary-corporate-common predicate identifies **50,777 candidate
+snapshots**. Every year has zero ambiguous security/year groups and zero exact
+24-field snapshot duplicate excesses; every output `known_at` remains null.
+Other scope-review categories are retained. These are dated classification
+candidates, with no CIK mapping, liquidity qualification, issuer ranking or
+source approval.
+
+The formal benchmark audit at the same commit completed in **37.11 seconds**.
+It independently rechecked all 22,593,113 requested rows against 3,103 market
+rows. All 52 mismatch dates differ by exactly 0.000001: the daily-attached value
+minus the independent value is positive on 21 and negative on 31. Both source
+literals have exponent -6 on those mismatch groups, without establishing vendor
+precision or cause. Diagnostic half-even rounding agrees on 51/52 dates at four
+decimals and 47/52 at five; all remain unequal at six or more tested decimals.
+No tolerance or replacement is accepted; reconciliation and explanation remain
+false. These findings and the annual Names counts are detailed in the
+[execution update](RESEARCH_EXECUTION_UPDATE.md#completed-formal-benchmark-audit).
+Annual provisional liquidity/rank processing remains pending and will create
+no approved universe by itself.
+
+## Exact next empirical step
+
 Review source units and return conventions, dated classifications, historical
-CIK links and source vintage/availability; reconcile the benchmark and explain
-full-sample coverage. Complete the source-bound human reviews against the
+CIK links and source vintage/availability; resolve the benchmark discrepancies
+and explain full-sample coverage. The full historical CIK form currently reports
+**Submit Form (Not Subscribed)** for product `wrdssec_common` under the observed
+institution/session; actual schema, access through other authorized routes and
+historical availability remain unresolved. This is not evidence that the day
+pass expired or a statement of permanent institutional entitlement. Complete
+the source-bound human reviews against the
 existing evidence, then run development and freeze the actual procedure.
 Holdout population price/volume and return collections remain separately gated;
 the actual 2022–2025 study has not been executed. The primary design and completed
