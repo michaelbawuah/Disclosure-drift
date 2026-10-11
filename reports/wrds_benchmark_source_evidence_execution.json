@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Aggregate execution record from the private Mac benchmark source-evidence packet; no licensed per-date values or security identifiers.",
+  "execution": {
+    "code_commit": "5bbfa2c8b5a7933f56d3bded3363baf28c999087",
+    "declared_output_bytes": 1841344,
+    "declared_output_files": 16,
+    "elapsed_seconds": 0.548,
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-11T00:55:20.317245+00:00",
+    "log_sha256": "a864ab3a291131c05bbd9be08faf2c78d71327900bad6632de58370b4cca373e",
+    "output_directory": "data/private/wrds-benchmark-source-evidence/development-v1",
+    "receipt_sha256": "527d04bb6760be5b692a6fcecd9e459612408ffa9055fe83e7c51398dd505294",
+    "schema_version": 1,
+    "started_at_utc": "2026-10-11T00:55:19.769187+00:00",
+    "task": "benchmark_source_evidence",
+    "declared_output_counts_exclude_receipt_itself": true
+  },
+  "verification": {
+    "focused_synthetic_tests_passed": 33,
+    "ruff": "passed",
+    "independent_assistant_code_review": "passed_after_required_caller_hash_validation_fix",
+    "new_human_or_vendor_approvals": 0
+  },
+  "summary": {
+    "audit_counts": {
+      "compared_daily_rows": 22593113,
+      "daily_dates_with_distinct_raw_texts": 0,
+      "exact_text_equal_rows": 22216260,
+      "mismatch_dates": 52,
+      "mismatching_date_source_pairs": 52,
+      "mismatching_raw_text_groups": 52,
+      "negative_difference_daily_rows": 227865,
+      "negative_difference_dates": 31,
+      "numeric_equal_rows": 22216260,
+      "numeric_equal_text_different_rows": 0,
+      "numeric_mismatch_rows": 376853,
+      "positive_difference_daily_rows": 148988,
+      "positive_difference_dates": 21
+    },
+    "audit_receipt_sha256": "593366dca43cdb299efcc41efd8705304df244b365043e47d61d24d49218cafc",
+    "exact_difference": {
+      "direction": "daily_attached_minus_independent_market",
+      "maximum_absolute": "0.000001",
+      "minimum_absolute": "0.000001"
+    },
+    "final_period_opened": false,
+    "full_daily_comparison_reexecuted": false,
+    "mismatch_detail_recomputed_exactly": true,
+    "mismatches_by_source_sha256": {
+      "1a3f6d1b2529a8b5cd706752914bebe89e65592149fb1e3123737b44230b3fe9": {
+        "daily_rows_affected": 104976,
+        "mismatch_dates": 15,
+        "negative_difference_dates": 6,
+        "positive_difference_dates": 9
+      },
+      "35332e5f93518bd7147fe0102136f9ed05fd58183a911d114172e6f5db84b19b": {
+        "daily_rows_affected": 13421,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 2,
+        "positive_difference_dates": 0
+      },
+      "a999dee515bc288ab0484522a3997c3d829b09a7c1591f97852b5b71e9fcb8ad": {
+        "daily_rows_affected": 94822,
+        "mismatch_dates": 14,
+        "negative_difference_dates": 8,
+        "positive_difference_dates": 6
+      },
+      "c5609c9375fca7cd8138efac54ef6e94ab1d53bd6b615479f041ec96c34d1a06": {
+        "daily_rows_affected": 163634,
+        "mismatch_dates": 21,
+        "negative_difference_dates": 15,
+        "positive_difference_dates": 6
+      }
+    },
+    "mismatches_by_year": {
+      "2009": {
+        "daily_rows_affected": 13421,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 2,
+        "positive_difference_dates": 0
+      },
+      "2010": {
+        "daily_rows_affected": 33477,
+        "mismatch_dates": 5,
+        "negative_difference_dates": 4,
+        "positive_difference_dates": 1
+      },
+      "2011": {
+        "daily_rows_affected": 47646,
+        "mismatch_dates": 7,
+        "negative_difference_dates": 2,
+        "positive_difference_dates": 5
+      },
+      "2012": {
+        "daily_rows_affected": 13699,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 2,
+        "positive_difference_dates": 0
+      },
+      "2013": {
+        "daily_rows_affected": 20300,
+        "mismatch_dates": 3,
+        "negative_difference_dates": 1,
+        "positive_difference_dates": 2
+      },
+      "2014": {
+        "daily_rows_affected": 55929,
+        "mismatch_dates": 8,
+        "negative_difference_dates": 4,
+        "positive_difference_dates": 4
+      },
+      "2015": {
+        "daily_rows_affected": 28747,
+        "mismatch_dates": 4,
+        "negative_difference_dates": 1,
+        "positive_difference_dates": 3
+      },
+      "2016": {
+        "daily_rows_affected": 14585,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 1,
+        "positive_difference_dates": 1
+      },
+      "2018": {
+        "daily_rows_affected": 14789,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 1,
+        "positive_difference_dates": 1
+      },
+      "2019": {
+        "daily_rows_affected": 15276,
+        "mismatch_dates": 2,
+        "negative_difference_dates": 1,
+        "positive_difference_dates": 1
+      },
+      "2020": {
+        "daily_rows_affected": 84864,
+        "mismatch_dates": 11,
+        "negative_difference_dates": 8,
+        "positive_difference_dates": 3
+      },
+      "2021": {
+        "daily_rows_affected": 34120,
+        "mismatch_dates": 4,
+        "negative_difference_dates": 4,
+        "positive_difference_dates": 0
+      }
+    },
+    "model_ready": false,
+    "prior_arithmetic_review_modified": false,
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "query_sql_executed": false,
+    "query_sql_semantics_certified": false,
+    "raw_source_csv_files_opened": false,
+    "reconciliation": {
+      "exact_observed_benchmark_values_equal": false,
+      "fallback_used": false,
+      "requested_window_numerically_reconciled": false,
+      "source_discrepancy_explained": false,
+      "source_replacement_used": false,
+      "tolerance_acceptance_used": false,
+      "upstream_requested_window_numerically_reconciled": false
+    },
+    "rounding_diagnostics": {
+      "acceptance_rule": false,
+      "decimal_places": {
+        "4": {
+          "equal_affected_daily_rows": 369452,
+          "equal_mismatch_dates": 51
+        },
+        "5": {
+          "equal_affected_daily_rows": 337841,
+          "equal_mismatch_dates": 47
+        },
+        "6": {
+          "equal_affected_daily_rows": 0,
+          "equal_mismatch_dates": 0
+        },
+        "7": {
+          "equal_affected_daily_rows": 0,
+          "equal_mismatch_dates": 0
+        },
+        "8": {
+          "equal_affected_daily_rows": 0,
+          "equal_mismatch_dates": 0
+        },
+        "10": {
+          "equal_affected_daily_rows": 0,
+          "equal_mismatch_dates": 0
+        },
+        "12": {
+          "equal_affected_daily_rows": 0,
+          "equal_mismatch_dates": 0
+        }
+      },
+      "diagnostic_only": true,
+      "mode": "ROUND_HALF_EVEN applied separately to both exact source decimals",
+      "scope": "exactly mismatching requested dates and their repeated daily rows only",
+      "source_discrepancy_explained": false,
+      "source_text_quantum": {
+        "coarser_quantum_equal_daily_rows": 0,
+        "coarser_quantum_equal_raw_groups": 0,
+        "coarser_rule": "quantize both values to 10 ** max(source literal exponents)",
+        "daily_raw_group_counts": {
+          "-6": 52
+        },
+        "definition": "Decimal literal exponent; trailing zeros retained, scientific exponent applied",
+        "market_raw_group_counts": {
+          "-6": 52
+        },
+        "scope": "mismatching date/source/raw-text groups, not distinct dates",
+        "vendor_storage_precision_verified": false
+      }
+    },
+    "source_approvals": 0,
+    "source_evidence_counts": {
+      "daily_sources": 4,
+      "independent_market_sources": 1,
+      "sources_with_bound_sql": 1,
+      "sources_with_query_displays": 1,
+      "sources_without_query_display_evidence": 4,
+      "sources_without_vendor_certified_query_to_csv_binding": 5,
+      "sources_without_verified_release_or_vintage": 5,
+      "sources_without_verified_schema_version": 5
+    },
+    "source_stage_parquet_opened": false,
+    "status": "PRIVATE_BENCHMARK_SOURCE_EVIDENCE_PACKET_NOT_SOURCE_APPROVED",
+    "vendor_question_sent": false
+  },
+  "postrun_verification": {
+    "recorded_at_utc": "2026-10-11T01:00:45.428357+00:00",
+    "declared_files_verified": 16,
+    "final_period_opened": false,
+    "model_ready": false,
+    "private_modes_verified": true,
+    "receipt_sha256": "527d04bb6760be5b692a6fcecd9e459612408ffa9055fe83e7c51398dd505294",
+    "source_approvals": 0,
+    "licensed_private_files_tracked_in_git": 0
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Aggregate execution record from the private Mac annual Names/CCM identity evidence bundle; no security identifiers, CIKs, individual filing identifiers or licensed source rows.",
+  "execution": {
+    "code_commit": "5f9a451215cbb8c8c42156bcd96ae1b178b8e563",
+    "elapsed_seconds": 7.29,
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-11T00:58:52.177677+00:00",
+    "log_sha256": "03546332562e35100fde42805dc6b131a682f135ce6a4cb260a5ec5888b7aa83",
+    "output_directory": "data/private/wrds-identity-candidates/development-v1",
+    "receipt_sha256": "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+    "schema_version": 1,
+    "started_at_utc": "2026-10-11T00:58:44.887293+00:00",
+    "table_part_bytes": 17659833,
+    "table_part_count": 98,
+    "table_parts": {
+      "annual_evidence": {
+        "bytes": 1093813,
+        "parts": 22
+      },
+      "ccm_records": {
+        "bytes": 7867227,
+        "parts": 27
+      },
+      "names_evidence": {
+        "bytes": 4621859,
+        "parts": 18
+      },
+      "relationships": {
+        "bytes": 4054611,
+        "parts": 29
+      },
+      "sec_discovery": {
+        "bytes": 14229,
+        "parts": 1
+      },
+      "sec_manifest_coverage": {
+        "bytes": 8094,
+        "parts": 1
+      }
+    },
+    "task": "identity_candidate_evidence"
+  },
+  "verification": {
+    "focused_synthetic_tests_passed": 41,
+    "ruff": "passed",
+    "independent_assistant_code_review": "passed_after_GVKEY_whitespace_diagnostic_correction",
+    "new_human_or_vendor_approvals": 0
+  },
+  "evidence_status_totals": {
+    "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 1003,
+    "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 2665,
+    "NO_RELATED_CCM_RECORD": 792,
+    "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 19968,
+    "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 61636
+  },
+  "summary": {
+    "approved_security_links_created": 0,
+    "ccm_observed_header": [
+      "gvkey",
+      "conm",
+      "tic",
+      "cusip",
+      "cik",
+      "sic",
+      "naics",
+      "LINKPRIM",
+      "LIID",
+      "LINKTYPE",
+      "LPERMNO",
+      "LPERMCO",
+      "LINKDT",
+      "LINKENDDT",
+      "EIN",
+      "COSTAT",
+      "DLRSN",
+      "PRIUSA",
+      "PRICAN",
+      "PRIROW",
+      "IDBFLAG",
+      "FIC",
+      "LOC",
+      "INCORP",
+      "STATE",
+      "COUNTY",
+      "CITY",
+      "CONML",
+      "WEBURL",
+      "PHONE",
+      "FAX",
+      "ADD1",
+      "ADD2",
+      "ADD3",
+      "ADD4",
+      "ADDZIP",
+      "BUSDESC",
+      "ipodate",
+      "dldte",
+      "STKO",
+      "FYRC",
+      "GSECTOR",
+      "GGROUP",
+      "GIND",
+      "GSUBIND",
+      "SPCINDCD",
+      "SPCSECCD"
+    ],
+    "ccm_source_sha256": "f24e768da9c4417ef386d7c75bec9931c059bcebcd22d23b88d37a08da9dc03a",
+    "date_relation_counts": {
+      "AFTER_SELECTION_CONTEXT": 3804,
+      "BEFORE_SELECTION_CONTEXT": 9523,
+      "FINITE_INCLUSIVE_CANDIDATE": 34122,
+      "OPEN_MARKER_BOUNDS_UNRESOLVED_CANDIDATE": 52812
+    },
+    "final_period_opened": false,
+    "historical_cik_supplied": false,
+    "model_ready": false,
+    "original_sec_bytes_reread": false,
+    "prior_arithmetic_review_modified": false,
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "sec_manifest": {
+      "original_sec_bytes_reread": false,
+      "provided": true,
+      "recorded_source_hashes_verified_against_original_bytes": false,
+      "rows": 215,
+      "sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1"
+    },
+    "sec_manifest_coverage_counts": {
+      "HEADER_CIK_DISCOVERY_ONLY": 207,
+      "NO_SAME_YEAR_HEADER_CIK_CANDIDATE_DISCOVERY": 8
+    },
+    "source_approvals": 0,
+    "source_inventory": {
+      "all_original_ccm_records_retained": true,
+      "ccm_records_in_any_date_compatible_candidate_search": 13328,
+      "ccm_records_with_any_related_names_snapshot": 14560,
+      "ccm_records_with_no_related_names_snapshot": 95564,
+      "date_bounds": {
+        "linkdt": {
+          "blank": 0,
+          "finite_iso_date": 110124,
+          "first_finite_date": "1946-01-01",
+          "last_finite_date": "2025-12-31",
+          "literal_B": 0,
+          "literal_E": 0,
+          "other_or_invalid": 0
+        },
+        "linkenddt": {
+          "blank": 0,
+          "finite_iso_date": 89757,
+          "first_finite_date": "1950-05-30",
+          "last_finite_date": "2026-01-30",
+          "literal_B": 0,
+          "literal_E": 20367,
+          "other_or_invalid": 0
+        }
+      },
+      "full_delivered_source_retained_unchanged_in_inventory": true,
+      "identifier_grammar_counts": {
+        "cik": {
+          "blank": 29328,
+          "positive_ascii_integer": 80796
+        },
+        "gvkey": {
+          "positive_ascii_integer": 110124
+        },
+        "lpermco": {
+          "blank": 68891,
+          "positive_ascii_integer": 41233
+        },
+        "lpermno": {
+          "blank": 68891,
+          "positive_ascii_integer": 41233
+        }
+      },
+      "inventory_interval_counts": {
+        "finite_after_request": 2114,
+        "finite_before_request": 65179,
+        "finite_requested_overlap": 22464,
+        "reversed_finite_bounds": 0,
+        "unresolved_nonfinite_bounds": 20367
+      },
+      "link_flag_counts": {
+        "linkprim": {
+          "C": 53424,
+          "J": 3259,
+          "N": 4940,
+          "P": 48501
+        },
+        "linktype": {
+          "LC": 16908,
+          "LD": 112,
+          "LN": 185,
+          "LS": 6943,
+          "LU": 15916,
+          "LX": 1169,
+          "NR": 37455,
+          "NU": 31436
+        }
+      },
+      "source_rows": 110124
+    },
+    "status": "ANNUAL_MANUAL_WRDS_IDENTITY_EVIDENCE_NOT_SOURCE_APPROVED",
+    "table_rows": {
+      "annual_evidence": 86064,
+      "ccm_records": 110124,
+      "names_evidence": 86064,
+      "relationships": 100261,
+      "sec_discovery": 207,
+      "sec_manifest_coverage": 215
+    },
+    "year_summaries": [
+      {
+        "candidate_pair_rows": 6751,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 131,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 207,
+          "NO_RELATED_CCM_RECORD": 8,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 952,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5385
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 6683,
+        "ordinary_listing_candidate_rows": 4491,
+        "related_pair_rows": 7960,
+        "security_year_rows": 6683,
+        "year": 2010
+      },
+      {
+        "candidate_pair_rows": 6795,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 115,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 212,
+          "NO_RELATED_CCM_RECORD": 7,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1080,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5291
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 6705,
+        "ordinary_listing_candidate_rows": 4361,
+        "related_pair_rows": 7965,
+        "security_year_rows": 6705,
+        "year": 2011
+      },
+      {
+        "candidate_pair_rows": 6888,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 119,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 227,
+          "NO_RELATED_CCM_RECORD": 19,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1266,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5168
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 6799,
+        "ordinary_listing_candidate_rows": 4219,
+        "related_pair_rows": 8028,
+        "security_year_rows": 6799,
+        "year": 2012
+      },
+      {
+        "candidate_pair_rows": 6829,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 100,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 234,
+          "NO_RELATED_CCM_RECORD": 52,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1318,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5043
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 6747,
+        "ordinary_listing_candidate_rows": 4107,
+        "related_pair_rows": 7920,
+        "security_year_rows": 6747,
+        "year": 2013
+      },
+      {
+        "candidate_pair_rows": 6957,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 96,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 232,
+          "NO_RELATED_CCM_RECORD": 62,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1415,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5078
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 6883,
+        "ordinary_listing_candidate_rows": 4116,
+        "related_pair_rows": 8044,
+        "security_year_rows": 6883,
+        "year": 2014
+      },
+      {
+        "candidate_pair_rows": 7233,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 70,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 233,
+          "NO_RELATED_CCM_RECORD": 73,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1544,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5223
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7143,
+        "ordinary_listing_candidate_rows": 4279,
+        "related_pair_rows": 8300,
+        "security_year_rows": 7143,
+        "year": 2015
+      },
+      {
+        "candidate_pair_rows": 7401,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 61,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 224,
+          "NO_RELATED_CCM_RECORD": 81,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1747,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5206
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7319,
+        "ordinary_listing_candidate_rows": 4268,
+        "related_pair_rows": 8459,
+        "security_year_rows": 7319,
+        "year": 2016
+      },
+      {
+        "candidate_pair_rows": 7312,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 57,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 216,
+          "NO_RELATED_CCM_RECORD": 95,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1859,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5021
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7248,
+        "ordinary_listing_candidate_rows": 4129,
+        "related_pair_rows": 8362,
+        "security_year_rows": 7248,
+        "year": 2017
+      },
+      {
+        "candidate_pair_rows": 7415,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 61,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 212,
+          "NO_RELATED_CCM_RECORD": 86,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1997,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 4994
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7350,
+        "ordinary_listing_candidate_rows": 4101,
+        "related_pair_rows": 8495,
+        "security_year_rows": 7350,
+        "year": 2018
+      },
+      {
+        "candidate_pair_rows": 7619,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 63,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 220,
+          "NO_RELATED_CCM_RECORD": 85,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 2151,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5028
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7547,
+        "ordinary_listing_candidate_rows": 4161,
+        "related_pair_rows": 8722,
+        "security_year_rows": 7547,
+        "year": 2019
+      },
+      {
+        "candidate_pair_rows": 7708,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 56,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 220,
+          "NO_RELATED_CCM_RECORD": 96,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 2259,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5009
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 7640,
+        "ordinary_listing_candidate_rows": 4155,
+        "related_pair_rows": 8817,
+        "security_year_rows": 7640,
+        "year": 2020
+      },
+      {
+        "candidate_pair_rows": 8026,
+        "evidence_status_counts": {
+          "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 74,
+          "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 228,
+          "NO_RELATED_CCM_RECORD": 128,
+          "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 2380,
+          "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 5190
+        },
+        "names_ambiguous_rows": 0,
+        "names_record_count": 8000,
+        "ordinary_listing_candidate_rows": 4390,
+        "related_pair_rows": 9189,
+        "security_year_rows": 8000,
+        "year": 2021
+      }
+    ],
+    "years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ]
+  },
+  "postrun_verification": {
+    "recorded_at_utc": "2026-10-11T01:00:45.428357+00:00",
+    "declared_files_verified": 102,
+    "final_period_opened": false,
+    "model_ready": false,
+    "private_modes_verified": true,
+    "receipt_sha256": "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+    "source_approvals": 0,
+    "licensed_private_files_tracked_in_git": 0,
+    "identity_annual_evidence_status_by_listing_diagnostic": {
+      "ordinary_listing_candidate": {
+        "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 63,
+        "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 2518,
+        "NO_RELATED_CCM_RECORD": 52,
+        "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 1360,
+        "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 46784
+      },
+      "other_listing_scope": {
+        "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE": 940,
+        "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 147,
+        "NO_RELATED_CCM_RECORD": 740,
+        "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED": 18608,
+        "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE": 14852
+      }
+    }
+  }
+}

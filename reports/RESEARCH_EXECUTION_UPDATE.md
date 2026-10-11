@@ -11,7 +11,11 @@ exact benchmark comparison identified 52 dates that remain unreconciled. The
 revised numerical build also completed, producing 22,588,059 distinct
 provisional candidate rows without creating an approved forecasting dataset.
 Annual liquidity processing has now produced 87,405 security/year records,
-including 50,230 provisional security ranks.
+including 50,230 provisional security ranks. The subsequent identity evidence
+run organized 100,261 Names/CCM relationships across 86,064 annual security
+records, and the benchmark packet bound all five sources to their saved
+discrepancy audit. Neither run supplies a historical CIK approval or explains
+the benchmark differences.
 
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
@@ -37,6 +41,8 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Build dated Names evidence | **86,064 annual record/year snapshots; 50,777 narrow ordinary-corporate-common candidates; zero ambiguous security/year groups**. Every `known_at` remains null | [Listing-candidate contract](../docs/wrds_listing_candidates.md); private production receipt for code `1418e0e`, completed `2026-10-10T23:55:34.077882Z` |
 | Audit the benchmark discrepancies | The formal audit confirms **52 dates**, each with an absolute decimal difference of **0.000001**; source cause and reconciliation remain unresolved | Private benchmark-audit receipt for code `1418e0e`, completed `2026-10-10T23:56:11.211984Z` |
 | Execute annual liquidity processing | **87,405 security/year records; 84,530 meet the numerical minimum; 50,230 receive provisional security ranks**. No issuer grouping or 500-issuer selection | [Liquidity-candidate contract](../docs/wrds_liquidity_candidates.md); private production receipt for code `ae4e0c`, completed `2026-10-11T00:10:00.938349Z` |
+| Bind benchmark source evidence | **All five audited sources retained; one saved SQL source and one source with supplied query-display evidence**. Exact discrepancy diagnostics reproduced; 52 dates remain unresolved | [Aggregate execution record](wrds_benchmark_source_evidence_execution.json); code `5bbfa2c`, completed `2026-10-11T00:55:20.317245+00:00` |
+| Organize annual historical-identity evidence | **110,124 CCM records retained; 100,261 Names/CCM relationships; 86,064 annual security records; all 215 SEC manifest rows accounted for**. Header-CIK matches are discovery only | [Aggregate execution record](wrds_identity_evidence_execution.json); code `5f9a451`, completed `2026-10-11T00:58:52.177677+00:00` |
 | Verify the software | Recorded verification baseline: **444 tests passed; Ruff passed; complete synthetic study completed**. New source, numerical-candidate, Names and benchmark commits passed their focused tests and CI; no updated whole-repository test total is claimed | [Recorded verification](execution_verification.json); [source-processing CI run](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38096427112) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
@@ -339,6 +345,116 @@ A final local check confirmed private directories and read-only files across
 the five completed processing bundles, `model_ready: false` and zero source
 approvals in every receipt, and no `data/private` files tracked in Git.
 
+### Completed benchmark source-evidence packet
+
+The [source-evidence consumer](../docs/wrds_benchmark_source_evidence.md) was
+published as `5bbfa2c8b5a7933f56d3bded3363baf28c999087` after independent
+assistant code review, **33 focused synthetic tests** and Ruff; its
+[GitHub integrity workflow](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38100007026)
+also passed. Review found
+and corrected a Python-API case that could omit the required caller receipt
+hash; the production CLI supplied the recorded hash explicitly. The Mac run
+completed from `2026-10-11T00:55:19.769187+00:00` to
+`2026-10-11T00:55:20.317245+00:00` in **0.548 seconds**, exit status **0**.
+
+The private bundle is
+`data/private/wrds-benchmark-source-evidence/development-v1`. Its receipt
+SHA-256 is `527d04bb6760be5b692a6fcecd9e459612408ffa9055fe83e7c51398dd505294`.
+The manifest contains **16 evidence/output files totaling 1,841,344 bytes**,
+excluding the receipt itself. The
+[aggregate execution record](wrds_benchmark_source_evidence_execution.json)
+preserves the run timing, code commit, receipt hash, evidence counts and exact
+diagnostics without licensed per-date values or security identifiers.
+
+All **four daily source bindings and the independent market source** are
+retained. The bundle copies and verifies the saved audit, source-stage and
+inventory receipts, the complete small discrepancy Parquet, the market SQL,
+and the supplied daily-query observation, reconciliation and screenshots. One
+source has preserved SQL and one has supplied query-display evidence; four
+sources have no supplied query display. The display association remains a
+recorded row-count comparison, not certified query-to-CSV byte provenance.
+All five sources still lack verified release/vintage and schema-version
+evidence.
+
+The packet recomputed the complete small mismatch table's Decimal diagnostics
+and confirmed the original **52 dates / 376,853 repeated daily rows**, all with
+absolute differences of **0.000001**. The original daily CSVs and source-stage
+Parquet were not reread; their full comparison remains bound to the earlier
+successful audit. The packet also creates an aggregate-only **unsent vendor
+question draft** asking for the actual benchmark definition, dividend treatment,
+calculation path, vintage and output-format explanation. No cause, tolerance,
+replacement or source approval was accepted. The completed 20/20 review and
+final-period gate remain unchanged.
+
+### Completed annual Names/CCM identity evidence
+
+The [identity-evidence consumer](../docs/wrds_identity_candidates.md) was
+published as `5f9a451215cbb8c8c42156bcd96ae1b178b8e563` after independent
+assistant code review, **41 focused synthetic tests** and Ruff; its
+[GitHub integrity workflow](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38100186671)
+also passed. Review corrected
+a nonblank-GVKEY diagnostic to apply the inventory's exact Python whitespace
+semantics; raw identifiers and matching behavior remain unchanged. The Mac run
+completed from `2026-10-11T00:58:44.887293+00:00` to
+`2026-10-11T00:58:52.177677+00:00` in **7.290 seconds**, exit status **0**.
+
+The private bundle is `data/private/wrds-identity-candidates/development-v1`;
+its receipt SHA-256 is
+`093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099`.
+The six tables contain **98 Parquet parts totaling 17,659,833 bytes**. The
+[aggregate execution record](wrds_identity_evidence_execution.json) includes
+table sizes, per-year counts, source-bound diagnostics and the post-run check.
+
+Every one of the **110,124 CCM source records** is represented with its source
+ordinal, 12 required raw fields and full-delivered-row fingerprint. The complete
+47-column source remains unchanged in its existing inventory. **41,233** CCM
+records have positive ASCII security identifiers and **68,891** have blank
+linked security identifiers; these describe the downloaded metadata, not
+missing study companies. Exact copies preserve all **86,064 Names snapshots**.
+No ordinary-share, link-type, primary-link or share-class filter is applied to
+the relationships.
+
+The join enumerated **100,261 Names-record/year × CCM-record relationships**:
+**34,122** have finite inclusive bounds compatible with January 1; **52,812**
+have unresolved open-marker bounds without a finite contradiction; **9,523**
+are earlier dated context and **3,804** are later dated context. All are
+retained. Open markers never become invented dates, and future or expired
+relationships cannot promote January 1 candidates. Multiple relationships can
+refer to one annual security; these totals are not approved identity-link counts.
+
+The annual summary preserves all **86,064 security/year records**. A separate
+aggregate read of the completed table also reports the existing ordinary-listing
+diagnostic subset, to distinguish its evidence needs from the rest of Names:
+
+| Evidence status | All annual security records | Ordinary-listing candidates |
+|---|---:|---:|
+| Single candidate with a header CIK; historical identity evidence still required | 61,636 | 46,784 |
+| Single candidate with missing or unsupported header CIK | 19,968 | 1,360 |
+| Multiple or ambiguous candidate evidence | 2,665 | 2,518 |
+| Dated context only; no January 1 candidate | 1,003 | 63 |
+| No related CCM record | 792 | 52 |
+| **Total** | **86,064** | **50,777** |
+
+These counts refer to annual records, not distinct longitudinal securities,
+approved issuers, or the final most-liquid-share-class selection. A single
+current header match is still insufficient historical evidence. The ordinary
+column retains a provisional listing diagnostic, not accepted universe membership.
+
+All **215 public SEC manifest rows** are accounted for: **207** have a same-year
+header-CIK discovery relationship and **8** have none. This run reads the
+preserved manifest metadata; it does **not** reread original filing/header
+bytes or certify their recorded hashes against those documents. The private
+detail records acceptance-date interval diagnostics and preserves unmatched
+filings. No discovery match becomes a historical security/issuer link, and
+no unmatched filing becomes an automatic exclusion.
+
+All derived `known_at` and `available_at` values remain null. The run creates
+zero approved security links, zero source approvals, no universe membership,
+no market outcomes and no final-period access. A post-run check reverified
+both new receipt hashes, **102 declared identity files** and **16 declared
+benchmark files**, private directory/read-only file modes, and the absence of
+tracked licensed private files. The completed 20/20 review remains unchanged.
+
 ## What happens next
 
 Resolve the 52 benchmark discrepancies using source-bound evidence, review the
@@ -350,6 +466,17 @@ pass expired or that the institution can never access the product. No full
 historical CIK export was obtained from that form; its schema and historical
 availability remain unverified. See the
 [source-convention evidence](../docs/wrds_source_conventions.md#7-current-company-headers-cannot-establish-historical-ciks).
+
+The new documented alternative is **CRSP/Compustat Company History**, whose
+[official dictionary](https://www.crsp.org/wp-content/uploads/ccm_files/CompanyHistory.html)
+lists historical CIK (`HCIK`) and effective description bounds
+(`HCHGDT`/`HCHGENDDT`). Request its authorized schema/export, coverage, release
+and availability semantics. The dictionary alone does not prove this account's
+access or that the supplied records will satisfy the historical contract. The
+[access evidence and unsent request](../docs/historical_identity_access_evidence.md)
+make that request concrete. The benchmark packet separately contains the
+unsent source-definition/vintage question for the 52 differences; no external
+message has been sent.
 
 | Stage | Work remaining |
 |---|---|

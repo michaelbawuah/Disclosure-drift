@@ -25,9 +25,11 @@ all three text features to the same market controls.
 | Completed user review | 20/20 independent numerical and printed-timing checks recorded against the exact original packet |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
-| Historical data collection | Runnable, resumable WRDS catalog/export/verification tooling; actual full-study exports still needed |
+| Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
+| Annual candidate evidence | 86,064 Names snapshots, 50,230 provisional liquidity ranks, and 100,261 Names/CCM relationships; historical identity and availability remain unapproved |
+| Benchmark source evidence | All five audited source bindings preserved in a reproducible packet; 52 dates remain unexplained and unreconciled, with no tolerance or replacement accepted |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
-| Empirical completion | Full historical exports, source-bound human reviews, development selection and final estimates remain pending |
+| Empirical completion | Historical CIK/availability evidence, source reconciliation and remaining judgments, approved universe, development selection and final estimates remain pending |
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
 [Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
@@ -89,6 +91,16 @@ population price/volume windows and holdout return collection require completed
 development prerequisites.
 The [historical dataset contract](docs/historical_dataset.md) defines every
 normalized input and source-bound review record.
+
+The preserved development exports have already been processed on the Mac; a
+fresh upload or download is not required for the completed candidate work.
+The [identity execution record](reports/wrds_identity_evidence_execution.json)
+and [benchmark source-evidence record](reports/wrds_benchmark_source_evidence_execution.json)
+bind the newest actual runs. The next historical-identity source lead is
+documented in the [Company History access research](docs/historical_identity_access_evidence.md),
+which includes an unsent request for the authorized schema/export, coverage,
+release and availability evidence. Candidate relationships are not approved
+universe inputs.
 
 ```bash
 # Offline source request; use a new output directory.

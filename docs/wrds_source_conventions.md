@@ -179,6 +179,17 @@ proof of an available historical observation. Any later retrieved map would
 still need reconciliation against original SEC filings and security-level
 evidence.
 
+**Company History alternative:** CRSP's
+[Company History dictionary](https://www.crsp.org/wp-content/uploads/ccm_files/CompanyHistory.html)
+documents `HCIK` with `HCHGDT`/`HCHGENDDT`, alongside `GVKEY`, `LPERMNO`,
+`LPERMCO` and `LINKRANGETYPECD`. This is a documented historical-CIK source to
+investigate through authorized CCM access. The dictionary does not establish
+the currently exposed WRDS table, this account's entitlement, delivered coverage,
+revision vintage or historical `known_at`. See the
+[access evidence and unsent request](historical_identity_access_evidence.md)
+for the precise source request and the distinction between effective bounds and
+historical availability. No new source export or approval is claimed.
+
 ## 8. Historical `known_at` remains unresolved
 
 The [normalized universe contract](historical_dataset.md) requires timezone-aware
