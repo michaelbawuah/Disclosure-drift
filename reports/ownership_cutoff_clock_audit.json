@@ -1,0 +1,1117 @@
+{
+  "bundle_receipt_sha256": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+  "calendar": {
+    "calendar": "XNYS",
+    "comparison": "Strict before, exact equality, and strict after remain separate",
+    "cutoff_eastern": "2019-12-31T16:00:00-05:00",
+    "cutoff_session": "2019-12-31",
+    "cutoff_utc": "2019-12-31T21:00:00+00:00",
+    "exchange_calendars_version": "4.13.2",
+    "selection_asof": "2020-01-01",
+    "selection_session": "2020-01-02"
+  },
+  "cohort_year": 2020,
+  "collection_receipt": {
+    "bytes": 23458,
+    "path": "outputs/cutoff-clock-followup-20261011/collection_receipt.json",
+    "sha256": "6afa601ef74cdbd707c291512f691b7945798009de02cd37648a15491cfa4f81"
+  },
+  "completed_utc": "2026-10-11T16:29:38.778676+00:00",
+  "inputs": {
+    "configs/protocol.json": {
+      "bytes": 1384,
+      "path": "configs/protocol.json",
+      "sha256": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8"
+    },
+    "configs/protocol.lock.json": {
+      "bytes": 194,
+      "path": "configs/protocol.lock.json",
+      "sha256": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be"
+    },
+    "data/private/sec-ownership-corrob/development-v1/cohort_summary/part-000001.parquet": {
+      "bytes": 79507,
+      "path": "data/private/sec-ownership-corrob/development-v1/cohort_summary/part-000001.parquet",
+      "sha256": "bdf3353cc8a282088b7fc9c7cb0fc1e1ee7c8d0b7df1028d8325e37a7cfa23a3"
+    },
+    "data/private/sec-ownership-corrob/development-v1/cohort_summary/part-000002.parquet": {
+      "bytes": 8005,
+      "path": "data/private/sec-ownership-corrob/development-v1/cohort_summary/part-000002.parquet",
+      "sha256": "9a1f7326bcff115846eda63e213c3e9bdd4c91df3b12682c2c43c9e39dcd57a6"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000001.parquet": {
+      "bytes": 259842,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000001.parquet",
+      "sha256": "e54c88aa45c731e33c5f2776af5b037191960b1be76f1b1c93fd32d630d142fd"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000002.parquet": {
+      "bytes": 258673,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000002.parquet",
+      "sha256": "1398fd7a464efa5e5b1010ba1e277ac592cfa171a1cf7c7a9211da59cd515ec6"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000003.parquet": {
+      "bytes": 256213,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000003.parquet",
+      "sha256": "b98f122065903a53646995f07d5b6fdb5afde05785e0d1f1b98cc6f2a178291f"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000004.parquet": {
+      "bytes": 262790,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000004.parquet",
+      "sha256": "cfd5ae5723a351cf0c3111ba7965bb1a0239f81ca617c2b4554f9bf32f103d71"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000005.parquet": {
+      "bytes": 262280,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000005.parquet",
+      "sha256": "3db54e563cd00187d65eb80c7923fd01ce9aefd4f105875a982b66e9af0805ce"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000006.parquet": {
+      "bytes": 261452,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000006.parquet",
+      "sha256": "bb911b6de07f60beae3c73f5906310315feea3ee60e88a46fc3c81ac5c9a0fa1"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000007.parquet": {
+      "bytes": 256715,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000007.parquet",
+      "sha256": "73291a78ee7f602c2843a6140ebb99b6ecc7ea8252b1023e0030e7a27f888442"
+    },
+    "data/private/sec-ownership-corrob/development-v1/observations/part-000008.parquet": {
+      "bytes": 177733,
+      "path": "data/private/sec-ownership-corrob/development-v1/observations/part-000008.parquet",
+      "sha256": "8c442b406d406065c39091de2ee8a0209a86a1a3e11ef685ef861bb6e0790054"
+    },
+    "data/private/sec-ownership-corrob/development-v1/original_SUBMISSION.tsv": {
+      "bytes": 3998882,
+      "path": "data/private/sec-ownership-corrob/development-v1/original_SUBMISSION.tsv",
+      "sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000001.parquet": {
+      "bytes": 118953,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000001.parquet",
+      "sha256": "80b9cc4cf86e05ac1eeb19480998e623dff8001c4ada7bd040522caedbf861f5"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000002.parquet": {
+      "bytes": 113688,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000002.parquet",
+      "sha256": "993ec7527e544e2c1d621e5cfc9758e4a8b703a0bdae722ee429d2bf5da8c5f5"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000003.parquet": {
+      "bytes": 113528,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000003.parquet",
+      "sha256": "7e9c02368f13b6ae9f1874d3a93e08505f2aa06bebd6fea36481d083c2a789c6"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000004.parquet": {
+      "bytes": 114202,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000004.parquet",
+      "sha256": "389ac542d55021dd4c2e4fd7003f1c8b604bad962dd2715a04a5594348afc1fb"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000005.parquet": {
+      "bytes": 115737,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000005.parquet",
+      "sha256": "752657d851b592d2363fc2e3e19f7ad411cda422344dc04fe444de0813e18258"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000006.parquet": {
+      "bytes": 115856,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000006.parquet",
+      "sha256": "ab33b0f05c9acc1acbef3a5de3f2a756bd81a1d5e4efca3e1f9b63232f5b0116"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000007.parquet": {
+      "bytes": 116472,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000007.parquet",
+      "sha256": "870a0ab6e7f25165e2f24df5af602b4da9b1b6b21d9f2c6e01dff6f027498db1"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000008.parquet": {
+      "bytes": 114810,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000008.parquet",
+      "sha256": "b60d53610b8934e7f3fdf5ac20a37ee9ea8f7d7ea457683272e43a569ace3320"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000009.parquet": {
+      "bytes": 108859,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000009.parquet",
+      "sha256": "58a21e2be83249b0e8241b8bc00342abb536eb533862c186ceda7e8232081d0c"
+    },
+    "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000010.parquet": {
+      "bytes": 43048,
+      "path": "data/private/sec-ownership-corrob/development-v1/sec_occurrences/part-000010.parquet",
+      "sha256": "48b89653b7d972063912dfef4b994f5d8de47d865e7688c2a01a9d0dd51e5ef7"
+    },
+    "src/disclosure_research/protocol.py": {
+      "bytes": 2244,
+      "path": "src/disclosure_research/protocol.py",
+      "sha256": "0fed0fdd73a093cd45be47e66e8217a21f9759c962024e9babb4ffb2a69f53ac"
+    },
+    "src/disclosure_research/timing.py": {
+      "bytes": 2145,
+      "path": "src/disclosure_research/timing.py",
+      "sha256": "6be40f77c91c3a3412af48a692d158f5efc0684df42de4e5bd53b89cbf94f87a"
+    },
+    "src/disclosure_research/universe.py": {
+      "bytes": 16867,
+      "path": "src/disclosure_research/universe.py",
+      "sha256": "eabc76ff98a91355e4561c2d7285c8eda1842817f0ada97a7c11f870717721e2"
+    },
+    "uv.lock": {
+      "bytes": 318622,
+      "path": "uv.lock",
+      "sha256": "af5183727ec88d2b9d73b8e6d6edeef2f71adbd5770b473607a808fb0c47ea51"
+    }
+  },
+  "limits": [
+    "SEC acceptance is an original header clock, not evidence of first public website availability.",
+    "The exact exchange close is reconstructed from the frozen protocol calendar; filing, report and change dates do not substitute for acceptance.",
+    "An issuer CIK/name/symbol observation does not establish a share class, vendor-security mapping, or continuous effective interval.",
+    "All 14 saved cases and every related distinct accession are retained. Earlier selection and literal-matching decisions are reused from the pinned, independently verified bundle.",
+    "Historical known_at, available_at and effective bounds remain null. Original statuses, protocol and empirical gates remain unchanged.",
+    "Private selected cases and associations remain on the authorized data host; the public record contains SEC metadata and aggregates only.",
+    "The XML parser stops at the direct issuer element. Full submission bytes are preserved, but remaining ownership content is not analyzed."
+  ],
+  "preserved_bundle_files_rehashed_unchanged": 58,
+  "private_evidence_bindings": {
+    "case_results.json": {
+      "bytes": 3933,
+      "path": "outputs/cutoff-clock-followup-20261011/private/case_results.json",
+      "sha256": "19da5acfdf64bf6e7e8b12da814276a11bd0abc24de7b4e898636a7e037ffe7e"
+    },
+    "selected_cases.json": {
+      "bytes": 59495,
+      "path": "outputs/cutoff-clock-followup-20261011/private/selected_cases.json",
+      "sha256": "94d337b9bf1af02d3b26e31008e06d17c0cc896cd7427394dbf6126ba4527735"
+    }
+  },
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "queue": {
+    "bytes": 17311,
+    "path": "outputs/cutoff-clock-followup-20261011/queue.json",
+    "sha256": "03feaeea3e6c23ce2c18e536fd062e63c1b6525fd1957c3624e78d27c6d72226"
+  },
+  "records": [
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077391",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "22-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 408
+      },
+      "source_id": "0001104659-19-077391",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077396",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 422
+      },
+      "source_id": "0001104659-19-077396",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001179110-19-013206",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0000315709",
+        "ISSUERNAME": "INTERNATIONAL BANCSHARES CORP",
+        "ISSUERTRADINGSYMBOL": "IBOC",
+        "PERIOD_OF_REPORT": "30-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 435
+      },
+      "source_id": "0001179110-19-013206",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-062239",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0000081362",
+        "ISSUERNAME": "QUAKER CHEMICAL CORP",
+        "ISSUERTRADINGSYMBOL": "KWR",
+        "PERIOD_OF_REPORT": "13-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 449
+      },
+      "source_id": "0001209191-19-062239",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030248",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 462
+      },
+      "source_id": "0000899243-19-030248",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077400",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 468
+      },
+      "source_id": "0001104659-19-077400",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000950142-19-002600",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001113481",
+        "ISSUERNAME": "MEDICINES CO /DE",
+        "ISSUERTRADINGSYMBOL": "MDCO",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 482
+      },
+      "source_id": "0000950142-19-002600",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030243",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 494
+      },
+      "source_id": "0000899243-19-030243",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000950142-19-002602",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001113481",
+        "ISSUERNAME": "MEDICINES CO /DE",
+        "ISSUERTRADINGSYMBOL": "MDCO",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 501
+      },
+      "source_id": "0000950142-19-002602",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030233",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 503
+      },
+      "source_id": "0000899243-19-030233",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077308",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001426945",
+        "ISSUERNAME": "Echo Global Logistics, Inc.",
+        "ISSUERTRADINGSYMBOL": "ECHO",
+        "PERIOD_OF_REPORT": "30-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 518
+      },
+      "source_id": "0001104659-19-077308",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-062244",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0000081362",
+        "ISSUERNAME": "QUAKER CHEMICAL CORP",
+        "ISSUERTRADINGSYMBOL": "KWR",
+        "PERIOD_OF_REPORT": "28-AUG-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 520
+      },
+      "source_id": "0001209191-19-062244",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000950142-19-002604",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001113481",
+        "ISSUERNAME": "MEDICINES CO /DE",
+        "ISSUERTRADINGSYMBOL": "MDCO",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 528
+      },
+      "source_id": "0000950142-19-002604",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-025052",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001464343",
+        "ISSUERNAME": "Atlanticus Holdings Corp",
+        "ISSUERTRADINGSYMBOL": "ATLC",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 530
+      },
+      "source_id": "0001437749-19-025052",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030231",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 564
+      },
+      "source_id": "0000899243-19-030231",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030227",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 609
+      },
+      "source_id": "0000899243-19-030227",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001140361-19-023473",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001644963",
+        "ISSUERNAME": "AVENUE THERAPEUTICS, INC.",
+        "ISSUERTRADINGSYMBOL": "ATXI",
+        "PERIOD_OF_REPORT": "08-FEB-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 617
+      },
+      "source_id": "0001140361-19-023473",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001772384-19-000004",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001606440",
+        "ISSUERNAME": "Reliant Bancorp, Inc.",
+        "ISSUERTRADINGSYMBOL": "RBNC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 622
+      },
+      "source_id": "0001772384-19-000004",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030244",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 627
+      },
+      "source_id": "0000899243-19-030244",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030267",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 648
+      },
+      "source_id": "0000899243-19-030267",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077398",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 656
+      },
+      "source_id": "0001104659-19-077398",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030251",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 658
+      },
+      "source_id": "0000899243-19-030251",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030237",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 672
+      },
+      "source_id": "0000899243-19-030237",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001209191-19-062303",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001728117",
+        "ISSUERNAME": "Gossamer Bio, Inc.",
+        "ISSUERTRADINGSYMBOL": "GOSS",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 690
+      },
+      "source_id": "0001209191-19-062303",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-076985",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001651311",
+        "ISSUERNAME": "Merus N.V.",
+        "ISSUERTRADINGSYMBOL": "MRUS",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 691
+      },
+      "source_id": "0001104659-19-076985",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030239",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 699
+      },
+      "source_id": "0000899243-19-030239",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001437749-19-025053",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001464343",
+        "ISSUERNAME": "Atlanticus Holdings Corp",
+        "ISSUERTRADINGSYMBOL": "ATLC",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 714
+      },
+      "source_id": "0001437749-19-025053",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077389",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "22-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 734
+      },
+      "source_id": "0001104659-19-077389",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030246",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 743
+      },
+      "source_id": "0000899243-19-030246",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030249",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 744
+      },
+      "source_id": "0000899243-19-030249",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001140361-19-023531",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0000933136",
+        "ISSUERNAME": "Mr. Cooper Group Inc.",
+        "ISSUERTRADINGSYMBOL": "COOP",
+        "PERIOD_OF_REPORT": "30-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 748
+      },
+      "source_id": "0001140361-19-023531",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077401",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 749
+      },
+      "source_id": "0001104659-19-077401",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001493152-19-019927",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001174940",
+        "ISSUERNAME": "ORAGENICS INC",
+        "ISSUERTRADINGSYMBOL": "OGEN",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 751
+      },
+      "source_id": "0001493152-19-019927",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030229",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 759
+      },
+      "source_id": "0000899243-19-030229",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001493152-19-019948",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0000318306",
+        "ISSUERNAME": "ABEONA THERAPEUTICS INC.",
+        "ISSUERTRADINGSYMBOL": "ABEO",
+        "PERIOD_OF_REPORT": "24-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 772
+      },
+      "source_id": "0001493152-19-019948",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000950142-19-002603",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001113481",
+        "ISSUERNAME": "MEDICINES CO /DE",
+        "ISSUERTRADINGSYMBOL": "MDCO",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 792
+      },
+      "source_id": "0000950142-19-002603",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0001104659-19-077399",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001772757",
+        "ISSUERNAME": "Diamond Eagle Acquisition Corp. \\ DE",
+        "ISSUERTRADINGSYMBOL": "DEAC",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 806
+      },
+      "source_id": "0001104659-19-077399",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000950142-19-002601",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001113481",
+        "ISSUERNAME": "MEDICINES CO /DE",
+        "ISSUERTRADINGSYMBOL": "MDCO",
+        "PERIOD_OF_REPORT": "27-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 822
+      },
+      "source_id": "0000950142-19-002601",
+      "status": "SOURCE_NOT_PRESERVED"
+    },
+    {
+      "acceptance_vs_cutoff": "UNRESOLVED",
+      "available_at": null,
+      "effective_end": null,
+      "effective_start": null,
+      "historical_security_link_created": false,
+      "known_at": null,
+      "quarterly_source_occurrence": {
+        "ACCESSION_NUMBER": "0000899243-19-030235",
+        "DATE_OF_ORIG_SUB": "",
+        "DOCUMENT_TYPE": "3",
+        "FILING_DATE": "31-DEC-2019",
+        "ISSUERCIK": "0001656472",
+        "ISSUERNAME": "Cronos Group Inc.",
+        "ISSUERTRADINGSYMBOL": "CRON",
+        "PERIOD_OF_REPORT": "31-DEC-2019",
+        "source_sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+        "source_tsv_record": 848
+      },
+      "source_id": "0000899243-19-030235",
+      "status": "SOURCE_NOT_PRESERVED"
+    }
+  ],
+  "request_policy": {
+    "alternate_paths_after_403": false,
+    "automatic_retries": 0,
+    "maximum_source_bytes": 8388608,
+    "minimum_seconds_between_request_starts": 0.6,
+    "timeout_seconds": 30,
+    "user_agent": "Michael Baffour Awuah Disclosure-drift research https://github.com/michaelbawuah/Disclosure-drift",
+    "workers": 2
+  },
+  "schema_version": 1,
+  "scope": {
+    "all_distinct_accessions_inspected": false,
+    "available_at_inferred": false,
+    "continuous_identity_links_inferred": false,
+    "final_period_data_opened": false,
+    "human_reviews_created": 0,
+    "known_at_inferred": false,
+    "licensed_associations_exported": false,
+    "market_returns_read": false,
+    "model_ready": false,
+    "original_headers_and_issuer_xml_prefixes_only": true,
+    "repeated_source_occurrences_retained": true,
+    "source_approvals_created": 0,
+    "transaction_or_holdings_fields_parsed": false
+  },
+  "script": {
+    "bytes": 32094,
+    "path": "scripts/ownership_cutoff_clock_audit.py",
+    "sha256": "41a9e4798b026dc9820491ff6ebd26d38a68253f0b248a86e2278b6592baac69"
+  },
+  "source_quarter": "2019Q4",
+  "source_receipts": {},
+  "started_utc": "2026-10-11T16:29:15.084229+00:00",
+  "status": "ORIGINAL_SEC_ACCEPTANCE_CLOCK_OBSERVATIONS_ONLY",
+  "summary": {
+    "all_quarterly_occurrences_of_selected_accessions": 39,
+    "case_clock_status_counts": {
+      "HAS_AT_CUTOFF_OR_UNRESOLVED_ACCEPTANCE": 14
+    },
+    "case_counts_with_at_least_one_acceptance": {
+      "AFTER_CUTOFF": 0,
+      "AT_CUTOFF": 0,
+      "BEFORE_CUTOFF": 0,
+      "UNRESOLVED": 14
+    },
+    "comparison_true_counts": {},
+    "complete_original_cohort_rows": 4122,
+    "cutoff_day_only_cases": 14,
+    "distinct_accession_acceptance_relation_counts": {
+      "UNRESOLVED": 39
+    },
+    "distinct_original_accessions": 39,
+    "document_type_counts": {
+      "3": 19,
+      "4": 20
+    },
+    "matched_quarterly_occurrences": 39,
+    "occurrence_acceptance_relation_counts": {
+      "UNRESOLVED": 39
+    },
+    "original_inspection_status_counts": {
+      "SOURCE_NOT_PRESERVED": 39
+    },
+    "original_metadata_repeat_occurrences": 0,
+    "original_sources_preserved": 0,
+    "private_observation_relationships": 39,
+    "reporting_owner_role_occurrences": 0,
+    "source_bytes": 0,
+    "source_preservation_errors": 39,
+    "source_structure_or_metadata_errors": 0,
+    "unambiguous_literal_observation_relationships": 39
+  }
+}
