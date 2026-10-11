@@ -131,12 +131,14 @@ def check_saved_case(listing_directory, *, receipt_sha256, output, config, repo_
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".revision-case-", dir=out.parent) as temporary:
         work = Path(temporary) / "bundle"
-        work.mkdir()
+        work.mkdir(mode=0o700)
         private_raw = b"".join(json.dumps(row, ensure_ascii=True, sort_keys=True).encode() + b"\n" for row in selected)
         (work / "matched_names_records.jsonl").write_bytes(private_raw)
         summary["private_occurrences_sha256"] = hashlib.sha256(private_raw).hexdigest()
         summary["private_occurrences_bytes"] = len(private_raw)
         (work / "receipt.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
+        for name in ("matched_names_records.jsonl", "receipt.json"):
+            (work / name).chmod(0o400)
         liquidity._guard([bundle], rehash=True)
         if out.exists():
             raise ValueError("Output appeared during construction; existing evidence preserved")

@@ -110,6 +110,8 @@ def source_bytes(cache: Path, declaration: dict) -> tuple[bytes, dict]:
 
 
 def main() -> None:
+    if not __debug__:
+        raise SystemExit("Run without -O or PYTHONOPTIMIZE; integrity assertions must remain enabled.")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
