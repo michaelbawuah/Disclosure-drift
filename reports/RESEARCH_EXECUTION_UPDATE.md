@@ -1,29 +1,32 @@
 # Research execution update — October 11, 2026 (UTC)
 
-This execution advanced three previously open tasks: the planned pilot now has
-enough 2019–2021 pairs, the actual semantic checkpoint has run on real SEC text,
-and full-study WRDS collection has runnable, resumable tooling. Manual downloads
-now cover all requested development daily dates, with Names, combined CCM/company
-metadata and the independent benchmark preserved locally. The user's earlier
-20/20 numerical review is also preserved as a completed review. The development
-source projection has now run successfully across all requested sessions; its
-exact benchmark comparison identified 52 dates that remain unreconciled. The
-revised numerical build also completed, producing 22,588,059 distinct
-provisional candidate rows without creating an approved forecasting dataset.
-Annual liquidity processing has now produced 87,405 security/year records,
-including 50,230 provisional security ranks. The subsequent identity evidence
-run organized 100,261 Names/CCM relationships across 86,064 annual security
-records, and the benchmark packet bound all five sources to their saved
-discrepancy audit. Neither run supplies a historical CIK approval or explains
-the benchmark differences.
+**Latest result: two specific Names-history questions are resolved.** The Mac
+run at `16ca9e5fb1b76fa5fb149c58e64976b8b88935a1` scanned all **191,048 original
+Names rows** and found unique descriptors at all **16,974 role/date observations**
+for the **207 existing filing discoveries**. All **15 January-snapshot date gaps**
+have applicable records in the complete history. The run finished in
+**2.272097 seconds**, preserving all original discovery rows and **215 filing
+coverage rows**, including **eight unmatched original Exxon filings**.
 
-The latest original-SEC verification completed on **all 215 filings**: primary
-documents, headers, unique original filer matches and recorded acceptance clocks
-agree with the preserved manifest. It retains **218 filer observations**,
-including three legitimate Comcast co-filings, and **1,494 lexical cover facts
-from 79 filings**. A separate Mac inspection identifies all eight unmatched
-discovery filings as the original Exxon registrant. These source observations
-support the outstanding historical-identity review without approving a link.
+The separate **1.464616-second** lifetime check explains all **1,341 liquidity-only
+annual observations**: every matching Names occurrence reports a security
+lifetime ending before selection. That includes **490 numerical-minimum passes**
+and **851 failures**; prior-window liquidity does not imply a January descriptor.
+The original rows remain preserved, with no approved exclusions or historical
+availability inference. The [measured results](../docs/dated_names_results.md),
+[execution bindings](names_history_execution.json) and
+[verification](names_history_verification.json) document these conclusions.
+The complete software reproduction passed **974 tests**, Ruff and the full
+synthetic study; implementation CI also passed.
+
+The [public SEC source demonstration](../docs/public_historical_identity_sources.md)
+adds dated issuer-corroboration routes, and the
+[recovered CRSP manuals](../docs/benchmark_primary_definitions.md) identify the
+native benchmark specification to check against the saved WRDS views. Neither
+investigation establishes an approved historical crosswalk or source vintage;
+**all 52 benchmark discrepancy causes remain unresolved**. The **46,359
+observations with one usable current-header CIK** and **3,871 other rank-eligible identity cases**
+remain as recorded in the foundation. Empirical milestones **5–11 remain pending**.
 
 The new [local filing-review page](filing_review/index.html) now brings the fixed
 30 pairs and all 24 matching reference cases into one 73-filing queue. It retains
@@ -59,9 +62,11 @@ preserves this distinction and the evidence-commit CI status.
 the Mac completed at **10:38:20.651697 UTC** in **48.393520 seconds**, under commit
 `710fa6833055c13224805bf28dbb445f24af976d`. It retains **87,405 annual security
 observations**, including all **86,064 identity rows** and **1,341 liquidity-only
-rows**. The latter include **490 numerical-minimum passes** that an inner join
-would omit. The run verifies **110,124 CCM source occurrences** and **100,261
-existing Names/CCM relationships**, binds **207 discoveries** to the previously
+rows**. The latter include **490 numerical-minimum passes**; the subsequent
+full-history check explains their absent January descriptors by recorded
+security lifetimes ending before selection. The foundation run verifies
+**110,124 CCM source occurrences** and **100,261 existing Names/CCM relationships**,
+binds **207 discoveries** to the previously
 verified SEC report, and preserves all **215 filings**, including eight unmatched
 original Exxon filings. The original 73 assistant and 20/20 user review receipts
 remain byte-identical.
@@ -75,7 +80,8 @@ need basic candidate resolution, while all single-header cases still require
 historical identity and availability evidence. The [foundation guide](../docs/historical_foundation.md)
 explains finite/open bounds, the 627 class-observation records (including 130
 explicit no-inline-fact placeholders), and the 15 January descriptors that do
-not cover their later filing dates.
+not cover their later filing dates. Their full-history descriptor coverage is
+now resolved in the separate [dated Names result](dated_names_aggregate.json).
 The sole literal ticker difference was traced to a leading line feed in
 [Tesla's original TradingSymbol tag](tesla_symbol_clarification.json); the raw
 comparison and all source observations remain unchanged.
@@ -89,7 +95,7 @@ specifies the historical-CIK, version and date-semantics evidence needed next.
 Seven additional [original filing-cover inspections](sec_cover_cases_summary.json)
 retain common stock, debt, share classes and co-filers separately.
 
-The [implementation verification](historical_foundation_verification.json)
+The earlier [foundation implementation verification](historical_foundation_verification.json)
 records **949 passing tests**, Ruff, the unchanged protocol and the complete
 synthetic study. These validate the software and source reconciliation; they do
 not complete the empirical milestones or supply an investment-universe approval.
@@ -104,6 +110,8 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 
 | Work | Observed result | Evidence |
 |---|---|---|
+| Resolve complete-history filing descriptors | **207 discoveries / 16,974 role/date observations**, all with unique records; **15/15** snapshot-date questions resolved; 65 original source occurrences retained | [Dated aggregate](dated_names_aggregate.json) |
+| Explain liquidity-only annual metadata | All **1,341 annual observations** have saved security lifetimes ending before selection; **7,683** source-row references retained; no exclusion approved | [Lifetime aggregate](liquidity_only_names_aggregate.json) |
 | Expand the SEC pilot | 60 additional original filings from 15 issuers; 45 new consecutive annual pairs | [Collection receipt](pilot_expansion/expansion_ingestion_summary.json) |
 | Meet the planned time-window count | **104 pairs accepted in 2019–2021**, within the planned 100–150 range | [Expanded checkpoint](pilot_expansion/pilot_checkpoint.json) |
 | Rebuild the combined source audit | **215 filings, 180 pairs, 35 issuers; 215 automated passes and zero blocking findings** | [Combination receipt](pilot_expansion/combination_receipt.json) |
@@ -408,11 +416,13 @@ requires the unambiguous narrow ordinary-common Names predicate.
 
 These totals count **security/year records**, not distinct securities across
 the full period or approved issuers. The observed annual union includes 39
-Names-only records and 1,341 daily-only records; missing source coverage remains
-visible. Of 50,777 ordinary listing candidates, 50,230 satisfy provisional rank
-conditions. Repeated source records never weight the mean, and missing sessions
-are never filled with zero. Detailed session and classification breakdowns
-remain in the private receipt.
+Names-only records and 1,341 daily-only records, and both unmatched subsets
+remain preserved. The later [full Names-history check](../docs/dated_names_results.md)
+explains the absent January descriptors for all 1,341 by recorded security
+lifetimes ending before selection; it approves no exclusion. Of 50,777 ordinary
+listing candidates, 50,230 satisfy provisional rank conditions. Repeated source
+records never weight the mean, and missing sessions are never filled with zero.
+Detailed session and classification breakdowns remain in the private receipt.
 
 Ranks compare observed securities; they do not group share classes by issuer
 or apply the final 500-issuer limit. Both `known_at` and `available_at` remain
@@ -642,6 +652,14 @@ access or that the supplied records will satisfy the historical contract. The
 make that request concrete. The benchmark packet separately contains the
 unsent source-definition/vintage question for the 52 differences; no external
 message has been sent.
+
+The [public SEC demonstration](../docs/public_historical_identity_sources.md)
+offers an additional corroboration route through issuer observations and
+original subject-company CUSIP/class evidence. The
+[native CRSP definition](../docs/benchmark_primary_definitions.md) narrows the
+benchmark question to the saved views' actual index mapping, expression, release
+and export conventions. These new source leads do not fill the outstanding
+historical availability fields or supply a reviewed source choice.
 
 | Stage | Work remaining |
 |---|---|

@@ -30,13 +30,15 @@ all three text features to the same market controls.
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
 | Annual candidate evidence | 86,064 Names snapshots, 50,230 provisional liquidity ranks, and 100,261 Names/CCM relationships; historical identity and availability remain unapproved |
-| Historical foundation reconciliation | All 87,405 annual security observations retained; 1,341 liquidity-only rows include 490 numerical-minimum passes; identity evidence gaps quantified across all 50,230 rank-eligible candidates |
+| Historical foundation reconciliation | All 87,405 annual observations retained; full Names history explains all 1,341 liquidity-only records by saved security lifetimes ending before selection; identity evidence gaps across 50,230 rank-eligible candidates remain |
+| Complete filing-date Names history | All 207 existing discoveries have unique descriptors at all 16,974 required role/date observations; all 15 January-snapshot date questions resolved; eight original Exxon filings remain unmatched |
 | Historical revision check | Four saved annual snapshots within a published CRSP correction interval disagree with its corrected classification literals; the exact source vintage remains unresolved |
 | Benchmark source evidence | All five audited source bindings preserved; 52 exact-comparison differences remain unexplained; a source-backed reviewed benchmark choice is pending, with no tolerance or replacement accepted |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
 | Empirical completion | Historical CIK/availability evidence, reviewed source choices and normalization, remaining judgments, approved universe, development selection and final estimates remain pending |
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
+[complete Names-history results](docs/dated_names_results.md),
 [historical foundation results](docs/historical_foundation.md),
 [Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
 [expanded text checkpoint](reports/pilot_expansion/pilot_checkpoint.json),
@@ -113,6 +115,8 @@ normalized input and source-bound review record.
 
 The preserved development exports have already been processed on the Mac; a
 fresh upload or download is not required for the completed candidate work.
+The [latest complete-history checks](docs/dated_names_results.md) resolve the
+specific descriptor-date questions while retaining all original evidence.
 The [identity execution record](reports/wrds_identity_evidence_execution.json)
 and [benchmark source-evidence record](reports/wrds_benchmark_source_evidence_execution.json)
 bind the completed candidate and discrepancy packets. The next historical-identity source lead is
@@ -137,6 +141,11 @@ series for the identical label sessions while preserving all 52 unexplained
 differences. Exact agreement between export views is not a frozen requirement.
 No proposed source choice or human approval has been enacted; the prepared
 external questions remain unsent.
+The [recovered native CRSP definition](docs/benchmark_primary_definitions.md)
+now identifies the index and total-return field to check against those saved
+views. The [public SEC source demonstration](docs/public_historical_identity_sources.md)
+also supplies dated issuer-corroboration routes. Neither investigation establishes
+the missing source version, availability or approved historical security links.
 
 ```bash
 # Offline source request; use a new output directory.

@@ -9,6 +9,31 @@ window and a recorded lifetime ending before selection.
 This diagnostic checks that distinction using the complete original Names
 export. It preserves the foundation and creates a separate evidence bundle.
 
+## Measured execution
+
+The actual Mac run on October 11, 2026 used commit
+`16ca9e5fb1b76fa5fb149c58e64976b8b88935a1` and finished in **1.464616 seconds**.
+After inspecting all **191,048 original Names rows**, it placed every one of
+the **1,341 annual observations** in
+`ALL_RECORDED_SECURITY_LIFETIMES_END_BEFORE_SELECTION`. That group includes all
+**490 numerical-minimum passes** and **851 failures**. No other category has a
+record in this completed result.
+
+The diagnostic retained **7,683 annual-observation-to-source-row references**
+in a **2,170,858-byte** private observations file. An independent check confirmed
+these references point to **7,683 distinct source records** in this result.
+The receipt SHA-256 is
+`18373eef2f870882a9a81e6dc7a00c06327fc974f9e7982fc2e11187db116852`.
+See the [aggregate](../reports/liquidity_only_names_aggregate.json),
+[execution record](../reports/names_history_execution.json),
+[verification](../reports/names_history_verification.json), and
+[combined interpretation](dated_names_results.md).
+
+These saved lifetime ends explain the missing January descriptors; the cohort
+is not unexplained missing Names history. Every annual observation remains in
+the foundation. No exclusion, rank change or assertion of contemporaneous
+knowledge was approved by this diagnostic.
+
 ## Bound execution
 
 Run on the computer containing the preserved private inputs:

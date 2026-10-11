@@ -1,0 +1,232 @@
+{
+  "execution_commit": "16ca9e5fb1b76fa5fb149c58e64976b8b88935a1",
+  "execution_tree": "5cae069b1cdf99e83b764074f4174d616ae789c3",
+  "final_period_opened": false,
+  "finished_at": "2026-10-11T14:59:51.609421+00:00",
+  "historical_cik_links_created": 0,
+  "human_reviews_created": 0,
+  "platform": "Darwin",
+  "protected_after": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263"
+  },
+  "protected_before": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263"
+  },
+  "protected_files_unchanged": true,
+  "python_version": "3.12.14",
+  "repository_clean_after": true,
+  "runs": [
+    {
+      "aggregate": {
+        "all_original_discoveries_retained": true,
+        "all_original_sec_filings_retained": true,
+        "available_at_inferred": false,
+        "complete_names_date_preflight_before_matching": true,
+        "counts": {
+          "discoveries": 207,
+          "discoveries_with_ambiguous_points": 0,
+          "discoveries_with_complete_unambiguous_coverage": 207,
+          "discoveries_with_descriptor_text_changes": 18,
+          "discoveries_with_identifier_variants": 0,
+          "discoveries_with_missing_points": 0,
+          "discoveries_with_permco_text_changes": 0,
+          "distinct_original_names_records": 65,
+          "filings": 215,
+          "filings_with_discovery": 207,
+          "filings_without_discovery": 8,
+          "original_names_source_rows_checked": 191048,
+          "original_snapshot_acceptance_gaps": 15,
+          "original_snapshot_gaps_with_unique_full_history_acceptance": 15,
+          "requested_points": 16974
+        },
+        "daily_market_files_opened": false,
+        "final_period_opened": false,
+        "historical_cik_links_created": 0,
+        "human_reviews_created": 0,
+        "inputs": {
+          "foundation_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+          "names_inventory_sha256": "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+          "names_source_bytes": 26876522,
+          "names_source_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+          "sec_evidence_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+          "sec_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1"
+        },
+        "known_at_inferred": false,
+        "market_outcomes_read": false,
+        "model_ready": false,
+        "normalization_code_sha256": "37292917172808a91c37f0b8f971f8caf570c03f5c3db897ab2d0d4cc67bfe73",
+        "original_names_csv_reread": true,
+        "original_sec_bytes_reread": false,
+        "point_status_counts": {
+          "UNIQUE_RECORD": 16974
+        },
+        "point_status_counts_by_role": {
+          "acceptance": {
+            "UNIQUE_RECORD": 207
+          },
+          "control": {
+            "UNIQUE_RECORD": 12420
+          },
+          "label": {
+            "UNIQUE_RECORD": 4140
+          },
+          "reference": {
+            "UNIQUE_RECORD": 207
+          }
+        },
+        "prior_arithmetic_review_modified": false,
+        "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+        "sec_manifest_coverage_counts": {
+          "HEADER_CIK_DISCOVERY_ONLY": 207,
+          "NO_SAME_YEAR_HEADER_CIK_CANDIDATE_DISCOVERY": 8
+        },
+        "source_approvals": 0,
+        "status": "DATED_NAMES_FILING_EVIDENCE_NOT_SOURCE_APPROVED",
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ]
+      },
+      "command": [
+        "/Users/mba_steins/.local/bin/uv",
+        "run",
+        "--locked",
+        "--python",
+        "3.12",
+        "python",
+        "scripts/reconcile_dated_names.py",
+        "--foundation",
+        "data/private/historical-foundation/development-v1",
+        "--foundation-receipt-sha256",
+        "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+        "--names-inventory",
+        "data/private/wrds-intake/names-v2",
+        "--names-receipt-sha256",
+        "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+        "--sec-evidence",
+        "reports/sec_identity_evidence.json.gz",
+        "--sec-manifest",
+        "reports/pilot_expansion/filing_sources.csv",
+        "--output",
+        "data/private/dated-names/development-v1"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-10-11T14:59:50.118851+00:00",
+      "name": "dated_names",
+      "private_output": "data/private/dated-names/development-v1",
+      "receipt_sha256": "da2e4b3f7e15a9b8ad2696df62d412bb7eff3266781a1c097102acc536b8a5cc",
+      "seconds": 2.272097,
+      "started_at": "2026-10-11T14:59:47.846728+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "37c22a88a527bf31db783179fab1f0698ac556a84bec03bb718e5f1498b1d602"
+    },
+    {
+      "aggregate": {
+        "all_source_intervals_validated_before_matching": true,
+        "available_at_inferred": false,
+        "created_at": "2026-10-11T14:59:51.537689+00:00",
+        "daily_market_values_read": false,
+        "exclusions_approved": 0,
+        "final_period_opened": false,
+        "foundation_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+        "geometry_counts": {
+          "ALL_RECORDED_SECURITY_LIFETIMES_END_BEFORE_SELECTION": 1341
+        },
+        "historical_cik_links_created": 0,
+        "human_reviews_created": 0,
+        "identifier_comparison": "exact raw PERMNO text; no normalization or new mapping",
+        "known_at_inferred": false,
+        "liquidity_only_annual_records": 1341,
+        "listing_receipt_sha256": "698e3b280ac18a42bf11c0bc3b1cb2ecd10c701cfb4e1ab6f283066ecd28afc6",
+        "market_outcomes_read": false,
+        "model_ready": false,
+        "names_inventory_sha256": "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+        "names_source_bytes": 26876522,
+        "names_source_rows_preflighted": 191048,
+        "names_source_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+        "numeric_minimum_fail_geometry_counts": {
+          "ALL_RECORDED_SECURITY_LIFETIMES_END_BEFORE_SELECTION": 851
+        },
+        "numeric_minimum_pass_geometry_counts": {
+          "ALL_RECORDED_SECURITY_LIFETIMES_END_BEFORE_SELECTION": 490
+        },
+        "prior_arithmetic_review_modified": false,
+        "prior_foundation_observations_modified": false,
+        "private_observations_bytes": 2170858,
+        "private_observations_sha256": "4873ea58aa3ade0585965e2c692a82892feb60dfe6125a1a461cf4607aa3e844",
+        "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+        "records_by_year": {
+          "2010": 121,
+          "2011": 112,
+          "2012": 100,
+          "2013": 134,
+          "2014": 95,
+          "2015": 114,
+          "2016": 100,
+          "2017": 112,
+          "2018": 112,
+          "2019": 107,
+          "2020": 133,
+          "2021": 101
+        },
+        "schema_version": 1,
+        "script_sha256": "2e47d86dc08535dc883e34d965b93d576c4e6641272ed9b511d9465df6643900",
+        "source_approvals": 0,
+        "source_interval_occurrences_retained": 7683,
+        "source_lifetimes_are_diagnostics_not_historical_knowledge": true,
+        "status": "SAVED_LIQUIDITY_ONLY_NAMES_GEOMETRY_NOT_EXCLUSION_APPROVAL",
+        "unique_raw_security_identifiers": 1341
+      },
+      "command": [
+        "/Users/mba_steins/.local/bin/uv",
+        "run",
+        "--locked",
+        "--python",
+        "3.12",
+        "python",
+        "scripts/check_liquidity_only_names.py",
+        "--foundation",
+        "data/private/historical-foundation/development-v1",
+        "--foundation-sha256",
+        "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+        "--listing-candidates",
+        "data/private/wrds-listing-candidates/development-v1",
+        "--names-inventory",
+        "data/private/wrds-intake/names-v2",
+        "--names-inventory-sha256",
+        "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+        "--output",
+        "data/private/liquidity-only-names/development-v1"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-10-11T14:59:51.583815+00:00",
+      "name": "liquidity_only_names",
+      "private_output": "data/private/liquidity-only-names/development-v1",
+      "receipt_sha256": "18373eef2f870882a9a81e6dc7a00c06327fc974f9e7982fc2e11187db116852",
+      "seconds": 1.464616,
+      "started_at": "2026-10-11T14:59:50.119186+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "18373eef2f870882a9a81e6dc7a00c06327fc974f9e7982fc2e11187db116852"
+    }
+  ],
+  "schema_version": 1,
+  "source_approvals": 0,
+  "started_at": "2026-10-11T14:59:47.831460+00:00",
+  "status": "BOTH_SAVED_NAMES_METADATA_CHECKS_COMPLETED"
+}

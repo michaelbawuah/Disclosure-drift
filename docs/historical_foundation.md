@@ -13,7 +13,10 @@ The actual Mac execution completed on **October 11, 2026 at 10:38:20 UTC** in
 `710fa6833055c13224805bf28dbb445f24af976d`. It retained **87,405 annual security
 observations**, comprising all **86,064 identity rows** and **1,341 additional
 liquidity-only rows**. Of those additional rows, **490** meet the numerical
-liquidity minimum; an inner join would have hidden this coverage gap.
+liquidity minimum. The later [complete Names-history check](dated_names_results.md)
+explains all 1,341 within the saved export: every matching source occurrence
+reports a security lifetime ending before selection. The rows remain preserved;
+this is not an unexplained absence of source history or an approved exclusion.
 
 The [aggregate results](../reports/historical_foundation_aggregate.json) and
 [execution record](../reports/historical_foundation_execution.json) bind the
@@ -42,9 +45,12 @@ All **215 original filings** remain accounted for: **207 existing discoveries**
 are bound to original SEC report evidence and **eight original Exxon filings**
 remain unmatched. The [discovery diagnostics](../reports/historical_foundation_discovery_diagnostics.json)
 show that **15 of 207** saved January 1 Names descriptors do not cover the later
-filing acceptance date. All 207 CCM acceptance-date relations are candidates
-with unresolved open-end markers; date compatibility does not establish a
-resolved interval.
+filing acceptance date. The subsequent [full-history reconciliation](dated_names_results.md)
+finds unique applicable descriptors for all 15 and covers all **16,974 required
+role/date observations** across the 207 discoveries without missing or ambiguous
+matches. The original snapshot diagnostic remains unchanged. All 207 CCM
+acceptance-date relations remain candidates with unresolved open-end markers;
+date compatibility does not establish a resolved interval.
 
 The class analysis retains **627 class-observation records**, including **130
 explicit no-inline-fact placeholders** and **59** records with literal ticker
@@ -58,9 +64,9 @@ The sole ticker-text difference is explained by a
 it contains one leading line feed before `TSLA`. The saved strict comparison
 remains unchanged. This is a formatting explanation, not a new mapping decision.
 
-The complete verification passed **949 tests**, Ruff, the frozen-protocol check
-and the full synthetic study. The latter uses invented outcomes and supplies no
-empirical score. See the [verification record](../reports/historical_foundation_verification.json).
+The earlier foundation verification passed **949 tests**, Ruff, the frozen-protocol
+check and the full synthetic study. The latter uses invented outcomes and supplies
+no empirical score. See the [verification record](../reports/historical_foundation_verification.json).
 
 ## Inputs and reproducible execution
 
@@ -119,8 +125,10 @@ recovery diagnostics do not by themselves invalidate a local text comparison;
 neither a positive lexical status nor a title phrase constitutes interpreted
 XBRL, legal-entity mapping or security-class approval.
 
-A saved January 1 Names descriptor can end before its same-year filing. The
-consumer records that limitation instead of extending the descriptor. Likewise,
+A saved January 1 Names descriptor can end before its same-year filing. This
+consumer records that limitation instead of extending the descriptor; the
+[separate full-history consumer](dated_names_evidence.md) now identifies the
+applicable records at each required date. Likewise,
 same-year SEC observations occur after the preceding year-end selection cutoff;
 their acceptance dates and XBRL context periods do not fill historical knowledge
 or availability timestamps.

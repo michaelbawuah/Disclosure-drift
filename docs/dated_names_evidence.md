@@ -2,9 +2,29 @@
 
 The foundation comparison used each discovery's saved January 1 descriptor.
 Fifteen of its 207 discovery rows had a descriptor ending before filing
-acceptance. The complete preserved Names history can contain a later record.
-This consumer answers that narrower source-coverage question without replacing
-the original annual diagnostic or approving a historical issuer/security link.
+acceptance. The completed full-history run found a unique applicable descriptor
+for every one of those 15 cases. This consumer answers that source-coverage
+question without replacing the original annual diagnostic or approving a
+historical issuer/security link.
+
+## Measured execution
+
+The actual Mac run on October 11, 2026 used commit
+`16ca9e5fb1b76fa5fb149c58e64976b8b88935a1` and finished in **2.272097 seconds**.
+It scanned all **191,048 original Names rows** and found unique records at all
+**16,974 role/date observations** for the existing **207 discoveries**. There
+were no missing, overlapping or identifier-variant matches. The output retains
+**65 original Names occurrences**, records descriptor-text changes for **18
+discoveries**, and preserves all **215 filing-coverage rows**, including the
+**eight unmatched original Exxon filings**. PERMCO text comparisons against the
+January Names records show no changes.
+
+The private receipt SHA-256 is
+`da2e4b3f7e15a9b8ad2696df62d412bb7eff3266781a1c097102acc536b8a5cc`.
+See the [aggregate](../reports/dated_names_aggregate.json),
+[execution and input bindings](../reports/names_history_execution.json),
+[verification](../reports/names_history_verification.json), and
+[results and limits](dated_names_results.md).
 
 ## Run against the preserved development inputs
 
@@ -21,7 +41,8 @@ uv run --locked --python 3.12 python scripts/reconcile_dated_names.py \
   --output data/private/dated-names/development-v1
 ```
 
-This is an execution command, not a claim that its output already exists.
+This is the completed execution's command. Choose a new output path for a rerun;
+the existing `development-v1` evidence is preserved.
 The foundation receipt supplies the exact SEC report/manifest hashes. The Names
 inventory pin must also agree with the inventory snapshot bound through the
 foundation's preserved identity receipt. That original CSV has SHA-256

@@ -4,21 +4,23 @@
 
 **Researcher:** Michael Baffour Awuah
 
-**Status:** The software and reporting work has advanced through the final
-evaluation and secondary-analysis stages. The actual empirical milestones are
-not complete. Development daily exports now cover the required source dates,
-and Names, combined CCM/company metadata and the independent benchmark are saved
-locally. The development source projection completed across all 3,103 expected
-sessions, and the revised numerical build produced 22,588,059 provisional
-candidate rows. Annual liquidity processing also completed, yielding 50,230
-provisional security ranks. The new identity packet organizes 100,261 Names/CCM
-relationships across 86,064 annual security records, and the benchmark packet
-binds all five audited sources to their saved discrepancy evidence. Original SEC
-source, header and acceptance-clock corroboration now passes for all 215 filings.
-All 52 benchmark differences remain unexplained; a reviewed source choice is
-pending. Security-universe
-completeness, approved normalization and required source judgments remain
-outstanding. The user's 20/20 numerical review is complete.
+**Status:** The latest full Names-history checks resolve all **15 filing-date
+snapshot questions** and explain the absent January descriptors for all
+**1,341 liquidity-only annual observations** by saved security lifetimes ending
+before selection. All **207 existing filing discoveries** have unique Names
+records at all **16,974 required role/date observations**. These measured source
+results preserve the original evidence and leave historical CIK approval and
+availability unresolved. See the [results](../docs/dated_names_results.md) and
+[execution record](names_history_execution.json).
+
+Development market preparation, source audits and the software through final
+evaluation are implemented, but the actual empirical milestones are unfinished.
+The latest full reproduction passed **974 tests**, Ruff and the synthetic study;
+[implementation CI and source-output verification](names_history_verification.json)
+passed. All **52 benchmark discrepancy causes** remain unresolved. Reviewed
+normalization, historical identity/availability, universe completeness and the
+remaining source judgments are still needed. The user's **20/20 numerical review**
+and all **73 assistant filing reviews** retain their completed credit.
 
 Milestones **1–4 are completed engineering/source-verification checkpoints**;
 the empirical gates in **5–11 remain pending**. The
@@ -48,15 +50,18 @@ decision and empirical milestones 5–11 remain pending. The final period stays 
 **October 11 historical-foundation completion:** The actual Mac reconciliation
 retained **87,405 annual security observations**, including **1,341 with liquidity
 but no annual identity evidence**; **490** of those meet the numerical minimum.
-It verified all **100,261 existing Names/CCM relationships**, bound **207 SEC
+The subsequent full-history diagnostic explains their absent January descriptors
+by recorded security lifetimes ending before selection, without approving an
+exclusion. The foundation verified all **100,261 existing Names/CCM relationships**,
+bound **207 SEC
 discoveries** to the original source report, and retained all **215 filings**.
 Among **50,230 rank-eligible observations**, **3,871** have missing/ambiguous
 candidate evidence; the other **46,359** have one usable current-header CIK but
 still need historical confirmation. A separate public-revision comparison found
 four saved annual classification discrepancies. The [results and interpretation](../docs/historical_foundation.md)
-and [actual execution](historical_foundation_execution.json) make the next data
-requirements concrete. **949 tests and the full synthetic reproduction pass**;
-no approved universe, source timestamp or actual final result was created.
+and [actual execution](historical_foundation_execution.json) preserve the earlier
+foundation checkpoint and its verification. No approved universe, source
+timestamp or actual final result was created.
 
 The frozen primary protocol has not changed. Its hash is
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
@@ -68,12 +73,17 @@ in 2022–2025, and paired three-/six-month reference-month blocks.
 
 | Milestone | Delivered | Empirical requirement still open |
 |---|---|---|
-| **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; original source/header/acceptance corroboration for all 215 filings with co-filers retained; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
+| **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; original source/header/acceptance corroboration with co-filers retained; complete dated Names coverage for all 207 existing discoveries; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
 | **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; completed source projection across all 3,103 expected sessions; 22,588,059 distinct provisional numerical rows; 86,064 dated Names snapshots; benchmark discrepancy audit and bound source-evidence packet; annual liquidity coverage and 50,230 provisional security ranks; 100,261 Names/CCM candidate/context relationships with complete SEC-manifest discovery accounting; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Review a source-backed benchmark choice on identical protocol sessions while preserving the 52 unexplained differences; verify security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
 | **8: development and freeze** | Eight primary configurations over six development folds; six ablation subsets; actual MiniLM execution on 155 real filings / 135 pairs with full token coverage and numerical checks; code/data/review/selection freeze | Approved empirical development, human semantic example review, and a freeze of actual choices/evidence |
 | **9: final evaluation** | Four annual mature-label refits; paired incremental R-squared; 2,000-draw three-/six-month intervals; exact prediction artifacts; durable access ledger and changed-freeze refusal | Execute the approved freeze on the actual 2022–2025 observations; report the measured result |
 | **10: robustness** | Year/month/leave-one-year-out diagnostics; fixed size/industry groups; six frozen ablations; source-linked failures; independent delay rebuild APIs; descriptive paragraph comparison; verified-run orchestration | Execute all declared checks on empirical predictions and independently rebuilt delay data; inspect real cases; interpret limitations |
 | **11: research package** | Locked code and tests; full synthetic reproduction; eight-page progress report; figures; public overview page; data request and handoff guides | Actual results and final interpretation; another person's reproduction; final portfolio publication/update |
+
+The [complete Names-history results](../docs/dated_names_results.md) advance the
+source evidence supporting milestones 6 and 7. They do not change their empirical
+completion status or the foundation's **46,359** current-header-CIK cases and
+**3,871** other rank-eligible identity cases.
 
 No generated template has been turned into a person's approval. No synthetic
 prediction has been presented as a market result. No primary final score exists.
@@ -342,7 +352,7 @@ the identical protocol sessions, as set out in the
 52 unexplained differences; exact cross-view equality is not a frozen
 requirement, and no source selection or tolerance has been enacted.
 
-The full historical CIK form currently reports
+The observed full historical CIK form reported
 **Submit Form (Not Subscribed)** for product `wrdssec_common` under the observed
 institution/session; actual schema, access through other authorized routes and
 historical availability remain unresolved. This is not evidence that the day
@@ -351,6 +361,11 @@ documented **Company History** is now an alternative source lead for historical
 CIK and effective bounds; obtain its authorized export/schema and release/
 availability evidence as described in the
 [access research and unsent request](../docs/historical_identity_access_evidence.md).
+The [public SEC source demonstration](../docs/public_historical_identity_sources.md)
+adds dated issuer observations and original subject-company CUSIP/class evidence
+as corroboration leads. The [native CRSP definition](../docs/benchmark_primary_definitions.md)
+identifies `INDNO=1000200` and `IndDlySeriesData.DlyTotRet` for checking the saved
+benchmark views; their mapping, vintage and export conventions still need evidence.
 The completed benchmark packet likewise supplies a concrete, unsent vendor
 question for the 52 differences. Complete
 the source-bound human reviews against the

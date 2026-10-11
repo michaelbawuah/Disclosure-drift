@@ -4,7 +4,11 @@ Updated 11 October 2026. **The immediate source requirement is now measured:
 historical CIK intervals, unresolved security links, and actual source-version
 and availability evidence.** The [completed foundation reconciliation](historical_foundation.md)
 preserves all 87,405 annual observations and quantifies the gaps among 50,230
-provisionally rank-eligible rows. A [published historical correction check](historical_availability_evidence.md)
+provisionally rank-eligible rows. The [complete Names-history results](dated_names_results.md)
+resolve all 15 filing-date snapshot questions and explain all 1,341 liquidity-only
+observations by recorded security lifetimes ending before selection. They do not
+approve historical identities, availability or research exclusions.
+A [published historical correction check](historical_availability_evidence.md)
 also exposes four saved annual classification discrepancies. The 73 assistant
 filing reviews and the user's 20/20 arithmetic review retain their completed
 credit. Required human judgments remain distinct. Current execution evidence is in the
@@ -140,6 +144,14 @@ replacing the primary three text features or inventing a point-in-time claim.
 | Historical listing/identity `known_at` and liquidity `available_at` | Obtain evidence explaining historical availability under the [universe contract](historical_dataset.md#1-historical-selection). Effective dates, retrieval dates and query success are insufficient; the filing-specific documented-assumption option does not silently relax these fields. |
 | Source normalization and population coverage | Resolve the specific [source-convention questions](wrds_source_conventions.md): release/dictionary applicability, units, share classes, missing-return codes, terminal payoff handling, projected duplicates and supported identity bounds. Review the resulting mappings and exclusions against the eligible population. |
 | Benchmark source | Review the [bound source evidence](wrds_benchmark_source_evidence.md) and [pending source proposal](benchmark_source_decision.md), and obtain enough source-definition/vintage evidence for a documented choice. Keep the observed discrepancy evidence and any unresolved limitation. |
+
+The [recovered native CRSP definition](benchmark_primary_definitions.md) now
+identifies `INDNO=1000200` and `IndDlySeriesData.DlyTotRet` for checking the saved
+WRDS benchmark views. It does not prove their mapping, vintage or formatting;
+all 52 discrepancy causes remain unresolved. The
+[public SEC demonstration](public_historical_identity_sources.md) supplies
+dated issuer/CUSIP/class corroboration leads without creating a continuous
+historical security crosswalk or filling availability fields.
 
 Historical identity must be defensible for retained memberships/events, with
 population coverage and exclusions reviewed. It is not necessary to resolve
