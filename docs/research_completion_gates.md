@@ -8,6 +8,15 @@ provisionally rank-eligible rows. The [complete Names-history results](dated_nam
 resolve all 15 filing-date snapshot questions and explain all 1,341 liquidity-only
 observations by recorded security lifetimes ending before selection. They do not
 approve historical identities, availability or research exclusions.
+The [complete 2020 SEC reconciliation](sec_ownership_results.md) now retains
+all 4,122 eligible securities and 38,145 original ownership-form occurrences.
+It adds unambiguous earlier literal observations for 3,105 securities. A
+[separate original-filing audit](sec_ownership_original_followup.md) confirms
+issuer observations for all 47 selected missing-header cases. The
+[Exxon diagnostic](exxon_candidate_diagnostic.md) explains the later-successor
+current-header mismatch and supplies complete dated CUSIP candidate coverage
+for the eight previously unmatched pilot filings. Continuous historical links
+and source availability remain the next substantive identity requirements.
 A [published historical correction check](historical_availability_evidence.md)
 also exposes four saved annual classification discrepancies. The 73 assistant
 filing reviews and the user's 20/20 arithmetic review retain their completed

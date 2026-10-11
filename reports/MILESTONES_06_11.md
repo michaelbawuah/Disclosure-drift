@@ -4,7 +4,19 @@
 
 **Researcher:** Michael Baffour Awuah
 
-**Status:** The latest full Names-history checks resolve all **15 filing-date
+**Status:** The new complete 2020 reconciliation retains **4,122 eligible
+security observations** and **38,145 original SEC occurrences**. It found
+unambiguous earlier literal observations for **3,105 securities**, with
+**987** without usable quarterly observations. All **47 selected
+missing/unsupported-header cases** agree with original ownership issuer
+CIK/name/symbol evidence. The Exxon follow-up explains the later-successor
+current header and finds unique dated CUSIP candidates at all **656 required
+window points** and eight selections. Historical link bounds and availability
+remain unresolved. See the [new results](../docs/sec_ownership_results.md),
+[original-filing checks](../docs/sec_ownership_original_followup.md) and
+[Exxon diagnostic](../docs/exxon_candidate_diagnostic.md).
+
+The earlier full Names-history checks resolve all **15 filing-date
 snapshot questions** and explain the absent January descriptors for all
 **1,341 liquidity-only annual observations** by saved security lifetimes ending
 before selection. All **207 existing filing discoveries** have unique Names
@@ -15,9 +27,12 @@ availability unresolved. See the [results](../docs/dated_names_results.md) and
 
 Development market preparation, source audits and the software through final
 evaluation are implemented, but the actual empirical milestones are unfinished.
-The latest full reproduction passed **974 tests**, Ruff and the synthetic study;
-[implementation CI and source-output verification](names_history_verification.json)
-passed. All **52 benchmark discrepancy causes** remain unresolved. Reviewed
+The latest implementation CI passed **995 tests**, Ruff and the synthetic study
+at [the exact code commit](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38152628371).
+The [new independent verification](sec_ownership_verification.json) reconciled
+all nine actual output tables and all 664 Exxon date points. The prior
+[Names-history verification](names_history_verification.json) remains preserved.
+All **52 benchmark discrepancy causes** remain unresolved. Reviewed
 normalization, historical identity/availability, universe completeness and the
 remaining source judgments are still needed. The user's **20/20 numerical review**
 and all **73 assistant filing reviews** retain their completed credit.
@@ -73,7 +88,7 @@ in 2022–2025, and paired three-/six-month reference-month blocks.
 
 | Milestone | Delivered | Empirical requirement still open |
 |---|---|---|
-| **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; original source/header/acceptance corroboration with co-filers retained; complete dated Names coverage for all 207 existing discoveries; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
+| **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; original source/header/acceptance corroboration with co-filers retained; complete dated Names coverage for all 207 existing discoveries; separate original issuer/CUSIP evidence and all 656 descriptor date points for the eight unmatched Exxon filings; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
 | **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; completed source projection across all 3,103 expected sessions; 22,588,059 distinct provisional numerical rows; 86,064 dated Names snapshots; benchmark discrepancy audit and bound source-evidence packet; annual liquidity coverage and 50,230 provisional security ranks; 100,261 Names/CCM candidate/context relationships with complete SEC-manifest discovery accounting; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Review a source-backed benchmark choice on identical protocol sessions while preserving the 52 unexplained differences; verify security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
 | **8: development and freeze** | Eight primary configurations over six development folds; six ablation subsets; actual MiniLM execution on 155 real filings / 135 pairs with full token coverage and numerical checks; code/data/review/selection freeze | Approved empirical development, human semantic example review, and a freeze of actual choices/evidence |
 | **9: final evaluation** | Four annual mature-label refits; paired incremental R-squared; 2,000-draw three-/six-month intervals; exact prediction artifacts; durable access ledger and changed-freeze refusal | Execute the approved freeze on the actual 2022–2025 observations; report the measured result |
@@ -84,6 +99,10 @@ The [complete Names-history results](../docs/dated_names_results.md) advance the
 source evidence supporting milestones 6 and 7. They do not change their empirical
 completion status or the foundation's **46,359** current-header-CIK cases and
 **3,871** other rank-eligible identity cases.
+The [2020 cohort reconciliation](../docs/sec_ownership_results.md) and original
+issuer follow-ups add measured historical observations within those existing
+cases. Their original statuses remain intact; no milestone is counted complete
+on the strength of a candidate match alone.
 
 No generated template has been turned into a person's approval. No synthetic
 prediction has been presented as a market result. No primary final score exists.

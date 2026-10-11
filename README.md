@@ -31,13 +31,18 @@ all three text features to the same market controls.
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
 | Annual candidate evidence | 86,064 Names snapshots, 50,230 provisional liquidity ranks, and 100,261 Names/CCM relationships; historical identity and availability remain unapproved |
 | Historical foundation reconciliation | All 87,405 annual observations retained; full Names history explains all 1,341 liquidity-only records by saved security lifetimes ending before selection; identity evidence gaps across 50,230 rank-eligible candidates remain |
-| Complete filing-date Names history | All 207 existing discoveries have unique descriptors at all 16,974 required role/date observations; all 15 January-snapshot date questions resolved; eight original Exxon filings remain unmatched |
+| Complete filing-date Names history | All 207 existing discoveries have unique descriptors at all 16,974 required role/date observations; all 15 January-snapshot date questions resolved; the original current-header ledger retains eight unmatched Exxon filings |
+| Complete 2020 SEC cohort reconciliation | All 4,122 eligible security observations and all 38,145 original SEC occurrences retained; 3,105 securities have unambiguous earlier literal observations; 987 remain without usable quarterly observations |
+| Original ownership-filing follow-up | All 47 selected missing/unsupported-header cases have original issuer CIK/name/symbol agreement; all source occurrences, amendments and reporting-owner roles preserved |
+| Exxon historical identity follow-up | Current header refers to a later successor; eight historical issuer/CUSIP observations and unique Names candidate coverage at all 656 required window points and eight selections; continuous identity/availability remains unresolved |
 | Historical revision check | Four saved annual snapshots within a published CRSP correction interval disagree with its corrected classification literals; the exact source vintage remains unresolved |
 | Benchmark source evidence | All five audited source bindings preserved; 52 exact-comparison differences remain unexplained; a source-backed reviewed benchmark choice is pending, with no tolerance or replacement accepted |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
 | Empirical completion | Historical CIK/availability evidence, reviewed source choices and normalization, remaining judgments, approved universe, development selection and final estimates remain pending |
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
+[actual 2020 issuer-corroboration results](docs/sec_ownership_results.md),
+[Exxon current-header diagnosis](docs/exxon_candidate_diagnostic.md),
 [complete Names-history results](docs/dated_names_results.md),
 [historical foundation results](docs/historical_foundation.md),
 [Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
@@ -115,6 +120,12 @@ normalized input and source-bound review record.
 
 The preserved development exports have already been processed on the Mac; a
 fresh upload or download is not required for the completed candidate work.
+The [new complete-cohort reconciliation](docs/sec_ownership_results.md) ran at
+`5a96224`, retaining all 4,122 eligible 2020 securities, source conflicts and
+unmatched cases. Its [source-bound consumer](docs/sec_ownership_corrob.md) creates
+dated issuer observations and a complete original-source follow-up queue.
+The [47 original-filing checks](docs/sec_ownership_original_followup.md) confirm
+selected issuer observations without promoting them to historical security links.
 The [latest complete-history checks](docs/dated_names_results.md) resolve the
 specific descriptor-date questions while retaining all original evidence.
 The [identity execution record](reports/wrds_identity_evidence_execution.json)
@@ -134,6 +145,9 @@ accounts for all 215 manifest records: 207 discovery matches and eight unmatched
 Exxon filings under original SEC CIK `0000034088`. That inspector reads manifest
 and coverage evidence; original SEC bytes were reverified by the separate source
 run. These observations create no approved historical security mapping.
+The [subsequent Exxon audit](docs/exxon_candidate_diagnostic.md) explains that
+specific current-header mismatch and supplies separate dated CUSIP candidates;
+it preserves the original 207/215 discovery accounting.
 
 The [benchmark source proposal](docs/benchmark_source_decision.md) makes the
 remaining decision concrete: review a documented value-weighted total-return

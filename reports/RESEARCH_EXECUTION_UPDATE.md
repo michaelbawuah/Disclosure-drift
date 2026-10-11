@@ -1,6 +1,40 @@
 # Research execution update — October 11, 2026 (UTC)
 
-**Latest result: two specific Names-history questions are resolved.** The Mac
+**Latest result: the complete eligible 2020 cohort now has a source-bound SEC
+issuer-corroboration audit.** The Mac run at `5a96224` retained all **4,122
+eligible security observations** and all **38,145 original 2019Q4 SEC records**.
+It produced **31,466 dated observations** and **36,822 comparisons** against
+every related original CCM record, completing in **12.761 seconds**.
+
+**3,105 securities** have at least one unambiguous earlier literal observation;
+seven of them retain multiple observed earlier CIKs. Sixteen have only ambiguous
+earlier matches, 14 have only cutoff-day matches, and 987 have no usable
+quarterly observation. All cohort members and original source occurrences remain
+preserved. [Actual results](../docs/sec_ownership_results.md),
+[execution](sec_ownership_execution.json) and [aggregate](sec_ownership_aggregate.json)
+give the exact accounting and interpretation limits.
+
+The separate [original-filing follow-up](../docs/sec_ownership_original_followup.md)
+confirmed original issuer CIK/name/symbol for all **47 selected missing-header
+cases**. The [Exxon diagnosis](../docs/exxon_candidate_diagnostic.md) explains
+the original eight unmatched filings: the saved current header points to the
+2026 successor registrant. Original historical issuer/CUSIP evidence now supports
+unique saved Names candidates at all **656 required date points** and eight
+January selections. **379 points precede the paired same-year SEC corroboration**;
+candidate coverage is not contemporaneous identity or availability approval.
+
+The [independent verification](sec_ownership_verification.json) rebuilt all
+nine new tables from the original sources with exact agreement; a separate
+check rebuilt all 664 Exxon window/selection points. The exact-code
+[implementation CI](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38152628371)
+passed **995 tests**, Ruff and the complete synthetic study. The frozen protocol,
+the user's 20/20 numerical review and all 73 completed assistant filing reviews
+remain unchanged. **Empirical milestones 5–11 remain pending**, and the actual
+2022–2025 final outcomes remain unopened.
+
+## Earlier complete Names-history result
+
+**Two specific Names-history questions were resolved.** The Mac
 run at `16ca9e5fb1b76fa5fb149c58e64976b8b88935a1` scanned all **191,048 original
 Names rows** and found unique descriptors at all **16,974 role/date observations**
 for the **207 existing filing discoveries**. All **15 January-snapshot date gaps**

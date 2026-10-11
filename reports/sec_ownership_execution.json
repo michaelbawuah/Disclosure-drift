@@ -1,0 +1,132 @@
+{
+  "aggregate_sha256": "94044c0b9b96593207713421dd1b4af92b664944d077e0f6bde4a0740c8301c5",
+  "all_protected_files_unchanged": true,
+  "cli_sha256": "6ed8541f93ea5ae20105c927dbffda8cc7e84bd96c00f6182be78a38758ee519",
+  "code_commit": "5a96224662bdb77c06361516a4dc84db0a4eaf7a",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--python",
+    "3.12",
+    "python",
+    "scripts/reconcile_sec_ownership.py",
+    "--foundation",
+    "data/private/historical-foundation/development-v1",
+    "--foundation-receipt-sha256",
+    "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+    "--identity",
+    "data/private/wrds-identity-candidates/development-v1",
+    "--identity-receipt-sha256",
+    "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+    "--names-inventory",
+    "data/private/wrds-intake/names-v2",
+    "--names-receipt-sha256",
+    "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+    "--sec-submission",
+    "data/private/public-source-preservation/2026-10-11/sec/2019q4_SUBMISSION.tsv",
+    "--sec-ledger",
+    "reports/public_historical_identity_sources.json",
+    "--sec-ledger-sha256",
+    "0953b7eed378612d2e3dc5f72ab39085c30707c249d157512d1740ece99a6e44",
+    "--sec-collection-receipt",
+    "data/private/public-source-preservation/2026-10-11/sec/collection_receipt.json",
+    "--output",
+    "data/private/sec-ownership-corrob/development-v1"
+  ],
+  "completed_at": "2026-10-11T15:47:29.870041+00:00",
+  "counts": {
+    "all_2020_foundation_rows": 7773,
+    "cohort_rows": 4122,
+    "cohort_rows_with_any_sec_observation": 3135,
+    "cohort_rows_with_earlier_candidate_header_agreement": 3005,
+    "cohort_rows_with_earlier_candidate_header_disagreement": 60,
+    "cohort_rows_with_multiple_earlier_issuer_keys": 7,
+    "cohort_rows_with_unambiguous_earlier_date_observation": 3105,
+    "cohort_rows_without_sec_observation": 987,
+    "header_comparison_rows": 36822,
+    "observation_rows": 31466,
+    "original_names_source_rows_checked": 191048,
+    "original_relationship_rows": 5141,
+    "original_sec_occurrences": 38145,
+    "original_source_followup_rows": 32453,
+    "retained_ccm_source_records": 5141,
+    "retained_names_source_records": 4524
+  },
+  "elapsed_seconds": 12.761246375273913,
+  "exit_code": 0,
+  "final_period_opened": false,
+  "human_reviews_created": 0,
+  "model_ready": false,
+  "module_sha256": "5ee8435e933fd1906bc9d2818c7d200e047afc371e238d168b8e412799a6cd7f",
+  "output_directory": "data/private/sec-ownership-corrob/development-v1",
+  "protected_files_after": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/pilot_expansion/filing_sources.csv": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+    "reports/sec_identity_evidence.json.gz": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e"
+  },
+  "protected_files_before": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/pilot_expansion/filing_sources.csv": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+    "reports/sec_identity_evidence.json.gz": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e"
+  },
+  "python_version": "3.12.14",
+  "receipt_sha256": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+  "schema_version": 1,
+  "source_approvals": 0,
+  "started_at": "2026-10-11T15:47:17.082827+00:00",
+  "status": "ACTUAL_MAC_SEC_OWNERSHIP_RECONCILIATION_COMPLETED",
+  "table_totals": {
+    "ccm_records": {
+      "bytes": 491820,
+      "parts": 2,
+      "rows": 5141
+    },
+    "cohort": {
+      "bytes": 373961,
+      "parts": 7,
+      "rows": 4122
+    },
+    "cohort_summary": {
+      "bytes": 87512,
+      "parts": 2,
+      "rows": 4122
+    },
+    "header_comparisons": {
+      "bytes": 1894861,
+      "parts": 9,
+      "rows": 36822
+    },
+    "names_records": {
+      "bytes": 250959,
+      "parts": 2,
+      "rows": 4524
+    },
+    "observations": {
+      "bytes": 1995698,
+      "parts": 8,
+      "rows": 31466
+    },
+    "original_relationships": {
+      "bytes": 406056,
+      "parts": 2,
+      "rows": 5141
+    },
+    "original_source_followup": {
+      "bytes": 528121,
+      "parts": 8,
+      "rows": 32453
+    },
+    "sec_occurrences": {
+      "bytes": 1075153,
+      "parts": 10,
+      "rows": 38145
+    }
+  }
+}
