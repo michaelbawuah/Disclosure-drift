@@ -22,20 +22,25 @@ all three text features to the same market controls.
 |---|---|
 | Expanded SEC pilot | 215 original filings, 180 annual pairs, 35 issuers; 104 pairs in the planned 2019–2021 window |
 | Source audit | 215 automated passes; 19 reference resolutions reproduced; 104 API/header timestamp differences preserved |
+| Original SEC identity evidence | 215/215 primary files, headers, acceptance clocks and unique manifest-filer matches reverified; 218 filer observations include three legitimate Comcast co-filings |
+| Lexical cover evidence | 1,494 cover facts retained from 79 filings; 136 have no supported inline cover facts, which is a coverage observation rather than an identity exclusion |
 | Completed user review | 20/20 independent numerical and printed-timing checks recorded against the exact original packet |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
 | Annual candidate evidence | 86,064 Names snapshots, 50,230 provisional liquidity ranks, and 100,261 Names/CCM relationships; historical identity and availability remain unapproved |
-| Benchmark source evidence | All five audited source bindings preserved in a reproducible packet; 52 dates remain unexplained and unreconciled, with no tolerance or replacement accepted |
+| Benchmark source evidence | All five audited source bindings preserved; 52 exact-comparison differences remain unexplained; a source-backed reviewed benchmark choice is pending, with no tolerance or replacement accepted |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
-| Empirical completion | Historical CIK/availability evidence, source reconciliation and remaining judgments, approved universe, development selection and final estimates remain pending |
+| Empirical completion | Historical CIK/availability evidence, reviewed source choices and normalization, remaining judgments, approved universe, development selection and final estimates remain pending |
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
 [Milestones 6–11 progress record](reports/MILESTONES_06_11.md),
 [expanded text checkpoint](reports/pilot_expansion/pilot_checkpoint.json),
 [actual semantic validation](reports/semantic_validation/report.md),
 [review progress](docs/review_progress.md), and [project overview](reports/index.html).
+The [completion and reviewer handoff](docs/research_completion_gates.md) separates
+completed engineering checkpoints from the remaining empirical gates and uses
+the existing review packets.
 The [eight-page progress PDF](reports/research_progress/Research_Progress_Report.pdf),
 [four-page pilot PDF](reports/research_progress/Pilot_Checkpoint_Report.pdf), and
 [earlier build receipt](reports/build_verification.json) preserve the original
@@ -70,12 +75,14 @@ scikit-learn, PyArrow, DuckDB, exchange-calendars, HTTPX and lxml. Optional
 
 ```bash
 make research-report                    # rebuild public figures and progress PDFs
-uv run --locked disclosure status       # show remaining research gates
+uv run --locked disclosure status       # static published progress checklist
 uv run --locked disclosure --help       # all source/audit/model commands
 ```
 
-Licensed inputs are absent. Reproducing the actual SEC/market audits additionally
-requires the source snapshots and review bundles described in the contracts.
+The status command does not inspect or validate private bundles. Licensed inputs
+are not distributed in this repository. Reproducing the actual SEC/market audits
+additionally requires the source snapshots and review bundles described in the
+contracts.
 
 ## Build the empirical study
 
@@ -96,11 +103,28 @@ The preserved development exports have already been processed on the Mac; a
 fresh upload or download is not required for the completed candidate work.
 The [identity execution record](reports/wrds_identity_evidence_execution.json)
 and [benchmark source-evidence record](reports/wrds_benchmark_source_evidence_execution.json)
-bind the newest actual runs. The next historical-identity source lead is
+bind the completed candidate and discrepancy packets. The next historical-identity source lead is
 documented in the [Company History access research](docs/historical_identity_access_evidence.md),
 which includes an unsent request for the authorized schema/export, coverage,
 release and availability evidence. Candidate relationships are not approved
 universe inputs.
+
+The new [original SEC execution record](reports/sec_identity_evidence_execution.json)
+documents a successful 29.560-second run at `3a5b368`, completed on 11 October
+2026 UTC. The [complete compressed evidence](reports/sec_identity_evidence.json.gz)
+retains original-source bindings, co-filers and lexical cover contexts. The
+separate [discovery-ledger inspection](reports/sec_identity_discovery_context.json)
+accounts for all 215 manifest records: 207 discovery matches and eight unmatched
+Exxon filings under original SEC CIK `0000034088`. That inspector reads manifest
+and coverage evidence; original SEC bytes were reverified by the separate source
+run. These observations create no approved historical security mapping.
+
+The [benchmark source proposal](docs/benchmark_source_decision.md) makes the
+remaining decision concrete: review a documented value-weighted total-return
+series for the identical label sessions while preserving all 52 unexplained
+differences. Exact agreement between export views is not a frozen requirement.
+No proposed source choice or human approval has been enacted; the prepared
+external questions remain unsent.
 
 ```bash
 # Offline source request; use a new output directory.

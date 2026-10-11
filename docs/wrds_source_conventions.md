@@ -28,6 +28,14 @@ The [manual inventory guide](wrds_daypass_export.md) describes the implemented
 checks. Normalization must retain source-file hashes and row references, produce
 an explicit exclusion/unresolved ledger, and preserve original files unchanged.
 
+The [benchmark source decision proposal](benchmark_source_decision.md) requires
+a source-backed, reviewed choice of value-weighted total returns on the protocol's
+identical sessions; it does not require equality between the two export views.
+The saved independent series is proposed for review, with all 52 differences
+still unresolved. Their size alone cannot establish or exclude a precision
+explanation: a smaller difference can cross a rounding boundary. No source
+selection, tolerance or approval is enacted by that proposal.
+
 ## 2. Returns: preserve `NA`; keep `MV` unresolved
 
 **Vendor evidence.** The official CIZ guide defines `DlyRet` as the daily total

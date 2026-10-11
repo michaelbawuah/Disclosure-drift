@@ -17,6 +17,14 @@ records, and the benchmark packet bound all five sources to their saved
 discrepancy audit. Neither run supplies a historical CIK approval or explains
 the benchmark differences.
 
+The latest original-SEC verification completed on **all 215 filings**: primary
+documents, headers, unique original filer matches and recorded acceptance clocks
+agree with the preserved manifest. It retains **218 filer observations**,
+including three legitimate Comcast co-filings, and **1,494 lexical cover facts
+from 79 filings**. A separate Mac inspection identifies all eight unmatched
+discovery filings as the original Exxon registrant. These source observations
+support the outstanding historical-identity review without approving a link.
+
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
 final estimates, robustness interpretation and independent-person reproduction
@@ -43,6 +51,8 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Execute annual liquidity processing | **87,405 security/year records; 84,530 meet the numerical minimum; 50,230 receive provisional security ranks**. No issuer grouping or 500-issuer selection | [Liquidity-candidate contract](../docs/wrds_liquidity_candidates.md); private production receipt for code `ae4e0c`, completed `2026-10-11T00:10:00.938349Z` |
 | Bind benchmark source evidence | **All five audited sources retained; one saved SQL source and one source with supplied query-display evidence**. Exact discrepancy diagnostics reproduced; 52 dates remain unresolved | [Aggregate execution record](wrds_benchmark_source_evidence_execution.json); code `5bbfa2c`, completed `2026-10-11T00:55:20.317245+00:00` |
 | Organize annual historical-identity evidence | **110,124 CCM records retained; 100,261 Names/CCM relationships; 86,064 annual security records; all 215 SEC manifest rows accounted for**. Header-CIK matches are discovery only | [Aggregate execution record](wrds_identity_evidence_execution.json); code `5f9a451`, completed `2026-10-11T00:58:52.177677+00:00` |
+| Corroborate original SEC identities | **215 primary/header/acceptance checks; 218 filer observations; three co-filings; 1,494 lexical cover facts from 79 filings**. No approved security links | [Execution and reconciliation record](sec_identity_evidence_execution.json); [complete compressed evidence](sec_identity_evidence.json.gz); code `3a5b368`, completed `2026-10-11T01:49:28.800315+00:00` |
+| Inspect unmatched discovery context | **All 215 manifest records verified; 207 discovery matches; eight unmatched original Exxon filings**, subsequently bound to the original-source report | [Public discovery context](sec_identity_discovery_context.json); code `3a5b368`, completed `2026-10-11T01:51:48.599817+00:00` |
 | Verify the software | Recorded verification baseline: **444 tests passed; Ruff passed; complete synthetic study completed**. New source, numerical-candidate, Names and benchmark commits passed their focused tests and CI; no updated whole-repository test total is claimed | [Recorded verification](execution_verification.json); [source-processing CI run](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38096427112) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
@@ -455,11 +465,96 @@ both new receipt hashes, **102 declared identity files** and **16 declared
 benchmark files**, private directory/read-only file modes, and the absence of
 tracked licensed private files. The completed 20/20 review remains unchanged.
 
+## Original SEC corroboration and discovery reconciliation
+
+The offline collector at `3a5b368211fa134c637562cc4e312fd11e5024c9` ran from
+`2026-10-11T01:48:59.240355+00:00` to
+`2026-10-11T01:49:28.800315+00:00`: **29.560 seconds**, exit status **0**.
+It reread the original primary filing and SGML header bytes in the local research
+workspace, separately from the Mac's earlier manifest-only identity run. The
+manifest SHA-256 is
+`2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1`.
+
+| Source observation | Actual count |
+|---|---:|
+| Primary filing sources and headers independently reverified | 215 each |
+| Unique original-manifest filer matches | 215 |
+| Recorded acceptance clocks matching the manifest | 215 |
+| All retained SGML filer observations | 218 |
+| Filings containing multiple legitimate filers | 3 |
+| Filings containing selected lexical cover facts | 79 |
+| Filings without supported inline cover facts, retained explicitly | 136 |
+| Selected fact occurrences / facts inside hidden elements | 1,494 / 106 |
+| Facts retaining one or more lexical issue flags | 474 |
+
+The three multi-filer filings are Comcast accessions
+`0001166691-18-000004`, `0001166691-19-000005` and
+`0001166691-20-000008`. Each preserves Comcast CIK `0001166691` and
+NBCUniversal Media, LLC CIK `0000902739`, with exactly one manifest match.
+The 2020 cover facts additionally retain the legal-entity dimension distinguishing
+NBCUniversal while the context entity identifier remains Comcast. This is why
+the reader preserves all filers and contexts instead of flattening them into a
+single security identity.
+
+The lexical report does not interpret XBRL values. Of the 474 flagged facts,
+442 retain an uninterpreted `ixt-sec:exchnameen` exchange-name transformation;
+47 have the year-only `http://xbrl.sec.gov/dei/2021` namespace that this version's
+dated-namespace recognizer conservatively flags; 15 facts have both flags.
+Those 47 namespace declarations were found and retained. The flag denotes a
+recognizer limitation, not missing source text. Referenced contexts, dimensions,
+and parsed serialization remain available for review; 136 untagged or unsupported
+filings do not become identity exclusions. See the [reader contract](../docs/sec_identity_evidence.md)
+and the execution record for the post-run diagnostic inspection and its limits.
+
+That independent inspection reverified all 215 original primary files and
+reproduced **6,457 retained HTML parser diagnostics**: 3,520 unexpected or
+mismatched end tags, 2,529 duplicate HTML IDs and 408 misplaced document tags.
+A separate standard-library HTML tokenizer matched every filing's selected
+concept-family counts, exact QName/context-reference counts and referenced
+context-ID occurrence counts, accounting for all **1,494 selected facts**.
+No gross loss of those selected occurrences was detected. **Forty-one parser
+logs reach 100 entries**, so these are retained diagnostic counts, not proof
+that every underlying condition was logged. Count agreement does not establish
+correct tree recovery, complete text interpretation or XBRL semantic validity.
+The execution record embeds the complete diagnostic audit and its limitations;
+the original lexical report remains unchanged.
+
+The complete JSON contains **7,011,313 bytes**, SHA-256
+`70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0`.
+The [published gzip](sec_identity_evidence.json.gz) contains **406,675 bytes**,
+SHA-256 `acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e`;
+decompression reproduces the complete JSON byte for byte. Python 3.12.14,
+lxml 6.1.3.0 and libxml2 2.14.6 were recorded. The feature passed **80 focused
+tests**, Ruff and two independent code reviews; its exact-commit
+[CI run passed](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38103009529).
+
+The separate Mac discovery inspection ran at the same commit from
+`2026-10-11T01:51:48.144780+00:00` to
+`2026-10-11T01:51:48.599817+00:00`: **0.455 seconds**, exit status **0**.
+It checked the pinned identity receipt, source-file hashes and complete manifest
+accounting while reading only six discovery-ledger fields. All **eight unmatched
+filings** are original Exxon CIK `0000034088`, accepted in 2014–2021. Eight
+filings produce seven consecutive annual pairs, consistent with the earlier
+seven flagged pair cases. No vendor identifiers or market returns were exported.
+
+The [public Mac report](sec_identity_discovery_context.json) has SHA-256
+`526364f9530918f222fdad42638c1c0d680213fe8461548f4cb632698669e376`.
+A subsequent local check bound all **215 original-source records** to the
+manifest by ordinal, accession, original CIK, date, URLs and hashes, and bound
+all **eight unmatched discovery records** to that report. Both executions retain
+their own provenance: the Mac inspector did not reread original SEC bytes.
+No historical availability, source approval, human review or security link was
+created, and the actual final period remains unopened.
+
 ## What happens next
 
-Resolve the 52 benchmark discrepancies using source-bound evidence, review the
-completed candidate evidence, and establish the historical
-security universe and source judgments. The full historical CIK query form for
+Make a source-backed, reviewed benchmark choice on the protocol's identical
+sessions, retain the 52 unexplained cross-view differences, review the completed
+candidate evidence, and establish the historical security universe and source
+judgments. The [benchmark source decision proposal](../docs/benchmark_source_decision.md)
+sets out the evidence for reviewing the saved independent series; it does not
+enact a source selection or require equality between exports. The full historical
+CIK query form for
 product `wrdssec_common` displayed **Submit Form (Not Subscribed)** for the
 current institution/session. This observation does not establish that the day
 pass expired or that the institution can never access the product. No full
@@ -480,7 +575,7 @@ message has been sent.
 
 | Stage | Work remaining |
 |---|---|
-| Historical inputs | Resolve the 52 benchmark discrepancy dates; verify security-universe completeness, historical CIK/security links, source release/vintage, units and historical availability |
+| Historical inputs | Approve a source-backed benchmark choice while preserving the 52 unexplained differences; verify security-universe completeness, historical CIK/security links, source release/vintage, units and historical availability |
 | Pilot closure | Remaining source and filing judgments, followed by the approved controls-only smoke |
 | Full dataset | Reviewed normalization, historical universe selection, predecessor filings and full-sample source audit |
 | Development | Run actual 2016–2021 comparisons; complete semantic example review; freeze actual primary and secondary choices |
@@ -494,6 +589,15 @@ holdout returns require completed development prerequisites; final label coverag
 extends through February 3, 2026. Development sources are now preserved locally;
 no historical availability timestamp or human approval has been inferred from
 their acquisition. The final-period source gate remains unchanged.
+
+The [empirical completion guide](../docs/research_completion_gates.md) identifies
+the exact existing review packet, acceptable evidence fields and the commands
+that follow approval. Milestones 1–4 are completed engineering/source-verification
+checkpoints; empirical milestones 5–11 remain pending. The static
+`disclosure status` checklist does not validate private production bundles. The guide
+preserves the completed 20/20 review and the protocol's explicitly reviewed
+filing-availability proxy without inventing historical listing or liquidity
+availability timestamps.
 
 The earlier eight-page progress PDF and four-page pilot PDF remain intact as the
 original 20-issuer snapshot. This update, the current

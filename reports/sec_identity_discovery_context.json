@@ -1,0 +1,118 @@
+{
+  "coverage_counts": {
+    "HEADER_CIK_DISCOVERY_ONLY": 207,
+    "NO_SAME_YEAR_HEADER_CIK_CANDIDATE_DISCOVERY": 8
+  },
+  "final_period_opened": false,
+  "historical_availability_supplied": false,
+  "historical_cik_link_approved": false,
+  "human_reviews_added": 0,
+  "identity_receipt_sha256": "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+  "ledger_columns_read": [
+    "sec_manifest_sha256",
+    "sec_manifest_csv_record",
+    "accession",
+    "sec_filer_cik_raw",
+    "recorded_acceptance_date",
+    "coverage_status"
+  ],
+  "market_returns_read": false,
+  "model_ready": false,
+  "original_sec_bytes_reread": false,
+  "prior_arithmetic_review_modified": false,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "public_unmatched_filings": [
+    {
+      "acceptance_date": "2014-02-26",
+      "accessionNumber": "0000034088-14-000012",
+      "cik": "0000034088",
+      "download_sha256": "d313ef9ffa85255178a86346903e8c9db30be048d34f7ba611c8d4454203fe83",
+      "header_sha256": "c60e5d8c8a404a6e0641f0d2653d4ef6c022d85af28b1aff55c3cfd1dca512c1",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408814000012/0000034088-14-000012.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408814000012/xom10k2013.htm"
+    },
+    {
+      "acceptance_date": "2015-02-25",
+      "accessionNumber": "0000034088-15-000013",
+      "cik": "0000034088",
+      "download_sha256": "3f646742613f7fa8a9e9b5b8829c14f58ca9fa275abd9475a448defc16f6c069",
+      "header_sha256": "88916c5bd4c6596eab9d6cd208e195048e906c70981e43eb405d40f5419d9d7b",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408815000013/0000034088-15-000013.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408815000013/xom10k2014.htm"
+    },
+    {
+      "acceptance_date": "2016-02-24",
+      "accessionNumber": "0000034088-16-000065",
+      "cik": "0000034088",
+      "download_sha256": "873524d1f96ac8e2ad8bd6b2acee797448268c5c72ab99a977b363ae14ea5a80",
+      "header_sha256": "d2df4726c6ec591879b5a03aecbbaf59209514d4aef8c4c218a61f6f07813b33",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408816000065/0000034088-16-000065.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408816000065/xom10k2015.htm"
+    },
+    {
+      "acceptance_date": "2017-02-22",
+      "accessionNumber": "0000034088-17-000017",
+      "cik": "0000034088",
+      "download_sha256": "d08f9d3063f83759e55a86713269922e4e0c157fef8df4cb30caebae93695dea",
+      "header_sha256": "f9f182382cdefee7a699e4dfd97ba890d551ea3e92966bc07e0363d759f92350",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408817000017/0000034088-17-000017.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408817000017/xom10k2016.htm"
+    },
+    {
+      "acceptance_date": "2018-02-28",
+      "accessionNumber": "0000034088-18-000015",
+      "cik": "0000034088",
+      "download_sha256": "5e54dc86641012bd731aa5861eff2e24f1f4fb03ec5bf0af52c4f23e1fdd5e85",
+      "header_sha256": "273677d6d7bc94c13fa271a75d541607c5bcd4e1a562d7bfdb419a05e60a9d7d",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408818000015/0000034088-18-000015.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408818000015/xom10k2017.htm"
+    },
+    {
+      "acceptance_date": "2019-02-27",
+      "accessionNumber": "0000034088-19-000010",
+      "cik": "0000034088",
+      "download_sha256": "a70874d1158203cd8d2f48f39b532e2efa36e56b2cb5003e4e6d6d08317e336b",
+      "header_sha256": "5af907c915154e3a9ffd7c3c57c59a32369963a7c8ae45b86d6b42dae15c5c70",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408819000010/0000034088-19-000010.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408819000010/xom10k2018.htm"
+    },
+    {
+      "acceptance_date": "2020-02-26",
+      "accessionNumber": "0000034088-20-000016",
+      "cik": "0000034088",
+      "download_sha256": "f5120418b01ebacda2117688dd724b61c46a2da2b95bba6b8eaf56bdd413547b",
+      "header_sha256": "82303a9e997292a84ab6ba0d3cb8802de32a7567b0905396165e45018c18cba4",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/0000034088-20-000016.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/xom10k2019.htm"
+    },
+    {
+      "acceptance_date": "2021-02-24",
+      "accessionNumber": "0000034088-21-000012",
+      "cik": "0000034088",
+      "download_sha256": "684a7f95b2aefec6dbaa1fd941edd849cfb70a35455045da7dc7cae46b239d98",
+      "header_sha256": "0fad7e809701bad1522e193923836b7a73b0cc2367e19d599c87f07489c58e9a",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000012/0000034088-21-000012.hdr.sgml",
+      "name": "EXXON MOBIL CORP",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000012/xom-20201231.htm"
+    }
+  ],
+  "recorded_at_utc": "2026-10-11T01:51:48.574416+00:00",
+  "schema_version": 1,
+  "script_sha256": "bd69f78790cb6f4449ad0c17fb840a2cc9bcd52abd0804f18f726bc9f045d8ae",
+  "sec_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+  "source_approvals": 0,
+  "source_files_rehashed": 3,
+  "status": "PUBLIC_SEC_DISCOVERY_CONTEXT_NOT_HISTORICAL_IDENTITY_APPROVAL",
+  "unmatched_original_filer_counts": {
+    "0000034088": 8
+  },
+  "vendor_identifiers_exported": false,
+  "verified_manifest_records": 215
+}

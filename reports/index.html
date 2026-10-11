@@ -35,7 +35,7 @@
     <p class="lead">A study of whether changes in annual Item 1A disclosures improve 20-session market-adjusted return forecasts beyond momentum, volatility, size and historical industry.</p>
     <div class="actions"><a class="button primary" href="RESEARCH_EXECUTION_UPDATE.md">Read the latest execution update</a><a class="button" href="https://github.com/michaelbawuah/Disclosure-drift">Explore the repository</a></div>
   </div>
-  <div class="status"><strong>Development sources processed; empirical result pending.</strong><p>The real 2022–2025 evaluation remains unopened. Historical identity and availability evidence, benchmark reconciliation and remaining source judgments are still needed. The user's 20/20 numerical review is complete.</p></div>
+  <div class="status"><strong>Development sources processed; empirical result pending.</strong><p>The real 2022–2025 evaluation remains unopened. Historical identity and availability evidence, a source-backed benchmark decision and remaining source judgments are still needed. The user's 20/20 numerical review is complete.</p></div>
   <div class="metrics" aria-label="Observed SEC parser pilot">
     <div class="metric"><b>215</b><span>Original annual filings</span></div>
     <div class="metric"><b>180</b><span>Consecutive annual pairs</span></div>
@@ -44,6 +44,7 @@
   <section id="evidence" class="panel">
     <div class="eyebrow">Observed evidence</div><h2>A reproducible text checkpoint</h2>
     <p>The expanded SEC sources pass all 215 automated checks. The audit preserves 19 reference resolutions and 104 API/header timestamp differences. The original 155 filing texts and 135 pairs remain unchanged.</p>
+    <p>The new original-source run reverified <strong>215/215 primary filings, headers, acceptance clocks and unique manifest-filer matches</strong>. Its 218 filer observations include three legitimate Comcast co-filings. It retains <strong>1,494 lexical cover facts from 79 filings</strong>; the other 136 have no supported inline cover facts. This describes coverage and does not create identity exclusions or approved security mappings.</p>
     <p><strong>104 pairs fall in 2019–2021, meeting the planned 100–150-pair count criterion.</strong> The additional 15 issuers were selected without market outcomes. Historical investment-universe selection and the approved controls smoke remain separate requirements.</p>
     <div class="table-scroll"><table><thead><tr><th>Acceptance year</th><th>Annual pairs</th><th>Issuers</th></tr></thead><tbody>
       <tr><td>2015–2018</td><td>19 each year</td><td>19 each year</td></tr>
@@ -53,14 +54,14 @@
     </tbody></table></div>
     <p>The user's <strong>20/20 independent numerical and printed-timing review is recorded</strong> against the exact original packet. All 135 provisional market calculations also reconcile independently within 1e-12; their historical identities remain unapproved.</p>
     <p class="caption">The expanded text features remain descriptive. TF-IDF uses earlier acceptance years only; the first 19 observations remain unavailable. Earlier PDF figures preserve the original 20-issuer snapshot.</p>
-    <div class="links"><a href="pilot_expansion/pilot_checkpoint.json">Expanded checkpoint</a><a href="pilot_expansion/text_features.csv">All descriptive features</a><a href="review_progress/user_arithmetic_receipt.json">Completed user review</a><a href="../docs/pilot_expansion.md">Source corrections</a></div>
+    <div class="links"><a href="pilot_expansion/pilot_checkpoint.json">Expanded checkpoint</a><a href="pilot_expansion/text_features.csv">All descriptive features</a><a href="sec_identity_evidence_execution.json">Original SEC execution record</a><a href="sec_identity_evidence.json.gz">Complete SEC evidence · gzip JSON</a><a href="review_progress/user_arithmetic_receipt.json">Completed user review</a><a href="../docs/pilot_expansion.md">Source corrections</a></div>
   </section>
   <section class="panel">
     <div class="eyebrow">Actual development processing</div><h2>The saved market evidence is now organized</h2>
     <p>The completed numerical build contains <strong>22,588,059 provisional rows</strong> across all 3,103 requested sessions. Annual liquidity processing produces <strong>50,230 provisional security ranks</strong>, with issuer grouping and the historical universe still pending.</p>
-    <p>The new identity packet preserves 110,124 CCM source records and enumerates <strong>100,261 Names/CCM relationships across 86,064 annual security records</strong>. Of 215 recorded SEC filings, 207 have same-year current-header-CIK discovery evidence and eight remain unmatched. These are candidate relationships requiring historical evidence.</p>
-    <p>The benchmark packet binds all five audited sources to the saved discrepancy evidence. <strong>52 benchmark dates remain unresolved</strong>, each differing by 0.000001 between the two saved series. No source choice, tolerance or empirical forecast result has been approved.</p>
-    <div class="links"><a href="wrds_identity_evidence_execution.json">Identity execution record</a><a href="wrds_benchmark_source_evidence_execution.json">Benchmark execution record</a><a href="../docs/wrds_daypass_export.md">Manual export processing</a></div>
+    <p>The identity packet preserves 110,124 CCM source records and enumerates <strong>100,261 Names/CCM relationships across 86,064 annual security records</strong>. A separate discovery-ledger inspection verified all 215 SEC manifest records: 207 have same-year current-header-CIK discovery evidence and eight remain unmatched, all Exxon filings under original CIK <code>0000034088</code>. The inspector checks manifest and coverage evidence; original-byte verification ran separately. These discoveries do not establish historical mappings.</p>
+    <p>The benchmark packet binds all five audited sources to the saved discrepancy evidence. <strong>52 benchmark dates remain unexplained</strong>, each differing by 0.000001 between the two saved series. The next step is a source-backed reviewed benchmark choice that preserves those differences; exact cross-view equality is not a frozen requirement. No source choice or tolerance has been approved, and no empirical forecast result exists.</p>
+    <div class="links"><a href="wrds_identity_evidence_execution.json">Identity execution record</a><a href="sec_identity_discovery_context.json">Verified SEC discovery context</a><a href="wrds_benchmark_source_evidence_execution.json">Benchmark execution record</a><a href="../docs/benchmark_source_decision.md">Benchmark proposal for review</a><a href="../docs/wrds_daypass_export.md">Manual export processing</a></div>
   </section>
   <section class="grid">
     <div><h2>The frozen comparison</h2><p>Both ridge models use the same pre-event controls. The augmented model adds log length change, Jaccard distance and training-only TF-IDF cosine distance. Penalties are selected on 2016–2021 development folds.</p><p>Final annual refits use only earlier events whose labels have matured. Paired reference-month blocks preserve firms and time dependence, with three-month and six-month intervals.</p><a href="../protocol.md">Read the primary protocol</a></div>
@@ -70,21 +71,21 @@
     <div class="eyebrow">Milestones 6–11</div><h2>What is built, and what remains</h2>
     <div class="table-scroll"><table><thead><tr><th>Stage</th><th>Implemented</th><th>Remaining empirical work</th></tr></thead><tbody>
       <tr><td>6 · Pilot</td><td>104 pairs in the planned window, source audit, recorded 20/20 user check, descriptive exhibits</td><td>Remaining source judgments and approved controls smoke</td></tr>
-      <tr><td>7 · Dataset</td><td>Development exports processed; numerical, liquidity and identity evidence; benchmark audit and source packet</td><td>Historical CIK/availability evidence, source reconciliation, approved universe and additional filing audit</td></tr>
+      <tr><td>7 · Dataset</td><td>Development exports processed; numerical, liquidity and identity evidence; original SEC corroboration; benchmark audit and source packet</td><td>Historical CIK/availability evidence, reviewed source choices and normalization, approved universe and additional filing audit</td></tr>
       <tr><td>8 · Freeze</td><td>Actual pinned MiniLM execution, chronological selection, ablations and fingerprints</td><td>Actual development choices and human semantic/source judgments</td></tr>
       <tr><td>9 · Evaluation</td><td>Annual final refits, paired intervals and durable access records</td><td>Approved 2022–2025 estimates</td></tr>
       <tr><td>10 · Robustness</td><td>Year/month/groups, ablations, source-delay rebuilds and failure cases</td><td>Empirical execution and interpretation</td></tr>
       <tr><td>11 · Package</td><td>Code, tests, progress reports, figures and overview</td><td>Final measured results and independent reproduction</td></tr>
     </tbody></table></div>
     <p class="caption">MiniLM encoded all 155 original filings and 135 pairs, with zero truncated tokens and numerical reproducibility checks. Its pinned revision is retrospective; human semantic example review remains pending. <a href="semantic_validation/report.md">Read the actual execution report.</a></p>
-    <a href="MILESTONES_06_11.md">Read the complete milestone record</a>
+    <a href="MILESTONES_06_11.md">Read the complete milestone record</a> · <a href="../docs/research_completion_gates.md">Completion path and reviewer handoff</a>
   </section>
   <section class="grid">
     <div><h2>Reproduce the software</h2><pre><code>git clone https://github.com/michaelbawuah/Disclosure-drift.git
 cd Disclosure-drift
 make reproduce-full
 make research-report</code></pre><p class="caption">The public build uses invented market data. Source audits additionally require the original cached sources and licensed private inputs.</p></div>
-    <div><h2>Next empirical input</h2><p>The documented Company History source offers a historical-CIK lead. The prepared access request asks for its authorized schema/export, coverage, release and availability evidence. A separate unsent vendor question addresses the 52 benchmark discrepancies.</p><p>Complete source reconciliation and the remaining judgments, run development, and freeze actual choices before final evaluation. Late-2025 labels require coverage through <strong>February 3, 2026</strong>.</p><a href="../docs/historical_identity_access_evidence.md">Read the historical identity request</a></div>
+    <div><h2>Next empirical input</h2><p>The documented Company History source offers a historical-CIK lead. The prepared, unsent request asks for its authorized schema/export, coverage, release and availability evidence. A separate unsent vendor question supports the benchmark decision while preserving the 52 unexplained differences.</p><p>Complete the existing filing reviews and remaining source judgments, establish approved normalized inputs, run development, and freeze actual choices before final evaluation. Late-2025 labels require coverage through <strong>February 3, 2026</strong>.</p><a href="../docs/historical_identity_access_evidence.md">Read the historical identity request</a></div>
   </section>
 </main>
 <footer>Inspired by Cohen, Malloy and Nguyen's <a href="https://doi.org/10.1111/jofi.12885">Lazy Prices</a>. This is a separate annual Risk Factors investigation. Code and draft reports were co-developed with Codex; automated checks do not substitute for human review or independent reproduction.</footer>

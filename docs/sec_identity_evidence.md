@@ -39,6 +39,32 @@ the written report's hash/size. Parser-library versions and the extractor's
 source-code hash are recorded because recovered-tree serialization can depend
 on the implementation.
 
+### Completed run and complete evidence
+
+The [October 11 execution record](../reports/sec_identity_evidence_execution.json)
+records the actual 29.560-second run at commit `3a5b368`, all 215 source/header/
+acceptance checks, 218 filer observations, and the subsequent read-only
+reconciliation. The [complete evidence](../reports/sec_identity_evidence.json.gz)
+is gzip-compressed to keep the repository compact. It contains the entire
+7,011,313-byte JSON, not a selection of cases. Its uncompressed SHA-256 is
+`70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0`;
+the execution record also binds the archive's hash and byte-for-byte round trip.
+
+This first report keeps its original lexical flags. In particular, the
+recognizer conservatively flags 47 facts whose found namespace declaration is
+the year-only `http://xbrl.sec.gov/dei/2021`. Their text and namespace evidence
+remain present. Another 442 facts retain an uninterpreted exchange-name format;
+15 facts carry both flags. The execution record documents actual coverage and
+post-run diagnostics without rewriting the frozen report or claiming XBRL
+conformance.
+
+The embedded diagnostic audit reproduces 6,457 retained HTML-recovery diagnostics
+and independently matches all 1,494 selected fact occurrences and referenced
+context-ID counts against source markup. Forty-one logs reach 100 entries, so
+the report does not claim all underlying parser conditions were recorded.
+Occurrence agreement does not certify tree recovery, text-value interpretation
+or full source/XBRL validity.
+
 ## Original-source checks
 
 The exact supported `filing_sources.csv` schema and SHA-256 pin are checked
@@ -162,6 +188,27 @@ run correctly recorded `original_sec_bytes_reread=false`. A later read-only
 reconciliation can bind this report to that packet by manifest SHA, accession,
 and original filer CIK. It must retain both discovery matches and unmatched
 filings, and must not claim that another machine reread absent original bytes.
+
+The separate `scripts/inspect_sec_discovery_context.py` now performs the
+manifest/discovery-ledger inspection where the private packet exists. It requires
+the exact identity-receipt hash, verifies declared sources and complete record
+accounting, reads only six ledger columns and emits public unmatched filing
+metadata with aggregate counts. It reads no market returns and exports no vendor
+identifiers. The [actual public discovery report](../reports/sec_identity_discovery_context.json)
+accounts for 207 discovery matches and eight unmatched original Exxon filings.
+The execution record binds all eight to the original-source report and all 215
+source-report records to the manifest. That reconciliation adds no approved
+historical link and preserves both executions' different byte-reading scopes.
+
+```bash
+uv run --locked --python 3.12 python scripts/inspect_sec_discovery_context.py \
+  --identity data/private/wrds-identity-candidates/development-v1 \
+  --identity-receipt-sha256 093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099 \
+  --output outputs/sec-discovery-context-review.json
+```
+
+Use a new output path. This command does not reread original SEC documents or
+substitute for the original-source collector above.
 
 The reader keeps `known_at` and `available_at` null, `model_ready=false`,
 `source_approvals=0`, `human_reviews_created=0`, and

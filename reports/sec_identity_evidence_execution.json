@@ -1,0 +1,3728 @@
+{
+  "evidence_scope": "Actual offline verification of public original SEC filing/header bytes in the local research cache; no licensed market source rows.",
+  "execution": {
+    "code_commit": "3a5b368211fa134c637562cc4e312fd11e5024c9",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--python",
+      "3.12",
+      "python",
+      "scripts/verify_sec_identity_evidence.py",
+      "--manifest",
+      "reports/pilot_expansion/filing_sources.csv",
+      "--manifest-sha256",
+      "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+      "--cache",
+      "data/raw/sec_cache",
+      "--output",
+      "reports/sec_identity_evidence.json"
+    ],
+    "elapsed_seconds": 29.56,
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-11T01:49:28.800315+00:00",
+    "generated_report_file": "reports/sec_identity_evidence.json",
+    "python_version": "3.12.14",
+    "report_bytes": 7011313,
+    "report_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+    "retained_uncompressed_report_file": "outputs/sec-identity-evidence-20261011/sec_identity_evidence.json",
+    "started_at_utc": "2026-10-11T01:48:59.240355+00:00",
+    "uv_lock_sha256": "af5183727ec88d2b9d73b8e6d6edeef2f71adbd5770b473607a808fb0c47ea51"
+  },
+  "final_period_opened": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "mac_discovery_inspection": {
+    "code_commit": "3a5b368211fa134c637562cc4e312fd11e5024c9",
+    "command": [
+      "/Users/mba_steins/.local/bin/uv",
+      "run",
+      "--locked",
+      "--python",
+      "3.12",
+      "python",
+      "scripts/inspect_sec_discovery_context.py",
+      "--identity",
+      "data/private/wrds-identity-candidates/development-v1",
+      "--identity-receipt-sha256",
+      "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+      "--output",
+      "outputs/sec-discovery-context-20261011-v1.json"
+    ],
+    "coverage_counts": {
+      "HEADER_CIK_DISCOVERY_ONLY": 207,
+      "NO_SAME_YEAR_HEADER_CIK_CANDIDATE_DISCOVERY": 8
+    },
+    "elapsed_seconds": 0.455,
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-11T01:51:48.599817+00:00",
+    "log_sha256": "3e4b8af19749fc60aa650aebbc319107b431cbf1022167e4272e34c3d79ecd38",
+    "original_sec_bytes_reread": false,
+    "original_sec_bytes_reread_note": "The Mac inspector reread public manifest and six discovery-ledger fields; original SEC-byte corroboration ran separately in the local research workspace.",
+    "output_file": "outputs/sec-discovery-context-20261011-v1.json",
+    "published_report_file": "reports/sec_identity_discovery_context.json",
+    "report_bytes": 5877,
+    "report_sha256": "526364f9530918f222fdad42638c1c0d680213fe8461548f4cb632698669e376",
+    "started_at_utc": "2026-10-11T01:51:48.144780+00:00",
+    "unmatched_original_filer_counts": {
+      "0000034088": 8
+    },
+    "verified_manifest_records": 215
+  },
+  "manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+  "model_ready": false,
+  "original_bytes_reread_location": "local research workspace; not the Mac",
+  "original_sec_bytes_reread": true,
+  "parser_diagnostic_audit": {
+    "complete_report": {
+      "available_at_inferred": false,
+      "filings": [
+        {
+          "accession": "0000018230-14-000058",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 4,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "380076b5b04885dcbdffda326fe99961b5661b30d236284360101f4912c20bb7",
+          "retained_diagnostic_count": 7,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-15-000061",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 5,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "6cac8c6b92934714b742c26d2a3a8ebb5dba389e6b3049ec0184bbcdc2c08740",
+          "retained_diagnostic_count": 8,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-16-000410",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 30,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "9adf824050240f0da899cdc14555171974c1dbd8c601ef13d0db0830c421be58",
+          "retained_diagnostic_count": 33,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-17-000041",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c2daa41efd67282dccbb98671ba58cc0c8e026d531ffcc4748a6b6d2dcc6fc03",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-18-000042",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "6ab35f29a5383ce112b40cf22f9fb8eea98e11a4f9ffdf27bb38401642e83f2b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-19-000034",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "56ece68e99279143023beced2d11f09d13f748b1bd8468b8808152a767473833",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000018230-20-000056",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 1521,
+          "parse_exception": null,
+          "primary_source_sha256": "df89ea3aedadae2fb83ba3aac02ef3b208833f90009fa183598f0a617c240136",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0000018230-21-000063",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1305,
+          "parse_exception": null,
+          "primary_source_sha256": "1ee570a3163bbda3a0354324aa0ab950ea375eeb83e0d2739797ec678e45e30a",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0000019617-14-000289",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ea99d2fa3bc9e92bfeaea0404320cb9a00927ac500dad28803e49a17953c7df4",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000019617-15-000272",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "94d70ad047e404627b67bdc997e46324790c6e2d6fe1f514ffcf9c9edd664e42",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000019617-16-000902",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "e17233eaced9b28e42a9a10b82647f11667ecff0eaf6395aea3942934105d567",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000019617-17-000314",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "e8e21a922196707c17bf53b0fbf51d6c34df2ca453dcb0420b922fa4537da61b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000019617-18-000057",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a64bc48e73ca3cbcc8927d954ac4ec5d1bdd808affae84283cf48cccddd4fafc",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000019617-19-000054",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 2920,
+          "parse_exception": null,
+          "primary_source_sha256": "e6fb982145af553b0b677c3a567f46ba25e015ead7ba2e28e2e69cfd8aea7274",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 2
+        },
+        {
+          "accession": "0000019617-20-000257",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 2940,
+          "parse_exception": null,
+          "primary_source_sha256": "7fc92f36d987956ce7b4a2cd9aca7b5b890e475505c42cedcd7304326d353f6b",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 29
+        },
+        {
+          "accession": "0000019617-21-000236",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 2320,
+          "parse_exception": null,
+          "primary_source_sha256": "74a1a3791e93603aaaaa7ae917ee5d4e5b0b0fce6a318ac124f272d9e1300ed6",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 26
+        },
+        {
+          "accession": "0000021344-14-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 43,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "5b506867757b0996e5137d44913a7d7284c74a2da8cf2e3f9f1ceb41e9d76fc9",
+          "retained_diagnostic_count": 46,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-15-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 39,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "2d4b4537fd052c8170db47c2cc00e672b0b0eac31ed5b6e5e9b5a83dc17a3dd4",
+          "retained_diagnostic_count": 42,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-16-000050",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 41,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "faf739c87196ffb0d91b8b0583f49f8e1d2776f9bda1fd5e53fd964f8bfb02b7",
+          "retained_diagnostic_count": 44,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-17-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ad97f6330ba5a814863328f96ead63e20d84902628a9fd81ee5414d0611b5e26",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-18-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "e46d66e490441cbde04fc855a84255dc213fc83db6fef9e088090af2b3ddd985",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-19-000014",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "0fa0510ce072fa068f45ecba54ca315a02df260ae6f54ae597d2201fd1f3167a",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000021344-20-000006",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 859,
+          "parse_exception": null,
+          "primary_source_sha256": "142b64af1f9390927b187af348ec2c5061c4d9e3d74f7acd5c5326b736700c77",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 41
+        },
+        {
+          "accession": "0000021344-21-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 885,
+          "parse_exception": null,
+          "primary_source_sha256": "70d9088a7b3e24ca84574da26ddc9abb4695f7707f2a2bc0d62b0fe00f5bfca1",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 41
+        },
+        {
+          "accession": "0000034088-14-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 10,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d313ef9ffa85255178a86346903e8c9db30be048d34f7ba611c8d4454203fe83",
+          "retained_diagnostic_count": 13,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-15-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "3f646742613f7fa8a9e9b5b8829c14f58ca9fa275abd9475a448defc16f6c069",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-16-000065",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "873524d1f96ac8e2ad8bd6b2acee797448268c5c72ab99a977b363ae14ea5a80",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-17-000017",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 12,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d08f9d3063f83759e55a86713269922e4e0c157fef8df4cb30caebae93695dea",
+          "retained_diagnostic_count": 15,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-18-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 6,
+            "ERR_TAG_NAME_MISMATCH": 1,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "5e54dc86641012bd731aa5861eff2e24f1f4fb03ec5bf0af52c4f23e1fdd5e85",
+          "retained_diagnostic_count": 10,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-19-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a70874d1158203cd8d2f48f39b532e2efa36e56b2cb5003e4e6d6d08317e336b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000034088-20-000016",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 606,
+          "parse_exception": null,
+          "primary_source_sha256": "f5120418b01ebacda2117688dd724b61c46a2da2b95bba6b8eaf56bdd413547b",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000034088-21-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 633,
+          "parse_exception": null,
+          "primary_source_sha256": "684a7f95b2aefec6dbaa1fd941edd849cfb70a35455045da7dc7cae46b239d98",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 17
+        },
+        {
+          "accession": "0000037996-18-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "dc67312818ac2fa7321956d46c28391422ab656fcfa94717ef7bcc5147ee8021",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000037996-19-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "944942b40e42cff578cd94cb99abddbf4fe6968ac572e9f3368549279b2c0c2b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000037996-20-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 1092,
+          "parse_exception": null,
+          "primary_source_sha256": "37ad3dcf7c982ba2278a564e9206bdd006def2517cce2a446d566968770745a0",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000037996-21-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1157,
+          "parse_exception": null,
+          "primary_source_sha256": "3f29f06f0ec843ff9f83e06d08446329993d77741f38c45ec89868a87a197ca7",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000040554-14-000023",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "bdbc8574a1fca339f5db4d991abd687ad5ce034f49e5e914fc28b229913fb53b",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-15-000030",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "cb07c740c2b471fd239cc675decf88462280885c746a9710059f45bb4355f6e8",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-16-000145",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "b3ef1111df50c057f2f82ad57a1a89d20eb2dffffb22babfd699ab8a7faaabfe",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-17-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "2668a33315ddd8be4df7bd3bd92fa880209988f80ad1e2ee7ac1be9665f358ec",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-18-000014",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ff4930af2b147c8dc5e20fadd7e3269c8975d69e9221c72edf5fc60690ed04e1",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-19-000014",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d4506bd8641df42dce5c3170417b88201ae850b5b759bc0b7bf23eafb2a4024b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000040545-20-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 1234,
+          "parse_exception": null,
+          "primary_source_sha256": "9376d2214f71e3e3a7258a9435dc97ed7e8704b1eded44d20a8f65c898d25084",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 29
+        },
+        {
+          "accession": "0000040545-21-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1234,
+          "parse_exception": null,
+          "primary_source_sha256": "9aed9066100d9581a63c3dc859642bb0736e854f0c6297d83de77d466bb80d58",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 26
+        },
+        {
+          "accession": "0000050863-14-000020",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 24,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "846098afb4bef1f70ef7094702e217139b3128730c61932daebf34cd1e7b0d90",
+          "retained_diagnostic_count": 27,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-15-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 38,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "38b2c2b545ab2d6f6721d6a56f68e3a77fff27dd4bf0b355b071b77856d78477",
+          "retained_diagnostic_count": 41,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-16-000105",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 37,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "9d3f164f8489b37685f43e87a14fc9f6fb80ad082d21dba0a3a32a5c840bc04a",
+          "retained_diagnostic_count": 40,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-17-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a8666ae2ef32be4853de6ed3254fda84aee5b42273f25baef1c25138b624d6c3",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-18-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "629816d32ef03c03d0a8893e09f254774c7c2874c7ac4a48486313928a4ceeea",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-19-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a4bcfd8e270478c55ca8996bc987e0960a02c63ff6a9e744c4785a3738ce124c",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000050863-20-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 649,
+          "parse_exception": null,
+          "primary_source_sha256": "1f3be1eb9b8e2ceda488a78b22b753af2ddf6d514524910309f15ee5833b8f63",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000050863-21-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 638,
+          "parse_exception": null,
+          "primary_source_sha256": "90e0381861b9cef7df43b92b523d36988d9e6f19394796327ecf3eed893abfa5",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001047469-14-001302",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 16,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f59f8daef9a229e844edb5062be1bef18742918fc16df9cd6adbf76d81df7cb4",
+          "retained_diagnostic_count": 19,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001047469-15-001106",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 18,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "39e37b350d93d36388d7f05b0305a401742e116037c774e3a90e3da55a43023d",
+          "retained_diagnostic_count": 21,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001047469-16-010329",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 18,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "60b023e181293fa986125ab2ca6ab0575196bd86bc999caaf37b804044469dea",
+          "retained_diagnostic_count": 21,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001047469-17-001061",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "75a2ee8c2a0500d870540b0bb345a933f1d99fa41157f089cd633e0702f89b8a",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001047469-18-001117",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "2e9631ee1ff21f77a80468e1d589b70547ef15aa610a2541743e9c1e823eee37",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001047469-19-000712",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "49be49b6c104f60f0561ea377144320327ef35d7cc8c6d4ac997bba9203dbf3a",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001558370-20-001334",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1249,
+          "parse_exception": null,
+          "primary_source_sha256": "2c38cd6ed92e42ee7a6b8dca419ae900b2d9842c0a2b52ead26996b0b2dc79e9",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 77
+        },
+        {
+          "accession": "0001558370-21-001489",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1196,
+          "parse_exception": null,
+          "primary_source_sha256": "6990e8b6f5cc2055f33d4d33cc9f1142ad83fe697f3fbca13360cbe44ea1695f",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 71
+        },
+        {
+          "accession": "0000063908-18-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 60
+          },
+          "independent_all_context_start_tag_count": 290,
+          "parse_exception": null,
+          "primary_source_sha256": "060c1b03cf79f338eac8178d3cd539bebcee4844ee1e6f3b3d0e935b6ea21e75",
+          "retained_diagnostic_count": 60,
+          "selected_fact_count": 3
+        },
+        {
+          "accession": "0000063908-19-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 63
+          },
+          "independent_all_context_start_tag_count": 270,
+          "parse_exception": null,
+          "primary_source_sha256": "0e7bb7d7e8c13f7cde8855b3a983f4aaf742e7ff356dd09daee6f7c8e2e23379",
+          "retained_diagnostic_count": 63,
+          "selected_fact_count": 3
+        },
+        {
+          "accession": "0000063908-20-000022",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 64
+          },
+          "independent_all_context_start_tag_count": 248,
+          "parse_exception": null,
+          "primary_source_sha256": "0f9d982ecb46fdc162bbb584c9283e5603e5b71656b7f451792855b81c89a359",
+          "retained_diagnostic_count": 64,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000063908-21-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 232,
+          "parse_exception": null,
+          "primary_source_sha256": "43a55a570bbb0bbb94f59af6975350513609c9d737f4f46111986bc5eb48f019",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000070858-14-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "696da03f02443d0066d68d5ce02f96c626a99c779db96bb74dd8f3b9b5818bb7",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000070858-15-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "105e1b061d8c0dfd6e4cb33f7db15f9ac20db96d778d58c37ca31126e5df59d1",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000070858-16-000137",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "17761a96e491fff68278c93ef64ce5067fae56f38ae0bd85db3db40ff3016089",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000070858-17-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d717b711903b62a2c41ce069d93e7eff6ed448e9c11dd8b323c45722be4e5a31",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000070858-18-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "abffafb0d0175704f71106659c37a6f1794cac97271095f763361f9202b567ff",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000070858-19-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 2528,
+          "parse_exception": null,
+          "primary_source_sha256": "ccbf1dd8160c673ba903a3d1118b501beec95a49d95e04842dd97cc0071373e1",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 2
+        },
+        {
+          "accession": "0000070858-20-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 2520,
+          "parse_exception": null,
+          "primary_source_sha256": "5e223918b5d0807fd9d8f76415f3cd5185d04f73ae5da989b07f0226fb869346",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 53
+        },
+        {
+          "accession": "0000070858-21-000023",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 2424,
+          "parse_exception": null,
+          "primary_source_sha256": "451fb84ef0f15015c3a52e68d7de086d6f4df4863beb6f94911c96a9ff6fde53",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 56
+        },
+        {
+          "accession": "0000077476-14-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 32,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "b7ea823f22ab09a40d112209570d84b6f79da817f839182da46efa99d5a0ffa5",
+          "retained_diagnostic_count": 35,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-15-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 39,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ebd7f14978fee710cc92946cb6e92217504d2440d735c26356e8c1abd4ec4b2a",
+          "retained_diagnostic_count": 42,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-16-000066",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 63,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "e072c6231488e16836e21e7d00f1a0c9c0181af73131981961a7fb7f8ddbc7c1",
+          "retained_diagnostic_count": 66,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-17-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "741db288bf545a074d0d9cdc098a20edc2734d7760b7acfc9c284ea361f01567",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-18-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "8f4809e4613138db1cef18fc051887cbd4d52782ba991ddb5da67467fe87f1f9",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-19-000017",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "083d5905e6923379c35c4db9ab97ef3cf047f2994f974063d3b3da2abe4df497",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000077476-20-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 725,
+          "parse_exception": null,
+          "primary_source_sha256": "b412f9019ce338c8df36056c37b1e7900510a5ed822f135cba59d1317c2adacc",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 26
+        },
+        {
+          "accession": "0000077476-21-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 728,
+          "parse_exception": null,
+          "primary_source_sha256": "8d2a250e1a7b508dd9c69227c8f6cde85055bc05a17d365c0588b806b32079aa",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 38
+        },
+        {
+          "accession": "0000080424-14-000057",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 57,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c00140d923bff7c5de5009ddbe2888bea94398b048c59459887f116ebe23b20b",
+          "retained_diagnostic_count": 60,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000080424-15-000070",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 63,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f2a192e824741dd7e2e2082234109ade82d5e7098f7e5d1b650674cbd971683e",
+          "retained_diagnostic_count": 66,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000080424-16-000212",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 50,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ce427fe40130a1d1b9e244c1a782454483a6fc975f70dca5295dbd1a5abb6719",
+          "retained_diagnostic_count": 53,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000080424-17-000047",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f08ce39538c5650f2c9f49f9e778f87e9d482c35d11d16d727c0826396bebaa0",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000080424-18-000055",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 99
+          },
+          "independent_all_context_start_tag_count": 408,
+          "parse_exception": null,
+          "primary_source_sha256": "eccf746b09db2b189834d9cfdd79d08ebe8c48edd8d121cb4d997934c9b5b9cd",
+          "retained_diagnostic_count": 99,
+          "selected_fact_count": 3
+        },
+        {
+          "accession": "0000080424-19-000050",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 98
+          },
+          "independent_all_context_start_tag_count": 427,
+          "parse_exception": null,
+          "primary_source_sha256": "5daa74d2b7ddf8352367a3deac86100f58c056232e1f3109a29d09383a317aac",
+          "retained_diagnostic_count": 98,
+          "selected_fact_count": 3
+        },
+        {
+          "accession": "0000080424-20-000053",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 433,
+          "parse_exception": null,
+          "primary_source_sha256": "829b9718e149da51aec6009867554985f69ec5dacce7c558561f82e7334f0aaa",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 49
+        },
+        {
+          "accession": "0000080424-21-000100",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 427,
+          "parse_exception": null,
+          "primary_source_sha256": "0b4c481c854548d0f4c0c59c2b49e5e20c72f597b1cdddbe35dd0731bf823ad5",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 45
+        },
+        {
+          "accession": "0000093410-18-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "8d92f2e95a7eff760dcd7d072f8658efd4541ee7fc6bf2cdfe6eda8b73b8cfa0",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000093410-19-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "317a0a80ed6519e5ab6d469e894a635ab6cda021dae341627d6923aa593acfb0",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000093410-20-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 901,
+          "parse_exception": null,
+          "primary_source_sha256": "db8c48b1b2259857a793b33928460739ff72d9c1bfbf192c6c0b2e271bf36df2",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000093410-21-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 922,
+          "parse_exception": null,
+          "primary_source_sha256": "3a5a68b131d6a9fd98e9f0e571278c89b54d5ecde4b64a8fbff6556453d0d3a5",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000104169-14-000019",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 18,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "fbe0834cd2638403d77313e8cec9cb9158fcebe95eb059b198ba12aab557c8f4",
+          "retained_diagnostic_count": 21,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-15-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 21,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c0e36e6f89e2ebbb9dc84e21c807a3b8e03a55a4924a6cf85447aebdf58e1acb",
+          "retained_diagnostic_count": 24,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-16-000079",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 16,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ce2fef33e63d3c27f89cd783c173322ef77e29899dc9f3337b744e5ddd8dfe54",
+          "retained_diagnostic_count": 19,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-17-000021",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "bfba709037ba56094c2b5b9db3ee4b209dfbd0e36f38adb9be79876a7be74dcc",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-18-000028",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "abeebf642ab9eb0f01e045ac1e28d1eafb874c49790929b8c4816812067ad882",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-19-000016",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "36016c17ab0b5cf3704311bb9728f28feaf005e61b5a46cef256ebf325f5d5bf",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000104169-20-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 85
+          },
+          "independent_all_context_start_tag_count": 382,
+          "parse_exception": null,
+          "primary_source_sha256": "97568c8a118f486cd240f65c976d424c02aa2250b2ec183bc24dde272583e879",
+          "retained_diagnostic_count": 85,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000104169-21-000033",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 376,
+          "parse_exception": null,
+          "primary_source_sha256": "420553d5c491dcd36ba9c9e56c8685834f4c05b8d19cf9332bee5b0ab2e35212",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000200406-14-000033",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 2,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "01d06bd9b148acc8dcad273a03b14726a7c01ef4dcbd490671dfba0080bdb557",
+          "retained_diagnostic_count": 5,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-15-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 3,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "66b6fccf1182e6e8baf983c39b35f096d505714efa80cc0d8126565001d170cb",
+          "retained_diagnostic_count": 6,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-16-000071",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 11,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "1d1f3d5b5782788a6801bb89465d19f9a94b616d1683d96e7975ee1cfa5ecea1",
+          "retained_diagnostic_count": 14,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-17-000006",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "030ae6b2def954f67b6cca0927252129d790fad007e5b0bf3ca78ccd6a1fe117",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-18-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d1fd69b490c6f70e7a7a9d26f361537f852d95772ffaaf5ba7caf791508c61b5",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-19-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "9f0815a624538ad1f456485fb2fc3bacf22b2a81f6cd977bcceb2e143e568c94",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000200406-20-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 1134,
+          "parse_exception": null,
+          "primary_source_sha256": "e178a513af5ec4c78c831ecf42bb63440266ce37341814175d142dfeb193fbf8",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 20
+        },
+        {
+          "accession": "0000200406-21-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1060,
+          "parse_exception": null,
+          "primary_source_sha256": "68ec2b3df38630a605273643694f89c8613b832449c31cf5801ce89f8eb6665a",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 20
+        },
+        {
+          "accession": "0000318154-18-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "82f0d19fdaf493003b8beadd5c58d68eab13c0a20e51c4d0632d2e674304e5e4",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000318154-19-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "b23ed17a2c3cc6a1aa469a4274abab517431ce772645321f379c5f30ffb7aae2",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000318154-20-000017",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 730,
+          "parse_exception": null,
+          "primary_source_sha256": "a587b36356a2d2906d348bdcfbada1a3d085887483d594798464e5a866e2d472",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000318154-21-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 700,
+          "parse_exception": null,
+          "primary_source_sha256": "36cf5e78bf742f46a6cd74ade4dc019b0585c27d994d3f8ddab4f1d54f25d86d",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 11
+        },
+        {
+          "accession": "0000320187-18-000142",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "53ef964600fa7622b97419ef599c4496ddfd3454be7c1e415e4722028a067e05",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000320187-19-000051",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "4bff894a60de1a2b2c4d4d88217e1f8cced10833a7e4ec58bebdf2523c60493d",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000320187-20-000047",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 522,
+          "parse_exception": null,
+          "primary_source_sha256": "542ee1d0bb352b9f03c247879da168c5fc77e0211bb5a8532cfbd2c329e28195",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000320187-21-000028",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 602,
+          "parse_exception": null,
+          "primary_source_sha256": "fb13f5802935706933d44644185471dfe5e6e23061eae3d442f93f9e9ce5565c",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001193125-14-383437",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 1,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "44f75ce561a90e20e3746f858ae1bb314cbafa84e29dc29b819baf65f259b455",
+          "retained_diagnostic_count": 4,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-15-356351",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 1,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "dca372f0b891a2547440b469a18ebccf5c5d3cd375a83d9803be504d66ae8554",
+          "retained_diagnostic_count": 4,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001628280-16-020309",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "57a4969ca5cd5b91d1c4327591b5f660b03b7d39d9c3f2e9bcb94c1a6aba2154",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000320193-17-000070",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "cd12d0bb7e27858976745af0439497b6e4dc73a8c50aa3bd6c10622ad04ff1e0",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000320193-18-000145",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c855d1e7db060d59d34bf17577f2a92ea52edb97343fac748cffd0bedd3b1b12",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000320193-19-000119",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 67
+          },
+          "independent_all_context_start_tag_count": 301,
+          "parse_exception": null,
+          "primary_source_sha256": "38a91ca866ff8277901bc2ca2d3b93c1ea9d39acc87ac14ce2eaf957205f6d31",
+          "retained_diagnostic_count": 67,
+          "selected_fact_count": 29
+        },
+        {
+          "accession": "0000320193-20-000096",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 318,
+          "parse_exception": null,
+          "primary_source_sha256": "28eeb98036912343291346d4ca08b3d97dc6a4469bf4fe1c40c8a978c4b7ea60",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 25
+        },
+        {
+          "accession": "0000320193-21-000105",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 226,
+          "parse_exception": null,
+          "primary_source_sha256": "66b96c664d93371a52103dbdfcd4f6ff72da04e6af771226c0aa69a228bfbb68",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 25
+        },
+        {
+          "accession": "0000354950-14-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 7,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "379a3b6cbe93545273b7101a5e32af2a50363ebd8d923b4d09e7415731686bf8",
+          "retained_diagnostic_count": 10,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-15-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 4,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "aa236bb162126babf78e24b51ecc9d1c13db332ea8380a7d1d8773bba33bec06",
+          "retained_diagnostic_count": 7,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-16-000060",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 6,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "aac7db670445903749a01409d3b61cdbdbe27777d95e0ada70cd3a343cf3d609",
+          "retained_diagnostic_count": 9,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-17-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d22117241e8143ba2520b16a80983d7c17b96867a4e047129543393d27ac72e4",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-18-000019",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "3c5ddcc1f7f980def1c3ea7b812331aff4caedc5590ac3a86a569587404a7387",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-19-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "316c042d8c6480e89ab44613c3652394fd0f6a057fc3d54808af73195816d330",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000354950-20-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 77
+          },
+          "independent_all_context_start_tag_count": 307,
+          "parse_exception": null,
+          "primary_source_sha256": "48822c12cba94038d88f7930b9f8d797da872d63a249867fdcbe066820258799",
+          "retained_diagnostic_count": 77,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000354950-21-000089",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 304,
+          "parse_exception": null,
+          "primary_source_sha256": "8519a7209c9ff8021e6d16f7ce940d7866c92ec7c144d97d95c9e5ba8f20d943",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000731766-14-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 12,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "09c7b2d3dda2175fed1af11dc027a99eb9a59b9054fe67e74c36ae475660cb51",
+          "retained_diagnostic_count": 15,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-15-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 18,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c6ca7a83825fd4add4a04400d7a6f75c81ae0f1fd1fb9465a8b78a41a1bbee6f",
+          "retained_diagnostic_count": 21,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-16-000058",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 14,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "7f33f761c1c168374e95e00210293549958db9d136ad20648f04b2f1368f963b",
+          "retained_diagnostic_count": 17,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-17-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "05281366dbbffa84aa2011ade0aa577f944bbea04f37a5f762ce54bfa0dba8ce",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-18-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "b858d90ce10de97b6c38ae1ffb1458fb568e2c022df7ce6fde3f08e3fd37d70d",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-19-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ea50271483df1a30a7d908e3c0a1210fcce5f603217b2814c67674a5c8261d79",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000731766-20-000006",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 84
+          },
+          "independent_all_context_start_tag_count": 447,
+          "parse_exception": null,
+          "primary_source_sha256": "c800c9f8f3ec9e4e7461b4210c171cc68f580c0cdf33d9019f54312e2fafa1f9",
+          "retained_diagnostic_count": 84,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000731766-21-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 455,
+          "parse_exception": null,
+          "primary_source_sha256": "fa4b5cbdbe25a2439ddcc22fbe5ac1b6525a80caf5be4e8dcebd11e09497516a",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000732717-18-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "fa0ec177a72ea9356d453be69b0c34b0ae3316a380ba08567462574c9bc9985f",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-19-045608",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "2e8eed90b4285e715557703d1922c5e3f1dd6e7726158bee7f5d96ff54b290f1",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001562762-20-000064",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1232,
+          "parse_exception": null,
+          "primary_source_sha256": "7ff285f52f33f4e010920e54f2a769196d7b88f3ec07900c154a8258b24bd554",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 104
+        },
+        {
+          "accession": "0000732717-21-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1435,
+          "parse_exception": null,
+          "primary_source_sha256": "28a926987825d40e56cf728ff9822dc34593be733a812ac6ff4bf6465ace1d2c",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 116
+        },
+        {
+          "accession": "0000930413-18-000292",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f293790bf0c9d033fa99e39f10e02441e16e74034a2b854a6f1743b90f8812d6",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000930413-19-000366",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 97,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "fbaa4541144896f7cb3b3d9657b1b983cfb0688eedf7c8c9465510b6ee023253",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000773840-20-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 765,
+          "parse_exception": null,
+          "primary_source_sha256": "88b1d33625d42072a6317c24301ea82150bab93e1399dce5211426d53b5766e5",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0000773840-21-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 818,
+          "parse_exception": null,
+          "primary_source_sha256": "8263bd8ba266dbe0f360aa78c55c11a8bb0f885a4ca43b07e89b80900358bb76",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 17
+        },
+        {
+          "accession": "0001193125-14-289961",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "3661cbd204848db0a728983331ef2a80cd7a50aa672309dc4b55835bf923ff2f",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-15-272806",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a9a6aac5206608dd909e5aacb2c0bd9a53905da492622deeb6634baa3d5c7e6c",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-16-662209",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "91b1d8f314f3a302b6fe7cb18d3ba7a5ea85364a8fa968c6889071c6e20b936f",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-17-014900",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 39,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "0233aa3ab552509afe02d2c738a03c3763564ac08964d1288892ea1595697fa1",
+          "retained_diagnostic_count": 42,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-18-019062",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 23,
+            "ERR_TAG_NAME_MISMATCH": 74,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "cac17f8813e9ddf6d8ca2fb0034894d5931a1269b446a38935a73147ceb67914",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-19-027952",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 22,
+            "ERR_TAG_NAME_MISMATCH": 75,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "54659bb57c728e67cabee6029a65244441da693b451ab926bfcd9876969a8368",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-20-034944",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 479,
+          "parse_exception": null,
+          "primary_source_sha256": "23d94db1ab3a348a5ad886a1d99c1701c4e917617f73d4553b476a7caa05981e",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0001564590-21-039151",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 483,
+          "parse_exception": null,
+          "primary_source_sha256": "eb745ef86f42d669907f2cf805fd239ab4753428e8cc74308b72fef5134c5262",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0000796343-18-000015",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "1ebec21a7f2fa7fd7c4081626171f99857c6ad3c2c8669ad18acb2b0d72744dc",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000796343-19-000019",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "36f8dd5eb80208bf6c314330813f163f33892216a8959d1413a0c0948ce02460",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000796343-20-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 445,
+          "parse_exception": null,
+          "primary_source_sha256": "79631fa5d82b8390f92450f7b5db55daed5a8fce37de3922d35f05c9f32d033b",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000796343-21-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 400,
+          "parse_exception": null,
+          "primary_source_sha256": "9bfc5a3a5c69e5c511d9a1bb9b8b97035fe55b2607c5ef3403f99e2b9ce85bc6",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000858877-14-000029",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 46,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "54717add97bced039da3de99672c08112dd1c6edffaf90b09f4139e97ea370d9",
+          "retained_diagnostic_count": 49,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-15-000070",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 53,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "5089c098f7ca1cbc4cad325e85fa9814d6078fd7be467d49dea72bfc54a83b8b",
+          "retained_diagnostic_count": 56,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-16-000117",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "1ee73c29068c1d52a8d79332c4b18932fcceac17be0744b8d552d648b1e38cb1",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-17-000016",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "5a76b2fbd907ca49ae3cde87c832cf307f08775a8ff0f2cb16c964fd9deabd83",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-18-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f03718b8549611a79d597ed4c65435d814a06e426ca3ac27b5ba97360b9cc1d8",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-19-000012",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "df1c68d02139b163fb3d27d33a82b6515ade6ef213e927d78812833534c4b3b9",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000858877-20-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 642,
+          "parse_exception": null,
+          "primary_source_sha256": "3a5613cab8b0564bbb5bf2ca7da8caacf6dddb7bd58ccf7ea5b4f6e4dec99cc4",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000858877-21-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 624,
+          "parse_exception": null,
+          "primary_source_sha256": "577514d7b609c9649432a019bf261774f9d7242b3dc40607395418ec5990974a",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001193125-18-056383",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 1,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "5e9692ddcbb221a634fd3b2a8116aa470622316e75459e2bcb12179fe28d40d3",
+          "retained_diagnostic_count": 4,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-19-050198",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 1,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "88fd7cf8fa84f81bb93dc1d253f1ace4032747f19614e2ff306503b9254c6c04",
+          "retained_diagnostic_count": 4,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001193125-20-043853",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 1809,
+          "parse_exception": null,
+          "primary_source_sha256": "2a87e31a6b4cf05ea6b6ab3c4f8a950a33f68de28d61621cd3ee875e38e59906",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 38
+        },
+        {
+          "accession": "0001193125-21-049380",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 2013,
+          "parse_exception": null,
+          "primary_source_sha256": "8ed833d59cdc9ba4bd6f641ba3a29a4d755d6396d73f9101f6a499abeceb0739",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 35
+        },
+        {
+          "accession": "0000909832-18-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "df2f7060b79b2d5b0e052c8d73eec6db86ea54ba0ce2b092b99a097d5bc74756",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000909832-19-000019",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "d40a0a6ad2125ee7e0ebdcae6c89f014905a5729ad3ecb64c827b9ff525d01f1",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0000909832-20-000017",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 228,
+          "parse_exception": null,
+          "primary_source_sha256": "5fc6cbe1351bb4ce9bf89aff218aefadc098696d136515c15373121f411100a0",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0000909832-21-000014",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 193,
+          "parse_exception": null,
+          "primary_source_sha256": "cb54011f3d4692055dd4e361bce4df7ca659cad9105749c671b103dec228d1af",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001018724-14-000006",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 25,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "3850faab41ac3850e45d82ed3c2ab27b977a7b012a637fbebd62492b5e96a50b",
+          "retained_diagnostic_count": 28,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-15-000006",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 31,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "601e667a9439eba6a50883ef0533c7e9fc957e3a9f9614408bb3e63045d58809",
+          "retained_diagnostic_count": 34,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-16-000172",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 33,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "03076f249cd4394ed72357907e02382919ba7c8c8b01d42e5a1aa05ee1620165",
+          "retained_diagnostic_count": 36,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-17-000011",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "26f9419ef131d76be84b8bcfdd0700968d8d66b47559f28adb08da0be9376748",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-18-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "dc90cd6131dbd8daf89965339b90687104aa4c2742d8567f256bab18d90152a8",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-19-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a612435cb1e5b70997f1e40c69a9082b3646800eea8439888106c94425a3a98e",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001018724-20-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 75
+          },
+          "independent_all_context_start_tag_count": 348,
+          "parse_exception": null,
+          "primary_source_sha256": "f66aefb9a192379634d2cdf8cee51184b747330527cbbbe0381639a5fe050701",
+          "retained_diagnostic_count": 75,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001018724-21-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 311,
+          "parse_exception": null,
+          "primary_source_sha256": "be14402a698271ca99a78d9de7816aaaeed69b0ec06cfe37cb98c904985f683f",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001045810-14-000030",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 33,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a6fa0ad20aa3756814267abe2e331f482c67c7b38dbaa1ab16ae1480ac8b4df5",
+          "retained_diagnostic_count": 36,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-15-000036",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 34,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "c7a6652ef0802c06d59877a5dda0b552850ef966f39ecfc6335762ebd7f37a93",
+          "retained_diagnostic_count": 37,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-16-000205",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 38,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "0d7568ba7532e8a5fc64c202b373f27b297439cb01897c2b5ec119f8f01803c4",
+          "retained_diagnostic_count": 41,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-17-000027",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "ec6983f2c486f715ea5e3858e775daad68b31e7eaf4243d662fe811b2866a7c9",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-18-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "52355d65c91882d09ea7dd083d429280e9761fe33bd0a1e3977e0cefe38d6228",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-19-000023",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "a593e90ac3fca599ad31fdcbd95ee157639c057124c033924a5ca6b70d016380",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001045810-20-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 76
+          },
+          "independent_all_context_start_tag_count": 260,
+          "parse_exception": null,
+          "primary_source_sha256": "d1b6f72150518ef422fd6d56e4a6e4bc3d1644339f75a4b1dca2a6d12e2d8e78",
+          "retained_diagnostic_count": 76,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001045810-21-000010",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 296,
+          "parse_exception": null,
+          "primary_source_sha256": "109404bc413bb8b3693d6ad1f47d04a5dc25162e53cfba9fc80db6cea31d0a0a",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001141391-18-000009",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "7feb359c62a18db9850c5d9a03e825d10c1dda40e28b4676877b62b39852f4bd",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001141391-19-000013",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "235003387061d3865249f578c3d0f695533cc30936c8bd859db0bd4a4a771c36",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001141391-20-000032",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 514,
+          "parse_exception": null,
+          "primary_source_sha256": "a85c2757de45ef8fdb158e02f7e8ad974f2777ea03d608c7f984840eb5a0c6a8",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0001141391-21-000018",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 470,
+          "parse_exception": null,
+          "primary_source_sha256": "8073841dd23f652546deacb8aeed644e5181c22ec5008218145f18aea222dbf6",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 14
+        },
+        {
+          "accession": "0001166691-18-000004",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "256cd104e9f0d7c980affe785cd32c529ba9759ecf8b74e748ae8e41f27c3554",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001166691-19-000005",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "4cc4c70ee84bf8cac49bb55f9578273a57af792244d7ce2923c41d8f9c3e743d",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001166691-20-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 756,
+          "parse_exception": null,
+          "primary_source_sha256": "ee78ff43dc49a77852f60e181aead638926b4815814d54049783b38b9ec13fca",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 16
+        },
+        {
+          "accession": "0001166691-21-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 351,
+          "parse_exception": null,
+          "primary_source_sha256": "09a36c3ff116eee283ed87965ed40f9cef804707b6457afdc32fe1ff2498d332",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 29
+        },
+        {
+          "accession": "0001564590-18-002956",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 44,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "f2e73011d8c01d4b8a3a8118628c9f0fc9228ea568d52e50bdbda6ed18db18e4",
+          "retained_diagnostic_count": 47,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-19-003165",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "DTD_ID_REDEFINED": 21,
+            "ERR_TAG_NAME_MISMATCH": 76,
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "b0433917837a07aca08d6ae9436ac54c5c1ebb4554e4e499a2781ed6f65a5912",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001564590-20-004475",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 566,
+          "parse_exception": null,
+          "primary_source_sha256": "f2c95252efa7eabad5bc4c4c1e3701dd3968165c9a7e6685ef8cdaaf61d9a454",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001564590-21-004599",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 565,
+          "parse_exception": null,
+          "primary_source_sha256": "0171abac3be5f3d718715801abe07b3b46401e964294a1f33ec1545de96d14dd",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001403161-18-000055",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "9ef2d424e8293dd58dc3e9c0f98f078e880bcf6bce17d1dd72547470b398b849",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001403161-19-000050",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 438,
+          "parse_exception": null,
+          "primary_source_sha256": "5bd66aee0fc1f46daeb5f1dec7385a8f2997221599104ba516456ec397f2d996",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 7
+        },
+        {
+          "accession": "0001403161-20-000070",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 569,
+          "parse_exception": null,
+          "primary_source_sha256": "7364aee56479aa0f0667ee584ef34a128f81d2743abf05b580ca041f01dbb1cf",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 7
+        },
+        {
+          "accession": "0001403161-21-000060",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 529,
+          "parse_exception": null,
+          "primary_source_sha256": "0c1619cf79509e60c03e1211cf02daf806231d229a6b3111034d59d7f77bd66b",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 7
+        },
+        {
+          "accession": "0001551152-18-000014",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "3ba45af88cfb983476f6a82c7192563102dc5e8d7ab085139c4fb4f33be434c5",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001551152-19-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "HTML_STRUCURE_ERROR": 3
+          },
+          "independent_all_context_start_tag_count": 0,
+          "parse_exception": null,
+          "primary_source_sha256": "7e86ea101ec4e28b0846963bf05ede049cf935eec4a96ca5c3f3ca4393b5db2b",
+          "retained_diagnostic_count": 3,
+          "selected_fact_count": 0
+        },
+        {
+          "accession": "0001551152-20-000007",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 768,
+          "parse_exception": null,
+          "primary_source_sha256": "4b0f8569aa0b639721d4d45d685b7a477a8cb1585cc95a8dc4400992554cb4b2",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 20
+        },
+        {
+          "accession": "0001551152-21-000008",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 978,
+          "parse_exception": null,
+          "primary_source_sha256": "cfa26e47bd1606a4386fd99d9c1335a4a920a2b741b988e95a8db92de3d4ec76",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 35
+        },
+        {
+          "accession": "0001744489-19-000225",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {
+            "ERR_TAG_NAME_MISMATCH": 100
+          },
+          "independent_all_context_start_tag_count": 877,
+          "parse_exception": null,
+          "primary_source_sha256": "c258e34a3c49474048a85d762f85f0679e664032339ef76e7c2c160ee2e33f62",
+          "retained_diagnostic_count": 100,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001744489-20-000197",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 891,
+          "parse_exception": null,
+          "primary_source_sha256": "aa3be81ac5feaa47d439fee4a98228ff4b8b9b16bca8af9ed2d064d3773be4e3",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        },
+        {
+          "accession": "0001744489-21-000220",
+          "all_six_report_comparisons_passed": true,
+          "diagnostic_type_counts": {},
+          "independent_all_context_start_tag_count": 702,
+          "parse_exception": null,
+          "primary_source_sha256": "999ca24829d90946b48b9bb464494b97a60cf71898bf4adba91c4ca03c6fadbd",
+          "retained_diagnostic_count": 0,
+          "selected_fact_count": 5
+        }
+      ],
+      "final_period_opened": false,
+      "historical_security_links_created": 0,
+      "human_reviews_created": 0,
+      "independent_start_tag_scan": {
+        "comparison_attributes_with_non_ascii_text": 0,
+        "context_check_scope": "For each referenced context ID, compare its independent source start-tag count with the frozen report context occurrence count; context values and XBRL semantics are not interpreted.",
+        "filings_checked": 215,
+        "input": "Original bytes decoded one-to-one as Latin-1 in 1 MiB chunks for ASCII markup token comparison.",
+        "mismatches": [],
+        "options": {
+          "convert_charrefs": false
+        },
+        "parse_exceptions": 0,
+        "per_filing_check_pass_counts": {
+          "diagnostics_match_report": 215,
+          "independent_families_match_report": 215,
+          "independent_name_contextref_counts_match_report": 215,
+          "parsed_families_match_report": 215,
+          "parsed_name_contextref_counts_match_report": 215,
+          "referenced_context_id_counts_match_independent_scan": 215
+        },
+        "reader": "Python 3.12 html.parser.HTMLParser",
+        "selected_fact_family_counts": {
+          "EntityCentralIndexKey": 80,
+          "EntityRegistrantName": 82,
+          "Security12bTitle": 447,
+          "Security12gTitle": 6,
+          "SecurityExchangeName": 447,
+          "TradingSymbol": 432
+        },
+        "selected_fact_occurrences": 1494,
+        "selected_start_tags_with_duplicate_attributes": 0
+      },
+      "known_at_inferred": false,
+      "limitations": [
+        "Counts characterize retained parser.error_log entries. Forty-one logs contain exactly 100 entries, so they may omit further conditions; zero retained FATAL or truncation messages does not establish their absence from all underlying parser behavior.",
+        "The independent tokenizer detects gross selected-start-tag loss and context-reference occurrence differences. It does not validate recovery reparenting, full text values, nested context semantics, taxonomy identity, continuations, transformations, CSS visibility, or all possible XBRL facts.",
+        "Hash equality binds the bytes actually checked to the frozen report and cache metadata; it does not independently prove the historical SEC document or delivery was complete.",
+        "Selected concept-name and contextRef comparison attributes were ASCII in this corpus. The independent Latin-1 scan is a byte-preserving markup diagnostic, not a document-character-encoding or XBRL value interpretation.",
+        "Malformed traditional HTML and duplicate general HTML IDs are retained diagnostic evidence. The successful lexical occurrence checks do not convert those documents into valid XML/XBRL or approved security identity evidence."
+      ],
+      "model_ready": false,
+      "parser": {
+        "options": {
+          "huge_tree": false,
+          "no_network": true,
+          "recover": true,
+          "remove_comments": false
+        },
+        "same_lxml_html_parser_and_fromstring_path_as_frozen_reader": true,
+        "taxonomy_or_external_entity_fetches": 0,
+        "versions": {
+          "libxml2": "2.14.6",
+          "lxml": "6.1.3.0"
+        },
+        "versions_match_frozen_report": true,
+        "xml_parser_used": false
+      },
+      "prior_arithmetic_review_modified": false,
+      "prior_frozen_report_lexical_audit": {
+        "affected_filing_counts_by_issue": {
+          "dei_namespace_unrecognized_or_unresolved": 5,
+          "format_transformation_not_interpreted": 71
+        },
+        "comcast_2020_dimensional_distinction": {
+          "accession": "0001166691-20-000008",
+          "description": "Both Comcast and NBCUniversal DEI CIK/name pairs are retained. The NBCUniversal fact context has dei:LegalEntityAxis / cmcsa:NBCUniversalMediaLLCMember while its entity identifier remains Comcast CIK 0001166691. No security or entity link is assigned from that context."
+        },
+        "continued_facts": 0,
+        "distinct_facts_with_issues": 474,
+        "exchange_whitespace_only_additional_case": {
+          "accession": "0000018230-20-000056",
+          "description": "Exact parsed strings distinguish New York Stock Exchange with and without one trailing space. This gives 12 multiple-string exchange filings; a whitespace-collapsed diagnostic gives 11 without changing any retained value."
+        },
+        "excluded_descendant_facts": 0,
+        "fact_context_binding_cardinalities": {
+          "1": 1494
+        },
+        "fact_issue_counts": {
+          "dei_namespace_unrecognized_or_unresolved": 47,
+          "format_transformation_not_interpreted": 442
+        },
+        "facts_in_hidden_elements": 106,
+        "facts_with_both_issue_types": 15,
+        "filings_with_multiple_distinct_exact_parsed_texts": {
+          "EntityCentralIndexKey": 1,
+          "EntityRegistrantName": 1,
+          "Security12bTitle": 42,
+          "Security12gTitle": 3,
+          "SecurityExchangeName": 12,
+          "TradingSymbol": 37
+        },
+        "multiple_filer_records": [
+          {
+            "accession": "0001166691-18-000004",
+            "filer_ciks": [
+              "0001166691",
+              "0000902739"
+            ],
+            "filer_count": 2,
+            "matching_manifest_filer_count": 1
+          },
+          {
+            "accession": "0001166691-19-000005",
+            "filer_ciks": [
+              "0001166691",
+              "0000902739"
+            ],
+            "filer_count": 2,
+            "matching_manifest_filer_count": 1
+          },
+          {
+            "accession": "0001166691-20-000008",
+            "filer_ciks": [
+              "0001166691",
+              "0000902739"
+            ],
+            "filer_count": 2,
+            "matching_manifest_filer_count": 1
+          }
+        ],
+        "namespace_recognition_limitation": {
+          "description": "The frozen recognizer expects a date-shaped DEI URI and conservatively flags this year-only URI. The declaration, raw facts, and context bindings remain retained. No taxonomy validity or normalization is inferred.",
+          "filings": [
+            {
+              "accession": "0000320193-21-000105",
+              "all_declarations_found": true,
+              "facts": 25,
+              "namespace_uris": [
+                "http://xbrl.sec.gov/dei/2021"
+              ]
+            },
+            {
+              "accession": "0000858877-21-000013",
+              "all_declarations_found": true,
+              "facts": 5,
+              "namespace_uris": [
+                "http://xbrl.sec.gov/dei/2021"
+              ]
+            },
+            {
+              "accession": "0000909832-21-000014",
+              "all_declarations_found": true,
+              "facts": 5,
+              "namespace_uris": [
+                "http://xbrl.sec.gov/dei/2021"
+              ]
+            },
+            {
+              "accession": "0001403161-21-000060",
+              "all_declarations_found": true,
+              "facts": 7,
+              "namespace_uris": [
+                "http://xbrl.sec.gov/dei/2021"
+              ]
+            },
+            {
+              "accession": "0001744489-21-000220",
+              "all_declarations_found": true,
+              "facts": 5,
+              "namespace_uris": [
+                "http://xbrl.sec.gov/dei/2021"
+              ]
+            }
+          ],
+          "observed_uri": "http://xbrl.sec.gov/dei/2021"
+        },
+        "nil_attribute_facts": 0,
+        "referenced_context_occurrences": 504,
+        "selected_fact_occurrences": 1494,
+        "unrecognized_context_root_namespaces": 0,
+        "unrecognized_inline_namespaces": 0
+      },
+      "retained_diagnostics": {
+        "all_underlying_diagnostics_known": false,
+        "bounded_message_examples": [
+          {
+            "count": 3520,
+            "domain": "HTML",
+            "examples": [
+              {
+                "accession": "0000018230-20-000056",
+                "column": 12271,
+                "line": 17804,
+                "message": "Unexpected end tag : img"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 33829,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 44670,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 87804,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 96861,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 124855,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 134915,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              },
+              {
+                "accession": "0000018230-20-000056",
+                "column": 143391,
+                "line": 17804,
+                "message": "Unexpected end tag : hr"
+              }
+            ],
+            "level": "ERROR",
+            "type": "ERR_TAG_NAME_MISMATCH"
+          },
+          {
+            "count": 408,
+            "domain": "HTML",
+            "examples": [
+              {
+                "accession": "0000018230-14-000058",
+                "column": 3,
+                "line": 8,
+                "message": "htmlParseStartTag: misplaced <html> tag"
+              },
+              {
+                "accession": "0000018230-14-000058",
+                "column": 4,
+                "line": 9,
+                "message": "htmlParseStartTag: misplaced <head> tag"
+              },
+              {
+                "accession": "0000018230-14-000058",
+                "column": 4,
+                "line": 14,
+                "message": "htmlParseStartTag: misplaced <body> tag"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 3,
+                "line": 8,
+                "message": "htmlParseStartTag: misplaced <html> tag"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 4,
+                "line": 9,
+                "message": "htmlParseStartTag: misplaced <head> tag"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 4,
+                "line": 14,
+                "message": "htmlParseStartTag: misplaced <body> tag"
+              },
+              {
+                "accession": "0000018230-16-000410",
+                "column": 3,
+                "line": 8,
+                "message": "htmlParseStartTag: misplaced <html> tag"
+              },
+              {
+                "accession": "0000018230-16-000410",
+                "column": 4,
+                "line": 9,
+                "message": "htmlParseStartTag: misplaced <head> tag"
+              }
+            ],
+            "level": "ERROR",
+            "type": "HTML_STRUCURE_ERROR"
+          },
+          {
+            "count": 2529,
+            "domain": "VALID",
+            "examples": [
+              {
+                "accession": "0000018230-14-000058",
+                "column": 263005,
+                "line": 15,
+                "message": "ID s5213E7F629F1A528C8A224FFCC5CCAE5 already defined"
+              },
+              {
+                "accession": "0000018230-14-000058",
+                "column": 454256,
+                "line": 15,
+                "message": "ID s3DE6D393D053667F870924FFCF9C17B3 already defined"
+              },
+              {
+                "accession": "0000018230-14-000058",
+                "column": 492067,
+                "line": 15,
+                "message": "ID sC922B60CFA76C31B29F524FFCFBE4625 already defined"
+              },
+              {
+                "accession": "0000018230-14-000058",
+                "column": 506463,
+                "line": 15,
+                "message": "ID sC922B60CFA76C31B29F524FFCFBE4625 already defined"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 323403,
+                "line": 15,
+                "message": "ID s76A379F4E84114237491CAD5FEA837FC already defined"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 471255,
+                "line": 15,
+                "message": "ID sC6E80A4A3BEF19B47425CAD601B8EF28 already defined"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 505634,
+                "line": 15,
+                "message": "ID sFFEAF1DD5BE3B1BE0376CAD601EAB506 already defined"
+              },
+              {
+                "accession": "0000018230-15-000061",
+                "column": 519981,
+                "line": 15,
+                "message": "ID sFFEAF1DD5BE3B1BE0376CAD601EAB506 already defined"
+              }
+            ],
+            "level": "ERROR",
+            "type": "DTD_ID_REDEFINED"
+          }
+        ],
+        "exact_message_counts": {
+          "ID 030c52f1b31046aa8b56fa7133ca440c already defined": 4,
+          "ID BALANCE_SHEETS already defined": 3,
+          "ID CASH_FLOWS_STATEMENTS already defined": 3,
+          "ID COMPREHENSIVE_INCOME_STATEMENTS already defined": 3,
+          "ID Consolidated_Balance_Sheets already defined": 2,
+          "ID Consolidated_Statements_of_Cash_Flows already defined": 2,
+          "ID Consolidated_Statements_of_Operations already defined": 2,
+          "ID Consolidated_Statements_of_Stockholders already defined": 2,
+          "ID Consolidated_Statmnts_of_Cmprehnsve_Loss already defined": 2,
+          "ID DSPFPageBreak already defined": 98,
+          "ID DSPFPageBreakArea already defined": 95,
+          "ID DSPFPageFooter already defined": 44,
+          "ID DSPFPageHeader already defined": 46,
+          "ID DSPFPageNumber already defined": 52,
+          "ID DSPFPageNumberArea already defined": 37,
+          "ID EXECUTIVE_FICERS__REGISTRANT already defined": 3,
+          "ID FTR already defined": 16,
+          "ID GLFTR already defined": 16,
+          "ID GLHDR already defined": 15,
+          "ID HDR already defined": 16,
+          "ID INCOME_STATEMENTS already defined": 3,
+          "ID ITEM1_LEGAL_PROCEEDINGS already defined": 1,
+          "ID ITEM5_MARKET_FOR_REGISTRANTS already defined": 3,
+          "ID ITEM_10_DIRECTORS_EXECUTIVE_FICERS_CORPO already defined": 1,
+          "ID ITEM_11_EXECUTIVE_COMPENSATION already defined": 1,
+          "ID ITEM_12_SECURITY_OWNERSHIP_CERTAIN_BENEF already defined": 1,
+          "ID ITEM_13_CERTAIN_RELATIONSHIPS_RELATED_TR already defined": 1,
+          "ID ITEM_14_PRINCIPAL_ACCOUNTING_FEES_SERVIC already defined": 1,
+          "ID ITEM_15_EXHIBITS_FINANCIAL_STATEMENT_SCH already defined": 1,
+          "ID ITEM_16_FORM_10K_SUMMARY already defined": 1,
+          "ID ITEM_16_SUMMARY already defined": 1,
+          "ID ITEM_1A_RISK_FACTORS already defined": 4,
+          "ID ITEM_1B_UNRESOLVED_STAFF_COMMENTS already defined": 4,
+          "ID ITEM_1_BUSINESS already defined": 3,
+          "ID ITEM_1_LEGAL_PROCEEDINGS already defined": 1,
+          "ID ITEM_2_PROPERTIES already defined": 4,
+          "ID ITEM_3_LEGAL_PROCEEDINGS already defined": 3,
+          "ID ITEM_4 already defined": 2,
+          "ID ITEM_4_MINE_SAFETY_DISCLOSURES already defined": 3,
+          "ID ITEM_6_SELECTED_FINANCIAL_DATA already defined": 3,
+          "ID ITEM_7A_QUANTITATIVE_QUALITATIVE_DISCLOS already defined": 5,
+          "ID ITEM_7_MANAGEMENTS_DISCUSSION_ANALYSIS_F already defined": 3,
+          "ID ITEM_8_FINANCIAL_STATEMENTS_AND_SUPPLEM already defined": 3,
+          "ID ITEM_9A_CONTROLS_PROCEDURES already defined": 1,
+          "ID ITEM_9B_OR_INFORMATION already defined": 1,
+          "ID ITEM_9_CHANGES_IN_DISAGREEMENTS_WITH_ACC already defined": 1,
+          "ID Item_1 already defined": 2,
+          "ID Item_10 already defined": 1,
+          "ID Item_11 already defined": 1,
+          "ID Item_12 already defined": 1,
+          "ID Item_13 already defined": 1,
+          "ID Item_14 already defined": 1,
+          "ID Item_15 already defined": 1,
+          "ID Item_1A already defined": 1,
+          "ID Item_1B_Unresolved_Staff_Comments already defined": 1,
+          "ID Item_2 already defined": 1,
+          "ID Item_3 already defined": 1,
+          "ID Item_5 already defined": 2,
+          "ID Item_6 already defined": 2,
+          "ID Item_7 already defined": 2,
+          "ID Item_8 already defined": 2,
+          "ID Item_9 already defined": 1,
+          "ID Item_9A already defined": 1,
+          "ID Item_9B already defined": 1,
+          "ID LEGAL_PROCEEDINGS already defined": 1,
+          "ID NOTES_TO_FINANCIAL_STATEMENTS already defined": 3,
+          "ID Notes_to_Consolidated_Financial_Statemen already defined": 1,
+          "ID PART_I already defined": 5,
+          "ID PART_II already defined": 5,
+          "ID PART_III already defined": 1,
+          "ID PGBRK already defined": 18,
+          "ID PN already defined": 16,
+          "ID REPORT_INDEPENDENT_REGISTERED_PUBLIC already defined": 1,
+          "ID REPORT_INDEPENDENT_REGISTERED_PUBLIC_ACC already defined": 1,
+          "ID REPORT_MANAGEMENT_ON_INTERNAL_CONTROL_OV already defined": 1,
+          "ID Report_of_Independent_Registered_Public already defined": 2,
+          "ID SIGNATURES already defined": 1,
+          "ID STOCKHOLDERS_EQUITY_STATEMENTS already defined": 3,
+          "ID Signatures already defined": 1,
+          "ID TRGRRTFtoHTMLTab already defined": 10,
+          "ID _AEIOULastRenderedPageBreakAEIOU10 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU11 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU12 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU13 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU14 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU15 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU16 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU5 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU6 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU7 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU8 already defined": 1,
+          "ID _AEIOULastRenderedPageBreakAEIOU9 already defined": 1,
+          "ID _GoBack_0 already defined": 66,
+          "ID _GoBack_0_12 already defined": 13,
+          "ID _GoBack_0_2 already defined": 4,
+          "ID _GoBack_0_4 already defined": 39,
+          "ID _GoBack_2_1 already defined": 2,
+          "ID _GoBack_2_11 already defined": 13,
+          "ID _GoBack_2_3 already defined": 39,
+          "ID _Hlk472020562 already defined": 2,
+          "ID _Hlk476841969 already defined": 1,
+          "ID _Hlk478552693 already defined": 2,
+          "ID _Hlk481570288 already defined": 1,
+          "ID _Hlk488564532 already defined": 1,
+          "ID _Hlk503882262 already defined": 1,
+          "ID _Hlk511912051 already defined": 1,
+          "ID _Hlk534374817 already defined": 1,
+          "ID bcl_connect_next already defined": 24,
+          "ID bcl_connect_prev already defined": 24,
+          "ID pagebreak already defined": 654,
+          "ID s0218006188E35E971CFD355EF3CFD52D already defined": 1,
+          "ID s024CD05B352CF5DA34FC52F1CD8193FD already defined": 2,
+          "ID s028677B1D6CF9526EF8C69F7CDBD5953 already defined": 8,
+          "ID s0373A2EF892A7D15944A5A8568E11BC2 already defined": 2,
+          "ID s042EC554FB3F62DFF573D8944A0E49EA already defined": 1,
+          "ID s053B3301ACF800BFF2782EFCF236DF11 already defined": 2,
+          "ID s0742DA34721A336D7D1D2EFE05E12D74 already defined": 1,
+          "ID s08140E88380D55138AA98224A4A5EE35 already defined": 2,
+          "ID s08502E6B5D2753D69E0D429B637F2F8D already defined": 3,
+          "ID s0895B93B2259C57E3B5994A581A6030F already defined": 1,
+          "ID s08A6A61E72D651DC63EFA60EE7D67237 already defined": 1,
+          "ID s09D7EC426152D03D07A4355EEA5BDB40 already defined": 2,
+          "ID s0A8779F965456E8A6814CEF8DB477779 already defined": 7,
+          "ID s0B91683BCBF7BE37DE6D2AD3AA064756 already defined": 6,
+          "ID s0BB480E697C557EEAD17F8EBE2F8826B already defined": 1,
+          "ID s0BC9EDCEF602C31746B49B6A085D9F79 already defined": 15,
+          "ID s0BF69831D06252869D28CB091CD969D5 already defined": 2,
+          "ID s0D426EA508998DC4A86E94A581545B4A already defined": 1,
+          "ID s0DB2A77C1628591CA7E8C11CFC70D08C already defined": 2,
+          "ID s0DC499F30613D2CF36C226A3EC34EE6A already defined": 1,
+          "ID s0E763C694B0E3E18D71BFC6846410003 already defined": 2,
+          "ID s0EB81E7E44C65D099E0FABB20E4DBDF9 already defined": 1,
+          "ID s0F3E448EC8CF9F4A7CD7CEF8B5687A57 already defined": 1,
+          "ID s0F3F81489D452975CF77ABB249CCB8AA already defined": 8,
+          "ID s0b5180744a8b4a0d9aa80c80da9f6121 already defined": 9,
+          "ID s11564BE214645A598CFE22B7B008256B already defined": 1,
+          "ID s116F7C0373848D2BAAF96CA08C9C56D5 already defined": 1,
+          "ID s11FA8B3429841EB843336CA08EFE4AA3 already defined": 7,
+          "ID s1328A2974703C8EAC9592AD39DE5C647 already defined": 2,
+          "ID s134763A6EB1F3DDBEEDF634A228FC75F already defined": 1,
+          "ID s1355C6D72F1506DAE47C2AD3B06CE822 already defined": 1,
+          "ID s13813D2B72CB5512D78EE41BADCEA55C already defined": 3,
+          "ID s13AF4105B90AE57F8C3B26A3F9A3287F already defined": 1,
+          "ID s14002DFE07FE53FC87CB1688085B5D67 already defined": 5,
+          "ID s143F86F4504E6AE9F401D8944CE1D6DA already defined": 2,
+          "ID s1491C9A44C0248E1B98C3869CA8C76C1 already defined": 3,
+          "ID s14A819F6186E24321ECF9B6A122C60BE already defined": 4,
+          "ID s151C1649A85BF481C8458AAECE96E06D already defined": 1,
+          "ID s152887D5482676F83564A60EDD097B71 already defined": 2,
+          "ID s15F1E6603ECF58A3B8467B86E5A02C3D already defined": 1,
+          "ID s164C6AF39354FB35F64B355EEC637E5B already defined": 3,
+          "ID s171653020BC29505B29F52F1D30CF084 already defined": 2,
+          "ID s1730D4E94E1AC6F5B332634A253D6CD3 already defined": 1,
+          "ID s17A329B995145526AEF87B7B29811FAF already defined": 2,
+          "ID s18CA507D232DA671710BB2C0B638F9A7 already defined": 3,
+          "ID s19BDB3BCDB3A29896786355EC0CB1276 already defined": 1,
+          "ID s1A17B2E8FF90B32A44BECEF8B55E63E3 already defined": 1,
+          "ID s1A4355C1564F563CB280E5B3FBF91B10 already defined": 2,
+          "ID s1C182D02F7ED2F07605FFC686BB78223 already defined": 2,
+          "ID s1D3B54CC168F3D3896F96CA06149F38C already defined": 3,
+          "ID s1DE6BA3921D1DAC7B99426A3E8DD0C08 already defined": 3,
+          "ID s1E8866841E8FA19DFCF9E41BCC1717C5 already defined": 2,
+          "ID s1F8CAB7A8C93FF0FA99B94A587B4C819 already defined": 3,
+          "ID s216F076FAA852D61BB9C355EED2B9907 already defined": 1,
+          "ID s217EF5FA319556759CEA409516A3238B already defined": 4,
+          "ID s21BA67D3B4655AD9713A2AD39DB6A884 already defined": 2,
+          "ID s22077B49F901FB10E6245A8570EC5F15 already defined": 4,
+          "ID s234B55324BB52027376406D0612A1CEE already defined": 1,
+          "ID s23FB5D5A0FDCC5B1AAE65A856A575F98 already defined": 1,
+          "ID s24292B76BDDEAF234613634A24F8DAF5 already defined": 7,
+          "ID s24585af4d73f47ce96d514dde4a87fcf already defined": 1,
+          "ID s2458C5132ACD3DFC6F7D69F7CE4F2B48 already defined": 1,
+          "ID s24F697AF17545D41A95121B0A8B373D7 already defined": 1,
+          "ID s25FC405738D462EBF6553869CA5098B2 already defined": 1,
+          "ID s266F96720730DC49B0000CD4616F93D3 already defined": 2,
+          "ID s268D3C5A425FEF3FCCDD5CD9E2F5436E already defined": 1,
+          "ID s27327498A8825639577052F1D2427923 already defined": 8,
+          "ID s279BF329982ED2E53367E41BC313F10D already defined": 16,
+          "ID s2869A32801D459DA95F7CA02EB8B9820 already defined": 1,
+          "ID s28F919B10697549C919EB6CF957FDDCD already defined": 3,
+          "ID s29DAA7D3287558DB93930D0E5D824693 already defined": 1,
+          "ID s2A80951317C6D06C137210AC79934FCE already defined": 1,
+          "ID s2B0021A39081D3DD6778634A0899A879 already defined": 7,
+          "ID s2B2836039A8490EA8B19FC684ECF32C8 already defined": 4,
+          "ID s2B4DB15BD693C1BB7E7C634A0F964F72 already defined": 1,
+          "ID s2BA26ECF76FA3550808F7BC5B91B3467 already defined": 1,
+          "ID s2C717A26CAE6ED36D9C069F7CC9179FD already defined": 1,
+          "ID s2CE5448A74B81F47597900E9184DFFA2 already defined": 1,
+          "ID s2DAA938E3E14E1D7D6FA634A0B071F92 already defined": 2,
+          "ID s2DE8DA1D49A26B22EFBC10AC589E4627 already defined": 1,
+          "ID s2E0792984B825C2C9E422247442B751E already defined": 2,
+          "ID s2E17498B884E1160885394A58EDEF159 already defined": 1,
+          "ID s2ECBCAF645B05B889071F92969AE71A7 already defined": 2,
+          "ID s305DA66C06D02D7211E452F1CD04699D already defined": 1,
+          "ID s3161642E0225FF77ADCB3869CA82927B already defined": 3,
+          "ID s31AAE6B38B6E6FC99AC26CA08F3CAFD2 already defined": 1,
+          "ID s33BE44E66AB955BB83982CFC76425A31 already defined": 1,
+          "ID s341E49308779B134544A00E914A12791 already defined": 1,
+          "ID s34B9FD8CBA654CDD86E306D06149849C already defined": 1,
+          "ID s35DC03228E1F5AA59259F77E1619E38C already defined": 1,
+          "ID s35DF810ED3357078F4EA355EF41FE00C already defined": 1,
+          "ID s362751331ED35F1D9917EAFC7AB0F899 already defined": 1,
+          "ID s36B810E9C6DEFD1F01F99B69F8CC2AE9 already defined": 1,
+          "ID s379BA30DFE6E8EF32BCF2AD3D4024257 already defined": 2,
+          "ID s37D6E611E6029D19D3FACEF8DB741C18 already defined": 1,
+          "ID s37F9A5AD78655739936F48B5D710DEC7 already defined": 3,
+          "ID s3842B8E6EDA3599C92F1C9237A85AC07 already defined": 4,
+          "ID s38480E40E0D07AF618480CD461EEF935 already defined": 1,
+          "ID s3856156C78EB3BB3EA87A029BA6AAB6B already defined": 4,
+          "ID s387E466FE5DAF4D837C77BC57911D4F7 already defined": 2,
+          "ID s3A848C977F062ED33FEBD8944BB7974C already defined": 1,
+          "ID s3AE52675C3E93256B1687BC5FF539E3A already defined": 4,
+          "ID s3B6D8DB8C46417CC6F0F0CD4620CF1E5 already defined": 6,
+          "ID s3B85417DBB797B00C46250099BF86E01 already defined": 1,
+          "ID s3B90C5F733FD5F2F8B556F97F6995AD8 already defined": 2,
+          "ID s3C65D7C21C6858CC95D8D95F7383F31E already defined": 7,
+          "ID s3DDB4311A703DC948EB126A3EB278443 already defined": 1,
+          "ID s3DE6D393D053667F870924FFCF9C17B3 already defined": 1,
+          "ID s3EC01CCDA0E85FD38BE4F51646D55D53 already defined": 1,
+          "ID s3EED4E35C7E45569B3E14065437CEF6A already defined": 1,
+          "ID s3F0A3C7601979086DA2E2EFD06E5A4A5 already defined": 1,
+          "ID s3F0D0C27BF49CCA86801FC6846237B06 already defined": 2,
+          "ID s3a73fc89b97445d5ac43bd573e66a795 already defined": 1,
+          "ID s4096C47416CBD9DEAD5AA60EE7B72B11 already defined": 1,
+          "ID s40CF5B642BFD57BF767D94A547EF675A already defined": 3,
+          "ID s41A87C614AF4FC08C2F069F7D1748680 already defined": 3,
+          "ID s41CE7F048E575E269CEE5EDF40E302EA already defined": 1,
+          "ID s422A20B13AC202EEF6F1355EF6EFA241 already defined": 13,
+          "ID s4291DF084F440500400CABB20E9DBD39 already defined": 1,
+          "ID s431994F47036544C94F2B67C4EE70E95 already defined": 1,
+          "ID s44D799873E2F418A67BE2EFE0B38A89A already defined": 1,
+          "ID s45459D3F2EBB045B5D70CEF8D8CF573D already defined": 1,
+          "ID s455E42F141DA8527267DA029A21149B6 already defined": 1,
+          "ID s482a178032e54904a2d99153db3fa8e6 already defined": 4,
+          "ID s4889967244F6511AB64E2C17587F2C22 already defined": 1,
+          "ID s491B24062D7198AB958D94A55466B797 already defined": 1,
+          "ID s4928A2D1C2CB6780DAF126A3F9816FC4 already defined": 1,
+          "ID s493CE7128C9BE24FA08094A58833247A already defined": 1,
+          "ID s49EBEA263E31A17DA2037BC578EADDA1 already defined": 1,
+          "ID s4A5CBB4B9F174FDCADBF2EFE0AC358CD already defined": 3,
+          "ID s4B2794BA9186755B66DB26A3EE132151 already defined": 1,
+          "ID s4C1F3D8CE3614BB3F2CD2AD3AA159CA9 already defined": 2,
+          "ID s4C71A1BDEC0DCFDA04640CD4622F6531 already defined": 1,
+          "ID s4CAF2D462B9EA685CFD03869E98507CA already defined": 4,
+          "ID s4CD7B1D9FF43551182D8F59CF75E3D8D already defined": 1,
+          "ID s4D0F537F026AC233525AA029A1AC669E already defined": 2,
+          "ID s4D1FF3A06A66E87F4AD72EFCF0FC7FAF already defined": 2,
+          "ID s4D2F982D070DEB2B4461A60EE73A974F already defined": 1,
+          "ID s4D4344754FCFE62ECF138AAEA1AE0624 already defined": 1,
+          "ID s4F356F8D342981010C925A856E9B1D35 already defined": 3,
+          "ID s4F65DF497405FD9C35877BC88A9FE051 already defined": 3,
+          "ID s4FB4EDE797270E6830FC0CD4606B19F9 already defined": 1,
+          "ID s506C44433A96F48BD79BA029AAFC9E3C already defined": 1,
+          "ID s510A1A6DCF644628A0CD7BC625A1D33D already defined": 1,
+          "ID s518CC47DD756A6037D0794A547C70E3F already defined": 1,
+          "ID s5213E7F629F1A528C8A224FFCC5CCAE5 already defined": 1,
+          "ID s5357185D6A39BF0A2620D8944BA41438 already defined": 1,
+          "ID s575A0ED97E60D0CDC82826A3FB3E1094 already defined": 1,
+          "ID s579DEAD07CB0622BB2F4CEF8CF163805 already defined": 1,
+          "ID s590D298F63CF5765A9650E81878F2AFF already defined": 1,
+          "ID s5971963f20334f9f9b208ef25f6cc9cd already defined": 1,
+          "ID s59BBF0A51486AC79893F9B6A0A182AC2 already defined": 1,
+          "ID s5A063E0CFAC359B0850E766512F9F38B already defined": 1,
+          "ID s5AFF7DFD861EDBE47E8DD894A0DD6F84 already defined": 1,
+          "ID s5B8AB68BB466A2453274A60EDE0327D0 already defined": 3,
+          "ID s5C3C83CDD2EE2DA12C9A6CA05519E84A already defined": 1,
+          "ID s5C639912B79D314821309B6A1CAA2BE6 already defined": 1,
+          "ID s5DE82BB9995E2D0DBBD92AD3AA923166 already defined": 2,
+          "ID s5E17B271729F004859B4634A18EDAC67 already defined": 1,
+          "ID s5E391BFD8BA1CEF76716A60EDE518E77 already defined": 1,
+          "ID s5EEBEF88B55CCA1A3491CEF8D1723EEA already defined": 1,
+          "ID s5F1524A2FC2D22836C847BC8912BED7D already defined": 1,
+          "ID s61428023CCBC0F694E5C06D06A4C02ED already defined": 5,
+          "ID s6194ddb75bb04af3bf44a05364b0fb34 already defined": 4,
+          "ID s61B38C2CA6D597D0FEAC00E92640CAB8 already defined": 1,
+          "ID s63674f938c1d4f45aca19615bd7865b9 already defined": 1,
+          "ID s64ACF605605C06ADD65D6CA0543EA6FE already defined": 1,
+          "ID s65405717F1B424278325355EED8506A5 already defined": 1,
+          "ID s655B60ED4E70CEBFDE305A856900AFA9 already defined": 1,
+          "ID s65B67E40431F3B0DA4992AD3ABE96B00 already defined": 1,
+          "ID s66291C04699AE1AA9C89E41BAE0CE176 already defined": 1,
+          "ID s670B70B86837DCC8CB65CEF8BFBF2C46 already defined": 4,
+          "ID s67BB9C232C6D3BA3D9E12AD3D395D675 already defined": 4,
+          "ID s67BCC879568BFCBDDA165A85688349E8 already defined": 2,
+          "ID s6818F78D86C80F6C3FB7ABB20E11088E already defined": 3,
+          "ID s68400BB18C59506883C1FFA62ECCAE4C already defined": 1,
+          "ID s68F902F45006FB2E47637BC5B03E20F9 already defined": 2,
+          "ID s698279E0091EC149EA2E6CA076BCBDA7 already defined": 1,
+          "ID s6AA30C894E2AA15259316CA074C91726 already defined": 4,
+          "ID s6AEAE7B915A399CDB70026A3F9D7C129 already defined": 2,
+          "ID s6BC4529C41503CBA2E663869E02F0A2D already defined": 8,
+          "ID s6CFC7FC9F263F656E8F12AD3D4509035 already defined": 3,
+          "ID s6E2D0A9714C2DB8411A6355EEA3D543B already defined": 1,
+          "ID s6F79EE54F0CCEE2FC1382EFD08F86F4C already defined": 1,
+          "ID s6F87257752E00A5505CAA60EE0A2D58D already defined": 1,
+          "ID s6FA6185262C530A27A5EA029A1BE85BA already defined": 2,
+          "ID s6bb3b014a1bb40e6920138f657e3f47e already defined": 1,
+          "ID s6d6f8347e9794155bec7e69ebddd0947 already defined": 1,
+          "ID s6f1e16fa2845421b85f4467d6cf4352e already defined": 2,
+          "ID s73426B4F3811503382E96B7879BA2725 already defined": 2,
+          "ID s73D5A4361506520D8A91A94B14450F13 already defined": 3,
+          "ID s747515F4385F33FB492C2EFE0901CD2A already defined": 1,
+          "ID s74855B66234D6AEBF669D8944A0E3BE5 already defined": 1,
+          "ID s74AE2C1DBCFB55DDA6399B334E377878 already defined": 1,
+          "ID s754BEB5134F9D6CAAF6900E925500E94 already defined": 3,
+          "ID s75EC51872FECE433F5596CA05DEF0D93 already defined": 4,
+          "ID s75FD3A93EE905FAAA1B2F6D74F193111 already defined": 3,
+          "ID s76A379F4E84114237491CAD5FEA837FC already defined": 1,
+          "ID s7760420E21606B53CFFAD8944E15B789 already defined": 1,
+          "ID s77F7D7D3C43BD5C3CF8BDD828EA3A84F already defined": 5,
+          "ID s788E471E46A7FEDDB3F452F1CCD543C5 already defined": 4,
+          "ID s78C84D4ABA76B586BA1B8AAECEC2D431 already defined": 1,
+          "ID s78FE4CC0C2AADA43087410AC7B399A94 already defined": 1,
+          "ID s7A6EC56852E83B2053FBABB21A560803 already defined": 9,
+          "ID s7AE884918908369AC1FA9B6A0762AA96 already defined": 3,
+          "ID s7B6171BD35335E7D93E29707871B938E already defined": 1,
+          "ID s7C69C53EEF3ED202BDCDA60EC4E77BFA already defined": 3,
+          "ID s7CA680194231078A9A75D8944A0E0FE2 already defined": 4,
+          "ID s819BB1CA8BC81E1FB111A029B81DE482 already defined": 1,
+          "ID s829CB85ED2A7829F4F03ABB22C9EFC54 already defined": 1,
+          "ID s82C42D977EC46522480F52F1D4A24BC7 already defined": 3,
+          "ID s82D8A7562CBE4CBC06E494A584E81635 already defined": 1,
+          "ID s85C1E479C2C10343428469F755C83637 already defined": 2,
+          "ID s86785568F7FCAC7D409500E91753F19E already defined": 7,
+          "ID s86C35B8D1A316231370F94A54783AA1C already defined": 2,
+          "ID s86DAEA0B4BD0167D139874821877A11F already defined": 1,
+          "ID s8856F3C84995CCA04AB89B69F8FE5B5B already defined": 2,
+          "ID s885F0B3E5CF2511FA8CEABD54FD475CF already defined": 12,
+          "ID s88CE685B67BB2719DC0A5A8591C546CB already defined": 2,
+          "ID s896A164C92A35216038394A547C0F54F already defined": 5,
+          "ID s89D8742288D27090E1374F74DBC92F38 already defined": 1,
+          "ID s8A43F53856A8B2B230B1A029AB4A2C35 already defined": 1,
+          "ID s8A570938420E229E6D626CA073A07E61 already defined": 2,
+          "ID s8AB871E2879148FCC0B5355EF4016D36 already defined": 1,
+          "ID s8BA964076A93AE8418A8A60EDBE1166A already defined": 2,
+          "ID s8BC01B99F8869BBE36A594A5486214DF already defined": 3,
+          "ID s8CE8766525C8A22DB1F326A3F0F53E8B already defined": 14,
+          "ID s8D1B15DCB1701A3EB3A12EFE0DC8E5FF already defined": 1,
+          "ID s8D4C1E173D56F1F82F969B69F86064B9 already defined": 1,
+          "ID s8DCED77CDBB0AA015DBE2EFD15E0A47C already defined": 4,
+          "ID s8DE147D9ED08045715C29B6A12FA8AEC already defined": 3,
+          "ID s8E0634B34A81F08EB7A39B69F8652A2F already defined": 4,
+          "ID s8F671F257B1B55D8982AE9B30C66B4A4 already defined": 6,
+          "ID s8FC8DFC41601A27C070AE41BC44B6A22 already defined": 1,
+          "ID s8be8af59ed344da1bb13d827ff35e8ee already defined": 7,
+          "ID s90CE302E2DDFF881E70E3869C9CE0F2F already defined": 1,
+          "ID s920AC982F6BFEF87EB224F74DEDF743B already defined": 2,
+          "ID s9220560D85825A68ACD0DB7D5921D561 already defined": 2,
+          "ID s92A5D91A92979104F81F6CA072E5B466 already defined": 7,
+          "ID s92E7BED8076B5CA5B463114463B544A9 already defined": 14,
+          "ID s93C8F46624687BF3A16D355EF6BD90DC already defined": 1,
+          "ID s94A4F51F53BD0182D61C6349FB43CE5B already defined": 3,
+          "ID s94CB73931370FBE752564F74DE6773D4 already defined": 1,
+          "ID s94DC8B203E22D6C2F62169F7CC71AEEC already defined": 1,
+          "ID s94ECBBB2AFE3681AD55010AC57463EF1 already defined": 2,
+          "ID s95EB49772FA45271BEA685CFB778D9BD already defined": 4,
+          "ID s95F9896CA6D9C513BEF69B69F8530B0D already defined": 2,
+          "ID s960E18E4560B501EBFE4754C0A49ACC6 already defined": 2,
+          "ID s966B669384EAADEB164E014148A4866B already defined": 2,
+          "ID s96A9DB72CBA25436BD3F355EF46F2647 already defined": 1,
+          "ID s986D42970A7DF49A46D06349FBBB0FBD already defined": 1,
+          "ID s98F1D4D38A27CCCB1B9F2EFE104A5F27 already defined": 1,
+          "ID s9981AF0A116E587F867CBB4769072212 already defined": 1,
+          "ID s9A2C4376336A98AA950510AC588E406C already defined": 1,
+          "ID s9ABB7330840F7BDBC99E5A8591E488F8 already defined": 4,
+          "ID s9B90A0F634BC5D866D4AABB233605FB8 already defined": 3,
+          "ID s9BDC7A8DC440A8A597C1A60EEA271712 already defined": 11,
+          "ID s9C351D0BD73856C5BED711DAE9CF9105 already defined": 1,
+          "ID s9D2B7703D8D54879F9B3634A0B3C9F42 already defined": 4,
+          "ID s9D6DEE6912FD82A81B62CEF8CD2DB5CD already defined": 10,
+          "ID s9E38100E6D91C795F51AA60EE71B1FBA already defined": 1,
+          "ID s9FE7857B2403F09131275A8568D1E9A7 already defined": 3,
+          "ID sA07E325D6F3C5B68A6745460E26FDDE7 already defined": 1,
+          "ID sA11B97DC6A4A5686A8BCEC79CE2DFAAF already defined": 1,
+          "ID sA17511D354EEC0DF1AE99B6A129FEB68 already defined": 2,
+          "ID sA1E4BB8DEA8F7628338C355EBE4B802C already defined": 1,
+          "ID sA21C57E209E6947BE26C0CD46090EAEB already defined": 3,
+          "ID sA21F299585C8F6313FC510AC7AAC8CAA already defined": 2,
+          "ID sA23E0E8A82802252CD6126A3ED149E4D already defined": 1,
+          "ID sA25A1C7AA483F41209975A8568E15A0A already defined": 1,
+          "ID sA2AA3C7BA5B58CEBEB8AB2C0B6B82456 already defined": 1,
+          "ID sA2B8F100537370C999127BC88C415916 already defined": 1,
+          "ID sA3740C6648C7A08A6FD85CD9E27D02DC already defined": 1,
+          "ID sA3DA03BD465D5D4BA111870D0A593B14 already defined": 3,
+          "ID sA42ECC4636FC553B8EBE6CA060AD28EF already defined": 1,
+          "ID sA6C98B81131E8CB72E823869CA6E868B already defined": 1,
+          "ID sA7291B4534A25DB3AE665A8587C61E0C already defined": 1,
+          "ID sA831F5AAF196A5D76001D89449D7AE86 already defined": 6,
+          "ID sA84FA8E6DDFCB119293210AC7AACE8EC already defined": 7,
+          "ID sA8F2C9B8136555C0EC8F3869E1B5CE26 already defined": 4,
+          "ID sA92046A0061A4ED5381A2EFD712C1D88 already defined": 2,
+          "ID sA98D1F87E0414E2E6D53A029A80DE671 already defined": 6,
+          "ID sAA48523A64495CED92DCEC68C7B9CDBC already defined": 1,
+          "ID sACB03CBF0E0C5373832AB00DC4B03D5F already defined": 3,
+          "ID sACD4FA0727F42B2AB35010AC7974E5E8 already defined": 1,
+          "ID sACD9CCCE6A375FDBBF12025CCA3352BF already defined": 1,
+          "ID sAD3768DE576079ABBEAB2AD39D886418 already defined": 1,
+          "ID sAD8B8C6861F7FCEF422B6CA0716FDB32 already defined": 2,
+          "ID sAE2DC4D6E1E23E0B22CFCEF8C0186A39 already defined": 1,
+          "ID sAF57CB7B7FA4145D13395A8571A8931F already defined": 1,
+          "ID sB0FE2255A63F1D7936AD01414853C7C6 already defined": 2,
+          "ID sB14A1B0B1357592B882504A86ED3718B already defined": 1,
+          "ID sB153B0C5067E900623B53869E15B2795 already defined": 1,
+          "ID sB17E810A7A1A32037C1A0CD4620091E7 already defined": 2,
+          "ID sB3327CC15FD856ECADC474AEF33AC9AB already defined": 1,
+          "ID sB3800C59303F500796F3F955F27F04AC already defined": 2,
+          "ID sB3FB5E5E79F4E523E85F7BC5790CF51A already defined": 1,
+          "ID sB583CAA57FCA53BB893FA25627676D6F already defined": 3,
+          "ID sB6135EB9D812A116A638ABB20F4736D9 already defined": 3,
+          "ID sB69F69F9E47EAD8FDCA8A60EC64DDD92 already defined": 1,
+          "ID sB7BA1EF08F89916EECF33869DFC1AC68 already defined": 1,
+          "ID sB8934D858B1E5A9C9A9CB171E7CDD7E9 already defined": 1,
+          "ID sB8E6643C0B5136FB365D50099B778B23 already defined": 1,
+          "ID sBAE36C43F6AB260B5EADDD82897D9565 already defined": 1,
+          "ID sBB522633546182619F9C0CD46572168C already defined": 3,
+          "ID sBB5D99603B5E27128248355EC003516A already defined": 3,
+          "ID sBC149286F9895876B3D013C679407DD2 already defined": 2,
+          "ID sBCA4F3F21B4379533CB02EFE0F833B36 already defined": 1,
+          "ID sBCFD05EA3E8A964533ED52F1ED411974 already defined": 1,
+          "ID sBDB9676EBF3E5331BB074A37511582FB already defined": 1,
+          "ID sBDC6F6CAF6F89223421DCEF8B59A8337 already defined": 1,
+          "ID sBDDFB7D0B5E8D97B3CB6ABB2409E5FBB already defined": 1,
+          "ID sBE09171FC9F75483AE52A748824F70FA already defined": 4,
+          "ID sBE4C2BA6154E941F11FFA60EC62E23F7 already defined": 1,
+          "ID sBED3BEEF68B5844BEBA8014144207E2E already defined": 1,
+          "ID sC1C4B43FE8D4975ABF8406D08E38F277 already defined": 2,
+          "ID sC1C7A06CA45B57A8965C631F8CBAD05B already defined": 1,
+          "ID sC267D06635CF6232D545FC684691C8EC already defined": 4,
+          "ID sC292ACBE7514588DB5D37A15F70E8ED9 already defined": 1,
+          "ID sC379F3B23629D40AE309A60EC5A2CC99 already defined": 2,
+          "ID sC3AAEF4FA9805FA399D54857FB4CE7ED already defined": 3,
+          "ID sC5775D492A0E1A145096E41BCC377C03 already defined": 4,
+          "ID sC63C3F097CB98EAAB65D7BC5CC3F2BF5 already defined": 4,
+          "ID sC6E80A4A3BEF19B47425CAD601B8EF28 already defined": 1,
+          "ID sC922B60CFA76C31B29F524FFCFBE4625 already defined": 2,
+          "ID sC98461AB0AAC5FBBB6D0EA528921E294 already defined": 1,
+          "ID sC9D96ADBB33A632A08B2CEF8CF4454B3 already defined": 2,
+          "ID sC9E7D03183C4546A8AE1A5455E897654 already defined": 1,
+          "ID sC9EBB1CE3A578C1D441E2AD3AA920C87 already defined": 15,
+          "ID sCAA4D05E3A1F0CE713A86CA05B507ED6 already defined": 4,
+          "ID sCACCC23C08B7D86B9FC126A3FB09FE03 already defined": 1,
+          "ID sCB8357BE4C1A63A420645A856FE3BB7F already defined": 7,
+          "ID sCBAA51B0D41312144ED026A3FBB1D392 already defined": 7,
+          "ID sCBC4AF64878A521796FBC86E9A2A73BA already defined": 1,
+          "ID sCBDEC3C254325E52DC5EA029A1C2F3F7 already defined": 2,
+          "ID sCC1DCDC956D7FAFABB723869C974317A already defined": 3,
+          "ID sCCB1DDFEB7D771BD003A5CD9E2517752 already defined": 4,
+          "ID sCE7F20F7F04805E941E62AD3AA15C2BD already defined": 1,
+          "ID sCFF05B46D68457493B5426A3F887C10F already defined": 1,
+          "ID sD0A986E535189E60F6B4634A099C32F4 already defined": 2,
+          "ID sD13E158277CA53DA54AE94A582D3033A already defined": 7,
+          "ID sD181FDE6083C519BAE7BD19727FB98D6 already defined": 1,
+          "ID sD2A14D5B0B6C61B48746E41BAE5A87BA already defined": 1,
+          "ID sD2A958F986FC6033C1389B6A070374F5 already defined": 6,
+          "ID sD2D271F21C47F74B8DACCEF8C644CA29 already defined": 2,
+          "ID sD447CC6042336E39489DE41BB35A36CD already defined": 4,
+          "ID sD5387DF21BA05DE3A53F972B5AB9E932 already defined": 2,
+          "ID sD5E6399171E28A17EC099B69F84A5060 already defined": 1,
+          "ID sD60BD55AD2DE7006D1A55A8568C278B3 already defined": 2,
+          "ID sD6897F2AC1B1BF655F5AA60EEA0821AD already defined": 1,
+          "ID sD68C81EAD4325C2691C98592EB409609 already defined": 12,
+          "ID sD747A8B64925509FB9B9E0464C8F387B already defined": 3,
+          "ID sD7C59CBAA092C61894705009C18F618E already defined": 2,
+          "ID sD7ECC0B053A25ECEA614AFF59169B792 already defined": 2,
+          "ID sD93B4AF4358D5379A2BC2AD39D68D59B already defined": 3,
+          "ID sD940D11B12A19D8A58E6B2C0B7668256 already defined": 1,
+          "ID sD9541213E9C3D5BFD00D6CA07D51A7BF already defined": 2,
+          "ID sD97B35C1890D540BB77ADF20293AE069 already defined": 1,
+          "ID sDB7AE8765B7E79D675387BC5B8B9490C already defined": 2,
+          "ID sDBC0C6B142A121BE52E20CD33F081301 already defined": 2,
+          "ID sDE7A46165674D89DA3927BC884643159 already defined": 9,
+          "ID sE0071E0F859C99B9185D014143ECFC1C already defined": 2,
+          "ID sE2388230574A695D057394A591474B77 already defined": 4,
+          "ID sE2394B1AEF879B05BE6752F1D35A295C already defined": 1,
+          "ID sE24F100515865C249DCF03B9981F787A already defined": 1,
+          "ID sE32CD0B06C7C5F7E8F6DC7A79778C97C already defined": 4,
+          "ID sE49CC675AB9B0ACAF2422AD3DDF1250C already defined": 1,
+          "ID sE640AA96A1EE590FA90F2386150BD967 already defined": 3,
+          "ID sE7AB435CFBE98EBF696900E9146F1ADE already defined": 5,
+          "ID sE7F2EEB5DAB96728D6E03869C94C93DF already defined": 1,
+          "ID sE80907F679035172BF9F3F0EE5205669 already defined": 2,
+          "ID sE8C74132047BA41D19339B6A0822A2AA already defined": 2,
+          "ID sE972A443001959528B4370E2C9DE28A4 already defined": 1,
+          "ID sE9E03D1E22B85CE34D4D748218CB0B62 already defined": 1,
+          "ID sEC11BAB2D1C461E196BAA60EC4D76333 already defined": 7,
+          "ID sEC14C03ACD2CD74CD329CEF8C9B43C4F already defined": 1,
+          "ID sED343A068489536F9CC1FE1982B02C8E already defined": 1,
+          "ID sEE785CDEFEF29306EA79D8944A4B97E8 already defined": 1,
+          "ID sEF8094CD79D3F81139DF634A188BDCCD already defined": 9,
+          "ID sF096E440988909F6444052F1CBDB0B3A already defined": 1,
+          "ID sF0F0A68F5FE682B0422D3869E953E038 already defined": 2,
+          "ID sF176CE0C57EB88FDC2E02EFE0BB1EAEA already defined": 1,
+          "ID sF2660016D9E2A999601B94A54832FE88 already defined": 2,
+          "ID sF29113B3E80256679062D68FF285546B already defined": 2,
+          "ID sF49465D8E2B2CFC5D5FF9B69F889EDDE already defined": 2,
+          "ID sF4A3CAC8C6A38EAEBCAAABB21C0424BA already defined": 1,
+          "ID sF50D9C1F7FA53199346F355EF451E83D already defined": 1,
+          "ID sF5CD7DFC723898122B35E41BC2A5EC91 already defined": 1,
+          "ID sF61E81B42D1BE4BCA72A26A3F8DB533C already defined": 1,
+          "ID sF64AFC50AFAA19FF208894A547F1E7ED already defined": 2,
+          "ID sF72C9E955B733B70EED510AC7E753E43 already defined": 2,
+          "ID sF7F093D1437EAECE13A66CA0714FCE6F already defined": 2,
+          "ID sF7F424B0072D5D1F9F960A7A245D69B1 already defined": 9,
+          "ID sF88CE9EFA1CF6EEF3DB026A3EC780707 already defined": 1,
+          "ID sF8A0898AB0CF5E6BAEAA57B8CFF8DC37 already defined": 1,
+          "ID sF9B48CB29BC8C4C678AFABB20E2F63F0 already defined": 2,
+          "ID sFA54A0AACA965241B52D5D72D4E5479B already defined": 1,
+          "ID sFB0647C299AD8ECA7D279B69F8313CA2 already defined": 2,
+          "ID sFB12ECAC8AA68B9CF42BA029A1AFE558 already defined": 3,
+          "ID sFD205DBFAB1456058CAFB9295C6B165A already defined": 1,
+          "ID sFD43AE7C0A1874EB3F595009A4140BA7 already defined": 4,
+          "ID sFD7E7B44125562D56D019B6A09259FE3 already defined": 1,
+          "ID sFDFFEA742F1E5499B059A2FCC41BB159 already defined": 2,
+          "ID sFEE1F2544E4780BACC6F3869CFD18F6B already defined": 5,
+          "ID sFEEB5733E9154B20385852F1E42CAF9D already defined": 8,
+          "ID sFFEAF1DD5BE3B1BE0376CAD601EAB506 already defined": 3,
+          "ID sa92246463188435d91a9a10b2b88f838 already defined": 1,
+          "ID sbb0f848215394cd199dd7bec005bc638 already defined": 1,
+          "ID sf8fa82e8ad6840d9ac66bd1ac8a86ad9 already defined": 7,
+          "ID sfa4f13ec44f6451b9127ada0b4813c3a already defined": 1,
+          "ID sfa9d69e1efa24c02bf34c1c8f598b55b already defined": 2,
+          "ID sfd1900358f5141849cd23f768752b384 already defined": 2,
+          "ID toc already defined": 3,
+          "ID toc669877_37 already defined": 1,
+          "Opening and ending tag mismatch: div and font": 1,
+          "Unexpected end tag : a": 225,
+          "Unexpected end tag : font": 52,
+          "Unexpected end tag : hr": 2790,
+          "Unexpected end tag : img": 258,
+          "Unexpected end tag : p": 194,
+          "htmlParseStartTag: misplaced <body> tag": 136,
+          "htmlParseStartTag: misplaced <head> tag": 136,
+          "htmlParseStartTag: misplaced <html> tag": 136
+        },
+        "fatal_diagnostics_recorded": 0,
+        "filings_by_type": {
+          "DTD_ID_REDEFINED": 61,
+          "ERR_TAG_NAME_MISMATCH": 42,
+          "HTML_STRUCURE_ERROR": 136
+        },
+        "level_counts": {
+          "ERROR": 6457
+        },
+        "logs_with_exactly_100_entries": 41,
+        "message_pattern_counts": {
+          "ID <HTML id> already defined": 2529,
+          "Opening and ending tag mismatch: div and font": 1,
+          "Unexpected end tag : a": 225,
+          "Unexpected end tag : font": 52,
+          "Unexpected end tag : hr": 2790,
+          "Unexpected end tag : img": 258,
+          "Unexpected end tag : p": 194,
+          "htmlParseStartTag: misplaced <body> tag": 136,
+          "htmlParseStartTag: misplaced <head> tag": 136,
+          "htmlParseStartTag: misplaced <html> tag": 136
+        },
+        "message_pattern_rule": "Only the HTML ID token in duplicate-ID diagnostics is replaced by <HTML id> for grouped counts; exact message counts are retained separately.",
+        "per_filing_counts_match_frozen_report": 215,
+        "per_filing_diagnostic_count_distribution": {
+          "0": 46,
+          "10": 2,
+          "100": 41,
+          "13": 1,
+          "14": 1,
+          "15": 2,
+          "17": 1,
+          "19": 2,
+          "21": 4,
+          "24": 1,
+          "27": 1,
+          "28": 1,
+          "3": 70,
+          "33": 1,
+          "34": 1,
+          "35": 1,
+          "36": 2,
+          "37": 1,
+          "4": 4,
+          "40": 1,
+          "41": 2,
+          "42": 3,
+          "44": 1,
+          "46": 1,
+          "47": 1,
+          "49": 1,
+          "5": 1,
+          "53": 1,
+          "56": 1,
+          "6": 1,
+          "60": 2,
+          "63": 1,
+          "64": 1,
+          "66": 2,
+          "67": 1,
+          "7": 2,
+          "75": 1,
+          "76": 1,
+          "77": 1,
+          "8": 1,
+          "84": 1,
+          "85": 1,
+          "9": 1,
+          "98": 1,
+          "99": 1
+        },
+        "truncation_or_resource_limit_diagnostics_recorded": 0,
+        "type_counts": [
+          {
+            "count": 3520,
+            "domain": "HTML",
+            "level": "ERROR",
+            "type": "ERR_TAG_NAME_MISMATCH"
+          },
+          {
+            "count": 408,
+            "domain": "HTML",
+            "level": "ERROR",
+            "type": "HTML_STRUCURE_ERROR"
+          },
+          {
+            "count": 2529,
+            "domain": "VALID",
+            "level": "ERROR",
+            "type": "DTD_ID_REDEFINED"
+          }
+        ],
+        "unknown_namespace_tag_diagnostics_recorded": 0
+      },
+      "scan_elapsed_seconds": 97.118,
+      "schema_version": 1,
+      "scope": {
+        "cache_metadata_bindings_match_report": true,
+        "description": "Read-only parser diagnostics and independent selected-start-tag checks on all original primary filing bodies bound to the frozen SEC identity evidence report.",
+        "final_source_identity_and_hash_guards_passed": true,
+        "frozen_report_bytes": 7011313,
+        "frozen_report_regenerated_or_modified": false,
+        "frozen_report_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+        "header_sources_reread_for_this_audit": false,
+        "network_requests": 0,
+        "original_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+        "original_primary_sources_reverified": 215,
+        "primary_source_bytes_reverified": 1117591971,
+        "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+        "risk_extraction_rerun": false
+      },
+      "source_approvals": 0,
+      "status": "SEC_LEXICAL_PARSER_DIAGNOSTIC_AUDIT_NOT_SECURITY_APPROVED",
+      "structural_findings": {
+        "duplicate_html_id_diagnostics": 2529,
+        "full_tree_or_xbrl_semantic_validity_established": false,
+        "html_recovery_diagnostics_present": true,
+        "misplaced_html_head_body_diagnostics": 408,
+        "no_gross_selected_fact_or_referenced_context_id_occurrence_loss_detected": true,
+        "other_unexpected_or_mismatched_end_tag_diagnostics": 472,
+        "source_document_completeness_established": false,
+        "unexpected_end_or_mismatched_tag_diagnostics": 3520,
+        "unexpected_void_element_end_tag_diagnostics": 3048
+      }
+    },
+    "original_bytes_reconstruction": "Encode complete_report with Python json.dumps(indent=2, sort_keys=True), append one newline, then UTF-8 encode. This reproduces the pinned standalone audit bytes.",
+    "original_report_bytes": 142991,
+    "original_report_sha256": "a087c1ed376c5d47baf42494022d1f39a863fd8e1a395792c0516b09bdb90d86",
+    "scope": "Assistant inspection of retained parser diagnostics and independent selected-token occurrence counts; does not create a human review or XBRL validity approval."
+  },
+  "parser_versions": {
+    "libxml2": "2.14.6",
+    "lxml": "6.1.3.0"
+  },
+  "postrun_reconciliation": {
+    "final_period_opened": false,
+    "gzip_roundtrip_bytes_equal": true,
+    "historical_availability_supplied": false,
+    "historical_security_links_created": 0,
+    "human_reviews_created": 0,
+    "manifest_records_bound_by_ordinal_accession_cik_date_source_and_header": 215,
+    "manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "model_ready": false,
+    "original_source_report_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+    "public_discovery_report_sha256": "526364f9530918f222fdad42638c1c0d680213fe8461548f4cb632698669e376",
+    "recorded_at_utc": "2026-10-11T01:57:58.399886+00:00",
+    "scope": "Read-only local reconciliation of the complete original-SEC evidence report, its gzip publication, the preserved manifest and the public Mac discovery report. No private ledger or original SEC bytes reread by this reconciliation.",
+    "source_approvals": 0,
+    "unmatched_discovery_filings_bound_to_original_source_report": 8,
+    "unmatched_original_cik": "0000034088"
+  },
+  "prior_arithmetic_review_modified": false,
+  "publication": {
+    "bytes": 406675,
+    "file": "reports/sec_identity_evidence.json.gz",
+    "format": "gzip-compressed complete JSON; empty gzip filename and mtime zero",
+    "roundtrip_bytes_verified": true,
+    "sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "uncompressed_bytes": 7011313,
+    "uncompressed_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0"
+  },
+  "schema_version": 1,
+  "source_approvals": 0,
+  "summary": {
+    "acceptance_clocks_matching_manifest": 215,
+    "cover_status_counts": {
+      "LEXICAL_COVER_FACTS_RETAINED": 79,
+      "NO_SUPPORTED_INLINE_COVER_FACTS": 136
+    },
+    "fact_occurrence_counts": {
+      "EntityCentralIndexKey": 80,
+      "EntityRegistrantName": 82,
+      "Security12bTitle": 447,
+      "Security12gTitle": 6,
+      "SecurityExchangeName": 447,
+      "TradingSymbol": 432
+    },
+    "fact_presence_by_filing": {
+      "EntityCentralIndexKey": 79,
+      "EntityRegistrantName": 79,
+      "Security12bTitle": 73,
+      "Security12gTitle": 3,
+      "SecurityExchangeName": 73,
+      "TradingSymbol": 77
+    },
+    "facts_in_hidden_elements": 106,
+    "facts_with_lexical_issues": 474,
+    "filings": 215,
+    "filings_with_multiple_filers": 3,
+    "header_filer_observations": 218,
+    "original_headers_verified": 215,
+    "original_primary_sources_verified": 215,
+    "unique_manifest_filer_matches": 215
+  },
+  "verification": {
+    "collector_and_legacy_identity_tests": 64,
+    "combined_focused_tests_passed": 80,
+    "feature_ci": {
+      "conclusion": "success",
+      "head_sha": "3a5b368211fa134c637562cc4e312fd11e5024c9",
+      "url": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38103009529"
+    },
+    "final_cli_gate_tests": 1,
+    "independent_collector_code_review": "passed_after_aware_clock_malformed_blocks_and_bounded_read_corrections",
+    "independent_discovery_code_review": "passed_after_development_date_preflight_correction",
+    "public_discovery_inspector_tests": 15,
+    "ruff": "passed"
+  }
+}
