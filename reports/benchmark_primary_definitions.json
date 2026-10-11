@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "report_kind": "PUBLIC_PRIMARY_DOCUMENT_REVIEW_NOT_SOURCE_APPROVAL",
+  "prepared_at_utc": "2026-10-11T14:49:04.255499+00:00",
+  "repository_head_at_review": "6e22d90834c3fe396b562fc2d157004038d06d44",
+  "scope": "Public CRSP/Morningstar documentation only; no licensed source rows or benchmark discrepancy rows opened.",
+  "review_performed_by": "assistant /root/benchmark_sources",
+  "visual_inspection_method": "Poppler pdftoppm to PNG at 1800 pixels on the longest side; images inspected through view_image.",
+  "independent_human_review_created": false,
+  "source_discovery": {
+    "public_document_library_url": "https://indexes.morningstar.com/research-data-products/document-library",
+    "downloaded_library_html_sha256": "49b6c2dbe8d2c128e41599f943cb7e1a91fe450bb7715f63af46342116fa4fdc",
+    "url_selection": "Exact asset URLs parsed from public document-library HTML; no guessed native table namespace or view expression.",
+    "current_ciz_pdf_search_tool_limitation": "Search tool rejected the 10,795,671-byte iframe PDF as oversized; direct public HTTP download succeeded.",
+    "complete_copyrighted_manuals_or_images_published_in_git": false
+  },
+  "sources": [
+    {
+      "source_id": "ciz_user_guide",
+      "pdf_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/bltb7f7b7bd614e55a3/6a71c517e35d02a71403136d/CRSP_US_Stock_Databases_Guide_for_Flat_File_Format_2_0.pdf",
+      "final_response_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/bltb7f7b7bd614e55a3/6a71c517e35d02a71403136d/CRSP_US_Stock_Databases_Guide_for_Flat_File_Format_2_0.pdf",
+      "retrieval_started_at_utc": "2026-10-11T14:45:26.553522+00:00",
+      "retrieval_completed_at_utc": "2026-10-11T14:45:31.494083+00:00",
+      "bytes": 10795671,
+      "sha256": "e42f452207d4a30ef05de542a2dac9522f240100cec99a0309b1b3ab20699ec6",
+      "discovered_from": "https://indexes.morningstar.com/research-data-products/document-library",
+      "discovery_method": "Exact PDF asset URL embedded in the public Morningstar document-library HTML; no guessed URL.",
+      "publisher": "Morningstar / CRSP research data products",
+      "document_library_displayed_date": "2026-07-31",
+      "document_date_is_source_export_vintage": false,
+      "pdf_page_count": 97,
+      "page_locator_convention": "One-based PDF page; matches printed page number.",
+      "rendered_page_inspections": [
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "png_filename": "user-guide-p11.png",
+          "png_bytes": 332252,
+          "png_sha256": "dba51b5fb35f1baea7aee0c63e43a535b982d41b10c99497a6d57eb0410b5d12",
+          "inspection_scope": "Generic numeric category table; not a WRDS serializer definition.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 17,
+          "printed_page": 17,
+          "png_filename": "user-guide-p17.png",
+          "png_bytes": 351895,
+          "png_sha256": "c089eb5b28551ef2c39ca1dc32bac6ffc4b77a1c986e27192ddd4822245f2a64",
+          "inspection_scope": "Daily return, availability-flag, capitalization and volume field definitions.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 18,
+          "printed_page": 18,
+          "png_filename": "user-guide-p18.png",
+          "png_bytes": 367214,
+          "png_sha256": "e4c5b9adbce81f50730b092de53c4ba248c3b6ed14e107401dc1b456df4a758b",
+          "inspection_scope": "Daily price-volume field definition and related daily fields.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 25,
+          "printed_page": 25,
+          "png_filename": "user-guide-p25.png",
+          "png_bytes": 395832,
+          "png_sha256": "9fbbb469bb11bbbd68dd8050163290bfc64c10980bbe41094a1c2edef61433a3",
+          "inspection_scope": "Index daily-series fields and distribution-inclusive total return.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 37,
+          "printed_page": 37,
+          "png_filename": "user-guide-p37.png",
+          "png_bytes": 430959,
+          "png_sha256": "3e308d7a0e1236df41d98b7ce24718d22bae1e56f0d8941f4eba15df96c045c7",
+          "inspection_scope": "Daily and monthly index identifier columns for the combined-market value-weighted row.",
+          "visually_inspected": true
+        }
+      ],
+      "official_landing_page": "https://indexes.morningstar.com/docs/guide/crsp-us-stock-databases-guide-for-flat-file-format-2-0?isRdp=true",
+      "landing_page_displayed_effective_date": "07/31/26",
+      "landing_page_iframe_url": "https://indexes.morningstar.com/api/docs/6a71c517e35d02a71403136d",
+      "iframe_and_library_asset_bytes_equal": true
+    },
+    {
+      "source_id": "calculations_guide",
+      "pdf_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/blt948fb9dd4aff01a3/6a454f3183e511651648cf28/CRSP_US_Stock_Databases_Calculations_and_Index_Methodologies_Guide.pdf",
+      "final_response_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/blt948fb9dd4aff01a3/6a454f3183e511651648cf28/CRSP_US_Stock_Databases_Calculations_and_Index_Methodologies_Guide.pdf",
+      "retrieval_started_at_utc": "2026-10-11T14:45:26.554838+00:00",
+      "retrieval_completed_at_utc": "2026-10-11T14:45:30.775502+00:00",
+      "bytes": 405499,
+      "sha256": "694c5978a75d034e74aecb46d08795a24729c7e083754cdc7a3dd0ca2dafa163",
+      "discovered_from": "https://indexes.morningstar.com/research-data-products/document-library",
+      "discovery_method": "Exact PDF asset URL embedded in the public Morningstar document-library HTML; no guessed URL.",
+      "publisher": "Morningstar / CRSP research data products",
+      "document_library_displayed_date": "2026-06-30",
+      "document_date_is_source_export_vintage": false,
+      "pdf_page_count": 21,
+      "page_locator_convention": "One-based PDF page; matches printed page number.",
+      "rendered_page_inspections": [
+        {
+          "pdf_page": 9,
+          "printed_page": 9,
+          "png_filename": "methodology-p9.png",
+          "png_bytes": 228313,
+          "png_sha256": "aca5c419a3652c3f2ad0261444f0a07da238ae968b94aff57e9a589615b8d785",
+          "inspection_scope": "Index-return weighted-average expression.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 10,
+          "printed_page": 10,
+          "png_filename": "methodology-p10.png",
+          "png_bytes": 243869,
+          "png_sha256": "961c84ce07eaa3a03f7c297e1171a26df2c2c219bcf62bf72a4f5fe49e7a68df",
+          "inspection_scope": "Prior-period price and shares in index weights.",
+          "visually_inspected": true
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 15,
+          "png_filename": "methodology-p15.png",
+          "png_bytes": 412342,
+          "png_sha256": "4fc20acd5a978e3f1697120bf97331bed296b4f49fa68ec13f76b55bb39c8240",
+          "inspection_scope": "Market-index constituent requirements and ADR exclusion.",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "source_id": "cross_reference_guide",
+      "pdf_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/blt7a9098fa790aa8f4/6a454f57b1784a7d6e01a787/CRSP_US_Stock_Databases_Cross_Reference_Guide_for_Legacy_FIZ_SIZ_to_CIZ.pdf",
+      "final_response_url": "https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/blt7a9098fa790aa8f4/6a454f57b1784a7d6e01a787/CRSP_US_Stock_Databases_Cross_Reference_Guide_for_Legacy_FIZ_SIZ_to_CIZ.pdf",
+      "retrieval_started_at_utc": "2026-10-11T14:45:26.554224+00:00",
+      "retrieval_completed_at_utc": "2026-10-11T14:45:30.819412+00:00",
+      "bytes": 2598818,
+      "sha256": "04400947c0955652bd7ea4f76b01cf8149be176ac863137db9247da42e78e595",
+      "discovered_from": "https://indexes.morningstar.com/research-data-products/document-library",
+      "discovery_method": "Exact PDF asset URL embedded in the public Morningstar document-library HTML; no guessed URL.",
+      "publisher": "Morningstar / CRSP research data products",
+      "document_library_displayed_date": "2026-06-30",
+      "document_date_is_source_export_vintage": false,
+      "pdf_page_count": 30,
+      "page_locator_convention": "One-based PDF page; matches printed page number.",
+      "rendered_page_inspections": [
+        {
+          "pdf_page": 19,
+          "printed_page": 19,
+          "png_filename": "cross-reference-p19.png",
+          "png_bytes": 320416,
+          "png_sha256": "2e5473633af22c392656176df08e1e795df67cda5f54434fe0efa92424abb1b4",
+          "inspection_scope": "Native daily-index field mapping and document-level legacy pass-through statement.",
+          "visually_inspected": true
+        }
+      ]
+    }
+  ],
+  "verified_document_definitions": [
+    {
+      "claim_id": "native_combined_market_identifier",
+      "source_id": "ciz_user_guide",
+      "pdf_pages": [
+        37
+      ],
+      "paraphrase": "The combined NYSE, NYSE American, NASDAQ and Arca value-weighted row uses INDNO 1000200 at both daily and monthly frequencies, in stock-only and stock-plus-index products."
+    },
+    {
+      "claim_id": "native_daily_total_return",
+      "source_id": "ciz_user_guide",
+      "pdf_pages": [
+        25
+      ],
+      "paraphrase": "IndDlySeriesData supplies DlyCalDt for a trading day and DlyTotRet for its distribution-inclusive return."
+    },
+    {
+      "claim_id": "native_ratio_format_limits",
+      "source_id": "ciz_user_guide",
+      "pdf_pages": [
+        11
+      ],
+      "paraphrase": "The numeric-category table describes generic formats; it does not document these WRDS views or their CSV rounding."
+    },
+    {
+      "claim_id": "native_value_weighting",
+      "source_id": "calculations_guide",
+      "pdf_pages": [
+        9,
+        10,
+        15
+      ],
+      "paraphrase": "Index returns combine constituent returns with prior-period capitalization weights; the described value-weighted market universe requires usable observations and excludes ADRs."
+    },
+    {
+      "claim_id": "legacy_native_field_mapping",
+      "source_id": "cross_reference_guide",
+      "pdf_pages": [
+        19
+      ],
+      "paraphrase": "The legacy daily-index tret field maps to native DlyTotRet; this chapter also describes legacy index calculations carried into CIZ."
+    }
+  ],
+  "project_inference": {
+    "status": "PROPOSED_NATIVE_SERIES_SPECIFICATION_TO_VERIFY",
+    "native_table_name_in_vendor_manual": "IndDlySeriesData",
+    "native_index_identifier": 1000200,
+    "native_date_field": "DlyCalDt",
+    "native_total_return_field": "DlyTotRet",
+    "intended_convention": "value_weighted_total_return",
+    "actual_wrds_schema_or_library_mapping_verified": false,
+    "actual_wrds_view_to_native_series_mapping_verified": false,
+    "saved_export_conforms_to_native_series_verified": false,
+    "note": "These definitions sharpen the existing independent-series proposal. They do not establish the saved file provenance, calculation path or vintage and do not select a source."
+  },
+  "existing_benchmark_audit_reference": {
+    "public_execution_record": "reports/wrds_benchmark_source_evidence_execution.json",
+    "public_execution_record_sha256": "4f8402acb4c03716c8be736da335b35941100099d121465ccd06f73f4db3172f",
+    "private_audit_receipt_sha256": "593366dca43cdb299efcc41efd8705304df244b365043e47d61d24d49218cafc",
+    "private_source_evidence_receipt_sha256": "527d04bb6760be5b692a6fcecd9e459612408ffa9055fe83e7c51398dd505294",
+    "mismatch_dates_previously_recorded": 52,
+    "maximum_absolute_difference_previously_recorded": "0.000001",
+    "counts_recomputed_in_this_document_review": false,
+    "mismatch_dates_explained_by_this_review": 0,
+    "source_discrepancy_cause": "UNRESOLVED"
+  },
+  "remaining_evidence": [
+    "Dated WRDS definitions for wrds_dsfv2_query and wrds_dailyindexret_query, including native index identifiers and expressions.",
+    "Verified crspa, crsp and crsp_a_stock library relationships applicable to the saved exports.",
+    "Release and schema evidence tied to the saved CSV, preserved SQL and inventory hashes.",
+    "Actual column types, pre-export values and export-formatting rules needed to test the precision explanation.",
+    "Source-bound normalization and substantive source review under the existing project contract."
+  ],
+  "limitations": [
+    "Document publication and retrieval timestamps are not data-release vintage or historical information-availability evidence.",
+    "The cross-reference chapter uses current-version wording without identifying either saved WRDS view or its release; applicability to these exports is unverified.",
+    "A six-decimal difference does not by itself establish or exclude a precision mechanism.",
+    "Public WRDS index overview and transition documentation remain behind sign-in; their unseen content was not used."
+  ],
+  "closed_gates": {
+    "native_or_wrds_data_query_executed": false,
+    "licensed_raw_source_rows_opened": false,
+    "licensed_benchmark_discrepancy_rows_opened": false,
+    "benchmark_values_replaced": false,
+    "benchmark_source_selected": false,
+    "tolerance_acceptance_used": false,
+    "new_source_approvals": 0,
+    "new_human_reviews": 0,
+    "historical_availability_inferred": false,
+    "saved_export_vintage_inferred": false,
+    "frozen_protocol_modified": false,
+    "prior_arithmetic_review_modified": false,
+    "model_ready": false,
+    "final_period_opened": false
+  }
+}

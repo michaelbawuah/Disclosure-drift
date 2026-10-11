@@ -1,0 +1,704 @@
+{
+  "collection_completed_at": "2026-10-11T14:47:19.900772+00:00",
+  "collection_receipt": {
+    "path": "outputs/public-identity-research-20261011/collection_receipt.json",
+    "sha256": "54575d5e12a74b3436aacd158aec608acfbac7c8e3c5ea44f1be506e110ad2b6"
+  },
+  "collector_script": {
+    "path": "outputs/collect_public_identity_20261011.py",
+    "sha256": "171f3408db68d301dcc5fd030ac764337beffca32fb7e948ca7d2d2c8ae5b0c4"
+  },
+  "created_at": "2026-10-11T14:49:50.376097+00:00",
+  "insider_2019q4_metadata_demo": {
+    "all_delivered_SUBMISSION_values_preserved": true,
+    "amendment_rows_retained": 649,
+    "amendments_removed": false,
+    "archive_members_decompressed_and_read": [
+      "SUBMISSION.tsv"
+    ],
+    "archive_members_other_than_SUBMISSION_read": false,
+    "columns_used_for_identity_or_date_analysis": [
+      "ACCESSION_NUMBER",
+      "FILING_DATE",
+      "PERIOD_OF_REPORT",
+      "DOCUMENT_TYPE",
+      "ISSUERCIK",
+      "ISSUERNAME",
+      "ISSUERTRADINGSYMBOL"
+    ],
+    "coverage_limit": "One quarter of ownership-form submissions is a candidate-discovery source, not the complete historical listing universe. Issuer CIK/symbol literals are not security-class or PERMNO mappings. No absence from this extract is treated as an exclusion.",
+    "dictionary_discrepancy": {
+      "action": "Preserve exact delivered schema; no silent rename or assertion of a version-matched dictionary.",
+      "delivered_field": "FORM3_HOLDINGS_REPORTED",
+      "dictionary_section": "5.1 SUBMISSION",
+      "dictionary_source_id": "insider_dictionary",
+      "documented_field": "FORM3_HOLDING_REPORTED"
+    },
+    "duplicate_rows_removed": false,
+    "identifier_or_symbol_normalization_performed": false,
+    "literal_symbol_interpretation": "Literal counts include placeholders and combined-symbol strings. Nonempty symbol text does not imply a usable unique exchange ticker. Multiple symbols/CIKs can reflect class differences, changes, placeholders, or source errors; none is automatically resolved.",
+    "period_of_report_limited_interpretation": "All filing dates are in 2019Q4. Earlier report dates remain as delivered; the literal 05-DEC-0019 is retained as an anomaly, not repaired to 2019. Report dates never become publication dates.",
+    "pre_2010_period_of_report_rows": [
+      {
+        "ACCESSION_NUMBER": "0001209191-19-062113",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "30-DEC-2019",
+        "ISSUERCIK": "0001608249",
+        "ISSUERTRADINGSYMBOL": "ZAYO",
+        "PERIOD_OF_REPORT": "27-DEC-2009"
+      },
+      {
+        "ACCESSION_NUMBER": "0001117297-19-000052",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "29-OCT-2019",
+        "ISSUERCIK": "0001117297",
+        "ISSUERTRADINGSYMBOL": "QNST",
+        "PERIOD_OF_REPORT": "17-NOV-2009"
+      },
+      {
+        "ACCESSION_NUMBER": "0001209191-19-062027",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "27-DEC-2019",
+        "ISSUERCIK": "0001608249",
+        "ISSUERTRADINGSYMBOL": "ZAYO",
+        "PERIOD_OF_REPORT": "20-DEC-2009"
+      },
+      {
+        "ACCESSION_NUMBER": "0001209191-19-060753",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "16-DEC-2019",
+        "ISSUERCIK": "0001501585",
+        "ISSUERTRADINGSYMBOL": "HII",
+        "PERIOD_OF_REPORT": "13-DEC-2001"
+      },
+      {
+        "ACCESSION_NUMBER": "0001214659-19-007637",
+        "DOCUMENT_TYPE": "4",
+        "FILING_DATE": "09-DEC-2019",
+        "ISSUERCIK": "0000814547",
+        "ISSUERTRADINGSYMBOL": "FICO",
+        "PERIOD_OF_REPORT": "05-DEC-0019"
+      }
+    ],
+    "reportingowner_member_read": false,
+    "selected_literal_symbol_observations": {
+      "ISCA, ISCB": 115,
+      "N/A": 104,
+      "NA": 12,
+      "NONE": 388,
+      "None": 19,
+      "none": 6
+    },
+    "selected_literal_symbol_observations_exhaustive": false,
+    "source_id": "insider_2019q4",
+    "submission": {
+      "accession_duplicates_excess": 0,
+      "bytes": 3998882,
+      "delivered_field_order": [
+        "ACCESSION_NUMBER",
+        "FILING_DATE",
+        "PERIOD_OF_REPORT",
+        "DATE_OF_ORIG_SUB",
+        "NO_SECURITIES_OWNED",
+        "NOT_SUBJECT_SEC16",
+        "FORM3_HOLDINGS_REPORTED",
+        "FORM4_TRANS_REPORTED",
+        "DOCUMENT_TYPE",
+        "ISSUERCIK",
+        "ISSUERNAME",
+        "ISSUERTRADINGSYMBOL",
+        "REMARKS"
+      ],
+      "distinct_exact_issuer_cik_symbol_groups": 4348,
+      "distinct_issuer_cik_literals": 4247,
+      "distinct_symbol_literals": 4241,
+      "document_type_counts": {
+        "3": 3082,
+        "3/A": 86,
+        "4": 34311,
+        "4/A": 561,
+        "5": 103,
+        "5/A": 2
+      },
+      "empty_symbol_rows": 0,
+      "filing_dates": {
+        "empty_rows": 0,
+        "max": "2019-12-31",
+        "min": "2019-10-01",
+        "nonempty_rows": 38145,
+        "year_counts": {
+          "2019": 38145
+        }
+      },
+      "issuer_cik_literal_status_counts": {
+        "positive_ascii_integer": 38145
+      },
+      "issuer_cik_literals_with_multiple_symbol_literals": 94,
+      "path": "outputs/public-identity-research-20261011/SUBMISSION.tsv",
+      "period_of_report_dates": {
+        "empty_rows": 0,
+        "max": "2019-12-31",
+        "min": "0019-12-05",
+        "nonempty_rows": 38145,
+        "year_counts": {
+          "19": 1,
+          "2001": 1,
+          "2009": 3,
+          "2010": 33,
+          "2011": 2,
+          "2012": 3,
+          "2013": 2,
+          "2014": 8,
+          "2015": 9,
+          "2016": 30,
+          "2017": 36,
+          "2018": 135,
+          "2019": 37882
+        }
+      },
+      "public_source_examples": [
+        {
+          "example_records": [
+            {
+              "ACCESSION_NUMBER": "0000937556-19-000187",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "21-NOV-2019",
+              "ISSUERCIK": "0000937556",
+              "ISSUERNAME": "MASIMO CORP",
+              "ISSUERTRADINGSYMBOL": "MASI",
+              "PERIOD_OF_REPORT": "19-NOV-2019"
+            },
+            {
+              "ACCESSION_NUMBER": "0000937556-19-000189",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "21-NOV-2019",
+              "ISSUERCIK": "0000937556",
+              "ISSUERNAME": "MASIMO CORP",
+              "ISSUERTRADINGSYMBOL": "MASI",
+              "PERIOD_OF_REPORT": "20-NOV-2019"
+            }
+          ],
+          "issuer_cik_literal": "0000937556",
+          "rows": 9,
+          "symbol_literal_counts": {
+            "MASI": 9
+          }
+        },
+        {
+          "example_records": [
+            {
+              "ACCESSION_NUMBER": "0001744489-19-000230",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "27-NOV-2019",
+              "ISSUERCIK": "0001744489",
+              "ISSUERNAME": "Walt Disney Co",
+              "ISSUERTRADINGSYMBOL": "DIS",
+              "PERIOD_OF_REPORT": "26-NOV-2019"
+            },
+            {
+              "ACCESSION_NUMBER": "0001744489-19-000290",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "26-DEC-2019",
+              "ISSUERCIK": "0001744489",
+              "ISSUERNAME": "Walt Disney Co",
+              "ISSUERTRADINGSYMBOL": "DIS",
+              "PERIOD_OF_REPORT": "24-DEC-2019"
+            }
+          ],
+          "issuer_cik_literal": "0001744489",
+          "rows": 38,
+          "symbol_literal_counts": {
+            "DIS": 38
+          }
+        },
+        {
+          "example_records": [],
+          "issuer_cik_literal": "0000102909",
+          "rows": 0,
+          "symbol_literal_counts": {}
+        },
+        {
+          "example_records": [
+            {
+              "ACCESSION_NUMBER": "0001127602-19-031373",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "31-OCT-2019",
+              "ISSUERCIK": "0000320187",
+              "ISSUERNAME": "NIKE, Inc.",
+              "ISSUERTRADINGSYMBOL": "NKE",
+              "PERIOD_OF_REPORT": "29-OCT-2019"
+            },
+            {
+              "ACCESSION_NUMBER": "0001127602-19-031367",
+              "DOCUMENT_TYPE": "4",
+              "FILING_DATE": "31-OCT-2019",
+              "ISSUERCIK": "0000320187",
+              "ISSUERNAME": "NIKE, Inc.",
+              "ISSUERTRADINGSYMBOL": "NKE",
+              "PERIOD_OF_REPORT": "29-OCT-2019"
+            }
+          ],
+          "issuer_cik_literal": "0000320187",
+          "rows": 14,
+          "symbol_literal_counts": {
+            "NKE": 14
+          }
+        }
+      ],
+      "rows": 38145,
+      "sha256": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c",
+      "symbol_literals_with_multiple_issuer_cik_literals": 18,
+      "whitespace_only_symbol_rows": 0
+    },
+    "transaction_or_holdings_members_read": false,
+    "version_limit": "The downloaded 2019Q4 ZIP has an HTTP Last-Modified date in 2022. This is retained as retrieval metadata and is not interpreted as initial 2019 or 2020 publication evidence.",
+    "zip_directory_metadata": [
+      {
+        "compressed_bytes": 235063,
+        "crc32": "24ef0d24",
+        "name": "DERIV_HOLDING.tsv",
+        "uncompressed_bytes": 1570945,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          2
+        ]
+      },
+      {
+        "compressed_bytes": 573104,
+        "crc32": "435126de",
+        "name": "DERIV_TRANS.tsv",
+        "uncompressed_bytes": 3839862,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          6
+        ]
+      },
+      {
+        "compressed_bytes": 3049385,
+        "crc32": "36e6a697",
+        "name": "FOOTNOTES.tsv",
+        "uncompressed_bytes": 23751256,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          12
+        ]
+      },
+      {
+        "compressed_bytes": 3566,
+        "crc32": "a2f61372",
+        "name": "insider_transactions_metadata.json",
+        "uncompressed_bytes": 37339,
+        "zip_date_time": [
+          2022,
+          8,
+          24,
+          12,
+          29,
+          32
+        ]
+      },
+      {
+        "compressed_bytes": 31402,
+        "crc32": "f09474c3",
+        "name": "insider_transactions_readme.htm",
+        "uncompressed_bytes": 745509,
+        "zip_date_time": [
+          2022,
+          8,
+          24,
+          12,
+          27,
+          30
+        ]
+      },
+      {
+        "compressed_bytes": 320769,
+        "crc32": "9777d5b5",
+        "name": "NONDERIV_HOLDING.tsv",
+        "uncompressed_bytes": 1518305,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          12
+        ]
+      },
+      {
+        "compressed_bytes": 1173937,
+        "crc32": "7d2ebb4f",
+        "name": "NONDERIV_TRANS.tsv",
+        "uncompressed_bytes": 6325118,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          18
+        ]
+      },
+      {
+        "compressed_bytes": 652815,
+        "crc32": "2c7ef6b5",
+        "name": "OWNER_SIGNATURE.tsv",
+        "uncompressed_bytes": 3275284,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          20
+        ]
+      },
+      {
+        "compressed_bytes": 1583866,
+        "crc32": "1fc49224",
+        "name": "REPORTINGOWNER.tsv",
+        "uncompressed_bytes": 5914365,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          24
+        ]
+      },
+      {
+        "compressed_bytes": 790857,
+        "crc32": "f4acce5b",
+        "name": "SUBMISSION.tsv",
+        "uncompressed_bytes": 3998882,
+        "zip_date_time": [
+          2022,
+          8,
+          3,
+          18,
+          48,
+          26
+        ]
+      }
+    ]
+  },
+  "masimo_13g_case": {
+    "accepted_timestamp_interpretation": "2020-02-10T16:10:59-05:00",
+    "accession": "0001228621-20-000002",
+    "availability_limit": "The report was accepted after the 2020 January 1 selection. Its reported December 31 event date cannot make it known before the selection cutoff. Acceptance and current HTTP metadata are not a first-public-availability timestamp.",
+    "header_role_observations": [
+      {
+        "block_byte_span": [
+          227,
+          736
+        ],
+        "company_fields": {
+          "CIK": {
+            "raw_value": "0000937556",
+            "value_byte_span": [
+              293,
+              303
+            ]
+          },
+          "CONFORMED-NAME": {
+            "raw_value": "MASIMO CORP",
+            "value_byte_span": [
+              276,
+              287
+            ]
+          }
+        },
+        "role": "SUBJECT-COMPANY"
+      },
+      {
+        "block_byte_span": [
+          737,
+          1007
+        ],
+        "company_fields": {
+          "CIK": {
+            "raw_value": "0001228621",
+            "value_byte_span": [
+              796,
+              806
+            ]
+          },
+          "CONFORMED-NAME": {
+            "raw_value": "KIANI JOE E",
+            "value_byte_span": [
+              779,
+              790
+            ]
+          }
+        },
+        "role": "FILED-BY"
+      }
+    ],
+    "header_source_id": "masimo_header",
+    "header_submission_observations": {
+      "ACCEPTANCE-DATETIME": {
+        "raw_value": "20200210161059",
+        "value_byte_span": [
+          74,
+          88
+        ]
+      },
+      "ACCESSION-NUMBER": {
+        "raw_value": "0001228621-20-000002",
+        "value_byte_span": [
+          107,
+          127
+        ]
+      },
+      "DATE-OF-FILING-DATE-CHANGE": {
+        "raw_value": "20200210",
+        "value_byte_span": [
+          218,
+          226
+        ]
+      },
+      "FILING-DATE": {
+        "raw_value": "20200210",
+        "value_byte_span": [
+          181,
+          189
+        ]
+      },
+      "TYPE": {
+        "raw_value": "SC 13G/A",
+        "value_byte_span": [
+          134,
+          142
+        ]
+      }
+    },
+    "interpretation": "The same accession explicitly identifies subject issuer CIK 0000937556 and a reported common-stock CUSIP. FILED-BY CIK 0001228621 is the reporting person and must not be substituted for the subject issuer. This is documentary corroboration, not a vendor security mapping.",
+    "primary_cover_observations": [
+      {
+        "comparison_text": "MASIMO CORPORATION",
+        "comparison_transform": "collapse Unicode whitespace for locating the shown cover element only; original text retained",
+        "element_path": "/html/body/document/type/sequence/filename/description/text/div/div[14]",
+        "field": "issuer_name",
+        "text_from_parsed_html": "MASIMO CORPORATION "
+      },
+      {
+        "comparison_text": "Common Stock, $0.001 par value",
+        "comparison_transform": "collapse Unicode whitespace for locating the shown cover element only; original text retained",
+        "element_path": "/html/body/document/type/sequence/filename/description/text/div/div[17]",
+        "field": "security_title",
+        "text_from_parsed_html": "Common Stock, $0.001 par value "
+      },
+      {
+        "comparison_text": "574795100",
+        "comparison_transform": "collapse Unicode whitespace for locating the shown cover element only; original text retained",
+        "element_path": "/html/body/document/type/sequence/filename/description/text/div/div[20]",
+        "field": "cusip",
+        "text_from_parsed_html": "574795100 "
+      },
+      {
+        "comparison_text": "December 31, 2019",
+        "comparison_transform": "collapse Unicode whitespace for locating the shown cover element only; original text retained",
+        "element_path": "/html/body/document/type/sequence/filename/description/text/div/div[23]",
+        "field": "reported_event_date",
+        "text_from_parsed_html": "December\u00a031, 2019 "
+      }
+    ],
+    "primary_cusip_literal_byte_spans": [
+      [
+        1254,
+        1263
+      ],
+      [
+        6559,
+        6568
+      ],
+      [
+        13556,
+        13565
+      ],
+      [
+        31446,
+        31455
+      ],
+      [
+        48666,
+        48675
+      ],
+      [
+        68952,
+        68961
+      ],
+      [
+        99231,
+        99240
+      ]
+    ],
+    "primary_source_id": "masimo_primary",
+    "reported_event_date_interpretation": "2019-12-31",
+    "validity_limit": "A dated observation does not supply a continuous CIK-to-security interval. CUSIP linkage, corporate actions, class interpretation, and historical source coverage remain separate review questions."
+  },
+  "recommended_next_action": [
+    "Use the dated full Names descriptors to generate unresolved candidate keys, without extending January-only descriptor intervals.",
+    "Use development-period SUBMISSION issuer CIK/symbol observations for candidate discovery and retrieve the original ownership XML/header for selected cases. Keep all conflicting and placeholder literals.",
+    "Use Schedule 13D/G subject-company CIK plus the same submission's reported CUSIP/class to strengthen specific security evidence; join only to a reviewed dated security-identifier record and retain every ambiguous candidate.",
+    "Keep effective validity, source version, historical availability, and human source judgments unresolved until supported. This public source work does not close the empirical dataset gates."
+  ],
+  "schema_version": 1,
+  "scope": {
+    "actual_final_period_sources_read": false,
+    "available_at_inferred": false,
+    "communications_sent": false,
+    "historical_effective_intervals_inferred": false,
+    "historical_security_links_created": 0,
+    "human_reviews_created": 0,
+    "known_at_inferred": false,
+    "licensed_vendor_rows_read": false,
+    "model_ready": false,
+    "new_WRDS_access_attempted": false,
+    "original_10k_identity_report_modified": false,
+    "public_SEC_sources_only": true,
+    "source_approvals_created": 0
+  },
+  "source_interpretations": [
+    {
+      "scope": "Public quarterly ownership XML extracts beginning in 2006. As-filed data may contain filing and extraction errors. Original submissions remain the source for case verification.",
+      "source_id": "insider_landing"
+    },
+    {
+      "scope": "SUBMISSION supplies issuer CIK and reported ticker; REPORTINGOWNER separately describes reporter identity. The data supplies filing/report dates, not a historical effective-interval crosswalk or known_at timestamp.",
+      "source_id": "insider_dictionary"
+    },
+    {
+      "scope": "Section 3.3.1 gives distinct SUBJECT-COMPANY, FILED-BY, ISSUER and REPORTING-OWNER nests, plus correction-related date fields. Entity role must be established within the same submission.",
+      "source_id": "pds_dictionary"
+    },
+    {
+      "scope": "SEC permits post-acceptance corrections/deletions. Later corrections may affect current documents/indexes; current source retrieval is not automatically a preserved original publication version.",
+      "source_id": "edgar_access_guide"
+    },
+    {
+      "scope": "Acceptance, filing, and last-change dates have different meanings. The SEC states that submission timestamps do not identify first availability on sec.gov.",
+      "source_id": "sec_timestamp_faq"
+    }
+  ],
+  "source_receipts": {
+    "edgar_access_guide": {
+      "bytes": 80342,
+      "fetched_at": "2026-10-11T14:47:14.090164+00:00",
+      "final_url": "https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data",
+      "historical_availability_inferred": false,
+      "http_content_type": "text/html; charset=utf-8",
+      "http_etag": "\"1791579185-gzip\"",
+      "http_last_modified": "Fri, 09 Oct 2026 20:53:05 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/edgar_access_guide.html",
+      "sha256": "393dccc830a92f314e5d4aded255c43350dc4282fd73ad45ed5874c553e0ce05",
+      "url": "https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data"
+    },
+    "insider_2019q4": {
+      "bytes": 8416016,
+      "fetched_at": "2026-10-11T14:46:58.151273+00:00",
+      "final_url": "https://www.sec.gov/files/structureddata/data/insider-transactions-data-sets/2019q4_form345.zip",
+      "historical_availability_inferred": false,
+      "http_content_type": "application/octet-stream",
+      "http_etag": null,
+      "http_last_modified": "Fri, 02 Sep 2022 14:29:59 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/insider_2019q4.zip",
+      "sha256": "df28aa75bf703f0c202c59d94046e84e8e082a97a49965a4b66149d3184e540c",
+      "url": "https://www.sec.gov/files/structureddata/data/insider-transactions-data-sets/2019q4_form345.zip"
+    },
+    "insider_dictionary": {
+      "bytes": 396489,
+      "fetched_at": "2026-10-11T14:47:03.008609+00:00",
+      "final_url": "https://www.sec.gov/files/insider_transactions_readme.pdf",
+      "historical_availability_inferred": false,
+      "http_content_type": "application/pdf",
+      "http_etag": null,
+      "http_last_modified": "Wed, 24 Aug 2022 11:46:25 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/insider_dictionary.pdf",
+      "sha256": "eaa4c0526b2ec92f2af3e8ce8c26505b0f173d7771d55fdcc63b62e94bdc8210",
+      "url": "https://www.sec.gov/files/insider_transactions_readme.pdf"
+    },
+    "insider_landing": {
+      "bytes": 131557,
+      "fetched_at": "2026-10-11T14:46:52.710542+00:00",
+      "final_url": "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets",
+      "historical_availability_inferred": false,
+      "http_content_type": "text/html; charset=utf-8",
+      "http_etag": "\"1791729946-gzip\"",
+      "http_last_modified": "Sun, 11 Oct 2026 14:45:46 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/insider_landing.html",
+      "sha256": "5e32a789626e4c3c5ba3d3e6313ffa896d11765432e17d64f07d076a16a03ab5",
+      "url": "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets"
+    },
+    "masimo_header": {
+      "bytes": 1022,
+      "fetched_at": "2026-10-11T14:46:42.510281+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/937556/000122862120000002/0001228621-20-000002.hdr.sgml",
+      "historical_availability_inferred": false,
+      "http_content_type": "text/sgml",
+      "http_etag": "\"781d8d67b6e679d993f454d5e10fe81b-gzip\"",
+      "http_last_modified": "Mon, 10 Feb 2020 21:11:35 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/masimo_header.sgml",
+      "sha256": "b0916d201ca4e7a2873eb146b98c57f830a4acb955de4437d499f1a6091c8b69",
+      "url": "https://www.sec.gov/Archives/edgar/data/937556/000122862120000002/0001228621-20-000002.hdr.sgml"
+    },
+    "masimo_primary": {
+      "bytes": 112768,
+      "fetched_at": "2026-10-11T14:46:47.829137+00:00",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/937556/000122862120000002/schedule13ga-2019.htm",
+      "historical_availability_inferred": false,
+      "http_content_type": "text/html",
+      "http_etag": null,
+      "http_last_modified": "Mon, 10 Feb 2020 21:11:36 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/masimo_primary.html",
+      "sha256": "65b4a6b4b00e4f6d7e6de3f3128fe440168ce175f0b1966bf96e39e244d72bff",
+      "url": "https://www.sec.gov/Archives/edgar/data/937556/000122862120000002/schedule13ga-2019.htm"
+    },
+    "pds_dictionary": {
+      "bytes": 407787,
+      "fetched_at": "2026-10-11T14:47:08.689023+00:00",
+      "final_url": "https://www.sec.gov/info/edgar/pdsdissemspec051310.pdf",
+      "historical_availability_inferred": false,
+      "http_content_type": "application/pdf",
+      "http_etag": "\"638eb-4867bed8728c0\"",
+      "http_last_modified": "Thu, 13 May 2010 16:05:31 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/pds_dictionary.pdf",
+      "sha256": "a284592a5d6826ba8be312d961ddccfc614b1c12d04aaca44c0e196a809b5793",
+      "url": "https://www.sec.gov/info/edgar/pdsdissemspec051310.pdf"
+    },
+    "sec_timestamp_faq": {
+      "bytes": 96742,
+      "fetched_at": "2026-10-11T14:47:19.198457+00:00",
+      "final_url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+      "historical_availability_inferred": false,
+      "http_content_type": "text/html; charset=utf-8",
+      "http_etag": "\"1791566261-gzip\"",
+      "http_last_modified": "Fri, 09 Oct 2026 17:17:41 GMT",
+      "http_status": 200,
+      "path": "outputs/public-identity-research-20261011/sec_timestamp_faq.html",
+      "sha256": "a64be6f16709b1a45044ebee17b2dc79b4f7040ce7c9274a99b201389e9f0d0a",
+      "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions"
+    }
+  },
+  "status": "PUBLIC_HISTORICAL_IDENTITY_CORROBORATION_NOT_APPROVED_LINKS"
+}

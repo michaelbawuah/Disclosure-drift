@@ -216,14 +216,17 @@ an identity without making the explanation contemporaneously available.
 
 ## 9. Official guide reference and release evidence
 
-Field definitions above were checked in indexed text of the official
-[CRSP U.S. Stock and Indexes CIZ guide](https://www.crsp.org/wp-content/uploads/guides/CRSP_US_Stock_%26_Indexes_Database_Guide_Flat_File_Format_2.0.pdf),
-including the daily-data entries around pages 16–17. That PDF URL now redirects
-to the [current official guide page](https://indexes.morningstar.com/docs/guide/crsp-us-stock-databases-guide-for-flat-file-format-2-0?isRdp=true),
-which displays **07/31/26** as its effective date. The legacy
-`crsp_pdf/crsp-us-stock-indexes-databases-guide-flat-file-format-2-0/` endpoint
-returned 404, and the replacement PDF body was not independently retrieved in
-this review. This access limitation is recorded rather than hidden.
+The replacement [official CIZ guide PDF](https://assets.contentstack.io/v3/assets/bltabf2a7413d5a8f05/bltb7f7b7bd614e55a3/6a71c517e35d02a71403136d/CRSP_US_Stock_Databases_Guide_for_Flat_File_Format_2_0.pdf)
+was retrieved on **11 October 2026** from the public Morningstar document library.
+Its 10,795,671 bytes have SHA-256
+`e42f452207d4a30ef05de542a2dac9522f240100cec99a0309b1b3ab20699ec6`.
+The daily field definitions referenced above were rechecked on rendered pages
+**17–18**. This resolves the earlier inability to inspect the replacement PDF.
+The [official landing page](https://indexes.morningstar.com/docs/guide/crsp-us-stock-databases-guide-for-flat-file-format-2-0?isRdp=true)
+displays **07/31/26** as its effective date. The
+[new benchmark-definition review](benchmark_primary_definitions.md) and its
+[retrieval record](../reports/benchmark_primary_definitions.json) preserve the
+exact URL, retrieval times, source hash and additional index-page checks.
 
 **A guide effective date is not the release date of the downloaded data.**
 Preserve the actual product/view, query evidence, retrieval time, byte hash and

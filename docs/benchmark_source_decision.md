@@ -98,6 +98,14 @@ does not specify a CSV rounding rule. Public checks of the annual dictionary,
 CIZ FAQ and index overview reached sign-in pages; their unseen contents were
 not treated as evidence. **No discrepant date has been explained by this review.**
 
+The subsequent [complete-manual review](benchmark_primary_definitions.md)
+recovered the native `IndDlySeriesData` definition: `INDNO = 1000200`,
+`DlyCalDt`, distribution-inclusive `DlyTotRet`, and preceding-period
+capitalization weights. The three exact PDF downloads and inspected pages are
+bound in its retrieval ledger. This makes the intended native-series check
+specific; it does not yet bind either saved WRDS view to that series or explain
+any of the 52 discrepancies.
+
 ## Evidence needed for a decision
 
 | Review question | Required evidence and action before use |
