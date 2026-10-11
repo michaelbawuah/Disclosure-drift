@@ -16,8 +16,23 @@ from .references import load_reference_rules, resolve_section
 from .timing import acceptance_from_header, event_window
 
 
+EVIDENCE_FINGERPRINT_FIELDS = (
+    "accession", "source_url", "header_url", "download_sha256", "header_sha256",
+    "extraction_version", "risk_text_sha256", "acceptance_timestamp", "api_timestamp",
+    "reference_session", "label_end", "controls_through", "risk_source_url",
+    "risk_source_sha256", "resolution_method", "resolution_rule_id", "resolution_index_url",
+    "resolution_index_sha256", "extraction_start", "extraction_end", "normalizer_version",
+)
+
+
 def digest(value: str | bytes) -> str:
     return hashlib.sha256(value.encode() if isinstance(value, str) else value).hexdigest()
+
+
+def evidence_fingerprint(item: dict) -> str:
+    """The existing filing-review identity, shared by audit and display tooling."""
+    return digest(json.dumps({key: item[key] for key in EVIDENCE_FINGERPRINT_FIELDS},
+                             sort_keys=True))
 
 
 def cached_body(cache: Path, url: str, expected_hash: str) -> bytes:
@@ -142,13 +157,7 @@ def filing_evidence(row: dict, cache: Path, review: dict | None = None, rules: d
     except (OSError, ValueError, KeyError) as exc:
         issues.append("header_evidence_unavailable_or_changed")
         item["header_error"] = str(exc)
-    fingerprint_fields = ["accession", "source_url", "header_url", "download_sha256", "header_sha256",
-                          "extraction_version", "risk_text_sha256", "acceptance_timestamp",
-                          "api_timestamp", "reference_session", "label_end", "controls_through",
-                          "risk_source_url", "risk_source_sha256", "resolution_method", "resolution_rule_id",
-                          "resolution_index_url", "resolution_index_sha256", "extraction_start", "extraction_end",
-                          "normalizer_version"]
-    item["evidence_id"] = digest(json.dumps({k: item[k] for k in fingerprint_fields}, sort_keys=True))
+    item["evidence_id"] = evidence_fingerprint(item)
     item.update(review_status="pending", boundary_verdict="pending", timing_verdict="pending",
                 reviewer_type="", human_review_complete=False, assistant_review_complete=False)
     if review:

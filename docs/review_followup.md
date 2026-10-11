@@ -107,6 +107,12 @@ increase the required fixed-sample count or silently satisfy any of its reviews.
 
 ## Where the 30-pair filing packet is
 
+The [portable filing-review page](../reports/filing_review/index.html) now combines
+the same 30-pair selection with the 24 matching reference-template filings. It
+contains 73 distinct filings, saved drafts and an export for the existing audit.
+Use the [Mac review guide](filing_review.md) to record decisions without editing
+JSON. It creates no reviews automatically and keeps the original evidence IDs.
+
 The existing public full reading packet is [expanded_audit.html](../reports/expanded_audit.html),
 with [expanded_review_pairs.csv](../reports/expanded_review_pairs.csv) specifying the
 30 pairs. It was separate from the arithmetic HTML. The follow-up creates a focused

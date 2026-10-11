@@ -25,6 +25,7 @@ all three text features to the same market controls.
 | Original SEC identity evidence | 215/215 primary files, headers, acceptance clocks and unique manifest-filer matches reverified; 218 filer observations include three legitimate Comcast co-filings |
 | Lexical cover evidence | 1,494 cover facts retained from 79 filings; 136 have no supported inline cover facts, which is a coverage observation rather than an identity exclusion |
 | Completed user review | 20/20 independent numerical and printed-timing checks recorded against the exact original packet |
+| Portable filing review | Local review page for the fixed 30 pairs and 24 matching reference cases: 73 distinct filings, saved drafts and audit-compatible exports; reviewer decisions remain pending |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -41,6 +42,9 @@ Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
 The [completion and reviewer handoff](docs/research_completion_gates.md) separates
 completed engineering checkpoints from the remaining empirical gates and uses
 the existing review packets.
+For the next filing review, open `reports/filing_review/index.html` on your Mac
+and follow the [short review guide](docs/filing_review.md). The page saves drafts
+and exports recorded decisions without manual JSON editing.
 The [eight-page progress PDF](reports/research_progress/Research_Progress_Report.pdf),
 [four-page pilot PDF](reports/research_progress/Pilot_Checkpoint_Report.pdf), and
 [earlier build receipt](reports/build_verification.json) preserve the original

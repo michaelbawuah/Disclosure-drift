@@ -43,6 +43,12 @@ deliverables; neither establishes forecast performance.
 Start with these existing materials; preserve their selected cases and evidence
 identifiers:
 
+The [local filing-review page](../reports/filing_review/index.html) is the current
+recording interface. It combines the fixed 30 pairs and all 24 matching reference
+cases into 73 distinct filings, with saved drafts and a validated export. The
+[Mac guide](filing_review.md) explains the next steps. The source packets below
+remain available for comparison; manual JSON editing is optional.
+
 | Material | Reviewer action |
 | --- | --- |
 | [Expanded reading packet](../reports/expanded_audit.html) and [fixed 30 pairs](../reports/expanded_review_pairs.csv) | Inspect both complete filings for each selected pair: true Item 1A boundaries, included/omitted material, immediate original annual predecessor and timing interpretation. The 30 pairs involve 58 distinct filings. |
