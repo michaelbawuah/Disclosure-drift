@@ -1,7 +1,57 @@
 # Research execution update — October 11, 2026 (UTC)
 
-**Latest result: the complete eligible 2020 cohort now has a source-bound SEC
-issuer-corroboration audit.** The Mac run at `5a96224` retained all **4,122
+**Latest result: 53 additional original SEC filings now explain two specific
+sets of unresolved issuer evidence.** All 39 cutoff-day acceptance clocks are
+resolved, and all 14 selected originals for the seven multiple-CIK cases
+reproduce the quarterly issuer metadata. The earlier 47 original-filing checks,
+73 assistant filing reviews and user's 20/20 numerical review remain complete.
+
+| New original-source check | Measured result | What the result establishes |
+|---|---|---|
+| Fourteen cutoff-day-only cases | **39/39** originals verified; **16** before the December 31, 2019 close and **23** after; **3** cases wholly before and **11** wholly after | Resolves all missing original acceptance clocks in this queue; filing dates alone were insufficient |
+| Seven cases with multiple earlier CIKs | **14/14** selected originals reproduce issuer CIK, name and symbol; all 129 contributing SEC occurrences retained | The observed conflicts exist in the original filings; they were not introduced by the quarterly parser or a reporting-owner substitution |
+| Separate corporate context | **8** original issuer documents; **4** ownership-symbol inconsistencies against separate issuer covers and **3** corporate-structure or transition cases | Supplies case-specific explanations without choosing a historical security link |
+| Native historical-identity source | Full 2026 guide preserved; `Companyhistory` and its historical CIK/effective-bound fields visually confirmed | Makes the requested source precise; the authenticated annual-CCM dictionary currently requires Cornell sign-in |
+
+The [cutoff results](../docs/ownership_cutoff_clock_results.md) retain all 39
+source occurrences and exact New York/UTC clocks. The earliest after-close
+example is Echo Global Logistics at **16:05:31 EST**, only five minutes and
+31 seconds past the cutoff. Those eleven cases have no before-cutoff acceptance
+within this complete queue; that does not exclude earlier evidence elsewhere.
+
+The [multiple-CIK findings](../docs/ownership_multi_cik_findings.md) distinguish
+the four issuer-cover inconsistencies from the ECOL, PVBC and VLRX corporate
+context. Both audits preserve the initial Mac access failures alongside the
+successful ordinary source retrievals. The 53 complete originals total
+**613,212 bytes** and contain **69 separately retained reporting-owner roles**.
+
+The [independent verification](ownership_followup_verification.json) passed on
+the Mac. A separate implementation rederived all **4,122** cohort summaries,
+**31,466** stored observations and **38,145** original quarterly occurrences,
+then independently parsed and rehashed all **53** originals. It checked the
+issuer/owner roles, exact byte locations, source selection and strict cutoff
+comparisons. The eight corporate-context pages are separately preserved and
+documented; they are outside that independent ownership-source verification.
+
+The [repository reproduction receipt](ownership_followup_repository_checks.json)
+records a successful `make reproduce-full`: Ruff, **995 tests** and the complete
+synthetic study pipeline passed. The test output retains **2,075 deprecation
+warnings** from the existing calendar and data-import dependencies. Synthetic
+model selection and final evaluation use invented inputs; empirical model
+selection and the actual final evaluation remain pending.
+
+The [native-source follow-up](company_history_source_followup.json) binds the
+58,774,868-byte guide and the observed Cornell sign-in requirement. It establishes
+neither a current WRDS table name nor entitlement. Historical identity intervals,
+source availability, the benchmark choice and reviewed normalization remain
+open. No historical link, human approval, empirical model selection or final
+outcome was created by these checks. The actual 2022–2025 final period remains
+unopened, and empirical milestones **5–11 remain pending**.
+
+## Earlier complete 2020 cohort result
+
+The complete eligible 2020 cohort has a source-bound SEC
+issuer-corroboration audit. The Mac run at `5a96224` retained all **4,122
 eligible security observations** and all **38,145 original 2019Q4 SEC records**.
 It produced **31,466 dated observations** and **36,822 comparisons** against
 every related original CCM record, completing in **12.761 seconds**.

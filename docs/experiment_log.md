@@ -111,3 +111,39 @@ whether an idea was specified before outcomes were examined.
 - Evidence: `reports/RESEARCH_EXECUTION_UPDATE.md`, `reports/pilot_expansion/`,
   `reports/review_progress/`, `reports/semantic_validation/`, and
   `reports/execution_verification.json`.
+
+## Original issuer conflicts and cutoff-day clocks, 2026-10-11
+
+- Starting cohort: the unchanged 4,122 eligible 2020 observations, 31,466
+  issuer observations and 38,145 original SEC quarterly records. The fixed
+  follow-ups select seven multiple-CIK cases and all fourteen cutoff-day-only
+  cases; neither selection uses returns or predictive scores.
+- Multiple-CIK check: 14 original filings reproduce every selected issuer
+  CIK/name/symbol. All 129 contributing source occurrences remain recorded.
+  Eight separate SEC corporate documents explain four symbol inconsistencies
+  and three transition or parent/subsidiary cases without approving links.
+- Cutoff check: all 39 original acceptance clocks resolved against
+  2019-12-31 16:00 EST. Sixteen precede the close and 23 follow it; three cases
+  contain only earlier acceptances and eleven only later acceptances. Exact
+  equality and unresolved-clock counts are zero.
+- Original collection: 53 complete submissions, 613,212 bytes, with 69
+  reporting-owner roles kept separate from issuers. Initial Mac access failures
+  and subsequent successful ordinary retrievals remain separately preserved.
+- Independent verification: a separate parser and full saved-cohort
+  recomputation passed for all 53 ownership originals on the Mac. The eight
+  corporate-context pages have separate source preservation and evidence
+  locations; they are outside that verifier's scope. See
+  `reports/ownership_followup_verification.json`.
+- Repository validation: `make reproduce-full` passed Ruff, all 995 tests and
+  the full synthetic pipeline. Exact script/report bindings and the retained
+  test-log hash are in `reports/ownership_followup_repository_checks.json`.
+- Historical source lead: the full current vendor guide verifies the native
+  `Companyhistory` filename and historical CIK/effective-bound fields. The
+  authenticated CCM dictionary reached Cornell sign-in; no history export or
+  source-vintage/availability evidence was obtained from that lookup.
+- This is source investigation. The original 47-source checks, 73 assistant
+  filing reviews and user's 20/20 numerical verdict remain complete. No
+  empirical model was fit, historical availability inferred, or final-period
+  outcome opened. Results and reproduction paths are in
+  `docs/ownership_multi_cik_findings.md`,
+  `docs/ownership_cutoff_clock_results.md` and the latest execution update.

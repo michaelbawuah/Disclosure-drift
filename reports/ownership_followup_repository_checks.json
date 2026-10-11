@@ -1,0 +1,132 @@
+{
+  "command": "make reproduce-full FULL_OUTPUT=outputs/full-demo-continuation-20261011T164200Z",
+  "command_exit_code": 0,
+  "execution_evidence": [
+    {
+      "bytes": 11695,
+      "path": "outputs/continuation-verification-20261011.log",
+      "sha256": "7c3b727ee420bb6d7575d4e95e620b1e577a97d9bc0ed2c3bd8cc3c0ddcc3aa5"
+    },
+    {
+      "bytes": 3308,
+      "path": "outputs/full-demo-continuation-20261011T164200Z/full_demo_summary.json",
+      "sha256": "0eb76b2843a43ff2f6bcbf1b2f3160e8cc15c05681fef36fc8f8d9c7aedfa71a"
+    }
+  ],
+  "independent_verification": {
+    "cohort_summaries_recomputed": 4122,
+    "corporate_context_pages_in_independent_verifier_scope": false,
+    "original_sec_occurrences_reconciled": 38145,
+    "original_submissions_verified": 53,
+    "status": "PASS_INDEPENDENT_OFFLINE_OWNERSHIP_FOLLOWUP_VERIFICATION",
+    "stored_observations_reconciled": 31466
+  },
+  "interpretation": "Original-source follow-up and software verification complete. Historical identity/availability, reviewed source choices and normalization, model development selection, and empirical milestones 5\u201311 remain pending.",
+  "protected_previous_evidence_unchanged": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263",
+    "reports/sec_ownership_execution.json": "6cdf513b98f60ede325c532590c6bb9f6fb50c9b6a60f4e29d2e12861e9d53f5",
+    "reports/sec_ownership_original_followup.json": "44eea2e8870bf7aa230562634520c683b7010c441c915fde69d5b674650e9844",
+    "reports/sec_ownership_verification.json": "508b60b7e31c3f05104fe82ba9caaee2b3dd6d3dfbfe69e90c4af8b368e391bf"
+  },
+  "pytest": {
+    "elapsed_seconds": 128.87,
+    "passed": 995,
+    "warning_categories": [
+      "NumPy timedelta deprecation in exchange_calendars",
+      "DuckDB fetch_record_batch deprecation in existing source importers"
+    ],
+    "warnings": 2075
+  },
+  "recorded_at_utc": "2026-10-11T16:44:29.482397+00:00",
+  "ruff": "All checks passed!",
+  "schema_version": 1,
+  "source_reports": [
+    {
+      "bytes": 2605,
+      "path": "reports/company_history_source_followup.json",
+      "sha256": "d3f392c5e510d70a4d378972a5f8253ffb3a75c06692f3b146ecfb5a950d487a"
+    },
+    {
+      "bytes": 14770,
+      "path": "reports/ownership_multi_cik_execution.json",
+      "sha256": "a7b19416d4a859c3ce08685a2581140cb3c19448659490167344c32c02f25fce"
+    },
+    {
+      "bytes": 159481,
+      "path": "reports/ownership_multi_cik_source_validation.json",
+      "sha256": "3e7cc9829d2dc7406f29a2abbb0f006fc517f49d3144151d1e624fbead44f35b"
+    },
+    {
+      "bytes": 19795,
+      "path": "reports/ownership_multi_cik_context.json",
+      "sha256": "41c07d311ab9cdc460b0b5e1f6fe2b51f830d116dba84b52510b67474477b6ef"
+    },
+    {
+      "bytes": 290341,
+      "path": "reports/ownership_cutoff_clock_resolved.json",
+      "sha256": "63abc76b5b4adfbe2b728a60ffe1ed1fe9de28cb78ae001bf56e487286911356"
+    },
+    {
+      "bytes": 34568,
+      "path": "reports/ownership_followup_verification.json",
+      "sha256": "a9f44b970768f2091ea7a3129920fb16fa57b22602ad1b47ba120dc8acd1107b"
+    }
+  ],
+  "starting_main": "217f11674dc0bdf2375a089e030ad9e8f11886fa",
+  "status": "PASS_REPOSITORY_REPRODUCTION_AND_INDEPENDENT_SOURCE_VERIFICATION",
+  "synthetic_full_pipeline": {
+    "actual_final_period_opened": false,
+    "completed": true,
+    "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+    "development_observations": 144,
+    "empirical_ready": false,
+    "final_observations": 48,
+    "robustness_components": {
+      "ablations": "completed",
+      "diagnostics": "completed",
+      "failure_cases": "completed",
+      "subgroups": "completed"
+    }
+  },
+  "validated_script_bytes": [
+    {
+      "bytes": 32122,
+      "path": "scripts/ownership_cutoff_clock_audit.py",
+      "sha256": "7498a5e2a3e7cfeddf2375d01883128c22b83090e20e51c61c49e31afc33391b"
+    },
+    {
+      "bytes": 6537,
+      "path": "scripts/ownership_cutoff_clock_collect_public.py",
+      "sha256": "1720a45c32d227c701ea0ee8de335faab8dfd896c44769a1426680a073dfdca7"
+    },
+    {
+      "bytes": 11496,
+      "path": "scripts/ownership_cutoff_clock_resolve.py",
+      "sha256": "b12f51bf2e3cef37f54fa200bf18af63207900b27b6ce170489a3ad8d4d6c09d"
+    },
+    {
+      "bytes": 34582,
+      "path": "scripts/ownership_multi_cik.py",
+      "sha256": "0fed56a92283fb6f52301d2a6d98ef4830a7a4deb5d14be4272bf45a00e9383c"
+    },
+    {
+      "bytes": 7649,
+      "path": "scripts/ownership_multi_cik_context.py",
+      "sha256": "bde68a5bedab21d79af15563df3b218876e53dbb46d1aa34c32dcf129c649288"
+    },
+    {
+      "bytes": 10642,
+      "path": "scripts/ownership_multi_cik_sources.py",
+      "sha256": "ed8c258e380c91378c1c3c9a582ac5febe447c595003e8e633501aa238a3a3a4"
+    },
+    {
+      "bytes": 38165,
+      "path": "scripts/verify_ownership_followups.py",
+      "sha256": "38fdcd026fc4b79d1df411e0e5591c54a34972671d6d7323602e30e4ac965837"
+    }
+  ],
+  "validation_host": "Linux research checkout; original source/cohort independent verification executed separately on authorized Mac"
+}

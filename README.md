@@ -34,6 +34,8 @@ all three text features to the same market controls.
 | Complete filing-date Names history | All 207 existing discoveries have unique descriptors at all 16,974 required role/date observations; all 15 January-snapshot date questions resolved; the original current-header ledger retains eight unmatched Exxon filings |
 | Complete 2020 SEC cohort reconciliation | All 4,122 eligible security observations and all 38,145 original SEC occurrences retained; 3,105 securities have unambiguous earlier literal observations; 987 remain without usable quarterly observations |
 | Original ownership-filing follow-up | All 47 selected missing/unsupported-header cases have original issuer CIK/name/symbol agreement; all source occurrences, amendments and reporting-owner roles preserved |
+| Multiple-CIK original-source follow-up | All 14 selected original filings across seven cases reproduce the quarterly issuer metadata; eight separate issuer documents distinguish four symbol inconsistencies and three corporate-structure cases |
+| Cutoff-day original clocks | All 39 filings across 14 cases resolved against the December 31, 2019 close: 16 before and 23 after; three cases have only before-close clocks and eleven only after-close clocks |
 | Exxon historical identity follow-up | Current header refers to a later successor; eight historical issuer/CUSIP observations and unique Names candidate coverage at all 656 required window points and eight selections; continuous identity/availability remains unresolved |
 | Historical revision check | Four saved annual snapshots within a published CRSP correction interval disagree with its corrected classification literals; the exact source vintage remains unresolved |
 | Benchmark source evidence | All five audited source bindings preserved; 52 exact-comparison differences remain unexplained; a source-backed reviewed benchmark choice is pending, with no tolerance or replacement accepted |
@@ -41,6 +43,8 @@ all three text features to the same market controls.
 | Empirical completion | Historical CIK/availability evidence, reviewed source choices and normalization, remaining judgments, approved universe, development selection and final estimates remain pending |
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
+[cutoff-day clock results](docs/ownership_cutoff_clock_results.md),
+[multiple-CIK findings](docs/ownership_multi_cik_findings.md),
 [actual 2020 issuer-corroboration results](docs/sec_ownership_results.md),
 [Exxon current-header diagnosis](docs/exxon_candidate_diagnostic.md),
 [complete Names-history results](docs/dated_names_results.md),
@@ -126,6 +130,10 @@ unmatched cases. Its [source-bound consumer](docs/sec_ownership_corrob.md) creat
 dated issuer observations and a complete original-source follow-up queue.
 The [47 original-filing checks](docs/sec_ownership_original_followup.md) confirm
 selected issuer observations without promoting them to historical security links.
+The subsequent [seven-case original-source audit](docs/ownership_multi_cik_findings.md)
+shows why even a unique ticker match requires issuer and share-class evidence.
+The [complete cutoff-day follow-up](docs/ownership_cutoff_clock_results.md) resolves
+all 39 original acceptance clocks while keeping public availability separate.
 The [latest complete-history checks](docs/dated_names_results.md) resolve the
 specific descriptor-date questions while retaining all original evidence.
 The [identity execution record](reports/wrds_identity_evidence_execution.json)

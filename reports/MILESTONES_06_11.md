@@ -4,7 +4,17 @@
 
 **Researcher:** Michael Baffour Awuah
 
-**Status:** The new complete 2020 reconciliation retains **4,122 eligible
+**Latest source checkpoint:** All **53 additional original SEC filings** in the
+two fixed follow-up queues have been verified. The 39 cutoff-day clocks resolve
+to **16 before / 23 after** the December 31, 2019 close, with **three cases wholly
+before and eleven wholly after**. The 14 selected originals for seven multiple-CIK
+cases reproduce their quarterly issuer metadata; eight separate corporate
+documents distinguish four symbol inconsistencies and three corporate-structure
+cases. See the [cutoff results](../docs/ownership_cutoff_clock_results.md) and
+[multiple-CIK findings](../docs/ownership_multi_cik_findings.md). These source
+checks leave historical link/availability approval and empirical completion open.
+
+The complete 2020 reconciliation retains **4,122 eligible
 security observations** and **38,145 original SEC occurrences**. It found
 unambiguous earlier literal observations for **3,105 securities**, with
 **987** without usable quarterly observations. All **47 selected
