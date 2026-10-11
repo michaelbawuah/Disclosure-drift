@@ -17,7 +17,7 @@ help:
 	  'make pilot-expand  Collect 15 additional issuers and audit the combined SEC text pilot' \
 	  'make research-report  Build progress PDFs and figures from public pilot exhibits' \
 	  'make check      Sync the lockfile, then run lint and tests' \
-	  'make status     Show the current research gates' \
+	  'make status     Show the published progress checklist, not local bundle validation' \
 	  'make demo       Rebuild the synthetic engineering demonstration' \
 	  'make market-demo  Verify invented market imports, delisting labels and missing-data exclusions' \
 	  'make ingest     Download/cache the SEC sample; requires SEC_USER_AGENT' \

@@ -138,6 +138,15 @@ and specify a documented resolution or extraction procedure if needed. It
 contains aggregate diagnostic information and transmits nothing. No recipient
 is selected and no licensed detail is automatically attached.
 
+The research decision is which documented value-weighted total-return benchmark
+to use over the protocol's identical label sessions. Exact equality between
+these two export views is not itself a frozen requirement. A source-backed,
+human-reviewed choice may retain a disclosed unresolved discrepancy; it cannot
+silently replace values or turn this packet into an approval. The current
+question draft and exact diagnostic remain unchanged until actual evidence and
+judgments support a decision. See the
+[completion and review path](research_completion_gates.md#2-obtain-the-missing-historical-facts-and-decide-normalization).
+
 ## Output bundle and limits
 
 | File or directory | Contents |

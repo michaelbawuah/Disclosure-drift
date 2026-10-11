@@ -203,6 +203,14 @@ arithmetic review. An exact numerical match is only a comparison result and
 does not supply the remaining source, historical-identity, availability, or
 terminal-event approvals required by the project.
 
+This exact-comparison flag is not a separate frozen research requirement that
+both export views must agree. The [protocol](../protocol.md) requires a declared,
+documented value-weighted total-return benchmark over the identical label
+sessions. A later source-backed, reviewed benchmark decision must preserve the
+discrepancy evidence and state any unresolved limitation; it need not change
+this diagnostic's exact result. This tool makes no such decision. See the
+[completion and review path](research_completion_gates.md#2-obtain-the-missing-historical-facts-and-decide-normalization).
+
 The implementation has focused synthetic tests for exact arithmetic beyond
 binary-float and default Decimal precision, ordering of date checks, source
 conflicts, market uniqueness, hash and receipt binding, mutation detection,

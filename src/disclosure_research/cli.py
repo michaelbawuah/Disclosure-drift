@@ -170,7 +170,7 @@ def main(argv=None) -> int:
     report.add_argument("--checkpoint", default="reports/pilot_checkpoint")
     report.add_argument("--verification", default="reports/build_verification.json")
     report.add_argument("--output", required=True)
-    commands.add_parser("status", help="Show research gates; contains no private account probes")
+    commands.add_parser("status", help="Show the published progress checklist; does not validate local bundles")
     args = parser.parse_args(argv)
     config = load_protocol(args.protocol)
     lock = Path(args.protocol).with_name("protocol.lock.json")
@@ -345,7 +345,9 @@ def main(argv=None) -> int:
         (out / "selection.json").write_text(json.dumps(selection, indent=2) + "\n")
         print(json.dumps(selection, indent=2))
         return 0
-    gates = {"protocol": "locked", "market_data_access": "export evidence in reports/market_access_samples.json",
+    gates = {"scope": "published repository progress checklist; does not inspect local source bundles or certify empirical readiness",
+             "completion_guide": "docs/research_completion_gates.md",
+             "protocol": "locked", "market_data_access": "export evidence in reports/market_access_samples.json",
              "market_import_and_label_staging": "implemented; real import still needs source and identity audits",
              "crsp_source_staging": "stage-crsp implemented; staging does not certify research readiness",
              "historical_identity_review": "review-identities assembles evidence; historical link approval is pending",
@@ -355,8 +357,9 @@ def main(argv=None) -> int:
              "expanded_text_pilot": "215 filings, 180 pairs, 104 pairs in 2019-2021; source-verified descriptive checkpoint",
              "manual_filing_audit": "pending", "development_selection_on_real_returns": "pending",
              "embedding_checkpoint_and_protocol": "actual pinned backend executed; human semantic review and empirical freeze pending",
-             "historical_universe_and_dataset": "implemented; requires full historical source exports and reviews",
-             "historical_source_export": "resumable WRDS helper in scripts/wrds_full_export.py; full vendor exports not yet collected",
+             "historical_universe_and_dataset": "implemented; historical identity, information availability, population coverage and source reviews remain required",
+             "historical_source_export": "development daily, Names, CCM/company and benchmark exports preserved and processed; see reports/wrds_identity_evidence_execution.json",
+             "benchmark_source_resolution": "52 cross-view differences retained; a documented source choice requires review, not forced numerical equality",
              "development_freeze_and_final_evaluator": "implemented with evidence, code, dataset fingerprints and run ledger",
              "robustness": "year/month, block intervals, ablations, delay rebuilds, subgroups and failure cases implemented",
              "semantic_comparator": "actual retrospective MiniLM run on original 155 filings/135 pairs; complete token coverage; manual validation pending",
