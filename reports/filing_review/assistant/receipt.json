@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "status": "ASSISTANT_FILING_SOURCE_REVIEW_COMPLETED",
+  "assembled_at": "2026-10-11T09:57:36.433804+00:00",
+  "source_commit": "176ba9f9b9dcee75c9161eecf374c3f2ac558f35",
+  "authorized_by": "Michael Baffour Awuah",
+  "reviewer_type": "assistant",
+  "packet_id": "ef9f2b4e9b22951c68872e7b3bf2e828914384d964d0da7b2c13b7b890eaf6d8",
+  "packet_sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814",
+  "review_count": 73,
+  "preserved_prior_review_count": 63,
+  "new_review_count": 10,
+  "reviews_file": "reviews.jsonl",
+  "reviews_sha256": "5f7d5c34804573b78a585bdb6382079cff991cb09b80a8c13fefbfb6c74fae52",
+  "prior_reviews_path": "reports/review_progress/assistant_filing_decisions.jsonl",
+  "prior_reviews_sha256": "88e6113d0508e9aaa49ba9e66b5c25c7cb735f451201bfe5530c036a31e59e32",
+  "prior_review_fields_preserved": [
+    "accession",
+    "evidence_id",
+    "reviewer",
+    "reviewer_type",
+    "reviewed_at",
+    "boundary_verdict",
+    "timing_verdict",
+    "notes"
+  ],
+  "new_reviewed_at": "2026-10-11T09:53:32.041471+00:00",
+  "independent_timing_passes": 73,
+  "independent_pair_passes": 30,
+  "pair_predecessor_scope": "Preserved 155-filing cohort only",
+  "selected_distinct_sec_bodies_rehashed": 152,
+  "source_audit_filings": 155,
+  "source_audit_assistant_reviews_complete": 73,
+  "source_audit_human_reviews_complete": 0,
+  "source_audit_blocking_issues": 0,
+  "original_sec_bytes_reread": true,
+  "audit_output": "outputs/audit-filing-assistant-20261011",
+  "audit_selection_source": "reports/expanded_review_pairs.csv",
+  "source_bindings": {
+    "reports/filing_review/packet.json": {
+      "sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814",
+      "bytes": 3694594
+    },
+    "reports/filing_review/receipt.json": {
+      "sha256": "411b171df7c4b9fb750ec97943bc70e66401797fbb20398b709853f0fe14c253",
+      "bytes": 2351
+    },
+    "configs/protocol.json": {
+      "sha256": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+      "bytes": 1384
+    },
+    "data/processed/pilot-resolved/filings.parquet": {
+      "sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+      "bytes": 3468416
+    },
+    "data/processed/pilot-resolved/filing_pairs.parquet": {
+      "sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0",
+      "bytes": 5865128
+    },
+    "outputs/audit-pilot-resolved/filing_evidence.parquet": {
+      "sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626",
+      "bytes": 112560
+    },
+    "outputs/audit-pilot-resolved/audit_summary.json": {
+      "sha256": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb",
+      "bytes": 717
+    },
+    "reports/expanded_review_pairs.csv": {
+      "sha256": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278",
+      "bytes": 15524
+    },
+    "reports/reference_reviews.template.jsonl": {
+      "sha256": "24bfb83b67b3324562d2f37849bce031f40d1f6591dfa3890da2f9c2549dd85b",
+      "bytes": 6120
+    },
+    "reports/review_progress/assistant_filing_decisions.jsonl": {
+      "sha256": "88e6113d0508e9aaa49ba9e66b5c25c7cb735f451201bfe5530c036a31e59e32",
+      "bytes": 71420
+    },
+    "reports/review_progress/source_review_receipt.json": {
+      "sha256": "f59ec352da1f8ae44a688336914e90ff6269e371ab506f36c724751d60a84a5e",
+      "bytes": 1797
+    },
+    "configs/protocol.lock.json": {
+      "sha256": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+      "bytes": 194
+    },
+    "configs/section_resolutions.json": {
+      "sha256": "1e37d4db53c22e3c61bf916851d7e8dcf36114da6be41e11543471d1a77b8b6c",
+      "bytes": 17779
+    },
+    "src/disclosure_research/audit.py": {
+      "sha256": "10e29bcdf43571d000ecb60ed449ca25a0679bc3025389f363075db2ff87c996",
+      "bytes": 20286
+    },
+    "src/disclosure_research/filing_review.py": {
+      "sha256": "87c997071d96eb7357e431f6fa5faf48dd11fc973e2e591565085843dd1e6316",
+      "bytes": 22622
+    },
+    "scripts/verify_assistant_filing_packet.py": {
+      "sha256": "3ce7d1a29f54a80ce6d51b72e4df6ffd405738306b2a792b06508f3361ba93b7",
+      "bytes": 14797
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "680e7b727e68f9fd3631c430340f7bc8daba520ff2898f1cd7f88f011af206bb",
+      "bytes": 10500
+    },
+    "audit_summary.json": {
+      "sha256": "772657d185d6493a6118e2c138ff90e705e10f3722ac6f9f9167c964ced2f202",
+      "bytes": 718
+    },
+    "authorization.json": {
+      "sha256": "bc50e85c96461f64a55bee3a2bc33bf7bc70e228e977e9473f19fee26c2a792d",
+      "bytes": 467
+    },
+    "evidence/archive_manifest.json": {
+      "sha256": "1475a86896f0fa4353a2498661e09a3c4963809fd2d69d9be0454de81223087c",
+      "bytes": 8966
+    },
+    "evidence/combined_review_provenance.json": {
+      "sha256": "da9ed8f351fe6fddeb1430456227641b74760494f65d2a1607de283cf51c7743",
+      "bytes": 4467
+    },
+    "evidence/ge_intel_findings.json": {
+      "sha256": "32e84739fbbc13c3b36322ae22b78fdec8eb440088cc1e72da8275e555117ed8",
+      "bytes": 32731
+    },
+    "evidence/ge_intel_independent_checks.json": {
+      "sha256": "071625a848378e14d8ab111b357cbfd9e18078c6a258897a3893bb74576dabbf",
+      "bytes": 23368
+    },
+    "evidence/jnj_2021_incorporation_context.json": {
+      "sha256": "feb8b445b785768767cba8facabaee1d3fb5c16933de67f494181be1fa695003",
+      "bytes": 12198
+    },
+    "evidence/jnj_findings.json": {
+      "sha256": "9d097058222b7708d92575e7852dc6b5cf9a1dca515e5955aa1300817118564b",
+      "bytes": 26228
+    },
+    "evidence/source_inspection_archive.tar.gz": {
+      "sha256": "d6d197a50981a702c15e2a325f727af0b38cad8274587e21c58570974795f126",
+      "bytes": 400596
+    },
+    "evidence/timing_prior_evidence.json": {
+      "sha256": "6c59b67b9e8097584ab0acee6a7550caadc7f1907f32985ea7b2a7739f0f48fb",
+      "bytes": 395737
+    },
+    "execution.json": {
+      "sha256": "b35fe4753b434e7777ce2684a2bf42cb9e26b7aefa98a46179a3816e79851ec7",
+      "bytes": 994
+    },
+    "index.html": {
+      "sha256": "0020e34e5adc003d56c04f5dfb2c7f521e3681f42fac57c811f066d94a6525ac",
+      "bytes": 129220
+    },
+    "reviews.jsonl": {
+      "sha256": "5f7d5c34804573b78a585bdb6382079cff991cb09b80a8c13fefbfb6c74fae52",
+      "bytes": 71060
+    },
+    "validation.json": {
+      "sha256": "2acfaf352554310b6bdb1ec929b5959fc015276ce4064d4d2a2aa78377b04ec0",
+      "bytes": 597
+    }
+  },
+  "human_reviews_created": 0,
+  "whole_document_visual_review_completed": false,
+  "source_approvals": 0,
+  "historical_security_links_created": 0,
+  "prior_arithmetic_review_modified": false,
+  "public_dissemination_verified": false,
+  "full_universe_representativeness_established": false,
+  "market_returns_read": false,
+  "model_ready": false,
+  "final_period_opened": false
+}

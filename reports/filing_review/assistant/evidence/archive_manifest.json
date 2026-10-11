@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "archive": "source_inspection_archive.tar.gz",
+  "archive_sha256": "d6d197a50981a702c15e2a325f727af0b38cad8274587e21c58570974795f126",
+  "method": "All original delegated source-inspection files, preserved byte for byte at their original repository-relative paths. Scripts and judgments are historical execution evidence; rerunning inventory scripts does not substitute for a new source review.",
+  "members": [
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000040554-14-000023.original-events.txt",
+      "sha256": "a1ac45dfb46915856e11d2562ba17245bcdeda99dcce5791cd58942a2cffea5b",
+      "bytes": 27985
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000040554-14-000023.risk.txt",
+      "sha256": "c711029c9eda30d5890e17cab4785082580aa0a1e17ff01d0ec08aa4d154a905",
+      "bytes": 27777
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000040554-14-000023.source-context.json",
+      "sha256": "fdce979855b6e39f8acf704580adc236cc65ca6fc5167485210428ab10f2cb5f",
+      "bytes": 70631
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-14-000020.original-events.txt",
+      "sha256": "1f9c489d2914a0ccd2d02d31ac554e859000c083cf900e58f130603bd0cd4f6f",
+      "bytes": 35663
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-14-000020.risk.txt",
+      "sha256": "036e32c8d47fd7016c61e5479ad2ec14ad30283f3b8102bef73a75551f120013",
+      "bytes": 34700
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-14-000020.source-context.json",
+      "sha256": "0ff7200cddeb78c68827e907260a0f41092c1fe34819e5f2c483ea82271320ef",
+      "bytes": 168188
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-14-000020__0000050863-15-000015.diff.txt",
+      "sha256": "4afcaa0912a5ef96ffc24f2760c2d94264dbf3f8535b1f239e1d3fdf522eee5e",
+      "bytes": 71271
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-15-000015.original-events.txt",
+      "sha256": "3548bcb3ad0a2b252e573560a80872c7c4bd92d2388cf98d5edb8119276cfde1",
+      "bytes": 39277
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-15-000015.risk.txt",
+      "sha256": "e3ec26d21c3ea59d28ba144b051d07e38135f85eca56752d64c2ff622c9a2452",
+      "bytes": 38222
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-15-000015.source-context.json",
+      "sha256": "383082a434bcf2f913ccbed087d300bdbdc83c2227f8589d948b632033de0d25",
+      "bytes": 179289
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-15-000015__0000050863-16-000105.diff.txt",
+      "sha256": "8e6af9794e9dadbdbd56671e87b7520f8c57bc3e2a1ce76a6f823b7bebe207ac",
+      "bytes": 62120
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-16-000105.original-events.txt",
+      "sha256": "22cd1121c6ecd9eaef3fff83cdeef230395f698b0e5c0f0d24d59e79100a31d3",
+      "bytes": 39482
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-16-000105.risk.txt",
+      "sha256": "0dd1f12e64944fe1bb5547da72c65e1790b4678b0deea7d3c78e54a6133cde8b",
+      "bytes": 38357
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-16-000105.source-context.json",
+      "sha256": "9ea28a29f3018c06ea22337357e6a56f42e3971b354f475a6da788b8c66e6dd5",
+      "bytes": 183600
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-16-000105__0000050863-17-000012.diff.txt",
+      "sha256": "31ebec30aeff29adc9d02891fa480312fca2dd348b523025cda94db8ddb924e1",
+      "bytes": 57017
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-17-000012.original-events.txt",
+      "sha256": "0d999fef40c7aad76673526ed22d7d989d7b5661b4c2344a7cd6531c6b085464",
+      "bytes": 43468
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-17-000012.risk.txt",
+      "sha256": "92990b38995a33414a5b80a99e8e4dbe9f9e8b8e4ded46108322fcf6c568ff06",
+      "bytes": 42245
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/0000050863-17-000012.source-context.json",
+      "sha256": "b072d95e2939e134dbcd78f6e4ae8691221400e94ab406f20080abd12b751b18",
+      "bytes": 200536
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/independent_checks.json",
+      "sha256": "071625a848378e14d8ab111b357cbfd9e18078c6a258897a3893bb74576dabbf",
+      "bytes": 23368
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/inspect_originals.py",
+      "sha256": "7282a78ebbd685a083ab9a72e656c28f7f90d8d6bf8add0adbbcec53f3ccc6ee",
+      "bytes": 8013
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/record_findings.py",
+      "sha256": "16bd2ab262af1a1f423a6de0285ac04fea9ee1c37fbc0f698192a00c810bd21b",
+      "bytes": 12633
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/ge_intel/review_findings.json",
+      "sha256": "32e84739fbbc13c3b36322ae22b78fdec8eb440088cc1e72da8275e555117ed8",
+      "bytes": 32731
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-17-000006.source_inventory.json",
+      "sha256": "b4b3111b67cf5c24a85036be1f006cfcc06e1a40f991c1614ff124087999c81a",
+      "bytes": 36558
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-17-000006.source_reading.txt",
+      "sha256": "3ec1b33654e3f92ee6e537dafa55b40fe62478ad6b4c48af51dc10bb5326432a",
+      "bytes": 27614
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-18-000005.source_inventory.json",
+      "sha256": "2b1e9b8660ddde66a9b52ce54a406d14d1a030be2ec66457b91d2d761b29353b",
+      "bytes": 38134
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-18-000005.source_reading.txt",
+      "sha256": "ddcce4f8948289c413e8e15d2d962b742ffd8268ac66f3281439b832856c625c",
+      "bytes": 28693
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-19-000009.source_inventory.json",
+      "sha256": "53afcd5c915a1adbd5116e73cc2b9b4cb5b98d1e4cbeadc3e1b0937bc9f68aae",
+      "bytes": 40211
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-19-000009.source_reading.txt",
+      "sha256": "ce8797c73e7c4563fffdd08f7d9d348c48ebb99479c0f6e0637a0959c87cfb14",
+      "bytes": 30672
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-20-000010.source_inventory.json",
+      "sha256": "1cb9a04f7dd25c3e2fe4d62a5cf3bdc10fc75990b635ffecf625a0ed2df386f3",
+      "bytes": 39030
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-20-000010.source_reading.txt",
+      "sha256": "7a8d010cef0e621668a4af98b764cd0c9fef672729a97a8bd0df8e4a2fd50386",
+      "bytes": 29422
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-21-000008.source_inventory.json",
+      "sha256": "4561e17eba164b5422dcce11782ac9970ce9e3c0dac48d1ae403e5cee52aba71",
+      "bytes": 50178
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/0000200406-21-000008.source_reading.txt",
+      "sha256": "4a0626f7eb42777da7f1099a8fdeeaa93804e158df79cd11bea98c5dfd2468b1",
+      "bytes": 38053
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/2021_incorporation_context.json",
+      "sha256": "feb8b445b785768767cba8facabaee1d3fb5c16933de67f494181be1fa695003",
+      "bytes": 12198
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/boundary_reviews.jsonl",
+      "sha256": "87de0f47cae93904715e07ea562bec617d7fabb9a3e0559a272022f363ce4e4d",
+      "bytes": 7954
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/findings.json",
+      "sha256": "9d097058222b7708d92575e7852dc6b5cf9a1dca515e5955aa1300817118564b",
+      "bytes": 26228
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/inspect_sources.py",
+      "sha256": "03ed3b51254603e09d2149100fba66c22552d9ffb3d9b25265e15144902606ca",
+      "bytes": 7298
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/jnj/validation.json",
+      "sha256": "65a008790814f9f1b670fd94be2e2533b593cd22a6157403ec374422d2950121",
+      "bytes": 595
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/timing_prior/revalidate_timing_prior.py",
+      "sha256": "14eced863fd3e38806c2e373cfd5573f338cc8d8ffe6b8ebb3633506f0b3dc30",
+      "bytes": 28524
+    },
+    {
+      "path": "outputs/delegated-filing-review-20261011/timing_prior/timing_prior_evidence.json",
+      "sha256": "6c59b67b9e8097584ab0acee6a7550caadc7f1907f32985ea7b2a7739f0f48fb",
+      "bytes": 395737
+    }
+  ]
+}

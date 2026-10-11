@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-11T09:53:48.689194+00:00",
+  "completed_at": "2026-10-11T09:55:36.521815+00:00",
+  "seconds": 107.833,
+  "status": "SOURCE_AUDIT_ACCEPTS_73_ASSISTANT_REVIEWS",
+  "original_sec_bytes_reread": true,
+  "filings_reaudited": 155,
+  "assistant_reviews_complete": 73,
+  "human_reviews_complete": 0,
+  "all_155_evidence_ids_unchanged": true,
+  "fixed_30_pair_selection_bytes_unchanged": true,
+  "audit_output": "outputs/audit-filing-assistant-20261011",
+  "source_audit_evidence_sha256": "ccb1af55ed9fb15b2dd848cc9ade5df3ed7bec53fa97fea81f22cb5be7115a3c",
+  "source_audit_summary_sha256": "772657d185d6493a6118e2c138ff90e705e10f3722ac6f9f9167c964ced2f202",
+  "source_audit_api": "disclosure_research.audit.build_audit",
+  "source_audit_code_sha256": "10e29bcdf43571d000ecb60ed449ca25a0679bc3025389f363075db2ff87c996",
+  "market_returns_read": false,
+  "model_ready": false,
+  "final_period_opened": false,
+  "prior_arithmetic_review_modified": false
+}

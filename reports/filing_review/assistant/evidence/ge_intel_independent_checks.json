@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-10-11T09:45:13.820646+00:00",
+  "method": "Python standard-library HTMLParser data events, without production extraction/normalization helpers",
+  "checks": [
+    {
+      "accession": "0000040554-14-000023",
+      "evidence_id": "4cbce3fd3e7bf324ebb8086579793d9f44dcae39325e8789f4ff83b56500a300",
+      "name": "GENERAL ELECTRIC CO",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004055414000023/geform10k2013.htm",
+        "sha256": "bdbc8574a1fca339f5db4d991abd687ad5ce034f49e5e914fc28b229913fb53b",
+        "bytes": 6025661,
+        "metadata_sha256": "07f961bfb05d36218a70ab29c5287047743693c237438ccb170633d97a0561a6",
+        "fetched_at": "2026-10-09T22:17:03.052929+00:00",
+        "representation": "http-decoded"
+      },
+      "header": {
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004055414000023/0000040554-14-000023.hdr.sgml",
+        "sha256": "0a89de6f2810564dfa0ad9b24d5e75c3ba7059088b9b4c77ad7c12e7e433c17d",
+        "bytes": 797,
+        "metadata_sha256": "aa11c20a575e56d99b1b3a5216093d50cd6212c415c43cc1bbdbcad3812e5638",
+        "fetched_at": "2026-10-09T22:17:07.882895+00:00",
+        "representation": "http-decoded"
+      },
+      "risk_text_sha256": "fa328ae959056f35f044945d7c2492f11c17314eb5bc0938bbb39f6de11f3448",
+      "complete_extracted_text_matches_one_contiguous_independent_visible_source_span": true,
+      "comparison_ignores_whitespace_and_zero_width_spaces_only": true,
+      "canonical_start": 45415,
+      "canonical_end": 68927,
+      "canonical_length": 23512,
+      "source_text_event_count": 13354,
+      "matched_event_count": 40,
+      "first_event_index": 308,
+      "last_event_index": 347,
+      "immediate_before_span": "eSECat1-800-SEC-0330.Referencestoourwebsiteaddressedinthisreportareprovidedasaconvenienceanddonotconstitute,andshouldnotbeviewedas,anincorporationbyreferenceoftheinformationcontainedon,oravailablethrough,thewebsite.Therefore,suchinformationshouldnotbeconsideredpartofthisreport.(14)Item1A.RiskFactors",
+      "immediate_after_span": ".Item1B.UnresolvedStaffCommentsNotapplicable.Item2.PropertiesManufacturingoperationsarecarriedoutatapproximately237manufacturingplantslocatedin38statesintheUnitedStatesandPuertoRicoandatapproximately305manufacturingplantslocatedin40othercountries.Item3.LegalProceedingsAspreviouslyreported,inFebruary",
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 2930,
+          "context": "ntoPartIIItotheextentdescribedtherein.(1)TableofContentsPagePartIItem1.Business3Item1A.RiskFactors15Item1B.UnresolvedStaffComments21Item2.Properties21Item3.LegalProceedings21Item4.MineSafetyDisclosures23PartIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 45397,
+          "context": "h,thewebsite.Therefore,suchinformationshouldnotbeconsideredpartofthisreport.(14)Item1A.RiskFactorsThefollowingdiscussionofriskfactorscontains“forward-lookingstatements,”asdiscussedinItem1.“Business”.TheseriskfactorsmaybeimportanttounderstandinganystatementinthisAnnualReportonFo"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 2950,
+          "context": "tdescribedtherein.(1)TableofContentsPagePartIItem1.Business3Item1A.RiskFactors15Item1B.UnresolvedStaffComments21Item2.Properties21Item3.LegalProceedings21Item4.MineSafetyDisclosures23PartIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 68928,
+          "context": "andeffectivenessofourproductsandservicesandresultinliabilityandreputationalharm.Item1B.UnresolvedStaffCommentsNotapplicable.Item2.PropertiesManufacturingoperationsarecarriedoutatapproximately237manufacturingpla"
+        }
+      ],
+      "hidden_text_events_in_span": [],
+      "images_in_span": [],
+      "header_original": "<SEC-HEADER>0000040554-14-000023.hdr.sgml : 20140227\n<ACCEPTANCE-DATETIME>20140227165558\n<ACCESSION-NUMBER>0000040554-14-000023\n<TYPE>10-K\n<PUBLIC-DOCUMENT-COUNT>20\n<PERIOD>20131231\n<FILING-DATE>20140227\n<DATE-OF-FILING-DATE-CHANGE>20140227\n<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>GENERAL ELECTRIC CO\n<CIK>0000040545\n<ASSIGNED-SIC>3600\n<IRS-NUMBER>140689340\n<STATE-OF-INCORPORATION>NY\n<FISCAL-YEAR-END>0215\n</COMPANY-DATA>\n<FILING-VALUES>\n<FORM-TYPE>10-K\n<ACT>34\n<FILE-NUMBER>001-00035\n<FILM-NUMBER>14649883\n</FILING-VALUES>\n<BUSINESS-ADDRESS>\n<STREET1>3135 EASTON TURNPIKE\n<STREET2>W3F\n<CITY>FAIRFIELD\n<STATE>CT\n<ZIP>06828\n<PHONE>203-373-2211\n</BUSINESS-ADDRESS>\n<MAIL-ADDRESS>\n<STREET1>3135 EASTON TURNPIKE\n<STREET2>W3F\n<CITY>FAIRFIELD\n<STATE>CT\n<ZIP>06828\n</MAIL-ADDRESS>\n</FILER>\n</SEC-HEADER>\n",
+      "full_visual_layout_review_performed": false
+    },
+    {
+      "accession": "0000050863-14-000020",
+      "evidence_id": "f3aab127c52dd90245fe119d58f9161886a71885f4277fac0cbca53915aaa0fe",
+      "name": "INTEL CORP",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/a10kdocument12282013.htm",
+        "sha256": "846098afb4bef1f70ef7094702e217139b3128730c61932daebf34cd1e7b0d90",
+        "bytes": 3887841,
+        "metadata_sha256": "4f35f48d4d5c9b851c89d1d67b3871368461be90351ddf87a97dcfd71891da43",
+        "fetched_at": "2026-10-09T22:16:01.641882+00:00",
+        "representation": "http-decoded"
+      },
+      "header": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/0000050863-14-000020.hdr.sgml",
+        "sha256": "6c1256123a72f113074b23cf32434df5f2cc8d54e8d22a8daf496595ed4539b9",
+        "bytes": 812,
+        "metadata_sha256": "67441ca41933e5f7aaffd5b0af0d6b976eb371de96fadcda118ce3040e89b923",
+        "fetched_at": "2026-10-09T22:16:05.630597+00:00",
+        "representation": "http-decoded"
+      },
+      "risk_text_sha256": "d68e83949d73a02cfeb52d491f9877fb0512e36fd8e4f0bb65400d005f9a2dff",
+      "complete_extracted_text_matches_one_contiguous_independent_visible_source_span": true,
+      "comparison_ignores_whitespace_and_zero_width_spaces_only": true,
+      "canonical_start": 52849,
+      "canonical_end": 82128,
+      "canonical_length": 29279,
+      "source_text_event_count": 10432,
+      "matched_event_count": 189,
+      "first_event_index": 667,
+      "last_event_index": 855,
+      "immediate_before_span": "rofVodafoneGroupplcBoardofDirectors•JoinedIntelin1988ThomasM.Kilroy,age56•2013–present,ExecutiveVP,GM,SalesandMarketingGroup•2010–2013,SeniorVP,GM,SalesandMarketingGroup•2009–2010,VP,GM,SalesandMarketingGroup•2005–2009,VP,GM,DigitalEnterpriseGroup•JoinedIntelin199016TableofContentsITEM1A.RISKFACTORS",
+      "immediate_after_span": "ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember28,2013,ourmajorfacilitiesconsistedof:(SquareFeetinMillions)UnitedStatesOtherCountriesTotalOwnedfacilities129.916.746.6Leasedfacilities22.36.08.3Totalfacilities32.222.754.91Leasesonportionsofthelandusedforthesefacilitiesexpireon",
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3169,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER28,2013INDEXPagePARTIItem1.Business1Item1A.RiskFactors17Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 52831,
+          "context": "gGroup•2005–2009,VP,GM,DigitalEnterpriseGroup•JoinedIntelin199016TableofContentsITEM1A.RISKFACTORSChangesinproductdemandmayharmourfinancialresultsandarehardtopredict.Ifproductdemanddecreases,ourrevenueandprofitcouldbeharmed.Importantfactorsthatcouldcausedemandforourproductstode"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3189,
+          "context": "EFISCALYEARENDEDDECEMBER28,2013INDEXPagePARTIItem1.Business1Item1A.RiskFactors17Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 82128,
+          "context": "ordeteriorationinthedegreeofcompliancewithpoliciesorprocedures.23TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember28,2013,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_text_events_in_span": [],
+      "images_in_span": [],
+      "header_original": "<SEC-HEADER>0000050863-14-000020.hdr.sgml : 20140214\n<ACCEPTANCE-DATETIME>20140214090847\n<ACCESSION-NUMBER>0000050863-14-000020\n<TYPE>10-K\n<PUBLIC-DOCUMENT-COUNT>23\n<PERIOD>20131228\n<FILING-DATE>20140214\n<DATE-OF-FILING-DATE-CHANGE>20140214\n<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>INTEL CORP\n<CIK>0000050863\n<ASSIGNED-SIC>3674\n<IRS-NUMBER>941672743\n<STATE-OF-INCORPORATION>DE\n<FISCAL-YEAR-END>1231\n</COMPANY-DATA>\n<FILING-VALUES>\n<FORM-TYPE>10-K\n<ACT>34\n<FILE-NUMBER>000-06217\n<FILM-NUMBER>14610852\n</FILING-VALUES>\n<BUSINESS-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n<PHONE>4087658080\n</BUSINESS-ADDRESS>\n<MAIL-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n</MAIL-ADDRESS>\n</FILER>\n</SEC-HEADER>\n",
+      "full_visual_layout_review_performed": false
+    },
+    {
+      "accession": "0000050863-15-000015",
+      "evidence_id": "277595a6f6f201705bb291c2545f805260b4817b6f061527f6f11894c6412f55",
+      "name": "INTEL CORP",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+        "sha256": "38b2c2b545ab2d6f6721d6a56f68e3a77fff27dd4bf0b355b071b77856d78477",
+        "bytes": 3976147,
+        "metadata_sha256": "68c5dfd158f5d5b0b1e1f7d626fbd24356b691c087091175ae80a906428c94a6",
+        "fetched_at": "2026-10-09T22:16:09.594463+00:00",
+        "representation": "http-decoded"
+      },
+      "header": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/0000050863-15-000015.hdr.sgml",
+        "sha256": "2803d2770b85718c80f3fea77ed616b3fa89cbf19d75cd286056cba328c0ae99",
+        "bytes": 812,
+        "metadata_sha256": "611fe2e6ab46912ff6d3b7c2bdbf9b0027ec8c5a9333ff0e838d80da8f443749",
+        "fetched_at": "2026-10-09T22:16:13.338303+00:00",
+        "representation": "http-decoded"
+      },
+      "risk_text_sha256": "8c25bf821c43eb36e7bd583e6a4e9427eed1715834aa0b2fcf93a15d0fb84363",
+      "complete_extracted_text_matches_one_contiguous_independent_visible_source_span": true,
+      "comparison_ignores_whitespace_and_zero_width_spaces_only": true,
+      "canonical_start": 54115,
+      "canonical_end": 86433,
+      "canonical_length": 32318,
+      "source_text_event_count": 10990,
+      "matched_event_count": 202,
+      "first_event_index": 688,
+      "last_event_index": 889,
+      "immediate_before_span": "s•JoinedIntelin1974•JoinedIntelin1988ReneeJ.James,age50•2013–present,President•2012–2013,ExecutiveVP,GM,SoftwareandServicesGroup•2005–2012,SeniorVP,GM,SoftwareandServicesGroup•2002–2005,VP,DeveloperPrograms•MemberofVodafoneGroupplcBoardofDirectors•JoinedIntelin198817TableofContentsITEM1A.RISKFACTORS",
+      "immediate_after_span": "ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember27,2014,ourmajorfacilitiesconsistedof:(SquareFeetinMillions)UnitedStatesOtherCountriesTotalOwnedfacilities131.017.048.0Leasedfacilities23.15.88.9Totalfacilities34.122.856.91Leasesonportionsofthelandusedforthesefacilitiesexpireon",
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3169,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER27,2014INDEXPagePARTIItem1.Business1Item1A.RiskFactors18Item1B.UnresolvedStaffComments26Item2.Properties26Item3.LegalProceedings26Item4.MineSafetyDisclosures26PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 54097,
+          "context": "rams•MemberofVodafoneGroupplcBoardofDirectors•JoinedIntelin198817TableofContentsITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3189,
+          "context": "EFISCALYEARENDEDDECEMBER27,2014INDEXPagePARTIItem1.Business1Item1A.RiskFactors18Item1B.UnresolvedStaffComments26Item2.Properties26Item3.LegalProceedings26Item4.MineSafetyDisclosures26PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 86433,
+          "context": "ngresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.25TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember27,2014,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_text_events_in_span": [],
+      "images_in_span": [],
+      "header_original": "<SEC-HEADER>0000050863-15-000015.hdr.sgml : 20150213\n<ACCEPTANCE-DATETIME>20150213091152\n<ACCESSION-NUMBER>0000050863-15-000015\n<TYPE>10-K\n<PUBLIC-DOCUMENT-COUNT>22\n<PERIOD>20141227\n<FILING-DATE>20150213\n<DATE-OF-FILING-DATE-CHANGE>20150213\n<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>INTEL CORP\n<CIK>0000050863\n<ASSIGNED-SIC>3674\n<IRS-NUMBER>941672743\n<STATE-OF-INCORPORATION>DE\n<FISCAL-YEAR-END>1231\n</COMPANY-DATA>\n<FILING-VALUES>\n<FORM-TYPE>10-K\n<ACT>34\n<FILE-NUMBER>000-06217\n<FILM-NUMBER>15609298\n</FILING-VALUES>\n<BUSINESS-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n<PHONE>4087658080\n</BUSINESS-ADDRESS>\n<MAIL-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n</MAIL-ADDRESS>\n</FILER>\n</SEC-HEADER>\n",
+      "full_visual_layout_review_performed": false
+    },
+    {
+      "accession": "0000050863-16-000105",
+      "evidence_id": "091217b319639741e337f46d723a8fa57051d2332dc11ff4e6bac41b6468729f",
+      "name": "INTEL CORP",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086316000105/a10kdocument12262015q4.htm",
+        "sha256": "9d3f164f8489b37685f43e87a14fc9f6fb80ad082d21dba0a3a32a5c840bc04a",
+        "bytes": 4292459,
+        "metadata_sha256": "68cf7147665d8f7beffb269b7908b02f3dfb2db0a46a60e48c9aa121502f1803",
+        "fetched_at": "2026-10-09T22:16:16.402821+00:00",
+        "representation": "http-decoded"
+      },
+      "header": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086316000105/0000050863-16-000105.hdr.sgml",
+        "sha256": "f76bbae303d8b616f6fa2214c4c7a1c01001c5fa340f47bdc706f8fbb45d0c40",
+        "bytes": 814,
+        "metadata_sha256": "43860909291045ecb5cf29a1226d7cffc3152f5d04dd18b86fd51764899e62c9",
+        "fetched_at": "2026-10-09T22:16:20.522474+00:00",
+        "representation": "http-decoded"
+      },
+      "risk_text_sha256": "5532e9be4208e5faa6e3983a49174a072460afdf819d6e963523d0b0c3008397",
+      "complete_extracted_text_matches_one_contiguous_independent_visible_source_span": true,
+      "comparison_ignores_whitespace_and_zero_width_spaces_only": true,
+      "canonical_start": 58202,
+      "canonical_end": 90642,
+      "canonical_length": 32440,
+      "source_text_event_count": 11905,
+      "matched_event_count": 208,
+      "first_event_index": 714,
+      "last_event_index": 921,
+      "immediate_before_span": "lin1974BrianM.Krzanich,age55•2013–presentChiefExecutiveOfficer•2012–2013ExecutiveVP;ChiefOperatingOfficer•2010–2012SeniorVP;GeneralManager,ManufacturingandSupplyChain•2006–2010VP;GeneralManager,AssemblyandTest•MemberofDeere&CompanyBoardofDirectors•JoinedIntelin198219TableofContentsITEM1A.RISKFACTORS",
+      "immediate_after_span": "ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember26,2015,ourmajorfacilitiesconsistedof:(SquareFeetinMillions)UnitedStatesOtherCountriesTotalOwnedfacilities130.717.247.9Leasedfacilities22.16.08.1Totalfacilities32.823.256.01Leasesonportionsofthelandusedforthesefacilitiesexpireon",
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3154,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER26,2015INDEXPagePARTIItem1.Business1Item1A.RiskFactors20Item1B.UnresolvedStaffComments28Item2.Properties28Item3.LegalProceedings28Item4.MineSafetyDisclosures28PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 58184,
+          "context": "andTest•MemberofDeere&CompanyBoardofDirectors•JoinedIntelin198219TableofContentsITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3174,
+          "context": "EFISCALYEARENDEDDECEMBER26,2015INDEXPagePARTIItem1.Business1Item1A.RiskFactors20Item1B.UnresolvedStaffComments28Item2.Properties28Item3.LegalProceedings28Item4.MineSafetyDisclosures28PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 90642,
+          "context": "ngresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.27TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember26,2015,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_text_events_in_span": [],
+      "images_in_span": [],
+      "header_original": "<SEC-HEADER>0000050863-16-000105.hdr.sgml : 20160212\n<ACCEPTANCE-DATETIME>20160212080919\n<ACCESSION-NUMBER>0000050863-16-000105\n<TYPE>10-K\n<PUBLIC-DOCUMENT-COUNT>120\n<PERIOD>20151226\n<FILING-DATE>20160212\n<DATE-OF-FILING-DATE-CHANGE>20160212\n<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>INTEL CORP\n<CIK>0000050863\n<ASSIGNED-SIC>3674\n<IRS-NUMBER>941672743\n<STATE-OF-INCORPORATION>DE\n<FISCAL-YEAR-END>1231\n</COMPANY-DATA>\n<FILING-VALUES>\n<FORM-TYPE>10-K\n<ACT>34\n<FILE-NUMBER>000-06217\n<FILM-NUMBER>161414304\n</FILING-VALUES>\n<BUSINESS-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n<PHONE>4087658080\n</BUSINESS-ADDRESS>\n<MAIL-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n</MAIL-ADDRESS>\n</FILER>\n</SEC-HEADER>\n",
+      "full_visual_layout_review_performed": false
+    },
+    {
+      "accession": "0000050863-17-000012",
+      "evidence_id": "8c31c37fdee85365cd58ae3fe8ac1b2e408943f9dda29ecd4b5806489e2e6a1c",
+      "name": "INTEL CORP",
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086317000012/a10kdocument12312016q4.htm",
+        "sha256": "a8666ae2ef32be4853de6ed3254fda84aee5b42273f25baef1c25138b624d6c3",
+        "bytes": 4093710,
+        "metadata_sha256": "0d56d910362ad1ef4d41772e8f8e6291f7a9da12b1787c1d76ef029bb3bba6c2",
+        "fetched_at": "2026-10-09T22:16:23.677265+00:00",
+        "representation": "http-decoded"
+      },
+      "header": {
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086317000012/0000050863-17-000012.hdr.sgml",
+        "sha256": "46fa4212aeb9373987f8e5a8585aa79edc0ae84d32fdaf9eb26517f415bb3c15",
+        "bytes": 813,
+        "metadata_sha256": "57a3c1dc15904709d5a9d7659304b10c92bff8429809889a88d613f9c04d2a69",
+        "fetched_at": "2026-10-09T22:16:27.130336+00:00",
+        "representation": "http-decoded"
+      },
+      "risk_text_sha256": "8cf6e6c99ead34736b42508444cfe4aedc94afec7d8000b9931372b51a20b568",
+      "complete_extracted_text_matches_one_contiguous_independent_visible_source_span": true,
+      "comparison_ignores_whitespace_and_zero_width_spaces_only": true,
+      "canonical_start": 48493,
+      "canonical_end": 84236,
+      "canonical_length": 35743,
+      "source_text_event_count": 10738,
+      "matched_event_count": 227,
+      "first_event_index": 470,
+      "last_event_index": 696,
+      "immediate_before_span": "ecutiveVicePresident,ChiefFinancialOfficerofTRWInc.,aswellasChiefFinancialOfficer,ChiefOperatingOfficer,andChiefExecutiveOfficerofWebvanGroup,Inc.Mr.Swanbeganhiscareerin1985atGeneralElectric,servingfor15yearsinnumerousseniorfinanceroles.Mr.SwanalsoservesontheboardofdirectorsofeBay.ITEM1A.RISKFACTORS",
+      "immediate_after_span": ".ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember31,2016,ourmajorfacilitiesconsistedof:(SquareFeetinMillions)UnitedStatesOtherCountriesTotalOwnedfacilities131.519.250.7Leasedfacilities22.57.19.6Totalfacilities34.026.360.31Leasesandmunicipalgrantsonportionsofthelandusedforthes",
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3157,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER31,2016INDEXPagePARTIItem1.Business2Item1A.RiskFactors15Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 48475,
+          "context": "5yearsinnumerousseniorfinanceroles.Mr.SwanalsoservesontheboardofdirectorsofeBay.ITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3177,
+          "context": "EFISCALYEARENDEDDECEMBER31,2016INDEXPagePARTIItem1.Business2Item1A.RiskFactors15Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 84237,
+          "context": "usinessandoperatingresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember31,2016,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_text_events_in_span": [],
+      "images_in_span": [],
+      "header_original": "<SEC-HEADER>0000050863-17-000012.hdr.sgml : 20170217\n<ACCEPTANCE-DATETIME>20170217083746\n<ACCESSION-NUMBER>0000050863-17-000012\n<TYPE>10-K\n<PUBLIC-DOCUMENT-COUNT>119\n<PERIOD>20161231\n<FILING-DATE>20170217\n<DATE-OF-FILING-DATE-CHANGE>20170217\n<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>INTEL CORP\n<CIK>0000050863\n<ASSIGNED-SIC>3674\n<IRS-NUMBER>941672743\n<STATE-OF-INCORPORATION>DE\n<FISCAL-YEAR-END>1231\n</COMPANY-DATA>\n<FILING-VALUES>\n<FORM-TYPE>10-K\n<ACT>34\n<FILE-NUMBER>000-06217\n<FILM-NUMBER>17619810\n</FILING-VALUES>\n<BUSINESS-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n<PHONE>4087658080\n</BUSINESS-ADDRESS>\n<MAIL-ADDRESS>\n<STREET1>2200 MISSION COLLEGE BLVD\n<STREET2>RNB-4-151\n<CITY>SANTA CLARA\n<STATE>CA\n<ZIP>95054\n</MAIL-ADDRESS>\n</FILER>\n</SEC-HEADER>\n",
+      "full_visual_layout_review_performed": false
+    }
+  ],
+  "reviews_created": 0
+}

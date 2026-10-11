@@ -1,0 +1,109 @@
+{
+  "accession": "0000200406-21-000008",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040621000008/jnj-20210103.htm",
+  "source_sha256": "68ec2b3df38630a605273643694f89c8613b832449c31cf5801ce89f8eb6665a",
+  "scope": "Original filing source text and DOM; this is not a legal incorporation opinion or whole-document visual review.",
+  "covid_paragraph_source_nodes": [
+    {
+      "number": 20,
+      "path": "/html/body/div[242]",
+      "tag": "div",
+      "text": "In addition, to the extent the COVID-19 pandemic adversely affects our business and financial results, it may also have the effect of heightening many of the other risks described in this \"Risk Factors\" section and those incorporated by reference herein, including risks relating to the Company’s effective tax rate as a result of changes in consumption as well as changes in ",
+      "links": []
+    },
+    {
+      "number": 21,
+      "path": "/html/body/div[243]",
+      "tag": "div",
+      "text": "      8",
+      "links": []
+    },
+    {
+      "number": 22,
+      "path": "/html/body/div[245]",
+      "tag": "div",
+      "text": "laws relating to supply of the Company’s products. Given that developments concerning the COVID-19 pandemic have been constantly evolving, additional impacts and risks may arise, including litigation, that are not presently known to the Company. ",
+      "links": []
+    }
+  ],
+  "covid_paragraph_rejoined_omitting_only_printed_footer_8": "In addition, to the extent the COVID-19 pandemic adversely affects our business and financial results, it may also have the effect of heightening many of the other risks described in this \"Risk Factors\" section and those incorporated by reference herein, including risks relating to the Company’s effective tax rate as a result of changes in consumption as well as changes in  laws relating to supply of the Company’s products. Given that developments concerning the COVID-19 pandemic have been constantly evolving, additional impacts and risks may arise, including litigation, that are not presently known to the Company. ",
+  "cover_and_other_incorporation_contexts": [
+    {
+      "source_path": "/html/body/div[37]",
+      "text": "DOCUMENTS INCORPORATED BY REFERENCE"
+    },
+    {
+      "source_path": "/html/body/div[38]",
+      "text": "Parts I and III:Portions of registrant’s proxy statement for its 2021 annual meeting of shareholders filed within 120 days after the close of the registrant’s fiscal year (the \"Proxy Statement\"), are incorporated by reference to this report on Form 10-K (this \"Report\")."
+    },
+    {
+      "source_path": "/html/body/div[110]",
+      "text": "    The Company is organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. Additional information required by this item is incorporated herein by reference to the narrative and tabular descriptions of segments and operating results under: “Item 7. Management’s Discussion and Analysis of Results of Operations and Financial Condition” of this Report; and Note 17 “Segments of Business and Geographic Areas” of the Notes to Consolidated Financial Statements included in Item 8 of this Report."
+    },
+    {
+      "source_path": "/html/body/div[242]",
+      "text": "In addition, to the extent the COVID-19 pandemic adversely affects our business and financial results, it may also have the effect of heightening many of the other risks described in this \"Risk Factors\" section and those incorporated by reference herein, including risks relating to the Company’s effective tax rate as a result of changes in consumption as well as changes in "
+    },
+    {
+      "source_path": "/html/body/div[359]",
+      "text": "    The information called for by this item is incorporated herein by reference to the information set forth in Note 19 “Legal Proceedings” of the Notes to Consolidated Financial Statements included in Item 8 of this Report."
+    },
+    {
+      "source_path": "/html/body/div[368]",
+      "text": "Information with regard to the directors of the Company, including information for Alex Gorsky, who is also an executive officer, is incorporated herein by reference to the material captioned “Item 1. Election of Directors” in the Proxy Statement."
+    },
+    {
+      "source_path": "/html/body/div[391]",
+      "text": "    As of February 16, 2021, there were 132,376 record holders of common stock of the Company. Additional information called for by this item is incorporated herein by reference to the following sections of this Report: Note 16 “Common Stock, Stock Option Plans and Stock Compensation Agreements” of the Notes to Consolidated Financial Statements included in Item 8; and Item 12 “Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters – Equity Compensation Plan Information.”"
+    },
+    {
+      "source_path": "/html/body/div[756]",
+      "text": "    The information called for by this item is incorporated herein by reference to “Item 7. Management’s Discussion and Analysis of Results of Operations and Financial Condition - Liquidity and Capital Resources - Financing and Market Risk” of this Report; and Note 1 “Summary of Significant Accounting Policies - Financial Instruments” of the Notes to Consolidated Financial Statements included in Item 8 of this Report."
+    },
+    {
+      "source_path": "/html/body/div[1161]",
+      "text": "    Reports on Internal Control Over Financial Reporting. The information called for by this item is incorporated herein by reference to \"Management’s Report on Internal Control Over Financial Reporting\", and the attestation regarding internal controls over financial reporting included in the \"Report of Independent Registered Public Accounting Firm\" included in Item 8 of this Report."
+    },
+    {
+      "source_path": "/html/body/div[1172]",
+      "text": "    The information called for by this item is incorporated herein by reference to the discussion of the Audit Committee under the caption “Item 1. Election of Directors - Board Committees”; and the material under the captions “Item 1. Election of Directors” and, if applicable, “Stock Ownership and Section 16 Compliance – Delinquent Section 16(a) Reports” in the Proxy Statement; and the material under the caption “Executive Officers of the Registrant” in Part I of this Report."
+    },
+    {
+      "source_path": "/html/body/div[1180]",
+      "text": "    The information called for by this item is incorporated herein by reference to the material under the captions “Item 1. Election of Directors – Director Compensation,” and “Item 2. Compensation Committee Report,” “Compensation Discussion and Analysis” and “Executive Compensation Tables” in the Proxy Statement."
+    },
+    {
+      "source_path": "/html/body/div[1181]",
+      "text": "    The material incorporated herein by reference to the material under the caption “Compensation Committee Report” in the Proxy Statement shall be deemed furnished, and not filed, in this Report and shall not be deemed incorporated by reference into any filing under the Securities Act of 1933, as amended, or the Securities Exchange Act of 1934, as amended, as a result of this furnishing, except to the extent that the Company specifically incorporates it by reference."
+    },
+    {
+      "source_path": "/html/body/div[1184]",
+      "text": "    The information called for by this item is incorporated herein by reference to the material under the caption “Item 1. Stock Ownership and Section 16 Compliance” in the Proxy Statement; and Note 16 “Common Stock, Stock Option Plans and Stock Compensation Agreements” of the Notes to Consolidated Financial Statements in Item 8 of this Report."
+    },
+    {
+      "source_path": "/html/body/div[1194]",
+      "text": "    The information called for by this item is incorporated herein by reference to the material under the captions “Item 1. Election of Directors - Director Independence” and “Related Person Transactions” in the Proxy Statement."
+    },
+    {
+      "source_path": "/html/body/div[1197]",
+      "text": "    The information called for by this item is incorporated herein by reference to the material under the caption “Item 3. Ratification of Appointment of Independent Registered Public Accounting Firm” in the Proxy Statement."
+    },
+    {
+      "source_path": "/html/body/div[1215]",
+      "text": "        The information called for by this item is incorporated herein by reference to the Exhibit Index in this Report."
+    },
+    {
+      "source_path": "/html/body/div[1246]",
+      "text": "Reg. S-K Exhibit TableDescriptionItem No.of Exhibit10(r)Severance Pay Plan of Johnson & Johnson and U.S. Affiliated Companies, Amended and Restated as of October 1, 2014 — Incorporated herein by reference to Exhibit 10.1 of the Registrant's Form 10-Q Quarterly Report for the quarter ended September 28, 2014.*10(s)First Amendment to the Severance Pay Plan of Johnson & Johnson and U.S. Affiliated Companies (as amended and restated effective October 1, 2014) — Incorporated herein by reference to Exhibit 10.1 of the Registrant's Form 10-Q Quarterly Report for the quarter ended June 28, 2015.*10(t)Second Amendment to the Severance Pay Plan of Johnson & Johnson and U.S. Affiliated Companies (as amended and restated effective October 1, 2014) — Incorporated herein by reference to Exhibit 10(x) of the Registrant's Form 10-K Annual Report for the fiscal year ended January 3, 2016.*21Subsidiaries — Filed with this document.23Consent of Independent Registered Public Accounting Firm — Filed with this document.31.1Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act — Filed with this document.31.2Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act — Filed with this document.32.1Certification of Chief Executive Officer Pursuant to Section 906 of the Sarbanes-Oxley Act — Furnished with this document.32.2Certification of Chief Financial Officer Pursuant to Section 906 of the Sarbanes-Oxley Act — Furnished with this document.Exhibit 101:EX-101.INSInstance Document - the instance document does not appear in the Interactive Data File because its                XBRL tags are embedded within the Inline XBRL documentEX-101.SCHInline XBRL Taxonomy Extension SchemaEX-101.CALInline XBRL Taxonomy Extension Calculation LinkbaseEX-101.LABInline XBRL Taxonomy Extension Label LinkbaseEX-101.PREInline XBRL Taxonomy Extension Presentation LinkbaseEX-101.DEFInline XBRL Taxonomy Extension Definition DocumentExhibit 104:Cover Page Interactive Data File––the cover page interactive data file does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document."
+    }
+  ],
+  "observations": [
+    "The COVID sentence uses generic language about risks incorporated by reference herein. It names no exhibit, page range or omitted source for additional Item 1A text.",
+    "Explicit Item 1A references elsewhere in the same bounded text point to same-document Note 19 (legal proceedings) and Note 8 (income taxes). These references are present in the extracted text.",
+    "The cover identifies proxy-statement portions for Parts I and III. The observed operative proxy reference in Part I concerns directors/executive officers after Item 1A; the other proxy references concern governance and compensation.",
+    "No portion of the substantive Item 1A text directs substitution of a separate Risk Factors exhibit, unlike the registered 2014–2016 JNJ exhibit cases. No separate referenced risk document was fetched or certified by this review.",
+    "The direct bounded Item 1A span is complete at the observed character level. Generic non-directed incorporation language is retained as a caution; it is not proof of omitted text and no extraction-policy change is proposed."
+  ],
+  "unspecified_incorporated_material_certified": false,
+  "extraction_policy_changed": false
+}

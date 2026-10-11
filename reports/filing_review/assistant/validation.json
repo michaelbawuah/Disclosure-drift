@@ -1,0 +1,16 @@
+{
+  "status": "DECLARED_FILING_REVIEWS_VALID_PENDING_SOURCE_REAUDIT",
+  "packet_id": "ef9f2b4e9b22951c68872e7b3bf2e828914384d964d0da7b2c13b7b890eaf6d8",
+  "reviews_sha256": "5f7d5c34804573b78a585bdb6382079cff991cb09b80a8c13fefbfb6c74fae52",
+  "records": 73,
+  "human_reviews_declared_complete": 0,
+  "assistant_reviews_declared_complete": 73,
+  "partial_reviews": 0,
+  "failed_reviews": 0,
+  "original_sec_bytes_reread": false,
+  "model_ready": false,
+  "source_approvals": 0,
+  "historical_security_links_created": 0,
+  "final_period_opened": false,
+  "prior_arithmetic_review_modified": false
+}

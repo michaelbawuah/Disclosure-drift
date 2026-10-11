@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "reviewer_type": "assistant",
+  "review_method": "Direct reading of all substantive source-DOM nodes plus independently selected source span comparison, cache/hash and SGML inspection; no production extraction helper called by inventory script.",
+  "case_count": 5,
+  "boundary_pass_count": 5,
+  "boundary_fail_count": 0,
+  "boundary_pending_count": 0,
+  "timing_reviews_performed": 0,
+  "human_reviews_created": 0,
+  "source_policy_changed": false,
+  "model_ready": false,
+  "final_period_opened": false,
+  "all_filing_dates_development_period": true,
+  "original_source_read_node_total": 278,
+  "completed_at": "2026-10-11T09:49:50.019784+00:00",
+  "packet_sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814",
+  "audit_evidence_sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626",
+  "filings_sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380",
+  "inventory_script_sha256": "03ed3b51254603e09d2149100fba66c22552d9ffb3d9b25265e15144902606ca",
+  "incorporation_context_file": "outputs/delegated-filing-review-20261011/jnj/2021_incorporation_context.json",
+  "incorporation_context_sha256": "feb8b445b785768767cba8facabaee1d3fb5c16933de67f494181be1fa695003",
+  "findings": [
+    {
+      "accession": "0000200406-17-000006",
+      "evidence_id": "9bb8d1188d40bbae69d014dba62975daee010c5ec40834cf4b99a1f46d631322",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "reviewer": "ChatGPT (assistant source review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:49:50.017808+00:00",
+      "notes": "Assistant original-source textual/DOM review. I read all 47 nonempty source nodes between the actual Item 1A Risk Factors heading and Item 1B Unresolved Staff Comments, bypassing the table-of-contents link. The span opens with the Company uncertainties introduction, includes the REMICADE/biosimilar, healthcare pricing, litigation, product safety, tax, patent, competition, innovation, regulation, international, manufacturing and cybersecurity disclosures, and ends with financial costs and regulatory action before footer 8. The tax sentence spanning footer 5 and all five international-risk bullet tables are retained. Ordinary Note 21 and Item 7 cross-references are included as written; the substantive Item 1A does not redirect readers to a separate risk exhibit. Independent DOM sibling selection, without the extraction helper, found every non-whitespace character equal to the packet; source/header bytes and risk-text hashes also match the saved audit bindings. Page-number furniture remains. Pass applies to this direct Item 1A text, not unspecified external documents, public dissemination or whole-document visual layout. Timing is left for the separate timing review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040617000006/form10-k20170101.htm",
+      "source_sha256": "030ae6b2def954f67b6cca0927252129d790fad007e5b0bf3ca78ccd6a1fe117",
+      "source_cache_metadata": {
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040617000006/form10-k20170101.htm",
+        "sha256": "030ae6b2def954f67b6cca0927252129d790fad007e5b0bf3ca78ccd6a1fe117",
+        "fetched_at": "2026-10-09T22:15:17.714015+00:00",
+        "bytes": 3500191,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      "header_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040617000006/0000200406-17-000006.hdr.sgml",
+      "header_sha256": "1a33bffa7291626b0b38b76a19105233bafea0c713008394c93fd3d5a8525b1b",
+      "risk_text_sha256": "249560ee34bd233eec141b8386aeaf1e6c46c0e0708dbf2c14b2ff3d37113e1f",
+      "source_start_heading": "Item 1A.RISK FACTORS",
+      "source_end_heading": "Item 1B.UNRESOLVED STAFF COMMENTS",
+      "source_start_dom_path": "/html/body/document/type/sequence/filename/description/text/table[31]",
+      "source_end_dom_path": "/html/body/document/type/sequence/filename/description/text/table[37]",
+      "risk_text_chars": 23345,
+      "source_nodes_read": 47,
+      "all_nonwhitespace_characters_equal": true,
+      "source_review_is_text_and_dom_only": true,
+      "nontext_elements_in_risk_span": [],
+      "hidden_or_script_nodes_in_risk_span": [],
+      "original_sec_bytes_reread": true,
+      "whole_document_visual_review": false,
+      "human_review_created": false,
+      "market_data_read": false,
+      "final_period_opened": false,
+      "unspecified_incorporated_material_certified": false,
+      "review_scope": "Complete text in the substantive direct Item 1A, under the existing extraction policy. Ordinary cross-references are retained, not automatically expanded.",
+      "cautions": [
+        "Printed page-number furniture retained",
+        "No public-dissemination validation",
+        "No whole-document visual-layout verification"
+      ],
+      "observed_cues": {
+        "first_substantive_topic": "Company uncertainties introduction; REMICADE biosimilar competition",
+        "last_substantive_topic": "Information/cybersecurity harm, financial costs and regulatory action",
+        "last_printed_footer": "8",
+        "page_break_checks": [
+          {
+            "before_node": 13,
+            "footer_node": 14,
+            "after_node": 15,
+            "topic": "Tax audit sentence"
+          }
+        ],
+        "reference_nodes": [
+          8,
+          12,
+          20,
+          29
+        ],
+        "international_bullet_nodes": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
+      },
+      "source_inventory_file": "outputs/delegated-filing-review-20261011/jnj/0000200406-17-000006.source_inventory.json",
+      "source_inventory_sha256": "b4b3111b67cf5c24a85036be1f006cfcc06e1a40f991c1614ff124087999c81a"
+    },
+    {
+      "accession": "0000200406-18-000005",
+      "evidence_id": "c90dc3f42fca6d141e4ad3b699ae951cea8511a74a33853197f936571224b8fc",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "reviewer": "ChatGPT (assistant source review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:49:50.018440+00:00",
+      "notes": "Assistant original-source textual/DOM review. I read all 50 nonempty source nodes from the actual Item 1A Risk Factors heading to Item 1B Unresolved Staff Comments, excluding the earlier table-of-contents entry. The introduction, REMICADE competition, healthcare pricing, litigation, safety, TCJA/Swiss tax, intellectual property, competition, innovation, regulation, international, manufacturing and cybersecurity sections are present. The TCJA paragraph across footer 5, competition paragraph across footer 6 and manufacturing paragraph across footer 8 continue correctly. All five international-risk bullets survive. The last substantive paragraph closes with financial costs and regulatory action and is followed by footer 9, then the excluded Item 1B. Same-document Note 21 references are preserved; no risk-exhibit substitution is directed. All characters other than whitespace/zero-width-space agree between the independently selected source sibling span and packet; primary/header metadata and text hashes agree with the audit. Printed page furniture remains. This pass covers the bounded source text, not outside referenced documents, dissemination or complete visual layout. Timing remains for separate review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040618000005/form10-k20171231.htm",
+      "source_sha256": "d1fd69b490c6f70e7a7a9d26f361537f852d95772ffaaf5ba7caf791508c61b5",
+      "source_cache_metadata": {
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040618000005/form10-k20171231.htm",
+        "sha256": "d1fd69b490c6f70e7a7a9d26f361537f852d95772ffaaf5ba7caf791508c61b5",
+        "fetched_at": "2026-10-09T22:15:27.518272+00:00",
+        "bytes": 3566636,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      "header_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040618000005/0000200406-18-000005.hdr.sgml",
+      "header_sha256": "3c454251eb9a64439a418a9e8119de92500886c745a35dfcd9d7852c7ef240b6",
+      "risk_text_sha256": "5ee98f38c06c970905aac51dc8ed1b5449a0a6cad715482d0960d6f4bfee530c",
+      "source_start_heading": "Item 1A.RISK FACTORS",
+      "source_end_heading": "Item 1B.UNRESOLVED STAFF COMMENTS",
+      "source_start_dom_path": "/html/body/document/type/sequence/filename/description/text/table[30]",
+      "source_end_dom_path": "/html/body/document/type/sequence/filename/description/text/table[36]",
+      "risk_text_chars": 24192,
+      "source_nodes_read": 50,
+      "all_nonwhitespace_characters_equal": true,
+      "source_review_is_text_and_dom_only": true,
+      "nontext_elements_in_risk_span": [],
+      "hidden_or_script_nodes_in_risk_span": [],
+      "original_sec_bytes_reread": true,
+      "whole_document_visual_review": false,
+      "human_review_created": false,
+      "market_data_read": false,
+      "final_period_opened": false,
+      "unspecified_incorporated_material_certified": false,
+      "review_scope": "Complete text in the substantive direct Item 1A, under the existing extraction policy. Ordinary cross-references are retained, not automatically expanded.",
+      "cautions": [
+        "Printed page-number furniture retained",
+        "No public-dissemination validation",
+        "No whole-document visual-layout verification"
+      ],
+      "observed_cues": {
+        "first_substantive_topic": "Company uncertainties introduction; REMICADE biosimilar competition",
+        "last_substantive_topic": "Information/cybersecurity harm, financial costs and regulatory action",
+        "last_printed_footer": "9",
+        "page_break_checks": [
+          {
+            "before_node": 11,
+            "footer_node": 12,
+            "after_node": 13,
+            "topic": "TCJA paragraph"
+          },
+          {
+            "before_node": 22,
+            "footer_node": 23,
+            "after_node": 24,
+            "topic": "Competition paragraph"
+          },
+          {
+            "before_node": 45,
+            "footer_node": 46,
+            "after_node": 47,
+            "topic": "Manufacturing paragraph"
+          }
+        ],
+        "reference_nodes": [
+          7,
+          20,
+          30
+        ],
+        "international_bullet_nodes": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "source_inventory_file": "outputs/delegated-filing-review-20261011/jnj/0000200406-18-000005.source_inventory.json",
+      "source_inventory_sha256": "2b1e9b8660ddde66a9b52ce54a406d14d1a030be2ec66457b91d2d761b29353b"
+    },
+    {
+      "accession": "0000200406-19-000009",
+      "evidence_id": "c9cafcdf8bb3a9970b6ae276421e48d5dd05a180c7ad7e63d559da5b82d81a24",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "reviewer": "ChatGPT (assistant source review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:49:50.019119+00:00",
+      "notes": "Assistant original-source textual/DOM review. I read all 51 nonempty nodes in the substantive Item 1A span rather than the table of contents. It opens with the Company uncertainties introduction, then healthcare pricing, litigation, safety, tax reforms/audits, intellectual property, competition, innovation, regulation, international, manufacturing, third-party manufacturer and cybersecurity risks. The tax and competition passages continue across footers 5 and 6, all five international-risk bullets are present, and both new third-party manufacturing paragraphs occur before the final cybersecurity paragraph. The last risk sentence discusses inadequate cybersecurity-insurance coverage; footer 9 follows before the excluded Item 1B. Note 21 references are retained as ordinary same-document references; I found no direction to replace Item 1A with an external risk exhibit. All non-whitespace source-span characters independently match the packet, and primary/header/text hashes match the audit bindings. Internal page numbers are retained. Pass is for the observed Item 1A text; it does not certify unspecified incorporated documents, public dissemination or whole-document rendering. Timing is separately reviewed.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040619000009/form10-k20181230.htm",
+      "source_sha256": "9f0815a624538ad1f456485fb2fc3bacf22b2a81f6cd977bcceb2e143e568c94",
+      "source_cache_metadata": {
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040619000009/form10-k20181230.htm",
+        "sha256": "9f0815a624538ad1f456485fb2fc3bacf22b2a81f6cd977bcceb2e143e568c94",
+        "fetched_at": "2026-10-09T22:15:33.975623+00:00",
+        "bytes": 4463246,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      "header_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040619000009/0000200406-19-000009.hdr.sgml",
+      "header_sha256": "a7dab3c6bc80be5e539ff9673186650e2bc08af185bbfab5b9342813de9d5f7b",
+      "risk_text_sha256": "ba30200896a636effbd4c77649ab3386798f99eff9484e27139e4635c9a53c94",
+      "source_start_heading": "Item 1A.RISK FACTORS",
+      "source_end_heading": "Item 1B.UNRESOLVED STAFF COMMENTS",
+      "source_start_dom_path": "/html/body/document/type/sequence/filename/description/text/table[34]",
+      "source_end_dom_path": "/html/body/document/type/sequence/filename/description/text/table[40]",
+      "risk_text_chars": 26111,
+      "source_nodes_read": 51,
+      "all_nonwhitespace_characters_equal": true,
+      "source_review_is_text_and_dom_only": true,
+      "nontext_elements_in_risk_span": [],
+      "hidden_or_script_nodes_in_risk_span": [],
+      "original_sec_bytes_reread": true,
+      "whole_document_visual_review": false,
+      "human_review_created": false,
+      "market_data_read": false,
+      "final_period_opened": false,
+      "unspecified_incorporated_material_certified": false,
+      "review_scope": "Complete text in the substantive direct Item 1A, under the existing extraction policy. Ordinary cross-references are retained, not automatically expanded.",
+      "cautions": [
+        "Printed page-number furniture retained",
+        "No public-dissemination validation",
+        "No whole-document visual-layout verification"
+      ],
+      "observed_cues": {
+        "first_substantive_topic": "Company uncertainties introduction; healthcare pricing",
+        "last_substantive_topic": "Cybersecurity insurance may not cover all financial losses",
+        "last_printed_footer": "9",
+        "page_break_checks": [
+          {
+            "before_node": 10,
+            "footer_node": 11,
+            "after_node": 12,
+            "topic": "TCJA paragraph"
+          },
+          {
+            "before_node": 21,
+            "footer_node": 22,
+            "after_node": 23,
+            "topic": "Competition paragraph"
+          }
+        ],
+        "reference_nodes": [
+          5,
+          19,
+          29
+        ],
+        "international_bullet_nodes": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
+      },
+      "source_inventory_file": "outputs/delegated-filing-review-20261011/jnj/0000200406-19-000009.source_inventory.json",
+      "source_inventory_sha256": "53afcd5c915a1adbd5116e73cc2b9b4cb5b98d1e4cbeadc3e1b0937bc9f68aae"
+    },
+    {
+      "accession": "0000200406-20-000010",
+      "evidence_id": "0139d446a5558bd62d166c07a5b2d9f6e271b9d88332b251986b18c33638fdd6",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "reviewer": "ChatGPT (assistant source review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:49:50.019372+00:00",
+      "notes": "Assistant original-source textual/DOM review. I read all 54 nonempty direct sibling nodes from the real Item 1A heading to Item 1B, excluding the earlier table of contents. The span includes expanded talc/opioid litigation language, product safety, Swiss tax/audit risks, intellectual property, competition, innovation, regulation, international risks with all five bullet tables, manufacturing and third-party manufacturing risks, counterfeit-products paragraphs and the final cybersecurity/insurance paragraph. Foreign-exchange text continues across footer 8 and the third-party manufacturing sentence across footer 9; no continuation is missing. Footer 10 precedes the excluded Item 1B; the final substantive sentence concerns inadequate insurance coverage. Same-document Notes 21 and 8 references are retained, without a directive to substitute a separate risk exhibit. Independently selected DOM source characters match the complete packet aside from whitespace/zero-width-space, with primary/header/text hashes matching saved audit evidence. Page furniture is retained. Pass covers this direct Item 1A extraction, not external referenced matter, dissemination or whole-document visual presentation. Timing remains separate.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040620000010/form10-k20191229.htm",
+      "source_sha256": "e178a513af5ec4c78c831ecf42bb63440266ce37341814175d142dfeb193fbf8",
+      "source_cache_metadata": {
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040620000010/form10-k20191229.htm",
+        "sha256": "e178a513af5ec4c78c831ecf42bb63440266ce37341814175d142dfeb193fbf8",
+        "fetched_at": "2026-10-09T22:15:40.761288+00:00",
+        "bytes": 6435530,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      "header_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040620000010/0000200406-20-000010.hdr.sgml",
+      "header_sha256": "b84d92dc04d3ca389a6d6eb580e84158d759325b2fbb99249e59e402a4e524aa",
+      "risk_text_sha256": "604890ce914660ab2c73b174a856b04bf00eea91104635674eaba55865ab2164",
+      "source_start_heading": "Item 1A.RISK FACTORS",
+      "source_end_heading": "Item 1B.UNRESOLVED STAFF COMMENTS",
+      "source_start_dom_path": "/html/body/div/table[33]",
+      "source_end_dom_path": "/html/body/div/table[39]",
+      "risk_text_chars": 27067,
+      "source_nodes_read": 54,
+      "all_nonwhitespace_characters_equal": true,
+      "source_review_is_text_and_dom_only": true,
+      "nontext_elements_in_risk_span": [],
+      "hidden_or_script_nodes_in_risk_span": [],
+      "original_sec_bytes_reread": true,
+      "whole_document_visual_review": false,
+      "human_review_created": false,
+      "market_data_read": false,
+      "final_period_opened": false,
+      "unspecified_incorporated_material_certified": false,
+      "review_scope": "Complete text in the substantive direct Item 1A, under the existing extraction policy. Ordinary cross-references are retained, not automatically expanded.",
+      "cautions": [
+        "Printed page-number furniture retained",
+        "No public-dissemination validation",
+        "No whole-document visual-layout verification"
+      ],
+      "observed_cues": {
+        "first_substantive_topic": "Company uncertainties introduction; healthcare pricing",
+        "last_substantive_topic": "Cybersecurity insurance may not cover all financial losses",
+        "last_printed_footer": "10",
+        "page_break_checks": [
+          {
+            "before_node": 30,
+            "footer_node": 31,
+            "after_node": 32,
+            "topic": "Foreign exchange paragraph"
+          },
+          {
+            "before_node": 45,
+            "footer_node": 46,
+            "after_node": 47,
+            "topic": "Third-party manufacturing paragraph"
+          }
+        ],
+        "reference_nodes": [
+          5,
+          12,
+          18,
+          27
+        ],
+        "international_bullet_nodes": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "source_inventory_file": "outputs/delegated-filing-review-20261011/jnj/0000200406-20-000010.source_inventory.json",
+      "source_inventory_sha256": "1cb9a04f7dd25c3e2fe4d62a5cf3bdc10fc75990b635ffecf625a0ed2df386f3"
+    },
+    {
+      "accession": "0000200406-21-000008",
+      "evidence_id": "83d6469d835aa4c929fd6c43ea6be4abbf9c38d699e7cfd0a0455f29a709084d",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "reviewer": "ChatGPT (assistant source review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:49:50.019730+00:00",
+      "notes": "Assistant original-source textual/DOM review. I read all 76 nonempty nodes between the real Item 1A heading and Item 1B, bypassing the table of contents. The opening investment-risk introduction and all six category headings are present, including competition, manufacturing/Jabil, counterfeiting, the full COVID-19/vaccine discussion, regulation/litigation/taxes, intellectual property, development, international/credit-rating, employees, cybersecurity and final climate-change paragraphs. All six international-risk bullets and continuations across printed footers 7 through 12 are retained; the span ends with climate-change effects on operations or financial condition before Item 1B. Every non-whitespace source character agrees with the packet and source/header/text hashes match the audit. The COVID paragraph says risks incorporated by reference herein but names no exhibit or omitted risk section. That complete paragraph and the Note 19/Note 8 references are retained. Cover/operative incorporation context was inspected and saved separately: identified proxy references concern governance, while concrete risk cross-references concern same-document notes. Under the existing substantive-section policy, I found no evidence of omitted Item 1A text and pass the bounded direct-text extraction. Unspecified incorporated material is NOT certified; the undirected phrase remains an explicit caution. This is not public-dissemination or whole-document visual review. Timing remains separate.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040621000008/jnj-20210103.htm",
+      "source_sha256": "68ec2b3df38630a605273643694f89c8613b832449c31cf5801ce89f8eb6665a",
+      "source_cache_metadata": {
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040621000008/jnj-20210103.htm",
+        "sha256": "68ec2b3df38630a605273643694f89c8613b832449c31cf5801ce89f8eb6665a",
+        "fetched_at": "2026-10-09T22:15:48.648077+00:00",
+        "bytes": 5402141,
+        "status": 200,
+        "body_representation": "http-decoded",
+        "transport": "httpx"
+      },
+      "header_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040621000008/0000200406-21-000008.hdr.sgml",
+      "header_sha256": "766b6f1406a8ba1592a9a1e224c954cb7f6897bfd80945a0bee44334d9149c4b",
+      "risk_text_sha256": "8ea526ea461dd8e1a319f26dc47dee9ac45625f32c1fffa3a3d40d736be99501",
+      "source_start_heading": "Item 1A.    RISK FACTORS",
+      "source_end_heading": "Item 1B.UNRESOLVED STAFF COMMENTS",
+      "source_start_dom_path": "/html/body/div[209]",
+      "source_end_dom_path": "/html/body/div[335]",
+      "risk_text_chars": 35776,
+      "source_nodes_read": 76,
+      "all_nonwhitespace_characters_equal": true,
+      "source_review_is_text_and_dom_only": true,
+      "nontext_elements_in_risk_span": [],
+      "hidden_or_script_nodes_in_risk_span": [],
+      "original_sec_bytes_reread": true,
+      "whole_document_visual_review": false,
+      "human_review_created": false,
+      "market_data_read": false,
+      "final_period_opened": false,
+      "unspecified_incorporated_material_certified": false,
+      "review_scope": "Complete text in the substantive direct Item 1A, under the existing extraction policy. Ordinary cross-references are retained, not automatically expanded.",
+      "cautions": [
+        "Printed page-number furniture retained",
+        "No public-dissemination validation",
+        "No whole-document visual-layout verification",
+        "Generic COVID incorporated-reference wording retained; no omitted source identified; unspecified incorporated matter not certified"
+      ],
+      "observed_cues": {
+        "first_substantive_topic": "Investment in common stock or debt involves risks and uncertainties",
+        "last_substantive_topic": "Climate-change regulation effects on business, operations or financial condition",
+        "last_printed_footer": "12 (climate-change content continues after this footer and before Item 1B)",
+        "page_break_checks": [
+          {
+            "before_node": 10,
+            "footer_node": 11,
+            "after_node": 12,
+            "topic": "Third-party manufacturing paragraph"
+          },
+          {
+            "before_node": 20,
+            "footer_node": 21,
+            "after_node": 22,
+            "topic": "COVID and incorporated-reference paragraph"
+          },
+          {
+            "before_node": 31,
+            "footer_node": 32,
+            "after_node": 33,
+            "topic": "Government proceedings reference"
+          },
+          {
+            "before_node": 45,
+            "footer_node": 46,
+            "after_node": 47,
+            "topic": "Product-development heading/body"
+          },
+          {
+            "before_node": 55,
+            "footer_node": 56,
+            "after_node": 57,
+            "topic": "Anti-bribery paragraph"
+          },
+          {
+            "before_node": 71,
+            "footer_node": 72,
+            "after_node": 73,
+            "topic": "Cybersecurity paragraph"
+          }
+        ],
+        "reference_nodes": [
+          20,
+          22,
+          27,
+          33,
+          36,
+          43
+        ],
+        "international_bullet_nodes": [
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      "source_inventory_file": "outputs/delegated-filing-review-20261011/jnj/0000200406-21-000008.source_inventory.json",
+      "source_inventory_sha256": "4561e17eba164b5422dcce11782ac9970ce9e3c0dac48d1ae403e5cee52aba71"
+    }
+  ]
+}

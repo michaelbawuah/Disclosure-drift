@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "authorized_by": "Michael Baffour Awuah",
+  "authorization_observed_at": "2026-10-11T05:40:31-04:00",
+  "recorded_at": "2026-10-11T09:53:32.041471+00:00",
+  "scope": "Perform the filing source and timing review as the assistant on the authorizer's behalf and record actual findings.",
+  "reviewer_type": "assistant",
+  "authorization_is_human_review": false,
+  "human_reviews_created": 0,
+  "prior_user_arithmetic_review_modified": false
+}

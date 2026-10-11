@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "scope": "Five previously unreviewed reference-control filings in the 73-filing desk",
+  "review_completed_at": "2026-10-11T09:47:20.269179+00:00",
+  "assistant_agent": "/root/review_reference_ge_intel",
+  "independent_checks_file": "independent_checks.json",
+  "independent_checks_sha256": "071625a848378e14d8ab111b357cbfd9e18078c6a258897a3893bb74576dabbf",
+  "packet_sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814",
+  "boundary_passes": 5,
+  "boundary_failures": 0,
+  "boundary_pending": 0,
+  "timing_review_delegated_to_parent": true,
+  "human_reviews_created": 0,
+  "market_data_read": false,
+  "final_period_opened": false,
+  "reviews": [
+    {
+      "accession": "0000040554-14-000023",
+      "evidence_id": "4cbce3fd3e7bf324ebb8086579793d9f44dcae39325e8789f4ff83b56500a300",
+      "reviewer": "ChatGPT (delegated GE/Intel original-source textual review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:47:20.269179+00:00",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "notes": "The initial contents entry points to Item 1A on printed page 15 and Item 1B on printed page 21. The selected text starts after the second, substantive Item 1A heading following the end of Business, not the initial contents entry. Read all 40 matched original source text events. The opening interpretive cautions, global economic/political risks, legal/regulatory and nonbank SIFI risks, transactions, pensions, funding, counterparty/credit-rating risks, cybersecurity, operations, intellectual property, and final supplier/commodity risk are present in original order. References to Business, MD&A, Legal Proceedings and financial-statement notes remain inside the risk discussion. They provide additional information; this substantive Item 1A does not replace itself with a separate exhibit or page-only pointer. The final supplier paragraph is complete through its last word. Original HTML has a terminal full stop, which the existing extraction strips. Item 1B and the subsequent Properties section are excluded. Internal printed-page labels (15) through (20) remain in the extracted text. Complete extracted span independently matches one contiguous visible-source text sequence after ignoring whitespace/zero-width spaces; no hidden text or image elements were found inside that span. This is assistant textual source inspection, not human review or a complete visual-layout review. Timing is reserved for the separate parent review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004055414000023/geform10k2013.htm",
+      "source_sha256": "bdbc8574a1fca339f5db4d991abd687ad5ce034f49e5e914fc28b229913fb53b",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/40545/000004055414000023/geform10k2013.htm",
+      "risk_source_sha256": "bdbc8574a1fca339f5db4d991abd687ad5ce034f49e5e914fc28b229913fb53b",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/40545/000004055414000023/0000040554-14-000023.hdr.sgml",
+      "header_sha256": "0a89de6f2810564dfa0ad9b24d5e75c3ba7059088b9b4c77ad7c12e7e433c17d",
+      "risk_text_sha256": "fa328ae959056f35f044945d7c2492f11c17314eb5bc0938bbb39f6de11f3448",
+      "original_source_bytes_reread": true,
+      "source_cache_metadata_rechecked_after_review": true,
+      "source_review_method": "Read independently parsed original HTML text events and adjacent headings; full span correspondence uses Python HTMLParser without production extraction/normalization helpers",
+      "comparison_canonicalization": "Remove whitespace and zero-width spaces only; no word, numeric or punctuation substitution",
+      "matched_original_text_events": 40,
+      "source_span_canonical_start": 45415,
+      "source_span_canonical_end": 68927,
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 2930,
+          "context": "ntoPartIIItotheextentdescribedtherein.(1)TableofContentsPagePartIItem1.Business3Item1A.RiskFactors15Item1B.UnresolvedStaffComments21Item2.Properties21Item3.LegalProceedings21Item4.MineSafetyDisclosures23PartIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 45397,
+          "context": "h,thewebsite.Therefore,suchinformationshouldnotbeconsideredpartofthisreport.(14)Item1A.RiskFactorsThefollowingdiscussionofriskfactorscontains“forward-lookingstatements,”asdiscussedinItem1.“Business”.TheseriskfactorsmaybeimportanttounderstandinganystatementinthisAnnualReportonFo"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 2950,
+          "context": "tdescribedtherein.(1)TableofContentsPagePartIItem1.Business3Item1A.RiskFactors15Item1B.UnresolvedStaffComments21Item2.Properties21Item3.LegalProceedings21Item4.MineSafetyDisclosures23PartIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 68928,
+          "context": "andeffectivenessofourproductsandservicesandresultinliabilityandreputationalharm.Item1B.UnresolvedStaffCommentsNotapplicable.Item2.PropertiesManufacturingoperationsarecarriedoutatapproximately237manufacturingpla"
+        }
+      ],
+      "hidden_source_text_events_within_span": 0,
+      "image_elements_within_span": 0,
+      "substantive_boundary_defect_found": false,
+      "visual_layout_review_completed": false,
+      "human_review_created": false,
+      "start_cue": "Item 1A. Risk Factors -> The following discussion of risk factors contains forward-looking statements",
+      "end_cue": "Supplier/commodity exposure paragraph ending liability and reputational harm, followed by Item 1B. Unresolved Staff Comments / Not applicable",
+      "content_observations": [
+        "The initial contents entry points to Item 1A on printed page 15 and Item 1B on printed page 21. The selected text starts after the second, substantive Item 1A heading following the end of Business, not the initial contents entry.",
+        "Read all 40 matched original source text events. The opening interpretive cautions, global economic/political risks, legal/regulatory and nonbank SIFI risks, transactions, pensions, funding, counterparty/credit-rating risks, cybersecurity, operations, intellectual property, and final supplier/commodity risk are present in original order.",
+        "References to Business, MD&A, Legal Proceedings and financial-statement notes remain inside the risk discussion. They provide additional information; this substantive Item 1A does not replace itself with a separate exhibit or page-only pointer.",
+        "The final supplier paragraph is complete through its last word. Original HTML has a terminal full stop, which the existing extraction strips. Item 1B and the subsequent Properties section are excluded. Internal printed-page labels (15) through (20) remain in the extracted text."
+      ],
+      "normalization_limitations": [
+        "Retained internal printed-page labels",
+        "One terminal full stop removed by the existing text-strip behavior"
+      ]
+    },
+    {
+      "accession": "0000050863-14-000020",
+      "evidence_id": "f3aab127c52dd90245fe119d58f9161886a71885f4277fac0cbca53915aaa0fe",
+      "reviewer": "ChatGPT (delegated GE/Intel original-source textual review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:47:20.269179+00:00",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "notes": "The index points to Item 1A on printed page 17 and Item 1B on page 24. The selected text is the second Item 1A occurrence after the executive biography material and printed-page-16 furniture. Read all 189 matched source events, including all bullet lists. Demand, competition, product mix, global operations, production/resources, defects, cyber/privacy, intellectual property, litigation, distribution/government sales, investments/accounting/tax, restructuring/transactions, environmental and climate issues, workforce, interest and controls text remain in the same order. The environmental discussion continues across the page-22/Table-of-Contents furniture into conflict-mineral disclosure; that continuation is retained before the climate, workforce and controls discussions. Internal Note 26 and Critical Accounting Estimates references remain as source text; no substitute exhibit or page-pointer-only Item 1A occurs. The complete controls paragraph and page-23 furniture are followed by the actual Item 1B and Properties headings, both excluded from the extraction. Complete extracted span independently matches one contiguous visible-source text sequence after ignoring whitespace/zero-width spaces; no hidden text or image elements were found inside that span. This is assistant textual source inspection, not human review or a complete visual-layout review. Timing is reserved for the separate parent review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/a10kdocument12282013.htm",
+      "source_sha256": "846098afb4bef1f70ef7094702e217139b3128730c61932daebf34cd1e7b0d90",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/a10kdocument12282013.htm",
+      "risk_source_sha256": "846098afb4bef1f70ef7094702e217139b3128730c61932daebf34cd1e7b0d90",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086314000020/0000050863-14-000020.hdr.sgml",
+      "header_sha256": "6c1256123a72f113074b23cf32434df5f2cc8d54e8d22a8daf496595ed4539b9",
+      "risk_text_sha256": "d68e83949d73a02cfeb52d491f9877fb0512e36fd8e4f0bb65400d005f9a2dff",
+      "original_source_bytes_reread": true,
+      "source_cache_metadata_rechecked_after_review": true,
+      "source_review_method": "Read independently parsed original HTML text events and adjacent headings; full span correspondence uses Python HTMLParser without production extraction/normalization helpers",
+      "comparison_canonicalization": "Remove whitespace and zero-width spaces only; no word, numeric or punctuation substitution",
+      "matched_original_text_events": 189,
+      "source_span_canonical_start": 52849,
+      "source_span_canonical_end": 82128,
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3169,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER28,2013INDEXPagePARTIItem1.Business1Item1A.RiskFactors17Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 52831,
+          "context": "gGroup•2005–2009,VP,GM,DigitalEnterpriseGroup•JoinedIntelin199016TableofContentsITEM1A.RISKFACTORSChangesinproductdemandmayharmourfinancialresultsandarehardtopredict.Ifproductdemanddecreases,ourrevenueandprofitcouldbeharmed.Importantfactorsthatcouldcausedemandforourproductstode"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3189,
+          "context": "EFISCALYEARENDEDDECEMBER28,2013INDEXPagePARTIItem1.Business1Item1A.RiskFactors17Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 82128,
+          "context": "ordeteriorationinthedegreeofcompliancewithpoliciesorprocedures.23TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember28,2013,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_source_text_events_within_span": 0,
+      "image_elements_within_span": 0,
+      "substantive_boundary_defect_found": false,
+      "visual_layout_review_completed": false,
+      "human_review_created": false,
+      "start_cue": "ITEM 1A. RISK FACTORS -> Changes in product demand may harm our financial results and are hard to predict",
+      "end_cue": "Controls paragraph ending policies or procedures, then page 23 / Table of Contents, then ITEM 1B. UNRESOLVED STAFF COMMENTS / Not applicable",
+      "content_observations": [
+        "The index points to Item 1A on printed page 17 and Item 1B on page 24. The selected text is the second Item 1A occurrence after the executive biography material and printed-page-16 furniture.",
+        "Read all 189 matched source events, including all bullet lists. Demand, competition, product mix, global operations, production/resources, defects, cyber/privacy, intellectual property, litigation, distribution/government sales, investments/accounting/tax, restructuring/transactions, environmental and climate issues, workforce, interest and controls text remain in the same order.",
+        "The environmental discussion continues across the page-22/Table-of-Contents furniture into conflict-mineral disclosure; that continuation is retained before the climate, workforce and controls discussions.",
+        "Internal Note 26 and Critical Accounting Estimates references remain as source text; no substitute exhibit or page-pointer-only Item 1A occurs. The complete controls paragraph and page-23 furniture are followed by the actual Item 1B and Properties headings, both excluded from the extraction."
+      ],
+      "normalization_limitations": [
+        "Internal page numbers and repeated Table of Contents navigation text are retained, including trailing page-23 furniture"
+      ]
+    },
+    {
+      "accession": "0000050863-15-000015",
+      "evidence_id": "277595a6f6f201705bb291c2545f805260b4817b6f061527f6f11894c6412f55",
+      "reviewer": "ChatGPT (delegated GE/Intel original-source textual review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:47:20.269179+00:00",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "notes": "The front index points to Item 1A on printed page 18 and Item 1B on page 26. The selected second Item 1A heading follows executive biographies and the printed-page-17 furniture, so the index entry was not treated as substantive text. Read all 202 matched original source events. The opening broad caution and all demand/competition/mix, global/currency/catastrophic, manufacturing/supply/defect/environment, intellectual-property/litigation/workforce, cyber/privacy, strategic-transaction/sales, accounting/tax, repurchase, restructuring and controls discussions are retained. Supply-chain discussion continues after page-20/Table-of-Contents furniture into third-party manufacturing and sourcing requirements. The continuation is preserved; bullet lists and inline percentages are present. The text's references to MD&A, Note 25 and Note 13 remain as internal references, with no exhibit substituted for Item 1A. The final controls paragraph, page-25 furniture and transition to true Item 1B establish the ending; Item 1B and Properties are excluded. Complete extracted span independently matches one contiguous visible-source text sequence after ignoring whitespace/zero-width spaces; no hidden text or image elements were found inside that span. This is assistant textual source inspection, not human review or a complete visual-layout review. Timing is reserved for the separate parent review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+      "source_sha256": "38b2c2b545ab2d6f6721d6a56f68e3a77fff27dd4bf0b355b071b77856d78477",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/a10kdocument12272014.htm",
+      "risk_source_sha256": "38b2c2b545ab2d6f6721d6a56f68e3a77fff27dd4bf0b355b071b77856d78477",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086315000015/0000050863-15-000015.hdr.sgml",
+      "header_sha256": "2803d2770b85718c80f3fea77ed616b3fa89cbf19d75cd286056cba328c0ae99",
+      "risk_text_sha256": "8c25bf821c43eb36e7bd583e6a4e9427eed1715834aa0b2fcf93a15d0fb84363",
+      "original_source_bytes_reread": true,
+      "source_cache_metadata_rechecked_after_review": true,
+      "source_review_method": "Read independently parsed original HTML text events and adjacent headings; full span correspondence uses Python HTMLParser without production extraction/normalization helpers",
+      "comparison_canonicalization": "Remove whitespace and zero-width spaces only; no word, numeric or punctuation substitution",
+      "matched_original_text_events": 202,
+      "source_span_canonical_start": 54115,
+      "source_span_canonical_end": 86433,
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3169,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER27,2014INDEXPagePARTIItem1.Business1Item1A.RiskFactors18Item1B.UnresolvedStaffComments26Item2.Properties26Item3.LegalProceedings26Item4.MineSafetyDisclosures26PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 54097,
+          "context": "rams•MemberofVodafoneGroupplcBoardofDirectors•JoinedIntelin198817TableofContentsITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3189,
+          "context": "EFISCALYEARENDEDDECEMBER27,2014INDEXPagePARTIItem1.Business1Item1A.RiskFactors18Item1B.UnresolvedStaffComments26Item2.Properties26Item3.LegalProceedings26Item4.MineSafetyDisclosures26PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 86433,
+          "context": "ngresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.25TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember27,2014,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_source_text_events_within_span": 0,
+      "image_elements_within_span": 0,
+      "substantive_boundary_defect_found": false,
+      "visual_layout_review_completed": false,
+      "human_review_created": false,
+      "start_cue": "ITEM 1A. RISK FACTORS -> The following risks could materially and adversely affect our business",
+      "end_cue": "Controls paragraph ending market price of our stock could decline, then page 25 / Table of Contents, then ITEM 1B. UNRESOLVED STAFF COMMENTS / Not applicable",
+      "content_observations": [
+        "The front index points to Item 1A on printed page 18 and Item 1B on page 26. The selected second Item 1A heading follows executive biographies and the printed-page-17 furniture, so the index entry was not treated as substantive text.",
+        "Read all 202 matched original source events. The opening broad caution and all demand/competition/mix, global/currency/catastrophic, manufacturing/supply/defect/environment, intellectual-property/litigation/workforce, cyber/privacy, strategic-transaction/sales, accounting/tax, repurchase, restructuring and controls discussions are retained.",
+        "Supply-chain discussion continues after page-20/Table-of-Contents furniture into third-party manufacturing and sourcing requirements. The continuation is preserved; bullet lists and inline percentages are present.",
+        "The text's references to MD&A, Note 25 and Note 13 remain as internal references, with no exhibit substituted for Item 1A. The final controls paragraph, page-25 furniture and transition to true Item 1B establish the ending; Item 1B and Properties are excluded."
+      ],
+      "normalization_limitations": [
+        "Internal page numbers and repeated Table of Contents navigation text are retained, including trailing page-25 furniture"
+      ]
+    },
+    {
+      "accession": "0000050863-16-000105",
+      "evidence_id": "091217b319639741e337f46d723a8fa57051d2332dc11ff4e6bac41b6468729f",
+      "reviewer": "ChatGPT (delegated GE/Intel original-source textual review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:47:20.269179+00:00",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "notes": "The front index points to Item 1A on printed page 20 and Item 1B on page 28. The selected second Item 1A occurrence follows the CEO biography and printed-page-19 furniture. Read all 208 matched original source events. The opening caution, demand and competition, global and currency exposure, catastrophe, manufacturing/supply/defects/environment, intellectual property/litigation, workforce, cyber/privacy, transactions/distribution/government, accounting/tax, repurchase, restructuring and controls discussions are present in source order. The supply-chain paragraph before page-22 furniture continues with third-party manufacture/assembly/testing and supplier-conduct restrictions afterwards. Both continuation paragraphs are retained. The extracted text also preserves the discussion of defects in third-party components and products. Note 25, Note 13, MD&A and accounting references are internal discussion references; no missing incorporated exhibit or page-only substitution was observed. The full controls paragraph and trailing page-27 furniture end immediately before substantive Item 1B and Properties. Complete extracted span independently matches one contiguous visible-source text sequence after ignoring whitespace/zero-width spaces; no hidden text or image elements were found inside that span. This is assistant textual source inspection, not human review or a complete visual-layout review. Timing is reserved for the separate parent review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086316000105/a10kdocument12262015q4.htm",
+      "source_sha256": "9d3f164f8489b37685f43e87a14fc9f6fb80ad082d21dba0a3a32a5c840bc04a",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086316000105/a10kdocument12262015q4.htm",
+      "risk_source_sha256": "9d3f164f8489b37685f43e87a14fc9f6fb80ad082d21dba0a3a32a5c840bc04a",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086316000105/0000050863-16-000105.hdr.sgml",
+      "header_sha256": "f76bbae303d8b616f6fa2214c4c7a1c01001c5fa340f47bdc706f8fbb45d0c40",
+      "risk_text_sha256": "5532e9be4208e5faa6e3983a49174a072460afdf819d6e963523d0b0c3008397",
+      "original_source_bytes_reread": true,
+      "source_cache_metadata_rechecked_after_review": true,
+      "source_review_method": "Read independently parsed original HTML text events and adjacent headings; full span correspondence uses Python HTMLParser without production extraction/normalization helpers",
+      "comparison_canonicalization": "Remove whitespace and zero-width spaces only; no word, numeric or punctuation substitution",
+      "matched_original_text_events": 208,
+      "source_span_canonical_start": 58202,
+      "source_span_canonical_end": 90642,
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3154,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER26,2015INDEXPagePARTIItem1.Business1Item1A.RiskFactors20Item1B.UnresolvedStaffComments28Item2.Properties28Item3.LegalProceedings28Item4.MineSafetyDisclosures28PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 58184,
+          "context": "andTest•MemberofDeere&CompanyBoardofDirectors•JoinedIntelin198219TableofContentsITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3174,
+          "context": "EFISCALYEARENDEDDECEMBER26,2015INDEXPagePARTIItem1.Business1Item1A.RiskFactors20Item1B.UnresolvedStaffComments28Item2.Properties28Item3.LegalProceedings28Item4.MineSafetyDisclosures28PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 90642,
+          "context": "ngresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.27TableofContentsITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember26,2015,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_source_text_events_within_span": 0,
+      "image_elements_within_span": 0,
+      "substantive_boundary_defect_found": false,
+      "visual_layout_review_completed": false,
+      "human_review_created": false,
+      "start_cue": "ITEM 1A. RISK FACTORS -> The following risks could materially and adversely affect our business",
+      "end_cue": "Controls paragraph ending market price of our stock could decline, then page 27 / Table of Contents, then ITEM 1B. UNRESOLVED STAFF COMMENTS / Not applicable",
+      "content_observations": [
+        "The front index points to Item 1A on printed page 20 and Item 1B on page 28. The selected second Item 1A occurrence follows the CEO biography and printed-page-19 furniture.",
+        "Read all 208 matched original source events. The opening caution, demand and competition, global and currency exposure, catastrophe, manufacturing/supply/defects/environment, intellectual property/litigation, workforce, cyber/privacy, transactions/distribution/government, accounting/tax, repurchase, restructuring and controls discussions are present in source order.",
+        "The supply-chain paragraph before page-22 furniture continues with third-party manufacture/assembly/testing and supplier-conduct restrictions afterwards. Both continuation paragraphs are retained. The extracted text also preserves the discussion of defects in third-party components and products.",
+        "Note 25, Note 13, MD&A and accounting references are internal discussion references; no missing incorporated exhibit or page-only substitution was observed. The full controls paragraph and trailing page-27 furniture end immediately before substantive Item 1B and Properties."
+      ],
+      "normalization_limitations": [
+        "Internal page numbers and repeated Table of Contents navigation text are retained, including trailing page-27 furniture"
+      ]
+    },
+    {
+      "accession": "0000050863-17-000012",
+      "evidence_id": "8c31c37fdee85365cd58ae3fe8ac1b2e408943f9dda29ecd4b5806489e2e6a1c",
+      "reviewer": "ChatGPT (delegated GE/Intel original-source textual review)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T09:47:20.269179+00:00",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pending",
+      "notes": "The index points to Item 1A on printed page 15 and Item 1B on page 24. The selected second Item 1A occurrence follows the Robert Swan/eBay director biography, not the front index. Read all 227 matched original source events. The opening caution and demand/mix, competition, global/currency/catastrophe, manufacturing and supplier, product-defect, environment, intellectual-property/litigation, workforce, cyber/privacy, transactions/sales, accounting/tax, repurchase, restructuring and controls material are retained. The competitive discussion continues after page-15 furniture into R&D; environmental discussion continues after page-18 furniture; final controls discussion follows page-23 furniture. Those continuations, expanded product-injury risks, distributor paragraphs and the restructuring bullet list are preserved. MD&A and Notes 20, 2 and 7 are additional internal references rather than an external replacement for the section. The last controls paragraph is complete through its last word; its final period is stripped by the existing normalizer. The immediately following Item 1B and Properties are excluded. Complete extracted span independently matches one contiguous visible-source text sequence after ignoring whitespace/zero-width spaces; no hidden text or image elements were found inside that span. This is assistant textual source inspection, not human review or a complete visual-layout review. Timing is reserved for the separate parent review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086317000012/a10kdocument12312016q4.htm",
+      "source_sha256": "a8666ae2ef32be4853de6ed3254fda84aee5b42273f25baef1c25138b624d6c3",
+      "risk_source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086317000012/a10kdocument12312016q4.htm",
+      "risk_source_sha256": "a8666ae2ef32be4853de6ed3254fda84aee5b42273f25baef1c25138b624d6c3",
+      "header_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086317000012/0000050863-17-000012.hdr.sgml",
+      "header_sha256": "46fa4212aeb9373987f8e5a8585aa79edc0ae84d32fdaf9eb26517f415bb3c15",
+      "risk_text_sha256": "8cf6e6c99ead34736b42508444cfe4aedc94afec7d8000b9931372b51a20b568",
+      "original_source_bytes_reread": true,
+      "source_cache_metadata_rechecked_after_review": true,
+      "source_review_method": "Read independently parsed original HTML text events and adjacent headings; full span correspondence uses Python HTMLParser without production extraction/normalization helpers",
+      "comparison_canonicalization": "Remove whitespace and zero-width spaces only; no word, numeric or punctuation substitution",
+      "matched_original_text_events": 227,
+      "source_span_canonical_start": 48493,
+      "source_span_canonical_end": 84236,
+      "item_1a_heading_occurrences": [
+        {
+          "canonical_offset": 3157,
+          "context": "ORATIONFORM10-KFORTHEFISCALYEARENDEDDECEMBER31,2016INDEXPagePARTIItem1.Business2Item1A.RiskFactors15Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegistrant’sCommonEquity,RelatedStockholderMattersandI"
+        },
+        {
+          "canonical_offset": 48475,
+          "context": "5yearsinnumerousseniorfinanceroles.Mr.SwanalsoservesontheboardofdirectorsofeBay.ITEM1A.RISKFACTORSThefollowingriskscouldmateriallyandadverselyaffectourbusiness,financialcondition,andresultsofoperations,andthetradingpriceofourcommonstockcoulddecline.Theseriskfactorsdonotidentify"
+        }
+      ],
+      "item_1b_heading_occurrences": [
+        {
+          "canonical_offset": 3177,
+          "context": "EFISCALYEARENDEDDECEMBER31,2016INDEXPagePARTIItem1.Business2Item1A.RiskFactors15Item1B.UnresolvedStaffComments24Item2.Properties24Item3.LegalProceedings24Item4.MineSafetyDisclosures24PARTIIItem5.MarketforRegist"
+        },
+        {
+          "canonical_offset": 84237,
+          "context": "usinessandoperatingresultscouldbeharmed,andthemarketpriceofourstockcoulddecline.ITEM1B.UNRESOLVEDSTAFFCOMMENTSNotapplicable.ITEM2.PROPERTIESAsofDecember31,2016,ourmajorfacilitiesconsistedof:(SquareFeetinMillion"
+        }
+      ],
+      "hidden_source_text_events_within_span": 0,
+      "image_elements_within_span": 0,
+      "substantive_boundary_defect_found": false,
+      "visual_layout_review_completed": false,
+      "human_review_created": false,
+      "start_cue": "ITEM 1A.RISK FACTORS -> The following risks could materially and adversely affect our business",
+      "end_cue": "Controls paragraph ending market price of our stock could decline, followed by ITEM 1B. UNRESOLVED STAFF COMMENTS / Not applicable",
+      "content_observations": [
+        "The index points to Item 1A on printed page 15 and Item 1B on page 24. The selected second Item 1A occurrence follows the Robert Swan/eBay director biography, not the front index.",
+        "Read all 227 matched original source events. The opening caution and demand/mix, competition, global/currency/catastrophe, manufacturing and supplier, product-defect, environment, intellectual-property/litigation, workforce, cyber/privacy, transactions/sales, accounting/tax, repurchase, restructuring and controls material are retained.",
+        "The competitive discussion continues after page-15 furniture into R&D; environmental discussion continues after page-18 furniture; final controls discussion follows page-23 furniture. Those continuations, expanded product-injury risks, distributor paragraphs and the restructuring bullet list are preserved.",
+        "MD&A and Notes 20, 2 and 7 are additional internal references rather than an external replacement for the section. The last controls paragraph is complete through its last word; its final period is stripped by the existing normalizer. The immediately following Item 1B and Properties are excluded."
+      ],
+      "normalization_limitations": [
+        "Internal page numbers and repeated Table of Contents navigation text are retained",
+        "One terminal full stop removed by the existing text-strip behavior"
+      ]
+    }
+  ]
+}
