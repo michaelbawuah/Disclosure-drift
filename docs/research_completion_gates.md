@@ -1,11 +1,13 @@
 # Research completion gates and reviewer handoff
 
-Updated 11 October 2026. **The next useful step is to complete the existing
-filing/source reviews while obtaining the specific missing historical evidence.**
-The saved development exports and completed numerical, listing, liquidity,
-identity-evidence and benchmark runs already provide substantial preparation.
-Another provisional bundle cannot supply a missing historical fact or a human
-judgment. Current execution evidence is in the
+Updated 11 October 2026. **The immediate source requirement is now measured:
+historical CIK intervals, unresolved security links, and actual source-version
+and availability evidence.** The [completed foundation reconciliation](historical_foundation.md)
+preserves all 87,405 annual observations and quantifies the gaps among 50,230
+provisionally rank-eligible rows. A [published historical correction check](historical_availability_evidence.md)
+also exposes four saved annual classification discrepancies. The 73 assistant
+filing reviews and the user's 20/20 arithmetic review retain their completed
+credit. Required human judgments remain distinct. Current execution evidence is in the
 [research update](../reports/RESEARCH_EXECUTION_UPDATE.md).
 
 This guide interprets the existing [frozen protocol](../protocol.md),

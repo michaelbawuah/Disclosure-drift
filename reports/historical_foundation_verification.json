@@ -1,0 +1,127 @@
+{
+  "actual_mac_execution": {
+    "aggregate_record": "reports/historical_foundation_aggregate.json",
+    "aggregate_sha256": "5001c0c6fd7794f1bd84640538641981919e897e71f70541a017ba1b8a5cfe9f",
+    "elapsed_seconds": 48.39352,
+    "execution_record": "reports/historical_foundation_execution.json",
+    "execution_record_sha256": "2816c174c67bc4907e3d5d4c09e171829cc58d7787dca0a95e03afd17df734cc",
+    "original_sec_bytes_reread_on_mac": false,
+    "output_parquet_bytes": 8453117,
+    "output_parquet_parts": 135,
+    "private_modes_verified": true,
+    "private_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+    "protected_files_unchanged": true
+  },
+  "additional_original_sec_source_checks": {
+    "execution_environment": "Research workspace with original SEC cache; not a Mac original-source rerun.",
+    "filer_observations": 8,
+    "original_documents": 7,
+    "original_headers": 7,
+    "record": "reports/sec_cover_cases_summary.json",
+    "separate_process_rerun_evidence_identical_except_timestamp": true,
+    "sha256": "12fe3287d2480c1ef82050a1265b9e9dd3e1e60f00f430e528333230006a909d"
+  },
+  "available_at_inferred": false,
+  "earlier_verification_attempt": {
+    "exit_code": 2,
+    "failure": "The code/source-state freeze correctly rejected a shared synthetic fixture after concurrent source edits and Git staging changed its recorded working state. No guard was weakened. The complete suite was rerun successfully on the stable committed implementation.",
+    "log": {
+      "compressed_sha256": "3a69bcea29105e00dbfc71420bbc13639bbb5b1dd9bc82a70628fd7f8b3d783d",
+      "decompressed_sha256": "e5dd629daa7dd9070736272131cd9f62ff8624974962527c7a8a6269e0677449",
+      "path": "reports/historical_foundation_initial_validation.log.gz"
+    },
+    "tests_failed": 3,
+    "tests_passed": 943
+  },
+  "empirical_milestones_completed_by_this_run": [],
+  "evidence_commit": "9f63633ef8ee253c2ae5d2e9732ee78e337d7ccc",
+  "final_period_opened": false,
+  "github_checks": [
+    {
+      "commit": "9f63633ef8ee253c2ae5d2e9732ee78e337d7ccc",
+      "conclusion": "success",
+      "url": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38132061439"
+    },
+    {
+      "commit": "710fa6833055c13224805bf28dbb445f24af976d",
+      "conclusion": "success",
+      "url": "https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38132536000"
+    }
+  ],
+  "historical_cik_links_created": 0,
+  "human_reviews_created": 0,
+  "implementation_commit": "710fa6833055c13224805bf28dbb445f24af976d",
+  "implementation_source_sha256": {
+    "scripts/build_historical_foundation.py": "279833b42d6b2898e62a1a66024d8ed80258661706257aa85c4626e9000a4f07",
+    "src/disclosure_research/historical_foundation.py": "faf4230b8ddc52080956d9d0bc6ddf1cc1fd80e49edb481662a2376d23c14b5a",
+    "src/disclosure_research/sec_class_observations.py": "9f9b2834ad31a093658b3b5e370e5472fabebfa5aff7f068423857264b9b2537"
+  },
+  "known_at_inferred": false,
+  "market_returns_read_during_foundation_run": false,
+  "model_ready": false,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "review": {
+    "aggregate_cells_checked": 27,
+    "class_observer_focused_tests_passed": 40,
+    "foundation_focused_tests_passed": 16,
+    "identity_raw_keys_preserved": true,
+    "independent_aggregate_checks_passed": 14,
+    "independent_code_review": "No remaining blocker for the bounded saved-evidence run at the recorded implementation hashes. Repeated class-axis ambiguity was found, reproduced, corrected and rechecked.",
+    "rank_eligibility_boolean_validated": true,
+    "share_class_approval_inferred": false
+  },
+  "revision_case": {
+    "execution_script_commit": "9f63633ef8ee253c2ae5d2e9732ee78e337d7ccc",
+    "four_literal_disagreements_preserved": true,
+    "optimized_python_cover_check_refused": true,
+    "original_result_and_executed_script_hash_not_rewritten": true,
+    "permissions_correction": {
+      "actual_private_directory_mode": "0700",
+      "actual_private_file_modes": "0400",
+      "bytes_unchanged": true,
+      "later_implementation_enforces_restrictive_modes": true
+    },
+    "record": "reports/historical_revision_case.json",
+    "sha256": "802142c792a7596de8151608d9e8013d8ca6533bcb4143343590a9bb5c55b7ae"
+  },
+  "schema_version": 1,
+  "source_approvals": 0,
+  "stable_full_verification": {
+    "actual_final_period_opened": false,
+    "command": "UV_PYTHON=3.12 make reproduce-full FULL_OUTPUT=outputs/historical-foundation-20261011/full-demo-stable",
+    "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+    "development_observations": 144,
+    "exit_code": 0,
+    "git_commit": "710fa6833055c13224805bf28dbb445f24af976d",
+    "log": {
+      "compressed_sha256": "42f124897a90a3c721002264a1be7d61330c8ab4e43a5725d4982eb254ecedc2",
+      "decompressed_sha256": "7947d985f0d301e2cf90da12cab17a3323d7786e9480f39a24be975368162b33",
+      "path": "reports/historical_foundation_validation.log.gz"
+    },
+    "protocol_verification": "passed",
+    "pytest_elapsed_seconds": 97.87,
+    "ruff": "passed",
+    "synthetic_final_evaluation_completed": true,
+    "synthetic_final_observations": 48,
+    "synthetic_full_study": "passed",
+    "synthetic_summary_sha256": "0f1c24d15e45d7cf603f940870d4ed2d0d77675694648dc3811986a909e3c8ca",
+    "tests_failed": 0,
+    "tests_passed": 949,
+    "working_tree_clean_at_start_and_end": true
+  },
+  "status": "HISTORICAL_FOUNDATION_IMPLEMENTATION_AND_EXECUTION_VERIFIED",
+  "tesla_symbol_clarification": {
+    "bound_accession": "0001564590-20-004475",
+    "bound_fact_ordinal": 4920,
+    "bound_foundation_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+    "bound_primary_sha256": "f2c95252efa7eabad5bc4c4c1e3701dd3968165c9a7e6685ef8cdaaf61d9a454",
+    "existing_raw_comparison_status": "LEXICAL_TICKER_TEXT_CONFLICT",
+    "historical_identity_approved": false,
+    "original_source_byte_difference": "One leading U+000A LINE FEED before the public symbol. No other character difference.",
+    "raw_comparison_unchanged": true,
+    "record": "reports/tesla_symbol_clarification.json",
+    "record_sha256": "e651106ba0bb853d81fc589dc42f255022e0304220ed7902e084e4ab13175232",
+    "source_inspection_environment": "Research workspace original cached SEC body; actual Names comparator was read only in the private Mac output diagnostic."
+  },
+  "verified_at_utc": "2026-10-11T10:43:40.668500+00:00"
+}

@@ -55,6 +55,45 @@ from that Mac checkout, so the original-byte audit is credited to the research
 workspace, not the Mac. The [completion verification](filing_review/assistant_verification.json)
 preserves this distinction and the evidence-commit CI status.
 
+**October 11 historical-foundation reconciliation:** The full saved-data run on
+the Mac completed at **10:38:20.651697 UTC** in **48.393520 seconds**, under commit
+`710fa6833055c13224805bf28dbb445f24af976d`. It retains **87,405 annual security
+observations**, including all **86,064 identity rows** and **1,341 liquidity-only
+rows**. The latter include **490 numerical-minimum passes** that an inner join
+would omit. The run verifies **110,124 CCM source occurrences** and **100,261
+existing Names/CCM relationships**, binds **207 discoveries** to the previously
+verified SEC report, and preserves all **215 filings**, including eight unmatched
+original Exxon filings. The original 73 assistant and 20/20 user review receipts
+remain byte-identical.
+
+The new [identity/liquidity cross-tab](historical_foundation_aggregate.json)
+partitions the **50,230 rank-eligible annual observations** into **46,359** with
+one usable current-header CIK, **1,315** with one missing/unsupported header CIK,
+**2,489** with multiple/ambiguous candidates, **37** with dated context but no
+January 1 candidate and **30** without a related CCM record. Thus **3,871 (7.71%)**
+need basic candidate resolution, while all single-header cases still require
+historical identity and availability evidence. The [foundation guide](../docs/historical_foundation.md)
+explains finite/open bounds, the 627 class-observation records (including 130
+explicit no-inline-fact placeholders), and the 15 January descriptors that do
+not cover their later filing dates.
+The sole literal ticker difference was traced to a leading line feed in
+[Tesla's original TradingSymbol tag](tesla_symbol_clarification.json); the raw
+comparison and all source observations remain unchanged.
+
+A separate [public revision check](historical_revision_case.json) verifies that
+all four saved 2016–2019 January snapshots in the selected vendor correction
+interval disagree with at least one corrected classification literal. That
+finding supplies no source-version identification or automatic correction.
+The [availability assessment](../docs/historical_availability_evidence.md)
+specifies the historical-CIK, version and date-semantics evidence needed next.
+Seven additional [original filing-cover inspections](sec_cover_cases_summary.json)
+retain common stock, debt, share classes and co-filers separately.
+
+The [implementation verification](historical_foundation_verification.json)
+records **949 passing tests**, Ruff, the unchanged protocol and the complete
+synthetic study. These validate the software and source reconciliation; they do
+not complete the empirical milestones or supply an investment-universe approval.
+
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
 final estimates, robustness interpretation and independent-person reproduction

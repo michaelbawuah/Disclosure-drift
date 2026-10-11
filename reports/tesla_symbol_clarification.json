@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "evidence_kind": "ORIGINAL_SEC_SOURCE_LEXICAL_CLARIFICATION",
+  "executed_at_utc": "2026-10-11T10:43:11.806030+00:00",
+  "accession": "0001564590-20-004475",
+  "hypothesis_status": "SUPPORTED_BY_ORIGINAL_SOURCE_BYTES",
+  "finding": "The preserved original SEC TradingSymbol element contains exactly one leading U+000A LINE FEED before TSLA. The frozen report preserves that same five-code-point raw text. Its strict comparison with the four-character literal TSLA remains unequal.",
+  "source": {
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020004475/tsla-10k_20191231.htm",
+    "primary_sha256": "f2c95252efa7eabad5bc4c4c1e3701dd3968165c9a7e6685ef8cdaaf61d9a454",
+    "primary_bytes": 7616526,
+    "primary_cache_metadata_sha256": "674f8fe139b7cb270b8daf7e6c14b9dc5e5a52d4d6028b6cf6647a0a2c7cf462",
+    "primary_cache_metadata": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020004475/tsla-10k_20191231.htm",
+      "sha256": "f2c95252efa7eabad5bc4c4c1e3701dd3968165c9a7e6685ef8cdaaf61d9a454",
+      "fetched_at": "2026-10-10T18:05:03.739672+00:00",
+      "bytes": 7616526,
+      "status": 200,
+      "body_representation": "http-decoded",
+      "transport": "httpx"
+    },
+    "original_cached_body_reread": true,
+    "cached_metadata_url_hash_and_byte_count_verified": true,
+    "live_source_refetched": false,
+    "frozen_report_path": "reports/sec_identity_evidence.json.gz",
+    "frozen_report_uncompressed_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+    "frozen_report_gzip_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "source_declaration_matches_frozen_record": true
+  },
+  "fact_locator": {
+    "concept_qname_raw": "dei:TradingSymbol",
+    "concept_namespace_uri": "http://xbrl.sec.gov/dei/2019-01-31",
+    "fact_id_raw": "F_000005",
+    "fact_element_ordinal_in_frozen_report": 4920,
+    "element_path_in_frozen_report": "/html/body/div[5]/table/tr[2]/td[2]/p/ix:nonnumeric",
+    "contextref_raw": "C_0001318605_20190101_20191231",
+    "context_element_ordinals_in_frozen_report": [
+      147
+    ],
+    "frozen_parsed_serialization_sha256": "0858958d56418a3005495b8e88da2924afd5bc617eac6deb79cd24a21fc611a4",
+    "original_source_byte_start_inclusive": 441154,
+    "original_source_byte_end_exclusive": 441273,
+    "original_source_fragment_sha256": "9fce5bed979fa4ea921e875cd82faa746f4ae740bafafb81377fa7049bc7125e",
+    "original_source_fragment_utf8": "<ix:nonNumeric id=\"F_000005\" name=\"dei:TradingSymbol\" contextRef=\"C_0001318605_20190101_20191231\">\nTSLA</ix:nonNumeric>",
+    "matching_original_TradingSymbol_element_count": 1,
+    "text_from_parsed_html_raw": "\nTSLA",
+    "original_source_element_text_raw": "\nTSLA",
+    "original_and_frozen_text_equal": true,
+    "raw_text_code_points": [
+      "U+000A",
+      "U+0054",
+      "U+0053",
+      "U+004C",
+      "U+0041"
+    ],
+    "raw_text_utf8_hex": "0a54534c41",
+    "fact_lexical_issues_in_frozen_report": []
+  },
+  "context_locator": {
+    "context_id_raw": "C_0001318605_20190101_20191231",
+    "context_element_ordinal_in_frozen_report": 147,
+    "element_path_in_frozen_report": "/html/body/div[1]/ix:header/ix:resources/xbrli:context[1]",
+    "frozen_parsed_serialization_sha256": "5e880aa9cc2ee8b5f24a4e03243441b92ffbff3b7505aef36814c77950c61a40",
+    "original_source_byte_start_inclusive": 38259,
+    "original_source_byte_end_exclusive": 38591,
+    "original_source_fragment_sha256": "73ea4e1b9134ca82ef19e6a59dfaa1e8ef1d4208098adfed9fd88f8715754ac8",
+    "matching_original_context_element_count": 1,
+    "entity_identifier_scheme_raw": "http://www.sec.gov/CIK",
+    "entity_identifier_text_raw": "0001318605",
+    "period_start_text_raw": "2019-01-01",
+    "period_end_text_raw": "2019-12-31",
+    "dimensions_in_frozen_report": [],
+    "context_period_is_link_validity": false
+  },
+  "lexical_diagnostic": {
+    "comparison_literal": "TSLA",
+    "comparison_literal_is_public_diagnostic_text": true,
+    "strict_raw_text_equality": false,
+    "exact_difference": "One leading U+000A LINE FEED (UTF-8 byte 0a) in the original SEC element text.",
+    "other_character_differences": 0,
+    "existing_raw_comparison_status_unchanged": "LEXICAL_TICKER_TEXT_CONFLICT",
+    "normalization_rule_created": false,
+    "source_or_report_text_mutated": false,
+    "private_candidate_data_accessed_for_this_clarification": false,
+    "private_candidate_row_published": false,
+    "binding_to_private_execution": "To be attached by the parent consumer using accession, source hashes and fact/context locators; this clarification contains public SEC source evidence only."
+  },
+  "limits": {
+    "interpretation": "This is a source-bound character-level clarification. It does not interpret the XBRL value, approve an issuer/security relationship, establish a share class, or infer historical knowledge or availability time.",
+    "identity_approved": false,
+    "share_class_approved": false,
+    "model_ready": false,
+    "known_at": null,
+    "available_at": null,
+    "source_approvals_created": 0,
+    "historical_security_links_created": 0,
+    "market_return_data_accessed": false,
+    "final_period_outcomes_accessed": false
+  }
+}

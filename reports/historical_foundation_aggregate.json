@@ -1,0 +1,342 @@
+{
+  "annual_union_by_year": {
+    "2010": 6804,
+    "2011": 6817,
+    "2012": 6899,
+    "2013": 6881,
+    "2014": 6978,
+    "2015": 7257,
+    "2016": 7419,
+    "2017": 7360,
+    "2018": 7462,
+    "2019": 7654,
+    "2020": 7773,
+    "2021": 8101
+  },
+  "available_at_inferred": false,
+  "class_observation_counts": {
+    "LEXICAL_TICKER_AND_CLASS_TOKEN_TEXT_MATCH": 8,
+    "LEXICAL_TICKER_MATCH_CLASS_UNSPECIFIED": 51,
+    "LEXICAL_TICKER_TEXT_CONFLICT": 1,
+    "NONCOMMON_OR_UNINTERPRETED_TITLE_OBSERVATION": 281,
+    "NO_INLINE_COVER_FACTS": 130,
+    "NO_SECURITY_CLASS_FACTS": 41,
+    "UNRESOLVED_ENTITY_SCOPE": 83,
+    "UNRESOLVED_TITLE_OR_SYMBOL": 32
+  },
+  "counts": {
+    "annual_rows_with_original_sec_discovery": 207,
+    "annual_union_rows": 87405,
+    "identity_only_rows": 0,
+    "identity_rows": 86064,
+    "liquidity_only_rows": 1341,
+    "liquidity_rows": 87405,
+    "numeric_minimum_rows": 84530,
+    "ordinary_numeric_candidate_rows": 50230,
+    "rank_eligible_rows": 50230
+  },
+  "cross_tabulation": [
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 881
+    },
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 85
+    },
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "DATED_CONTEXT_ONLY_NO_JANUARY1_CANDIDATE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 37
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 15
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 16
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 45
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 100
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 967
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 1522
+    },
+    {
+      "candidate_bound_scope": "NO_IDENTITY",
+      "identity_evidence_status": "NO_ANNUAL_NAMES_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 851
+    },
+    {
+      "candidate_bound_scope": "NO_IDENTITY",
+      "identity_evidence_status": "NO_ANNUAL_NAMES_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 490
+    },
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "NO_RELATED_CCM_RECORD",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 59
+    },
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "NO_RELATED_CCM_RECORD",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 703
+    },
+    {
+      "candidate_bound_scope": "NO_CANDIDATE",
+      "identity_evidence_status": "NO_RELATED_CCM_RECORD",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 30
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 231
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 224
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 5082
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 13116
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 1257
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_HEADER_CIK_MISSING_OR_UNSUPPORTED",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 58
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 278
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": false,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 320
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 6022
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": false,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": false,
+      "rows": 8657
+    },
+    {
+      "candidate_bound_scope": "FINITE_ONLY",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 19091
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": false,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 27061
+    },
+    {
+      "candidate_bound_scope": "UNRESOLVED",
+      "identity_evidence_status": "SINGLE_CANDIDATE_REQUIRES_HISTORICAL_IDENTITY_EVIDENCE",
+      "meets_numeric_minimum_40": true,
+      "ordinary_numeric_candidate": true,
+      "original_sec_discovery_present": true,
+      "rank_eligible_by_candidate_policy": true,
+      "rows": 207
+    }
+  ],
+  "daily_source_values_read": false,
+  "evidence_gap_counts": {
+    "CANDIDATE_LINK_BOUNDS_UNRESOLVED": 51281,
+    "FEWER_THAN_40_NUMERICALLY_VALID_SESSIONS": 2875,
+    "HISTORICAL_CIK_LINK_UNAPPROVED": 87405,
+    "HISTORICAL_IDENTITY_AVAILABILITY_UNKNOWN": 87405,
+    "LIQUIDITY_AVAILABILITY_UNKNOWN": 87405,
+    "LISTING_AVAILABILITY_UNKNOWN": 87405,
+    "MISSING_USABLE_CANDIDATE_HEADER_CIK": 21828,
+    "MULTIPLE_OR_AMBIGUOUS_CANDIDATE_EVIDENCE": 2665,
+    "NO_ANNUAL_NAMES_IDENTITY_EVIDENCE": 1341,
+    "NO_JANUARY1_CCM_CANDIDATE": 1795,
+    "NO_SAME_YEAR_ORIGINAL_SEC_DISCOVERY_IN_SAVED_COHORT": 87198,
+    "SAME_YEAR_SEC_OBSERVATION_AFTER_INFORMATION_CUTOFF": 207,
+    "SOURCE_RELEASE_UNVERIFIED": 87405
+  },
+  "existing_rank_eligibility_boolean_read": true,
+  "final_period_opened": false,
+  "historical_cik_links_created": 0,
+  "human_reviews_created": 0,
+  "input_files_rehashed": 150,
+  "inputs": {
+    "identity_receipt_sha256": "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+    "liquidity_receipt_sha256": "0be9983b192e2d15a32abe5c29240638d75fcfd639e19cbacb12ed48d977ce20",
+    "listing_receipt_sha256": "698e3b280ac18a42bf11c0bc3b1cb2ecd10c701cfb4e1ab6f283066ecd28afc6",
+    "sec_evidence_json_sha256": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+    "sec_evidence_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "sec_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1"
+  },
+  "known_at_inferred": false,
+  "liquidity_mean_or_rank_values_read": false,
+  "market_returns_read": false,
+  "model_ready": false,
+  "original_sec_bytes_reread": false,
+  "prior_arithmetic_review_modified": false,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "saved_sec_report_bytes_verified": true,
+  "sec_manifest_coverage_counts": {
+    "HEADER_CIK_DISCOVERY_ONLY": 207,
+    "NO_SAME_YEAR_HEADER_CIK_CANDIDATE_DISCOVERY": 8
+  },
+  "source_approvals": 0,
+  "source_ccm_rows_verified": 110124,
+  "source_relationship_rows_verified": 100261,
+  "status": "HISTORICAL_FOUNDATION_EVIDENCE_NOT_SOURCE_APPROVED",
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ]
+}

@@ -45,6 +45,19 @@ checkpoint without creating a human review or requiring the user to repeat its
 historical universe/security links, vendor vintage/availability, the benchmark
 decision and empirical milestones 5–11 remain pending. The final period stays closed.
 
+**October 11 historical-foundation completion:** The actual Mac reconciliation
+retained **87,405 annual security observations**, including **1,341 with liquidity
+but no annual identity evidence**; **490** of those meet the numerical minimum.
+It verified all **100,261 existing Names/CCM relationships**, bound **207 SEC
+discoveries** to the original source report, and retained all **215 filings**.
+Among **50,230 rank-eligible observations**, **3,871** have missing/ambiguous
+candidate evidence; the other **46,359** have one usable current-header CIK but
+still need historical confirmation. A separate public-revision comparison found
+four saved annual classification discrepancies. The [results and interpretation](../docs/historical_foundation.md)
+and [actual execution](historical_foundation_execution.json) make the next data
+requirements concrete. **949 tests and the full synthetic reproduction pass**;
+no approved universe, source timestamp or actual final result was created.
+
 The frozen primary protocol has not changed. Its hash is
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
 The original ten-week plan is superseded where it differs: retain unranked

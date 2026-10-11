@@ -1,0 +1,37 @@
+{
+  "context_observation_counts": {
+    "LEXICAL_TICKER_AND_CLASS_TOKEN_TEXT_MATCH": 8,
+    "LEXICAL_TICKER_MATCH_CLASS_UNSPECIFIED": 51,
+    "LEXICAL_TICKER_TEXT_CONFLICT": 1,
+    "NONCOMMON_OR_UNINTERPRETED_TITLE_OBSERVATION": 281,
+    "NO_INLINE_COVER_FACTS": 130,
+    "NO_SECURITY_CLASS_FACTS": 41,
+    "UNRESOLVED_ENTITY_SCOPE": 83,
+    "UNRESOLVED_TITLE_OR_SYMBOL": 32
+  },
+  "counts": {
+    "candidate_rows": 207,
+    "ccm_date_compatible_at_acceptance": 207,
+    "ccm_date_incompatible_at_acceptance": 0,
+    "ccm_relation_OPEN_MARKER_BOUNDS_UNRESOLVED_CANDIDATE": 207,
+    "names_descriptor_covers_acceptance": 192,
+    "names_descriptor_does_not_cover_acceptance": 15
+  },
+  "filing_counts_by_observation_status": {
+    "LEXICAL_TICKER_AND_CLASS_TOKEN_TEXT_MATCH": 8,
+    "LEXICAL_TICKER_MATCH_CLASS_UNSPECIFIED": 51,
+    "LEXICAL_TICKER_TEXT_CONFLICT": 1,
+    "NONCOMMON_OR_UNINTERPRETED_TITLE_OBSERVATION": 31,
+    "NO_INLINE_COVER_FACTS": 130,
+    "NO_SECURITY_CLASS_FACTS": 40,
+    "UNRESOLVED_ENTITY_SCOPE": 14,
+    "UNRESOLVED_TITLE_OR_SYMBOL": 10
+  },
+  "final_period_opened": false,
+  "human_reviews_created": 0,
+  "market_returns_read": false,
+  "private_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+  "schema_version": 1,
+  "scope": "Existing207filing candidate metadata and class-observation JSON only. Status counts per filing may overlap. No market values, new links or approvals.",
+  "source_approvals": 0
+}

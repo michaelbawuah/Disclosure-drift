@@ -1,0 +1,53 @@
+{
+  "aggregate_sha256": "5001c0c6fd7794f1bd84640538641981919e897e71f70541a017ba1b8a5cfe9f",
+  "code_commit": "710fa6833055c13224805bf28dbb445f24af976d",
+  "code_sha256": {
+    "scripts/build_historical_foundation.py": "279833b42d6b2898e62a1a66024d8ed80258661706257aa85c4626e9000a4f07",
+    "src/disclosure_research/historical_foundation.py": "faf4230b8ddc52080956d9d0bc6ddf1cc1fd80e49edb481662a2376d23c14b5a",
+    "src/disclosure_research/sec_class_observations.py": "9f9b2834ad31a093658b3b5e370e5472fabebfa5aff7f068423857264b9b2537"
+  },
+  "completed_at_utc": "2026-10-11T10:38:20.651697+00:00",
+  "elapsed_seconds": 48.39352,
+  "final_period_opened": false,
+  "human_reviews_created": 0,
+  "market_returns_read": false,
+  "original_sec_bytes_reread_on_mac": false,
+  "output_directory": "data/private/historical-foundation/development-v1",
+  "output_tables": {
+    "annual_foundation": {
+      "bytes": 7902561,
+      "parts": 128,
+      "rows": 87405
+    },
+    "filing_candidate_corroboration": {
+      "bytes": 418735,
+      "parts": 4,
+      "rows": 207
+    },
+    "filing_coverage": {
+      "bytes": 25153,
+      "parts": 1,
+      "rows": 215
+    },
+    "liquidity_only_coverage": {
+      "bytes": 106668,
+      "parts": 2,
+      "rows": 1341
+    }
+  },
+  "private_modes_verified": true,
+  "protected_files_sha256": {
+    "configs/protocol.json": "464b0c606830926e761490ae219f9b436957e7950d78a1bcf4b8aa7785874dd8",
+    "configs/protocol.lock.json": "350fd9dc3746261ba0529f986a436e287db9a998a33d5d66034d7b94d37931be",
+    "reports/filing_review/assistant/receipt.json": "5dc94cc2345167b843716f50fd74a960f468e29b981f3702819cacb4acf49def",
+    "reports/review_progress/user_arithmetic_receipt.json": "083483f6b281c7e44342cf5971ae3c89254dba5dc21b9426d7ee3b52f7904263"
+  },
+  "protected_files_unchanged": true,
+  "receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+  "schema_version": 1,
+  "source_approvals": 0,
+  "source_code_unchanged": true,
+  "started_at_utc": "2026-10-11T10:37:32.257536+00:00",
+  "status": "HISTORICAL_FOUNDATION_MAC_EXECUTION_COMPLETED",
+  "working_tree_clean": true
+}

@@ -6,6 +6,62 @@ which identity and source gaps affect otherwise usable securities and preserve
 the original evidence for each filing candidate. It produces private evidence
 tables and an aggregate report; it does not construct a forecasting dataset.
 
+## Measured development result
+
+The actual Mac execution completed on **October 11, 2026 at 10:38:20 UTC** in
+**48.393520 seconds**, using code commit
+`710fa6833055c13224805bf28dbb445f24af976d`. It retained **87,405 annual security
+observations**, comprising all **86,064 identity rows** and **1,341 additional
+liquidity-only rows**. Of those additional rows, **490** meet the numerical
+liquidity minimum; an inner join would have hidden this coverage gap.
+
+The [aggregate results](../reports/historical_foundation_aggregate.json) and
+[execution record](../reports/historical_foundation_execution.json) bind the
+actual inputs, output hashes, row counts, code and protected prior reviews.
+The existing **100,261 Names/CCM relationships** and **110,124 CCM source
+occurrences** were verified. No relationships were silently replaced.
+
+Among **50,230 provisionally rank-eligible annual observations**:
+
+| Existing identity evidence | Annual observations |
+|---|---:|
+| One candidate with a usable current-header CIK; historical confirmation still needed | 46,359 |
+| One candidate with missing or unsupported header CIK | 1,315 |
+| Multiple or ambiguous candidate evidence | 2,489 |
+| Dated context only; no January 1 candidate | 37 |
+| No related CCM record | 30 |
+| **Total** | **50,230** |
+
+The last four categories total **3,871 (7.71%)**. The remaining 46,359 are not
+historically approved. Across the entire eligible group, **21,315** have only
+finite candidate bounds, **28,848** have unresolved candidate bounds, and **67**
+have no January 1 candidate. Even the **19,091** observations combining a single
+usable header CIK with finite bounds still require the missing historical facts.
+
+All **215 original filings** remain accounted for: **207 existing discoveries**
+are bound to original SEC report evidence and **eight original Exxon filings**
+remain unmatched. The [discovery diagnostics](../reports/historical_foundation_discovery_diagnostics.json)
+show that **15 of 207** saved January 1 Names descriptors do not cover the later
+filing acceptance date. All 207 CCM acceptance-date relations are candidates
+with unresolved open-end markers; date compatibility does not establish a
+resolved interval.
+
+The class analysis retains **627 class-observation records**, including **130
+explicit no-inline-fact placeholders** and **59** records with literal ticker
+support (eight also have a matching explicit class token). One record has a
+literal ticker-text difference. These records are not approved security links.
+Filing-level status counts and evidence-gap flags
+can overlap. No absence of inline cover facts is treated as an identity exclusion.
+
+The sole ticker-text difference is explained by a
+[source-byte check of Tesla's original tag](../reports/tesla_symbol_clarification.json):
+it contains one leading line feed before `TSLA`. The saved strict comparison
+remains unchanged. This is a formatting explanation, not a new mapping decision.
+
+The complete verification passed **949 tests**, Ruff, the frozen-protocol check
+and the full synthetic study. The latter uses invented outcomes and supplies no
+empirical score. See the [verification record](../reports/historical_foundation_verification.json).
+
 ## Inputs and reproducible execution
 
 The development execution uses these exact saved inputs:
