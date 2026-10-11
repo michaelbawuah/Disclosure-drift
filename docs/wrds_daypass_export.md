@@ -347,25 +347,25 @@ including extra early dates, remain unchanged. Independent-export provenance,
 vendor execution, release/vintage, completeness and return conventions remain
 unverified; the receipt records `model_ready: false` and zero source approvals.
 
-### Remaining staging work
+### Development processing and remaining source reviews
 
-The offline `stage-crsp` command already consumes the ten-field stock contract
-(`PERMNO`, `HdrCUSIP`, `Ticker`, `PERMCO`, `DlyCalDt`, `DlyDelFlg`, `DlyCap`,
-`DlyRet`, `DlyRetMissFlg`, and `vwretd`), allowing additional CSV columns, and a
-Names CSV with at least `permno`, `permco`, `secinfostartdt`, `secinfoenddt`, and
-`siccd`. See [the staging guide](crsp_staging.md). It hashes the original bytes,
-checks development dates before interpreting returns, validates unique daily
-keys and dated Names matches, and keeps research approval gates unresolved.
+The full manual-export route now has working source, numerical, annual listing
+and liquidity consumers. Their completed Mac runs are recorded in the
+[execution update](../reports/RESEARCH_EXECUTION_UPDATE.md). The large daily
+exports have already been processed locally; their size does not require an
+upload to chat or another download.
 
-These are the minimum adaptations needed after the manual source schema is
-confirmed:
+The separate ten-field `stage-crsp` command remains the original pilot route
+described in [the pilot staging guide](crsp_staging.md). Use the manual-export
+consumers below for the preserved full-development inventories.
 
-| Component | Current behavior | Required adaptation for full manual exports |
+| Component | Completed implementation | Source work still required |
 |---|---|---|
-| Manual source inventory | Offline daily, Names, combined CCM/company and independent-market CSV/gzip inventories preserve bytes and report aggregate checks | Add supported query/release evidence and reconcile completeness across all batches and source families |
-| Full-population daily staging | Reads the entire CSV into memory; accepts only known `NA` return flags | Stream/partition large files and review dictionary-defined missing codes, with explicit exclusions or unresolved records rather than zero filling |
-| Independent benchmark | Raw two-field market inventory is implemented; existing staging still derives `vwretd` from stock rows | Verify market-source meaning, normalize its documented fields and reconcile overlapping values without deleting post-terminal benchmark sessions |
-| Historical universe | Requires normalized Parquet inputs | Map dated Names classifications, liquidity conventions and reviewed historical CIK links explicitly; preserve raw headers and source bounds |
+| Manual source inventory | Offline daily, Names, combined CCM/company and independent-market inventories preserve bytes and report aggregate checks | Add supported query/release evidence and establish source-population completeness |
+| Full-development source stage | [Streaming source stage](wrds_manual_stage.md) preserves the required 13 daily fields and independent market source, with hashes, record ordinals and complete date checks | Review source definitions, query provenance and historical availability |
+| Numerical candidates | [Bounded monthly conversion](wrds_manual_candidates.md) accounts for repeated records and conflicting keys, with explicit missing/withheld return, capitalization and price-volume candidates | Review normalization conventions and unresolved flags before empirical use |
+| Independent benchmark | [Exact benchmark audit](wrds_benchmark_audit.md) compares the independent export with the stock-attached values; 52 dates remain unresolved in the completed run | Explain and reconcile the source differences; preserve independent benchmark sessions after terminal stock events |
+| Annual listing and liquidity candidates | [Dated Names snapshots](wrds_listing_candidates.md) and [60-session liquidity coverage](wrds_liquidity_candidates.md) preserve evidence and produce provisional security ranks | Resolve dated classifications, historical CIK links, availability and issuer/share-class selection before building the approved universe |
 
 The online exporter's `verify` and `assemble` commands require its own
 query-bound export plans and receipts. They are **not** validators for arbitrary
