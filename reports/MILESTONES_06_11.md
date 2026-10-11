@@ -1,6 +1,6 @@
 # Milestones 6–11: implementation and empirical progress
 
-**Date:** October 10, 2026
+**Updated:** October 11, 2026 (UTC)
 
 **Researcher:** Michael Baffour Awuah
 
@@ -10,7 +10,8 @@ not complete. Development daily exports now cover the required source dates,
 and Names, combined CCM/company metadata and the independent benchmark are saved
 locally. The development source projection completed across all 3,103 expected
 sessions, and the revised numerical build produced 22,588,059 provisional
-candidate rows, with 52 benchmark dates still unreconciled. Security-universe
+candidate rows. Annual liquidity processing also completed, yielding 50,230
+provisional security ranks; 52 benchmark dates remain unreconciled. Security-universe
 completeness, approved normalization and required source judgments remain
 outstanding. The user's 20/20 numerical review is complete.
 
@@ -25,7 +26,7 @@ in 2022–2025, and paired three-/six-month reference-month blocks.
 | Milestone | Delivered | Empirical requirement still open |
 |---|---|---|
 | **6: pilot checkpoint** | 215 source-verified filings / 180 pairs; 104 pairs in 2019–2021 meet the count criterion; user's 20/20 numerical review recorded; descriptive exhibits, source examples and audited controls-smoke command | Reviewed identities, source availability and remaining filing/trace judgments; real controls smoke; independent person's reproduction |
-| **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; completed source projection across all 3,103 expected sessions; 22,588,059 distinct provisional numerical rows; 86,064 dated Names snapshots; formal benchmark discrepancy audit; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Resolve 52 benchmark discrepancy dates; complete provisional liquidity processing; verify security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
+| **7: full dataset** | Historical year-start selector; resumable WRDS exporter and offline manual inventories; locally preserved development daily, Names, CCM/company and market exports; completed source projection across all 3,103 expected sessions; 22,588,059 distinct provisional numerical rows; 86,064 dated Names snapshots; formal benchmark discrepancy audit; completed annual liquidity coverage and 50,230 provisional security ranks; universe-bound SEC ingestion; audited assembly; separated final features/targets and exclusions | Resolve 52 benchmark discrepancy dates; verify security-universe completeness, reviewed normalization, source vintage/availability and historical CIK links; predecessor filings; additional full-sample 30-pair filing audit; explained full-sample coverage |
 | **8: development and freeze** | Eight primary configurations over six development folds; six ablation subsets; actual MiniLM execution on 155 real filings / 135 pairs with full token coverage and numerical checks; code/data/review/selection freeze | Approved empirical development, human semantic example review, and a freeze of actual choices/evidence |
 | **9: final evaluation** | Four annual mature-label refits; paired incremental R-squared; 2,000-draw three-/six-month intervals; exact prediction artifacts; durable access ledger and changed-freeze refusal | Execute the approved freeze on the actual 2022–2025 observations; report the measured result |
 | **10: robustness** | Year/month/leave-one-year-out diagnostics; fixed size/industry groups; six frozen ablations; source-linked failures; independent delay rebuild APIs; descriptive paragraph comparison; verified-run orchestration | Execute all declared checks on empirical predictions and independently rebuilt delay data; inspect real cases; interpret limitations |
@@ -200,8 +201,23 @@ decimals and 47/52 at five; all remain unequal at six or more tested decimals.
 No tolerance or replacement is accepted; reconciliation and explanation remain
 false. These findings and the annual Names counts are detailed in the
 [execution update](RESEARCH_EXECUTION_UPDATE.md#completed-formal-benchmark-audit).
-Annual provisional liquidity/rank processing remains pending and will create
-no approved universe by itself.
+The [annual liquidity consumer](../docs/wrds_liquidity_candidates.md) is
+published as `ae4e0c` after 41 focused tests, independent code review and passing
+CI. Its actual run completed at `2026-10-11T00:10:00.938349Z` in **113.1 seconds**
+with exit status 0. It produced **87,405 security/year records** in 22 annual-table
+parts totaling 4,943,947 bytes, while preserving exact copies of all 86,064 Names
+snapshots. All twelve annual windows have 60 globally covered XNYS sessions;
+**84,530 records meet the 40-valid-session numerical minimum**, and **50,230**
+also satisfy provisional security-rank conditions. These are annual records,
+not distinct longitudinal securities or approved issuer memberships.
+
+The run performs no issuer grouping or 500-issuer selection. Both historical
+availability fields remain null for every annual row; the 52 benchmark dates
+remain unreconciled, source approvals remain zero, and no forecasts or final
+access were created. See the
+[annual results and receipt binding](RESEARCH_EXECUTION_UPDATE.md#completed-annual-provisional-liquidity-processing)
+for the year-by-year counts. The remaining empirical requirements below are
+unchanged.
 
 ## Exact next empirical step
 

@@ -1,4 +1,4 @@
-# Research execution update — October 10, 2026
+# Research execution update — October 11, 2026 (UTC)
 
 This execution advanced three previously open tasks: the planned pilot now has
 enough 2019–2021 pairs, the actual semantic checkpoint has run on real SEC text,
@@ -10,6 +10,8 @@ source projection has now run successfully across all requested sessions; its
 exact benchmark comparison identified 52 dates that remain unreconciled. The
 revised numerical build also completed, producing 22,588,059 distinct
 provisional candidate rows without creating an approved forecasting dataset.
+Annual liquidity processing has now produced 87,405 security/year records,
+including 50,230 provisional security ranks.
 
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
@@ -34,6 +36,7 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Build provisional development numerics | **22,588,059 distinct 13-field candidate rows; 5,054 repeated-record excesses; zero conflicting security/date keys**. Return, capitalization and price-volume candidates remain unapproved | [Numerical candidate contract](../docs/wrds_manual_candidates.md); private `development-v2` receipt for code `0d555a3`, completed `2026-10-10T23:53:20.954933Z` |
 | Build dated Names evidence | **86,064 annual record/year snapshots; 50,777 narrow ordinary-corporate-common candidates; zero ambiguous security/year groups**. Every `known_at` remains null | [Listing-candidate contract](../docs/wrds_listing_candidates.md); private production receipt for code `1418e0e`, completed `2026-10-10T23:55:34.077882Z` |
 | Audit the benchmark discrepancies | The formal audit confirms **52 dates**, each with an absolute decimal difference of **0.000001**; source cause and reconciliation remain unresolved | Private benchmark-audit receipt for code `1418e0e`, completed `2026-10-10T23:56:11.211984Z` |
+| Execute annual liquidity processing | **87,405 security/year records; 84,530 meet the numerical minimum; 50,230 receive provisional security ranks**. No issuer grouping or 500-issuer selection | [Liquidity-candidate contract](../docs/wrds_liquidity_candidates.md); private production receipt for code `ae4e0c`, completed `2026-10-11T00:10:00.938349Z` |
 | Verify the software | Recorded verification baseline: **444 tests passed; Ruff passed; complete synthetic study completed**. New source, numerical-candidate, Names and benchmark commits passed their focused tests and CI; no updated whole-repository test total is claimed | [Recorded verification](execution_verification.json); [source-processing CI run](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38096427112) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
@@ -280,9 +283,61 @@ storage precision, a rounding rule, source vintage, or the cause of disagreement
 These comparisons are diagnostics only. **No tolerance was accepted**, and
 reconciliation and `discrepancy_explained` remain false. There was no benchmark
 replacement or fallback, no inferred individual-stock return error, and no new
-source approval or model-ready claim. Annual provisional liquidity/rank
-processing is the next computable source step; its feature and production
-results are still pending.
+source approval or model-ready claim.
+
+### Completed annual provisional liquidity processing
+
+The [annual liquidity consumer](../docs/wrds_liquidity_candidates.md) is
+published in `ae4e0c4456706c810f6a2863ee4fd9e364b8a477`, following **41 focused
+tests**, independent code review and a passing
+[CI run](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38097330436).
+Its actual run completed from `2026-10-11T00:08:07.835069Z` to
+`2026-10-11T00:10:00.938349Z`: **113.1 seconds**, exit status **0**. The private
+bundle is `data/private/wrds-liquidity-candidates/development-v1`; its receipt
+SHA-256 is `0be9983b192e2d15a32abe5c29240638d75fcfd639e19cbacb12ed48d977ce20`.
+
+The annual table contains **87,405 security/year records** in **22 parts**
+totaling **4,943,947 bytes**. Exact copies of the 18 Names detail parts preserve
+all **86,064 Names snapshots**. Each of the twelve annual windows has all
+**60 expected XNYS sessions globally covered**; individual securities can still
+have absent or withheld observations. At least **40 numerically valid sessions**
+are required for the numerical minimum. Provisional rank eligibility also
+requires the unambiguous narrow ordinary-common Names predicate.
+
+| Selection year | Observed security/year records | Meet numerical minimum | Provisional security ranks |
+|---|---:|---:|---:|
+| 2010 | 6,804 | 6,515 | 4,447 |
+| 2011 | 6,817 | 6,558 | 4,315 |
+| 2012 | 6,899 | 6,678 | 4,191 |
+| 2013 | 6,881 | 6,639 | 4,089 |
+| 2014 | 6,978 | 6,735 | 4,067 |
+| 2015 | 7,257 | 7,026 | 4,224 |
+| 2016 | 7,419 | 7,224 | 4,233 |
+| 2017 | 7,360 | 7,158 | 4,099 |
+| 2018 | 7,462 | 7,219 | 4,051 |
+| 2019 | 7,654 | 7,461 | 4,132 |
+| 2020 | 7,773 | 7,551 | 4,122 |
+| 2021 | 8,101 | 7,766 | 4,260 |
+| **Total** | **87,405** | **84,530** | **50,230** |
+
+These totals count **security/year records**, not distinct securities across
+the full period or approved issuers. The observed annual union includes 39
+Names-only records and 1,341 daily-only records; missing source coverage remains
+visible. Of 50,777 ordinary listing candidates, 50,230 satisfy provisional rank
+conditions. Repeated source records never weight the mean, and missing sessions
+are never filled with zero. Detailed session and classification breakdowns
+remain in the private receipt.
+
+Ranks compare observed securities; they do not group share classes by issuer
+or apply the final 500-issuer limit. Both `known_at` and `available_at` remain
+null for all **87,405** rows. Benchmark reconciliation remains false, and this
+processing creates no historical CIK link, approved universe, source approval,
+forecast or final-period access. The completed 20/20 arithmetic review is
+unchanged.
+
+A final local check confirmed private directories and read-only files across
+the five completed processing bundles, `model_ready: false` and zero source
+approvals in every receipt, and no `data/private` files tracked in Git.
 
 ## What happens next
 
