@@ -1,0 +1,164 @@
+{
+  "annual_dictionary": {
+    "dictionary_content_observed": false,
+    "login_attempted": false,
+    "observed_final_url": "https://wrds-www.wharton.upenn.edu/login/?next=/data-dictionary/crsp_a_stock/",
+    "url": "https://wrds-www.wharton.upenn.edu/data-dictionary/crsp_a_stock/"
+  },
+  "benchmark_discrepancies_newly_explained": 0,
+  "bounded_stop_reason": "Official catalog identifies the annual product, advertised dictionary requires sign-in, and the complete retrieved manuals contain no exact WRDS view or alias identifiers. No view definition, saved-export vintage, or concrete numeric expression was obtained.",
+  "contract_or_code_changed": false,
+  "created_at_utc": "2026-10-11T15:29:00.175074+00:00",
+  "data_queries_run": false,
+  "existing_private_packet_metadata_recheck": {
+    "expected_schema_view_and_columns_present": true,
+    "market_csv_sha256": "dcc1dae8e0ceaab6e22635c6144002424fe052bf16bbb9f2e336431287e0ada7",
+    "market_inventory_receipt_sha256": "d06ea38c6b8a75eb41af7a7ecfc46c7f30987262d97090d08572b01ad7356ed8",
+    "market_observed_rows": 3103,
+    "market_sql_bytes": 260,
+    "market_sql_sha256": "2351cc54ebf4bec297122c6990883a2b6a6167ba8cd303ed2a1f014b69166113",
+    "metadata_recheck_process_exit_code": 0,
+    "native_field_dlytotret_present": false,
+    "native_index_literal_1000200_present": false,
+    "original_csv_or_mismatch_rows_opened": false,
+    "receipt_sha256": "527d04bb6760be5b692a6fcecd9e459612408ffa9055fe83e7c51398dd505294",
+    "source_evidence_sha256": "cd4982d292f3c63cb83b6a5647444d30cfba97dccbf3e3e08bd874cbb500d401",
+    "source_evidence_sql_and_inventory_snapshot_manifest_bindings_verified": 3,
+    "sources_still_missing_verified_release_and_schema": 5
+  },
+  "historical_availability_inferred": false,
+  "manual_search": [
+    {
+      "exact_identifier_case_insensitive_occurrences": {
+        "WRDS": 0,
+        "crsp_a_stock": 0,
+        "crspa": 0,
+        "vwretd": 0,
+        "wrds_dailyindexret_query": 0,
+        "wrds_dsfv2_query": 0
+      },
+      "text_bytes": 518476,
+      "text_file": "outputs/benchmark-research-20261011/current-ciz-guide.txt",
+      "text_sha256": "0db2aaf31c67f78701957ba5551a7c9758996c92a440c52e7e1a5fab1b345ed0"
+    },
+    {
+      "exact_identifier_case_insensitive_occurrences": {
+        "WRDS": 0,
+        "crsp_a_stock": 0,
+        "crspa": 0,
+        "vwretd": 0,
+        "wrds_dailyindexret_query": 0,
+        "wrds_dsfv2_query": 0
+      },
+      "text_bytes": 131253,
+      "text_file": "outputs/benchmark-research-20261011/CRSP_US_Stock_Databases_Cross_Reference_Guide_for_Legacy_FIZ_SIZ_to_CIZ.txt",
+      "text_sha256": "2424b7b014b8230dff42f65d2a2b62eaf53b1e9e07998300b8eaff307493767a"
+    },
+    {
+      "exact_identifier_case_insensitive_occurrences": {
+        "WRDS": 0,
+        "crsp_a_stock": 0,
+        "crspa": 0,
+        "vwretd": 0,
+        "wrds_dailyindexret_query": 0,
+        "wrds_dsfv2_query": 0
+      },
+      "text_bytes": 61828,
+      "text_file": "outputs/benchmark-research-20261011/CRSP_US_Stock_Databases_Calculations_and_Index_Methodologies_Guide.txt",
+      "text_sha256": "fb064bc599b718176df828998d6626bbd42ce8314d27f26ad720a972c2821822"
+    }
+  ],
+  "messages_to_vendor_sent": false,
+  "new_primary_fact": {
+    "catalog_product_title": "CRSP Stock (Annual)",
+    "catalog_timestamp_used_as_export_vintage": false,
+    "catalog_update_timestamp_literal": "July 16, 2026, 4:01 p.m.",
+    "html_byte_anchor_occurrences": {
+      "/data-dictionary/crsp_a_stock/": [
+        111491,
+        206126
+      ],
+      "CRSP Stock (Annual)": [
+        109973,
+        111126,
+        206318
+      ]
+    },
+    "locator": "First data product details block reached from /data-dictionary/crsp_a_stock/, title CRSP Stock (Annual).",
+    "schema": "crsp_a_stock",
+    "scope": "Current schema-to-product catalog label only; neither a WRDS view definition nor proof that the saved CSV used the current release.",
+    "source_id": "wrds_crsp_vendor_catalog",
+    "timestamp_timezone_known": false,
+    "update_frequency": "Annually"
+  },
+  "public_retrievals": [
+    {
+      "bytes": 303724,
+      "download_completed_at_utc": "2026-10-11T15:27:07.322411+00:00",
+      "download_started_at_utc": "2026-10-11T15:27:00.006738+00:00",
+      "file": "wrds_crsp_vendor_catalog.html",
+      "final_url": "https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/center-for-research-in-security-prices-crsp/",
+      "http_status": 200,
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "303724",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 11 Oct 2026 15:27:07 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "sha256": "eca0112df9e3e6374219ad59458947f193b677d249a2629ed6d8bc386511c922",
+      "source_id": "wrds_crsp_vendor_catalog",
+      "url": "https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/center-for-research-in-security-prices-crsp/"
+    },
+    {
+      "bytes": 47164,
+      "download_completed_at_utc": "2026-10-11T15:27:12.349642+00:00",
+      "download_started_at_utc": "2026-10-11T15:27:07.323626+00:00",
+      "file": "wrds_crsp_changes.html",
+      "final_url": "https://wrds-www.wharton.upenn.edu/pages/data-announcements/changes-to-crsp-data/",
+      "http_status": 200,
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "47164",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 11 Oct 2026 15:27:12 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "sha256": "dcae24879cbc79bf504a3129c9133bffacf5289934a89775135a78123c7cbb96",
+      "source_id": "wrds_crsp_changes",
+      "url": "https://wrds-www.wharton.upenn.edu/pages/data-announcements/changes-to-crsp-data/"
+    },
+    {
+      "authentication_attempted": false,
+      "bytes": 40666,
+      "dictionary_content_retrieved": false,
+      "download_completed_at_utc": "2026-10-11T15:28:01.812457+00:00",
+      "download_started_at_utc": "2026-10-11T15:27:51.514106+00:00",
+      "file": "wrds_annual_dictionary_sign_in_response.html",
+      "final_url": "https://wrds-www.wharton.upenn.edu/login/?next=/data-dictionary/crsp_a_stock/",
+      "http_status": 200,
+      "response_metadata": {
+        "Content-Encoding": null,
+        "Content-Length": "40666",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 11 Oct 2026 15:28:01 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "sha256": "032156975eb25240397aacacde58781d1e685876abce0768e4be6fb777ae47cc",
+      "source_id": "wrds_annual_dictionary_sign_in_response",
+      "url": "https://wrds-www.wharton.upenn.edu/data-dictionary/crsp_a_stock/"
+    }
+  ],
+  "remaining_requirements": [
+    "An applicable definition of crsp_a_stock.wrds_dailyindexret_query.vwretd tying it to a base relation, native index identifier, DlyTotRet, and the actual typed expression.",
+    "A documented crsp and crspa alias-to-schema relationship applicable to the saved queries; a current annual product label is not that alias binding.",
+    "Release/schema applicability and extraction evidence connecting the definition to the preserved SQL, inventory receipt, and CSV bytes.",
+    "For explaining discrepancies specifically: the corresponding wrds_dsfv2_query benchmark expression, cast/format/serializer paths, source revisions, and bound reproduction."
+  ],
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "status": "ANNUAL_SCHEMA_PRODUCT_LABEL_CONFIRMED_EXPORT_VIEW_NATIVE_MAPPING_UNRESOLVED"
+}

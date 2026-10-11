@@ -1,0 +1,392 @@
+{
+  "aggregate": {
+    "audit_program_sha256": "b3740d8bd458d5ea1e65751fedd7c69249da6173610d7a7316eb704bcc5fbcea",
+    "available_at_inferred": false,
+    "candidate_coverage": {
+      "date_point_to_source_record_occurrences": 656,
+      "distinct_original_names_records_used_at_points": 3,
+      "filing_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "filings": 8,
+      "global_raw_cusip_literal_records": 9,
+      "point_status_counts": {
+        "UNIQUE_RECORD": 656
+      },
+      "point_status_counts_by_role": {
+        "acceptance": {
+          "UNIQUE_RECORD": 8
+        },
+        "control": {
+          "UNIQUE_RECORD": 480
+        },
+        "label": {
+          "UNIQUE_RECORD": 160
+        },
+        "reference": {
+          "UNIQUE_RECORD": 8
+        }
+      },
+      "points_before_corresponding_public_sec_acceptance_calendar_date": 379,
+      "raw_identifier_disagreement_occurrences": 0,
+      "recorded_lifetime_failure_occurrences": 0,
+      "requested_points": 656,
+      "retained_original_names_history_records": 13,
+      "selection_identifier_disagreement_occurrences": 0,
+      "selection_lifetime_failure_occurrences": 0,
+      "selection_points": 8,
+      "selection_status_counts": {
+        "UNIQUE_RECORD": 8
+      }
+    },
+    "ccm_source_bytes": 51241262,
+    "ccm_source_sha256": "f24e768da9c4417ef386d7c75bec9931c059bcebcd22d23b88d37a08da9dc03a",
+    "checks_passed": {
+      "all_annual_candidate_rows_retained": 1,
+      "all_related_annual_pairs_retained": 1,
+      "all_sixteen_public_originals_bound": 1,
+      "all_touched_names_occurrences_retained": 1,
+      "complete_ccm_source_count": 1,
+      "complete_eight_filing_82_point_accounting": 1,
+      "complete_names_source_count": 1,
+      "consumed_source_identity_unchanged": 266,
+      "consumed_source_rehash_unchanged": 266,
+      "different_header_cik_in_original_ccm": 1,
+      "eight_public_pilot_pairs": 1,
+      "every_ccm_candidate_all_12_raw_fields": 110124,
+      "every_ccm_candidate_original_ordinal": 110124,
+      "every_ccm_cik_grammar": 110124,
+      "every_ccm_full_delivered_row_hash": 110124,
+      "every_names_candidate_all_24_raw_fields": 86064,
+      "every_names_candidate_original_ordinal": 86064,
+      "execution_commit_unchanged": 1,
+      "foundation_identity_binding": 1,
+      "frozen_82_point_boundary": 8,
+      "frozen_pilot_acceptance_window": 8,
+      "frozen_protocol": 1,
+      "full_ccm_exact_header": 1,
+      "full_ccm_record_width": 110124,
+      "full_names_exact_header": 1,
+      "full_names_finite_date": 764192,
+      "full_names_ordered_intervals": 191048,
+      "full_names_record_width": 191048,
+      "header_literal_in_correct_role": 32,
+      "identity_original_ccm_binding": 1,
+      "identity_part_actual_row_count": 98,
+      "identity_table_complete_count": 6,
+      "identity_table_fields_consistent": 98,
+      "input_file_hash": 266,
+      "input_file_size": 266,
+      "input_stable_during_hash": 266,
+      "manifest_path_inside_bundle": 237,
+      "new_private_output": 1,
+      "original_2020_rank_candidate_only": 1,
+      "original_exxon_status_preserved": 1,
+      "original_header_role_block": 16,
+      "original_manifest_accounting": 1,
+      "original_pilot_manifest_binding": 8,
+      "original_public_literal_anchor": 96,
+      "original_unmatched_exxon_accounting": 1,
+      "part_manifest_row_accounting": 10,
+      "pilot_cik_absent_in_full_saved_ccm": 1,
+      "positive_candidate_identifier_grammar": 1,
+      "public_acceptance_clock": 8,
+      "public_issuer_class_cusip": 8,
+      "public_ledger_input_binding": 1,
+      "public_source_precedes_pilot": 8,
+      "related_pair_date_rule": 24,
+      "related_pair_exact_identifier_comparison": 24,
+      "related_pair_preserves_original_cik": 24,
+      "safe_manifest_path": 237,
+      "single_original_selection_candidate": 8,
+      "unique_public_pilot_pair": 8,
+      "unknown_availability_no_approval": 382947,
+      "xom_original_names_observation": 1
+    },
+    "class_decisions_created": 0,
+    "consumed_files_rechecked": 266,
+    "continuous_cik_intervals_inferred": false,
+    "current_header_diagnosis": {
+      "all_related_pairs_have_exact_raw_names_ccm_identifiers": true,
+      "date_relation_counts": {
+        "BEFORE_SELECTION_CONTEXT": 12,
+        "OPEN_MARKER_BOUNDS_UNRESOLVED_CANDIDATE": 12
+      },
+      "diagnostic_cause": "The saved current-header CIK differs from the historical pilot issuer CIK; no source CCM row contains the pilot CIK. The original matching rule preserves this distinction.",
+      "full_ccm_source_rows": 110124,
+      "full_source_rows_with_original_pilot_cik": 0,
+      "original_2020_rank_eligible_names_candidates": 1,
+      "original_pilot_filer_cik": "0000034088",
+      "related_annual_candidate_records": 12,
+      "related_annual_relationships": 24,
+      "related_original_ccm_records": 2,
+      "saved_related_header_cik": "0002115436"
+    },
+    "daily_market_files_opened": false,
+    "exclusions_approved": 0,
+    "execution_commit": "875ace6a39542998bce151895cba9dd447c379c4",
+    "final_period_opened": false,
+    "foundation_receipt_sha256": "9162a16107fca15233400cb8cfc1e56fad61de541c5586fc6d54ac49f9493c7d",
+    "historical_cik_links_created": 0,
+    "human_reviews_created": 0,
+    "identity_receipt_sha256": "093605e17f0358bd6477899ea1a2e5995a6960124438c7fc5d0046c8ef784099",
+    "known_at_inferred": false,
+    "market_returns_read": false,
+    "model_ready": false,
+    "names_source_bytes": 26876522,
+    "names_source_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+    "original_discovery_rows_unchanged": 207,
+    "original_filing_coverage_rows_unchanged": 215,
+    "original_source_verification": {
+      "all_ccm_rows_compared_to_original_projection_and_full_row_hash": 110124,
+      "all_names_candidate_rows_compared_in_all_24_raw_fields": 86064,
+      "all_source_parts_bound_before_matching": true,
+      "foundation_part_count": 135,
+      "identity_part_count": 98,
+      "names_date_fields_per_row": 4,
+      "names_fields_per_row": 24,
+      "names_rows": 191048
+    },
+    "original_unmatched_exxon_filings_unchanged": 8,
+    "prior_arithmetic_review_modified": false,
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "public_identity_ledger_sha256": "9a0b4f64f71eebd8deee4820b59bb89ccde671a46967945d8192706917be4b2d",
+    "public_literal_projection": {
+      "authoritative_identifier_conversion": false,
+      "historical_cik_link_inferred": false,
+      "public_originals_independently_checked": 16,
+      "reported_cusip9": "30231G102",
+      "rule": "first eight literal characters",
+      "searched_cusip8": "30231G10"
+    },
+    "schema_version": 1,
+    "scope_limit": "Global literal CUSIP/date matches are saved descriptor candidates. They do not establish a continuous issuer/security relation, historical source availability, class approval, or an approved forecasting observation. The 2026 successor filing is separate explanatory context only.",
+    "source_approvals": 0,
+    "status": "EXXON_SAVED_HEADER_DIAGNOSIS_AND_LITERAL_CUSIP_CANDIDATES_NOT_APPROVED"
+  },
+  "available_at_inferred": false,
+  "class_decisions_created": 0,
+  "evidence_scope": "Public aggregate and provenance only. Licensed raw Names, CCM, candidate records, security identifiers and point-level match details remain in the immutable private Mac audit.",
+  "exclusions_approved": 0,
+  "execution": {
+    "aggregate_bytes": 6897,
+    "aggregate_sha256": "50ffbe692d6355ecd66af8a9a669cdf739faf0ab6d728ec710c047674585d3d4",
+    "audit_program": {
+      "bytes": 36898,
+      "path": "outputs/exxon-current-header-context-20261011/build_private_exxon_audit.py",
+      "private_preserved_copy": "input_receipts/audit_program.py",
+      "sha256": "b3740d8bd458d5ea1e65751fedd7c69249da6173610d7a7316eb704bcc5fbcea"
+    },
+    "commit": "875ace6a39542998bce151895cba9dd447c379c4",
+    "completed_at_utc": "2026-10-11T15:43:12.666863+00:00",
+    "exit_code": 0,
+    "observed_process_runtime_seconds": 6.58,
+    "platform": "Darwin",
+    "private_output": "data/private/identity-followup/exxon-v1",
+    "private_receipt_bytes": 4869,
+    "private_receipt_sha256": "3fca689b6e66d15e5b7a208544e6f5ca5ea3982bbabd3f5b2f675d11c3a0e514",
+    "started_at_utc": "2026-10-11T15:43:06.655803+00:00"
+  },
+  "final_period_2022_2025_returns_or_features_opened": false,
+  "final_period_opened": false,
+  "historical_cik_links_created": 0,
+  "human_reviews_created": 0,
+  "identity_context_filing_after_2021_read": true,
+  "interpretation_limits": [
+    "The eight original pilot filings remain unmatched in the original 207-discovery/215-filing ledger. The new descriptor candidate audit does not alter those results or create eight approved observations.",
+    "The eight-character query is an explicitly labeled literal projection of a CUSIP printed in the paired original SEC filing; no authoritative CUSIP conversion, CCM relationship, continuous CIK history or class selection is inferred.",
+    "379 of 656 point dates precede their paired same-year SEC corroboration acceptance date. This is a calendar comparison, not an assertion of public availability or absence of all earlier evidence.",
+    "The 2026 original successor filing explains the later registrant context. It is not information available at 2010\u20132021 selection dates and does not certify the saved vendor release or update procedure."
+  ],
+  "known_at_inferred": false,
+  "later_successor_context": {
+    "record": {
+      "empirical_features_or_labels_constructed": false,
+      "findings": {
+        "current_cik": "0002115436",
+        "form": "8-K12B",
+        "predecessor_name": "Exxon Mobil Corporation",
+        "primary_filing_accession": "0001193125-26-291990",
+        "recorded_acceptance_eastern": "2026-07-01T12:36:49-04:00",
+        "recorded_acceptance_utc": "2026-07-01T16:36:49+00:00",
+        "reported_reorganization_effective_date": "2026-07-01",
+        "successor_registrant_name": "ExxonMobil Holdings Corporation",
+        "summary": "The original July 1 filing reports completion of the redomiciliation, successor registration for Holdings, a one-for-one common-share exchange, and retention of the XOM trading symbol."
+      },
+      "historical_availability_inferred": false,
+      "historical_cik_links_created": 0,
+      "limitations": [
+        "This 2026 report supplies later corporate-identity context only. It is not evidence available at a 2010\u20132021 selection or filing date.",
+        "It does not certify when or how the saved CCM company-header CIK was updated, identify the saved vendor release, or approve a historical security link."
+      ],
+      "market_returns_read": false,
+      "original_header_anchors": {
+        "ACCEPTANCE-DATETIME": {
+          "byte_end_exclusive": 88,
+          "byte_start": 74,
+          "literal": "20260701123649"
+        },
+        "ACCESSION-NUMBER": {
+          "byte_end_exclusive": 127,
+          "byte_start": 107,
+          "literal": "0001193125-26-291990"
+        },
+        "CIK": {
+          "byte_end_exclusive": 368,
+          "byte_start": 358,
+          "literal": "0002115436"
+        },
+        "CONFORMED-NAME": {
+          "byte_end_exclusive": 352,
+          "byte_start": 328,
+          "literal": "ExxonMobil Holdings Corp"
+        },
+        "FILING-DATE": {
+          "byte_end_exclusive": 288,
+          "byte_start": 280,
+          "literal": "20260701"
+        },
+        "TYPE": {
+          "byte_end_exclusive": 140,
+          "byte_start": 134,
+          "literal": "8-K12B"
+        }
+      },
+      "primary_paragraph_locators": [
+        {
+          "claim_id": "completed_reorganization",
+          "paragraph_locators": [
+            {
+              "parsed_text_sha256": "5e5d5ac554e00e64870abf87b5e2270a0e90d5146769f4f9046dbe50d0f08f88",
+              "xpath": "/html/body/document/type/sequence/filename/description/text/center[2]/div/p[2]"
+            }
+          ]
+        },
+        {
+          "claim_id": "successor_registration",
+          "paragraph_locators": [
+            {
+              "parsed_text_sha256": "5e5d5ac554e00e64870abf87b5e2270a0e90d5146769f4f9046dbe50d0f08f88",
+              "xpath": "/html/body/document/type/sequence/filename/description/text/center[2]/div/p[2]"
+            },
+            {
+              "parsed_text_sha256": "4b969e4c88754613d248dd9a2c15839cb3dc619f73973aac95bb9b5e8cfca22a",
+              "xpath": "/html/body/document/type/sequence/filename/description/text/center[3]/div/p[1]"
+            }
+          ]
+        },
+        {
+          "claim_id": "one_for_one_common_share_exchange",
+          "paragraph_locators": [
+            {
+              "parsed_text_sha256": "f056c47a066fc514be4c81ac9af03e28d668e2eb7f8cfcbe13e0ab9903f00fe4",
+              "xpath": "/html/body/document/type/sequence/filename/description/text/center[2]/div/p[10]"
+            }
+          ]
+        },
+        {
+          "claim_id": "ticker_continuation",
+          "paragraph_locators": [
+            {
+              "parsed_text_sha256": "f056c47a066fc514be4c81ac9af03e28d668e2eb7f8cfcbe13e0ab9903f00fe4",
+              "xpath": "/html/body/document/type/sequence/filename/description/text/center[2]/div/p[10]"
+            }
+          ]
+        }
+      ],
+      "recorded_at_utc": "2026-10-11T15:43:49.941623+00:00",
+      "schema_version": 1,
+      "source_approvals_created": 0,
+      "sources": [
+        {
+          "bytes": 6939,
+          "download_completed_at_utc": "2026-10-11T15:33:35.021326+00:00",
+          "download_started_at_utc": "2026-10-11T15:33:27.930642+00:00",
+          "file": "current_cik_submissions.json",
+          "final_url": "https://data.sec.gov/submissions/CIK0002115436.json",
+          "http_status": 200,
+          "response_metadata": {
+            "Content-Length": "6939",
+            "Content-Type": "application/json",
+            "Date": "Sun, 11 Oct 2026 15:33:34 GMT",
+            "ETag": null,
+            "Last-Modified": null
+          },
+          "sha256": "1a6e901c794592b13da83675297ead1bffa210bbb6a016ee13e9d41a26b1eb56",
+          "source_url": "https://data.sec.gov/submissions/CIK0002115436.json"
+        },
+        {
+          "bytes": 38031,
+          "download_completed_at_utc": "2026-10-11T15:34:34.639391+00:00",
+          "download_started_at_utc": "2026-10-11T15:34:29.699767+00:00",
+          "file": "reorganization_primary.html",
+          "final_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/d71068d8k12b.htm",
+          "http_status": 200,
+          "response_metadata": {
+            "Content-Length": "38031",
+            "Content-Type": "text/html",
+            "Date": "Sun, 11 Oct 2026 15:34:34 GMT",
+            "ETag": null,
+            "Last-Modified": "Wed, 01 Jul 2026 16:37:14 GMT"
+          },
+          "sha256": "9ca958ea709ba234a6320b36f0bd78c3f010c658b8dcf783d7ada0a991d499ce",
+          "source_id": "reorganization_primary",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/d71068d8k12b.htm"
+        },
+        {
+          "bytes": 850,
+          "download_completed_at_utc": "2026-10-11T15:34:38.972242+00:00",
+          "download_started_at_utc": "2026-10-11T15:34:34.639448+00:00",
+          "file": "reorganization_header.sgml",
+          "final_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/0001193125-26-291990.hdr.sgml",
+          "http_status": 200,
+          "response_metadata": {
+            "Content-Length": "850",
+            "Content-Type": "text/sgml",
+            "Date": "Sun, 11 Oct 2026 15:34:38 GMT",
+            "ETag": "\"322d56ea9dfebd6bdfcc6d06cf5e9df8-gzip\"",
+            "Last-Modified": "Wed, 01 Jul 2026 16:37:14 GMT"
+          },
+          "sha256": "6315ca044e73e0885efb808a5741171d48ee680112dcb0e425715b6c4a9aa5ed",
+          "source_id": "reorganization_header",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/0001193125-26-291990.hdr.sgml"
+        },
+        {
+          "bytes": 9147,
+          "download_completed_at_utc": "2026-10-11T15:34:43.987692+00:00",
+          "download_started_at_utc": "2026-10-11T15:34:38.972292+00:00",
+          "file": "reorganization_index.html",
+          "final_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/0001193125-26-291990-index.html",
+          "http_status": 200,
+          "response_metadata": {
+            "Content-Length": "9147",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Date": "Sun, 11 Oct 2026 15:34:43 GMT",
+            "ETag": null,
+            "Last-Modified": "Wed, 01 Jul 2026 16:36:49 GMT"
+          },
+          "sha256": "6d75498f7c5a729c9fcf0ab92d7fd8c2523dfaf1909339f96217bd1cab0d96ba",
+          "source_id": "reorganization_index",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/0001193125-26-291990-index.html"
+        }
+      ],
+      "status": "ORIGINAL_SEC_LATER_SUCCESSOR_CONTEXT_ONLY"
+    },
+    "source_record_sha256": "1e88bb2aa424a62326ffbadaf3aa54dda9d37650ae4764433f57f4789411aee0",
+    "used_as_historical_2010_2021_knowledge": false,
+    "vendor_header_update_time_certified": false
+  },
+  "market_returns_read": false,
+  "model_ready": false,
+  "recorded_at_utc": "2026-10-11T15:46:41.438325+00:00",
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "status": "SAVED_EXXON_HEADER_DIAGNOSIS_AND_656_DATED_LITERAL_CUSIP_CANDIDATE_POINTS"
+}

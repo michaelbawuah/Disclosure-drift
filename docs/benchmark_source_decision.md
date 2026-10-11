@@ -106,6 +106,12 @@ bound in its retrieval ledger. This makes the intended native-series check
 specific; it does not yet bind either saved WRDS view to that series or explain
 any of the 52 discrepancies.
 
+The [subsequent public-catalog follow-up](benchmark_source_followup.md) confirms
+that WRDS labels `crsp_a_stock` as its annual stock product. Its advertised
+dictionary requires sign-in. This narrows the product identification but leaves
+the actual view expression, alias mapping and saved-export release unbound;
+zero discrepancy causes were resolved.
+
 ## Evidence needed for a decision
 
 | Review question | Required evidence and action before use |
