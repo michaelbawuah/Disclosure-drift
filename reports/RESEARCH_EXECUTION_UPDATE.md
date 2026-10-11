@@ -774,3 +774,9 @@ availability timestamps.
 The earlier eight-page progress PDF and four-page pilot PDF remain intact as the
 original 20-issuer snapshot. This update, the current
 [milestone record](MILESTONES_06_11.md), and the linked receipts describe the new work.
+
+## 11 October — Company History export intake prepared (synthetic-only)
+
+The WRDS variables catalog showed historical `HCIK` in `companyhistory` and `comphist` under CCM product names; opening the query link led to a separate WRDS login. An individual account request is pending institutional approval. **No Company History CSV was obtained.** The offline [source-intake contract](../docs/company_history_intake.md) now preserves an eventual manually authorized export with hash-bound field mapping, effective-interval checks, and competing-CIK examples. Its tests are synthetic, and its outputs retain empty historical `known_at`, zero source/identity approvals, `model_ready=false` and `final_period_opened=false`. The software milestone does not complete empirical milestone 5 or open milestones 6–11.
+
+The [published, aggregate-only synthetic checkpoint](company_history_intake_checkpoint.json) records the CLI validation (three invented rows, two effective-interval candidates), 30 independent overlap-sweep brute-force comparisons and the final full reproduction (Ruff, **1,019 passing tests**, complete synthetic study). Original invented rows, receipts and all prospective licensed exports remain under ignored private paths. The account is still pending, and zero new historical link approvals or real-data outcomes were created.

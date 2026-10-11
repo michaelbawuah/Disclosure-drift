@@ -1,0 +1,46 @@
+{
+  "checkpoint": "company_history_offline_intake_20261011",
+  "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+  "raw_licensed_company_history_data_in_repository": false,
+  "real_company_history_export_received": false,
+  "research_gates": {
+    "final_period_opened": false,
+    "historical_known_at_established": false,
+    "human_review_inferred": false,
+    "identity_link_approvals": 0,
+    "model_ready": false,
+    "source_approvals": 0
+  },
+  "schema_version": 1,
+  "status": "SYNTHETIC_ENGINEERING_CHECK_ONLY_NO_HISTORICAL_IDENTITY_APPROVAL",
+  "synthetic_smoke": {
+    "all_private_output_hashes_verified": true,
+    "effective_interval_candidates": 2,
+    "issue_counts": {
+      "NO_LINKED_PERMNO": 1,
+      "OUTSIDE_DEVELOPMENT_SCOPE": 1,
+      "duplicate_interval_projection_excess": 0,
+      "effective_interval_candidates": 2,
+      "raw_rows": 3
+    },
+    "overlap_counts": {
+      "GVKEY_OVERLAP_DIFFERENT_CIK": 1,
+      "PERMNO_OVERLAP_DIFFERENT_CIK": 1
+    },
+    "private_receipt_sha256": "92d3624e60e4cabd81a746c62cf2f599c0cb1abead69a69afefe6a9bdd2294e1",
+    "records": 3
+  },
+  "verification": {
+    "complete_synthetic_study_pipeline_passed": true,
+    "full_reproduction_exit_code": 0,
+    "independent_overlap_bruteforce": {
+      "datasets": 30,
+      "kinds_per_dataset": 2,
+      "passed": true,
+      "records_per_dataset": 90
+    },
+    "pytest_passed": 1019,
+    "ruff_passed": true
+  },
+  "wrds_status": "PERSONAL_ACCOUNT_REQUEST_PENDING_APPROVAL; HCIK VARIABLE_CATALOG_ONLY"
+}
