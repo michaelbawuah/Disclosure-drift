@@ -1,0 +1,72 @@
+{
+  "files": [
+    {
+      "bytes": 3694594,
+      "file": "packet.json",
+      "sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814"
+    },
+    {
+      "bytes": 3717067,
+      "file": "index.html",
+      "sha256": "1f4b4340c1e87e7a17d69a63062d1f6d42e471439b63a9dc0b4887a4937832b5"
+    },
+    {
+      "bytes": 15524,
+      "file": "selected_pairs.csv",
+      "sha256": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278"
+    }
+  ],
+  "final_period_opened": false,
+  "full_original_documents_included": false,
+  "historical_security_links_created": 0,
+  "human_reviews_created": 0,
+  "import_scope": "Exported reviewer declarations still require the existing source audit.",
+  "market_returns_read": false,
+  "model_ready": false,
+  "original_sec_bytes_reread": false,
+  "packet_id": "ef9f2b4e9b22951c68872e7b3bf2e828914384d964d0da7b2c13b7b890eaf6d8",
+  "prior_arithmetic_review_modified": false,
+  "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+  "schema_version": 1,
+  "source_approvals": 0,
+  "source_bindings": {
+    "audit_summary": {
+      "bytes": 717,
+      "file": "audit_summary.json",
+      "sha256": "3afa6c4f90b2e162458d16b0d64b63206561f0da8155a5cb022085b78c4b9ccb"
+    },
+    "evidence": {
+      "bytes": 112560,
+      "file": "filing_evidence.parquet",
+      "sha256": "e40510a836c62a8cb5ccc81184b0eff1b43527093bde19795dbbbd920c70b626"
+    },
+    "filings": {
+      "bytes": 3468416,
+      "file": "filings.parquet",
+      "sha256": "6c92c43053063a37ea4f042a250a47e8e1424a868ac494298efaac811c89f380"
+    },
+    "pairs": {
+      "bytes": 5865128,
+      "file": "filing_pairs.parquet",
+      "sha256": "68b627d0880c80fce0e85c7ab8faae7fd148ddded8debab4ecf6d635671599f0"
+    },
+    "reference_template": {
+      "bytes": 6120,
+      "file": "reference_reviews.template.jsonl",
+      "sha256": "24bfb83b67b3324562d2f37849bce031f40d1f6591dfa3890da2f9c2549dd85b"
+    },
+    "selected_pairs": {
+      "bytes": 15524,
+      "file": "expanded_review_pairs.csv",
+      "sha256": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278"
+    }
+  },
+  "status": "FILING_REVIEW_DESK_READY_REVIEW_PENDING",
+  "summary": {
+    "distinct_filings": 73,
+    "reference_filings": 24,
+    "selected_filings": 58,
+    "selected_pairs": 30,
+    "source_filings": 155
+  }
+}

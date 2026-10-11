@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "FILING_REVIEW_SOFTWARE_CHECKS_PASSED",
+  "source_commit": "677eff56c878b0db966fa0036a6e58ffdf3c062e",
+  "local_reproduction": {
+    "command": "UV_PYTHON=3.12 make reproduce-full",
+    "exit_code": 0,
+    "source_state": "The tested feature files were initially uncommitted; their exact contents were published unchanged in source_commit.",
+    "tests_passed": 893,
+    "new_filing_review_cases": 44,
+    "warnings": 590,
+    "pytest_elapsed_seconds": 85.32,
+    "ruff_passed": true,
+    "complete_synthetic_study_completed": true,
+    "log_sha256": "60ab49454e3e16244d2d50821d673456e992552a6e8ca07f5cd1fcfd6784e1bd",
+    "empirical_forecasting_run": false
+  },
+  "browser_qa": {
+    "kind": "SYNTHETIC_BROWSER_QA_NOT_RESEARCH_REVIEW",
+    "started": "2026-10-11T02:39:12.432Z",
+    "finished": "2026-10-11T02:39:14.931Z",
+    "browser": "Chrome/154.0.8037.99",
+    "frontend_sha256": "3bf7456ae87ab563674159309d71f2f168d3926aa0338f2f328015a29fc9619f",
+    "html_sha256": "f17bfa4ee716965fa45060566dbc527a693e7c7d39ffe97dfb75b20b518e8ee1",
+    "checks": [
+      "pending defaults; blank role; source text remains escaped",
+      "original-source inspection required; explicit record; actual Blob JSONL/draft downloads",
+      "shared filing state; editing invalidates record; portable import preserves original timestamp",
+      "wrong-packet, duplicate-key, stale and future imports rejected without state loss",
+      "file URL localStorage reload recovery preserves recorded timestamp"
+    ],
+    "desktop": {
+      "width": 1440,
+      "scroll": 1425,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "scroll": 390,
+      "height": 844
+    },
+    "overflowing": [],
+    "screenshots": {
+      "desktop": "/tmp/disclosure-review-qa-20261011-frontend-v1/desktop-1440.png",
+      "mobile": "/tmp/disclosure-review-qa-20261011-frontend-v1/mobile-390.png",
+      "mobile_review": "/tmp/disclosure-review-qa-20261011-frontend-v1/mobile-390-review.png"
+    },
+    "console_errors": [],
+    "page_network_urls": [],
+    "synthetic_export": "/tmp/disclosure-review-qa-20261011-frontend-v1/synthetic-export.jsonl",
+    "export_record": {
+      "accession": "0000000001-10-000001",
+      "evidence_id": "1111111111111111111111111111111111111111111111111111111111111111",
+      "reviewer": "Synthetic browser QA (automated)",
+      "reviewer_type": "assistant",
+      "reviewed_at": "2026-10-11T02:39:13.441Z",
+      "boundary_verdict": "pass",
+      "timing_verdict": "pass",
+      "notes": "SYNTHETIC INTERFACE TEST ONLY. This automated check creates no human or production research decision."
+    },
+    "passed": true
+  },
+  "browser_artifact_hashes": {
+    "synthetic-review.html": {
+      "sha256": "f17bfa4ee716965fa45060566dbc527a693e7c7d39ffe97dfb75b20b518e8ee1",
+      "bytes": 39197
+    },
+    "mobile-390.png": {
+      "sha256": "d5878861496349f40c783877636c9093d64cde2d6f4dbfd4a3110512930988ce",
+      "bytes": 76381
+    },
+    "desktop-1440.png": {
+      "sha256": "fa8ad9ce11a9e1f418bdf31f349d13c4219dc5830ebb9827e96670877f8fba14",
+      "bytes": 203741
+    },
+    "mobile-390-review.png": {
+      "sha256": "db5f55579d670a5743bc59b36444e9cf990a16d6a76d36c799c1074ea352744b",
+      "bytes": 69250
+    },
+    "synthetic-export.jsonl": {
+      "sha256": "03bfc94fcd866ec79a8de2a56006141c8736c6501ef3080adb5c9a8d58f7c450",
+      "bytes": 395
+    },
+    "qa-results.json": {
+      "sha256": "4745d51903a02d95a7583e7c7b109830345a8aa0824350adb55e6a5835cd05e0",
+      "bytes": 1873
+    }
+  },
+  "exact_browser_jsonl_loads_in_existing_audit": true,
+  "browser_jsonl_records": 1,
+  "browser_jsonl_scope": "Explicit synthetic assistant interface check only; no real filing judgment.",
+  "visual_review": {
+    "desktop_1440": "readable; no horizontal overflow",
+    "mobile_390": "readable; no horizontal overflow"
+  },
+  "production_human_reviews_created": 0,
+  "production_assistant_reviews_created": 0,
+  "source_approvals": 0,
+  "historical_security_links_created": 0,
+  "model_ready": false,
+  "final_period_opened": false,
+  "prior_arithmetic_review_modified": false
+}

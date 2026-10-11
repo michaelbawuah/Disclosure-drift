@@ -25,6 +25,14 @@ from 79 filings**. A separate Mac inspection identifies all eight unmatched
 discovery filings as the original Exxon registrant. These source observations
 support the outstanding historical-identity review without approving a link.
 
+The new [local filing-review page](filing_review/index.html) now brings the fixed
+30 pairs and all 24 matching reference cases into one 73-filing queue. It retains
+the original sample and evidence IDs, saves portable drafts and exports explicitly
+recorded decisions for the existing source audit. The production build created
+zero human reviews. See the [Mac guide](../docs/filing_review.md),
+[bound execution receipt](filing_review/execution.json) and
+[implementation verification](filing_review/verification.json).
+
 **The empirical forecasting study remains unfinished.** Security-universe
 completeness, source normalization and judgments, actual development selection,
 final estimates, robustness interpretation and independent-person reproduction
@@ -53,7 +61,8 @@ The primary protocol is unchanged and the actual 2022–2025 evaluation remains 
 | Organize annual historical-identity evidence | **110,124 CCM records retained; 100,261 Names/CCM relationships; 86,064 annual security records; all 215 SEC manifest rows accounted for**. Header-CIK matches are discovery only | [Aggregate execution record](wrds_identity_evidence_execution.json); code `5f9a451`, completed `2026-10-11T00:58:52.177677+00:00` |
 | Corroborate original SEC identities | **215 primary/header/acceptance checks; 218 filer observations; three co-filings; 1,494 lexical cover facts from 79 filings**. No approved security links | [Execution and reconciliation record](sec_identity_evidence_execution.json); [complete compressed evidence](sec_identity_evidence.json.gz); code `3a5b368`, completed `2026-10-11T01:49:28.800315+00:00` |
 | Inspect unmatched discovery context | **All 215 manifest records verified; 207 discovery matches; eight unmatched original Exxon filings**, subsequently bound to the original-source report | [Public discovery context](sec_identity_discovery_context.json); code `3a5b368`, completed `2026-10-11T01:51:48.599817+00:00` |
-| Verify the software | Recorded verification baseline: **444 tests passed; Ruff passed; complete synthetic study completed**. New source, numerical-candidate, Names and benchmark commits passed their focused tests and CI; no updated whole-repository test total is claimed | [Recorded verification](execution_verification.json); [source-processing CI run](https://github.com/michaelbawuah/Disclosure-drift/actions/runs/38096427112) |
+| Build the portable filing-review page | **30 fixed pairs / 58 fixed filings; 24 matching reference cases; nine shared cases; 73 distinct filings**. Complete extracted risk text and original SEC links; no decisions created | [Packet receipt](filing_review/receipt.json); code `677eff5`, completed `2026-10-11T02:40:22.581723+00:00` |
+| Verify the current software | **893 tests passed; Ruff passed; complete synthetic study completed**. The 44 new filing-review cases preserve source and review gates. Actual isolated Mac Chrome checks passed for draft/export behavior and desktop/mobile layouts | [Current verification](filing_review/verification.json); [earlier verification baseline](execution_verification.json) |
 
 The combined pilot preserves 19 source-specific reference resolutions and 104
 API/header timestamp differences. The original SGML acceptance timestamp remains

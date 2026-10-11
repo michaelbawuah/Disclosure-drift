@@ -25,6 +25,14 @@ the empirical gates in **5–11 remain pending**. The
 [reviewer handoff](../docs/research_completion_gates.md) identifies the remaining
 decisions and existing evidence without repeating the completed numerical review.
 
+The [portable filing-review page](filing_review/index.html) now provides saved
+drafts and audit-compatible exports for the existing 30 fixed pairs and 24
+matching reference cases: 73 distinct filings after overlap. The production
+packet creates zero reviewer decisions. The [short Mac guide](../docs/filing_review.md)
+explains how to record the remaining judgments; the [verification record](filing_review/verification.json)
+records 893 passing tests and the isolated Chrome interface check. No empirical
+milestone changes status merely because the review interface is available.
+
 The frozen primary protocol has not changed. Its hash is
 `3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9`.
 The original ten-week plan is superseded where it differs: retain unranked

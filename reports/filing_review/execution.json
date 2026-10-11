@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "FILING_REVIEW_PACKET_GENERATED_DECISIONS_PENDING",
+  "code_commit": "677eff56c878b0db966fa0036a6e58ffdf3c062e",
+  "working_tree_clean_before_run": true,
+  "started_at_utc": "2026-10-11T02:40:22.310611+00:00",
+  "completed_at_utc": "2026-10-11T02:40:22.581723+00:00",
+  "elapsed_seconds": 0.2711170980037423,
+  "python": "3.12.14",
+  "packet_id": "ef9f2b4e9b22951c68872e7b3bf2e828914384d964d0da7b2c13b7b890eaf6d8",
+  "summary": {
+    "selected_pairs": 30,
+    "selected_filings": 58,
+    "reference_filings": 24,
+    "distinct_filings": 73,
+    "source_filings": 155
+  },
+  "receipt_sha256": "411b171df7c4b9fb750ec97943bc70e66401797fbb20398b709853f0fe14c253",
+  "files": [
+    {
+      "file": "packet.json",
+      "sha256": "9e1281c0bd58837c1f7a3e7b63f5a73ae36a890d52c55a2b53dde14d6d9ee814",
+      "bytes": 3694594
+    },
+    {
+      "file": "index.html",
+      "sha256": "1f4b4340c1e87e7a17d69a63062d1f6d42e471439b63a9dc0b4887a4937832b5",
+      "bytes": 3717067
+    },
+    {
+      "file": "selected_pairs.csv",
+      "sha256": "60bb6099ca250668c5724bad42dd284b2731f620c1b12643d9422f8ae5a00278",
+      "bytes": 15524
+    }
+  ],
+  "human_reviews_created": 0,
+  "original_sec_bytes_reread": false,
+  "full_original_documents_included": false,
+  "market_returns_read": false,
+  "model_ready": false,
+  "source_approvals": 0,
+  "historical_security_links_created": 0,
+  "final_period_opened": false,
+  "prior_arithmetic_review_modified": false
+}
