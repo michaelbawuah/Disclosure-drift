@@ -1,0 +1,49 @@
+{
+  "all_private_issuer_year_differences_verified": true,
+  "all_three_paired_year_delta_and_sign_counts_verified": true,
+  "bootstrap_and_leave_one_issuer_out_diagnostics_verified": true,
+  "causal_claim_or_population_inference_validated": false,
+  "distinct_original_SEC_issuers_in_source": 35,
+  "empirical_stock_return_forecast_approved": false,
+  "final_period_opened": false,
+  "historical_market_or_identity_data_used": false,
+  "human_filing_reviews_inferred": 0,
+  "independent_decimal_source_year_means_medians_verified": true,
+  "independent_descriptive_contrasts": [
+    {
+      "begin_year": 2019,
+      "end_year": 2020,
+      "increase_count": 17,
+      "issuer_count": 34,
+      "mean": 0.02084420284770836,
+      "median": -0.0002502753802997025
+    },
+    {
+      "begin_year": 2020,
+      "end_year": 2021,
+      "increase_count": 24,
+      "issuer_count": 34,
+      "mean": 0.02517971455072976,
+      "median": 0.02846637404281932
+    },
+    {
+      "begin_year": 2019,
+      "end_year": 2021,
+      "increase_count": 27,
+      "issuer_count": 34,
+      "mean": 0.04602391739843812,
+      "median": 0.04381101754336386
+    }
+  ],
+  "matched_balanced_2019_2021_issuers": 34,
+  "model_ready": false,
+  "original_SEC_disclosure_pairs_checked": 180,
+  "schema_version": 1,
+  "source_fingerprints": {
+    "first_descriptive_public_sha256": "0a0bfe8121a6c6666e40ae44bcb459c978019776e6698d87b0e57e26fc48cce3",
+    "first_descriptive_receipt_sha256": "60941fbe62381fd57269017ee70a87d628b1ae9fc3fc9a23c4044f2f7d595a1d",
+    "frozen_protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "original_features_sha256": "8b878378f8a4b1605b6a54a48782f36e822dca02d32da9f5ffd396965573843c"
+  },
+  "status": "INDEPENDENT_SEC_ORIGINAL_DESCRIPTIVE_ISSUER_PAIR_CHECK_NOT_PREDICTION"
+}

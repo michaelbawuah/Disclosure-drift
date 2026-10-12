@@ -187,6 +187,18 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [separate SEC-only disclosure-drift descriptive study](sec_only_descriptive_study.md)
+uses only the **215 previously source-audited original SEC 10-Ks and 180
+consecutive Item 1A comparison features** from 35 purposively selected
+issuers. Across 34 complete 2019–2021 issuer trajectories, the observed
+mean within-issuer 2019-to-2021 Jaccard turnover contrast is **+0.0460**,
+with **27/34** positive changes. Independent `Decimal` verification and
+conditional issuer-bootstrap checks agree. This is **exploratory source-text
+measurement**, not a historical investment-universe statistic, causal
+effect, human-reviewed 215-filing sign-off or forecasting outcome.
+Original stock-return modeling milestones and final-period gates remain
+closed.
+
 The [IBM Capital Stock original EX-4.1 review](ibm_capital_stock_exhibit_review.md)
 corroborates that the two lexical `Capital stock` 10-K titles refer to
 IBM's single outstanding registered equity class, with documented voting,

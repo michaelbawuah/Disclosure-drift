@@ -1,0 +1,351 @@
+{
+  "all_180_original_SEC_filing_pairs_match_source_manifest_and_prior_year": true,
+  "balanced_2019_2021_year_coverage": [
+    {
+      "issuers": 34,
+      "jaccard_distance": {
+        "count": 34,
+        "mean": 0.09676413140129536,
+        "median": 0.0931940730767032,
+        "q25": 0.056487648618168275,
+        "q75": 0.13307769906429637
+      },
+      "log_length_change": {
+        "count": 34,
+        "mean": 0.05743712853159648,
+        "median": 0.04238511413842745,
+        "q25": 0.009853622075895725,
+        "q75": 0.1065731139494374
+      },
+      "year": 2019
+    },
+    {
+      "issuers": 34,
+      "jaccard_distance": {
+        "count": 34,
+        "mean": 0.1176083342490037,
+        "median": 0.0992362345958803,
+        "q25": 0.05967914573004747,
+        "q75": 0.14575031967184265
+      },
+      "log_length_change": {
+        "count": 34,
+        "mean": 0.12106348559491144,
+        "median": 0.0805248035925352,
+        "q25": 0.038322251569731625,
+        "q75": 0.11209847250631093
+      },
+      "year": 2020
+    },
+    {
+      "issuers": 34,
+      "jaccard_distance": {
+        "count": 34,
+        "mean": 0.14278804879973347,
+        "median": 0.1281385921665297,
+        "q25": 0.08852746218666623,
+        "q75": 0.19298967634550107
+      },
+      "log_length_change": {
+        "count": 34,
+        "mean": 0.10091972610042965,
+        "median": 0.10872643852248745,
+        "q25": 0.04364917506009022,
+        "q75": 0.1911915013125908
+      },
+      "year": 2021
+    }
+  ],
+  "balanced_issuer_count": 34,
+  "balanced_years": [
+    2019,
+    2020,
+    2021
+  ],
+  "causal_or_population_inference_claimed": false,
+  "data_kind": "REAL_SEC_ORIGINAL_RISK_TEXT_DESCRIPTIVE_SOURCE_ONLY",
+  "earlier_year_only_TFIDF_vocabulary_check_passed": true,
+  "exploratory_balanced_jaccard_contrasts": [
+    {
+      "conditional_issuer_bootstrap_mean_95pct_interval": [
+        -0.005697116619642082,
+        0.0558287152477337
+      ],
+      "decreased": 17,
+      "end_year": 2020,
+      "increased": 17,
+      "interpretation": "Exploratory within-purposive-sample paired lexical-set turnover difference, not a population effect, causal event effect or return prediction.",
+      "issuer_resampling_draws": 5000,
+      "leave_one_issuer_out_mean_difference_range": [
+        0.007814904819615696,
+        0.02422811444814285
+      ],
+      "matched_issuers": 34,
+      "mean_difference_10pct_trimmed": 0.0061457529091694055,
+      "paired_mean_jaccard_distance_difference": 0.02084420284770835,
+      "paired_median_jaccard_distance_difference": -0.0002502753802996992,
+      "start_year": 2019,
+      "unchanged": 0
+    },
+    {
+      "conditional_issuer_bootstrap_mean_95pct_interval": [
+        -0.012271731773691699,
+        0.06227577937291512
+      ],
+      "decreased": 10,
+      "end_year": 2021,
+      "increased": 24,
+      "interpretation": "Exploratory within-purposive-sample paired lexical-set turnover difference, not a population effect, causal event effect or return prediction.",
+      "issuer_resampling_draws": 5000,
+      "leave_one_issuer_out_mean_difference_range": [
+        0.015607365868411844,
+        0.037561366195812344
+      ],
+      "matched_issuers": 34,
+      "mean_difference_10pct_trimmed": 0.03066678903114838,
+      "paired_mean_jaccard_distance_difference": 0.025179714550729763,
+      "paired_median_jaccard_distance_difference": 0.028466374042819306,
+      "start_year": 2020,
+      "unchanged": 0
+    },
+    {
+      "conditional_issuer_bootstrap_mean_95pct_interval": [
+        0.023706334033113556,
+        0.07235859239062649
+      ],
+      "decreased": 7,
+      "end_year": 2021,
+      "increased": 27,
+      "interpretation": "Exploratory within-purposive-sample paired lexical-set turnover difference, not a population effect, causal event effect or return prediction.",
+      "issuer_resampling_draws": 5000,
+      "leave_one_issuer_out_mean_difference_range": [
+        0.037749277427778366,
+        0.049178081453954886
+      ],
+      "matched_issuers": 34,
+      "mean_difference_10pct_trimmed": 0.03633087707009664,
+      "paired_mean_jaccard_distance_difference": 0.04602391739843811,
+      "paired_median_jaccard_distance_difference": 0.04381101754336385,
+      "start_year": 2019,
+      "unchanged": 0
+    }
+  ],
+  "final_period_opened": false,
+  "full_iXBRL_or_filings_human_reviewed": false,
+  "historical_investable_universe_selected": false,
+  "human_review_approvals_created": 0,
+  "jaccard_definition": "1 minus token-set Jaccard similarity of consecutive original annual SEC Item 1A Risk Factors disclosures.",
+  "limitations": [
+    "35 purposively selected SEC issuers, not a probability sample or historical investable universe",
+    "34 balanced 2019\u20132021 issuers; historical selection and market data not used",
+    "Prior automated SEC source checks passed, but full original filing/manual review is pending",
+    "2015 TF-IDF unavailable by correctly earlier-year-only fitting; vocabulary changes across years",
+    "Bootstrap interval quantifies variation conditional on the selected issuer observations only",
+    "No causal COVID/regulatory attribution or claim that vocabulary drift predicts stock returns",
+    "The frozen stock-return evaluation and 2022\u20132025 final period remain unopened"
+  ],
+  "market_returns_or_CRSP_identity_data_read": false,
+  "milestone_06_complete": false,
+  "model_ready": false,
+  "original_acceptance_year_coverage": [
+    {
+      "filing_pairs": 19,
+      "issuers": 19,
+      "jaccard_distance": {
+        "count": 19,
+        "mean": 0.14167967063513998,
+        "median": 0.1121951219512195,
+        "q25": 0.06954473902610635,
+        "q75": 0.2202894036130186
+      },
+      "log_length_change": {
+        "count": 19,
+        "mean": 0.022290471970622106,
+        "median": 0.025441685345859,
+        "q25": 0.00792900618140675,
+        "q75": 0.08661825371670505
+      },
+      "tfidf_cosine_distance": null,
+      "year": 2015
+    },
+    {
+      "filing_pairs": 19,
+      "issuers": 19,
+      "jaccard_distance": {
+        "count": 19,
+        "mean": 0.08541262417360647,
+        "median": 0.0661040787623066,
+        "q25": 0.03845663953896395,
+        "q75": 0.12475431614961845
+      },
+      "log_length_change": {
+        "count": 19,
+        "mean": 0.03726557512753923,
+        "median": 0.0419603370588319,
+        "q25": -0.009212101086593101,
+        "q75": 0.07021048989306905
+      },
+      "tfidf_cosine_distance": {
+        "count": 19,
+        "mean": 0.004554312957811879,
+        "median": 0.0032861830183601,
+        "q25": 0.00144699836187755,
+        "q75": 0.005724225018820301
+      },
+      "year": 2016
+    },
+    {
+      "filing_pairs": 19,
+      "issuers": 19,
+      "jaccard_distance": {
+        "count": 19,
+        "mean": 0.1304484250491963,
+        "median": 0.0850340136054421,
+        "q25": 0.0639542830093073,
+        "q75": 0.15055460407380566
+      },
+      "log_length_change": {
+        "count": 19,
+        "mean": 0.0686222505608955,
+        "median": 0.0196962499757233,
+        "q25": 0.011091950194612201,
+        "q75": 0.04628700626021495
+      },
+      "tfidf_cosine_distance": {
+        "count": 19,
+        "mean": 0.008838147695782788,
+        "median": 0.0033881389960563,
+        "q25": 0.0017205493317014502,
+        "q75": 0.0049290391873144
+      },
+      "year": 2017
+    },
+    {
+      "filing_pairs": 19,
+      "issuers": 19,
+      "jaccard_distance": {
+        "count": 19,
+        "mean": 0.13114452178060246,
+        "median": 0.1041281577325939,
+        "q25": 0.08027295262425295,
+        "q75": 0.17011499683837444
+      },
+      "log_length_change": {
+        "count": 19,
+        "mean": 0.07007803406223036,
+        "median": 0.0368836134305556,
+        "q25": 0.0134810407297072,
+        "q75": 0.12927230279699664
+      },
+      "tfidf_cosine_distance": {
+        "count": 19,
+        "mean": 0.027257473096805717,
+        "median": 0.0049659858222669,
+        "q25": 0.0025061585280304003,
+        "q75": 0.0093454488270178
+      },
+      "year": 2018
+    },
+    {
+      "filing_pairs": 34,
+      "issuers": 34,
+      "jaccard_distance": {
+        "count": 34,
+        "mean": 0.09676413140129536,
+        "median": 0.0931940730767032,
+        "q25": 0.056487648618168275,
+        "q75": 0.13307769906429637
+      },
+      "log_length_change": {
+        "count": 34,
+        "mean": 0.057437128531596486,
+        "median": 0.04238511413842745,
+        "q25": 0.009853622075895725,
+        "q75": 0.1065731139494374
+      },
+      "tfidf_cosine_distance": {
+        "count": 34,
+        "mean": 0.004170248807831968,
+        "median": 0.0032179478993015,
+        "q25": 0.001798874404113325,
+        "q75": 0.0054510150235043756
+      },
+      "year": 2019
+    },
+    {
+      "filing_pairs": 35,
+      "issuers": 35,
+      "jaccard_distance": {
+        "count": 35,
+        "mean": 0.12248087152659153,
+        "median": 0.0994386527666399,
+        "q25": 0.05969242033837665,
+        "q75": 0.1463110689730892
+      },
+      "log_length_change": {
+        "count": 35,
+        "mean": 0.12791965854046386,
+        "median": 0.0806654638021129,
+        "q25": 0.03873431853064075,
+        "q75": 0.12196382920909249
+      },
+      "tfidf_cosine_distance": {
+        "count": 35,
+        "mean": 0.009219215217802742,
+        "median": 0.0052056447709697,
+        "q25": 0.00218955091385435,
+        "q75": 0.0078580071537337
+      },
+      "year": 2020
+    },
+    {
+      "filing_pairs": 35,
+      "issuers": 35,
+      "jaccard_distance": {
+        "count": 35,
+        "mean": 0.14305862067734476,
+        "median": 0.1346666666666667,
+        "q25": 0.08857942528077345,
+        "q75": 0.18809326930873566
+      },
+      "log_length_change": {
+        "count": 35,
+        "mean": 0.09890614277740578,
+        "median": 0.1006367508496381,
+        "q25": 0.0410673166636579,
+        "q75": 0.1792027596405327
+      },
+      "tfidf_cosine_distance": {
+        "count": 35,
+        "mean": 0.009862293161888363,
+        "median": 0.0070677723273394,
+        "q25": 0.0037615768712992497,
+        "q75": 0.013938300449944
+      },
+      "year": 2021
+    }
+  ],
+  "predictive_performance_claimed": false,
+  "primary_descriptive_comparison": "2021-vs-2019 within the same 34 issuer CIKs",
+  "schema_version": 1,
+  "source_annual_comparisons": 180,
+  "source_filings": 215,
+  "source_fingerprints": {
+    "checkpoint_sha256": "85603234ba8b2b0965b96779f44739949773d331cc8a7576c9e0c2e38369953a",
+    "combination_receipt_sha256": "d84f17a88946e5ce1ec465c6590e5b97a28743a08169a02504029cef507f1e9e",
+    "features_sha256": "8b878378f8a4b1605b6a54a48782f36e822dca02d32da9f5ffd396965573843c",
+    "manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "source_issuers": 35,
+  "source_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "status": "EXPLORATORY_SEC_ONLY_DISCLOSURE_DRIFT_BALANCED_PANEL_NOT_RETURN_PREDICTION"
+}

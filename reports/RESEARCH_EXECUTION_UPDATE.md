@@ -1137,3 +1137,57 @@ six original source hashes again. The
 records Ruff, **1,200 passing tests** and a full synthetic research
 software reproduction, not a real return-forecasting result. No historical
 identity, source, human or final-evaluation gate was opened.
+
+## 12 October — independent SEC-only descriptive disclosure-drift pilot
+
+A separate, intentionally exploratory
+[SEC-only source-feature descriptive study](../docs/sec_only_descriptive_study.md)
+was completed without loading CRSP/Compustat, dated security links,
+market returns, or any 2022–2025 final-period observations. It reverified
+the preserved 215 original SEC 10-K filing manifest entries and source
+checkpoint plus the previously automated source-audited 180 year-over-year
+Item 1A feature pairs for 35 purposively selected issuers (acceptance
+years 2015–2021). It checks every original SEC issuer, accepted source
+year, current source URL and immediate prior-year source URL.
+There are **zero human filing reviews marked completed** in the source
+receipt and historical dissemination evidence remains pending.
+
+The selected **34-issuer balanced panel** has observations in 2019, 2020
+and 2021. Its mean year-over-year Jaccard token-set distances are **0.0968**
+(2019), **0.1176** (2020) and **0.1428** (2021). The within-issuer mean
+contrast, 2021 change versus 2019 change, is **+0.0460**, median
+**+0.0438**, and **27 of 34** issuers have a positive increase. A
+**5,000-draw conditional issuer bootstrap** yields a 0.0237–0.0724
+descriptive percentile interval and leave-one-issuer-out mean changes
+remain in 0.0377–0.0492. No population inference, hypothesis
+preregistration, COVID/policy causal explanation or stock-return forecast
+is claimed.
+
+The separately written
+[Decimal-based original source verifier](../src/disclosure_research/sec_only_descriptives_verifier.py)
+independently reconstructed all 180 original filing features, all 34
+balanced issuer trajectories, every paired Jaccard difference, the
+three contrast means/medians/sign counts, all source-year descriptive
+averages, bootstrap and leave-one-out bounds. The publication-safe
+[source checkpoint](sec_only_descriptive_checkpoint.json), [independent
+verification](sec_only_descriptive_independent.json), and [balanced-year
+figure](sec_only_descriptive_balanced_means.svg) demonstrate a meaningful
+measured SEC-only analysis with the limits clearly documented.
+
+This independent descriptive component cannot substitute for the frozen
+historical CRSP stock-return protocol, its historical CIK/PERMNO known-at,
+market available-at, full-universe selection, human reviews or sealed
+2022–2025 empirical holdout. No such source or study approval was created.
+
+A second source-bound SEC-only descriptive execution produced three
+**byte-identical** outputs: the private 34-issuer paired-change evidence
+JSONL, the publication-safe aggregate report and the 2019–2021 SVG
+year-by-year summary figure. The separate independent `Decimal` verifier
+also confirmed all 180 SEC filing pairs, the 34 balanced issuer
+trajectories, all source descriptive means/medians, paired differences,
+5,000-draw conditional issuer-bootstrap intervals and leave-one-out bounds
+a second time. The [reproducibility receipt]
+(sec_only_descriptive_reproduction.json) records **1,222 passing tests**,
+Ruff and the complete synthetic software study (not the empirical
+2022–2025 holdout). Source-review, population, forecast and causal claims
+remain explicitly unapproved.

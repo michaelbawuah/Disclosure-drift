@@ -1,0 +1,51 @@
+{
+  "balanced_2019_2021_issuer_count": 34,
+  "conditional_issuer_bootstrap_interval_95pct": [
+    0.023706334033113556,
+    0.07235859239062649
+  ],
+  "full_software_reproduction": {
+    "exit_code": 0,
+    "invented_full_study_pipeline": "passed",
+    "pytest_passed": 1222,
+    "ruff_passed": true
+  },
+  "independent_decimal_and_bootstrap_verification_runs": 2,
+  "interpretation": "Independent source-only purposive SEC descriptive analysis; no population/causal or stock-return claim",
+  "paired_decrease_count": 7,
+  "paired_increase_count": 27,
+  "primary_exploratory_paired_Jaccard_mean_change": 0.04602391739843811,
+  "published_and_private_outputs_byte_identical_across_two_runs": {
+    "issuer_changes_private.jsonl": {
+      "byte_identical": true,
+      "bytes": 9529,
+      "sha256": "d4cd328887f9f4cdcdd69df7c20ee8fb7deb61180cd3d188457c1edaaffc057b"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 11099,
+      "sha256": "0a0bfe8121a6c6666e40ae44bcb459c978019776e6698d87b0e57e26fc48cce3"
+    },
+    "published_balanced_34_issuer_figure.svg": {
+      "byte_identical": true,
+      "bytes": 2936,
+      "sha256": "d6b5f288550434f97fee10ce83f3207f3e94e620126c61b9ff2575ebcfbaf6af"
+    }
+  },
+  "research_gates": {
+    "causal_claim": false,
+    "empirical_forecast_performance_approved": false,
+    "final_2022_2025_evaluation_opened": false,
+    "historical_investable_universe_claimed": false,
+    "human_original_filing_reviews_complete": false,
+    "issuer_selection_is_probability_sample": false,
+    "model_ready": false,
+    "stock_return_or_WRDS_data_loaded": false
+  },
+  "schema_version": 1,
+  "source_distinct_issuer_count": 35,
+  "source_fingerprints_unchanged": true,
+  "source_original_SEC_10K_count": 215,
+  "source_original_SEC_annual_comparisons": 180,
+  "status": "SEC_ONLY_ORIGINAL_DISCLOSURE_DRIFT_BALANCED_PANEL_REPRODUCED_NONPREDICTIVE"
+}
