@@ -1,0 +1,30 @@
+{
+  "actual_final_2022_2025_opened": false,
+  "ambiguous_or_mismatched_source_observations": 0,
+  "caveat": "Independent original-source matching confirms one quarter's issuer observations, not continuous historical links or publication time.",
+  "complete_raw_SEC_and_Names_source_hashes_rechecked": true,
+  "cutoff_day_unresolved_observations": 5,
+  "first_audit_receipt_sha256": "93a1d5fd0576a09deef2078f662094e3d935de1f72601ab0be7902bfbf9f7f99",
+  "historical_effective_interval_established": false,
+  "historical_known_at_established": false,
+  "independent_method": "Literal SEC ISSUERCIK/ISSUERTRADINGSYMBOL + original complete dated CRSP Names",
+  "model_ready": false,
+  "new_security_link_approvals": 0,
+  "original_names_descriptors_reexamined": 191048,
+  "original_sec_submissions_from_20_pilot_ciks": 424,
+  "original_sec_submissions_reexamined": 38145,
+  "original_source_sha256": {
+    "cohort_receipt": "85358e4f928687ed9fc3da3813e87980321bbd155b24c952f7a955c5c92a8442",
+    "crsp_names_csv": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+    "sec_submission_tsv": "0f73eaa50e3964641fe180cb2db299d94ae5b77e4d12d3a68ba1ab5b663b6e2c"
+  },
+  "per_issuer_earlier_and_cutoff_counts_identical_to_first_audit": true,
+  "pilot_issuer_security_pairs": 20,
+  "quarter": "2019Q4",
+  "schema_version": 1,
+  "securities_with_independently_matched_strictly_earlier_anchors": 20,
+  "selection_year": 2020,
+  "source_release_or_vendor_availability_verified": false,
+  "status": "ORIGINAL_SEC_AND_NAMES_INDEPENDENT_2020_ANCHOR_RECONCILED_NOT_APPROVED",
+  "strictly_earlier_unambiguous_issuer_security_observations": 419
+}

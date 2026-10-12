@@ -28,6 +28,7 @@ all three text features to the same market controls.
 | Filing review | Assistant boundary/timing review covers all 73 distinct filings in the fixed-pair/reference packet: 63 prior records preserved and 10 new reviews; no human filing review created |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
 | Conditional SEC-backed modeling diagnostic | 135 original filing pairs joined one-to-one to provisional market controls; 116 paired expanding-year predictions per fixed-alpha model, **unapproved and not a validated predictive finding** |
+| Independently reconstructed 2020 pilot issuer anchors | **20/20** securities with original SEC issuer CIK and dated CRSP Names corroboration; 419 strictly earlier observations, 5 cutoff-day unknown, 1 current-header conflict; **historical continuity/availability unapproved** |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -49,6 +50,8 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+See the [2019Q4 original-source 20-issuer anchor](docs/pilot_issuer_anchor.md), its [aggregate audit](reports/pilot_issuer_anchor_checkpoint.json), and [independent raw-source reconstruction](reports/pilot_issuer_anchor_independent.json).
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
 [cutoff-day clock results](docs/ownership_cutoff_clock_results.md),

@@ -1,0 +1,37 @@
+{
+  "facts": {
+    "cutoff_day_clock_unresolved": 5,
+    "development_filing_headers_consistent": 135,
+    "pilot_securities_with_earlier_original_source_corrob": 20,
+    "strictly_earlier_observations": 419
+  },
+  "full_repository_reproduction": {
+    "exit_code": 0,
+    "pytest_passed": 1075,
+    "ruff_passed": true,
+    "synthetic_pipeline_passed": true
+  },
+  "independent_original_source_rereads": 2,
+  "independent_public_check_sha256": "ba0f1fdc279992351e5a9bfbda22e1cfa8cf8178a4c695fd0d434ce5712c3278",
+  "independent_recheck_aggregate_identical_excluding_distinct_run_receipt_hash": true,
+  "limitations": {
+    "actual_final_2022_2025_opened": false,
+    "historical_security_links_approved": 0,
+    "known_at_established": false,
+    "model_ready": false,
+    "source_approvals": 0
+  },
+  "private_source_bound_output_identity": {
+    "private_issuer_rows.jsonl": {
+      "byte_identical": true,
+      "sha256": "7ad46407ee519f7335bc1659c5123a282eff9acd496992090f5909f6bfa18c32"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "sha256": "8a89cc36c78e859d6ce04fb6d98c2e4b9990c142a9c1a31263081c24eb991692"
+    }
+  },
+  "schema_version": 1,
+  "source_inputs_reopened_without_new_WRDS_query": true,
+  "status": "PILOT_ISSUER_ANCHOR_TWO_INDEPENDENT_EXECUTIONS_MATCH_NOT_APPROVED"
+}

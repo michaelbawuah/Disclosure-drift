@@ -822,3 +822,31 @@ tests**, and a complete synthetic software run. The two run receipts themselves
 have different timestamps and are not claimed byte-identical. None of
 these checks authorizes a historical mapping or turns candidate forecasts into
 validated economic evidence.
+
+## 11 October — independent SEC issuer anchor for the fixed 20-company pilot
+
+The [new 2020 identity anchor](../docs/pilot_issuer_anchor.md) directly
+cross-checks the 135 pilot original-filing CIK/acceptance records with the
+2019Q4 SEC ownership-issuer evidence and complete dated CRSP Names rows.
+All **135 original 10-K header identities** match the previously verified
+SEC original-source report. All **20** permanent-security candidates appear
+in the saved 2020 candidate cohort with at least one independent,
+strictly earlier original issuer-CIK/symbol/Names source observation.
+There are **419** such original pre-Dec. 31 observations; the **five**
+cutoff-day observations remain unclassified by clock. Nineteen pilot issuer
+candidate company headers agree, one has conflicting header evidence retained.
+
+A separate verifier reread **38,145 original 2019Q4 SEC submissions** and
+**191,048 original CRSP Names records** and reconstructed the same 419/5
+counts for the same 20 securities without using the original relationship
+Parquet tables. No ambiguous or mismatched entries occurred among the 424
+selected SEC observations. The primary and independent public aggregate
+receipts bind the source hashes and preserve the original source file counts.
+The previously source-verified SEC 10-K header report was hash-checked;
+the individual HTML/SGML SEC filing bytes were not reopened in this run.
+
+One quarter of retrospective issuer corroboration cannot establish CIK-PERMNO
+effective intervals over all development years, historical known-at or
+market-input available-at. **Zero historical source/identity/benchmark
+approvals** were created; all conditional predictions remain exploratory
+and the frozen 2022–2025 final evaluation is unopened.
