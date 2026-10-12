@@ -187,6 +187,8 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [original 10-K cover-page symbol audit](tenk_symbol_corrob.md) also found exact-date CRSP Names candidates in 43 of the 135 pilot filings (17 single-symbol, clean and non-hidden), but does not interpret stock-class XBRL contexts or approve historical issuer/security links.
+
 A [new 2019Q4 pilot identity anchor](pilot_issuer_anchor.md) independently confirms 419 earlier exact issuer/Names observations across the 20 pilot securities, retaining 5 cutoff-day unknowns. This is retrospective source corroboration, **not a historical CIK-to-PERMNO interval or known-at**, and creates zero source or study approvals.
 
 The historical-access request and benchmark question drafts remain **unsent**.

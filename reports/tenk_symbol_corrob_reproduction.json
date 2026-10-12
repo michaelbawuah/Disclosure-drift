@@ -1,0 +1,20 @@
+{
+  "filings_with_lexical_symbol_candidates": 43,
+  "first_and_second_private_filing_contexts_byte_identical": true,
+  "first_and_second_public_summary_byte_identical": true,
+  "full_XBRL_context_semantics_verified": false,
+  "full_reproduction": {
+    "exit_code": 0,
+    "ruff_passed": true,
+    "synthetic_pipeline_passed": true,
+    "tests_passed": 1086
+  },
+  "historical_known_at_verified": false,
+  "historical_mapping_approved": false,
+  "original_10k_development_filing_pairs_checked": 135,
+  "real_final_2022_2025_opened": false,
+  "schema_version": 1,
+  "single_clean_unhidden_with_candidate": 17,
+  "source_approvals": 0,
+  "status": "TENK_SYMBOL_CORROB_SOURCE_BOUND_REPEAT_BYTE_IDENTICAL_NO_RESEARCH_APPROVAL"
+}

@@ -850,3 +850,36 @@ effective intervals over all development years, historical known-at or
 market-input available-at. **Zero historical source/identity/benchmark
 approvals** were created; all conditional predictions remain exploratory
 and the frozen 2022–2025 final evaluation is unopened.
+
+
+## 11 October — source-pinned original 10-K cover TradingSymbol / Names comparison
+
+The [original SEC lexical corroboration](../docs/tenk_symbol_corrob.md) reused
+the hash-bound 215-filing SEC original-header/cover lexical evidence packet
+and all 191,048 previously preserved original CRSP Names rows. All **135**
+development pilot original filing CIK/acceptance records were checked. The
+raw parsed lexical cover `dei:TradingSymbol` field appeared in **43 filings**:
+2018 (1), 2019 (2), 2020 (20), and 2021 (20). **All 43** have at least
+one exact, globally unique dated CRSP Names candidate matching the provisional
+permanent security and lifetime on the original 10-K acceptance date. The
+strict single-distinct-symbol, no-lexical-issue and no-hidden-source screen
+contains **17 filings**. Of the broader 43, **21** contain multiple distinct
+symbols, **three** contain lexical issues and **five** have hidden symbol
+facts (flags may overlap); 92 filings lack supported lexical TradingSymbol
+facts. All fact contexts and reported symbol text are retained in the
+**private** review packet, not published as a purported validated XBRL output.
+
+These results are lexical, retrospective security *candidate* corroboration.
+An exact symbol does not identify the intended stock class across all XBRL
+contexts, prove source known-at or establish a continuous CIK-to-PERMNO
+interval. No vendor release, identity, human source decision or historical
+availability timestamp was approved. All predictive model comparisons remain
+conditional and the final period stays closed.
+
+An independent fresh-directory re-execution of this 10-K lexical symbol audit
+reproduced the original public aggregate and private filing/context evidence
+**byte for byte**. The aggregate
+[reproducibility receipt](tenk_symbol_corrob_reproduction.json)
+records the full **1,086 passing tests**, Ruff and complete synthetic study
+reproduction. The source integrity and approval limitations stated above
+remain unchanged.

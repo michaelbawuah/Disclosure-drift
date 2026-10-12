@@ -1,0 +1,40 @@
+{
+  "XBRL_fact_semantics_validated": false,
+  "actual_final_2022_2025_opened": false,
+  "approved_security_links": 0,
+  "filings_with_at_least_one_dated_names_candidate_match": 43,
+  "filings_with_clean_single_unhidden_symbol_and_unique_names_candidate": 17,
+  "filings_with_hidden_symbol_facts": 5,
+  "filings_with_multiple_distinct_reported_trading_symbols": 21,
+  "filings_with_original_10k_TradingSymbol_lexical_facts": 43,
+  "filings_with_symbol_lexical_issues": 3,
+  "filings_without_supported_TradingSymbol_facts": 92,
+  "historical_identity_effective_intervals_established": false,
+  "historical_known_at_established": false,
+  "human_reviews_created": 0,
+  "interpretation": "Lexical original-10K symbol-to-dated-Names candidate observations only. Multiple symbols/context dimensions, lexical problems and historical availability remain unapproved.",
+  "lexical_fact_filing_year_counts": {
+    "2018": 1,
+    "2019": 2,
+    "2020": 20,
+    "2021": 20
+  },
+  "market_available_at_established": false,
+  "model_ready": false,
+  "original_SEC_bytes_reread_this_run": false,
+  "original_names_rows_reread": 191048,
+  "original_source_filing_pairs": 135,
+  "provenance": {
+    "candidate_receipt_sha256": "23e1e48df88255cd57f8c23af895fb1dfbfa975e8d4545362a77f5b812e64c0e",
+    "candidate_table_sha256": "49b73a196d0c33637c02c5f62ba3219e0fab8832b6a1d8365b9dd9135465c55a",
+    "original_CRSP_Names_csv_sha256": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+    "original_CRSP_Names_inventory_receipt_sha256": "24e3dd6e85a716a87e572d0e824935c63c70930a7777214732ca0445073b5fcb",
+    "original_SEC_report_execution_sha256": "9da39ddedd8ad29910fed229b4d1d64088c4bb402aeeafd8e749954f4b24405f",
+    "original_SEC_report_gzip_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "schema_version": 1,
+  "source_approvals": 0,
+  "status": "ORIGINAL_SEC_10K_LEXICAL_TRADING_SYMBOL_NAMES_CORROBORATION_UNAPPROVED",
+  "unambiguous_share_class_established": false
+}
