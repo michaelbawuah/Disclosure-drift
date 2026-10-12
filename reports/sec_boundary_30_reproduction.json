@@ -1,0 +1,50 @@
+{
+  "current_HTML_sha256_identical_to_prior_source_cache_count": 0,
+  "current_source_risk_token_counts_verified": 30,
+  "direct_automated_numbered_Item1A_sections": 28,
+  "distinct_SEC_filer_CIKs": 11,
+  "distinct_original_SEC_10K_files": 30,
+  "duplicates_exactly_matched_across_source_caches": 2,
+  "full_software_reproduction": {
+    "exit_code": 0,
+    "invented_end_to_end_pipeline": "passed",
+    "pytest_passed": 1257,
+    "ruff_passed": true
+  },
+  "identical_repeat_run_artifacts": {
+    "private_filing_boundaries.jsonl": {
+      "byte_identical": true,
+      "bytes": 65498,
+      "sha256": "6ad5227a1a7c1350ab356125a88154e88155472fad48d6bd0d76d25a6043cff0"
+    },
+    "private_review.html": {
+      "byte_identical": true,
+      "bytes": 45471,
+      "sha256": "455eeeba2d12eedef9f059262310452fe229f4d5284ce409be952f951128bb1b"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 2688,
+      "sha256": "085c435c8bf0a0bb1817670d045fb420e0c5d420457742a05b6cd4d960be1824"
+    }
+  },
+  "independent_original_source_verifier_runs": 2,
+  "interpretation": "Reproducible source/registered-range verification for thirty original SEC filings; signed human boundaries, security identity and historical availability remain pending",
+  "old_registered_alternate_GE_text_ranges_source_digest_matched": 2,
+  "original_current_HTML_cache_records": 32,
+  "original_verified_SEC_CIK_and_header_clocks_bound": 30,
+  "research_gates": {
+    "CIK_PERMNO_effective_interval_known_at_approved": false,
+    "actual_final_2022_2025_evaluation_opened": false,
+    "earlier_and_current_html_byte_equivalence_proven": false,
+    "historical_CRSP_available_at_verified": false,
+    "historical_issuer_security_class_approved": false,
+    "human_original_filing_boundary_review_completed_here": false,
+    "model_ready": false,
+    "real_return_forecast_performance_approved": false,
+    "source_original_SEC_first_publication_known_at_established": false
+  },
+  "schema_version": 1,
+  "source_fingerprints_unchanged_between_runs": true,
+  "status": "ORIGINAL_SEC_THIRTY_BOUNDARY_SOURCE_REPRODUCTION_COMPLETE_HUMAN_APPROVAL_PENDING"
+}

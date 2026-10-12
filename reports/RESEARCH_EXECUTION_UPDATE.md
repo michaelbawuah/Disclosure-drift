@@ -1254,3 +1254,53 @@ documents were not downloaded a second time to demonstrate determinism.
 Human filing boundary approvals, actual SEC publication known-at and
 historical market source rights are still unresolved and the sealed
 2022–2025 final evaluation remains closed.
+
+
+## 12 October — 30 original SEC Risk Factors filing-boundary source checkpoint
+
+The [expanded source-only Item 1A boundary handoff](../docs/sec_boundary_30_review.md)
+combines all previously downloaded original primary SEC HTMLs from
+two independent private source caches: **32 source files** covering **30
+distinct 10-K filing accessions** from **11 purposively selected issuers**,
+with **two duplicate current source HTMLs matching byte-for-byte across
+caches**. The acceptance years are 2018:4, 2019:5, 2020:11, 2021:10.
+
+The combined offline audit rechecks the 215-filing original SEC manifest
+sha256, the preserved 215-original identity/acceptance audit, both
+16-file source-cache receipts, and the existing source-registered GE
+Item1A reference rules. **28 documents** automatically yield substantive
+numbered Item 1A source ranges with start/end section headings; the two
+GE original filings have table-of-contents Item 1A references and use
+previously registered **assistant-proposed, human-pending** normalized
+same-document source ranges. Both GE source text hashes reproduce exactly,
+with **7,472** and **8,398** original source tokens; the current full
+raw HTML SHA-256s do **not** match the older manifest and are not
+silently considered byte-equivalent.
+
+All **30/30** saved source text token counts agree with the original
+source records. The prior source-verified SEC filing/header report also
+matches **30/30** original CIKs and acceptance clocks. A separate,
+independently implemented source/offset verifier reconstructs all
+30 original HTML source facts, 28 directly bounded range selections,
+both GE registered text digests, 2 duplicate current source files and
+all year/issuer totals. A private read-only source preview page now
+groups all thirty original filing contexts and explicit unresolved
+human-review/availability claims; it does not issue human verdicts
+or overwrite the earlier 73-filing review packet. The
+[aggregate public checkpoint](sec_boundary_30_checkpoint.json) and
+[independent verifier](sec_boundary_30_independent.json) contain no
+per-filing CIK/source offsets. No historical SEC first-publication time,
+CIK-to-PERMNO identity known-at, market `available_at`, human filing
+sign-off, or actual final-period forecast was created.
+
+The source-bound thirty-document audit was rerun against the same immutable
+original SEC caches without any additional network requests.
+The 30-entry private JSONL packet, local human-reading HTML and aggregate
+public summary were **byte-identical** between executions. A separately
+written verifier independently reproduced all thirty input SEC original
+text SHA/counts, 28 direct Item 1A sections, the two GE registered
+alternate ranges, source/clock links and duplicate HTML checks on each
+run. The [reproducibility report](sec_boundary_30_reproduction.json)
+records Ruff, **1,257 passing tests**, and the completed invented-data
+end-to-end pipeline. All 30 remain pending signed human review; no source
+first-publication or historical market-data availability was inferred.

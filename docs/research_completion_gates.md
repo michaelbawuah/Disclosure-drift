@@ -187,6 +187,20 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [combined 30-filing original SEC boundary handoff](sec_boundary_30_review.md)
+now checks every previously downloaded primary HTML in the 16-filing
+stock-class and 16-filing SEC-only diagnostic caches (two duplicates;
+30 distinct source documents). **28/30** have directly bounded Item 1A,
+while the other two are GE reports with existing registered
+source-range text whose **normalized SHA and 7,472/8,398 token counts**
+reproduce exactly despite different current raw HTML SHA-256s. All
+30 have the earlier verified original SEC CIK/acceptance clock and
+reproduce source risk-section token counts. The new check is
+**automated source/offset reconciliation**, not a human boundary
+verdict; the fixed 73-filing human review workflow still applies.
+Neither historical source publication nor CIK–PERMNO market-data
+availability is established.
+
 A [SEC-only alternative-metric sensitivity review](sec_alternative_metric_sensitivity.md)
 now tests log Item 1A text-length change and prior-years-only
 TF-IDF cosine distance on the **same original balanced 34 issuers**.
