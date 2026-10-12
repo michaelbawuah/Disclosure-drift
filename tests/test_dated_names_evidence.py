@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 import pyarrow as pa
@@ -108,7 +109,10 @@ def test_later_descriptor_resolves_snapshot_gap_and_preserves_all_originals(prep
     for path in args["output"].rglob("*"):
         assert path.stat().st_mode & 0o777 == (0o700 if path.is_dir() else 0o400)
     assert json.loads((args["output"] / "aggregate.json").read_text()) == dated.aggregate_summary(result)
-    public = json.dumps(dated.aggregate_summary(result))
+    # A short synthetic identifier can coincide with four hex characters
+    # inside a legitimate SHA-256 provenance digest. Redact complete digests
+    # before testing that the public text does not include raw record values.
+    public = re.sub(r"\b[0-9a-f]{64}\b", "<SHA256>", json.dumps(dated.aggregate_summary(result)))
     assert "NEW" not in public and "87654321" not in public and "0456" not in public
     with pytest.raises(ValueError, match="exists"):
         dated.build_dated_names_evidence(**args)
