@@ -51,6 +51,14 @@ The separate 2026 cohort and a trading strategy are not requirements for this
 primary study. Numerical preparation and a runnable synthetic study are useful
 deliverables; neither establishes forecast performance.
 
+An [SEC-backed exploratory pilot](sec_backed_alternative_pilot.md) can run
+**offline now** using the 135 original-filing text comparisons and provisionally
+calculated market candidate rows; it produced 116 expanding-year development
+predictions per fixed-alpha model and a separate independent public-market
+factor coverage check. Results remain **quarantined as unapproved**. This
+separate feasibility route is *not* fulfillment of the frozen full-universe
+development grid search, empirical milestones 5–11 or the final holdout.
+
 ## 1. Finish decisions supported by existing evidence
 
 ### Filing boundaries, annual pairs and reference cases

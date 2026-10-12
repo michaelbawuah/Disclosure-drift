@@ -780,3 +780,45 @@ original 20-issuer snapshot. This update, the current
 The WRDS variables catalog showed historical `HCIK` in `companyhistory` and `comphist` under CCM product names; opening the query link led to a separate WRDS login. An individual account request is pending institutional approval. **No Company History CSV was obtained.** The offline [source-intake contract](../docs/company_history_intake.md) now preserves an eventual manually authorized export with hash-bound field mapping, effective-interval checks, and competing-CIK examples. Its tests are synthetic, and its outputs retain empty historical `known_at`, zero source/identity approvals, `model_ready=false` and `final_period_opened=false`. The software milestone does not complete empirical milestone 5 or open milestones 6–11.
 
 The [published, aggregate-only synthetic checkpoint](company_history_intake_checkpoint.json) records the CLI validation (three invented rows, two effective-interval candidates), 30 independent overlap-sweep brute-force comparisons and the final full reproduction (Ruff, **1,019 passing tests**, complete synthetic study). Original invented rows, receipts and all prospective licensed exports remain under ignored private paths. The account is still pending, and zero new historical link approvals or real-data outcomes were created.
+
+
+## 11 October — offline SEC-backed alternative, not an empirical sign-off
+
+The [new alternative-pilot contract](../docs/sec_backed_alternative_pilot.md)
+describes two reproducible **non-authoritative** runs on already saved sources:
+
+- A fixed-alpha, six-year expanding development-fold comparison built
+  **116 paired conditional predictions** from the 135 matched original SEC
+  filing features and *unapproved* CRSP candidate arithmetic rows (20 purposive
+  issuer identities). It uses only earlier complete training labels and
+  earlier-year TF-IDF vocabulary metadata. Numeric performance is held in a
+  private, ignored evidence directory. The initial conditional comparison did
+  **not show text uplift**; it is not a validated sample-level or population-level
+  performance finding. No identity was approved, no source release was established
+  and no human source decision was inferred.
+- An independent **Fama–French daily market-factor versus original CRSP market
+  export** check covered all **3,103 development dates** without missing dates,
+  while finding only four exact daily return equalities. The public file's
+  preamble references the 202608 CRSP database. Different market universes and
+  potential retrospective revisions prevent treating this as an automatically
+  equivalent primary index. This comparison only tests coverage and contrasts
+  definitions; it does not replace the CRSP benchmark or resolve the earlier
+  52 in-vendor discrepancies.
+
+Both runs verified source hashes against earlier evidence and retained
+`model_ready=false`, zero new approvals, and
+`final_period_opened=false`. Their public aggregate checkpoint is
+[here](alternative_pilot_checkpoint.json). The manually reviewed 20/20 arithmetic
+cases remain credited, while all additional source, identity, filing, population,
+benchmark and final-evaluation research gates remain unchanged.
+
+A second **separate real-candidate diagnostic execution** in new ignored
+private directories reproduced four output files **byte for byte**: the
+conditional candidate predictions, their private aggregate metrics, the
+non-approving SEC pilot public summary and the alternative market-series
+comparison summary. The [source-preserving public reproduction receipt]
+(alternative_pilot_reproduction.json) also records Ruff, **1,054 passing
+tests**, and a complete synthetic software run. The two run receipts themselves
+have different timestamps and are not claimed byte-identical. None of
+these checks authorizes a historical mapping or turns candidate forecasts into
+validated economic evidence.

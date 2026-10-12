@@ -27,6 +27,8 @@ all three text features to the same market controls.
 | Completed user review | 20/20 independent numerical and printed-timing checks recorded against the exact original packet |
 | Filing review | Assistant boundary/timing review covers all 73 distinct filings in the fixed-pair/reference packet: 63 prior records preserved and 10 new reviews; no human filing review created |
 | Candidate market arithmetic | All 135 candidate calculations reconcile independently within 1e-12; historical identities remain unapproved |
+| Conditional SEC-backed modeling diagnostic | 135 original filing pairs joined one-to-one to provisional market controls; 116 paired expanding-year predictions per fixed-alpha model, **unapproved and not a validated predictive finding** |
+| Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
 | Annual candidate evidence | 86,064 Names snapshots, 50,230 provisional liquidity ranks, and 100,261 Names/CCM relationships; historical identity and availability remain unapproved |
@@ -41,6 +43,12 @@ all three text features to the same market controls.
 | Benchmark source evidence | All five audited source bindings preserved; 52 exact-comparison differences remain unexplained; a source-backed reviewed benchmark choice is pending, with no tolerance or replacement accepted |
 | Full software demonstration | 192 invented annual memberships; 144 development and 48 separately staged final observations |
 | Empirical completion | Historical CIK/availability evidence, reviewed source choices and normalization, remaining judgments, approved universe, development selection and final estimates remain pending |
+
+See the [no-new-WRDS exploratory route](docs/sec_backed_alternative_pilot.md)
+its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoint.json),
+and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
+for a development-only feasibility analysis. Its source/identity and review gates
+remain closed; conditional predictions stay private. This is not the final study.
 
 Start with the [latest execution update](reports/RESEARCH_EXECUTION_UPDATE.md),
 [cutoff-day clock results](docs/ownership_cutoff_clock_results.md),

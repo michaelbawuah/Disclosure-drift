@@ -1,0 +1,38 @@
+{
+  "all_four_compared_outputs_byte_identical": true,
+  "full_repository_reproduction": {
+    "complete_synthetic_study_pipeline_passed": true,
+    "full_execution_exit_code": 0,
+    "pytest_passed": 1054,
+    "ruff_passed": true
+  },
+  "gates": {
+    "final_2022_2025_evaluation_opened": false,
+    "real_benchmark_selected": false,
+    "real_full_empirical_study_complete": false,
+    "real_historical_identity_approved": false,
+    "real_source_availability_approved": false
+  },
+  "original_and_fresh_outputs": {
+    "conditional_model_public_aggregate": {
+      "byte_identical": true,
+      "sha256": "d245e9163046669c4ab7510fda9e6de06745649dcafef4dcda6b8a528f562ba3"
+    },
+    "conditional_private_metrics": {
+      "byte_identical": true,
+      "sha256": "4ad0c09c733e980bd5a1c5ccdd47fc8f3eaeae640bd96be8cae2ff9fd2a01984"
+    },
+    "conditional_private_predictions": {
+      "byte_identical": true,
+      "sha256": "1e11e2d10e56834dec9b2dece89a18a2e969306f802c85f9366e810e80967a04"
+    },
+    "independent_public_market_comparison": {
+      "byte_identical": true,
+      "sha256": "2d439aa72a2c5deb68ec8799f1ea92124e8c81c7be4a4c97dc8480568df98d60"
+    }
+  },
+  "result_publication": "No vendor return rows, individual issuer observations, conditional numeric predictions or unapproved model scores are published",
+  "schema_version": 1,
+  "status": "SECOND_INDEPENDENT_EXECUTION_BYTE_IDENTICAL_ONLY_NO_SOURCE_APPROVAL",
+  "verified_at_utc": "2026-10-12T01:07:18.614919+00:00"
+}
