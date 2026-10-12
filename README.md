@@ -30,6 +30,7 @@ all three text features to the same market controls.
 | Conditional SEC-backed modeling diagnostic | 135 original filing pairs joined one-to-one to provisional market controls; 116 paired expanding-year predictions per fixed-alpha model, **unapproved and not a validated predictive finding** |
 | Independently reconstructed 2020 pilot issuer anchors | **20/20** securities with original SEC issuer CIK and dated CRSP Names corroboration; 419 strictly earlier observations, 5 cutoff-day unknown, 1 current-header conflict; **historical continuity/availability unapproved** |
 | Original 10-K TradingSymbol corroboration | 43 of 135 development filings have cover-page lexical symbols with same-date exact CRSP Names candidates; 17 single/clean/unhidden; multiple-class and historical availability remain unapproved |
+| Development event identity matrix | All 135 original SEC events independently reconcile **10,935/10,935** dated Names session checks, 135 single CCM candidates and PERMCO checks; six descriptor transitions, seven current-header conflicts; **no historical known-at or mapping approval** |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -51,6 +52,12 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+The [read-only 135-event historical identity review matrix](docs/development_identity_matrix.md)
+and its [independently reconstructed source receipt](reports/development_identity_matrix_independent.json)
+and [byte-identical rerun verification](reports/development_identity_matrix_reproduction.json)
+provide a concrete private filing-by-filing handoff while keeping all research
+gates closed.
 
 See the [original 10-K symbol-source corroboration](docs/tenk_symbol_corrob.md), its [aggregate checkpoint](reports/tenk_symbol_corrob_checkpoint.json), and the source review limits.
 

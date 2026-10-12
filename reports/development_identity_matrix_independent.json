@@ -1,0 +1,24 @@
+{
+  "continuous_CIK_PERMNO_link_approved": false,
+  "final_period_opened": false,
+  "full_private_per_event_review_flag_comparison_passed": true,
+  "historical_known_at_established": false,
+  "independent_year_and_event_counts_match": true,
+  "independently_rebuilt_events": 135,
+  "independently_rebuilt_session_checks": 10935,
+  "independently_verified_issuers": 20,
+  "interpretation": "Independent reproducibility of retrospective descriptors; no empirical model input approvals or share-class adjudication",
+  "method": "Independent bisect-derived XNYS windows and raw CCM/CRSP Names/SEC original-source comparison",
+  "model_ready": false,
+  "original_names_rows_examined": 191048,
+  "point_in_time_market_available_at_established": false,
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "source_fingerprint": {
+    "original_M5_candidate_table": "49b73a196d0c33637c02c5f62ba3219e0fab8832b6a1d8365b9dd9135465c55a",
+    "original_SEC_10K_report": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "original_names_csv": "74195ec05a8b392fcef880750aa73e6f7860f927b042e404c0f9a8c28d1858a9",
+    "prior_private_matrix_receipt": "c705a5d43e733ce8904fc8ac72a68ae6d10c8a7345e750f5f80e9d232a1478fa"
+  },
+  "status": "INDEPENDENT_DEVELOPMENT_IDENTITY_MATRIX_RECONCILED_NOT_APPROVED"
+}

@@ -1,0 +1,40 @@
+{
+  "actual_final_2022_2025_evaluation_opened": false,
+  "claim": "Byte-identical retrospective source matching, not historical availability or empirical forecast evidence",
+  "complete_software_reproduction": {
+    "exit_code": 0,
+    "lint": "passed",
+    "pytest_passed": 1115,
+    "synthetic_research_pipeline": "passed"
+  },
+  "distinct_pilot_issuer_security_candidates": 20,
+  "historical_known_at_supplied": false,
+  "human_reviews_inferred": 0,
+  "independent_all_event_flags_and_year_counts_verified": true,
+  "independent_raw_source_checks": 2,
+  "independent_source_pins_unchanged": true,
+  "market_available_at_supplied": false,
+  "output_file_repetition": {
+    "private_review.html": {
+      "byte_identical": true,
+      "bytes": 207358,
+      "sha256": "64a8d144fe0edc1e3b796f64ffc8c68768d0dd93121510a2968cb8edb0b7fda7"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 7893,
+      "sha256": "84f0e9d01fc16a6e7a5a5562e7c53ed548678c52f2699f24623dd143341a5928"
+    },
+    "review_queue_private.jsonl": {
+      "byte_identical": true,
+      "bytes": 198433,
+      "sha256": "44a422e6d6d2e3c8e87430aeebf533251d8712e3d25ea19b7afca24fa4d2caee"
+    }
+  },
+  "permanent_security_links_approved": 0,
+  "real_model_ready": false,
+  "reconstructed_XNYS_date_checks": 10935,
+  "reconstructed_original_events": 135,
+  "schema_version": 1,
+  "status": "DEVELOPMENT_IDENTITY_MATRIX_TWO_SOURCE_BOUND_EXECUTIONS_BYTE_IDENTICAL_NOT_APPROVED"
+}

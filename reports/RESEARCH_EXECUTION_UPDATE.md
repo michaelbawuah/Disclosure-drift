@@ -883,3 +883,59 @@ reproduced the original public aggregate and private filing/context evidence
 records the full **1,086 passing tests**, Ruff and complete synthetic study
 reproduction. The source integrity and approval limitations stated above
 remain unchanged.
+
+## 11 October — 135-event historical continuity review and independent source verifier
+
+The [private development identity matrix](../docs/development_identity_matrix.md)
+reconciles the entire 2015–2021 20-issuer SEC parser pilot without any new
+WRDS request. For each of the **135 original SEC 10-K events**, it independently
+rebuilds the exact 60 pre-reference XNYS control dates, reference date and 20
+subsequent return dates. All **10,935** date/security positions have one
+historically *dated* complete CRSP Names descriptor and consistent candidate
+CCM permanent-company identifier. All 135 source filing dates have one
+CCM link candidate, but all original link end markers are unresolved `E`.
+Six windows span a change in the original dated Names source record; none
+changes the saved eight-character CUSIP or trading symbol within that window.
+Seven current CCM header-CIK differences remain preserved.
+
+The entire original 191,048-row Names source was also rescanned for
+contemporaneously active **other PERMNOs sharing each selected PERMCO**:
+none of the 135 filing dates had an additional one. All 135 selected
+Names `shareclass` literals were blank. Neither observation establishes
+common-stock eligibility or the class intended by a multi-context SEC fact.
+
+The event-level documentary overlap has **41** filings with both original
+10-K TradingSymbol lexical evidence and an earlier *reported filing-date*
+2019Q4 issuer observation; **two** 10-K-symbol-only, **zero** 2019Q4-anchor-only,
+and **92** with neither additional source. All 135 still have original
+SEC filing CIK/time verification and complete retrospective dated Names
+coverage. The earlier SEC 2019Q4 submission filing date is **not historical
+first-publication evidence**. Cover fact symbols, multiple classes and hidden/
+lexical issues remain unadjudicated.
+
+The builder produces a **private read-only HTML review page** grouped by
+acceptance year, a 135-row private evidence queue and an aggregate-only
+[source checkpoint](development_identity_matrix_checkpoint.json). The
+independent [source verifier](../src/disclosure_research/development_identity_matrix_verifier.py)
+uses a separate bisect-based XNYS calculation and independent raw
+Names/CCM/SEC records to reproduce **all 135 events, all 10,935 dates,
+all per-year counts and all private event review flags**.
+The published [independent receipt](development_identity_matrix_independent.json)
+contains no per-security licensed information.
+
+Every original CIK–PERMNO identity validity interval, source release, source
+known-at, market available-at, common-stock class choice, historical
+population review and required human research judgment remains unapproved.
+The earlier 20/20 independent arithmetic review and 73 assistant filing
+reviews retain their original credit. The actual 2022–2025 final evaluation
+remains unopened.
+
+A second fresh, private **real-data** matrix run produced three **byte-identical
+outputs**: the 135-event JSONL evidence queue, the readable local HTML review
+packet and the aggregate public summary. A separate independent verifier also
+reconstructed all 135/10,935 original-source checks and every private review
+flag a second time. The source hashes remained unchanged. The
+[reproduction receipt](development_identity_matrix_reproduction.json)
+records **1,115 passing tests**, Ruff and the full synthetic pipeline;
+those synthetic final predictions are not empirical holdout results. Both
+runs preserve all source/identity/human approval gates as pending.
