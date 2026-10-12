@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "exclusive_group:ISSUER_SPECIFIC_CLASS_CONTEXT_REQUIRES_INTERPRETATION": 4,
+    "exclusive_group:NO_STANDARD_CLASS_AXIS_REQUIRES_INDEPENDENT_CLASS_EVIDENCE": 18,
+    "exclusive_group:STANDARD_COMMON_LEXICAL_CONTEXT_PRESENT": 19,
+    "filings_standard_common_member_without_fact_lexical_warnings": 16,
+    "filings_with_any_structural_or_lexical_context_warning": 7,
+    "filings_with_issuer_specific_stock_axis_member": 7,
+    "filings_with_matched_symbol_title_and_exchange_in_one_context": 39,
+    "filings_with_matched_symbol_without_stock_axis": 19,
+    "filings_with_matching_same_context_Common_Stock_title_literal": 39,
+    "filings_with_multiple_reported_10K_symbols": 21,
+    "filings_with_standard_common_member_and_multiple_reported_symbols": 14,
+    "filings_with_standard_gaap_CommonStockMember": 19,
+    "filings_with_uninterpreted_associated_title_exchange_format": 38,
+    "matching_original_SEC_10K_trading_symbol_facts": 55,
+    "reviewed_doubly_corroborated_filings": 41
+  },
+  "final_period_opened": false,
+  "historical_CIK_to_PERMNO_known_at_established": false,
+  "historical_security_class_approved": false,
+  "historical_security_validity_intervals_established": false,
+  "human_reviews_created": 0,
+  "interpretation": "Lexical explicit-member/SEC title context corroboration, not approved security class, effective interval or historical source publication.",
+  "lexical_source_contexts_not_validating_XBRL_processor": true,
+  "market_available_at_established": false,
+  "model_ready": false,
+  "original_SEC_first_public_dissemination_known": false,
+  "research_scope": "2015-2021 purposive original pilot; 2019Q4 Q4 issuer anchor and cover-symbol intersection",
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "source_fingerprints": {
+    "original_sec_execution": "9da39ddedd8ad29910fed229b4d1d64088c4bb402aeeafd8e749954f4b24405f",
+    "original_sec_gzip": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "original_sec_source_json": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0",
+    "previous_matrix_event_rows": "44a422e6d6d2e3c8e87430aeebf533251d8712e3d25ea19b7afca24fa4d2caee",
+    "previous_private_matrix_receipt": "b991b699956f78892514e106c0a1e63831ab8f4e61c6af1624e1e7f5dfb20258",
+    "protocol": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "status": "SEC_COVER_CLASS_LEXICAL_41_CASE_TRIAGE_NOT_APPROVED",
+  "year_counts": {
+    "2019": {
+      "filings": 1,
+      "standard_common_member_present": 1
+    },
+    "2020": {
+      "filings": 20,
+      "standard_common_member_present": 9
+    },
+    "2021": {
+      "filings": 20,
+      "standard_common_member_present": 9
+    }
+  }
+}

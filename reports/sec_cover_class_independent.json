@@ -1,0 +1,18 @@
+{
+  "SEC_first_dissemination_time_established": false,
+  "exclusive_review_groups_and_overlap_counts_recomputed": true,
+  "final_period_opened": false,
+  "first_pass_private_receipt_sha256": "bf93253347aa62a0dc6d6aac53b446edea18c95b0dff8fbd0bc89e51509e544f",
+  "full_original_source_facts_and_each_review_flag_verified": true,
+  "historical_known_at_established": false,
+  "human_reviews_created": 0,
+  "independently_checked_doubly_corroborated_filings": 41,
+  "model_ready": false,
+  "original_SEC_gzip_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+  "original_SEC_matching_symbol_contexts_reconstructed": 55,
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "standard_common_member_filings": 19,
+  "status": "INDEPENDENT_SEC_COVER_CLASS_TRIAGE_RECONCILED_NOT_APPROVED",
+  "stock_class_or_CIK_PERMNO_approved": false
+}

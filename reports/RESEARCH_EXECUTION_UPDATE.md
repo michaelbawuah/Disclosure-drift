@@ -939,3 +939,52 @@ flag a second time. The source hashes remained unchanged. The
 records **1,115 passing tests**, Ruff and the full synthetic pipeline;
 those synthetic final predictions are not empirical holdout results. Both
 runs preserve all source/identity/human approval gates as pending.
+
+## 11 October — 41 original SEC stock-class lexical context cases
+
+The [new conservative SEC cover class triage](../docs/sec_cover_class_review.md)
+read the previously pinned 215-original-filing SEC lexical evidence and
+the private 135-event source review matrix. It inspected the **41** events
+with both original 10-K TradingSymbol lexical evidence and a *reported
+filing-date* 2019Q4 ownership-form issuer anchor preceding the 10-K acceptance.
+The 41 contain **55** original matched TradingSymbol fact occurrences.
+Fact context refs, actual parsed context ordinals, and original CIK/period
+components were compared to the source report.
+
+**19** of 41 have a matched `us-gaap:CommonStockMember` lexical source
+context; **16** of these have at least one standard-member symbol/context
+without a structural lexical warning. Four additional cases have only an
+issuer-specific/other stock-class axis member, and **18** have no standard
+stock-axis source member. The 19 / 4 / 18 priority groups are exclusive.
+Across overlapping flags, 21 cases report multiple distinct symbol literals,
+14 of them with a standard CommonStockMember fact. The matching fact's
+*same context* has an original security-title literal including “Common Stock”
+in **39** cases; **39** have both a same-context title and exchange fact.
+**38** cases contain a recorded but **uninterpreted title/exchange formatting
+transformation**, which is a separate caveat, not an assumed broken SEC CIK.
+Seven cases have original symbol/context source issues or absent associated
+fields. The source report does not validate XBRL schema meaning, historical
+CIK-PERMNO links or point-in-time public availability.
+
+A separately implemented original-source [verifier](../src/disclosure_research/sec_cover_class_verifier.py)
+recomputed all 55 matched original symbol/context references, title and
+exchange observations, namespace and member comparisons, original issuer CIK,
+recorded source periods, source warnings and the 41-case priority totals.
+The private read-only HTML and JSONL review packet is held under ignored
+`outputs/sec-cover-class-20261011-final-v3/`. The
+[public checkpoint](sec_cover_class_checkpoint.json) and
+[independent verification](sec_cover_class_independent.json) contain only
+aggregate counts and hashes. No historical security class, source release,
+identity mapping, original SEC public dissemination time, human review or
+forecasting result was approved. The 2022–2025 final period remains closed.
+
+A second complete original SEC lexical class audit using the same pinned
+sources but a fresh private directory produced three **byte-identical**
+source evidence outputs: individual JSONL source contexts, the read-only
+private HTML review queue and aggregate public counts. The independent
+verifier reproduced all 41 event cases and 55 matched symbol-context
+facts from the original preserved SEC publication a second time.
+The [source reproduction report](sec_cover_class_reproduction.json)
+records **1,137 passing tests**, Ruff and a complete synthetic study
+pipeline. Source approval, historical stock class, publication time,
+human review and empirical-model final gates remain closed.

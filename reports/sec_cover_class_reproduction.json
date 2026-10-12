@@ -1,0 +1,41 @@
+{
+  "first_and_second_source_bound_execution_files": {
+    "private_context_review.html": {
+      "byte_identical": true,
+      "bytes": 64131,
+      "sha256": "88b2642e5d2da3b9a8bb1427dc8d34e7353b474ad0e0fe97e21da0b3b7a72fa2"
+    },
+    "private_context_review.jsonl": {
+      "byte_identical": true,
+      "bytes": 80010,
+      "sha256": "2e67aa36a9de11067980b491b72db91d599fcb7faa091b0775ddf97a2a8f4a90"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 2724,
+      "sha256": "ee050d99cfb7426b2f486ad47b73b32686463d9e59a9fbe784483b824fac994d"
+    }
+  },
+  "full_software_regression": {
+    "exit_code": 0,
+    "invented_study_pipeline": "passed",
+    "pytest_passed": 1137,
+    "ruff": "passed"
+  },
+  "gates": {
+    "final_2022_2025_evaluation_opened": false,
+    "historical_known_at_established": false,
+    "historical_security_classes_approved": 0,
+    "human_review_approvals": 0,
+    "model_ready": false,
+    "original_SEC_first_publication_verified": false,
+    "source_approvals": 0
+  },
+  "independent_full_source_verification_runs": 2,
+  "interpretation": "Reproducible original-source lexical class triage, not validated XBRL semantics or economic forecasts",
+  "matched_original_SEC_symbol_contexts": 55,
+  "original_source_context_flags_recomputed": true,
+  "read_only_41_filing_context_review": true,
+  "schema_version": 1,
+  "status": "SEC_COVER_CLASS_TWO_SEPARATE_SOURCE_EXECUTIONS_BYTE_IDENTICAL_NOT_APPROVED"
+}

@@ -31,6 +31,7 @@ all three text features to the same market controls.
 | Independently reconstructed 2020 pilot issuer anchors | **20/20** securities with original SEC issuer CIK and dated CRSP Names corroboration; 419 strictly earlier observations, 5 cutoff-day unknown, 1 current-header conflict; **historical continuity/availability unapproved** |
 | Original 10-K TradingSymbol corroboration | 43 of 135 development filings have cover-page lexical symbols with same-date exact CRSP Names candidates; 17 single/clean/unhidden; multiple-class and historical availability remain unapproved |
 | Development event identity matrix | All 135 original SEC events independently reconcile **10,935/10,935** dated Names session checks, 135 single CCM candidates and PERMCO checks; six descriptor transitions, seven current-header conflicts; **no historical known-at or mapping approval** |
+| Original 10-K stock-class lexical context triage | All **41** doubly corroborated pilot filings reviewed for exact original SEC symbol/context, title and exchange: **19** standard common-stock members (**16** with no structural warning), **4** issuer-specific-only, **18** no standard class axis; **no XBRL semantic or historical identity approval** |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -52,6 +53,13 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+The [41-filing original SEC cover stock-class review](docs/sec_cover_class_review.md)
+its [source-pinned aggregate result](reports/sec_cover_class_checkpoint.json),
+[independent original-context verification](reports/sec_cover_class_independent.json),
+and [byte-identical repeat-run receipt](reports/sec_cover_class_reproduction.json)
+narrow the documentary review queue without equating ticker strings with
+approved stock classes.
 
 The [read-only 135-event historical identity review matrix](docs/development_identity_matrix.md)
 and its [independently reconstructed source receipt](reports/development_identity_matrix_independent.json)

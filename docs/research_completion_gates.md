@@ -187,6 +187,14 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [41-case original SEC stock-class lexical review](sec_cover_class_review.md)
+now separates 19 matched standard `us-gaap:CommonStockMember` lexical contexts
+(16 without recorded structural source/context warnings) from four
+issuer-specific-only and 18 no-standard-class-axis cases. It also preserves
+SEC title/exchange formatting caveats, context/issuer-period checks and
+multiple security symbols. This is **not** validated XBRL semantic stock-class
+interpretation, historical security-link approval, known-at or available-at.
+
 The [event-by-event development identity matrix](development_identity_matrix.md)
 now supplies a complete **10,935-source-date** retrospective Names review across
 135 original SEC filing events, including six descriptor changes, seven
