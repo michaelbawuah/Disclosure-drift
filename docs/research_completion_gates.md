@@ -187,6 +187,14 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [IBM Capital Stock original EX-4.1 review](ibm_capital_stock_exhibit_review.md)
+corroborates that the two lexical `Capital stock` 10-K titles refer to
+IBM's single outstanding registered equity class, with documented voting,
+dividend and residual rights at the 2019/2020 year ends. The SEC exhibits
+do **not** establish CIK–PERMNO effective interval/source known-at, eligible
+common-stock share class under the frozen market selection rules, first
+publication of the current byte version or approval of those observations.
+
 The [direct original SEC HTML/header reinspection](sec_original_live_reinspection.md)
 now fetched all 16 original paired-class documents on the authorized Mac.
 **16/16 original filing headers match prior verified SHA-256**; the 16 current

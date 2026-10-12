@@ -1,0 +1,28 @@
+{
+  "earliest_SEC_public_dissemination_established": false,
+  "final_period_opened": false,
+  "historical_CIK_PERMNO_effective_intervals_approved": false,
+  "historical_CRSP_IBM_common_stock_class_approved": false,
+  "human_review_completed": false,
+  "independent_source_equity_section_hashes_and_share_counts_match": true,
+  "independent_stdlib_HTMLParser_used_instead_of_initial_lxml_parser": true,
+  "independently_verified_official_exhibit_4_1_documents": 2,
+  "interpretation": "Independent offline HTMLParser reconstruction corroborates original IBM capital-stock rights and the sole outstanding equity class; this does not establish effective-dated market identities or time-of-first-availability.",
+  "model_ready": false,
+  "original_IBM_single_equity_class_and_capital_stock_rights_verified": true,
+  "original_SEC_official_filing_index_and_exhibit_document_matches": true,
+  "report_year_ends": [
+    2019,
+    2020
+  ],
+  "schema_version": 1,
+  "source_fingerprints": {
+    "first_audit_private_exhibit_evidence_sha256": "28f99e6d87e9f179e18b3ede0a145645d076ff442afcc51effda4f334b646a91",
+    "first_audit_public_sha256": "feda5cf7e8e0b3558f672e3fd3224fbee8229141eedeac35b41addea6da710d8",
+    "initial_audit_receipt_sha256": "585e09c8f773e7a5f20fd0aab625761f08c6cf31c351b0ede768248f8c3289c6",
+    "original_sec_exhibit_pin_sha256": "a56db8ae56629616fc554c16895aba0f4dbfc8ca13bee853970558f5f46b742c",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "source_known_at_or_available_at_established": false,
+  "status": "INDEPENDENT_IBM_ORIGINAL_EXHIBIT4_EQUITY_CLASS_EVIDENCE_RECONCILED_NOT_APPROVED"
+}

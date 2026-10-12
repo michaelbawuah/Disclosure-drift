@@ -1,0 +1,43 @@
+{
+  "claim": "Source-equity nature corroborated only; not an approved common-stock class or empirical return prediction",
+  "full_software_reproduction": {
+    "exit_code": 0,
+    "invented_full_study_pipeline": "passed",
+    "pytest_passed": 1200,
+    "ruff": "passed"
+  },
+  "gates": {
+    "IBM_historical_stock_class_approved": false,
+    "SEC_first_publication_for_current_source_version_established": false,
+    "final_2022_2025_period_opened": false,
+    "historical_CIK_PERMNO_link_approved": false,
+    "historical_CRSP_data_available_at_established": false,
+    "human_reviews_inferred": 0,
+    "model_ready": false,
+    "source_approvals": 0
+  },
+  "independent_equity_rights_and_reported_share_count_checks_match": true,
+  "independent_original_HTMLParser_source_checks": 2,
+  "original_SEC_exhibits_reexamined": 2,
+  "registered_issued_equity_classes_described_as_one": true,
+  "repeated_original_source_processing_outputs": {
+    "private_exhibit_review.jsonl": {
+      "byte_identical": true,
+      "bytes": 9624,
+      "sha256": "28f99e6d87e9f179e18b3ede0a145645d076ff442afcc51effda4f334b646a91"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 3789,
+      "sha256": "feda5cf7e8e0b3558f672e3fd3224fbee8229141eedeac35b41addea6da710d8"
+    }
+  },
+  "schema_version": 1,
+  "source_files_checked_against_public_immutable_pin": 6,
+  "source_index_advertised_size_minus_downloaded_exhibit_bytes": [
+    -111,
+    -111
+  ],
+  "status": "ORIGINAL_IBM_2019_2020_SEC_REGISTERED_EQUITY_TWO_REPRODUCIBLE_VERIFICATIONS_NOT_APPROVED",
+  "voting_dividend_residual_rights_and_IBM_exchange_listing_verified": true
+}

@@ -1089,3 +1089,51 @@ original SEC CIK/context matches again. The
 **1,181 passed tests**, Ruff and the completed invented-input software
 pipeline. No new full economic protocol, SEC dissemination timestamp or
 historical vendor `known_at` source was approved.
+
+
+## 12 October — original IBM EX-4.1 clarifies two Capital stock titles
+
+The two previously unresolved IBM 10-K cover registered-security titles
+said **Capital stock, par value $.20 per share**, despite each preserving a
+lexical `us-gaap:CommonStockMember` context. We fetched official
+`EX-4.1` registered-security descriptions from both source SEC filing
+packages and verified their filing-index inclusion, source SHA-256, original
+issuer CIK, SEC acceptance time and original prior 10-K source report
+consistency. The 2020 and 2021 filings contain detailed year-end 2019 and
+2020 registered-equity descriptions.
+
+**Both EX-4.1 original sources explicitly state that IBM has no other issued
+and outstanding equity class**, describe dividends, **one vote per share**,
+residual liquidation participation, nonredeemability and an IBM equity
+ticker listing on the NYSE and Chicago Stock Exchange. Capital stock
+year-end outstanding shares are **887,110,454** and **892,953,271**.
+This is substantive original-source evidence that the lexical term
+`Capital stock` identifies IBM's sole then-outstanding equity class,
+rather than an unexamined preferred/debt instrument. It is not proof
+that a historical CRSP share-class eligibility requirement was satisfied.
+
+All six current SEC original source files (two EX-4.1 HTML, two SEC filing
+index HTML, two SEC directory JSON) have official URLs, bytes and SHA-256
+pinned in [the source manifest](../configs/ibm_capital_stock_exhibit_source_pin.json).
+The SEC directory-index lengths are 111 bytes below the present downloaded
+exhibit lengths in both years; this is recorded as a source-version
+discrepancy with no inferred cause or first-publication date. A
+[separately written stdlib HTMLParser verifier](../src/disclosure_research/ibm_capital_stock_exhibits_verifier.py)
+re-extracts both capital-stock sections, source rights and original
+share counts, checking normalized source hashes against the first lxml
+implementation. The [original SEC Exhibit methodology](../docs/ibm_capital_stock_exhibit_review.md)
+and public source-only aggregate result protect vendor and CIK/PERMNO
+row-level data. Original `known_at` and market `available_at` remain
+unproven, and no human stock-class, original source release, final
+empirical or forecasting result has been approved.
+
+The finalized original SEC Exhibit 4.1 audit was repeated in a fresh ignored
+private output directory without new downloads. The two private-source
+outputs (original exhibit review JSONL and aggregate summary) were **byte
+identical** across runs, while an independent stdlib HTMLParser recheck
+confirmed the two 2019/2020 source capital-stock statements, share counts and
+six original source hashes again. The
+[public verification receipt](ibm_capital_stock_exhibit_reproduction.json)
+records Ruff, **1,200 passing tests** and a full synthetic research
+software reproduction, not a real return-forecasting result. No historical
+identity, source, human or final-evaluation gate was opened.

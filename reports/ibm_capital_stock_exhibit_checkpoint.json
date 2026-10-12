@@ -1,0 +1,65 @@
+{
+  "IBM_capital_stock_automatically_approved_common_stock": false,
+  "IBM_capital_stock_title_equity_nature_corroborated": true,
+  "SEC_equity_registration_evidence": [
+    {
+      "SEC_10K_accession": "0001558370-20-001334",
+      "capital_stock_IBM_exchange_listing_supported": true,
+      "capital_stock_dividend_rights_supported": true,
+      "capital_stock_voting_rights_supported": true,
+      "current_public_Exhibit_4_1_url": "https://www.sec.gov/Archives/edgar/data/51143/000155837020001334/ex-4d1.htm",
+      "equity_facts_supported": true,
+      "exhibit_issued_equity_class_status": "EXHIBIT_EQUITY_RIGHTS_DOCUMENTED_CLASS_APPROVAL_PENDING",
+      "exhibit_year_end_outstanding_shares_public": 887110454,
+      "single_issued_equity_class_claim_present": true,
+      "source_exhibit_sha256": "ca7cad5d4f46257a458706ffa3d487b8262038aa9c5ad86cbeb7b1722b08b880"
+    },
+    {
+      "SEC_10K_accession": "0001558370-21-001489",
+      "capital_stock_IBM_exchange_listing_supported": true,
+      "capital_stock_dividend_rights_supported": true,
+      "capital_stock_voting_rights_supported": true,
+      "current_public_Exhibit_4_1_url": "https://www.sec.gov/Archives/edgar/data/51143/000155837021001489/ibm-20201231xex4d1.htm",
+      "equity_facts_supported": true,
+      "exhibit_issued_equity_class_status": "EXHIBIT_EQUITY_RIGHTS_DOCUMENTED_CLASS_APPROVAL_PENDING",
+      "exhibit_year_end_outstanding_shares_public": 892953271,
+      "single_issued_equity_class_claim_present": true,
+      "source_exhibit_sha256": "ce1082ea7c050b04f0c26c0d6239c7b4a3bea25b08200094374ec3f7e840bfdb"
+    }
+  ],
+  "all_original_SEC_filing_index_accessions_and_accepted_clocks_match_prior_10K": true,
+  "all_sec_original_exhibit_source_hashes_preserved": true,
+  "both_exhibits_describe_capital_stock_voting_dividends_residual_rights": true,
+  "both_exhibits_expressly_state_no_other_issued_outstanding_equity_class": true,
+  "both_exhibits_identify_IBM_capital_stock_ticker_and_NYSE_listing": true,
+  "current_SEC_archive_directory_advertised_size_equal_to_retrieved_Exhibit_4_1_count": 0,
+  "current_SEC_archive_directory_size_minus_retrieved_exhibit_bytes": [
+    -111,
+    -111
+  ],
+  "earliest_SEC_public_dissemination_verified": false,
+  "final_period_opened": false,
+  "full_iXBRL_semantic_validation_performed": false,
+  "historical_CRSP_CIK_PERMNO_mapping_approved": false,
+  "historical_source_known_at_or_vendor_available_at_established": false,
+  "interpretation": "Both IBM original SEC Exhibit 4.1s document a single issued equity class with residual/voting/dividend rights listed as IBM on NYSE, explaining the SEC 10-K 'Capital stock' title; this is not historical security identity, stock-class eligibility, first-publication or source known-at approval.",
+  "issuer": "International Business Machines Corporation (IBM)",
+  "model_ready": false,
+  "official_SEC_EX_4_1_documents_verified": 2,
+  "original_10K_filings_with_capital_stock_cover_title": 2,
+  "schema_version": 1,
+  "separate_reporting_year_ends": [
+    2019,
+    2020
+  ],
+  "source_current_index_metadata_not_first_publication_proof": true,
+  "source_fingerprints": {
+    "original_sec_exhibit_pin_sha256": "a56db8ae56629616fc554c16895aba0f4dbfc8ca13bee853970558f5f46b742c",
+    "prior_original_sec_gzip_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "prior_pair_receipt_sha256": "d114f793668a02721f90f407ddb219d942ab9dbf1418a7b8d251dee9000bc9d0",
+    "prior_private_pair_rows_sha256": "d86281d0fe2a55f50dcc38facd0443eef6e7002f82c3f55fe05fc216ee57d8b2",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "source_or_human_approvals_created": 0,
+  "status": "IBM_2019_2020_CAPITAL_STOCK_EXHIBIT_EQUITY_RIGHTS_CORROBORATED_NOT_APPROVED"
+}

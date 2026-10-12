@@ -34,6 +34,7 @@ all three text features to the same market controls.
 | Original 10-K stock-class lexical context triage | All **41** doubly corroborated pilot filings reviewed for exact original SEC symbol/context, title and exchange: **19** standard common-stock members (**16** with no structural warning), **4** issuer-specific-only, **18** no standard class axis; **no XBRL semantic or historical identity approval** |
 | Paired-year registered-security review | The **16** strongest lexical SEC stock contexts form **eight consecutive annual issuer pairs**, each with stable reported symbol, title and exchange; **14** say Common Stock and **two** say Capital stock, which remains unapproved |
 | Direct SEC original-byte reinspection | All **16** shortlisted 10-K HTML and 16 SEC headers fetched on Mac; headers match prior hashes, HTML differs uniformly by four bytes, but **16/16 full lexical source reports** and **16/16 direct DOM stock contexts** reproduce exactly; historical known-at still unknown |
+| IBM SEC Exhibit 4.1 registered equity corroboration | Both original 2019 and 2020 year-end exhibits identify **one issued/outstanding equity class** with voting, dividend and residual rights under ticker IBM; resolves the two Capital stock wording review leads without certifying the historical CRSP mapping |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -55,6 +56,13 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+The [source-pinned IBM SEC Exhibit 4.1 equity review](docs/ibm_capital_stock_exhibit_review.md)
+its [independent source-text corroboration](reports/ibm_capital_stock_exhibit_independent.json),
+and [byte-identical verification receipt](reports/ibm_capital_stock_exhibit_reproduction.json)
+explain the two outstanding `Capital stock` descriptions using the issuer's
+original 2019/2020 securities registration exhibits, preserving closed
+research approvals and source-vintage caveats.
 
 The [direct original SEC document reinspection](docs/sec_original_live_reinspection.md)
 now reproduces all 16 saved source lexical/context audits directly from freshly
