@@ -187,6 +187,15 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The subsequent [paired-year registered stock title audit](paired_stock_class_review.md)
+shows that 16 lexically clean standard-member filing contexts form eight
+consecutive original issuer pairs with the same reported symbol, registered
+title and exchange across those filings. Of 16 registered titles, 14 explicitly
+say Common Stock and two say Capital stock; all 16 have unresolved associated
+XBRL formatting transformations. This **does not** certify common-stock
+eligibility, original filing publication time, any historical security link
+or a model-ready observation.
+
 The [41-case original SEC stock-class lexical review](sec_cover_class_review.md)
 now separates 19 matched standard `us-gaap:CommonStockMember` lexical contexts
 (16 without recorded structural source/context warnings) from four

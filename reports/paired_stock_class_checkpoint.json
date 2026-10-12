@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "consecutive_pairs_with_all_three_stable": 8,
+    "consecutive_pairs_with_identical_symbol": 8,
+    "consecutive_pairs_with_normalized_exchange_match": 8,
+    "consecutive_pairs_with_normalized_title_match": 8,
+    "consecutive_two_filing_issuer_pairs": 8,
+    "filings_with_format_transformation_caveat": 16,
+    "filings_with_multiple_other_SEC_reported_symbols": 12,
+    "filings_with_standard_member_without_structural_warning": 16,
+    "registered_title_literal_Capital_stock_requires_review": 2,
+    "registered_title_literal_explicit_Common_Stock": 14,
+    "registered_title_other_requires_review": 0,
+    "same_context_exchange_present": 16
+  },
+  "final_period_opened": false,
+  "historical_CIK_to_security_link_approved": false,
+  "historical_known_at_established": false,
+  "human_source_review_completed": false,
+  "iXBRL_semantics_validated": false,
+  "interpretation": "Eight issuer-level annual pairs can carry stable original registration-title lexical observations. Neither matching reported stock symbols nor paired lexical titles establishes historical identity validity or data availability.",
+  "issuer_pairs_in_first_review": 8,
+  "model_ready": false,
+  "original_SEC_public_dissemination_verified": false,
+  "schema_version": 1,
+  "scope": "purposive 20-issuer development pilot, source-first 41-event class triage",
+  "source_10k_HTML_bytes_directly_reread_on_this_Mac": false,
+  "source_approvals_created": 0,
+  "source_fingerprints": {
+    "locked_protocol": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "original_class_private_rows": "2e67aa36a9de11067980b491b72db91d599fcb7faa091b0775ddf97a2a8f4a90",
+    "original_class_receipt": "018377e9234f9896d11d204b7f5434a5ed95d38658a0da6a5223b9a2dbcb6ec3",
+    "original_sec_execution": "9da39ddedd8ad29910fed229b4d1d64088c4bb402aeeafd8e749954f4b24405f",
+    "original_sec_gzip": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "original_sec_json": "70260a8a1e17dd37a2df0c99cf66a8eefcb1a33608336d3f238c5a42fac997f0"
+  },
+  "status": "ORIGINAL_10K_REGISTERED_STOCK_PAIRED_YEAR_REVIEW_NOT_APPROVED",
+  "vendor_market_available_at_established": false
+}

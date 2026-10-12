@@ -988,3 +988,49 @@ The [source reproduction report](sec_cover_class_reproduction.json)
 records **1,137 passing tests**, Ruff and a complete synthetic study
 pipeline. Source approval, historical stock class, publication time,
 human review and empirical-model final gates remain closed.
+
+## 12 October — eight original issuer registered-stock annual pairs, still not approved
+
+The [source-bound SEC registered-stock pair review](../docs/paired_stock_class_review.md)
+narrowed the prior 41 originally verified 10-K lexical context candidates to
+**16** with a matched declared `us-gaap:CommonStockMember` context and no
+recorded original symbol/context structural warning. These observations form
+**eight** issuer CIK/provisional CRSP security pairs, with two consecutive
+annual 10-K filings each. **All eight** pairs have the same original source
+trading symbol, and the same same-context registered security title and
+exchange text after case/whitespace-only normalization. Seven pairs span
+2020–2021 and one spans 2019–2020.
+
+**14** of the 16 original SEC titles contain the literal “Common Stock.”
+The remaining **two**, belonging to one issuer pair, say “Capital stock,” and
+are explicitly pending classification. **Twelve** of the 16 original 10-Ks
+report additional distinct security symbols, and all **16** retain an
+uninterpreted title/exchange XBRL formatting transformation caveat.
+These flags do not cancel a matching source lexical context, nor do they
+confer share-class eligibility or historical identity approval.
+
+The [independent original-source verifier](../src/disclosure_research/paired_stock_class_verifier.py)
+reconstructs all 16 source symbol/context/member facts and registered
+titles/exchanges from the previously original-byte-verified 215-filing
+SEC evidence report, then independently checks the eight paired-year
+stability results. Original SEC primary HTML/SGML bytes are **not present
+in the Mac working cache for direct reinspection during this checkpoint**;
+no new original HTML-byte check is claimed. Per-issuer and per-security
+details stay in the private, ignored HTML/JSONL review bundle. Aggregate
+source proofs are [here](paired_stock_class_checkpoint.json) and
+[here](paired_stock_class_independent.json).
+
+Zero source, class, identity, publication, data-vintage or human review
+approvals were created. The predeclared forecasting study and sealed
+2022–2025 final evaluation are unchanged.
+
+Two complete real-source paired-year executions in fresh ignored private
+directories generated **byte-identical** eight-issuer JSONL evidence,
+read-only HTML, and aggregate public summary. The independent original-source
+verifier also reconstructed all 16 source context facts, original security
+title/exchange texts and eight issuer pairing outcomes a second time.
+The [public reproduction receipt](paired_stock_class_reproduction.json)
+records **1,159 passing tests**, Ruff and a complete synthetic end-to-end
+study, which is not a real holdout evaluation. No original HTML-byte
+reinspection on the Mac, identity/class approval, human review or market
+data known-at/available-at was inferred or created.

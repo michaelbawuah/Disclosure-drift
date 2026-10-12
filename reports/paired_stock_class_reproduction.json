@@ -1,0 +1,44 @@
+{
+  "compared_output_files": {
+    "private_issuer_pairs.jsonl": {
+      "byte_identical": true,
+      "bytes": 29106,
+      "sha256": "d86281d0fe2a55f50dcc38facd0443eef6e7002f82c3f55fe05fc216ee57d8b2"
+    },
+    "private_review.html": {
+      "byte_identical": true,
+      "bytes": 28029,
+      "sha256": "d675743bb989d40b6e2e1a56244420981f17d0ce2abc222329ece926f46a3491"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 2192,
+      "sha256": "34fcaba16f30e106c3b719ddd94dcdb4596894c52100d25956943d7671b8bb0f"
+    }
+  },
+  "filing_lexical_source_contexts_independently_checked_twice": true,
+  "independent_raw_SEC_report_checks": 2,
+  "independent_year_title_exchange_counts_match": true,
+  "interpretation": "Two exact real-source lexical-processing reruns and independent confirmation; no historical source availability or forecasting performance approval",
+  "original_candidate_filings": 16,
+  "paired_issuer_count": 8,
+  "research_gates": {
+    "SEC_XBRL_semantics_validated": false,
+    "final_2022_2025_evaluation_opened": false,
+    "historical_CIK_PERMNO_link_approvals": 0,
+    "historical_security_class_approvals": 0,
+    "human_review_approvals": 0,
+    "known_at_established": false,
+    "model_ready": false,
+    "original_HTML_reread_on_Mac": false,
+    "vendor_available_at_established": false
+  },
+  "schema_version": 1,
+  "software_reproduction": {
+    "exit_code": 0,
+    "pytest_passed": 1159,
+    "ruff_lint": "passed",
+    "synthetic_full_study_pipeline": "passed"
+  },
+  "status": "REGISTERED_STOCK_ANNUAL_PAIR_TWO_SOURCE_BOUND_EXECUTIONS_IDENTICAL_NOT_APPROVED"
+}

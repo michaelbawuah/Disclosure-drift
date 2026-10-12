@@ -1,0 +1,20 @@
+{
+  "direct_original_10K_HTML_reinspection_completed": false,
+  "final_period_opened": false,
+  "historical_CIK_PERMNO_known_at_established": false,
+  "historical_security_class_approved": false,
+  "human_review_completed": false,
+  "independent_source_facts_checked": 16,
+  "independently_rebuilt_issuer_pairs": 8,
+  "model_ready": false,
+  "original_SEC_source_fact_class_and_registered_title_recomputed": true,
+  "paired_year_symbol_title_exchange_stability_recomputed": true,
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "source_fingerprints": {
+    "earlier_class_review_receipt": "018377e9234f9896d11d204b7f5434a5ed95d38658a0da6a5223b9a2dbcb6ec3",
+    "original_SEC_source_gzip": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "previous_private_annual_receipt": "d114f793668a02721f90f407ddb219d942ab9dbf1418a7b8d251dee9000bc9d0"
+  },
+  "status": "INDEPENDENT_10K_REGISTERED_STOCK_ANNUAL_PAIR_AUDIT_NOT_APPROVED"
+}
