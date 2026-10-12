@@ -1,0 +1,21 @@
+{
+  "SEC_iXBRL_boundary_human_review_completed": false,
+  "direct_SEC_html_first_publication_known_at_verified": false,
+  "final_period_opened": false,
+  "independent_original_Item1A_extractions_reconfirmed": 16,
+  "independent_original_annual_Jaccard_measures_verified": 12,
+  "independent_original_length_measures_verified": 12,
+  "model_ready": false,
+  "original_sec_filing_html_files_reread": 16,
+  "original_source_diagnostic_issuer_deltas_verified": 4,
+  "posthoc_selection_not_representative_or_causal": true,
+  "schema_version": 1,
+  "source_fingerprints": {
+    "first_reviewer_receipt_sha256": "4a9269f12e99977061d273f585d225d4153227572ec875d6ebe82adb50335293",
+    "frozen_protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "original_SEC_features_sha256": "8b878378f8a4b1605b6a54a48782f36e822dca02d32da9f5ffd396965573843c",
+    "original_SEC_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1"
+  },
+  "status": "INDEPENDENT_ORIGINAL_SEC_ITEM1A_DIAGNOSTIC_SOURCES_RECOMPUTED_NOT_HUMAN_APPROVED",
+  "stock_return_forecast_approved": false
+}

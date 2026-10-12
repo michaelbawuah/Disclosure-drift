@@ -187,6 +187,21 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+A [SEC-only alternative-metric sensitivity review](sec_alternative_metric_sensitivity.md)
+now tests log Item 1A text-length change and prior-years-only
+TF-IDF cosine distance on the **same original balanced 34 issuers**.
+2019→2021 within-issuer direction is positive for **24/34** using log
+length and **29/34** using TF-IDF, versus **27/34** for token-set
+Jaccard. The conditional length-bootstrap interval includes zero,
+and shifting historical TF-IDF vocabularies prevent fixed-feature-space
+conclusions. The [targeted original SEC section source audit]
+(sec_original_item1a_diagnostics.md) independently rechecked **16/16**
+original current filings from four explicitly post-hoc diagnostic
+issuers, reconstructing **12/12** annual Jaccard/length comparisons
+and **4/4** issuer signed deltas. Human source boundary reviews and
+historical first-publication times remain pending; SEC descriptive
+source evidence does not unlock original equity-return research gates.
+
 The [separate SEC-only disclosure-drift descriptive study](sec_only_descriptive_study.md)
 uses only the **215 previously source-audited original SEC 10-Ks and 180
 consecutive Item 1A comparison features** from 35 purposively selected

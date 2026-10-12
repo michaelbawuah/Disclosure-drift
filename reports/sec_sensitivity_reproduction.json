@@ -1,0 +1,80 @@
+{
+  "alternative_issuer_metric_source_differences_independently_verified": 306,
+  "balanced_panel_issuers": 34,
+  "direct_source_annual_Jaccard_comparisons_recomputed": 12,
+  "direct_source_annual_log_length_comparisons_recomputed": 12,
+  "exploratory_metric_2019_to_2021_contrasts": {
+    "jaccard_distance": {
+      "conditional_issuer_bootstrap_95pct_interval": [
+        0.023706334033113556,
+        0.07235859239062649
+      ],
+      "issuer_increases": 27,
+      "within_sample_mean_paired_change": 0.04602391739843811
+    },
+    "log_length_change": {
+      "conditional_issuer_bootstrap_95pct_interval": [
+        -0.02703167528523167,
+        0.10060180211529553
+      ],
+      "issuer_increases": 24,
+      "within_sample_mean_paired_change": 0.04348259756883316
+    },
+    "tfidf_cosine_distance": {
+      "conditional_issuer_bootstrap_95pct_interval": [
+        0.003528899838266652,
+        0.008276860030321938
+      ],
+      "issuer_increases": 29,
+      "within_sample_mean_paired_change": 0.005693361725797856
+    }
+  },
+  "full_software_reproduction": {
+    "exit_code": 0,
+    "pytest_passed": 1245,
+    "ruff": "passed",
+    "synthetic_full_study": "passed"
+  },
+  "independent_repeated_source_checks_byte_identical": {
+    "private_issuer_metric_changes.jsonl": {
+      "byte_identical": true,
+      "bytes": 42656,
+      "sha256": "5ccd41a94899da333543610f440b57691113b370d0a53085b904d8c9d20a3f1c"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 9336,
+      "sha256": "c0e6567e5b0a0cf9aa426a86a5ba7755aff4b2bf1047ccd68c8577295fb95f4c"
+    },
+    "sec_metric_sensitivity_independent.json": {
+      "byte_identical": true,
+      "bytes": 3200,
+      "sha256": "663c3a1c026a12342140985da7f7587c1cd10e8876bb5e6e9b256725390001b1"
+    },
+    "sec_original_extremes_independent.json": {
+      "byte_identical": true,
+      "bytes": 1123,
+      "sha256": "3d6b06017d7a748c5d5b1cb471a097ab558ee10889cf3d9c0e03930e46be80a2"
+    }
+  },
+  "interpretation": "Repeatable purposive original SEC text sensitivity and live source checks only. Not statistical population representativeness, causal inference, historical publication availability, or a completed stock-return forecast.",
+  "research_gates": {
+    "SEC_first_publication_known_at_established": false,
+    "actual_2022_2025_final_opened": false,
+    "causal_effect_identified": false,
+    "forecast_improvement_established": false,
+    "growing_TFIDF_vocabulary_constant_feature_space": false,
+    "market_return_or_historical_CIK_PERMNO_data_used": false,
+    "original_empirical_study_model_ready": false,
+    "population_inference_confirmed": false,
+    "source_boundary_human_approvals": 0,
+    "source_text_feature_data_kind": "original_purposive_SEC_10K_parser_pilot"
+  },
+  "schema_version": 1,
+  "source_original_SEC_annual_pairs": 180,
+  "source_original_SEC_filing_count": 215,
+  "source_primary_HTML_SHA256_same_as_old_manifest_count": 0,
+  "status": "SEC_ONLY_ALTERNATIVE_METRICS_AND_ORIGINAL_SOURCE_DIAGNOSTIC_REPRODUCED_NOT_PREDICTIVE",
+  "targeted_issuer_original_2019_2021_deltas_recomputed": 4,
+  "targeted_original_SEC_diagnostic_documents_currently_fetched": 16
+}

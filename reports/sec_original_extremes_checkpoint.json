@@ -1,0 +1,47 @@
+{
+  "causal_or_predictive_result_claimed": false,
+  "counts": {
+    "HTTP_200_original_documents": 16,
+    "annual_Jaccard_source_checks_reproduced": 12,
+    "annual_both_token_counts_verified": 12,
+    "annual_length_source_checks_reproduced": 12,
+    "four_year_source_issuer_cases_complete": 4,
+    "original_SEC_documents_selected": 16,
+    "original_risk_token_count_match": 16,
+    "paired_issuer_delta_reproduced": 4,
+    "raw_sha256_equal_to_original_manifest": 0,
+    "source_extraction_status_ok": 16,
+    "source_extraction_version_matches": 16
+  },
+  "diagnostic_selected_issuers": 4,
+  "final_period_opened": false,
+  "first_publication_known_at_verified": false,
+  "historical_stock_or_CRSP_data_used": false,
+  "manual_original_item1a_boundary_reviews_approved": false,
+  "model_ready": false,
+  "original_SEC_source_acceptance_years": [
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "original_html_hash_disagreements_are_explicit_source_version_warnings": true,
+  "original_original_SEC_feature_filings": 215,
+  "original_source_annual_comparisons": 180,
+  "population_random_or_representative_sample": false,
+  "posthoc_source_review_selection": "largest signed increase, largest decrease, closest to zero, closest to median of 2019-2021 paired issuer Jaccard change",
+  "schema_version": 1,
+  "source_provenance": {
+    "checkpoint_sha256": "85603234ba8b2b0965b96779f44739949773d331cc8a7576c9e0c2e38369953a",
+    "combination_receipt_sha256": "d84f17a88946e5ce1ec465c6590e5b97a28743a08169a02504029cef507f1e9e",
+    "features_sha256": "8b878378f8a4b1605b6a54a48782f36e822dca02d32da9f5ffd396965573843c",
+    "frozen_protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "original_215_SEC_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "original_baseline_public_sha256": "0a0bfe8121a6c6666e40ae44bcb459c978019776e6698d87b0e57e26fc48cce3",
+    "original_baseline_receipt_sha256": "74b8855ac2c4a97d14dc827233f313aab8a71bdf8320fe32d3b160eca1ad1eb7",
+    "protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9"
+  },
+  "status": "TARGETED_ORIGINAL_SEC_ITEM1A_16_DOCUMENT_DIAGNOSTIC_NOT_HUMAN_APPROVED",
+  "stop_on_SEC_request_error": false
+}

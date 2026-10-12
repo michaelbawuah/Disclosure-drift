@@ -1191,3 +1191,66 @@ a second time. The [reproducibility receipt]
 Ruff and the complete synthetic software study (not the empirical
 2022–2025 holdout). Source-review, population, forecast and causal claims
 remain explicitly unapproved.
+
+## 12 October — SEC-only alternative metrics and original Item 1A source diagnostics
+
+The [follow-up metric sensitivity](../docs/sec_alternative_metric_sensitivity.md)
+reuses **exactly the same 34 balanced 2019–2021 original SEC issuer CIKs**,
+with no access to stock return or security-linked vendor observations.
+Original Jaccard source-feature changes between the 2019 and 2021
+*annual comparison measures* are +0.0460 mean, positive for 27/34.
+Alternative **original log text-length change** is +0.04348 mean
+(24/34 positive), with a 5,000-issuer-bootstrap conditional interval
+of **−0.02703 to +0.10060**, crossing zero. Original prior-years-only
+**TF-IDF cosine distance** increases by +0.00569 mean (29/34 positive),
+conditional interval +0.00353 to +0.00828, but original TF-IDF uses
+**different expanding historical vocabulary per year**. It is a
+directional text-distance sensitivity, not fixed-vocabulary or causal
+confirmation. Original Jaccard and length/TF-IDF 2019→2021 issuer-delta
+rank correlations are 0.345 and 0.713. A separately implemented
+[Decimal-backed verifier](../src/disclosure_research/sec_metric_sensitivity_verifier.py)
+checks all **306 private issuer-metric differences**, source token-count
+log arithmetic, rank ties, trimmed and leave-one-out estimates, paired
+years/sign counts, and bootstrap intervals. All source and human review
+approvals remain unaltered.
+
+A separate [direct source diagnostic review](../docs/sec_original_item1a_diagnostics.md)
+selected four issuer cases **post hoc** from the same 34 CIKs: largest
+positive change (PepsiCo), largest negative (Amazon), nearest zero
+(Nike), and nearest sample median (Bank of America). The assistant
+directly downloaded original SEC 10-K primary HTML for their **2018,
+2019, 2020 and 2021** filings: **16/16 HTTP 200**, all bound to the
+original 215-record SEC manifest accession/CIK/URL and earlier SHA.
+All current HTML SHA hashes differ from the earlier source manifest:
+the raw versions are **not** silently treated as identical.
+
+Reparsing the **16 current original HTMLs** reproduced **all 16 saved
+Item 1A token counts/extraction statuses and extraction versions** and
+**12/12** annual current-vs-prior source-set Jaccard and log-length
+features, including all four original 2019→2021 signed issuer deltas.
+PepsiCo's two most recent reviewed risk sections have **14,493** and
+**6,964** tokens in the 2020 and 2021 comparisons, matching the
+saved source data. A separately written source verifier reopened all
+16 downloaded current originals, recomputed each extracted section
+and 12 independent token-set/length arithmetic comparisons, and
+confirmed four case-reason/issuer/delta assignments. It reuses the
+conservative original boundary parser: this is **automated source and
+metric verification, not complete human boundary adjudication**.
+The diagnostic selection is not random, representative or a source of
+new confirmatory predictions. No original SEC first-publication time,
+causal interpretation, approved historic security class or market data
+available-at was established. The original 2022–2025 final evaluation
+remains sealed.
+
+The new original SEC source and alternative metric sensitivity checkpoint
+also passed the entire [software reproduction suite]
+(sec_sensitivity_reproduction.json): **1,245 unit/integration tests**,
+Ruff and the complete synthetic study pipeline. Fresh source-bound
+alternative calculations yielded byte-identical public and private
+306-change outputs. Independent Decimal metric checks and independently
+reconstructed original SEC HTML diagnostics both produced **byte-identical
+aggregate verification reports** on two runs. The live original SEC
+documents were not downloaded a second time to demonstrate determinism.
+Human filing boundary approvals, actual SEC publication known-at and
+historical market source rights are still unresolved and the sealed
+2022–2025 final evaluation remains closed.

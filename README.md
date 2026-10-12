@@ -36,6 +36,7 @@ all three text features to the same market controls.
 | Direct SEC original-byte reinspection | All **16** shortlisted 10-K HTML and 16 SEC headers fetched on Mac; headers match prior hashes, HTML differs uniformly by four bytes, but **16/16 full lexical source reports** and **16/16 direct DOM stock contexts** reproduce exactly; historical known-at still unknown |
 | IBM SEC Exhibit 4.1 registered equity corroboration | Both original 2019 and 2020 year-end exhibits identify **one issued/outstanding equity class** with voting, dividend and residual rights under ticker IBM; resolves the two Capital stock wording review leads without certifying the historical CRSP mapping |
 | SEC-only disclosure-drift descriptive study | Original **215 SEC filings / 180 annual Item 1A comparisons / 35 issuers**; within **34 balanced 2019–2021 issuers**, mean Jaccard turnover rose **+0.0460** (27/34 increased). **Exploratory text description only, no return forecast or causal claim** |
+| SEC-only metric/source sensitivity | Independent comparison of original **Jaccard, log text length and prior-year-only TF-IDF** (34 issuers, no return data); **16 current original SEC 10-Ks** rechecked across four explicitly post-hoc diagnostic issuers with **12/12** annual lexical-set and length comparisons reproduced |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -57,6 +58,17 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+The [alternative SEC-only text metrics](docs/sec_alternative_metric_sensitivity.md)
+and [direct original Item 1A source-diagnostic review](docs/sec_original_item1a_diagnostics.md)
+extend the descriptive study without claiming the three metrics are
+interchangeable. The 16 sampled original SEC primary HTML documents
+reproduce the saved token counts and all 12 annual Jaccard/length
+comparisons; all four sample issuer deltas reproduce. The
+[source-bound reproducibility receipt](reports/sec_sensitivity_reproduction.json)
+records **1,245 passing tests**, repeat-run source checks and explicit
+non-predictive limitations. The source-byte version differences and
+incomplete human review remain explicit.
 
 A [separate source-audited SEC-only descriptive study](docs/sec_only_descriptive_study.md)
 now reports measured original Risk Factors vocabulary turnover and a

@@ -1,0 +1,106 @@
+{
+  "TFIDF_original_expanding_vocabulary_not_fixed_scale": true,
+  "all_306_private_issuer_changes_verified": true,
+  "alternative_metric_source_token_lengths_recomputed": true,
+  "balanced_2019_2021_issuer_count": 34,
+  "final_period_opened": false,
+  "historical_returns_or_CIK_security_mapping_read": false,
+  "human_reviews_inferred": 0,
+  "issuer_bootstrap_and_Spearman_concordance_verified": true,
+  "model_ready": false,
+  "original_source_issuer_count": 35,
+  "paired_means_medians_signs_trim_and_leave_one_out_verified": true,
+  "population_causal_or_stock_return_forecast_claim": false,
+  "reconstructed_metric_contrasts": [
+    {
+      "decreased": 12,
+      "from_year": 2019,
+      "increased": 22,
+      "issuers": 34,
+      "mean_paired_change": 0.06362635706331497,
+      "metric": "log_length_change",
+      "to_year": 2020
+    },
+    {
+      "decreased": 12,
+      "from_year": 2020,
+      "increased": 22,
+      "issuers": 34,
+      "mean_paired_change": -0.020143759494481786,
+      "metric": "log_length_change",
+      "to_year": 2021
+    },
+    {
+      "decreased": 10,
+      "from_year": 2019,
+      "increased": 24,
+      "issuers": 34,
+      "mean_paired_change": 0.04348259756883319,
+      "metric": "log_length_change",
+      "to_year": 2021
+    },
+    {
+      "decreased": 13,
+      "from_year": 2019,
+      "increased": 21,
+      "issuers": 34,
+      "mean_paired_change": 0.004814123033120754,
+      "metric": "tfidf_cosine_distance",
+      "to_year": 2020
+    },
+    {
+      "decreased": 8,
+      "from_year": 2020,
+      "increased": 26,
+      "issuers": 34,
+      "mean_paired_change": 0.0008792386926771064,
+      "metric": "tfidf_cosine_distance",
+      "to_year": 2021
+    },
+    {
+      "decreased": 5,
+      "from_year": 2019,
+      "increased": 29,
+      "issuers": 34,
+      "mean_paired_change": 0.005693361725797861,
+      "metric": "tfidf_cosine_distance",
+      "to_year": 2021
+    },
+    {
+      "decreased": 17,
+      "from_year": 2019,
+      "increased": 17,
+      "issuers": 34,
+      "mean_paired_change": 0.02084420284770836,
+      "metric": "jaccard_distance",
+      "to_year": 2020
+    },
+    {
+      "decreased": 10,
+      "from_year": 2020,
+      "increased": 24,
+      "issuers": 34,
+      "mean_paired_change": 0.02517971455072976,
+      "metric": "jaccard_distance",
+      "to_year": 2021
+    },
+    {
+      "decreased": 7,
+      "from_year": 2019,
+      "increased": 27,
+      "issuers": 34,
+      "mean_paired_change": 0.04602391739843812,
+      "metric": "jaccard_distance",
+      "to_year": 2021
+    }
+  ],
+  "schema_version": 1,
+  "source_SEC_item1a_annual_pairs_rechecked": 180,
+  "source_fingerprints": {
+    "SEC_original_text_feature_sha256": "8b878378f8a4b1605b6a54a48782f36e822dca02d32da9f5ffd396965573843c",
+    "frozen_protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "original_SEC_descriptive_receipt_sha256": "74b8855ac2c4a97d14dc827233f313aab8a71bdf8320fe32d3b160eca1ad1eb7",
+    "primary_sensitivity_receipt_sha256": "e4c264712a35e08a860be26fabe1e5228502ac9b54bc5403c776054690fcbfef"
+  },
+  "status": "INDEPENDENT_ORIGINAL_SEC_ALTERNATIVE_METRIC_SENSITIVITY_VERIFIED_NOT_PREDICTIVE"
+}
