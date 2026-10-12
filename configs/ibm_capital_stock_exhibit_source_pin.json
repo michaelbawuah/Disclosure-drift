@@ -1,0 +1,61 @@
+{
+  "filings": {
+    "2020": {
+      "accepted_at_new_york_local": "2020-02-25T16:54:20",
+      "accession": "0001558370-20-001334",
+      "objects": {
+        "directory_index_json": {
+          "bytes": 19917,
+          "local_file": "2020-index.json",
+          "sha256": "dcb41bcb0c4e424ed5c661d466b695c14ed8c74dd59de13d026b596690f7a6d4",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837020001334/index.json"
+        },
+        "exhibit": {
+          "bytes": 908453,
+          "local_file": "2020-ex-4d1.htm",
+          "sha256": "ca7cad5d4f46257a458706ffa3d487b8262038aa9c5ad86cbeb7b1722b08b880",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837020001334/ex-4d1.htm"
+        },
+        "filing_index_html": {
+          "bytes": 15830,
+          "local_file": "2020-0001558370-20-001334-index.html",
+          "sha256": "f3e0938514daba6ad485cbb9ac1b7a815768020f56fb9f6893b0e039160a7e55",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837020001334/0001558370-20-001334-index.html"
+        }
+      },
+      "report_year_end": 2019
+    },
+    "2021": {
+      "accepted_at_new_york_local": "2021-02-23T17:08:23",
+      "accession": "0001558370-21-001489",
+      "objects": {
+        "directory_index_json": {
+          "bytes": 20604,
+          "local_file": "2021-index.json",
+          "sha256": "3e42b3b6fc2620fe518402b87baa125a300180c99562344b9fb5a8a57133ebab",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837021001489/index.json"
+        },
+        "exhibit": {
+          "bytes": 764860,
+          "local_file": "2021-ibm-20201231xex4d1.htm",
+          "sha256": "ce1082ea7c050b04f0c26c0d6239c7b4a3bea25b08200094374ec3f7e840bfdb",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837021001489/ibm-20201231xex4d1.htm"
+        },
+        "filing_index_html": {
+          "bytes": 18080,
+          "local_file": "2021-0001558370-21-001489-index.html",
+          "sha256": "ca16bb43fbdb29f5ccb607a8c5fee54cabfd20e218e01d9236930f50df03850f",
+          "url": "https://www.sec.gov/Archives/edgar/data/51143/000155837021001489/0001558370-21-001489-index.html"
+        }
+      },
+      "report_year_end": 2020
+    }
+  },
+  "first_publication_known_at": null,
+  "issuer_CIK": "0000051143",
+  "observed_access_mode": "public_HTTPS_SEC_Archives_manual_retrieval_2026_10_12",
+  "schema_version": 1,
+  "security_link_known_at": null,
+  "source_approved_for_empirical_model": false,
+  "status": "CURRENT_SEC_IBM_10K_EX4_SOURCE_BYTES_PINNED_NOT_HISTORICAL_PUBLICATION"
+}
