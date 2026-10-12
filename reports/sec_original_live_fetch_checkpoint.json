@@ -1,0 +1,29 @@
+{
+  "SEC_access_error_stop_triggered": false,
+  "SEC_iXBRL_schema_semantics_validated": false,
+  "final_period_opened": false,
+  "historical_issuer_identity_approved": false,
+  "interpretation": "Original SEC source bytes reread from official URLs on current date. Hashes are compared with pinned earlier original SEC evidence; changed bytes are not accepted as identical or historical publication evidence.",
+  "model_ready": false,
+  "new_source_approvals": 0,
+  "original_filings_requested": 16,
+  "original_source_bytes_all_exactly_match_prior_verified_16_filing_cache": false,
+  "original_source_bytes_directly_downloaded_on_this_Mac": true,
+  "original_source_objects_requested": 32,
+  "retrieved_HTTP_200_source_objects": 32,
+  "retrieved_different_from_prior_verified_sha256": 16,
+  "retrieved_exact_prior_verified_sha256": 16,
+  "retrieved_missing_or_error": 0,
+  "schema_version": 1,
+  "source_fingerprints": {
+    "frozen_protocol_sha256": "3951be086ed9a74ec69a304004ebcb5aed63bac161e043ff92ae4f51b8e325d9",
+    "original_215_filing_manifest_sha256": "2658b7adfa03ea3c1800afd4107fa74c5348387533abde87cc30c0472b670fb1",
+    "original_earlier_SEC_execution_sha256": "9da39ddedd8ad29910fed229b4d1d64088c4bb402aeeafd8e749954f4b24405f",
+    "original_earlier_SEC_verified_gzip_sha256": "acdb65f51f0a4e72a2db7356c6093628c6c73dfd8d8d837d8f01d8c12583be1e",
+    "pair_selection_private_file_sha256": "d86281d0fe2a55f50dcc38facd0443eef6e7002f82c3f55fe05fc216ee57d8b2",
+    "pair_selection_receipt_sha256": "d114f793668a02721f90f407ddb219d942ab9dbf1418a7b8d251dee9000bc9d0"
+  },
+  "source_publication_at_filing_established": false,
+  "source_verification_pending_if_any_bytes_differ": true,
+  "status": "SEC_16_ORIGINAL_FILINGS_CURRENT_FETCH_BYTE_COMPARISON_NOT_APPROVED"
+}

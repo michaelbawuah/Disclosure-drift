@@ -187,6 +187,16 @@ chooses no source, accepts no tolerance and does not relabel the audit's exact
 comparison as reconciled. The market comparison alone establishes no error in
 individual stock returns.
 
+The [direct original SEC HTML/header reinspection](sec_original_live_reinspection.md)
+now fetched all 16 original paired-class documents on the authorized Mac.
+**16/16 original filing headers match prior verified SHA-256**; the 16 current
+HTML documents differ by **four bytes** from earlier verified source-byte
+hashes, although **all 16 complete parsed lexical fact/context reports**
+reproduce exactly. An independent raw current-HTML DOM walk also confirmed
+all 16 SEC common-stock-member/symbol/title/exchange facts. The reason for
+the uniform byte difference, historical first-publication time, XBRL semantic
+validity, and continuous dated CIK–PERMNO known-at **remain unresolved**.
+
 The subsequent [paired-year registered stock title audit](paired_stock_class_review.md)
 shows that 16 lexically clean standard-member filing contexts form eight
 consecutive original issuer pairs with the same reported symbol, registered

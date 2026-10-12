@@ -1034,3 +1034,58 @@ records **1,159 passing tests**, Ruff and a complete synthetic end-to-end
 study, which is not a real holdout evaluation. No original HTML-byte
 reinspection on the Mac, identity/class approval, human review or market
 data known-at/available-at was inferred or created.
+
+## 12 October — direct original SEC 10-K HTML and SGML reinspection, source drift retained
+
+The [source-bound original SEC reinspection](../docs/sec_original_live_reinspection.md)
+fetched the exact *previously recorded* 16 current original SEC Archive primary
+10-K URLs and 16 SEC filing headers from the user's connected Mac using a
+contact-bearing, fair-access research User-Agent, no redirects, and a
+delay between requests. **All 32 requests returned HTTP 200.**
+The original published 215-filing manifest SHA and prior original-SEC source
+report receipts were checked before fetching. Original current source
+documents and all source-level verification details are kept under ignored,
+private local paths.
+
+The new SEC headers were **byte-for-byte identical** to the previously
+verified header source for **all 16** (16/16 SHA-256 agreement), and the
+original filer identification and source acceptance clocks reproduced
+**16/16**. The newly fetched primary HTML files are all **four bytes shorter**
+than their earlier recorded bytes, and **0/16** match the earlier SHA-256.
+The reason has **not** been established; the reports explicitly retain both
+hashes and do not silently treat those source versions as identical.
+
+Despite the byte difference, directly reparsing each newly downloaded
+SEC original document using the locked lexical collector reproduced the
+entire previously source-verified cover evidence for **16/16**:
+all selected facts, all contexts, retained parser diagnostics, structural
+lexical warnings and the complete report projection. A **separately authored
+raw-HTML DOM walker**, not the old lexical-output parser, independently
+located and rechecked the original `TradingSymbol`,
+`us-gaap:StatementClassOfStockAxis` / `CommonStockMember`, original issuer
+CIK, source context periods and same-context registered security title and
+exchange across **16/16** current SEC HTML primary documents. Both checks
+remain lexical/DOM observations rather than full validating XBRL semantics.
+
+Current original SEC bytes can now be examined on this Mac for those 16
+documents (a significant improvement over the earlier remote source
+verification), but direct retrieval in October 2026 is **not evidence of
+first publication or source-vintage known-at in 2019–2021**. No historical
+issuer class, CIK–PERMNO identity, data `available_at`, human reviewer
+verdict, empirical performance, or final holdout access was approved.
+Original model evaluation gates remain unchanged. The publication-safe
+summary checkpoints are
+[fetch](sec_original_live_fetch_checkpoint.json),
+[reparse](sec_original_live_reparse_checkpoint.json), and
+[independent current-DOM original-file audit](sec_original_dom_independent.json).
+
+After the original source download, a second source-bound run **without
+additional SEC network requests** reproduced the complete current-original
+16-filing lexical audit's private per-filing comparisons and publication-safe
+summary **byte for byte**. A separate current-HTML DOM walker independently
+confirmed all 16 member, source symbol, registered title, exchange and
+original SEC CIK/context matches again. The
+[reproduction receipt](sec_original_live_reproduction.json) records
+**1,181 passed tests**, Ruff and the completed invented-input software
+pipeline. No new full economic protocol, SEC dissemination timestamp or
+historical vendor `known_at` source was approved.

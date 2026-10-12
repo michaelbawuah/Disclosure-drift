@@ -33,6 +33,7 @@ all three text features to the same market controls.
 | Development event identity matrix | All 135 original SEC events independently reconcile **10,935/10,935** dated Names session checks, 135 single CCM candidates and PERMCO checks; six descriptor transitions, seven current-header conflicts; **no historical known-at or mapping approval** |
 | Original 10-K stock-class lexical context triage | All **41** doubly corroborated pilot filings reviewed for exact original SEC symbol/context, title and exchange: **19** standard common-stock members (**16** with no structural warning), **4** issuer-specific-only, **18** no standard class axis; **no XBRL semantic or historical identity approval** |
 | Paired-year registered-security review | The **16** strongest lexical SEC stock contexts form **eight consecutive annual issuer pairs**, each with stable reported symbol, title and exchange; **14** say Common Stock and **two** say Capital stock, which remains unapproved |
+| Direct SEC original-byte reinspection | All **16** shortlisted 10-K HTML and 16 SEC headers fetched on Mac; headers match prior hashes, HTML differs uniformly by four bytes, but **16/16 full lexical source reports** and **16/16 direct DOM stock contexts** reproduce exactly; historical known-at still unknown |
 | Public daily market cross-check | Independent Fama–French factor series covers all 3,103 saved CRSP development sessions, but different market definitions/releases prevent automatic benchmark substitution |
 | Actual semantic execution | Pinned MiniLM on the original 155 filings / 135 pairs; full token coverage and numerical reproducibility checks; human semantic judgment pending |
 | Development market processing | Four manual daily batches, Names, CCM/company and market exports preserved locally; 22,588,059 provisional numerical rows cover all 3,103 requested sessions |
@@ -54,6 +55,15 @@ its [aggregate-only verification checkpoint](reports/alternative_pilot_checkpoin
 and the [byte-identical independent rerun](reports/alternative_pilot_reproduction.json)
 for a development-only feasibility analysis. Its source/identity and review gates
 remain closed; conditional predictions stay private. This is not the final study.
+
+The [direct original SEC document reinspection](docs/sec_original_live_reinspection.md)
+now reproduces all 16 saved source lexical/context audits directly from freshly
+downloaded SEC HTML and headers. The [independent current-document DOM review]
+(reports/sec_original_dom_independent.json) and
+[byte-identical reparse record](reports/sec_original_live_reproduction.json)
+bind this checkpoint to the original SEC bytes and 1,181 passing tests. The
+four-byte original HTML hash differences remain recorded—not silently
+corrected—and source publication times and historical links remain unapproved.
 
 The [source-bound eight-issuer registered-stock pair review](docs/paired_stock_class_review.md),
 its [aggregate checkpoint](reports/paired_stock_class_checkpoint.json),

@@ -1,0 +1,43 @@
+{
+  "complete_previous_SEC_lexical_reports_reproduced": 16,
+  "complete_software_reproduction": {
+    "exit_code": 0,
+    "invented_full_study_pipeline": "passed",
+    "pytest_passed": 1181,
+    "ruff_passed": true
+  },
+  "current_primary_HTML_hash_difference_from_earlier_original": 16,
+  "exact_original_SGML_header_hashes": 16,
+  "independent_original_source_DOM_checks_concordant_twice": true,
+  "independent_raw_current_HTML_stock_class_DOM_checks": 16,
+  "interpretation": "Reproducible currently retrieved original SEC body reinspection; earlier four-byte source mismatch unresolved, no historical economic study signoff",
+  "original_primary_HTML_source_files": 16,
+  "reparse_files_byte_identical_across_two_local_runs": {
+    "private_reparse_per_filing.jsonl": {
+      "byte_identical": true,
+      "bytes": 29962,
+      "sha256": "9b5e42b87a83cc91b3e4c6b47ddcf5d5973f772c3a706313faee67ddbc0b36a3"
+    },
+    "public_summary.json": {
+      "byte_identical": true,
+      "bytes": 2911,
+      "sha256": "059caeaa7304efd80c017454f90108ae5db2a1f7b8bea726171a3588d56a1a5a"
+    }
+  },
+  "research_gates": {
+    "XBRL_taxonomy_semantics_validated": false,
+    "actual_2022_2025_final_period_opened": false,
+    "current_HTML_identical_to_earlier_verified_raw_bytes": false,
+    "historical_CIK_PERMNO_link_approved": false,
+    "historical_data_known_at_or_available_at": false,
+    "human_reviews_inferred": 0,
+    "model_ready": false,
+    "original_publication_time_established": false,
+    "source_approvals": 0
+  },
+  "schema_version": 1,
+  "source_bytes_retrieved_once_no_repeat_network_requests": true,
+  "status": "DIRECT_SEC_16_CURRENT_ORIGINAL_DOCUMENT_REPARSES_REPRODUCED_NO_HISTORICAL_APPROVAL",
+  "uniform_primary_source_bytes_delta": -4,
+  "unique_original_SEC_document_sources_retrieved": 32
+}

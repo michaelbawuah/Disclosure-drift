@@ -1,0 +1,27 @@
+{
+  "current_original_html_iXBRL_schema_semantics_validated": false,
+  "current_original_primary_source_sha256_mismatch_count": 16,
+  "direct_current_original_SEC_html_source_contexts_checked": 16,
+  "direct_source_facts_and_registered_title_exchange_verified": true,
+  "filing_year_counts": {
+    "2019": 1,
+    "2020": 8,
+    "2021": 7
+  },
+  "final_period_opened": false,
+  "historical_CIK_PERMNO_known_at": null,
+  "historical_issuer_or_stock_class_approved": false,
+  "historical_vendor_data_available_at": null,
+  "human_source_reviews_completed": 0,
+  "interpretation": "Independent direct DOM walk of current official original SEC HTML supports 16 source lexical symbol/stock-axis/registered-title matches. The earlier byte hash discrepancy is preserved and neither stock class nor historical public availability is certified.",
+  "model_ready": false,
+  "original_filing_publication_time_verified": false,
+  "provenance": {
+    "earlier_reparser_private_receipt_sha256": "ab257386ebe5807c52dd0d74aefa9cea4009d680274259651f1e9c319e28fa15",
+    "previous_pair_source_receipt_sha256": "d114f793668a02721f90f407ddb219d942ab9dbf1418a7b8d251dee9000bc9d0",
+    "source_intake_private_receipt_sha256": "6704f212efe62cbe2e0e6a3cc1b029f2f96f645db161dd547560bff3ad8ce8f6"
+  },
+  "schema_version": 1,
+  "source_approvals_created": 0,
+  "status": "INDEPENDENT_CURRENT_SEC_ORIGINAL_DOM_16_STOCK_CONTEXTS_RECONCILED_NOT_APPROVED"
+}
